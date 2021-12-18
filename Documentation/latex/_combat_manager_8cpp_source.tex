@@ -1,0 +1,127 @@
+\hypertarget{_combat_manager_8cpp_source}{}\doxysection{Combat\+Manager.\+cpp}
+\label{_combat_manager_8cpp_source}\index{D:/University/ca-\/A00269349/Rogue/CombatManager.cpp@{D:/University/ca-\/A00269349/Rogue/CombatManager.cpp}}
+\mbox{\hyperlink{_combat_manager_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_combat_manager_8h}{CombatManager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_macro_8h}{Macro.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00007}\mbox{\hyperlink{class_combat_manager_a51e91e52ad5e5de28ffc17ee50af5c80}{00007}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_combat_manager_a51e91e52ad5e5de28ffc17ee50af5c80}{CombatManager::Fight}}(\mbox{\hyperlink{class_player}{Player}}\& p, \mbox{\hyperlink{class_map_manager}{MapManager}}\& m, \mbox{\hyperlink{class_enemy}{Enemy}}\& e)}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00008}00008 \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00009}00009     \textcolor{keywordflow}{switch} (\mbox{\hyperlink{class_combat_manager_a3c0b56cc5d4af6dde4aa585ebfd74f3e}{\_TURN}})}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00010}00010     \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00011}00011     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11}{PLAYER}}: \mbox{\hyperlink{class_combat_manager_a2f5d5d9a45933a6e234bc3154fd6f894}{HitEnemy}}(e, p);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00012}00012         \mbox{\hyperlink{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}{PrintStatements}}(m, e, p, 1);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00013}00013         \mbox{\hyperlink{class_combat_manager_aec72d4fe1af9857010fb793735c145db}{UpdateResults}}(e, p);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00014}00014         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_combat_manager_a33cdc2357ba9ee866a38dcec4a10845f}{\_RESULTS}} == \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c}{ENEMY\_DEAD}})}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00015}00015         \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00016}00016             \mbox{\hyperlink{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}{PrintStatements}}(m, e, p, 6);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00017}00017             \textcolor{keywordflow}{while} (p.\mbox{\hyperlink{class_player_afabc272a584435771820c92f2c8308f1}{in\_combat}})}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00018}00018             \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00019}00019                 \textcolor{keywordflow}{if} (GetKeyState(VK\_RETURN) \& 0x8000)}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00020}00020                 \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00021}00021                     p.\mbox{\hyperlink{class_player_afabc272a584435771820c92f2c8308f1}{in\_combat}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00022}00022                 \}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00023}00023             \}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00024}00024             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00025}00025         \}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00026}00026         \mbox{\hyperlink{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}{PrintStatements}}(m, e, p, 2);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00027}00027         \mbox{\hyperlink{class_combat_manager_aa470a607a6d3d76cef5d62c8f312d513}{SetTurn}}(\mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b}{ENEMY}});}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00028}00028         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00029}00029     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b}{ENEMY}}: \mbox{\hyperlink{class_combat_manager_aa3041a8bdc3eeddce47ef1eb0cd93899}{HitPlayer}}(e, p);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00030}00030         \mbox{\hyperlink{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}{PrintStatements}}(m, e, p, 3);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00031}00031         \mbox{\hyperlink{class_combat_manager_aec72d4fe1af9857010fb793735c145db}{UpdateResults}}(e, p);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00032}00032         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_combat_manager_a33cdc2357ba9ee866a38dcec4a10845f}{\_RESULTS}} == \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954}{PLAYER\_DEAD}})}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00033}00033         \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00034}00034             \mbox{\hyperlink{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}{PrintStatements}}(m, e, p, 5);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00035}00035             \textcolor{keywordflow}{while} (p.\mbox{\hyperlink{class_player_afabc272a584435771820c92f2c8308f1}{in\_combat}})}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00036}00036             \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00037}00037                 \textcolor{keywordflow}{if} (GetKeyState(VK\_RETURN) \& 0x8000)}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00038}00038                 \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00039}00039                     p.\mbox{\hyperlink{class_player_afabc272a584435771820c92f2c8308f1}{in\_combat}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00040}00040                     exit(1);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00041}00041                 \}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00042}00042             \}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00043}00043             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00044}00044         \}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00045}00045         \mbox{\hyperlink{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}{PrintStatements}}(m, e, p, 4);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00046}00046         \mbox{\hyperlink{class_combat_manager_aa470a607a6d3d76cef5d62c8f312d513}{SetTurn}}(\mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11}{PLAYER}});}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00047}00047         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00048}00048     \}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00049}00049 \}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00051}\mbox{\hyperlink{class_combat_manager_aa470a607a6d3d76cef5d62c8f312d513}{00051}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_combat_manager_aa470a607a6d3d76cef5d62c8f312d513}{CombatManager::SetTurn}}(\mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fd}{TURN}} desired\_turn)}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00052}00052 \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00053}00053     \mbox{\hyperlink{class_combat_manager_a3c0b56cc5d4af6dde4aa585ebfd74f3e}{\_TURN}} = desired\_turn;}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00054}00054 \}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00056}\mbox{\hyperlink{class_combat_manager_a2f5d5d9a45933a6e234bc3154fd6f894}{00056}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_combat_manager_a2f5d5d9a45933a6e234bc3154fd6f894}{CombatManager::HitEnemy}}(\mbox{\hyperlink{class_enemy}{Enemy}}\& e, \mbox{\hyperlink{class_player}{Player}}\& p)}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00057}00057 \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00058}00058     e.\mbox{\hyperlink{class_non_playable_character_aa18f226b35b28bd1ad318642a758abe2}{SetDesiredHealth}}(e.\mbox{\hyperlink{class_non_playable_character_ab0ab52f45551b75625bdf02e65d3ef37}{GetHealth}}() -\/ (p.\mbox{\hyperlink{class_player_a23faf24de68cf7d62a8b726a3c181ef0}{GetDamage}}()));}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00059}00059     \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{SleepTimer}}();}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00060}00060 \}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00062}\mbox{\hyperlink{class_combat_manager_aa3041a8bdc3eeddce47ef1eb0cd93899}{00062}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_combat_manager_aa3041a8bdc3eeddce47ef1eb0cd93899}{CombatManager::HitPlayer}}(\mbox{\hyperlink{class_enemy}{Enemy}}\& e, \mbox{\hyperlink{class_player}{Player}}\& p)}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00063}00063 \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00064}00064     p.\mbox{\hyperlink{class_player_a02ec140e8f48a44f442e97eb2a19a00e}{SetDesiredHealth}}(p.\mbox{\hyperlink{class_player_a8d962e02bc35d6181940a8aaf7a1a510}{GetHealth}}() -\/ e.\mbox{\hyperlink{class_non_playable_character_a39c610c17e10c8ee1b6bb03d65ed032f}{GetDamage}}());}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00065}00065     \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{SleepTimer}}();}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00066}00066 \}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00068}\mbox{\hyperlink{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}{00068}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}{CombatManager::PrintStatements}}(\mbox{\hyperlink{class_map_manager}{MapManager}}\& m, \mbox{\hyperlink{class_enemy}{Enemy}}\& e, \mbox{\hyperlink{class_player}{Player}}\& p, \textcolor{keywordtype}{int} statements)}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00069}00069 \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00070}00070     \textcolor{keywordtype}{string} statement;}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00071}00071     \textcolor{keywordflow}{switch} (statements)}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00072}00072     \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00073}00073     \textcolor{keywordflow}{case} 1: statement = \textcolor{stringliteral}{"{}YOU HIT "{}} + e.\mbox{\hyperlink{class_non_playable_character_aedf794670e71a33011caefd1d321a8f8}{GetName}}() + \textcolor{stringliteral}{"{} WITH "{}} + std::to\_string(p.\mbox{\hyperlink{class_player_a23faf24de68cf7d62a8b726a3c181ef0}{GetDamage}}()) + \textcolor{stringliteral}{"{} DAMAGE           "{}};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00074}00074         \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 3);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00075}00075         \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{SleepTimer}}();}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00076}00076         cout << statement;}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00077}00077         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00078}00078     \textcolor{keywordflow}{case} 2: statement = e.\mbox{\hyperlink{class_non_playable_character_aedf794670e71a33011caefd1d321a8f8}{GetName}}() + \textcolor{stringliteral}{"{} NOW HAS "{}} + std::to\_string(e.\mbox{\hyperlink{class_non_playable_character_ab0ab52f45551b75625bdf02e65d3ef37}{GetHealth}}()) + \textcolor{stringliteral}{"{} HEALTH                   "{}};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00079}00079         \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 3);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00080}00080         \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{SleepTimer}}();}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00081}00081         cout << statement;}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00082}00082         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00083}00083     \textcolor{keywordflow}{case} 3: statement = e.\mbox{\hyperlink{class_non_playable_character_aedf794670e71a33011caefd1d321a8f8}{GetName}}() + \textcolor{stringliteral}{"{} HIT YOU WITH "{}} + std::to\_string(e.\mbox{\hyperlink{class_non_playable_character_a39c610c17e10c8ee1b6bb03d65ed032f}{GetDamage}}()) + \textcolor{stringliteral}{"{} DAMAGE                "{}};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00084}00084         \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 3);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00085}00085         \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{SleepTimer}}();}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00086}00086         cout << statement;}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00087}00087         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00088}00088     \textcolor{keywordflow}{case} 4: statement = \textcolor{stringliteral}{"{}YOU NOW HAVE "{}} + std::to\_string(p.\mbox{\hyperlink{class_player_a8d962e02bc35d6181940a8aaf7a1a510}{GetHealth}}()) + \textcolor{stringliteral}{"{} HEALTH                   "{}};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00089}00089         \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 3);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00090}00090         \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{SleepTimer}}();}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00091}00091         cout << statement;}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00092}00092         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00093}00093     \textcolor{keywordflow}{case} 5: statement = \textcolor{stringliteral}{"{}YOU HAVE DIED, PRESS ENTER TO QUIT           "{}};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00094}00094         \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 3);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00095}00095         \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{SleepTimer}}();}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00096}00096         cout << statement;}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00097}00097         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00098}00098     \textcolor{keywordflow}{case} 6: statement = e.\mbox{\hyperlink{class_non_playable_character_aedf794670e71a33011caefd1d321a8f8}{GetName}}() + \textcolor{stringliteral}{"{} HAS DIED, PRESS ENTER TO CONTINUE           "{}};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00099}00099         \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 3);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00100}00100         \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{SleepTimer}}();}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00101}00101         cout << statement;}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00102}00102         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00103}00103     \}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00104}00104 \}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00106}\mbox{\hyperlink{class_combat_manager_aec72d4fe1af9857010fb793735c145db}{00106}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_combat_manager_aec72d4fe1af9857010fb793735c145db}{CombatManager::UpdateResults}}(\mbox{\hyperlink{class_enemy}{Enemy}}\& e, \mbox{\hyperlink{class_player}{Player}}\& p)}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00107}00107 \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00108}00108     \textcolor{keywordflow}{if} (p.\mbox{\hyperlink{class_player_a8d962e02bc35d6181940a8aaf7a1a510}{GetHealth}}() <= 0)}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00109}00109     \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00110}00110         \mbox{\hyperlink{class_combat_manager_a33cdc2357ba9ee866a38dcec4a10845f}{\_RESULTS}} = \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954}{PLAYER\_DEAD}};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00111}00111     \}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00112}00112     \textcolor{keywordflow}{if} (e.\mbox{\hyperlink{class_non_playable_character_ab0ab52f45551b75625bdf02e65d3ef37}{GetHealth}}() <= 0)}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00113}00113     \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00114}00114         \mbox{\hyperlink{class_combat_manager_a33cdc2357ba9ee866a38dcec4a10845f}{\_RESULTS}} = \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c}{ENEMY\_DEAD}};}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00115}00115     \}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00116}00116 \}}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00118}\mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{00118}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{CombatManager::SleepTimer}}()}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00119}00119 \{}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00120}00120     Sleep(1000);}
+\DoxyCodeLine{\Hypertarget{_combat_manager_8cpp_source_l00121}00121 \}}
+
+\end{DoxyCode}

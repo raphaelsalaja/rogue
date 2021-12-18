@@ -1,0 +1,277 @@
+.TH "CombatManager" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CombatManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CombatManager\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBFight\fP (\fBPlayer\fP &p, \fBMapManager\fP &m, \fBEnemy\fP &e)"
+.br
+.in -1c
+.SS "Private Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBTURN\fP { \fBPLAYER\fP, \fBENEMY\fP }"
+.br
+.ti -1c
+.RI "enum \fBRESULTS\fP { \fBPLAYER_DEAD\fP, \fBENEMY_DEAD\fP, \fBSTILL_ALIVE\fP }"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetTurn\fP (\fBTURN\fP desired_turn)"
+.br
+.ti -1c
+.RI "void \fBHitEnemy\fP (\fBEnemy\fP &e, \fBPlayer\fP &p)"
+.br
+.ti -1c
+.RI "void \fBHitPlayer\fP (\fBEnemy\fP &e, \fBPlayer\fP &p)"
+.br
+.ti -1c
+.RI "void \fBPrintStatements\fP (\fBMapManager\fP &m, \fBEnemy\fP &e, \fBPlayer\fP &p, int statements)"
+.br
+.ti -1c
+.RI "void \fBUpdateResults\fP (\fBEnemy\fP &e, \fBPlayer\fP &p)"
+.br
+.ti -1c
+.RI "void \fBSleepTimer\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBsleep_timer\fP = 5000"
+.br
+.ti -1c
+.RI "\fBTURN\fP \fB_TURN\fP = \fBENEMY\fP"
+.br
+.ti -1c
+.RI "\fBRESULTS\fP \fB_RESULTS\fP = \fBSTILL_ALIVE\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB8\fP of file \fBCombatManager\&.h\fP\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBCombatManager::RESULTS\fP\fC [private]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIPLAYER_DEAD \fP\fP
+.TP
+\fB\fIENEMY_DEAD \fP\fP
+.TP
+\fB\fISTILL_ALIVE \fP\fP
+.PP
+Definition at line \fB22\fP of file \fBCombatManager\&.h\fP\&.
+.PP
+.nf
+23     {
+24         PLAYER_DEAD,
+25         ENEMY_DEAD,
+26         STILL_ALIVE
+27     };
+.fi
+.SS "enum \fBCombatManager::TURN\fP\fC [private]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIPLAYER \fP\fP
+.TP
+\fB\fIENEMY \fP\fP
+.PP
+Definition at line \fB16\fP of file \fBCombatManager\&.h\fP\&.
+.PP
+.nf
+17     {
+18         PLAYER,
+19         ENEMY
+20     };
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void CombatManager::Fight (\fBPlayer\fP & p, \fBMapManager\fP & m, \fBEnemy\fP & e)"
+
+.PP
+Definition at line \fB7\fP of file \fBCombatManager\&.cpp\fP\&.
+.PP
+.nf
+8 {
+9     switch (_TURN)
+10     {
+11     case PLAYER: HitEnemy(e, p);
+12         PrintStatements(m, e, p, 1);
+13         UpdateResults(e, p);
+14         if (_RESULTS == ENEMY_DEAD)
+15         {
+16             PrintStatements(m, e, p, 6);
+17             while (p\&.in_combat)
+18             {
+19                 if (GetKeyState(VK_RETURN) & 0x8000)
+20                 {
+21                     p\&.in_combat = false;
+22                 }
+23             }
+24             break;
+25         }
+26         PrintStatements(m, e, p, 2);
+27         SetTurn(ENEMY);
+28         break;
+29     case ENEMY: HitPlayer(e, p);
+30         PrintStatements(m, e, p, 3);
+31         UpdateResults(e, p);
+32         if (_RESULTS == PLAYER_DEAD)
+33         {
+34             PrintStatements(m, e, p, 5);
+35             while (p\&.in_combat)
+36             {
+37                 if (GetKeyState(VK_RETURN) & 0x8000)
+38                 {
+39                     p\&.in_combat = false;
+40                     exit(1);
+41                 }
+42             }
+43             break;
+44         }
+45         PrintStatements(m, e, p, 4);
+46         SetTurn(PLAYER);
+47         break;
+48     }
+49 }
+.fi
+.SS "void CombatManager::HitEnemy (\fBEnemy\fP & e, \fBPlayer\fP & p)\fC [private]\fP"
+
+.PP
+Definition at line \fB56\fP of file \fBCombatManager\&.cpp\fP\&.
+.PP
+.nf
+57 {
+58     e\&.SetDesiredHealth(e\&.GetHealth() - (p\&.GetDamage()));
+59     SleepTimer();
+60 }
+.fi
+.SS "void CombatManager::HitPlayer (\fBEnemy\fP & e, \fBPlayer\fP & p)\fC [private]\fP"
+
+.PP
+Definition at line \fB62\fP of file \fBCombatManager\&.cpp\fP\&.
+.PP
+.nf
+63 {
+64     p\&.SetDesiredHealth(p\&.GetHealth() - e\&.GetDamage());
+65     SleepTimer();
+66 }
+.fi
+.SS "void CombatManager::PrintStatements (\fBMapManager\fP & m, \fBEnemy\fP & e, \fBPlayer\fP & p, int statements)\fC [private]\fP"
+
+.PP
+Definition at line \fB68\fP of file \fBCombatManager\&.cpp\fP\&.
+.PP
+.nf
+69 {
+70     string statement;
+71     switch (statements)
+72     {
+73     case 1: statement = "YOU HIT " + e\&.GetName() + " WITH " + std::to_string(p\&.GetDamage()) + " DAMAGE           ";
+74         Macro::GoToScreenPosition(45, m\&.height + 3);
+75         SleepTimer();
+76         cout << statement;
+77         break;
+78     case 2: statement = e\&.GetName() + " NOW HAS " + std::to_string(e\&.GetHealth()) + " HEALTH                   ";
+79         Macro::GoToScreenPosition(45, m\&.height + 3);
+80         SleepTimer();
+81         cout << statement;
+82         break;
+83     case 3: statement = e\&.GetName() + " HIT YOU WITH " + std::to_string(e\&.GetDamage()) + " DAMAGE                ";
+84         Macro::GoToScreenPosition(45, m\&.height + 3);
+85         SleepTimer();
+86         cout << statement;
+87         break;
+88     case 4: statement = "YOU NOW HAVE " + std::to_string(p\&.GetHealth()) + " HEALTH                   ";
+89         Macro::GoToScreenPosition(45, m\&.height + 3);
+90         SleepTimer();
+91         cout << statement;
+92         break;
+93     case 5: statement = "YOU HAVE DIED, PRESS ENTER TO QUIT           ";
+94         Macro::GoToScreenPosition(45, m\&.height + 3);
+95         SleepTimer();
+96         cout << statement;
+97         break;
+98     case 6: statement = e\&.GetName() + " HAS DIED, PRESS ENTER TO CONTINUE           ";
+99         Macro::GoToScreenPosition(45, m\&.height + 3);
+100         SleepTimer();
+101         cout << statement;
+102         break;
+103     }
+104 }
+.fi
+.SS "void CombatManager::SetTurn (\fBTURN\fP desired_turn)\fC [private]\fP"
+
+.PP
+Definition at line \fB51\fP of file \fBCombatManager\&.cpp\fP\&.
+.PP
+.nf
+52 {
+53     _TURN = desired_turn;
+54 }
+.fi
+.SS "void CombatManager::SleepTimer ()\fC [private]\fP"
+
+.PP
+Definition at line \fB118\fP of file \fBCombatManager\&.cpp\fP\&.
+.PP
+.nf
+119 {
+120     Sleep(1000);
+121 }
+.fi
+.SS "void CombatManager::UpdateResults (\fBEnemy\fP & e, \fBPlayer\fP & p)\fC [private]\fP"
+
+.PP
+Definition at line \fB106\fP of file \fBCombatManager\&.cpp\fP\&.
+.PP
+.nf
+107 {
+108     if (p\&.GetHealth() <= 0)
+109     {
+110         _RESULTS = PLAYER_DEAD;
+111     }
+112     if (e\&.GetHealth() <= 0)
+113     {
+114         _RESULTS = ENEMY_DEAD;
+115     }
+116 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBRESULTS\fP CombatManager::_RESULTS = \fBSTILL_ALIVE\fP\fC [private]\fP"
+
+.PP
+Definition at line \fB30\fP of file \fBCombatManager\&.h\fP\&.
+.SS "\fBTURN\fP CombatManager::_TURN = \fBENEMY\fP\fC [private]\fP"
+
+.PP
+Definition at line \fB29\fP of file \fBCombatManager\&.h\fP\&.
+.SS "int CombatManager::sleep_timer = 5000\fC [private]\fP"
+
+.PP
+Definition at line \fB14\fP of file \fBCombatManager\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

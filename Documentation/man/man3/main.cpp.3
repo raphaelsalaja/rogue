@@ -1,0 +1,134 @@
+.TH "D:/University/ca-A00269349/Rogue/main.cpp" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/University/ca-A00269349/Rogue/main.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'CombatManager\&.h'\fP
+.br
+\fC#include 'ConsoleRendering\&.h'\fP
+.br
+\fC#include 'Player\&.h'\fP
+.br
+\fC#include 'MapManager\&.h'\fP
+.br
+\fC#include 'ConsoleWindowManager\&.h'\fP
+.br
+\fC#include 'Enemy\&.h'\fP
+.br
+\fC#include 'InventoryManager\&.h'\fP
+.br
+\fC#include 'TitleScreenManager\&.h'\fP
+.br
+\fC#include 'UserInterfaceManger\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmain\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBUserInterfaceManager\fP \fBUSER_INTERFACE_MANGER\fP"
+.br
+.ti -1c
+.RI "\fBConsoleWindowManager\fP \fBCONSOLE_WINDOW_CONTROL\fP"
+.br
+.ti -1c
+.RI "\fBConsoleRendering\fP \fBCONSOLE_RENDERING\fP"
+.br
+.ti -1c
+.RI "\fBTitleScreenManager\fP \fBTITLE_SCREEN_MANAGER\fP"
+.br
+.ti -1c
+.RI "\fBInventoryManager\fP \fBINVENTORY_MANAGER\fP"
+.br
+.ti -1c
+.RI "\fBCombatManager\fP \fBCOMBAT_MANAGEER\fP"
+.br
+.ti -1c
+.RI "\fBMapManager\fP \fBMAP_MANAGER\fP"
+.br
+.ti -1c
+.RI "\fBPlayer\fP \fBPLAYER\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int main ()"
+
+.PP
+Definition at line \fB20\fP of file \fBmain\&.cpp\fP\&.
+.PP
+.nf
+21 {
+22     CONSOLE_WINDOW_CONTROL\&.SetText();
+23     CONSOLE_WINDOW_CONTROL\&.HideConsoleCursor();
+24     TITLE_SCREEN_MANAGER\&.RenderTitle(CONSOLE_WINDOW_CONTROL);
+25     CONSOLE_WINDOW_CONTROL\&.SetWindowDisplay(850, 550);
+26 
+27     MAP_MANAGER\&.RenderMap(CONSOLE_WINDOW_CONTROL);
+28     while (true)
+29     {
+30         while (!MAP_MANAGER\&.loading_next_map)
+31         {
+32             CONSOLE_WINDOW_CONTROL\&.HideConsoleCursor();
+33             INVENTORY_MANAGER\&.CurrentInventoryIndex(INVENTORY_MANAGER);
+34 
+35             INVENTORY_MANAGER\&.UpdateInventory(INVENTORY_MANAGER, USER_INTERFACE_MANGER);
+36             PLAYER\&.PlayerInput(INVENTORY_MANAGER, CONSOLE_WINDOW_CONTROL, MAP_MANAGER, PLAYER, CONSOLE_RENDERING, USER_INTERFACE_MANGER, COMBAT_MANAGEER);
+37 
+38             INVENTORY_MANAGER\&.InventoryInput(CONSOLE_WINDOW_CONTROL, MAP_MANAGER, INVENTORY_MANAGER, CONSOLE_RENDERING, USER_INTERFACE_MANGER);
+39             PLAYER\&.PlayerCollisions(MAP_MANAGER, CONSOLE_WINDOW_CONTROL, PLAYER, INVENTORY_MANAGER, USER_INTERFACE_MANGER);
+40 
+41             PLAYER\&.RenderPlayer(MAP_MANAGER, CONSOLE_WINDOW_CONTROL, INVENTORY_MANAGER);
+42             CONSOLE_RENDERING\&.Render_All(CONSOLE_WINDOW_CONTROL, MAP_MANAGER, PLAYER, INVENTORY_MANAGER, USER_INTERFACE_MANGER);
+43         }
+44     }
+45     return 1;
+46 }
+.fi
+.SH "Variable Documentation"
+.PP 
+.SS "\fBCombatManager\fP COMBAT_MANAGEER"
+
+.PP
+Definition at line \fB16\fP of file \fBmain\&.cpp\fP\&.
+.SS "\fBConsoleRendering\fP CONSOLE_RENDERING"
+
+.PP
+Definition at line \fB13\fP of file \fBmain\&.cpp\fP\&.
+.SS "\fBConsoleWindowManager\fP CONSOLE_WINDOW_CONTROL"
+
+.PP
+Definition at line \fB12\fP of file \fBmain\&.cpp\fP\&.
+.SS "\fBInventoryManager\fP INVENTORY_MANAGER"
+
+.PP
+Definition at line \fB15\fP of file \fBmain\&.cpp\fP\&.
+.SS "\fBMapManager\fP MAP_MANAGER"
+
+.PP
+Definition at line \fB17\fP of file \fBmain\&.cpp\fP\&.
+.SS "\fBPlayer\fP PLAYER"
+
+.PP
+Definition at line \fB18\fP of file \fBmain\&.cpp\fP\&.
+.SS "\fBTitleScreenManager\fP TITLE_SCREEN_MANAGER"
+
+.PP
+Definition at line \fB14\fP of file \fBmain\&.cpp\fP\&.
+.SS "\fBUserInterfaceManager\fP USER_INTERFACE_MANGER"
+
+.PP
+Definition at line \fB11\fP of file \fBmain\&.cpp\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

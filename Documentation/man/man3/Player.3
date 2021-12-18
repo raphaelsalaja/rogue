@@ -1,0 +1,484 @@
+.TH "Player" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Player
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Player\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBGetDamage\fP ()"
+.br
+.ti -1c
+.RI "int \fBGetHealth\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetDesiredHealth\fP (int value)"
+.br
+.ti -1c
+.RI "void \fBRenderPlayer\fP (\fBMapManager\fP &m, \fBConsoleWindowManager\fP &c, \fBInventoryManager\fP &i)"
+.br
+.ti -1c
+.RI "void \fBPlayerCollisions\fP (\fBMapManager\fP &m, \fBConsoleWindowManager\fP &c, \fBPlayer\fP &p, \fBInventoryManager\fP &i, \fBUserInterfaceManager\fP &ui)"
+.br
+.ti -1c
+.RI "void \fBPlayerInput\fP (\fBInventoryManager\fP &i, \fBConsoleWindowManager\fP &c, \fBMapManager\fP &m, \fBPlayer\fP &p, \fBConsoleRendering\fP &r, \fBUserInterfaceManager\fP &ui, \fBCombatManager\fP &cm)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBplayer_position_x\fP = 20"
+.br
+.ti -1c
+.RI "int \fBplayer_position_y\fP = 10"
+.br
+.ti -1c
+.RI "int \fBplayer_position_x_new\fP = \fBplayer_position_x\fP"
+.br
+.ti -1c
+.RI "int \fBplayer_position_y_new\fP = \fBplayer_position_y\fP"
+.br
+.ti -1c
+.RI "bool \fBend_game\fP"
+.br
+.ti -1c
+.RI "bool \fBin_combat\fP = false"
+.br
+.ti -1c
+.RI "int \fBdamage\fP = 10"
+.br
+.ti -1c
+.RI "int \fBshield\fP = 5"
+.br
+.ti -1c
+.RI "int \fBhealth\fP = 50"
+.br
+.ti -1c
+.RI "int \fBmagic\fP = 9"
+.br
+.ti -1c
+.RI "int \fBmax_stats\fP = 10"
+.br
+.ti -1c
+.RI "int \fBhealth_potions\fP = 0"
+.br
+.ti -1c
+.RI "int \fBshield_potions\fP = 0"
+.br
+.ti -1c
+.RI "int \fBmagic_potions\fP = 0"
+.br
+.ti -1c
+.RI "int \fBmax_potions\fP = 10"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBPlayerCollisionsChecks\fP (int item, int item_max, \fBMapManager\fP &m, \fBPlayer\fP &p)"
+.br
+.ti -1c
+.RI "bool \fBBlankPosition\fP (\fBMapManager\fP &m, \fBPlayer\fP &p)"
+.br
+.ti -1c
+.RI "void \fBEnterCombatMode\fP (\fBMapManager\fP &m, \fBEnemy\fP &e)"
+.br
+.ti -1c
+.RI "void \fBEnterMessageMode\fP (\fBMapManager\fP &m, \fBGenericFriendly\fP &f)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "const char \fBc_player\fP = 'P'"
+.br
+.ti -1c
+.RI "bool \fBwaiting_to_start_combat\fP = false"
+.br
+.ti -1c
+.RI "bool \fBwaiting_for_choice\fP = false"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB19\fP of file \fBPlayer\&.h\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Player::BlankPosition (\fBMapManager\fP & m, \fBPlayer\fP & p)\fC [private]\fP"
+
+.PP
+Definition at line \fB235\fP of file \fBPlayer\&.cpp\fP\&.
+.PP
+.nf
+236 {
+237     m\&.new_map[p\&.player_position_y_new * m\&.width + p\&.player_position_x_new] = '*';
+238     return true;
+239 }
+.fi
+.SS "void Player::EnterCombatMode (\fBMapManager\fP & m, \fBEnemy\fP & e)\fC [private]\fP"
+
+.PP
+Definition at line \fB133\fP of file \fBPlayer\&.cpp\fP\&.
+.PP
+.nf
+134 {
+135     e\&.PrintDetails(m);
+136     GoToScreenPosition(45, m\&.height + 7);
+137     Sleep(2500);
+138     waiting_to_start_combat = true;
+139 }
+.fi
+.SS "void Player::EnterMessageMode (\fBMapManager\fP & m, \fBGenericFriendly\fP & f)\fC [private]\fP"
+
+.PP
+Definition at line \fB141\fP of file \fBPlayer\&.cpp\fP\&.
+.PP
+.nf
+142 {
+143     waiting_for_choice = true;
+144     while (waiting_for_choice)
+145     {
+146         f\&.PrintMessage(m);
+147         GoToScreenPosition(45, m\&.height + 7);
+148         if (GetKeyState('1') & 0x8000)
+149         {
+150             health++;
+151             waiting_for_choice = false;
+152             Sleep(60);
+153         }
+154         if (GetKeyState('2') & 0x8000)
+155         {
+156             shield++;
+157             waiting_for_choice = false;
+158             Sleep(60);
+159         }
+160         if (GetKeyState('3') & 0x8000)
+161         {
+162             magic++;
+163             waiting_for_choice = false;
+164             Sleep(60);
+165         }
+166     }
+167 }
+.fi
+.SS "int Player::GetDamage ()"
+
+.PP
+Definition at line \fB241\fP of file \fBPlayer\&.cpp\fP\&.
+.PP
+.nf
+242 {
+243     return damage;
+244 }
+.fi
+.SS "int Player::GetHealth ()"
+
+.PP
+Definition at line \fB246\fP of file \fBPlayer\&.cpp\fP\&.
+.PP
+.nf
+247 {
+248     return health;
+249 }
+.fi
+.SS "void Player::PlayerCollisions (\fBMapManager\fP & m, \fBConsoleWindowManager\fP & c, \fBPlayer\fP & p, \fBInventoryManager\fP & i, \fBUserInterfaceManager\fP & ui)"
+
+.PP
+Definition at line \fB60\fP of file \fBPlayer\&.cpp\fP\&.
+.PP
+.nf
+61 {
+62     const char c_wall = '#';
+63     const char c_wall_1 = '-';
+64     const char c_wall_2 = '|';
+65     const char c_wall_3 = '\&.';
+66     const char c_level_portal = '[';
+67     char health_c = i\&.c_health;
+68     char shield_c = i\&.c_shield;
+69     char health_p = i\&.c_health_potion;
+70     char shield_p = i\&.c_shield_potion;
+71     char magic_p = i\&.c_magic_potion;
+72 
+73     auto inventory_table_iterator = ui\&.inventory\&.begin();
+74     string inventory_headings[4]{
+75         "W E A P O N S",
+76         "P O T I O N S",
+77         "A R M O U R",
+78         "T R I N K E T S"
+79     };
+80     char nextMove = m\&.new_map[player_position_y_new * m\&.width + player_position_x_new];
+81     string f = m\&.file_contents_read_in;
+82 
+83     switch (nextMove)
+84     {
+85     case c_wall:
+86     case c_wall_1:
+87     case c_wall_2:
+88     case c_wall_3: p\&.player_position_x_new = p\&.player_position_x;
+89         p\&.player_position_y_new = p\&.player_position_y;
+90         break;
+91     case 'h': health = PlayerCollisionsChecks(health, max_stats, m, p);
+92         break;
+93     case 's': shield = PlayerCollisionsChecks(shield, max_stats, m, p);
+94         break;
+95     case 'H': health_potions = PlayerCollisionsChecks(health_potions, max_potions, m, p);
+96     case 'S': shield_potions = PlayerCollisionsChecks(shield_potions, max_potions, m, p);
+97         break;
+98     case 'M': magic_potions = PlayerCollisionsChecks(magic_potions, max_potions, m, p);
+99         break;
+100     case 'N': // PRINT MESSAGE
+101         EnterMessageMode(m, m\&.generic_friendlies\&.at(m\&.FindFriendly(p)));
+102         BlankPosition(m, p);
+103         break;
+104     case 'E': // ENTER COMBAT MODE
+105         EnterCombatMode(m, m\&.enemies\&.at(m\&.FindEnemy(p)));
+106         BlankPosition(m, p);
+107         break;
+108     case c_level_portal:
+109     {
+110         m\&.LoadNextMap(m, c, p, i);
+111     }
+112     break;
+113     }
+114     string item_picked_up;
+115     InventoryManager::ITEM_TYPE type = i\&.WhatIsItem(nextMove);
+116     switch (type)
+117     {
+118     case InventoryManager::WEAPON: ui\&.inventory\&.insert(inventory_table_iterator, "TEST");
+119         break;
+120     case InventoryManager::POTION: int index = i\&.GetInventoryHeadingLocation(inventory_headings[1], ui);
+121         advance(inventory_table_iterator, index + 1);
+122         if (i\&.InsertIntoInventoryManager(type, nextMove, p, ui))
+123         {
+124         }
+125         else
+126         {
+127             ui\&.inventory\&.insert(inventory_table_iterator, i\&.potion_inventory\&.at(i\&.potion_inventory\&.size() - 1));
+128         }
+129         break;
+130     }
+131 }
+.fi
+.SS "int Player::PlayerCollisionsChecks (int item, int item_max, \fBMapManager\fP & m, \fBPlayer\fP & p)\fC [private]\fP"
+
+.PP
+Definition at line \fB40\fP of file \fBPlayer\&.cpp\fP\&.
+.PP
+.nf
+41 {
+42     bool cleared = false;
+43     if (item != item_max)
+44     {
+45         cleared = BlankPosition(m, p);
+46         if (cleared)
+47         {
+48             item++;
+49         }
+50         cleared = false;
+51     }
+52     else
+53     {
+54         p\&.player_position_x_new = p\&.player_position_x;
+55         p\&.player_position_y_new = p\&.player_position_y;
+56     }
+57     return item;
+58 }
+.fi
+.SS "void Player::PlayerInput (\fBInventoryManager\fP & i, \fBConsoleWindowManager\fP & c, \fBMapManager\fP & m, \fBPlayer\fP & p, \fBConsoleRendering\fP & r, \fBUserInterfaceManager\fP & ui, \fBCombatManager\fP & cm)"
+
+.PP
+Definition at line \fB174\fP of file \fBPlayer\&.cpp\fP\&.
+.PP
+.nf
+175 {
+176     player_position_x_new = player_position_x;
+177     player_position_y_new = player_position_y;
+178     if (i\&.inventory_open)
+179     {
+180         if (GetKeyState(VK_RIGHT) & 0x8000)
+181         {
+182             i\&.InventoryControl('n', r, i, c, m, ui);
+183             Sleep(60);
+184         }
+185         if (GetKeyState(VK_LEFT) & 0x8000)
+186         {
+187             i\&.InventoryControl('b', r, i, c, m, ui);
+188             Sleep(60);
+189         }
+190         if (GetKeyState(VK_BACK) & 0x8000)
+191         {
+192             i\&.DropItemSelected(i\&.inventory_index, p, c, m, i, r, ui);
+193         }
+194         if (GetKeyState(VK_RETURN) & 0x8000)
+195         {
+196             i\&.UsePotionSelected(i\&.inventory_index, p, c, m, i, r, ui);
+197         }
+198     }
+199     else if (waiting_to_start_combat)
+200     {
+201         in_combat = true;
+202         waiting_to_start_combat = false;
+203     }
+204     else if (in_combat)
+205     {
+206         while (in_combat)
+207         {
+208             cm\&.Fight(p, m, m\&.enemies\&.at(m\&.FindEnemy(p)));
+209         }
+210     }
+211     else
+212     {
+213         if (GetKeyState(VK_UP) & 0x8000)
+214         {
+215             player_position_y_new = player_position_y - 1;
+216         }
+217 
+218         if (GetKeyState(VK_DOWN) & 0x8000)
+219         {
+220             player_position_y_new = player_position_y + 1;
+221         }
+222 
+223         if (GetKeyState(VK_RIGHT) & 0x8000)
+224         {
+225             player_position_x_new = player_position_x + 1;
+226         }
+227 
+228         if (GetKeyState(VK_LEFT) & 0x8000)
+229         {
+230             player_position_x_new = player_position_x - 1;
+231         }
+232     }
+233 }
+.fi
+.SS "void Player::RenderPlayer (\fBMapManager\fP & m, \fBConsoleWindowManager\fP & c, \fBInventoryManager\fP & i)"
+
+.PP
+Definition at line \fB10\fP of file \fBPlayer\&.cpp\fP\&.
+.PP
+.nf
+11 {
+12     if (!i\&.inventory_open)
+13     {
+14         // BLANKS THE PLAYER'S OLD POSITION
+15         GoToScreenPosition(player_position_x, player_position_y);
+16         switch (m\&.new_map[player_position_y * m\&.width + player_position_x])
+17         {
+18         case '=': c\&.SetConsoleWindowColor(ConsoleWindowManager::LIGHT_BLUE, ConsoleWindowManager::MAGENTA);
+19             cout << '\xB0';
+20 
+21             break;
+22 
+23         default: c\&.SetConsoleWindowColor(ConsoleWindowManager::LIGHT_BLUE, ConsoleWindowManager::BLACK);
+24             cout << '\xFA';
+25         }
+26 
+27         // DRAWS THE PLAYER'S OLD POSITION
+28         GoToScreenPosition(player_position_x_new, player_position_y_new);
+29         std::cout << c_player;
+30 
+31         player_position_x = player_position_x_new;
+32         player_position_y = player_position_y_new;
+33 
+34         Sleep(60);
+35 
+36         c\&.SetConsoleWindowColor(ConsoleWindowManager::LIGHT_BLUE, ConsoleWindowManager::BLACK);
+37     }
+38 }
+.fi
+.SS "void Player::SetDesiredHealth (int value)"
+
+.PP
+Definition at line \fB169\fP of file \fBPlayer\&.cpp\fP\&.
+.PP
+.nf
+170 {
+171     health = value;
+172 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "const char Player::c_player = 'P'\fC [private]\fP"
+
+.PP
+Definition at line \fB49\fP of file \fBPlayer\&.h\fP\&.
+.SS "int Player::damage = 10"
+
+.PP
+Definition at line \fB32\fP of file \fBPlayer\&.h\fP\&.
+.SS "bool Player::end_game"
+
+.PP
+Definition at line \fB29\fP of file \fBPlayer\&.h\fP\&.
+.SS "int Player::health = 50"
+
+.PP
+Definition at line \fB34\fP of file \fBPlayer\&.h\fP\&.
+.SS "int Player::health_potions = 0"
+
+.PP
+Definition at line \fB37\fP of file \fBPlayer\&.h\fP\&.
+.SS "bool Player::in_combat = false"
+
+.PP
+Definition at line \fB30\fP of file \fBPlayer\&.h\fP\&.
+.SS "int Player::magic = 9"
+
+.PP
+Definition at line \fB35\fP of file \fBPlayer\&.h\fP\&.
+.SS "int Player::magic_potions = 0"
+
+.PP
+Definition at line \fB37\fP of file \fBPlayer\&.h\fP\&.
+.SS "int Player::max_potions = 10"
+
+.PP
+Definition at line \fB38\fP of file \fBPlayer\&.h\fP\&.
+.SS "int Player::max_stats = 10"
+
+.PP
+Definition at line \fB36\fP of file \fBPlayer\&.h\fP\&.
+.SS "int Player::player_position_x = 20"
+
+.PP
+Definition at line \fB23\fP of file \fBPlayer\&.h\fP\&.
+.SS "int Player::player_position_x_new = \fBplayer_position_x\fP"
+
+.PP
+Definition at line \fB25\fP of file \fBPlayer\&.h\fP\&.
+.SS "int Player::player_position_y = 10"
+
+.PP
+Definition at line \fB24\fP of file \fBPlayer\&.h\fP\&.
+.SS "int Player::player_position_y_new = \fBplayer_position_y\fP"
+
+.PP
+Definition at line \fB26\fP of file \fBPlayer\&.h\fP\&.
+.SS "int Player::shield = 5"
+
+.PP
+Definition at line \fB33\fP of file \fBPlayer\&.h\fP\&.
+.SS "int Player::shield_potions = 0"
+
+.PP
+Definition at line \fB37\fP of file \fBPlayer\&.h\fP\&.
+.SS "bool Player::waiting_for_choice = false\fC [private]\fP"
+
+.PP
+Definition at line \fB53\fP of file \fBPlayer\&.h\fP\&.
+.SS "bool Player::waiting_to_start_combat = false\fC [private]\fP"
+
+.PP
+Definition at line \fB52\fP of file \fBPlayer\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

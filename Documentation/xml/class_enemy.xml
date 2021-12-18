@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_enemy" kind="class" language="C++" prot="public">
+    <compoundname>Enemy</compoundname>
+    <basecompoundref refid="class_non_playable_character" prot="public" virt="non-virtual">NonPlayableCharacter</basecompoundref>
+    <includes refid="_enemy_8h" local="no">Enemy.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_enemy_1a98f0d2110309536798101b88d2d1d8c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Enemy::Enemy</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>Enemy</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Enemy.h" line="8" column="1" bodyfile="D:/University/ca-A00269349/Rogue/Enemy.cpp" bodystart="44" bodyend="53"/>
+        <references refid="class_non_playable_character_1a017d601103d2bc66a6338073a051cab7" compoundref="_non_playable_character_8cpp" startline="47" endline="50">NonPlayableCharacter::SetHealth</references>
+        <references refid="class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875" compoundref="_non_playable_character_8cpp" startline="37" endline="40">NonPlayableCharacter::SetName</references>
+        <references refid="class_enemy_1a9c1d6efc8b2099d83797600d67a52017" compoundref="_enemy_8cpp" startline="21" endline="37">SetNamesArray</references>
+        <references refid="class_enemy_1a01f5ffaa127a837d3f315ff3910a9f28" compoundref="_enemy_8cpp" startline="39" endline="42">SetPassive</references>
+        <references refid="class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e" compoundref="_non_playable_character_8cpp" startline="72" endline="76">NonPlayableCharacter::SetPosition</references>
+        <references refid="class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e" compoundref="_non_playable_character_8cpp" startline="56" endline="59">NonPlayableCharacter::SetSpeed</references>
+        <references refid="class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2" compoundref="_non_playable_character_8cpp" startline="42" endline="45">NonPlayableCharacter::SetStrength</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enemy::PrintDetails</definition>
+        <argsstring>(MapManager &amp;m)</argsstring>
+        <name>PrintDetails</name>
+        <param>
+          <type><ref refid="class_map_manager" kindref="compound">MapManager</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Enemy.h" line="9" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Enemy.cpp" bodystart="6" bodyend="19"/>
+        <references refid="class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f" compoundref="_non_playable_character_8cpp" startline="93" endline="96">NonPlayableCharacter::GetDamage</references>
+        <references refid="class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37" compoundref="_non_playable_character_8cpp" startline="88" endline="91">NonPlayableCharacter::GetHealth</references>
+        <references refid="class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8" compoundref="_non_playable_character_8cpp" startline="83" endline="86">NonPlayableCharacter::GetName</references>
+        <references refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" compoundref="_macro_8cpp" startline="7" endline="13">Macro::GoToScreenPosition</references>
+        <references refid="class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa" compoundref="_non_playable_character_8h" startline="45">NonPlayableCharacter::health</references>
+        <references refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" compoundref="_map_manager_8h" startline="19">MapManager::height</references>
+        <references refid="class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824" compoundref="_non_playable_character_8h" startline="32">NonPlayableCharacter::name</references>
+        <referencedby refid="class_player_1a4e306abcd8bd537e80b89563ad77275c" compoundref="_player_8cpp" startline="133" endline="139">Player::EnterCombatMode</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_enemy_1a9c1d6efc8b2099d83797600d67a52017" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Enemy::SetNamesArray</definition>
+        <argsstring>() override</argsstring>
+        <name>SetNamesArray</name>
+        <reimplements refid="class_non_playable_character_1af4fe8de9174af90d1a0088373d0e35c0">SetNamesArray</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Enemy.h" line="11" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Enemy.cpp" bodystart="21" bodyend="37"/>
+        <references refid="class_non_playable_character_1a7e5848d6face873445553e3731da84be" compoundref="_non_playable_character_8h" startline="33">NonPlayableCharacter::name_array</references>
+        <referencedby refid="class_enemy_1a98f0d2110309536798101b88d2d1d8c9" compoundref="_enemy_8cpp" startline="44" endline="53">Enemy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1a01f5ffaa127a837d3f315ff3910a9f28" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Enemy::SetPassive</definition>
+        <argsstring>() override</argsstring>
+        <name>SetPassive</name>
+        <reimplements refid="class_non_playable_character_1a355f7bc2a43563faec957553fa4fd1e7">SetPassive</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Enemy.h" line="12" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Enemy.cpp" bodystart="39" bodyend="42"/>
+        <references refid="class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000" compoundref="_non_playable_character_8h" startline="31">NonPlayableCharacter::passive</references>
+        <referencedby refid="class_enemy_1a98f0d2110309536798101b88d2d1d8c9" compoundref="_enemy_8cpp" startline="44" endline="53">Enemy</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NonPlayableCharacter</label>
+        <link refid="class_non_playable_character"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NonPlayableCharacter</label>
+        <link refid="class_non_playable_character"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/University/ca-A00269349/Rogue/Enemy.h" line="5" column="1" bodyfile="D:/University/ca-A00269349/Rogue/Enemy.h" bodystart="6" bodyend="13"/>
+    <listofallmembers>
+      <member refid="class_non_playable_character_1af6835f00acbdc12a7a9f920ef6801e0d" prot="private" virt="non-virtual"><scope>Enemy</scope><name>attack_speed</name></member>
+      <member refid="class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1" prot="public" virt="non-virtual"><scope>Enemy</scope><name>CreateNonPlayableCharacter</name></member>
+      <member refid="class_enemy_1a98f0d2110309536798101b88d2d1d8c9" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Enemy</name></member>
+      <member refid="class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b" prot="private" virt="non-virtual"><scope>Enemy</scope><name>ENEMY</name></member>
+      <member refid="class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9" prot="private" virt="non-virtual"><scope>Enemy</scope><name>GENERIC_FRIENDLY</name></member>
+      <member refid="class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f" prot="public" virt="non-virtual"><scope>Enemy</scope><name>GetDamage</name></member>
+      <member refid="class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37" prot="public" virt="non-virtual"><scope>Enemy</scope><name>GetHealth</name></member>
+      <member refid="class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8" prot="public" virt="non-virtual"><scope>Enemy</scope><name>GetName</name></member>
+      <member refid="class_non_playable_character_1aad1bbaeea7152ff52113b318be9afc0d" prot="public" virt="non-virtual"><scope>Enemy</scope><name>GetX</name></member>
+      <member refid="class_non_playable_character_1a70b9980da4a02e7848c7561e498e8db9" prot="public" virt="non-virtual"><scope>Enemy</scope><name>GetY</name></member>
+      <member refid="class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa" prot="private" virt="non-virtual"><scope>Enemy</scope><name>health</name></member>
+      <member refid="class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824" prot="public" virt="non-virtual"><scope>Enemy</scope><name>name</name></member>
+      <member refid="class_non_playable_character_1a7e5848d6face873445553e3731da84be" prot="public" virt="non-virtual"><scope>Enemy</scope><name>name_array</name></member>
+      <member refid="class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746" prot="public" virt="non-virtual"><scope>Enemy</scope><name>NonPlayableCharacter</name></member>
+      <member refid="class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89d" prot="private" virt="non-virtual"><scope>Enemy</scope><name>NPC_TYPE</name></member>
+      <member refid="class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627" prot="private" virt="non-virtual"><scope>Enemy</scope><name>npc_x</name></member>
+      <member refid="class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7" prot="private" virt="non-virtual"><scope>Enemy</scope><name>npc_y</name></member>
+      <member refid="class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000" prot="public" virt="non-virtual"><scope>Enemy</scope><name>passive</name></member>
+      <member refid="class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c" prot="public" virt="non-virtual"><scope>Enemy</scope><name>PrintDetails</name></member>
+      <member refid="class_non_playable_character_1aa18f226b35b28bd1ad318642a758abe2" prot="public" virt="non-virtual"><scope>Enemy</scope><name>SetDesiredHealth</name></member>
+      <member refid="class_non_playable_character_1a017d601103d2bc66a6338073a051cab7" prot="public" virt="non-virtual"><scope>Enemy</scope><name>SetHealth</name></member>
+      <member refid="class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875" prot="public" virt="non-virtual"><scope>Enemy</scope><name>SetName</name></member>
+      <member refid="class_enemy_1a9c1d6efc8b2099d83797600d67a52017" prot="private" virt="virtual"><scope>Enemy</scope><name>SetNamesArray</name></member>
+      <member refid="class_enemy_1a01f5ffaa127a837d3f315ff3910a9f28" prot="private" virt="virtual"><scope>Enemy</scope><name>SetPassive</name></member>
+      <member refid="class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e" prot="public" virt="non-virtual"><scope>Enemy</scope><name>SetPosition</name></member>
+      <member refid="class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e" prot="public" virt="non-virtual"><scope>Enemy</scope><name>SetSpeed</name></member>
+      <member refid="class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2" prot="public" virt="non-virtual"><scope>Enemy</scope><name>SetStrength</name></member>
+      <member refid="class_non_playable_character_1ada48fd505bbf5797c39f0b20aa995bbc" prot="public" virt="non-virtual"><scope>Enemy</scope><name>SetSymbol</name></member>
+      <member refid="class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c" prot="public" virt="non-virtual"><scope>Enemy</scope><name>strength</name></member>
+      <member refid="class_non_playable_character_1ab6703683eeb7deb2ac146dfcfced761f" prot="private" virt="non-virtual"><scope>Enemy</scope><name>symbol</name></member>
+      <member refid="class_non_playable_character_1a1d4530eecfb04414d3980c22aa020b30" prot="public" virt="non-virtual"><scope>Enemy</scope><name>~NonPlayableCharacter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

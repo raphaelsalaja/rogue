@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_stats_manager_8cpp" kind="file" language="C++">
+    <compoundname>StatsManager.cpp</compoundname>
+    <includes refid="_stats_manager_8h" local="yes">StatsManager.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/StatsManager.cpp</label>
+        <link refid="_stats_manager_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>StatsManager.h</label>
+        <link refid="_stats_manager_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_stats_manager_8h" kindref="compound">StatsManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/University/ca-A00269349/Rogue/StatsManager.cpp"/>
+  </compounddef>
+</doxygen>

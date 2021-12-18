@@ -1,0 +1,124 @@
+.TH "Macro" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Macro
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBGoToScreenPosition\fP (short C, short R)"
+.br
+.ti -1c
+.RI "void \fBRepositionWindow\fP (int width, int height)"
+.br
+.ti -1c
+.RI "string \fBReplaceAll\fP (string str, const string &from, const string &to)"
+.br
+.ti -1c
+.RI "int \fBSeparate\fP (int input, char from, char count)"
+.br
+.ti -1c
+.RI "int \fBGenerateRandomNumber\fP (int max)"
+.br
+.ti -1c
+.RI "int \fBGenerateRandomNumberWithoutZero\fP (int max)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int Macro::GenerateRandomNumber (int max)"
+
+.PP
+Definition at line \fB54\fP of file \fBMacro\&.cpp\fP\&.
+.PP
+.nf
+55 {
+56     srand(static_cast<unsigned>(time(nullptr)));
+57     return rand() % max;
+58 }
+.fi
+.SS "int Macro::GenerateRandomNumberWithoutZero (int max)"
+
+.PP
+Definition at line \fB60\fP of file \fBMacro\&.cpp\fP\&.
+.PP
+.nf
+61 {
+62     srand(time(nullptr));
+63     return (rand() % max) + 1\&.0;
+64 }
+.fi
+.SS "void Macro::GoToScreenPosition (short C, short R)"
+
+.PP
+Definition at line \fB7\fP of file \fBMacro\&.cpp\fP\&.
+.PP
+.nf
+8 {
+9     COORD xy;
+10     xy\&.X = C;
+11     xy\&.Y = R;
+12     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
+13 }
+.fi
+.SS "string Macro::ReplaceAll (string str, const string & from, const string & to)"
+
+.PP
+Definition at line \fB34\fP of file \fBMacro\&.cpp\fP\&.
+.PP
+.nf
+35 {
+36     size_t start_pos = 0;
+37     while ((start_pos = str\&.find(from, start_pos)) != string::npos)
+38     {
+39         str\&.replace(start_pos, from\&.length(), to);
+40         start_pos += to\&.length(); // Handles case where 'to' is a substring of 'from'
+41     }
+42     return str;
+43 }
+.fi
+.SS "void Macro::RepositionWindow (int width, int height)"
+
+.PP
+Definition at line \fB15\fP of file \fBMacro\&.cpp\fP\&.
+.PP
+.nf
+16 {
+17     HWND hConsoleWnd = GetConsoleWindow();
+18     HMONITOR hMonitor = MonitorFromWindow(hConsoleWnd, MONITOR_DEFAULTTONEAREST);
+19     if (hMonitor)
+20     {
+21         MONITORINFO info{
+22             sizeof(info)
+23         }; // set cbSize member and fill the rest with zero
+24         if (::GetMonitorInfo(hMonitor, &info))
+25         {
+26             int x = (info\&.rcWork\&.left + info\&.rcWork\&.right) / 2 - width / 2;
+27             int y = (info\&.rcWork\&.top + info\&.rcWork\&.bottom) / 2 - height / 2;
+28             SetConsoleTitle(TEXT("ROGUE"));
+29             SetWindowPos(hConsoleWnd, nullptr, x, y, width, height, SWP_NOZORDER | SWP_NOOWNERZORDER | SWP_SHOWWINDOW);
+30         }
+31     }
+32 }
+.fi
+.SS "int Macro::Separate (int input, char from, char count)"
+
+.PP
+Definition at line \fB45\fP of file \fBMacro\&.cpp\fP\&.
+.PP
+.nf
+46 {
+47     int d = 1;
+48     for (int i = 0; i < from; i++, d *= 10);
+49     int m = 1;
+50     for (int i = 0; i < count; i++, m *= 10);
+51     return ((input / d) % m);
+52 }
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

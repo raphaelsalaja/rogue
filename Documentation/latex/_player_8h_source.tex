@@ -1,0 +1,67 @@
+\hypertarget{_player_8h_source}{}\doxysection{Player.\+h}
+\label{_player_8h_source}\index{D:/University/ca-\/A00269349/Rogue/Player.h@{D:/University/ca-\/A00269349/Rogue/Player.h}}
+\mbox{\hyperlink{_player_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00002}00002 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_inventory_manager_8h}{InventoryManager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00003}00003 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_console_window_manager_8h}{ConsoleWindowManager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_user_interface_manger_8h}{UserInterfaceManger.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_enemy_8h}{Enemy.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_generic_friendly_8h}{GenericFriendly.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00007}00007 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_combat_manager_8h}{CombatManager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00009}00009 \textcolor{keyword}{class }\mbox{\hyperlink{class_combat_manager}{CombatManager}};}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00010}00010 \textcolor{keyword}{class }\mbox{\hyperlink{class_user_interface_manager}{UserInterfaceManager}};}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00011}00011 \textcolor{keyword}{class }\mbox{\hyperlink{class_console_window_manager}{ConsoleWindowManager}};}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00012}00012 \textcolor{keyword}{class }\mbox{\hyperlink{class_console_rendering}{ConsoleRendering}};}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00013}00013 \textcolor{keyword}{class }\mbox{\hyperlink{class_map_manager}{MapManager}};}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00014}00014 \textcolor{keyword}{class }\mbox{\hyperlink{class_inventory_manager}{InventoryManager}};}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00015}00015 \textcolor{keyword}{class }\mbox{\hyperlink{class_enemy}{Enemy}};}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00016}00016 \textcolor{keyword}{class }\mbox{\hyperlink{class_generic_friendly}{GenericFriendly}};}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00017}00017 \textcolor{keyword}{class }\mbox{\hyperlink{class_combat_manager}{CombatManager}};}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00019}\mbox{\hyperlink{class_player}{00019}} \textcolor{keyword}{class }\mbox{\hyperlink{class_player}{Player}}}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00020}00020 \{}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00021}00021 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00022}00022     \textcolor{comment}{// POSITION}}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00023}\mbox{\hyperlink{class_player_a5e4cebf1dffd936edc4a69867dc9d38c}{00023}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_player_a5e4cebf1dffd936edc4a69867dc9d38c}{player\_position\_x}} = 20;}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00024}\mbox{\hyperlink{class_player_a1043d8ae834b0edbdf36765e73c32eb0}{00024}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_player_a1043d8ae834b0edbdf36765e73c32eb0}{player\_position\_y}} = 10;}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00025}\mbox{\hyperlink{class_player_a295efe0018307edab6aaeaad9dae6e0b}{00025}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_player_a295efe0018307edab6aaeaad9dae6e0b}{player\_position\_x\_new}} = \mbox{\hyperlink{class_player_a5e4cebf1dffd936edc4a69867dc9d38c}{player\_position\_x}};}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00026}\mbox{\hyperlink{class_player_a7ddbc65116b9c73791679dc1aa049980}{00026}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_player_a7ddbc65116b9c73791679dc1aa049980}{player\_position\_y\_new}} = \mbox{\hyperlink{class_player_a1043d8ae834b0edbdf36765e73c32eb0}{player\_position\_y}};}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00028}00028     \textcolor{comment}{// STATS}}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00029}\mbox{\hyperlink{class_player_a0df6cda292d01636309ab82d1445f8b5}{00029}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_player_a0df6cda292d01636309ab82d1445f8b5}{end\_game}};}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00030}\mbox{\hyperlink{class_player_afabc272a584435771820c92f2c8308f1}{00030}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_player_afabc272a584435771820c92f2c8308f1}{in\_combat}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00032}\mbox{\hyperlink{class_player_a433fa478597adbefe4ac3911c5639968}{00032}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_player_a433fa478597adbefe4ac3911c5639968}{damage}} = 10;}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00033}\mbox{\hyperlink{class_player_aeaeb39c73e57dbc0727f51a2b6c24b41}{00033}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_player_aeaeb39c73e57dbc0727f51a2b6c24b41}{shield}} = 5;}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00034}\mbox{\hyperlink{class_player_aad33b52bfe73c4c978a3135172f286a0}{00034}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_player_aad33b52bfe73c4c978a3135172f286a0}{health}} = 50;}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00035}\mbox{\hyperlink{class_player_a03a20ecc0094ce6869d196b8effddd54}{00035}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_player_a03a20ecc0094ce6869d196b8effddd54}{magic}} = 9;}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00036}\mbox{\hyperlink{class_player_ad4cfa39d8e172a78e2e8c1c8da13f080}{00036}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_player_ad4cfa39d8e172a78e2e8c1c8da13f080}{max\_stats}} = 10;}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00037}\mbox{\hyperlink{class_player_aa55063fb11d6d041d7e72ef650824280}{00037}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_player_aa55063fb11d6d041d7e72ef650824280}{health\_potions}} = 0, \mbox{\hyperlink{class_player_aff4ffb0294cf1c1f81d0f4b1f8fc15ff}{shield\_potions}} = 0, \mbox{\hyperlink{class_player_a84354c435ab9342fc19b09423053d1ed}{magic\_potions}} = 0;}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00038}\mbox{\hyperlink{class_player_aeee533a8d8e4e2a00f77b6c493b3929f}{00038}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_player_aeee533a8d8e4e2a00f77b6c493b3929f}{max\_potions}} = 10;}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00040}00040     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_player_a23faf24de68cf7d62a8b726a3c181ef0}{GetDamage}}();}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00041}00041     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_player_a8d962e02bc35d6181940a8aaf7a1a510}{GetHealth}}();}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00042}00042     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_player_a02ec140e8f48a44f442e97eb2a19a00e}{SetDesiredHealth}}(\textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00043}00043     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_player_a4b2ed7452ebf86347df93b965f5c4966}{RenderPlayer}}(\mbox{\hyperlink{class_map_manager}{MapManager}}\& m, \mbox{\hyperlink{class_console_window_manager}{ConsoleWindowManager}}\& c, \mbox{\hyperlink{class_inventory_manager}{InventoryManager}}\& i);}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00044}00044     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_player_a848f89637b84d9692c96fc75cfa434eb}{PlayerCollisions}}(\mbox{\hyperlink{class_map_manager}{MapManager}}\& m, \mbox{\hyperlink{class_console_window_manager}{ConsoleWindowManager}}\& c, \mbox{\hyperlink{class_player}{Player}}\& p, \mbox{\hyperlink{class_inventory_manager}{InventoryManager}}\& i, \mbox{\hyperlink{class_user_interface_manager}{UserInterfaceManager}}\& ui);}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00045}00045     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_player_a459cda6070754195650bd10e0db43710}{PlayerInput}}(\mbox{\hyperlink{class_inventory_manager}{InventoryManager}}\& i, \mbox{\hyperlink{class_console_window_manager}{ConsoleWindowManager}}\& c, \mbox{\hyperlink{class_map_manager}{MapManager}}\& m, \mbox{\hyperlink{class_player}{Player}}\& p, \mbox{\hyperlink{class_console_rendering}{ConsoleRendering}}\& r, \mbox{\hyperlink{class_user_interface_manager}{UserInterfaceManager}}\& ui, \mbox{\hyperlink{class_combat_manager}{CombatManager}}\& cm);}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00047}00047 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00048}00048     \textcolor{comment}{// PLAYER}}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00049}\mbox{\hyperlink{class_player_a0dfa2c1fdd710480766dcb2cf85b2db4}{00049}}     \textcolor{keyword}{const} \textcolor{keywordtype}{char} \mbox{\hyperlink{class_player_a0dfa2c1fdd710480766dcb2cf85b2db4}{c\_player}} = \textcolor{charliteral}{'P'};}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00051}00051     \textcolor{comment}{// COMBAT}}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00052}\mbox{\hyperlink{class_player_a3d88ecef0d65b5ca204f92c1a75c02c4}{00052}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_player_a3d88ecef0d65b5ca204f92c1a75c02c4}{waiting\_to\_start\_combat}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00053}\mbox{\hyperlink{class_player_afeb496e92e437ad4d2da75f935f922ea}{00053}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_player_afeb496e92e437ad4d2da75f935f922ea}{waiting\_for\_choice}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00055}00055     \textcolor{comment}{// PLAYER}}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00056}00056     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_player_a8e27b94ff10ba3c236f57a8a721a5d40}{PlayerCollisionsChecks}}(\textcolor{keywordtype}{int} item, \textcolor{keywordtype}{int} item\_max, \mbox{\hyperlink{class_map_manager}{MapManager}}\& m, \mbox{\hyperlink{class_player}{Player}}\& p);}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00057}00057     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_player_a3b587452a99abee05fafb51daadf6687}{BlankPosition}}(\mbox{\hyperlink{class_map_manager}{MapManager}}\& m, \mbox{\hyperlink{class_player}{Player}}\& p);}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00059}00059     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_player_a4e306abcd8bd537e80b89563ad77275c}{EnterCombatMode}}(\mbox{\hyperlink{class_map_manager}{MapManager}}\& m, \mbox{\hyperlink{class_enemy}{Enemy}}\& e);}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00060}00060     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_player_af437a788282ad5c25d54a10de8199d11}{EnterMessageMode}}(\mbox{\hyperlink{class_map_manager}{MapManager}}\& m, \mbox{\hyperlink{class_generic_friendly}{GenericFriendly}}\& f);}
+\DoxyCodeLine{\Hypertarget{_player_8h_source_l00061}00061 \};}
+
+\end{DoxyCode}

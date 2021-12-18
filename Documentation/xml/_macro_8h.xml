@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_macro_8h" kind="file" language="C++">
+    <compoundname>Macro.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="_combat_manager_8cpp" local="yes">D:/University/ca-A00269349/Rogue/CombatManager.cpp</includedby>
+    <includedby refid="_console_rendering_8cpp" local="yes">D:/University/ca-A00269349/Rogue/ConsoleRendering.cpp</includedby>
+    <includedby refid="_debug_8cpp" local="yes">D:/University/ca-A00269349/Rogue/Debug.cpp</includedby>
+    <includedby refid="_enemy_8cpp" local="yes">D:/University/ca-A00269349/Rogue/Enemy.cpp</includedby>
+    <includedby refid="_generic_friendly_8cpp" local="yes">D:/University/ca-A00269349/Rogue/GenericFriendly.cpp</includedby>
+    <includedby refid="_macro_8cpp" local="yes">D:/University/ca-A00269349/Rogue/Macro.cpp</includedby>
+    <includedby refid="_map_manager_8cpp" local="yes">D:/University/ca-A00269349/Rogue/MapManager.cpp</includedby>
+    <includedby refid="_non_playable_character_8cpp" local="yes">D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp</includedby>
+    <includedby refid="_player_8cpp" local="yes">D:/University/ca-A00269349/Rogue/Player.cpp</includedby>
+    <includedby refid="_random_item_generator_8cpp" local="yes">D:/University/ca-A00269349/Rogue/RandomItemGenerator.cpp</includedby>
+    <includedby refid="_random_weapon_8cpp" local="yes">D:/University/ca-A00269349/Rogue/RandomWeapon.cpp</includedby>
+    <includedby refid="_title_screen_manager_8cpp" local="yes">D:/University/ca-A00269349/Rogue/TitleScreenManager.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/Macro.h</label>
+        <link refid="_macro_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/University/ca-A00269349/Rogue/CombatManager.cpp</label>
+        <link refid="_combat_manager_8cpp"/>
+      </node>
+      <node id="3">
+        <label>D:/University/ca-A00269349/Rogue/ConsoleRendering.cpp</label>
+        <link refid="_console_rendering_8cpp"/>
+      </node>
+      <node id="4">
+        <label>D:/University/ca-A00269349/Rogue/Debug.cpp</label>
+        <link refid="_debug_8cpp"/>
+      </node>
+      <node id="5">
+        <label>D:/University/ca-A00269349/Rogue/Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+      </node>
+      <node id="6">
+        <label>D:/University/ca-A00269349/Rogue/GenericFriendly.cpp</label>
+        <link refid="_generic_friendly_8cpp"/>
+      </node>
+      <node id="7">
+        <label>D:/University/ca-A00269349/Rogue/Macro.cpp</label>
+        <link refid="_macro_8cpp"/>
+      </node>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/Macro.h</label>
+        <link refid="_macro_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>D:/University/ca-A00269349/Rogue/MapManager.cpp</label>
+        <link refid="_map_manager_8cpp"/>
+      </node>
+      <node id="9">
+        <label>D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp</label>
+        <link refid="_non_playable_character_8cpp"/>
+      </node>
+      <node id="10">
+        <label>D:/University/ca-A00269349/Rogue/Player.cpp</label>
+        <link refid="_player_8cpp"/>
+      </node>
+      <node id="11">
+        <label>D:/University/ca-A00269349/Rogue/RandomItemGenerator.cpp</label>
+        <link refid="_random_item_generator_8cpp"/>
+      </node>
+      <node id="12">
+        <label>D:/University/ca-A00269349/Rogue/RandomWeapon.cpp</label>
+        <link refid="_random_weapon_8cpp"/>
+      </node>
+      <node id="13">
+        <label>D:/University/ca-A00269349/Rogue/TitleScreenManager.cpp</label>
+        <link refid="_title_screen_manager_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespace_macro">Macro</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="namespace_macro" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_macro" kindref="compound">Macro</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" kindref="member">GoToScreenPosition</ref>(</highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>C,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>R);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_macro_1a005f2a0ab24b96203446ec9a1a8b9a7f" kindref="member">RepositionWindow</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98" kindref="member">ReplaceAll</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>str,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>from,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>to);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_macro_1a5b7cf896002d88dc2e5ffede2f398709" kindref="member">Separate</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>from,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_macro_1a7192f07d19f55d7f8b863932a5078eab" kindref="member">GenerateRandomNumber</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_macro_1a3500becfc34f5b1df2d6d976fb5f5f86" kindref="member">GenerateRandomNumberWithoutZero</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/University/ca-A00269349/Rogue/Macro.h"/>
+  </compounddef>
+</doxygen>

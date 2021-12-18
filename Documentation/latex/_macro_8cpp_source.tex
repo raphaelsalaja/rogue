@@ -1,0 +1,70 @@
+\hypertarget{_macro_8cpp_source}{}\doxysection{Macro.\+cpp}
+\label{_macro_8cpp_source}\index{D:/University/ca-\/A00269349/Rogue/Macro.cpp@{D:/University/ca-\/A00269349/Rogue/Macro.cpp}}
+\mbox{\hyperlink{_macro_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_macro_8h}{Macro.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_console_window_manager_8h}{ConsoleWindowManager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include <time.h>}}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00005}00005 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00007}\mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{00007}} \textcolor{keywordtype}{void} \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(\textcolor{keywordtype}{short} C, \textcolor{keywordtype}{short} R)}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00008}00008 \{}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00009}00009     COORD xy;}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00010}00010     xy.X = C;}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00011}00011     xy.Y = R;}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00012}00012     SetConsoleCursorPosition(GetStdHandle(STD\_OUTPUT\_HANDLE), xy);}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00013}00013 \}}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00015}\mbox{\hyperlink{namespace_macro_a005f2a0ab24b96203446ec9a1a8b9a7f}{00015}} \textcolor{keywordtype}{void} \mbox{\hyperlink{namespace_macro_a005f2a0ab24b96203446ec9a1a8b9a7f}{Macro::RepositionWindow}}(\textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} height)}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00016}00016 \{}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00017}00017     HWND hConsoleWnd = GetConsoleWindow();}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00018}00018     HMONITOR hMonitor = MonitorFromWindow(hConsoleWnd, MONITOR\_DEFAULTTONEAREST);}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00019}00019     \textcolor{keywordflow}{if} (hMonitor)}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00020}00020     \{}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00021}00021         MONITORINFO info\{}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00022}00022             \textcolor{keyword}{sizeof}(info)}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00023}00023         \}; \textcolor{comment}{// set cbSize member and fill the rest with zero}}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00024}00024         \textcolor{keywordflow}{if} (::GetMonitorInfo(hMonitor, \&info))}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00025}00025         \{}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00026}00026             \textcolor{keywordtype}{int} x = (info.rcWork.left + info.rcWork.right) / 2 -\/ width / 2;}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00027}00027             \textcolor{keywordtype}{int} y = (info.rcWork.top + info.rcWork.bottom) / 2 -\/ height / 2;}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00028}00028             SetConsoleTitle(TEXT(\textcolor{stringliteral}{"{}ROGUE"{}}));}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00029}00029             SetWindowPos(hConsoleWnd, \textcolor{keyword}{nullptr}, x, y, width, height, SWP\_NOZORDER | SWP\_NOOWNERZORDER | SWP\_SHOWWINDOW);}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00030}00030         \}}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00031}00031     \}}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00032}00032 \}}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00034}\mbox{\hyperlink{namespace_macro_a9b30bbcb1b1dffca82735239b6e6da98}{00034}} \textcolor{keywordtype}{string} \mbox{\hyperlink{namespace_macro_a9b30bbcb1b1dffca82735239b6e6da98}{Macro::ReplaceAll}}(\textcolor{keywordtype}{string} str, \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& from, \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& to)}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00035}00035 \{}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00036}00036     \textcolor{keywordtype}{size\_t} start\_pos = 0;}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00037}00037     \textcolor{keywordflow}{while} ((start\_pos = str.find(from, start\_pos)) != string::npos)}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00038}00038     \{}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00039}00039         str.replace(start\_pos, from.length(), to);}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00040}00040         start\_pos += to.length(); \textcolor{comment}{// Handles case where 'to' is a substring of 'from'}}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00041}00041     \}}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00042}00042     \textcolor{keywordflow}{return} str;}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00043}00043 \}}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00045}\mbox{\hyperlink{namespace_macro_a5b7cf896002d88dc2e5ffede2f398709}{00045}} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_macro_a5b7cf896002d88dc2e5ffede2f398709}{Macro::Separate}}(\textcolor{keywordtype}{int} input, \textcolor{keywordtype}{char} from, \textcolor{keywordtype}{char} count)}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00046}00046 \{}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00047}00047     \textcolor{keywordtype}{int} d = 1;}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00048}00048     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < from; i++, d *= 10);}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00049}00049     \textcolor{keywordtype}{int} m = 1;}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00050}00050     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < count; i++, m *= 10);}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00051}00051     \textcolor{keywordflow}{return} ((input / d) \% m);}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00052}00052 \}}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00054}\mbox{\hyperlink{namespace_macro_a7192f07d19f55d7f8b863932a5078eab}{00054}} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_macro_a7192f07d19f55d7f8b863932a5078eab}{Macro::GenerateRandomNumber}}(\textcolor{keywordtype}{int} max)}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00055}00055 \{}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00056}00056     srand(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{unsigned}\textcolor{keyword}{>}(time(\textcolor{keyword}{nullptr})));}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00057}00057     \textcolor{keywordflow}{return} rand() \% max;}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00058}00058 \}}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00060}\mbox{\hyperlink{namespace_macro_a3500becfc34f5b1df2d6d976fb5f5f86}{00060}} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespace_macro_a3500becfc34f5b1df2d6d976fb5f5f86}{Macro::GenerateRandomNumberWithoutZero}}(\textcolor{keywordtype}{int} max)}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00061}00061 \{}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00062}00062     srand(time(\textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00063}00063     \textcolor{keywordflow}{return} (rand() \% max) + 1.0;}
+\DoxyCodeLine{\Hypertarget{_macro_8cpp_source_l00064}00064 \}}
+
+\end{DoxyCode}

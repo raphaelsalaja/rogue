@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_9ea593e49ba17a4cbae4e35f89501648" kind="dir">
+    <compoundname>D:/University/ca-A00269349/Rogue</compoundname>
+    <innerfile refid="_actions_manager_8cpp">ActionsManager.cpp</innerfile>
+    <innerfile refid="_armour_8h">Armour.h</innerfile>
+    <innerfile refid="_console_rendering_8cpp">ConsoleRendering.cpp</innerfile>
+    <innerfile refid="_console_rendering_8h">ConsoleRendering.h</innerfile>
+    <innerfile refid="_console_window_manager_8cpp">ConsoleWindowManager.cpp</innerfile>
+    <innerfile refid="_console_window_manager_8h">ConsoleWindowManager.h</innerfile>
+    <innerfile refid="_debug_8cpp">Debug.cpp</innerfile>
+    <innerfile refid="_debug_8h">Debug.h</innerfile>
+    <innerfile refid="_g_l_o_s_s_a_r_y_8cpp">GLOSSARY.cpp</innerfile>
+    <innerfile refid="_inventory_manager_8cpp">InventoryManager.cpp</innerfile>
+    <innerfile refid="_inventory_manager_8h">InventoryManager.h</innerfile>
+    <innerfile refid="_macro_8cpp">Macro.cpp</innerfile>
+    <innerfile refid="_macro_8h">Macro.h</innerfile>
+    <innerfile refid="_map_manager_8cpp">MapManager.cpp</innerfile>
+    <innerfile refid="_map_manager_8h">MapManager.h</innerfile>
+    <innerfile refid="_player_8cpp">Player.cpp</innerfile>
+    <innerfile refid="_player_8h">Player.h</innerfile>
+    <innerfile refid="_potion_8cpp">Potion.cpp</innerfile>
+    <innerfile refid="_potion_8h">Potion.h</innerfile>
+    <innerfile refid="_rogue_8cpp">Rogue.cpp</innerfile>
+    <innerfile refid="_stats_manager_8cpp">StatsManager.cpp</innerfile>
+    <innerfile refid="_stats_manager_8h">StatsManager.h</innerfile>
+    <innerfile refid="_title_screen_manager_8cpp">TitleScreenManager.cpp</innerfile>
+    <innerfile refid="_title_screen_manager_8h">TitleScreenManager.h</innerfile>
+    <innerfile refid="_user_interface_manger_8h">UserInterfaceManger.h</innerfile>
+    <innerfile refid="_weapon_8cpp">Weapon.cpp</innerfile>
+    <innerfile refid="_weapon_8h">Weapon.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/University/ca-A00269349/Rogue/"/>
+  </compounddef>
+</doxygen>

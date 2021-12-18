@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__combat_manager_8h_source" xml:lang="en-US">
+<title>CombatManager.h</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/CombatManager.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__combat_manager_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="__combat_manager_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__player_8h">Player.h</link>&quot;</emphasis>
+<anchor xml:id="__combat_manager_8h_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__enemy_8h">Enemy.h</link>&quot;</emphasis>
+<anchor xml:id="__combat_manager_8h_source_1l00004"/>00004 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_map_manager">MapManager</link>;
+<anchor xml:id="__combat_manager_8h_source_1l00005"/>00005 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_player">Player</link>;
+<anchor xml:id="__combat_manager_8h_source_1l00006"/>00006 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_enemy">Enemy</link>;
+<anchor xml:id="__combat_manager_8h_source_1l00007"/>00007 
+<anchor xml:id="__combat_manager_8h_source_1l00008"/><link linkend="_class_combat_manager">00008</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_combat_manager">CombatManager</link>
+<anchor xml:id="__combat_manager_8h_source_1l00009"/>00009 {
+<anchor xml:id="__combat_manager_8h_source_1l00010"/>00010 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="__combat_manager_8h_source_1l00011"/>00011 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80">Fight</link>(<link linkend="_class_player">Player</link>&amp;&#32;p,&#32;<link linkend="_class_map_manager">MapManager</link>&amp;&#32;m,&#32;<link linkend="_class_enemy">Enemy</link>&amp;&#32;e);
+<anchor xml:id="__combat_manager_8h_source_1l00012"/>00012 
+<anchor xml:id="__combat_manager_8h_source_1l00013"/>00013 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="__combat_manager_8h_source_1l00014"/><link linkend="_class_combat_manager_1a0f2db833cf98bb4a4ba946bf7ab11686">00014</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_combat_manager_1a0f2db833cf98bb4a4ba946bf7ab11686">sleep_timer</link>&#32;=&#32;5000;
+<anchor xml:id="__combat_manager_8h_source_1l00015"/>00015 
+<anchor xml:id="__combat_manager_8h_source_1l00016"/><link linkend="_class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fd">00016</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">enum</emphasis>&#32;<link linkend="_class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fd">TURN</link>
+<anchor xml:id="__combat_manager_8h_source_1l00017"/>00017 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__combat_manager_8h_source_1l00018"/><link linkend="_class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11">00018</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11">PLAYER</link>,
+<anchor xml:id="__combat_manager_8h_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b">ENEMY</link>
+<anchor xml:id="__combat_manager_8h_source_1l00020"/><link linkend="_class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b">00020</link> &#32;&#32;&#32;&#32;};
+<anchor xml:id="__combat_manager_8h_source_1l00021"/>00021 
+<anchor xml:id="__combat_manager_8h_source_1l00022"/><link linkend="_class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019">00022</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">enum</emphasis>&#32;<link linkend="_class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019">RESULTS</link>
+<anchor xml:id="__combat_manager_8h_source_1l00023"/>00023 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__combat_manager_8h_source_1l00024"/><link linkend="_class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954">00024</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954">PLAYER_DEAD</link>,
+<anchor xml:id="__combat_manager_8h_source_1l00025"/><link linkend="_class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c">00025</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c">ENEMY_DEAD</link>,
+<anchor xml:id="__combat_manager_8h_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ad523a0fd56212f42ab45a2a3d5d87b0c">STILL_ALIVE</link>
+<anchor xml:id="__combat_manager_8h_source_1l00027"/><link linkend="_class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ad523a0fd56212f42ab45a2a3d5d87b0c">00027</link> &#32;&#32;&#32;&#32;};
+<anchor xml:id="__combat_manager_8h_source_1l00028"/>00028 
+<anchor xml:id="__combat_manager_8h_source_1l00029"/><link linkend="_class_combat_manager_1a3c0b56cc5d4af6dde4aa585ebfd74f3e">00029</link> &#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fd">TURN</link>&#32;<link linkend="_class_combat_manager_1a3c0b56cc5d4af6dde4aa585ebfd74f3e">_TURN</link>&#32;=&#32;<link linkend="_class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b">ENEMY</link>;
+<anchor xml:id="__combat_manager_8h_source_1l00030"/><link linkend="_class_combat_manager_1a33cdc2357ba9ee866a38dcec4a10845f">00030</link> &#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019">RESULTS</link>&#32;<link linkend="_class_combat_manager_1a33cdc2357ba9ee866a38dcec4a10845f">_RESULTS</link>&#32;=&#32;<link linkend="_class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ad523a0fd56212f42ab45a2a3d5d87b0c">STILL_ALIVE</link>;
+<anchor xml:id="__combat_manager_8h_source_1l00031"/>00031 
+<anchor xml:id="__combat_manager_8h_source_1l00032"/>00032 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_combat_manager_1aa470a607a6d3d76cef5d62c8f312d513">SetTurn</link>(<link linkend="_class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fd">TURN</link>&#32;desired_turn);
+<anchor xml:id="__combat_manager_8h_source_1l00033"/>00033 
+<anchor xml:id="__combat_manager_8h_source_1l00034"/>00034 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_combat_manager_1a2f5d5d9a45933a6e234bc3154fd6f894">HitEnemy</link>(<link linkend="_class_enemy">Enemy</link>&amp;&#32;e,&#32;<link linkend="_class_player">Player</link>&amp;&#32;p);
+<anchor xml:id="__combat_manager_8h_source_1l00035"/>00035 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_combat_manager_1aa3041a8bdc3eeddce47ef1eb0cd93899">HitPlayer</link>(<link linkend="_class_enemy">Enemy</link>&amp;&#32;e,&#32;<link linkend="_class_player">Player</link>&amp;&#32;p);
+<anchor xml:id="__combat_manager_8h_source_1l00036"/>00036 
+<anchor xml:id="__combat_manager_8h_source_1l00037"/>00037 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73">PrintStatements</link>(<link linkend="_class_map_manager">MapManager</link>&amp;&#32;m,&#32;<link linkend="_class_enemy">Enemy</link>&amp;&#32;e,&#32;<link linkend="_class_player">Player</link>&amp;&#32;p,&#32;<emphasis role="keywordtype">int</emphasis>&#32;statements);
+<anchor xml:id="__combat_manager_8h_source_1l00038"/>00038 
+<anchor xml:id="__combat_manager_8h_source_1l00039"/>00039 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_combat_manager_1aec72d4fe1af9857010fb793735c145db">UpdateResults</link>(<link linkend="_class_enemy">Enemy</link>&amp;&#32;e,&#32;<link linkend="_class_player">Player</link>&amp;&#32;p);
+<anchor xml:id="__combat_manager_8h_source_1l00040"/>00040 
+<anchor xml:id="__combat_manager_8h_source_1l00041"/>00041 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_combat_manager_1a72df0ea85034f84597c1760d9af631af">SleepTimer</link>();
+<anchor xml:id="__combat_manager_8h_source_1l00042"/>00042 };
+</programlisting></section>

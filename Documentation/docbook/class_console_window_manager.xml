@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_console_window_manager" xml:lang="en-US">
+<title>ConsoleWindowManager Class Reference</title>
+<indexterm><primary>ConsoleWindowManager</primary></indexterm>
+<para>
+<computeroutput>#include &lt;ConsoleWindowManager.h&gt;</computeroutput>
+</para>
+Collaboration diagram for ConsoleWindowManager:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_window_manager__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543">COLORS</link> { 
+<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3">BLACK</link> = 0
+, <link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a0123e45b31a6caef6bee87987431ba29">DARK_BLUE</link> = 1
+, <link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ac7f09d6540d7f440678450da2e98291f">DARK_GREEN</link> = 2
+, <link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752">LIGHT_BLUE</link> = 3
+, 
+<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543adae46377de9e9accb9cb67221fbb2c36">DARK_RED</link> = 4
+, <link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e">MAGENTA</link> = 5
+, <link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aaf930b582883444109e9ef4104e75af5">ORANGE</link> = 6
+, <link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a760a27011eb2ba8d016475c828bd32b4">LIGHT_GRAY</link> = 7
+, 
+<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ab6b44fb822219788637b3cd88c7a0e4a">GRAY</link> = 8
+, <link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b2a4e6f58e1a7c9bcc98461ec6689f9">BLUE</link> = 9
+, <link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ae5c13df1cfc28fdc2c55a856085f5b8a">GREEN</link> = 10
+, <link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543af19a5b9192c1fa96a5ae253ab37c714b">CYAN</link> = 11
+, 
+<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a241238b2c88c156285680b898b7bca5f">RED</link> = 12
+, <link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ab53cb0396e1962612ea761ff12a9119b">PINK</link> = 13
+, <link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ac2f74f3c14dbbde9c81c3eb43ad652d8">YELLOW</link> = 14
+, <link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543abfc98f0b1d34e7a616e51ab38123d4dc">WHITE</link> = 15
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_console_window_manager_1aec3eb492b72b29b4b9c57d622b799e9c">BlankScreen</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_console_window_manager_1ac4c2a46e7019be00cd1691f786587797">HideConsoleCursor</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_console_window_manager_1a622c6a38370c75628b954f013436ecb9">SetWindowDisplay</link> (int width, int height)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_console_window_manager_1a04f302f741273b8c1ead23f11fb70e39">SetText</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213">SetConsoleWindowColor</link> (<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543">COLORS</link> fg, <link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543">COLORS</link> bg)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_console_window_manager_1abed5c169df20d3f830cc11b1dfbe4a6a">SetConsoleWindowRandomColor</link> (int random_color)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_console_window_manager_1a7994b8ccd83e4f0eecfa9c4c579b067b">RepositionWindow</link> (int width, int height)</para>
+</listitem>
+            <listitem><para>HANDLE <link linkend="_class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90">GetConsoleHandle</link> ()</para>
+</listitem>
+            <listitem><para>HWND <link linkend="_class_console_window_manager_1a13a64349bfa723a1c035752ea401ab2c">GetDesktopHandleWindow</link> ()</para>
+</listitem>
+            <listitem><para>HWND <link linkend="_class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d">GetConsoleHandleWindow</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>HANDLE <link linkend="_class_console_window_manager_1abdee4e17ebc10f03c5e74d45f8e4ed5c">HANDLE_CONSOLE</link></para>
+</listitem>
+            <listitem><para>HWND <link linkend="_class_console_window_manager_1a1cc7bac864b3fb93af536bdea526b908">HANDLE_WINDOW_DESKTOP</link></para>
+</listitem>
+            <listitem><para>HWND <link linkend="_class_console_window_manager_1acf76563de7c4c73f97bb0c8ffc1c461e">HANDLE_WINDOW_CONSOLE</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__console_window_manager_8h_source_1l00004">4</link> of file <link linkend="__console_window_manager_8h_source">ConsoleWindowManager.h</link>.</para>
+</section>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543"/><section>
+    <title>COLORS</title>
+<indexterm><primary>COLORS</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>COLORS</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543">ConsoleWindowManager::COLORS</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>BLACK</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>BLACK</secondary></indexterm>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3"/>BLACK</entry><entry></entry></row><row><entry><indexterm><primary>DARK_BLUE</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>DARK_BLUE</secondary></indexterm>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a0123e45b31a6caef6bee87987431ba29"/>DARK_BLUE</entry><entry></entry></row><row><entry><indexterm><primary>DARK_GREEN</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>DARK_GREEN</secondary></indexterm>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ac7f09d6540d7f440678450da2e98291f"/>DARK_GREEN</entry><entry></entry></row><row><entry><indexterm><primary>LIGHT_BLUE</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>LIGHT_BLUE</secondary></indexterm>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752"/>LIGHT_BLUE</entry><entry></entry></row><row><entry><indexterm><primary>DARK_RED</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>DARK_RED</secondary></indexterm>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543adae46377de9e9accb9cb67221fbb2c36"/>DARK_RED</entry><entry></entry></row><row><entry><indexterm><primary>MAGENTA</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>MAGENTA</secondary></indexterm>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e"/>MAGENTA</entry><entry></entry></row><row><entry><indexterm><primary>ORANGE</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>ORANGE</secondary></indexterm>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aaf930b582883444109e9ef4104e75af5"/>ORANGE</entry><entry></entry></row><row><entry><indexterm><primary>LIGHT_GRAY</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>LIGHT_GRAY</secondary></indexterm>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a760a27011eb2ba8d016475c828bd32b4"/>LIGHT_GRAY</entry><entry></entry></row><row><entry><indexterm><primary>GRAY</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>GRAY</secondary></indexterm>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ab6b44fb822219788637b3cd88c7a0e4a"/>GRAY</entry><entry></entry></row><row><entry><indexterm><primary>BLUE</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>BLUE</secondary></indexterm>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b2a4e6f58e1a7c9bcc98461ec6689f9"/>BLUE</entry><entry></entry></row><row><entry><indexterm><primary>GREEN</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>GREEN</secondary></indexterm>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ae5c13df1cfc28fdc2c55a856085f5b8a"/>GREEN</entry><entry></entry></row><row><entry><indexterm><primary>CYAN</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>CYAN</secondary></indexterm>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543af19a5b9192c1fa96a5ae253ab37c714b"/>CYAN</entry><entry></entry></row><row><entry><indexterm><primary>RED</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>RED</secondary></indexterm>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a241238b2c88c156285680b898b7bca5f"/>RED</entry><entry></entry></row><row><entry><indexterm><primary>PINK</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>PINK</secondary></indexterm>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ab53cb0396e1962612ea761ff12a9119b"/>PINK</entry><entry></entry></row><row><entry><indexterm><primary>YELLOW</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>YELLOW</secondary></indexterm>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ac2f74f3c14dbbde9c81c3eb43ad652d8"/>YELLOW</entry><entry></entry></row><row><entry><indexterm><primary>WHITE</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>WHITE</secondary></indexterm>
+<anchor xml:id="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543abfc98f0b1d34e7a616e51ab38123d4dc"/>WHITE</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+Definition at line <link linkend="__console_window_manager_8h_source_1l00007">7</link> of file <link linkend="__console_window_manager_8h_source">ConsoleWindowManager.h</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_window_manager_1l00008"/>00008 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_window_manager_1l00009"/>00009 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3">BLACK</link>&#32;=&#32;0,
+<anchor xml:id="_class_console_window_manager_1l00010"/>00010 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a0123e45b31a6caef6bee87987431ba29">DARK_BLUE</link>&#32;=&#32;1,
+<anchor xml:id="_class_console_window_manager_1l00011"/>00011 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ac7f09d6540d7f440678450da2e98291f">DARK_GREEN</link>&#32;=&#32;2,
+<anchor xml:id="_class_console_window_manager_1l00012"/>00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752">LIGHT_BLUE</link>&#32;=&#32;3,
+<anchor xml:id="_class_console_window_manager_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543adae46377de9e9accb9cb67221fbb2c36">DARK_RED</link>&#32;=&#32;4,
+<anchor xml:id="_class_console_window_manager_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e">MAGENTA</link>&#32;=&#32;5,
+<anchor xml:id="_class_console_window_manager_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aaf930b582883444109e9ef4104e75af5">ORANGE</link>&#32;=&#32;6,
+<anchor xml:id="_class_console_window_manager_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a760a27011eb2ba8d016475c828bd32b4">LIGHT_GRAY</link>&#32;=&#32;7,
+<anchor xml:id="_class_console_window_manager_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ab6b44fb822219788637b3cd88c7a0e4a">GRAY</link>&#32;=&#32;8,
+<anchor xml:id="_class_console_window_manager_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b2a4e6f58e1a7c9bcc98461ec6689f9">BLUE</link>&#32;=&#32;9,
+<anchor xml:id="_class_console_window_manager_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ae5c13df1cfc28fdc2c55a856085f5b8a">GREEN</link>&#32;=&#32;10,
+<anchor xml:id="_class_console_window_manager_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543af19a5b9192c1fa96a5ae253ab37c714b">CYAN</link>&#32;=&#32;11,
+<anchor xml:id="_class_console_window_manager_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a241238b2c88c156285680b898b7bca5f">RED</link>&#32;=&#32;12,
+<anchor xml:id="_class_console_window_manager_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ab53cb0396e1962612ea761ff12a9119b">PINK</link>&#32;=&#32;13,
+<anchor xml:id="_class_console_window_manager_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ac2f74f3c14dbbde9c81c3eb43ad652d8">YELLOW</link>&#32;=&#32;14,
+<anchor xml:id="_class_console_window_manager_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543abfc98f0b1d34e7a616e51ab38123d4dc">WHITE</link>&#32;=&#32;15
+<anchor xml:id="_class_console_window_manager_1l00025"/>00025 &#32;&#32;&#32;&#32;};
+</programlisting></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_console_window_manager_1aec3eb492b72b29b4b9c57d622b799e9c"/><section>
+    <title>BlankScreen()</title>
+<indexterm><primary>BlankScreen</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>BlankScreen</secondary></indexterm>
+<para><computeroutput>void ConsoleWindowManager::BlankScreen ( )</computeroutput></para><para>
+Definition at line <link linkend="__console_window_manager_8cpp_source_1l00018">18</link> of file <link linkend="__console_window_manager_8cpp_source">ConsoleWindowManager.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_window_manager_1l00019"/>00019 {
+<anchor xml:id="_class_console_window_manager_1l00020"/>00020 &#32;&#32;&#32;&#32;system(<emphasis role="stringliteral">&quot;CLS&quot;</emphasis>);
+<anchor xml:id="_class_console_window_manager_1l00021"/>00021 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_window_manager_aec3eb492b72b29b4b9c57d622b799e9c_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90"/><section>
+    <title>GetConsoleHandle()</title>
+<indexterm><primary>GetConsoleHandle</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>GetConsoleHandle</secondary></indexterm>
+<para><computeroutput>HANDLE ConsoleWindowManager::GetConsoleHandle ( )</computeroutput></para><para>
+Definition at line <link linkend="__console_window_manager_8cpp_source_1l00003">3</link> of file <link linkend="__console_window_manager_8cpp_source">ConsoleWindowManager.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_window_manager_1l00004"/>00004 {
+<anchor xml:id="_class_console_window_manager_1l00005"/>00005 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_console_window_manager_1abdee4e17ebc10f03c5e74d45f8e4ed5c">HANDLE_CONSOLE</link>&#32;=&#32;GetStdHandle(STD_OUTPUT_HANDLE);
+<anchor xml:id="_class_console_window_manager_1l00006"/>00006 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d"/><section>
+    <title>GetConsoleHandleWindow()</title>
+<indexterm><primary>GetConsoleHandleWindow</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>GetConsoleHandleWindow</secondary></indexterm>
+<para><computeroutput>HWND ConsoleWindowManager::GetConsoleHandleWindow ( )</computeroutput></para><para>
+Definition at line <link linkend="__console_window_manager_8cpp_source_1l00013">13</link> of file <link linkend="__console_window_manager_8cpp_source">ConsoleWindowManager.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_window_manager_1l00014"/>00014 {
+<anchor xml:id="_class_console_window_manager_1l00015"/>00015 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_console_window_manager_1acf76563de7c4c73f97bb0c8ffc1c461e">HANDLE_WINDOW_CONSOLE</link>&#32;=&#32;GetConsoleWindow();
+<anchor xml:id="_class_console_window_manager_1l00016"/>00016 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_window_manager_a33a11dc816bf4174a52c680090f80d9d_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_console_window_manager_1a13a64349bfa723a1c035752ea401ab2c"/><section>
+    <title>GetDesktopHandleWindow()</title>
+<indexterm><primary>GetDesktopHandleWindow</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>GetDesktopHandleWindow</secondary></indexterm>
+<para><computeroutput>HWND ConsoleWindowManager::GetDesktopHandleWindow ( )</computeroutput></para><para>
+Definition at line <link linkend="__console_window_manager_8cpp_source_1l00008">8</link> of file <link linkend="__console_window_manager_8cpp_source">ConsoleWindowManager.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_window_manager_1l00009"/>00009 {
+<anchor xml:id="_class_console_window_manager_1l00010"/>00010 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_console_window_manager_1a1cc7bac864b3fb93af536bdea526b908">HANDLE_WINDOW_DESKTOP</link>&#32;=&#32;GetDesktopWindow();
+<anchor xml:id="_class_console_window_manager_1l00011"/>00011 }
+</programlisting></section>
+<anchor xml:id="_class_console_window_manager_1ac4c2a46e7019be00cd1691f786587797"/><section>
+    <title>HideConsoleCursor()</title>
+<indexterm><primary>HideConsoleCursor</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>HideConsoleCursor</secondary></indexterm>
+<para><computeroutput>void ConsoleWindowManager::HideConsoleCursor ( )</computeroutput></para><para>
+Definition at line <link linkend="__console_window_manager_8cpp_source_1l00023">23</link> of file <link linkend="__console_window_manager_8cpp_source">ConsoleWindowManager.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_window_manager_1l00024"/>00024 {
+<anchor xml:id="_class_console_window_manager_1l00025"/>00025 &#32;&#32;&#32;&#32;CONSOLE_CURSOR_INFO&#32;CONSOLE_CURSOR_INFO_CONSOLE;
+<anchor xml:id="_class_console_window_manager_1l00026"/>00026 &#32;&#32;&#32;&#32;GetConsoleCursorInfo(<link linkend="_class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90">GetConsoleHandle</link>(),&#32;&amp;CONSOLE_CURSOR_INFO_CONSOLE);
+<anchor xml:id="_class_console_window_manager_1l00027"/>00027 &#32;&#32;&#32;&#32;CONSOLE_CURSOR_INFO_CONSOLE.bVisible&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_class_console_window_manager_1l00028"/>00028 &#32;&#32;&#32;&#32;SetConsoleCursorInfo(<link linkend="_class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90">GetConsoleHandle</link>(),&#32;&amp;CONSOLE_CURSOR_INFO_CONSOLE);
+<anchor xml:id="_class_console_window_manager_1l00029"/>00029 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_window_manager_ac4c2a46e7019be00cd1691f786587797_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_window_manager_ac4c2a46e7019be00cd1691f786587797_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_console_window_manager_1a7994b8ccd83e4f0eecfa9c4c579b067b"/><section>
+    <title>RepositionWindow()</title>
+<indexterm><primary>RepositionWindow</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>RepositionWindow</secondary></indexterm>
+<para><computeroutput>void ConsoleWindowManager::RepositionWindow (int width, int height)</computeroutput></para></section>
+<anchor xml:id="_class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213"/><section>
+    <title>SetConsoleWindowColor()</title>
+<indexterm><primary>SetConsoleWindowColor</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>SetConsoleWindowColor</secondary></indexterm>
+<para><computeroutput>void ConsoleWindowManager::SetConsoleWindowColor (<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543">COLORS</link> fg, <link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543">COLORS</link> bg)</computeroutput></para><para>
+Definition at line <link linkend="__console_window_manager_8cpp_source_1l00058">58</link> of file <link linkend="__console_window_manager_8cpp_source">ConsoleWindowManager.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_window_manager_1l00059"/>00059 {
+<anchor xml:id="_class_console_window_manager_1l00060"/>00060 &#32;&#32;&#32;&#32;SetConsoleTextAttribute(<link linkend="_class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90">GetConsoleHandle</link>(),&#32;fg&#32;+&#32;bg&#32;*&#32;16);
+<anchor xml:id="_class_console_window_manager_1l00061"/>00061 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_window_manager_af7015ed96cbd06f5261d671e62e15213_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_window_manager_af7015ed96cbd06f5261d671e62e15213_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_console_window_manager_1abed5c169df20d3f830cc11b1dfbe4a6a"/><section>
+    <title>SetConsoleWindowRandomColor()</title>
+<indexterm><primary>SetConsoleWindowRandomColor</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>SetConsoleWindowRandomColor</secondary></indexterm>
+<para><computeroutput>void ConsoleWindowManager::SetConsoleWindowRandomColor (int random_color)</computeroutput></para><para>
+Definition at line <link linkend="__console_window_manager_8cpp_source_1l00064">64</link> of file <link linkend="__console_window_manager_8cpp_source">ConsoleWindowManager.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_window_manager_1l00065"/>00065 {
+<anchor xml:id="_class_console_window_manager_1l00066"/>00066 &#32;&#32;&#32;&#32;SetConsoleTextAttribute(<link linkend="_class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90">GetConsoleHandle</link>(),&#32;random_color&#32;+&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3">BLACK</link>&#32;*&#32;16);
+<anchor xml:id="_class_console_window_manager_1l00067"/>00067 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_window_manager_abed5c169df20d3f830cc11b1dfbe4a6a_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_window_manager_abed5c169df20d3f830cc11b1dfbe4a6a_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_console_window_manager_1a04f302f741273b8c1ead23f11fb70e39"/><section>
+    <title>SetText()</title>
+<indexterm><primary>SetText</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>SetText</secondary></indexterm>
+<para><computeroutput>void ConsoleWindowManager::SetText ( )</computeroutput></para><para>
+Definition at line <link linkend="__console_window_manager_8cpp_source_1l00048">48</link> of file <link linkend="__console_window_manager_8cpp_source">ConsoleWindowManager.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_window_manager_1l00049"/>00049 {
+<anchor xml:id="_class_console_window_manager_1l00050"/>00050 &#32;&#32;&#32;&#32;CONSOLE_FONT_INFOEX&#32;CONSOLE_FONT&#32;=&#32;{0};
+<anchor xml:id="_class_console_window_manager_1l00051"/>00051 &#32;&#32;&#32;&#32;CONSOLE_FONT.cbSize&#32;=&#32;<emphasis role="keyword">sizeof</emphasis>&#32;CONSOLE_FONT;
+<anchor xml:id="_class_console_window_manager_1l00052"/>00052 &#32;&#32;&#32;&#32;CONSOLE_FONT.dwFontSize.X&#32;=&#32;8;
+<anchor xml:id="_class_console_window_manager_1l00053"/>00053 &#32;&#32;&#32;&#32;CONSOLE_FONT.dwFontSize.Y&#32;=&#32;12;
+<anchor xml:id="_class_console_window_manager_1l00054"/>00054 &#32;&#32;&#32;&#32;wcscpy_s(CONSOLE_FONT.FaceName,&#32;L<emphasis role="stringliteral">&quot;Terminal&quot;</emphasis>);
+<anchor xml:id="_class_console_window_manager_1l00055"/>00055 &#32;&#32;&#32;&#32;SetCurrentConsoleFontEx(<link linkend="_class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90">GetConsoleHandle</link>(),&#32;0,&#32;&amp;CONSOLE_FONT);
+<anchor xml:id="_class_console_window_manager_1l00056"/>00056 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_window_manager_a04f302f741273b8c1ead23f11fb70e39_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_window_manager_a04f302f741273b8c1ead23f11fb70e39_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_console_window_manager_1a622c6a38370c75628b954f013436ecb9"/><section>
+    <title>SetWindowDisplay()</title>
+<indexterm><primary>SetWindowDisplay</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>SetWindowDisplay</secondary></indexterm>
+<para><computeroutput>void ConsoleWindowManager::SetWindowDisplay (int width, int height)</computeroutput></para><para>
+Definition at line <link linkend="__console_window_manager_8cpp_source_1l00031">31</link> of file <link linkend="__console_window_manager_8cpp_source">ConsoleWindowManager.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_window_manager_1l00032"/>00032 {
+<anchor xml:id="_class_console_window_manager_1l00033"/>00033 &#32;&#32;&#32;&#32;HMONITOR&#32;HANDLE_MONITOR&#32;=&#32;MonitorFromWindow(<link linkend="_class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d">GetConsoleHandleWindow</link>(),&#32;MONITOR_DEFAULTTONEAREST);
+<anchor xml:id="_class_console_window_manager_1l00034"/>00034 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(HANDLE_MONITOR)
+<anchor xml:id="_class_console_window_manager_1l00035"/>00035 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_window_manager_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;MONITORINFO&#32;MONITOR_INFO{<emphasis role="keyword">sizeof</emphasis>(MONITOR_INFO)};
+<anchor xml:id="_class_console_window_manager_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(::GetMonitorInfo(HANDLE_MONITOR,&#32;&amp;MONITOR_INFO))
+<anchor xml:id="_class_console_window_manager_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_window_manager_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;x&#32;=&#32;(MONITOR_INFO.rcWork.left&#32;+&#32;MONITOR_INFO.rcWork.right)&#32;/&#32;2&#32;-&#32;width&#32;/&#32;2;
+<anchor xml:id="_class_console_window_manager_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;y&#32;=&#32;(MONITOR_INFO.rcWork.top&#32;+&#32;MONITOR_INFO.rcWork.bottom)&#32;/&#32;2&#32;-&#32;height&#32;/&#32;2;
+<anchor xml:id="_class_console_window_manager_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SetConsoleTitle(TEXT(<emphasis role="stringliteral">&quot;ROGUE&quot;</emphasis>));
+<anchor xml:id="_class_console_window_manager_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SetWindowPos(<link linkend="_class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d">GetConsoleHandleWindow</link>(),&#32;<emphasis role="keyword">nullptr</emphasis>,&#32;x,&#32;y,&#32;width,&#32;height,
+<anchor xml:id="_class_console_window_manager_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SWP_NOZORDER&#32;|&#32;SWP_NOOWNERZORDER&#32;|&#32;SWP_SHOWWINDOW);
+<anchor xml:id="_class_console_window_manager_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_window_manager_1l00045"/>00045 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_window_manager_1l00046"/>00046 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_window_manager_a622c6a38370c75628b954f013436ecb9_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_window_manager_a622c6a38370c75628b954f013436ecb9_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_console_window_manager_1abdee4e17ebc10f03c5e74d45f8e4ed5c"/><section>
+    <title>HANDLE_CONSOLE</title>
+<indexterm><primary>HANDLE_CONSOLE</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>HANDLE_CONSOLE</secondary></indexterm>
+<para><computeroutput>HANDLE ConsoleWindowManager::HANDLE_CONSOLE<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__console_window_manager_8h_source_1l00041">41</link> of file <link linkend="__console_window_manager_8h_source">ConsoleWindowManager.h</link>.</para>
+</section>
+<anchor xml:id="_class_console_window_manager_1acf76563de7c4c73f97bb0c8ffc1c461e"/><section>
+    <title>HANDLE_WINDOW_CONSOLE</title>
+<indexterm><primary>HANDLE_WINDOW_CONSOLE</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>HANDLE_WINDOW_CONSOLE</secondary></indexterm>
+<para><computeroutput>HWND ConsoleWindowManager::HANDLE_WINDOW_CONSOLE<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__console_window_manager_8h_source_1l00043">43</link> of file <link linkend="__console_window_manager_8h_source">ConsoleWindowManager.h</link>.</para>
+</section>
+<anchor xml:id="_class_console_window_manager_1a1cc7bac864b3fb93af536bdea526b908"/><section>
+    <title>HANDLE_WINDOW_DESKTOP</title>
+<indexterm><primary>HANDLE_WINDOW_DESKTOP</primary><secondary>ConsoleWindowManager</secondary></indexterm>
+<indexterm><primary>ConsoleWindowManager</primary><secondary>HANDLE_WINDOW_DESKTOP</secondary></indexterm>
+<para><computeroutput>HWND ConsoleWindowManager::HANDLE_WINDOW_DESKTOP<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__console_window_manager_8h_source_1l00042">42</link> of file <link linkend="__console_window_manager_8h_source">ConsoleWindowManager.h</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+D:/University/ca-A00269349/Rogue/<link linkend="__console_window_manager_8h">ConsoleWindowManager.h</link>D:/University/ca-A00269349/Rogue/<link linkend="__console_window_manager_8cpp">ConsoleWindowManager.cpp</link></section>
+</section>

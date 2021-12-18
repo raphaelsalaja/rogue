@@ -1,0 +1,197 @@
+.TH "TitleScreenManager" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TitleScreenManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <TitleScreenManager\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBWaitForInput\fP ()"
+.br
+.ti -1c
+.RI "void \fBLoadTitle\fP (int \fBwidth\fP, int \fBheight\fP, string input)"
+.br
+.ti -1c
+.RI "void \fBReadTitle\fP ()"
+.br
+.ti -1c
+.RI "void \fBPrintTitle\fP (int \fBwidth\fP, int \fBheight\fP, \fBConsoleWindowManager\fP &cw_manager)"
+.br
+.ti -1c
+.RI "void \fBRenderTitle\fP (\fBConsoleWindowManager\fP &cw_manager)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBon_title_screen\fP = true"
+.br
+.ti -1c
+.RI "char * \fBtitle_map\fP = nullptr"
+.br
+.ti -1c
+.RI "string \fBtitle_screen_file_contents\fP"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "const int \fBscreen_width\fP = 858"
+.br
+.ti -1c
+.RI "const int \fBscreen_height\fP = 300"
+.br
+.ti -1c
+.RI "int \fBwidth\fP = NULL"
+.br
+.ti -1c
+.RI "int \fBheight\fP = NULL"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB6\fP of file \fBTitleScreenManager\&.h\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void TitleScreenManager::LoadTitle (int width, int height, string input)"
+
+.PP
+Definition at line \fB27\fP of file \fBTitleScreenManager\&.cpp\fP\&.
+.PP
+.nf
+28 {
+29     for (int i = 0; i < width; i++)
+30     {
+31         for (int j = 0; j < height; j++)
+32         {
+33             title_map[i * height + j] = input\&.at(i * height + j);
+34         }
+35     }
+36 }
+.fi
+.SS "void TitleScreenManager::PrintTitle (int width, int height, \fBConsoleWindowManager\fP & cw_manager)"
+
+.PP
+Definition at line \fB63\fP of file \fBTitleScreenManager\&.cpp\fP\&.
+.PP
+.nf
+64 {
+65     srand(time(nullptr));
+66     int random_color = (rand() % 5) + 4;
+67     for (int i = 0; i < width; i++)
+68     {
+69         for (int j = 0; j < height; j++)
+70         {
+71             if (title_map[i * height + j] == '\n')
+72             {
+73                 random_color = (rand() % 15) + 1;
+74             }
+75             cw_manager\&.SetConsoleWindowRandomColor(random_color);
+76             cout << title_map[i * height + j];
+77         }
+78     }
+79 }
+.fi
+.SS "void TitleScreenManager::ReadTitle ()"
+
+.PP
+Definition at line \fB38\fP of file \fBTitleScreenManager\&.cpp\fP\&.
+.PP
+.nf
+39 {
+40     string str;
+41     title_screen_file_contents = "";
+42     ifstream file("TITLE_Rogue\&.txt");
+43     bool width_retrieved = false;
+44 
+45     while (getline(file, str))
+46     {
+47         title_screen_file_contents += str;
+48         title_screen_file_contents\&.push_back('\n');
+49         char current_char = title_screen_file_contents\&.at(title_screen_file_contents\&.length() - 1);
+50         if (current_char == '\n')
+51         {
+52             if (width_retrieved == false)
+53             {
+54                 width = title_screen_file_contents\&.length();
+55                 width_retrieved = true;
+56             }
+57             height++;
+58         }
+59     }
+60     title_map = new char[width * height + 1]{};
+61 }
+.fi
+.SS "void TitleScreenManager::RenderTitle (\fBConsoleWindowManager\fP & cw_manager)"
+
+.PP
+Definition at line \fB81\fP of file \fBTitleScreenManager\&.cpp\fP\&.
+.PP
+.nf
+82 {
+83     RepositionWindow(screen_width, screen_height);
+84     ReadTitle();
+85     LoadTitle(width, height, title_screen_file_contents);
+86     PrintTitle(width, height, cw_manager);
+87     WaitForInput();
+88 }
+.fi
+.SS "void TitleScreenManager::WaitForInput ()"
+
+.PP
+Definition at line \fB15\fP of file \fBTitleScreenManager\&.cpp\fP\&.
+.PP
+.nf
+16 {
+17     while (on_title_screen)
+18     {
+19         GoToScreenPosition(0, height / 2);
+20         if (GetKeyState(VK_RETURN) & 0x8000)
+21         {
+22             on_title_screen = false;
+23         }
+24     }
+25 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "int TitleScreenManager::height = NULL\fC [private]\fP"
+
+.PP
+Definition at line \fB24\fP of file \fBTitleScreenManager\&.h\fP\&.
+.SS "bool TitleScreenManager::on_title_screen = true"
+
+.PP
+Definition at line \fB9\fP of file \fBTitleScreenManager\&.h\fP\&.
+.SS "const int TitleScreenManager::screen_height = 300\fC [private]\fP"
+
+.PP
+Definition at line \fB22\fP of file \fBTitleScreenManager\&.h\fP\&.
+.SS "const int TitleScreenManager::screen_width = 858\fC [private]\fP"
+
+.PP
+Definition at line \fB21\fP of file \fBTitleScreenManager\&.h\fP\&.
+.SS "char* TitleScreenManager::title_map = nullptr"
+
+.PP
+Definition at line \fB11\fP of file \fBTitleScreenManager\&.h\fP\&.
+.SS "string TitleScreenManager::title_screen_file_contents"
+
+.PP
+Definition at line \fB13\fP of file \fBTitleScreenManager\&.h\fP\&.
+.SS "int TitleScreenManager::width = NULL\fC [private]\fP"
+
+.PP
+Definition at line \fB23\fP of file \fBTitleScreenManager\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

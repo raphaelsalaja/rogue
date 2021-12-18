@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_random_weapon_generator" kind="class" language="C++" prot="public">
+    <compoundname>RandomWeaponGenerator</compoundname>
+    <includes refid="_random_weapon_generator_8h" local="no">RandomWeaponGenerator.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_random_weapon_generator_1a2c168cdf90bbfd3cabe6e7ef8c22ac1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RandomWeaponGenerator::RandomWeaponGenerator</definition>
+        <argsstring>()</argsstring>
+        <name>RandomWeaponGenerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomWeaponGenerator.h" line="9" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_random_weapon_generator_1a348e766a0ea955644359f288069d8697" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RandomWeaponGenerator::~RandomWeaponGenerator</definition>
+        <argsstring>()</argsstring>
+        <name>~RandomWeaponGenerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomWeaponGenerator.h" line="10" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>RandomWeaponGenerator</label>
+        <link refid="class_random_weapon_generator"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/University/ca-A00269349/Rogue/RandomWeaponGenerator.h" line="6" column="1" bodyfile="D:/University/ca-A00269349/Rogue/RandomWeaponGenerator.h" bodystart="7" bodyend="11"/>
+    <listofallmembers>
+      <member refid="class_random_weapon_generator_1a2c168cdf90bbfd3cabe6e7ef8c22ac1d" prot="public" virt="non-virtual"><scope>RandomWeaponGenerator</scope><name>RandomWeaponGenerator</name></member>
+      <member refid="class_random_weapon_generator_1a348e766a0ea955644359f288069d8697" prot="public" virt="non-virtual"><scope>RandomWeaponGenerator</scope><name>~RandomWeaponGenerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

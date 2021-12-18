@@ -1,0 +1,12 @@
+<map id="NonPlayableCharacter::GetHealth" name="NonPlayableCharacter::GetHealth">
+<area shape="rect" id="node1" title=" " alt="" coords="801,81,1019,108"/>
+<area shape="rect" id="node2" href="$class_combat_manager.html#a2f5d5d9a45933a6e234bc3154fd6f894" title=" " alt="" coords="553,5,735,32"/>
+<area shape="rect" id="node6" href="$class_enemy.html#ac7ed9a6bf787591c189fdc9799f85e7c" title=" " alt="" coords="575,157,713,184"/>
+<area shape="rect" id="node9" href="$class_combat_manager.html#a81d053576ebaa53529fa9c6c8280ae73" title=" " alt="" coords="535,56,753,83"/>
+<area shape="rect" id="node10" href="$class_combat_manager.html#aec72d4fe1af9857010fb793735c145db" title=" " alt="" coords="539,107,749,133"/>
+<area shape="rect" id="node3" href="$class_combat_manager.html#a51e91e52ad5e5de28ffc17ee50af5c80" title=" " alt="" coords="322,60,477,87"/>
+<area shape="rect" id="node4" href="$class_player.html#a459cda6070754195650bd10e0db43710" title=" " alt="" coords="117,63,251,89"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,95,56,121"/>
+<area shape="rect" id="node7" href="$class_player.html#a4e306abcd8bd537e80b89563ad77275c" title=" " alt="" coords="312,132,487,159"/>
+<area shape="rect" id="node8" href="$class_player.html#a848f89637b84d9692c96fc75cfa434eb" title=" " alt="" coords="104,120,264,147"/>
+</map>

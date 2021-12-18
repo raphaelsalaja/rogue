@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__generic_friendly_8cpp_source" xml:lang="en-US">
+<title>GenericFriendly.cpp</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/GenericFriendly.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__generic_friendly_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__generic_friendly_8h">GenericFriendly.h</link>&quot;</emphasis>
+<anchor xml:id="__generic_friendly_8cpp_source_1l00002"/>00002 
+<anchor xml:id="__generic_friendly_8cpp_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+<anchor xml:id="__generic_friendly_8cpp_source_1l00004"/>00004 
+<anchor xml:id="__generic_friendly_8cpp_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__macro_8h">Macro.h</link>&quot;</emphasis>
+<anchor xml:id="__generic_friendly_8cpp_source_1l00006"/>00006 
+<anchor xml:id="__generic_friendly_8cpp_source_1l00007"/><link linkend="_class_generic_friendly_1a2e643ee12c7b86ac61f1d11439152b2b">00007</link> <emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_generic_friendly_1a2e643ee12c7b86ac61f1d11439152b2b">GenericFriendly::GetMessage</link>()
+<anchor xml:id="__generic_friendly_8cpp_source_1l00008"/>00008 {
+<anchor xml:id="__generic_friendly_8cpp_source_1l00009"/>00009 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3">message</link>;
+<anchor xml:id="__generic_friendly_8cpp_source_1l00010"/>00010 }
+<anchor xml:id="__generic_friendly_8cpp_source_1l00011"/>00011 
+<anchor xml:id="__generic_friendly_8cpp_source_1l00012"/><link linkend="_class_generic_friendly_1a25b0d8bf58615b603725dfb44a7bd31f">00012</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_generic_friendly_1a25b0d8bf58615b603725dfb44a7bd31f">GenericFriendly::SetNamesArray</link>()
+<anchor xml:id="__generic_friendly_8cpp_source_1l00013"/>00013 {
+<anchor xml:id="__generic_friendly_8cpp_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;array_size&#32;=&#32;20;
+<anchor xml:id="__generic_friendly_8cpp_source_1l00015"/>00015 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;index&#32;=&#32;0;
+<anchor xml:id="__generic_friendly_8cpp_source_1l00016"/>00016 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;current_line;
+<anchor xml:id="__generic_friendly_8cpp_source_1l00017"/>00017 &#32;&#32;&#32;&#32;ifstream&#32;myfile(<emphasis role="stringliteral">&quot;NPC_PassiveNames.txt&quot;</emphasis>);
+<anchor xml:id="__generic_friendly_8cpp_source_1l00018"/>00018 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(myfile.is_open())
+<anchor xml:id="__generic_friendly_8cpp_source_1l00019"/>00019 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__generic_friendly_8cpp_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(!myfile.eof())
+<anchor xml:id="__generic_friendly_8cpp_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__generic_friendly_8cpp_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;getline(myfile,&#32;current_line);
+<anchor xml:id="__generic_friendly_8cpp_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a7e5848d6face873445553e3731da84be">name_array</link>[index]&#32;=&#32;current_line;
+<anchor xml:id="__generic_friendly_8cpp_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;index++;
+<anchor xml:id="__generic_friendly_8cpp_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__generic_friendly_8cpp_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;myfile.close();
+<anchor xml:id="__generic_friendly_8cpp_source_1l00027"/>00027 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__generic_friendly_8cpp_source_1l00028"/>00028 }
+<anchor xml:id="__generic_friendly_8cpp_source_1l00029"/>00029 
+<anchor xml:id="__generic_friendly_8cpp_source_1l00030"/><link linkend="_class_generic_friendly_1abc234ce189ecbe2dd67798367a478ec6">00030</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_generic_friendly_1abc234ce189ecbe2dd67798367a478ec6">GenericFriendly::SetMessages</link>()
+<anchor xml:id="__generic_friendly_8cpp_source_1l00031"/>00031 {
+<anchor xml:id="__generic_friendly_8cpp_source_1l00032"/>00032 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;array_size&#32;=&#32;20;
+<anchor xml:id="__generic_friendly_8cpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;index&#32;=&#32;0;
+<anchor xml:id="__generic_friendly_8cpp_source_1l00034"/>00034 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;current_line;
+<anchor xml:id="__generic_friendly_8cpp_source_1l00035"/>00035 &#32;&#32;&#32;&#32;ifstream&#32;myfile(<emphasis role="stringliteral">&quot;NPC_Messages.txt&quot;</emphasis>);
+<anchor xml:id="__generic_friendly_8cpp_source_1l00036"/>00036 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(myfile.is_open())
+<anchor xml:id="__generic_friendly_8cpp_source_1l00037"/>00037 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__generic_friendly_8cpp_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(!myfile.eof())
+<anchor xml:id="__generic_friendly_8cpp_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__generic_friendly_8cpp_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;getline(myfile,&#32;current_line);
+<anchor xml:id="__generic_friendly_8cpp_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_generic_friendly_1a1da9785ab879ae2c7ab351b6a446a01a">messages_array</link>[index]&#32;=&#32;current_line;
+<anchor xml:id="__generic_friendly_8cpp_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;index++;
+<anchor xml:id="__generic_friendly_8cpp_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__generic_friendly_8cpp_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;myfile.close();
+<anchor xml:id="__generic_friendly_8cpp_source_1l00045"/>00045 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__generic_friendly_8cpp_source_1l00046"/>00046 }
+<anchor xml:id="__generic_friendly_8cpp_source_1l00047"/>00047 
+<anchor xml:id="__generic_friendly_8cpp_source_1l00048"/><link linkend="_class_generic_friendly_1a495283c40fe995eafc8209c32303b14d">00048</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_generic_friendly_1a495283c40fe995eafc8209c32303b14d">GenericFriendly::SetPassive</link>()
+<anchor xml:id="__generic_friendly_8cpp_source_1l00049"/>00049 {
+<anchor xml:id="__generic_friendly_8cpp_source_1l00050"/>00050 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000">passive</link>&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="__generic_friendly_8cpp_source_1l00051"/>00051 }
+<anchor xml:id="__generic_friendly_8cpp_source_1l00052"/>00052 
+<anchor xml:id="__generic_friendly_8cpp_source_1l00053"/><link linkend="_class_generic_friendly_1af024c04814e88cb748cd4c21aad5589d">00053</link> <link linkend="_class_generic_friendly_1af024c04814e88cb748cd4c21aad5589d">GenericFriendly::GenericFriendly</link>(<emphasis role="keywordtype">int</emphasis>&#32;position)
+<anchor xml:id="__generic_friendly_8cpp_source_1l00054"/>00054 {
+<anchor xml:id="__generic_friendly_8cpp_source_1l00055"/>00055 &#32;&#32;&#32;&#32;<link linkend="_class_generic_friendly_1a495283c40fe995eafc8209c32303b14d">GenericFriendly::SetPassive</link>();
+<anchor xml:id="__generic_friendly_8cpp_source_1l00056"/>00056 &#32;&#32;&#32;&#32;<link linkend="_class_generic_friendly_1a25b0d8bf58615b603725dfb44a7bd31f">GenericFriendly::SetNamesArray</link>();
+<anchor xml:id="__generic_friendly_8cpp_source_1l00057"/>00057 
+<anchor xml:id="__generic_friendly_8cpp_source_1l00058"/>00058 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e">SetPosition</link>(position,&#32;position);
+<anchor xml:id="__generic_friendly_8cpp_source_1l00059"/>00059 
+<anchor xml:id="__generic_friendly_8cpp_source_1l00060"/>00060 &#32;&#32;&#32;&#32;<link linkend="_class_generic_friendly_1abc234ce189ecbe2dd67798367a478ec6">SetMessages</link>();
+<anchor xml:id="__generic_friendly_8cpp_source_1l00061"/>00061 &#32;&#32;&#32;&#32;<link linkend="_class_generic_friendly_1aa34e4c712d03f91ea3069dd007d91366">SetRandomMessage</link>();
+<anchor xml:id="__generic_friendly_8cpp_source_1l00062"/>00062 }
+<anchor xml:id="__generic_friendly_8cpp_source_1l00063"/>00063 
+<anchor xml:id="__generic_friendly_8cpp_source_1l00064"/><link linkend="_class_generic_friendly_1aa34e4c712d03f91ea3069dd007d91366">00064</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_generic_friendly_1aa34e4c712d03f91ea3069dd007d91366">GenericFriendly::SetRandomMessage</link>()
+<anchor xml:id="__generic_friendly_8cpp_source_1l00065"/>00065 {
+<anchor xml:id="__generic_friendly_8cpp_source_1l00066"/>00066 &#32;&#32;&#32;&#32;<link linkend="_class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3">message</link>&#32;=&#32;<link linkend="_class_generic_friendly_1a1da9785ab879ae2c7ab351b6a446a01a">messages_array</link>[<link linkend="_namespace_macro_1a7192f07d19f55d7f8b863932a5078eab">Macro::GenerateRandomNumber</link>(<link linkend="_class_generic_friendly_1a1da9785ab879ae2c7ab351b6a446a01a">messages_array</link>-&gt;length()&#32;-&#32;2)];
+<anchor xml:id="__generic_friendly_8cpp_source_1l00067"/>00067 }
+<anchor xml:id="__generic_friendly_8cpp_source_1l00068"/>00068 
+<anchor xml:id="__generic_friendly_8cpp_source_1l00069"/><link linkend="_class_generic_friendly_1adb5700625348a3c03f4623c6b3f1519b">00069</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_generic_friendly_1adb5700625348a3c03f4623c6b3f1519b">GenericFriendly::PrintMessage</link>(<link linkend="_class_map_manager">MapManager</link>&amp;&#32;m)
+<anchor xml:id="__generic_friendly_8cpp_source_1l00070"/>00070 {
+<anchor xml:id="__generic_friendly_8cpp_source_1l00071"/>00071 &#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">Macro::GoToScreenPosition</link>(45,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;3);
+<anchor xml:id="__generic_friendly_8cpp_source_1l00072"/>00072 
+<anchor xml:id="__generic_friendly_8cpp_source_1l00073"/>00073 &#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<link linkend="_class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3">message</link>;
+<anchor xml:id="__generic_friendly_8cpp_source_1l00074"/>00074 &#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">Macro::GoToScreenPosition</link>(45,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;6);
+<anchor xml:id="__generic_friendly_8cpp_source_1l00075"/>00075 
+<anchor xml:id="__generic_friendly_8cpp_source_1l00076"/>00076 &#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;1:HEALTH&#32;2:SHIELD&#32;3:MAGIC&quot;</emphasis>;
+<anchor xml:id="__generic_friendly_8cpp_source_1l00077"/>00077 }
+</programlisting></section>

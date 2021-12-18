@@ -1,0 +1,206 @@
+\hypertarget{class_random_weapon}{}\doxysection{Random\+Weapon Class Reference}
+\label{class_random_weapon}\index{RandomWeapon@{RandomWeapon}}
+
+
+{\ttfamily \#include $<$Random\+Weapon.\+h$>$}
+
+
+
+Inheritance diagram for Random\+Weapon\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_random_weapon__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Random\+Weapon\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_random_weapon__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_random_weapon_a69377a159321fc074496c769271fcb30}{Random\+Weapon}} ()
+\item 
+\mbox{\hyperlink{class_random_weapon_a69c4548b15e96f6682697ee0f79e1893}{$\sim$\+Random\+Weapon}} ()
+\item 
+void \mbox{\hyperlink{class_random_weapon_aea0b4d6a59c972b64ed00ba7b7894d5c}{Set\+Type}} (int choice) override
+\item 
+void \mbox{\hyperlink{class_random_weapon_ae9993590b69800be2b76a618fc5651f8}{Set\+Item\+Names}} (string file\+\_\+name) override
+\item 
+void \mbox{\hyperlink{class_random_weapon_a48fd5758c4c65e266d3ba9bfe3e6c90b}{Generate\+Random\+Weapon}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{class_random_weapon_a498bfb916d002b8f31c6e84fc70fc6ff}{symbol}} = \textquotesingle{}W\textquotesingle{}
+\item 
+string \mbox{\hyperlink{class_random_weapon_a03eb992d360d55a4f96eea49e0757977}{weapon\+\_\+types}} \mbox{[}5\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_random_weapon_8h_source_l00004}{4}} of file \mbox{\hyperlink{_random_weapon_8h_source}{Random\+Weapon.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_random_weapon_a69377a159321fc074496c769271fcb30}\label{class_random_weapon_a69377a159321fc074496c769271fcb30}} 
+\index{RandomWeapon@{RandomWeapon}!RandomWeapon@{RandomWeapon}}
+\index{RandomWeapon@{RandomWeapon}!RandomWeapon@{RandomWeapon}}
+\doxysubsubsection{\texorpdfstring{RandomWeapon()}{RandomWeapon()}}
+{\footnotesize\ttfamily Random\+Weapon\+::\+Random\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_random_weapon_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{_random_weapon_8cpp_source}{Random\+Weapon.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00010}00010 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_random_weapon_a69c4548b15e96f6682697ee0f79e1893}\label{class_random_weapon_a69c4548b15e96f6682697ee0f79e1893}} 
+\index{RandomWeapon@{RandomWeapon}!````~RandomWeapon@{$\sim$RandomWeapon}}
+\index{````~RandomWeapon@{$\sim$RandomWeapon}!RandomWeapon@{RandomWeapon}}
+\doxysubsubsection{\texorpdfstring{$\sim$RandomWeapon()}{~RandomWeapon()}}
+{\footnotesize\ttfamily Random\+Weapon\+::$\sim$\+Random\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_random_weapon_a48fd5758c4c65e266d3ba9bfe3e6c90b}\label{class_random_weapon_a48fd5758c4c65e266d3ba9bfe3e6c90b}} 
+\index{RandomWeapon@{RandomWeapon}!GenerateRandomWeapon@{GenerateRandomWeapon}}
+\index{GenerateRandomWeapon@{GenerateRandomWeapon}!RandomWeapon@{RandomWeapon}}
+\doxysubsubsection{\texorpdfstring{GenerateRandomWeapon()}{GenerateRandomWeapon()}}
+{\footnotesize\ttfamily void Random\+Weapon\+::\+Generate\+Random\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_random_weapon_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{_random_weapon_8cpp_source}{Random\+Weapon.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00037}00037 \{}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00038}00038     \mbox{\hyperlink{class_random_item_generator_afa526acb6d33fca117a7d741f23877a0}{CreateItem}}(\mbox{\hyperlink{class_random_weapon_a498bfb916d002b8f31c6e84fc70fc6ff}{symbol}}, \mbox{\hyperlink{class_random_weapon_a03eb992d360d55a4f96eea49e0757977}{weapon\_types}}-\/>length());}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00039}00039 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_random_weapon_a48fd5758c4c65e266d3ba9bfe3e6c90b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_random_weapon_ae9993590b69800be2b76a618fc5651f8}\label{class_random_weapon_ae9993590b69800be2b76a618fc5651f8}} 
+\index{RandomWeapon@{RandomWeapon}!SetItemNames@{SetItemNames}}
+\index{SetItemNames@{SetItemNames}!RandomWeapon@{RandomWeapon}}
+\doxysubsubsection{\texorpdfstring{SetItemNames()}{SetItemNames()}}
+{\footnotesize\ttfamily void Random\+Weapon\+::\+Set\+Item\+Names (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_random_item_generator_a3816c88713a59914f16f50d29245b2d7}{Random\+Item\+Generator}}.
+
+
+
+Definition at line \mbox{\hyperlink{_random_weapon_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{_random_weapon_8cpp_source}{Random\+Weapon.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00018}00018 \{}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00019}00019     \textcolor{keywordtype}{int} index = 0;}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00020}00020     \textcolor{keywordtype}{string} line;}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00021}00021     ifstream myfile(file\_name);}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00022}00022     \textcolor{keywordflow}{if} (myfile.is\_open())}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00023}00023     \{}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00024}00024         \textcolor{keywordflow}{while} (!myfile.eof())}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00025}00025         \{}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00026}00026             getline(myfile, line);}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00027}00027             \mbox{\hyperlink{class_random_item_generator_a456d04a342662178e5d17e86312bfb6c}{ITEM\_TYPES}}[index] = line;}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00028}00028             cout << \mbox{\hyperlink{class_random_item_generator_a456d04a342662178e5d17e86312bfb6c}{ITEM\_TYPES}}[index] << endl;}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00029}00029             index++;}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00030}00030         \}}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00031}00031         myfile.close();}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00032}00032     \}}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00033}00033     \textcolor{keywordflow}{else} \{ cout << \textcolor{stringliteral}{"{}FILE CANNOT BE OPENED"{}}; \}}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00034}00034 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_random_weapon_aea0b4d6a59c972b64ed00ba7b7894d5c}\label{class_random_weapon_aea0b4d6a59c972b64ed00ba7b7894d5c}} 
+\index{RandomWeapon@{RandomWeapon}!SetType@{SetType}}
+\index{SetType@{SetType}!RandomWeapon@{RandomWeapon}}
+\doxysubsubsection{\texorpdfstring{SetType()}{SetType()}}
+{\footnotesize\ttfamily void Random\+Weapon\+::\+Set\+Type (\begin{DoxyParamCaption}\item[{int}]{choice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_random_item_generator_a76d898718b27df8a3c5be2ccaf3efdc5}{Random\+Item\+Generator}}.
+
+
+
+Definition at line \mbox{\hyperlink{_random_weapon_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{_random_weapon_8cpp_source}{Random\+Weapon.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00013}00013 \{}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00014}00014     \mbox{\hyperlink{class_random_item_generator_a375a42a9160dd1ff376b4408e2b03629}{type}} = \mbox{\hyperlink{namespace_macro_a7192f07d19f55d7f8b863932a5078eab}{Macro::GenerateRandomNumber}}(\mbox{\hyperlink{class_random_weapon_a03eb992d360d55a4f96eea49e0757977}{weapon\_types}}-\/>length());}
+\DoxyCodeLine{\Hypertarget{class_random_weapon_l00015}00015 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_random_weapon_aea0b4d6a59c972b64ed00ba7b7894d5c_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_random_weapon_a498bfb916d002b8f31c6e84fc70fc6ff}\label{class_random_weapon_a498bfb916d002b8f31c6e84fc70fc6ff}} 
+\index{RandomWeapon@{RandomWeapon}!symbol@{symbol}}
+\index{symbol@{symbol}!RandomWeapon@{RandomWeapon}}
+\doxysubsubsection{\texorpdfstring{symbol}{symbol}}
+{\footnotesize\ttfamily char Random\+Weapon\+::symbol = \textquotesingle{}W\textquotesingle{}}
+
+
+
+Definition at line \mbox{\hyperlink{_random_weapon_8h_source_l00014}{14}} of file \mbox{\hyperlink{_random_weapon_8h_source}{Random\+Weapon.\+h}}.
+
+\mbox{\Hypertarget{class_random_weapon_a03eb992d360d55a4f96eea49e0757977}\label{class_random_weapon_a03eb992d360d55a4f96eea49e0757977}} 
+\index{RandomWeapon@{RandomWeapon}!weapon\_types@{weapon\_types}}
+\index{weapon\_types@{weapon\_types}!RandomWeapon@{RandomWeapon}}
+\doxysubsubsection{\texorpdfstring{weapon\_types}{weapon\_types}}
+{\footnotesize\ttfamily string Random\+Weapon\+::weapon\+\_\+types\mbox{[}5\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}SWORD"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}DUAL SWORD"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}SPEAR"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}GREAT SWORD"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}KNIFE"{}}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_random_weapon_8h_source_l00016}{16}} of file \mbox{\hyperlink{_random_weapon_8h_source}{Random\+Weapon.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_random_weapon_8h}{Random\+Weapon.\+h}}\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_random_weapon_8cpp}{Random\+Weapon.\+cpp}}\end{DoxyCompactItemize}

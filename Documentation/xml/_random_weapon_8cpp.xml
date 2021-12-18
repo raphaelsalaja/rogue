@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_random_weapon_8cpp" kind="file" language="C++">
+    <compoundname>RandomWeapon.cpp</compoundname>
+    <includes refid="_random_weapon_8h" local="yes">RandomWeapon.h</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">iostream</includes>
+    <includes refid="_macro_8h" local="yes">Macro.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>Macro.h</label>
+        <link refid="_macro_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RandomItemGenerator.h</label>
+        <link refid="_random_item_generator_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/RandomWeapon.cpp</label>
+        <link refid="_random_weapon_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RandomWeapon.h</label>
+        <link refid="_random_weapon_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>fstream</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_random_weapon_8h" kindref="compound">RandomWeapon.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_macro_8h" kindref="compound">Macro.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_random_weapon_1a69377a159321fc074496c769271fcb30" refkind="member"><highlight class="normal"><ref refid="class_random_weapon_1a69377a159321fc074496c769271fcb30" kindref="member">RandomWeapon::RandomWeapon</ref>()</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_random_weapon_1aea0b4d6a59c972b64ed00ba7b7894d5c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_random_weapon_1aea0b4d6a59c972b64ed00ba7b7894d5c" kindref="member">RandomWeapon::SetType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>choice)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_random_item_generator_1a375a42a9160dd1ff376b4408e2b03629" kindref="member">type</ref><sp/>=<sp/><ref refid="namespace_macro_1a7192f07d19f55d7f8b863932a5078eab" kindref="member">Macro::GenerateRandomNumber</ref>(<ref refid="class_random_weapon_1a03eb992d360d55a4f96eea49e0757977" kindref="member">weapon_types</ref>-&gt;length());</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_random_weapon_1ae9993590b69800be2b76a618fc5651f8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_random_weapon_1ae9993590b69800be2b76a618fc5651f8" kindref="member">RandomWeapon::SetItemNames</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>file_name)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>line;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>ifstream<sp/>myfile(file_name);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(myfile.is_open())</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!myfile.eof())</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getline(myfile,<sp/>line);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_random_item_generator_1a456d04a342662178e5d17e86312bfb6c" kindref="member">ITEM_TYPES</ref>[index]<sp/>=<sp/>line;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="class_random_item_generator_1a456d04a342662178e5d17e86312bfb6c" kindref="member">ITEM_TYPES</ref>[index]<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index++;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myfile.close();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;FILE<sp/>CANNOT<sp/>BE<sp/>OPENED&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="class_random_weapon_1a48fd5758c4c65e266d3ba9bfe3e6c90b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_random_weapon_1a48fd5758c4c65e266d3ba9bfe3e6c90b" kindref="member">RandomWeapon::GenerateRandomWeapon</ref>()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0" kindref="member">CreateItem</ref>(<ref refid="class_random_weapon_1a498bfb916d002b8f31c6e84fc70fc6ff" kindref="member">symbol</ref>,<sp/><ref refid="class_random_weapon_1a03eb992d360d55a4f96eea49e0757977" kindref="member">weapon_types</ref>-&gt;length());</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/University/ca-A00269349/Rogue/RandomWeapon.cpp"/>
+  </compounddef>
+</doxygen>

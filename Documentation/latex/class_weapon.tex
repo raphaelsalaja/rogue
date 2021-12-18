@@ -1,0 +1,243 @@
+\hypertarget{class_weapon}{}\doxysection{Weapon Class Reference}
+\label{class_weapon}\index{Weapon@{Weapon}}
+
+
+{\ttfamily \#include $<$Armour.\+h$>$}
+
+
+
+Collaboration diagram for Weapon\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_weapon__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67}{WEAPON\+\_\+\+TYPE}} \{ \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a}{SWORD}}
+, \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67aaeec0571fea89fdc7c3ae39b79dca509}{SHIELD}}
+, \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67aeb9724671a53a074e70378ac1d2596c7}{ARMOUR}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_weapon_a42dbc46dd70319a24763992c4ebbd396}{Weapon}} ()
+\item 
+\mbox{\hyperlink{class_weapon_a420e7ba3d2017e6de3e93eb579cfd3fa}{$\sim$\+Weapon}} ()
+\item 
+unsigned int \mbox{\hyperlink{class_weapon_a2dd096e208c2827552c41cad1f47e8e3}{Generate\+Random\+Number}} (int max)
+\item 
+\mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67}{WEAPON\+\_\+\+TYPE}} \mbox{\hyperlink{class_weapon_a6b2437dd9e5541ef6f40ce35d96477c7}{Set\+Weapon\+Type}} (int weapon\+\_\+choice)
+\item 
+string \mbox{\hyperlink{class_weapon_ab1b14ca4579850bf0385c3e94ba35e57}{Set\+Weapon\+Name}} (int weapon\+\_\+name\+\_\+index, \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67}{WEAPON\+\_\+\+TYPE}} \mbox{\hyperlink{class_weapon_a378d7783971053b498d26d456f5c3bb7}{WEAPON\+\_\+\+TYPE\+\_\+\+SELECTED}})
+\item 
+int \mbox{\hyperlink{class_weapon_a23087012d905e32bbb224e49055a7181}{Set\+Strength}} (string \mbox{\hyperlink{class_weapon_a6b683bce956944a128d3ee25a88c7ac1}{name}})
+\item 
+void \mbox{\hyperlink{class_weapon_aa3a7809b2c34df9d7775f57f7560c106}{Create\+New\+Weapon}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_weapon_ae6618a552c19d68197e216b2926637a8}{WEAPON\+\_\+\+NAME\+\_\+\+CHOICES}} \mbox{[}20\mbox{]}
+\item 
+string \mbox{\hyperlink{class_weapon_a6b683bce956944a128d3ee25a88c7ac1}{name}}
+\item 
+int \mbox{\hyperlink{class_weapon_a4a9381f1b461ca75cf0928defe49fbc0}{strength}}
+\item 
+int \mbox{\hyperlink{class_weapon_a9f519847c0970ed12ffdb22b2de6162b}{weight}}
+\item 
+\mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67}{WEAPON\+\_\+\+TYPE}} \mbox{\hyperlink{class_weapon_a378d7783971053b498d26d456f5c3bb7}{WEAPON\+\_\+\+TYPE\+\_\+\+SELECTED}} = \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a}{SWORD}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char \mbox{\hyperlink{class_weapon_a834aaff0b69ffac71d827ff6b62cbe8c}{SYMBOL}} = \textquotesingle{}W\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_armour_8h_source_l00006}{6}} of file \mbox{\hyperlink{_armour_8h_source}{Armour.\+h}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_weapon_a0bfb82517497d5ff8c7d31786875de67}\label{class_weapon_a0bfb82517497d5ff8c7d31786875de67}} 
+\index{Weapon@{Weapon}!WEAPON\_TYPE@{WEAPON\_TYPE}}
+\index{WEAPON\_TYPE@{WEAPON\_TYPE}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{WEAPON\_TYPE}{WEAPON\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67}{Weapon\+::\+WEAPON\+\_\+\+TYPE}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SWORD@{SWORD}!Weapon@{Weapon}}\index{Weapon@{Weapon}!SWORD@{SWORD}}}\mbox{\Hypertarget{class_weapon_a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a}\label{class_weapon_a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a}} 
+SWORD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SHIELD@{SHIELD}!Weapon@{Weapon}}\index{Weapon@{Weapon}!SHIELD@{SHIELD}}}\mbox{\Hypertarget{class_weapon_a0bfb82517497d5ff8c7d31786875de67aaeec0571fea89fdc7c3ae39b79dca509}\label{class_weapon_a0bfb82517497d5ff8c7d31786875de67aaeec0571fea89fdc7c3ae39b79dca509}} 
+SHIELD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARMOUR@{ARMOUR}!Weapon@{Weapon}}\index{Weapon@{Weapon}!ARMOUR@{ARMOUR}}}\mbox{\Hypertarget{class_weapon_a0bfb82517497d5ff8c7d31786875de67aeb9724671a53a074e70378ac1d2596c7}\label{class_weapon_a0bfb82517497d5ff8c7d31786875de67aeb9724671a53a074e70378ac1d2596c7}} 
+ARMOUR&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_armour_8h_source_l00035}{35}} of file \mbox{\hyperlink{_armour_8h_source}{Armour.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_weapon_l00036}00036     \{}
+\DoxyCodeLine{\Hypertarget{class_weapon_l00037}00037         \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a}{SWORD}},}
+\DoxyCodeLine{\Hypertarget{class_weapon_l00038}00038         \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67aaeec0571fea89fdc7c3ae39b79dca509}{SHIELD}},}
+\DoxyCodeLine{\Hypertarget{class_weapon_l00039}00039         \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67aeb9724671a53a074e70378ac1d2596c7}{ARMOUR}}}
+\DoxyCodeLine{\Hypertarget{class_weapon_l00040}00040     \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_weapon_a42dbc46dd70319a24763992c4ebbd396}\label{class_weapon_a42dbc46dd70319a24763992c4ebbd396}} 
+\index{Weapon@{Weapon}!Weapon@{Weapon}}
+\index{Weapon@{Weapon}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{Weapon()}{Weapon()}}
+{\footnotesize\ttfamily Weapon\+::\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_weapon_a420e7ba3d2017e6de3e93eb579cfd3fa}\label{class_weapon_a420e7ba3d2017e6de3e93eb579cfd3fa}} 
+\index{Weapon@{Weapon}!````~Weapon@{$\sim$Weapon}}
+\index{````~Weapon@{$\sim$Weapon}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{$\sim$Weapon()}{~Weapon()}}
+{\footnotesize\ttfamily Weapon\+::$\sim$\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_weapon_aa3a7809b2c34df9d7775f57f7560c106}\label{class_weapon_aa3a7809b2c34df9d7775f57f7560c106}} 
+\index{Weapon@{Weapon}!CreateNewWeapon@{CreateNewWeapon}}
+\index{CreateNewWeapon@{CreateNewWeapon}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{CreateNewWeapon()}{CreateNewWeapon()}}
+{\footnotesize\ttfamily void Weapon\+::\+Create\+New\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_weapon_a2dd096e208c2827552c41cad1f47e8e3}\label{class_weapon_a2dd096e208c2827552c41cad1f47e8e3}} 
+\index{Weapon@{Weapon}!GenerateRandomNumber@{GenerateRandomNumber}}
+\index{GenerateRandomNumber@{GenerateRandomNumber}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{GenerateRandomNumber()}{GenerateRandomNumber()}}
+{\footnotesize\ttfamily unsigned int Weapon\+::\+Generate\+Random\+Number (\begin{DoxyParamCaption}\item[{int}]{max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_weapon_a23087012d905e32bbb224e49055a7181}\label{class_weapon_a23087012d905e32bbb224e49055a7181}} 
+\index{Weapon@{Weapon}!SetStrength@{SetStrength}}
+\index{SetStrength@{SetStrength}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{SetStrength()}{SetStrength()}}
+{\footnotesize\ttfamily int Weapon\+::\+Set\+Strength (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_weapon_ab1b14ca4579850bf0385c3e94ba35e57}\label{class_weapon_ab1b14ca4579850bf0385c3e94ba35e57}} 
+\index{Weapon@{Weapon}!SetWeaponName@{SetWeaponName}}
+\index{SetWeaponName@{SetWeaponName}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{SetWeaponName()}{SetWeaponName()}}
+{\footnotesize\ttfamily string Weapon\+::\+Set\+Weapon\+Name (\begin{DoxyParamCaption}\item[{int}]{weapon\+\_\+name\+\_\+index,  }\item[{\mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67}{WEAPON\+\_\+\+TYPE}}}]{WEAPON\+\_\+\+TYPE\+\_\+\+SELECTED }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_weapon_a6b2437dd9e5541ef6f40ce35d96477c7}\label{class_weapon_a6b2437dd9e5541ef6f40ce35d96477c7}} 
+\index{Weapon@{Weapon}!SetWeaponType@{SetWeaponType}}
+\index{SetWeaponType@{SetWeaponType}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{SetWeaponType()}{SetWeaponType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67}{WEAPON\+\_\+\+TYPE}} Weapon\+::\+Set\+Weapon\+Type (\begin{DoxyParamCaption}\item[{int}]{weapon\+\_\+choice }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_weapon_a6b683bce956944a128d3ee25a88c7ac1}\label{class_weapon_a6b683bce956944a128d3ee25a88c7ac1}} 
+\index{Weapon@{Weapon}!name@{name}}
+\index{name@{name}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Weapon\+::name}
+
+
+
+Definition at line \mbox{\hyperlink{_armour_8h_source_l00032}{32}} of file \mbox{\hyperlink{_armour_8h_source}{Armour.\+h}}.
+
+\mbox{\Hypertarget{class_weapon_a4a9381f1b461ca75cf0928defe49fbc0}\label{class_weapon_a4a9381f1b461ca75cf0928defe49fbc0}} 
+\index{Weapon@{Weapon}!strength@{strength}}
+\index{strength@{strength}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{strength}{strength}}
+{\footnotesize\ttfamily int Weapon\+::strength}
+
+
+
+Definition at line \mbox{\hyperlink{_armour_8h_source_l00033}{33}} of file \mbox{\hyperlink{_armour_8h_source}{Armour.\+h}}.
+
+\mbox{\Hypertarget{class_weapon_a834aaff0b69ffac71d827ff6b62cbe8c}\label{class_weapon_a834aaff0b69ffac71d827ff6b62cbe8c}} 
+\index{Weapon@{Weapon}!SYMBOL@{SYMBOL}}
+\index{SYMBOL@{SYMBOL}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{SYMBOL}{SYMBOL}}
+{\footnotesize\ttfamily const char Weapon\+::\+SYMBOL = \textquotesingle{}W\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_armour_8h_source_l00054}{54}} of file \mbox{\hyperlink{_armour_8h_source}{Armour.\+h}}.
+
+\mbox{\Hypertarget{class_weapon_ae6618a552c19d68197e216b2926637a8}\label{class_weapon_ae6618a552c19d68197e216b2926637a8}} 
+\index{Weapon@{Weapon}!WEAPON\_NAME\_CHOICES@{WEAPON\_NAME\_CHOICES}}
+\index{WEAPON\_NAME\_CHOICES@{WEAPON\_NAME\_CHOICES}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{WEAPON\_NAME\_CHOICES}{WEAPON\_NAME\_CHOICES}}
+{\footnotesize\ttfamily string Weapon\+::\+WEAPON\+\_\+\+NAME\+\_\+\+CHOICES\mbox{[}20\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Might of Fallen Souls"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Hope of Carnage"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Soldier's Tunic of Cataclysms"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Silent Armor of the Wicked"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Stormguard Demon Greatplate"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Vindication Scaled Armor"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Ivory Chestpiece of Smoldering Fortunes"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Bronze Breastplate of Imminent Vengeance"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Batteplate of Hallowed Dreams"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Chestplate of Infernal Punishment"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Edge of Discipline"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Scales of the Breaking Storm"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Retribution Greatplate of the Wicked"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Battleworn Vest of the Daywalker"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Thunderguard Titanium Chestpiece"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Vengeance Golden Chestplate"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Obsidian Cuirass of Hallowed Freedom"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Iron Tunic of Blessed Kings"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Vest of Blessed Memories"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}Chestguard of Fleeting Might"{}}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_armour_8h_source_l00009}{9}} of file \mbox{\hyperlink{_armour_8h_source}{Armour.\+h}}.
+
+\mbox{\Hypertarget{class_weapon_a378d7783971053b498d26d456f5c3bb7}\label{class_weapon_a378d7783971053b498d26d456f5c3bb7}} 
+\index{Weapon@{Weapon}!WEAPON\_TYPE\_SELECTED@{WEAPON\_TYPE\_SELECTED}}
+\index{WEAPON\_TYPE\_SELECTED@{WEAPON\_TYPE\_SELECTED}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{WEAPON\_TYPE\_SELECTED}{WEAPON\_TYPE\_SELECTED}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67}{WEAPON\+\_\+\+TYPE}} Weapon\+::\+WEAPON\+\_\+\+TYPE\+\_\+\+SELECTED = \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a}{SWORD}}}
+
+
+
+Definition at line \mbox{\hyperlink{_armour_8h_source_l00042}{42}} of file \mbox{\hyperlink{_armour_8h_source}{Armour.\+h}}.
+
+\mbox{\Hypertarget{class_weapon_a9f519847c0970ed12ffdb22b2de6162b}\label{class_weapon_a9f519847c0970ed12ffdb22b2de6162b}} 
+\index{Weapon@{Weapon}!weight@{weight}}
+\index{weight@{weight}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily int Weapon\+::weight}
+
+
+
+Definition at line \mbox{\hyperlink{_armour_8h_source_l00033}{33}} of file \mbox{\hyperlink{_armour_8h_source}{Armour.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_armour_8h}{Armour.\+h}}\end{DoxyCompactItemize}

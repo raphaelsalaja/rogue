@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__title_screen_manager_8cpp_source" xml:lang="en-US">
+<title>TitleScreenManager.cpp</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/TitleScreenManager.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__title_screen_manager_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__title_screen_manager_8h">TitleScreenManager.h</link>&quot;</emphasis>
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__console_window_manager_8h">ConsoleWindowManager.h</link>&quot;</emphasis>
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__macro_8h">Macro.h</link>&quot;</emphasis>
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&lt;stdio.h&gt;</emphasis>
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00006"/>00006 <emphasis role="preprocessor">#include&#32;&lt;fcntl.h&gt;</emphasis>
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00007"/>00007 <emphasis role="preprocessor">#include&#32;&lt;windows.h&gt;</emphasis>
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00008"/>00008 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00009"/>00009 <emphasis role="preprocessor">#include&#32;&lt;stdlib.h&gt;</emphasis>
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00010"/>00010 <emphasis role="preprocessor">#include&#32;&lt;fstream&gt;</emphasis>
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00011"/>00011 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00012"/>00012 <emphasis role="preprocessor">#include&#32;&lt;regex&gt;</emphasis>
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00013"/>00013 <emphasis role="keyword">using&#32;namespace&#32;</emphasis><link linkend="_namespace_macro">Macro</link>;
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00014"/>00014 
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00015"/><link linkend="_class_title_screen_manager_1a57d95e3e84ac914f5051d934daa95279">00015</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_title_screen_manager_1a57d95e3e84ac914f5051d934daa95279">TitleScreenManager::WaitForInput</link>()
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00016"/>00016 {
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00017"/>00017 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(<link linkend="_class_title_screen_manager_1a1513c7492bb1309c3e5d85cb66fbda4e">on_title_screen</link>)
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00018"/>00018 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">GoToScreenPosition</link>(0,&#32;<link linkend="_class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6">height</link>&#32;/&#32;2);
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(GetKeyState(VK_RETURN)&#32;&amp;&#32;0x8000)
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_title_screen_manager_1a1513c7492bb1309c3e5d85cb66fbda4e">on_title_screen</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00024"/>00024 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00025"/>00025 }
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00026"/>00026 
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00027"/><link linkend="_class_title_screen_manager_1adf50a2b60b08f7bbcef8f76030c9c734">00027</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_title_screen_manager_1adf50a2b60b08f7bbcef8f76030c9c734">TitleScreenManager::LoadTitle</link>(<emphasis role="keywordtype">int</emphasis>&#32;width,&#32;<emphasis role="keywordtype">int</emphasis>&#32;height,&#32;<emphasis role="keywordtype">string</emphasis>&#32;input)
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00028"/>00028 {
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00029"/>00029 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;<link linkend="_class_title_screen_manager_1aaf3cc960f36fd41aade021039120a39a">width</link>;&#32;i++)
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00030"/>00030 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;j&#32;=&#32;0;&#32;j&#32;&lt;&#32;<link linkend="_class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6">height</link>;&#32;j++)
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_title_screen_manager_1a86d9cebd8f78508088eef8cf774288bc">title_map</link>[i&#32;*&#32;<link linkend="_class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6">height</link>&#32;+&#32;j]&#32;=&#32;input.at(i&#32;*&#32;<link linkend="_class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6">height</link>&#32;+&#32;j);
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00035"/>00035 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00036"/>00036 }
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00037"/>00037 
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00038"/><link linkend="_class_title_screen_manager_1afe6669aa18831e8efed3b0d9c744b973">00038</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_title_screen_manager_1afe6669aa18831e8efed3b0d9c744b973">TitleScreenManager::ReadTitle</link>()
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00039"/>00039 {
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00040"/>00040 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;str;
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00041"/>00041 &#32;&#32;&#32;&#32;<link linkend="_class_title_screen_manager_1a3aaf2df6f1e273b4af3fdc43d50ad558">title_screen_file_contents</link>&#32;=&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00042"/>00042 &#32;&#32;&#32;&#32;ifstream&#32;file(<emphasis role="stringliteral">&quot;TITLE_Rogue.txt&quot;</emphasis>);
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00043"/>00043 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;width_retrieved&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00044"/>00044 
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00045"/>00045 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(getline(file,&#32;str))
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00046"/>00046 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_title_screen_manager_1a3aaf2df6f1e273b4af3fdc43d50ad558">title_screen_file_contents</link>&#32;+=&#32;str;
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_title_screen_manager_1a3aaf2df6f1e273b4af3fdc43d50ad558">title_screen_file_contents</link>.push_back(<emphasis role="charliteral">&apos;\n&apos;</emphasis>);
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;current_char&#32;=&#32;<link linkend="_class_title_screen_manager_1a3aaf2df6f1e273b4af3fdc43d50ad558">title_screen_file_contents</link>.at(<link linkend="_class_title_screen_manager_1a3aaf2df6f1e273b4af3fdc43d50ad558">title_screen_file_contents</link>.length()&#32;-&#32;1);
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00050"/>00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(current_char&#32;==&#32;<emphasis role="charliteral">&apos;\n&apos;</emphasis>)
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00051"/>00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00052"/>00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(width_retrieved&#32;==&#32;<emphasis role="keyword">false</emphasis>)
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_title_screen_manager_1aaf3cc960f36fd41aade021039120a39a">width</link>&#32;=&#32;<link linkend="_class_title_screen_manager_1a3aaf2df6f1e273b4af3fdc43d50ad558">title_screen_file_contents</link>.length();
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;width_retrieved&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00056"/>00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00057"/>00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6">height</link>++;
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00058"/>00058 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00059"/>00059 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00060"/>00060 &#32;&#32;&#32;&#32;<link linkend="_class_title_screen_manager_1a86d9cebd8f78508088eef8cf774288bc">title_map</link>&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>[<link linkend="_class_title_screen_manager_1aaf3cc960f36fd41aade021039120a39a">width</link>&#32;*&#32;<link linkend="_class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6">height</link>&#32;+&#32;1]{};
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00061"/>00061 }
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00062"/>00062 
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00063"/><link linkend="_class_title_screen_manager_1aa49b8813b2ea79d1bd4fdaaa741776f1">00063</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_title_screen_manager_1aa49b8813b2ea79d1bd4fdaaa741776f1">TitleScreenManager::PrintTitle</link>(<emphasis role="keywordtype">int</emphasis>&#32;width,&#32;<emphasis role="keywordtype">int</emphasis>&#32;height,&#32;<link linkend="_class_console_window_manager">ConsoleWindowManager</link>&amp;&#32;cw_manager)
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00064"/>00064 {
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00065"/>00065 &#32;&#32;&#32;&#32;srand(time(<emphasis role="keyword">nullptr</emphasis>));
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00066"/>00066 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;random_color&#32;=&#32;(rand()&#32;%&#32;5)&#32;+&#32;4;
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00067"/>00067 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;<link linkend="_class_title_screen_manager_1aaf3cc960f36fd41aade021039120a39a">width</link>;&#32;i++)
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00068"/>00068 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00069"/>00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;j&#32;=&#32;0;&#32;j&#32;&lt;&#32;<link linkend="_class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6">height</link>;&#32;j++)
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00070"/>00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00071"/>00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_title_screen_manager_1a86d9cebd8f78508088eef8cf774288bc">title_map</link>[i&#32;*&#32;<link linkend="_class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6">height</link>&#32;+&#32;j]&#32;==&#32;<emphasis role="charliteral">&apos;\n&apos;</emphasis>)
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00072"/>00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00073"/>00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;random_color&#32;=&#32;(rand()&#32;%&#32;15)&#32;+&#32;1;
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00074"/>00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cw_manager.<link linkend="_class_console_window_manager_1abed5c169df20d3f830cc11b1dfbe4a6a">SetConsoleWindowRandomColor</link>(random_color);
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00076"/>00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<link linkend="_class_title_screen_manager_1a86d9cebd8f78508088eef8cf774288bc">title_map</link>[i&#32;*&#32;<link linkend="_class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6">height</link>&#32;+&#32;j];
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00077"/>00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00078"/>00078 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00079"/>00079 }
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00080"/>00080 
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00081"/><link linkend="_class_title_screen_manager_1ab43408b2faef99086182e9309bc5d675">00081</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_title_screen_manager_1ab43408b2faef99086182e9309bc5d675">TitleScreenManager::RenderTitle</link>(<link linkend="_class_console_window_manager">ConsoleWindowManager</link>&amp;&#32;cw_manager)
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00082"/>00082 {
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00083"/>00083 &#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a005f2a0ab24b96203446ec9a1a8b9a7f">RepositionWindow</link>(<link linkend="_class_title_screen_manager_1a4e70113f2688af301ef026b4bc717add">screen_width</link>,&#32;<link linkend="_class_title_screen_manager_1a249d7f8ef496e52c0f0148c952f3e458">screen_height</link>);
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00084"/>00084 &#32;&#32;&#32;&#32;<link linkend="_class_title_screen_manager_1afe6669aa18831e8efed3b0d9c744b973">ReadTitle</link>();
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00085"/>00085 &#32;&#32;&#32;&#32;<link linkend="_class_title_screen_manager_1adf50a2b60b08f7bbcef8f76030c9c734">LoadTitle</link>(<link linkend="_class_title_screen_manager_1aaf3cc960f36fd41aade021039120a39a">width</link>,&#32;<link linkend="_class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6">height</link>,&#32;<link linkend="_class_title_screen_manager_1a3aaf2df6f1e273b4af3fdc43d50ad558">title_screen_file_contents</link>);
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00086"/>00086 &#32;&#32;&#32;&#32;<link linkend="_class_title_screen_manager_1aa49b8813b2ea79d1bd4fdaaa741776f1">PrintTitle</link>(<link linkend="_class_title_screen_manager_1aaf3cc960f36fd41aade021039120a39a">width</link>,&#32;<link linkend="_class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6">height</link>,&#32;cw_manager);
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00087"/>00087 &#32;&#32;&#32;&#32;<link linkend="_class_title_screen_manager_1a57d95e3e84ac914f5051d934daa95279">WaitForInput</link>();
+<anchor xml:id="__title_screen_manager_8cpp_source_1l00088"/>00088 }
+</programlisting></section>

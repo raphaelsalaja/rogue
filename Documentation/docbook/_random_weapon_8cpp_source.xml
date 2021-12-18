@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__random_weapon_8cpp_source" xml:lang="en-US">
+<title>RandomWeapon.cpp</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/RandomWeapon.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__random_weapon_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__random_weapon_8h">RandomWeapon.h</link>&quot;</emphasis>
+<anchor xml:id="__random_weapon_8cpp_source_1l00002"/>00002 
+<anchor xml:id="__random_weapon_8cpp_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&lt;fstream&gt;</emphasis>
+<anchor xml:id="__random_weapon_8cpp_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+<anchor xml:id="__random_weapon_8cpp_source_1l00005"/>00005 
+<anchor xml:id="__random_weapon_8cpp_source_1l00006"/>00006 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__macro_8h">Macro.h</link>&quot;</emphasis>
+<anchor xml:id="__random_weapon_8cpp_source_1l00007"/>00007 
+<anchor xml:id="__random_weapon_8cpp_source_1l00008"/><link linkend="_class_random_weapon_1a69377a159321fc074496c769271fcb30">00008</link> <link linkend="_class_random_weapon_1a69377a159321fc074496c769271fcb30">RandomWeapon::RandomWeapon</link>()
+<anchor xml:id="__random_weapon_8cpp_source_1l00009"/>00009 {
+<anchor xml:id="__random_weapon_8cpp_source_1l00010"/>00010 }
+<anchor xml:id="__random_weapon_8cpp_source_1l00011"/>00011 
+<anchor xml:id="__random_weapon_8cpp_source_1l00012"/><link linkend="_class_random_weapon_1aea0b4d6a59c972b64ed00ba7b7894d5c">00012</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_random_weapon_1aea0b4d6a59c972b64ed00ba7b7894d5c">RandomWeapon::SetType</link>(<emphasis role="keywordtype">int</emphasis>&#32;choice)
+<anchor xml:id="__random_weapon_8cpp_source_1l00013"/>00013 {
+<anchor xml:id="__random_weapon_8cpp_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a375a42a9160dd1ff376b4408e2b03629">type</link>&#32;=&#32;<link linkend="_namespace_macro_1a7192f07d19f55d7f8b863932a5078eab">Macro::GenerateRandomNumber</link>(<link linkend="_class_random_weapon_1a03eb992d360d55a4f96eea49e0757977">weapon_types</link>-&gt;length());
+<anchor xml:id="__random_weapon_8cpp_source_1l00015"/>00015 }
+<anchor xml:id="__random_weapon_8cpp_source_1l00016"/>00016 
+<anchor xml:id="__random_weapon_8cpp_source_1l00017"/><link linkend="_class_random_weapon_1ae9993590b69800be2b76a618fc5651f8">00017</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_random_weapon_1ae9993590b69800be2b76a618fc5651f8">RandomWeapon::SetItemNames</link>(<emphasis role="keywordtype">string</emphasis>&#32;file_name)
+<anchor xml:id="__random_weapon_8cpp_source_1l00018"/>00018 {
+<anchor xml:id="__random_weapon_8cpp_source_1l00019"/>00019 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;index&#32;=&#32;0;
+<anchor xml:id="__random_weapon_8cpp_source_1l00020"/>00020 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;line;
+<anchor xml:id="__random_weapon_8cpp_source_1l00021"/>00021 &#32;&#32;&#32;&#32;ifstream&#32;myfile(file_name);
+<anchor xml:id="__random_weapon_8cpp_source_1l00022"/>00022 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(myfile.is_open())
+<anchor xml:id="__random_weapon_8cpp_source_1l00023"/>00023 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__random_weapon_8cpp_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(!myfile.eof())
+<anchor xml:id="__random_weapon_8cpp_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__random_weapon_8cpp_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;getline(myfile,&#32;line);
+<anchor xml:id="__random_weapon_8cpp_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a456d04a342662178e5d17e86312bfb6c">ITEM_TYPES</link>[index]&#32;=&#32;line;
+<anchor xml:id="__random_weapon_8cpp_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<link linkend="_class_random_item_generator_1a456d04a342662178e5d17e86312bfb6c">ITEM_TYPES</link>[index]&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="__random_weapon_8cpp_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;index++;
+<anchor xml:id="__random_weapon_8cpp_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__random_weapon_8cpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;myfile.close();
+<anchor xml:id="__random_weapon_8cpp_source_1l00032"/>00032 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__random_weapon_8cpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;{&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;FILE&#32;CANNOT&#32;BE&#32;OPENED&quot;</emphasis>;&#32;}
+<anchor xml:id="__random_weapon_8cpp_source_1l00034"/>00034 }
+<anchor xml:id="__random_weapon_8cpp_source_1l00035"/>00035 
+<anchor xml:id="__random_weapon_8cpp_source_1l00036"/><link linkend="_class_random_weapon_1a48fd5758c4c65e266d3ba9bfe3e6c90b">00036</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_random_weapon_1a48fd5758c4c65e266d3ba9bfe3e6c90b">RandomWeapon::GenerateRandomWeapon</link>()
+<anchor xml:id="__random_weapon_8cpp_source_1l00037"/>00037 {
+<anchor xml:id="__random_weapon_8cpp_source_1l00038"/>00038 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0">CreateItem</link>(<link linkend="_class_random_weapon_1a498bfb916d002b8f31c6e84fc70fc6ff">symbol</link>,&#32;<link linkend="_class_random_weapon_1a03eb992d360d55a4f96eea49e0757977">weapon_types</link>-&gt;length());
+<anchor xml:id="__random_weapon_8cpp_source_1l00039"/>00039 }
+</programlisting></section>

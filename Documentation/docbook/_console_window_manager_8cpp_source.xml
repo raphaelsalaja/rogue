@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__console_window_manager_8cpp_source" xml:lang="en-US">
+<title>ConsoleWindowManager.cpp</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/ConsoleWindowManager.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__console_window_manager_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__console_window_manager_8h">ConsoleWindowManager.h</link>&quot;</emphasis>
+<anchor xml:id="__console_window_manager_8cpp_source_1l00002"/>00002 
+<anchor xml:id="__console_window_manager_8cpp_source_1l00003"/><link linkend="_class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90">00003</link> HANDLE&#32;<link linkend="_class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90">ConsoleWindowManager::GetConsoleHandle</link>()
+<anchor xml:id="__console_window_manager_8cpp_source_1l00004"/>00004 {
+<anchor xml:id="__console_window_manager_8cpp_source_1l00005"/>00005 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_console_window_manager_1abdee4e17ebc10f03c5e74d45f8e4ed5c">HANDLE_CONSOLE</link>&#32;=&#32;GetStdHandle(STD_OUTPUT_HANDLE);
+<anchor xml:id="__console_window_manager_8cpp_source_1l00006"/>00006 }
+<anchor xml:id="__console_window_manager_8cpp_source_1l00007"/>00007 
+<anchor xml:id="__console_window_manager_8cpp_source_1l00008"/><link linkend="_class_console_window_manager_1a13a64349bfa723a1c035752ea401ab2c">00008</link> HWND&#32;<link linkend="_class_console_window_manager_1a13a64349bfa723a1c035752ea401ab2c">ConsoleWindowManager::GetDesktopHandleWindow</link>()
+<anchor xml:id="__console_window_manager_8cpp_source_1l00009"/>00009 {
+<anchor xml:id="__console_window_manager_8cpp_source_1l00010"/>00010 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_console_window_manager_1a1cc7bac864b3fb93af536bdea526b908">HANDLE_WINDOW_DESKTOP</link>&#32;=&#32;GetDesktopWindow();
+<anchor xml:id="__console_window_manager_8cpp_source_1l00011"/>00011 }
+<anchor xml:id="__console_window_manager_8cpp_source_1l00012"/>00012 
+<anchor xml:id="__console_window_manager_8cpp_source_1l00013"/><link linkend="_class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d">00013</link> HWND&#32;<link linkend="_class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d">ConsoleWindowManager::GetConsoleHandleWindow</link>()
+<anchor xml:id="__console_window_manager_8cpp_source_1l00014"/>00014 {
+<anchor xml:id="__console_window_manager_8cpp_source_1l00015"/>00015 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_console_window_manager_1acf76563de7c4c73f97bb0c8ffc1c461e">HANDLE_WINDOW_CONSOLE</link>&#32;=&#32;GetConsoleWindow();
+<anchor xml:id="__console_window_manager_8cpp_source_1l00016"/>00016 }
+<anchor xml:id="__console_window_manager_8cpp_source_1l00017"/>00017 
+<anchor xml:id="__console_window_manager_8cpp_source_1l00018"/><link linkend="_class_console_window_manager_1aec3eb492b72b29b4b9c57d622b799e9c">00018</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_console_window_manager_1aec3eb492b72b29b4b9c57d622b799e9c">ConsoleWindowManager::BlankScreen</link>()
+<anchor xml:id="__console_window_manager_8cpp_source_1l00019"/>00019 {
+<anchor xml:id="__console_window_manager_8cpp_source_1l00020"/>00020 &#32;&#32;&#32;&#32;system(<emphasis role="stringliteral">&quot;CLS&quot;</emphasis>);
+<anchor xml:id="__console_window_manager_8cpp_source_1l00021"/>00021 }
+<anchor xml:id="__console_window_manager_8cpp_source_1l00022"/>00022 
+<anchor xml:id="__console_window_manager_8cpp_source_1l00023"/><link linkend="_class_console_window_manager_1ac4c2a46e7019be00cd1691f786587797">00023</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_console_window_manager_1ac4c2a46e7019be00cd1691f786587797">ConsoleWindowManager::HideConsoleCursor</link>()
+<anchor xml:id="__console_window_manager_8cpp_source_1l00024"/>00024 {
+<anchor xml:id="__console_window_manager_8cpp_source_1l00025"/>00025 &#32;&#32;&#32;&#32;CONSOLE_CURSOR_INFO&#32;CONSOLE_CURSOR_INFO_CONSOLE;
+<anchor xml:id="__console_window_manager_8cpp_source_1l00026"/>00026 &#32;&#32;&#32;&#32;GetConsoleCursorInfo(<link linkend="_class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90">GetConsoleHandle</link>(),&#32;&amp;CONSOLE_CURSOR_INFO_CONSOLE);
+<anchor xml:id="__console_window_manager_8cpp_source_1l00027"/>00027 &#32;&#32;&#32;&#32;CONSOLE_CURSOR_INFO_CONSOLE.bVisible&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__console_window_manager_8cpp_source_1l00028"/>00028 &#32;&#32;&#32;&#32;SetConsoleCursorInfo(<link linkend="_class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90">GetConsoleHandle</link>(),&#32;&amp;CONSOLE_CURSOR_INFO_CONSOLE);
+<anchor xml:id="__console_window_manager_8cpp_source_1l00029"/>00029 }
+<anchor xml:id="__console_window_manager_8cpp_source_1l00030"/>00030 
+<anchor xml:id="__console_window_manager_8cpp_source_1l00031"/><link linkend="_class_console_window_manager_1a622c6a38370c75628b954f013436ecb9">00031</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_console_window_manager_1a622c6a38370c75628b954f013436ecb9">ConsoleWindowManager::SetWindowDisplay</link>(<emphasis role="keywordtype">int</emphasis>&#32;width,&#32;<emphasis role="keywordtype">int</emphasis>&#32;height)
+<anchor xml:id="__console_window_manager_8cpp_source_1l00032"/>00032 {
+<anchor xml:id="__console_window_manager_8cpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;HMONITOR&#32;HANDLE_MONITOR&#32;=&#32;MonitorFromWindow(<link linkend="_class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d">GetConsoleHandleWindow</link>(),&#32;MONITOR_DEFAULTTONEAREST);
+<anchor xml:id="__console_window_manager_8cpp_source_1l00034"/>00034 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(HANDLE_MONITOR)
+<anchor xml:id="__console_window_manager_8cpp_source_1l00035"/>00035 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__console_window_manager_8cpp_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;MONITORINFO&#32;MONITOR_INFO{<emphasis role="keyword">sizeof</emphasis>(MONITOR_INFO)};
+<anchor xml:id="__console_window_manager_8cpp_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(::GetMonitorInfo(HANDLE_MONITOR,&#32;&amp;MONITOR_INFO))
+<anchor xml:id="__console_window_manager_8cpp_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__console_window_manager_8cpp_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;x&#32;=&#32;(MONITOR_INFO.rcWork.left&#32;+&#32;MONITOR_INFO.rcWork.right)&#32;/&#32;2&#32;-&#32;width&#32;/&#32;2;
+<anchor xml:id="__console_window_manager_8cpp_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;y&#32;=&#32;(MONITOR_INFO.rcWork.top&#32;+&#32;MONITOR_INFO.rcWork.bottom)&#32;/&#32;2&#32;-&#32;height&#32;/&#32;2;
+<anchor xml:id="__console_window_manager_8cpp_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SetConsoleTitle(TEXT(<emphasis role="stringliteral">&quot;ROGUE&quot;</emphasis>));
+<anchor xml:id="__console_window_manager_8cpp_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SetWindowPos(<link linkend="_class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d">GetConsoleHandleWindow</link>(),&#32;<emphasis role="keyword">nullptr</emphasis>,&#32;x,&#32;y,&#32;width,&#32;height,
+<anchor xml:id="__console_window_manager_8cpp_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SWP_NOZORDER&#32;|&#32;SWP_NOOWNERZORDER&#32;|&#32;SWP_SHOWWINDOW);
+<anchor xml:id="__console_window_manager_8cpp_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__console_window_manager_8cpp_source_1l00045"/>00045 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__console_window_manager_8cpp_source_1l00046"/>00046 }
+<anchor xml:id="__console_window_manager_8cpp_source_1l00047"/>00047 
+<anchor xml:id="__console_window_manager_8cpp_source_1l00048"/><link linkend="_class_console_window_manager_1a04f302f741273b8c1ead23f11fb70e39">00048</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_console_window_manager_1a04f302f741273b8c1ead23f11fb70e39">ConsoleWindowManager::SetText</link>()
+<anchor xml:id="__console_window_manager_8cpp_source_1l00049"/>00049 {
+<anchor xml:id="__console_window_manager_8cpp_source_1l00050"/>00050 &#32;&#32;&#32;&#32;CONSOLE_FONT_INFOEX&#32;CONSOLE_FONT&#32;=&#32;{0};
+<anchor xml:id="__console_window_manager_8cpp_source_1l00051"/>00051 &#32;&#32;&#32;&#32;CONSOLE_FONT.cbSize&#32;=&#32;<emphasis role="keyword">sizeof</emphasis>&#32;CONSOLE_FONT;
+<anchor xml:id="__console_window_manager_8cpp_source_1l00052"/>00052 &#32;&#32;&#32;&#32;CONSOLE_FONT.dwFontSize.X&#32;=&#32;8;
+<anchor xml:id="__console_window_manager_8cpp_source_1l00053"/>00053 &#32;&#32;&#32;&#32;CONSOLE_FONT.dwFontSize.Y&#32;=&#32;12;
+<anchor xml:id="__console_window_manager_8cpp_source_1l00054"/>00054 &#32;&#32;&#32;&#32;wcscpy_s(CONSOLE_FONT.FaceName,&#32;L<emphasis role="stringliteral">&quot;Terminal&quot;</emphasis>);
+<anchor xml:id="__console_window_manager_8cpp_source_1l00055"/>00055 &#32;&#32;&#32;&#32;SetCurrentConsoleFontEx(<link linkend="_class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90">GetConsoleHandle</link>(),&#32;0,&#32;&amp;CONSOLE_FONT);
+<anchor xml:id="__console_window_manager_8cpp_source_1l00056"/>00056 }
+<anchor xml:id="__console_window_manager_8cpp_source_1l00057"/>00057 
+<anchor xml:id="__console_window_manager_8cpp_source_1l00058"/><link linkend="_class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213">00058</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213">ConsoleWindowManager::SetConsoleWindowColor</link>(<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543">COLORS</link>&#32;fg,&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543">COLORS</link>&#32;bg)
+<anchor xml:id="__console_window_manager_8cpp_source_1l00059"/>00059 {
+<anchor xml:id="__console_window_manager_8cpp_source_1l00060"/>00060 &#32;&#32;&#32;&#32;SetConsoleTextAttribute(<link linkend="_class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90">GetConsoleHandle</link>(),&#32;fg&#32;+&#32;bg&#32;*&#32;16);
+<anchor xml:id="__console_window_manager_8cpp_source_1l00061"/>00061 }
+<anchor xml:id="__console_window_manager_8cpp_source_1l00062"/>00062 
+<anchor xml:id="__console_window_manager_8cpp_source_1l00063"/>00063 
+<anchor xml:id="__console_window_manager_8cpp_source_1l00064"/><link linkend="_class_console_window_manager_1abed5c169df20d3f830cc11b1dfbe4a6a">00064</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_console_window_manager_1abed5c169df20d3f830cc11b1dfbe4a6a">ConsoleWindowManager::SetConsoleWindowRandomColor</link>(<emphasis role="keywordtype">int</emphasis>&#32;random_color)
+<anchor xml:id="__console_window_manager_8cpp_source_1l00065"/>00065 {
+<anchor xml:id="__console_window_manager_8cpp_source_1l00066"/>00066 &#32;&#32;&#32;&#32;SetConsoleTextAttribute(<link linkend="_class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90">GetConsoleHandle</link>(),&#32;random_color&#32;+&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3">BLACK</link>&#32;*&#32;16);
+<anchor xml:id="__console_window_manager_8cpp_source_1l00067"/>00067 }
+</programlisting></section>

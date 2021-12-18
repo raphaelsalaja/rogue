@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_map_manager" kind="class" language="C++" prot="public">
+    <compoundname>MapManager</compoundname>
+    <includes refid="_map_manager_8h" local="no">MapManager.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_map_manager_1ac098de57cb928a3ace62fcb2a566206f" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int MapManager::level_index</definition>
+        <argsstring></argsstring>
+        <name>level_index</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="17" column="14" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_map_manager_1ab864df2edd061402a8ae649642545cf4" compoundref="_map_manager_8cpp" startline="72" endline="101">LoadNextMap</referencedby>
+        <referencedby refid="class_map_manager_1a83822e33297caa6a3e1f3f48b52b2530" compoundref="_map_manager_8cpp" startline="112" endline="139">ReadMap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_manager_1af44d67473c8a932512d90fe08a5f10c2" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int MapManager::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="18" column="14" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_player_1a3b587452a99abee05fafb51daadf6687" compoundref="_player_8cpp" startline="235" endline="239">Player::BlankPosition</referencedby>
+        <referencedby refid="class_inventory_manager_1a5b5e89fe9ebb4fe18db920a373c4052b" compoundref="_inventory_manager_8cpp" startline="85" endline="139">InventoryManager::DropItemSelected</referencedby>
+        <referencedby refid="class_map_manager_1a63237ae436886673f81ed41f38e7ffbe" compoundref="_map_manager_8cpp" startline="163" endline="181">FindEnemy</referencedby>
+        <referencedby refid="class_map_manager_1a147a44e3b176a36a06689d4589cfb76f" compoundref="_map_manager_8cpp" startline="183" endline="201">FindFriendly</referencedby>
+        <referencedby refid="class_map_manager_1afab5c5f3312e023fed2304c937156c02" compoundref="_map_manager_8cpp" startline="103" endline="110">IsEmpty</referencedby>
+        <referencedby refid="class_map_manager_1a0376a5b8e5baed3a0845887d16920752" compoundref="_map_manager_8cpp" startline="61" endline="70">LoadMap</referencedby>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">Player::PlayerCollisions</referencedby>
+        <referencedby refid="class_map_manager_1ae924c576229d40970074e76875dab3bb" compoundref="_map_manager_8cpp" startline="10" endline="59">PrintMap</referencedby>
+        <referencedby refid="class_map_manager_1a83822e33297caa6a3e1f3f48b52b2530" compoundref="_map_manager_8cpp" startline="112" endline="139">ReadMap</referencedby>
+        <referencedby refid="class_player_1a4b2ed7452ebf86347df93b965f5c4966" compoundref="_player_8cpp" startline="10" endline="38">Player::RenderPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int MapManager::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="19" column="14" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_debug_1a7da6fc420757f4d2ed80dd0de4593806" compoundref="_debug_8cpp" startline="11" endline="38">Debug::DebugControls</referencedby>
+        <referencedby refid="class_player_1a4e306abcd8bd537e80b89563ad77275c" compoundref="_player_8cpp" startline="133" endline="139">Player::EnterCombatMode</referencedby>
+        <referencedby refid="class_player_1af437a788282ad5c25d54a10de8199d11" compoundref="_player_8cpp" startline="141" endline="167">Player::EnterMessageMode</referencedby>
+        <referencedby refid="class_map_manager_1a0376a5b8e5baed3a0845887d16920752" compoundref="_map_manager_8cpp" startline="61" endline="70">LoadMap</referencedby>
+        <referencedby refid="class_map_manager_1ab864df2edd061402a8ae649642545cf4" compoundref="_map_manager_8cpp" startline="72" endline="101">LoadNextMap</referencedby>
+        <referencedby refid="class_console_rendering_1a2ab9a1bf1a53a6fe1dbb3921ee3bf90c" compoundref="_console_rendering_8cpp" startline="88" endline="107">ConsoleRendering::Print_Actions</referencedby>
+        <referencedby refid="class_console_rendering_1a1cec315984bd83c487a5aa1a66757c4c" compoundref="_console_rendering_8cpp" startline="65" endline="86">ConsoleRendering::Print_Actions_GUI</referencedby>
+        <referencedby refid="class_console_rendering_1a373778cb0d4174011a2c7eeaa7482ec1" compoundref="_console_rendering_8cpp" startline="10" endline="63">ConsoleRendering::Print_Stats</referencedby>
+        <referencedby refid="class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c" compoundref="_enemy_8cpp" startline="6" endline="19">Enemy::PrintDetails</referencedby>
+        <referencedby refid="class_map_manager_1ae924c576229d40970074e76875dab3bb" compoundref="_map_manager_8cpp" startline="10" endline="59">PrintMap</referencedby>
+        <referencedby refid="class_generic_friendly_1adb5700625348a3c03f4623c6b3f1519b" compoundref="_generic_friendly_8cpp" startline="69" endline="77">GenericFriendly::PrintMessage</referencedby>
+        <referencedby refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" compoundref="_combat_manager_8cpp" startline="68" endline="104">CombatManager::PrintStatements</referencedby>
+        <referencedby refid="class_map_manager_1a83822e33297caa6a3e1f3f48b52b2530" compoundref="_map_manager_8cpp" startline="112" endline="139">ReadMap</referencedby>
+        <referencedby refid="class_console_rendering_1acc39d6331437f44bc3941ae5987f7279" compoundref="_console_rendering_8cpp" startline="168" endline="175">ConsoleRendering::Render_GUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_manager_1a6c276cfffc5bfb5ca0448b192b00c071" prot="public" static="no" mutable="no">
+        <type>vector&lt; <ref refid="class_generic_friendly" kindref="compound">GenericFriendly</ref> &gt;</type>
+        <definition>vector&lt;GenericFriendly&gt; MapManager::generic_friendlies</definition>
+        <argsstring></argsstring>
+        <name>generic_friendlies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="21" column="8" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_map_manager_1a147a44e3b176a36a06689d4589cfb76f" compoundref="_map_manager_8cpp" startline="183" endline="201">FindFriendly</referencedby>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">Player::PlayerCollisions</referencedby>
+        <referencedby refid="class_map_manager_1ae924c576229d40970074e76875dab3bb" compoundref="_map_manager_8cpp" startline="10" endline="59">PrintMap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_manager_1a426775cb6ac19bd0e9b6ca79e93dc013" prot="public" static="no" mutable="no">
+        <type>vector&lt; <ref refid="class_enemy" kindref="compound">Enemy</ref> &gt;</type>
+        <definition>vector&lt;Enemy&gt; MapManager::enemies</definition>
+        <argsstring></argsstring>
+        <name>enemies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="22" column="8" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_map_manager_1a63237ae436886673f81ed41f38e7ffbe" compoundref="_map_manager_8cpp" startline="163" endline="181">FindEnemy</referencedby>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">Player::PlayerCollisions</referencedby>
+        <referencedby refid="class_player_1a459cda6070754195650bd10e0db43710" compoundref="_player_8cpp" startline="174" endline="233">Player::PlayerInput</referencedby>
+        <referencedby refid="class_map_manager_1ae924c576229d40970074e76875dab3bb" compoundref="_map_manager_8cpp" startline="10" endline="59">PrintMap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_manager_1a8718e18f0c51173645c2626e5e65cb32" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* MapManager::new_map</definition>
+        <argsstring></argsstring>
+        <name>new_map</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="24" column="6" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_player_1a3b587452a99abee05fafb51daadf6687" compoundref="_player_8cpp" startline="235" endline="239">Player::BlankPosition</referencedby>
+        <referencedby refid="class_inventory_manager_1a5b5e89fe9ebb4fe18db920a373c4052b" compoundref="_inventory_manager_8cpp" startline="85" endline="139">InventoryManager::DropItemSelected</referencedby>
+        <referencedby refid="class_map_manager_1afab5c5f3312e023fed2304c937156c02" compoundref="_map_manager_8cpp" startline="103" endline="110">IsEmpty</referencedby>
+        <referencedby refid="class_map_manager_1a0376a5b8e5baed3a0845887d16920752" compoundref="_map_manager_8cpp" startline="61" endline="70">LoadMap</referencedby>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">Player::PlayerCollisions</referencedby>
+        <referencedby refid="class_map_manager_1ae924c576229d40970074e76875dab3bb" compoundref="_map_manager_8cpp" startline="10" endline="59">PrintMap</referencedby>
+        <referencedby refid="class_map_manager_1a83822e33297caa6a3e1f3f48b52b2530" compoundref="_map_manager_8cpp" startline="112" endline="139">ReadMap</referencedby>
+        <referencedby refid="class_player_1a4b2ed7452ebf86347df93b965f5c4966" compoundref="_player_8cpp" startline="10" endline="38">Player::RenderPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_manager_1adc9521c363ffb0dcf91fada254d374d3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MapManager::has_rendered_map</definition>
+        <argsstring></argsstring>
+        <name>has_rendered_map</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="25" column="6" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_map_manager_1ab864df2edd061402a8ae649642545cf4" compoundref="_map_manager_8cpp" startline="72" endline="101">LoadNextMap</referencedby>
+        <referencedby refid="class_map_manager_1a3d93eb2a28003237aa76baf2cb0de02c" compoundref="_map_manager_8cpp" startline="141" endline="155">RenderMap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_manager_1a68b9e24db6a6d5cbab5ee7c2f055997f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MapManager::loading_next_map</definition>
+        <argsstring></argsstring>
+        <name>loading_next_map</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="26" column="6" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_map_manager_1ab864df2edd061402a8ae649642545cf4" compoundref="_map_manager_8cpp" startline="72" endline="101">LoadNextMap</referencedby>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="20" endline="46">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_manager_1a8283261a6c856b84a3531df03827e9f5" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string MapManager::file_name_start</definition>
+        <argsstring></argsstring>
+        <name>file_name_start</name>
+        <initializer>= &quot;MAP_&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="28" column="8" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_map_manager_1a83822e33297caa6a3e1f3f48b52b2530" compoundref="_map_manager_8cpp" startline="112" endline="139">ReadMap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_manager_1a5878e375bb4dcc6458c23475d9e0bdf1" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string MapManager::file_name_end</definition>
+        <argsstring></argsstring>
+        <name>file_name_end</name>
+        <initializer>= &quot;.txt&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="29" column="8" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_map_manager_1a83822e33297caa6a3e1f3f48b52b2530" compoundref="_map_manager_8cpp" startline="112" endline="139">ReadMap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_map_manager_1aaae3bf6e05a1e85d62b37357596b7e89" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string MapManager::file_contents_read_in</definition>
+        <argsstring></argsstring>
+        <name>file_contents_read_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="30" column="8" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">Player::PlayerCollisions</referencedby>
+        <referencedby refid="class_map_manager_1a83822e33297caa6a3e1f3f48b52b2530" compoundref="_map_manager_8cpp" startline="112" endline="139">ReadMap</referencedby>
+        <referencedby refid="class_map_manager_1a3d93eb2a28003237aa76baf2cb0de02c" compoundref="_map_manager_8cpp" startline="141" endline="155">RenderMap</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_map_manager_1ab864df2edd061402a8ae649642545cf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MapManager::LoadNextMap</definition>
+        <argsstring>(MapManager &amp;m, ConsoleWindowManager &amp;c, Player &amp;p, InventoryManager &amp;i)</argsstring>
+        <name>LoadNextMap</name>
+        <param>
+          <type><ref refid="class_map_manager" kindref="compound">MapManager</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_inventory_manager" kindref="compound">InventoryManager</ref> &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="32" column="6" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.cpp" bodystart="72" bodyend="101"/>
+        <references refid="class_console_window_manager_1aec3eb492b72b29b4b9c57d622b799e9c" compoundref="_console_window_manager_8cpp" startline="18" endline="21">ConsoleWindowManager::BlankScreen</references>
+        <references refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" compoundref="_macro_8cpp" startline="7" endline="13">Macro::GoToScreenPosition</references>
+        <references refid="class_map_manager_1adc9521c363ffb0dcf91fada254d374d3" compoundref="_map_manager_8h" startline="25">has_rendered_map</references>
+        <references refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" compoundref="_map_manager_8h" startline="19">height</references>
+        <references refid="class_player_1afabc272a584435771820c92f2c8308f1" compoundref="_player_8h" startline="30">Player::in_combat</references>
+        <references refid="class_map_manager_1ac098de57cb928a3ace62fcb2a566206f" compoundref="_map_manager_8h" startline="17">level_index</references>
+        <references refid="class_map_manager_1a68b9e24db6a6d5cbab5ee7c2f055997f" compoundref="_map_manager_8h" startline="26">loading_next_map</references>
+        <references refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" compoundref="_player_8h" startline="25">Player::player_position_x_new</references>
+        <references refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" compoundref="_player_8h" startline="26">Player::player_position_y_new</references>
+        <references refid="class_map_manager_1a3d93eb2a28003237aa76baf2cb0de02c" compoundref="_map_manager_8cpp" startline="141" endline="155">RenderMap</references>
+        <references refid="class_player_1a4b2ed7452ebf86347df93b965f5c4966" compoundref="_player_8cpp" startline="10" endline="38">Player::RenderPlayer</references>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">Player::PlayerCollisions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_map_manager_1a3d93eb2a28003237aa76baf2cb0de02c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MapManager::RenderMap</definition>
+        <argsstring>(ConsoleWindowManager &amp;c)</argsstring>
+        <name>RenderMap</name>
+        <param>
+          <type><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="33" column="6" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.cpp" bodystart="141" bodyend="155"/>
+        <references refid="class_console_window_manager_1aec3eb492b72b29b4b9c57d622b799e9c" compoundref="_console_window_manager_8cpp" startline="18" endline="21">ConsoleWindowManager::BlankScreen</references>
+        <references refid="class_map_manager_1aaae3bf6e05a1e85d62b37357596b7e89" compoundref="_map_manager_8h" startline="30">file_contents_read_in</references>
+        <references refid="class_map_manager_1adc9521c363ffb0dcf91fada254d374d3" compoundref="_map_manager_8h" startline="25">has_rendered_map</references>
+        <references refid="class_map_manager_1a0376a5b8e5baed3a0845887d16920752" compoundref="_map_manager_8cpp" startline="61" endline="70">LoadMap</references>
+        <references refid="class_map_manager_1ae924c576229d40970074e76875dab3bb" compoundref="_map_manager_8cpp" startline="10" endline="59">PrintMap</references>
+        <references refid="class_map_manager_1a83822e33297caa6a3e1f3f48b52b2530" compoundref="_map_manager_8cpp" startline="112" endline="139">ReadMap</references>
+        <referencedby refid="class_map_manager_1ab864df2edd061402a8ae649642545cf4" compoundref="_map_manager_8cpp" startline="72" endline="101">LoadNextMap</referencedby>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="20" endline="46">main</referencedby>
+        <referencedby refid="class_console_rendering_1a3ba48c54dc22c278244cd45cfbb53a83" compoundref="_console_rendering_8cpp" startline="187" endline="200">ConsoleRendering::Render_Inventory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_map_manager_1afab5c5f3312e023fed2304c937156c02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MapManager::IsEmpty</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>IsEmpty</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="34" column="6" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.cpp" bodystart="103" bodyend="110"/>
+        <references refid="class_map_manager_1a8718e18f0c51173645c2626e5e65cb32" compoundref="_map_manager_8h" startline="24">new_map</references>
+        <references refid="class_map_manager_1af44d67473c8a932512d90fe08a5f10c2" compoundref="_map_manager_8h" startline="18">width</references>
+        <referencedby refid="class_inventory_manager_1a5b5e89fe9ebb4fe18db920a373c4052b" compoundref="_inventory_manager_8cpp" startline="85" endline="139">InventoryManager::DropItemSelected</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_map_manager_1a0376a5b8e5baed3a0845887d16920752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MapManager::LoadMap</definition>
+        <argsstring>(string input)</argsstring>
+        <name>LoadMap</name>
+        <param>
+          <type>string</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="35" column="6" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.cpp" bodystart="61" bodyend="70"/>
+        <references refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" compoundref="_map_manager_8h" startline="19">height</references>
+        <references refid="class_map_manager_1a8718e18f0c51173645c2626e5e65cb32" compoundref="_map_manager_8h" startline="24">new_map</references>
+        <references refid="class_map_manager_1af44d67473c8a932512d90fe08a5f10c2" compoundref="_map_manager_8h" startline="18">width</references>
+        <referencedby refid="class_map_manager_1a3d93eb2a28003237aa76baf2cb0de02c" compoundref="_map_manager_8cpp" startline="141" endline="155">RenderMap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_map_manager_1a63237ae436886673f81ed41f38e7ffbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MapManager::FindEnemy</definition>
+        <argsstring>(Player &amp;p)</argsstring>
+        <name>FindEnemy</name>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="37" column="5" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.cpp" bodystart="163" bodyend="181"/>
+        <references refid="class_map_manager_1a426775cb6ac19bd0e9b6ca79e93dc013" compoundref="_map_manager_8h" startline="22">enemies</references>
+        <references refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" compoundref="_player_8h" startline="25">Player::player_position_x_new</references>
+        <references refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" compoundref="_player_8h" startline="26">Player::player_position_y_new</references>
+        <references refid="class_map_manager_1af44d67473c8a932512d90fe08a5f10c2" compoundref="_map_manager_8h" startline="18">width</references>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">Player::PlayerCollisions</referencedby>
+        <referencedby refid="class_player_1a459cda6070754195650bd10e0db43710" compoundref="_player_8cpp" startline="174" endline="233">Player::PlayerInput</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_map_manager_1a147a44e3b176a36a06689d4589cfb76f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MapManager::FindFriendly</definition>
+        <argsstring>(Player &amp;p)</argsstring>
+        <name>FindFriendly</name>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="38" column="5" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.cpp" bodystart="183" bodyend="201"/>
+        <references refid="class_map_manager_1a6c276cfffc5bfb5ca0448b192b00c071" compoundref="_map_manager_8h" startline="21">generic_friendlies</references>
+        <references refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" compoundref="_player_8h" startline="25">Player::player_position_x_new</references>
+        <references refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" compoundref="_player_8h" startline="26">Player::player_position_y_new</references>
+        <references refid="class_map_manager_1af44d67473c8a932512d90fe08a5f10c2" compoundref="_map_manager_8h" startline="18">width</references>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">Player::PlayerCollisions</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_map_manager_1a83822e33297caa6a3e1f3f48b52b2530" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MapManager::ReadMap</definition>
+        <argsstring>()</argsstring>
+        <name>ReadMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="41" column="6" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.cpp" bodystart="112" bodyend="139"/>
+        <references refid="class_map_manager_1aaae3bf6e05a1e85d62b37357596b7e89" compoundref="_map_manager_8h" startline="30">file_contents_read_in</references>
+        <references refid="class_map_manager_1a5878e375bb4dcc6458c23475d9e0bdf1" compoundref="_map_manager_8h" startline="29">file_name_end</references>
+        <references refid="class_map_manager_1a8283261a6c856b84a3531df03827e9f5" compoundref="_map_manager_8h" startline="28">file_name_start</references>
+        <references refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" compoundref="_map_manager_8h" startline="19">height</references>
+        <references refid="class_map_manager_1ac098de57cb928a3ace62fcb2a566206f" compoundref="_map_manager_8h" startline="17">level_index</references>
+        <references refid="class_map_manager_1a8718e18f0c51173645c2626e5e65cb32" compoundref="_map_manager_8h" startline="24">new_map</references>
+        <references refid="class_map_manager_1af44d67473c8a932512d90fe08a5f10c2" compoundref="_map_manager_8h" startline="18">width</references>
+        <referencedby refid="class_map_manager_1a3d93eb2a28003237aa76baf2cb0de02c" compoundref="_map_manager_8cpp" startline="141" endline="155">RenderMap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_map_manager_1ae924c576229d40970074e76875dab3bb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MapManager::PrintMap</definition>
+        <argsstring>(ConsoleWindowManager &amp;c)</argsstring>
+        <name>PrintMap</name>
+        <param>
+          <type><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="42" column="6" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.cpp" bodystart="10" bodyend="59"/>
+        <references refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3" compoundref="_console_window_manager_8h" startline="9">ConsoleWindowManager::BLACK</references>
+        <references refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b2a4e6f58e1a7c9bcc98461ec6689f9" compoundref="_console_window_manager_8h" startline="18">ConsoleWindowManager::BLUE</references>
+        <references refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543af19a5b9192c1fa96a5ae253ab37c714b" compoundref="_console_window_manager_8h" startline="20">ConsoleWindowManager::CYAN</references>
+        <references refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a0123e45b31a6caef6bee87987431ba29" compoundref="_console_window_manager_8h" startline="10">ConsoleWindowManager::DARK_BLUE</references>
+        <references refid="class_map_manager_1a426775cb6ac19bd0e9b6ca79e93dc013" compoundref="_map_manager_8h" startline="22">enemies</references>
+        <references refid="class_map_manager_1a6c276cfffc5bfb5ca0448b192b00c071" compoundref="_map_manager_8h" startline="21">generic_friendlies</references>
+        <references refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ae5c13df1cfc28fdc2c55a856085f5b8a" compoundref="_console_window_manager_8h" startline="19">ConsoleWindowManager::GREEN</references>
+        <references refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" compoundref="_map_manager_8h" startline="19">height</references>
+        <references refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752" compoundref="_console_window_manager_8h" startline="12">ConsoleWindowManager::LIGHT_BLUE</references>
+        <references refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e" compoundref="_console_window_manager_8h" startline="14">ConsoleWindowManager::MAGENTA</references>
+        <references refid="class_map_manager_1a8718e18f0c51173645c2626e5e65cb32" compoundref="_map_manager_8h" startline="24">new_map</references>
+        <references refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a241238b2c88c156285680b898b7bca5f" compoundref="_console_window_manager_8h" startline="21">ConsoleWindowManager::RED</references>
+        <references refid="class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213" compoundref="_console_window_manager_8cpp" startline="58" endline="61">ConsoleWindowManager::SetConsoleWindowColor</references>
+        <references refid="class_map_manager_1af44d67473c8a932512d90fe08a5f10c2" compoundref="_map_manager_8h" startline="18">width</references>
+        <references refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ac2f74f3c14dbbde9c81c3eb43ad652d8" compoundref="_console_window_manager_8h" startline="23">ConsoleWindowManager::YELLOW</references>
+        <referencedby refid="class_map_manager_1a4308dceb14fd959e59001c1a531e3f2b" compoundref="_map_manager_8cpp" startline="157" endline="161">RefreshMap</referencedby>
+        <referencedby refid="class_map_manager_1a3d93eb2a28003237aa76baf2cb0de02c" compoundref="_map_manager_8cpp" startline="141" endline="155">RenderMap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_map_manager_1a4308dceb14fd959e59001c1a531e3f2b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MapManager::RefreshMap</definition>
+        <argsstring>(ConsoleWindowManager &amp;c)</argsstring>
+        <name>RefreshMap</name>
+        <param>
+          <type><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="43" column="6" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.cpp" bodystart="157" bodyend="161"/>
+        <references refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" compoundref="_macro_8cpp" startline="7" endline="13">Macro::GoToScreenPosition</references>
+        <references refid="class_map_manager_1ae924c576229d40970074e76875dab3bb" compoundref="_map_manager_8cpp" startline="10" endline="59">PrintMap</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MapManager</label>
+        <link refid="class_map_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/University/ca-A00269349/Rogue/MapManager.h" line="14" column="1" bodyfile="D:/University/ca-A00269349/Rogue/MapManager.h" bodystart="15" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_map_manager_1a426775cb6ac19bd0e9b6ca79e93dc013" prot="public" virt="non-virtual"><scope>MapManager</scope><name>enemies</name></member>
+      <member refid="class_map_manager_1aaae3bf6e05a1e85d62b37357596b7e89" prot="public" virt="non-virtual"><scope>MapManager</scope><name>file_contents_read_in</name></member>
+      <member refid="class_map_manager_1a5878e375bb4dcc6458c23475d9e0bdf1" prot="public" virt="non-virtual"><scope>MapManager</scope><name>file_name_end</name></member>
+      <member refid="class_map_manager_1a8283261a6c856b84a3531df03827e9f5" prot="public" virt="non-virtual"><scope>MapManager</scope><name>file_name_start</name></member>
+      <member refid="class_map_manager_1a63237ae436886673f81ed41f38e7ffbe" prot="public" virt="non-virtual"><scope>MapManager</scope><name>FindEnemy</name></member>
+      <member refid="class_map_manager_1a147a44e3b176a36a06689d4589cfb76f" prot="public" virt="non-virtual"><scope>MapManager</scope><name>FindFriendly</name></member>
+      <member refid="class_map_manager_1a6c276cfffc5bfb5ca0448b192b00c071" prot="public" virt="non-virtual"><scope>MapManager</scope><name>generic_friendlies</name></member>
+      <member refid="class_map_manager_1adc9521c363ffb0dcf91fada254d374d3" prot="public" virt="non-virtual"><scope>MapManager</scope><name>has_rendered_map</name></member>
+      <member refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" prot="public" virt="non-virtual"><scope>MapManager</scope><name>height</name></member>
+      <member refid="class_map_manager_1afab5c5f3312e023fed2304c937156c02" prot="public" virt="non-virtual"><scope>MapManager</scope><name>IsEmpty</name></member>
+      <member refid="class_map_manager_1ac098de57cb928a3ace62fcb2a566206f" prot="public" virt="non-virtual"><scope>MapManager</scope><name>level_index</name></member>
+      <member refid="class_map_manager_1a68b9e24db6a6d5cbab5ee7c2f055997f" prot="public" virt="non-virtual"><scope>MapManager</scope><name>loading_next_map</name></member>
+      <member refid="class_map_manager_1a0376a5b8e5baed3a0845887d16920752" prot="public" virt="non-virtual"><scope>MapManager</scope><name>LoadMap</name></member>
+      <member refid="class_map_manager_1ab864df2edd061402a8ae649642545cf4" prot="public" virt="non-virtual"><scope>MapManager</scope><name>LoadNextMap</name></member>
+      <member refid="class_map_manager_1a8718e18f0c51173645c2626e5e65cb32" prot="public" virt="non-virtual"><scope>MapManager</scope><name>new_map</name></member>
+      <member refid="class_map_manager_1ae924c576229d40970074e76875dab3bb" prot="private" virt="non-virtual"><scope>MapManager</scope><name>PrintMap</name></member>
+      <member refid="class_map_manager_1a83822e33297caa6a3e1f3f48b52b2530" prot="private" virt="non-virtual"><scope>MapManager</scope><name>ReadMap</name></member>
+      <member refid="class_map_manager_1a4308dceb14fd959e59001c1a531e3f2b" prot="private" virt="non-virtual"><scope>MapManager</scope><name>RefreshMap</name></member>
+      <member refid="class_map_manager_1a3d93eb2a28003237aa76baf2cb0de02c" prot="public" virt="non-virtual"><scope>MapManager</scope><name>RenderMap</name></member>
+      <member refid="class_map_manager_1af44d67473c8a932512d90fe08a5f10c2" prot="public" virt="non-virtual"><scope>MapManager</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

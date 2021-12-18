@@ -1,0 +1,709 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_player" kind="class" language="C++" prot="public">
+    <compoundname>Player</compoundname>
+    <includes refid="_player_8h" local="no">Player.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_player_1a5e4cebf1dffd936edc4a69867dc9d38c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::player_position_x</definition>
+        <argsstring></argsstring>
+        <name>player_position_x</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="23" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_inventory_manager_1a5b5e89fe9ebb4fe18db920a373c4052b" compoundref="_inventory_manager_8cpp" startline="85" endline="139">InventoryManager::DropItemSelected</referencedby>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">PlayerCollisions</referencedby>
+        <referencedby refid="class_player_1a8e27b94ff10ba3c236f57a8a721a5d40" compoundref="_player_8cpp" startline="40" endline="58">PlayerCollisionsChecks</referencedby>
+        <referencedby refid="class_player_1a459cda6070754195650bd10e0db43710" compoundref="_player_8cpp" startline="174" endline="233">PlayerInput</referencedby>
+        <referencedby refid="class_player_1a4b2ed7452ebf86347df93b965f5c4966" compoundref="_player_8cpp" startline="10" endline="38">RenderPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1a1043d8ae834b0edbdf36765e73c32eb0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::player_position_y</definition>
+        <argsstring></argsstring>
+        <name>player_position_y</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="24" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_inventory_manager_1a5b5e89fe9ebb4fe18db920a373c4052b" compoundref="_inventory_manager_8cpp" startline="85" endline="139">InventoryManager::DropItemSelected</referencedby>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">PlayerCollisions</referencedby>
+        <referencedby refid="class_player_1a8e27b94ff10ba3c236f57a8a721a5d40" compoundref="_player_8cpp" startline="40" endline="58">PlayerCollisionsChecks</referencedby>
+        <referencedby refid="class_player_1a459cda6070754195650bd10e0db43710" compoundref="_player_8cpp" startline="174" endline="233">PlayerInput</referencedby>
+        <referencedby refid="class_player_1a4b2ed7452ebf86347df93b965f5c4966" compoundref="_player_8cpp" startline="10" endline="38">RenderPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1a295efe0018307edab6aaeaad9dae6e0b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::player_position_x_new</definition>
+        <argsstring></argsstring>
+        <name>player_position_x_new</name>
+        <initializer>= <ref refid="class_player_1a5e4cebf1dffd936edc4a69867dc9d38c" kindref="member">player_position_x</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="25" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_player_1a3b587452a99abee05fafb51daadf6687" compoundref="_player_8cpp" startline="235" endline="239">BlankPosition</referencedby>
+        <referencedby refid="class_map_manager_1a63237ae436886673f81ed41f38e7ffbe" compoundref="_map_manager_8cpp" startline="163" endline="181">MapManager::FindEnemy</referencedby>
+        <referencedby refid="class_map_manager_1a147a44e3b176a36a06689d4589cfb76f" compoundref="_map_manager_8cpp" startline="183" endline="201">MapManager::FindFriendly</referencedby>
+        <referencedby refid="class_map_manager_1ab864df2edd061402a8ae649642545cf4" compoundref="_map_manager_8cpp" startline="72" endline="101">MapManager::LoadNextMap</referencedby>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">PlayerCollisions</referencedby>
+        <referencedby refid="class_player_1a8e27b94ff10ba3c236f57a8a721a5d40" compoundref="_player_8cpp" startline="40" endline="58">PlayerCollisionsChecks</referencedby>
+        <referencedby refid="class_player_1a459cda6070754195650bd10e0db43710" compoundref="_player_8cpp" startline="174" endline="233">PlayerInput</referencedby>
+        <referencedby refid="class_player_1a4b2ed7452ebf86347df93b965f5c4966" compoundref="_player_8cpp" startline="10" endline="38">RenderPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1a7ddbc65116b9c73791679dc1aa049980" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::player_position_y_new</definition>
+        <argsstring></argsstring>
+        <name>player_position_y_new</name>
+        <initializer>= <ref refid="class_player_1a1043d8ae834b0edbdf36765e73c32eb0" kindref="member">player_position_y</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="26" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_player_1a3b587452a99abee05fafb51daadf6687" compoundref="_player_8cpp" startline="235" endline="239">BlankPosition</referencedby>
+        <referencedby refid="class_map_manager_1a63237ae436886673f81ed41f38e7ffbe" compoundref="_map_manager_8cpp" startline="163" endline="181">MapManager::FindEnemy</referencedby>
+        <referencedby refid="class_map_manager_1a147a44e3b176a36a06689d4589cfb76f" compoundref="_map_manager_8cpp" startline="183" endline="201">MapManager::FindFriendly</referencedby>
+        <referencedby refid="class_map_manager_1ab864df2edd061402a8ae649642545cf4" compoundref="_map_manager_8cpp" startline="72" endline="101">MapManager::LoadNextMap</referencedby>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">PlayerCollisions</referencedby>
+        <referencedby refid="class_player_1a8e27b94ff10ba3c236f57a8a721a5d40" compoundref="_player_8cpp" startline="40" endline="58">PlayerCollisionsChecks</referencedby>
+        <referencedby refid="class_player_1a459cda6070754195650bd10e0db43710" compoundref="_player_8cpp" startline="174" endline="233">PlayerInput</referencedby>
+        <referencedby refid="class_player_1a4b2ed7452ebf86347df93b965f5c4966" compoundref="_player_8cpp" startline="10" endline="38">RenderPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1a0df6cda292d01636309ab82d1445f8b5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Player::end_game</definition>
+        <argsstring></argsstring>
+        <name>end_game</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="29" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1afabc272a584435771820c92f2c8308f1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Player::in_combat</definition>
+        <argsstring></argsstring>
+        <name>in_combat</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="30" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80" compoundref="_combat_manager_8cpp" startline="7" endline="49">CombatManager::Fight</referencedby>
+        <referencedby refid="class_map_manager_1ab864df2edd061402a8ae649642545cf4" compoundref="_map_manager_8cpp" startline="72" endline="101">MapManager::LoadNextMap</referencedby>
+        <referencedby refid="class_player_1a459cda6070754195650bd10e0db43710" compoundref="_player_8cpp" startline="174" endline="233">PlayerInput</referencedby>
+        <referencedby refid="class_console_rendering_1af0d3b71e90fc9abb830fc156a4a1a455" compoundref="_console_rendering_8cpp" startline="202" endline="210">ConsoleRendering::Render_All</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1a433fa478597adbefe4ac3911c5639968" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::damage</definition>
+        <argsstring></argsstring>
+        <name>damage</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="32" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_player_1a23faf24de68cf7d62a8b726a3c181ef0" compoundref="_player_8cpp" startline="241" endline="244">GetDamage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1aeaeb39c73e57dbc0727f51a2b6c24b41" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::shield</definition>
+        <argsstring></argsstring>
+        <name>shield</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="33" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_debug_1a7da6fc420757f4d2ed80dd0de4593806" compoundref="_debug_8cpp" startline="11" endline="38">Debug::DebugControls</referencedby>
+        <referencedby refid="class_player_1af437a788282ad5c25d54a10de8199d11" compoundref="_player_8cpp" startline="141" endline="167">EnterMessageMode</referencedby>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">PlayerCollisions</referencedby>
+        <referencedby refid="class_console_rendering_1a373778cb0d4174011a2c7eeaa7482ec1" compoundref="_console_rendering_8cpp" startline="10" endline="63">ConsoleRendering::Print_Stats</referencedby>
+        <referencedby refid="class_inventory_manager_1a5bbb29a62327b708ec79942a3d18aece" compoundref="_inventory_manager_8cpp" startline="52" endline="83">InventoryManager::UsePotionSelected</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1aad33b52bfe73c4c978a3135172f286a0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::health</definition>
+        <argsstring></argsstring>
+        <name>health</name>
+        <initializer>= 50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="34" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_debug_1a7da6fc420757f4d2ed80dd0de4593806" compoundref="_debug_8cpp" startline="11" endline="38">Debug::DebugControls</referencedby>
+        <referencedby refid="class_player_1af437a788282ad5c25d54a10de8199d11" compoundref="_player_8cpp" startline="141" endline="167">EnterMessageMode</referencedby>
+        <referencedby refid="class_player_1a8d962e02bc35d6181940a8aaf7a1a510" compoundref="_player_8cpp" startline="246" endline="249">GetHealth</referencedby>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">PlayerCollisions</referencedby>
+        <referencedby refid="class_console_rendering_1a373778cb0d4174011a2c7eeaa7482ec1" compoundref="_console_rendering_8cpp" startline="10" endline="63">ConsoleRendering::Print_Stats</referencedby>
+        <referencedby refid="class_player_1a02ec140e8f48a44f442e97eb2a19a00e" compoundref="_player_8cpp" startline="169" endline="172">SetDesiredHealth</referencedby>
+        <referencedby refid="class_inventory_manager_1a5bbb29a62327b708ec79942a3d18aece" compoundref="_inventory_manager_8cpp" startline="52" endline="83">InventoryManager::UsePotionSelected</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1a03a20ecc0094ce6869d196b8effddd54" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::magic</definition>
+        <argsstring></argsstring>
+        <name>magic</name>
+        <initializer>= 9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="35" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_debug_1a7da6fc420757f4d2ed80dd0de4593806" compoundref="_debug_8cpp" startline="11" endline="38">Debug::DebugControls</referencedby>
+        <referencedby refid="class_player_1af437a788282ad5c25d54a10de8199d11" compoundref="_player_8cpp" startline="141" endline="167">EnterMessageMode</referencedby>
+        <referencedby refid="class_console_rendering_1a373778cb0d4174011a2c7eeaa7482ec1" compoundref="_console_rendering_8cpp" startline="10" endline="63">ConsoleRendering::Print_Stats</referencedby>
+        <referencedby refid="class_inventory_manager_1a5bbb29a62327b708ec79942a3d18aece" compoundref="_inventory_manager_8cpp" startline="52" endline="83">InventoryManager::UsePotionSelected</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1ad4cfa39d8e172a78e2e8c1c8da13f080" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::max_stats</definition>
+        <argsstring></argsstring>
+        <name>max_stats</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="36" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">PlayerCollisions</referencedby>
+        <referencedby refid="class_inventory_manager_1a5bbb29a62327b708ec79942a3d18aece" compoundref="_inventory_manager_8cpp" startline="52" endline="83">InventoryManager::UsePotionSelected</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1aa55063fb11d6d041d7e72ef650824280" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::health_potions</definition>
+        <argsstring></argsstring>
+        <name>health_potions</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="37" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_inventory_manager_1a5b5e89fe9ebb4fe18db920a373c4052b" compoundref="_inventory_manager_8cpp" startline="85" endline="139">InventoryManager::DropItemSelected</referencedby>
+        <referencedby refid="class_inventory_manager_1aadd5ea163e9e6b8d9df1795443fb035a" compoundref="_inventory_manager_8cpp" startline="206" endline="291">InventoryManager::InsertIntoInventoryManager</referencedby>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">PlayerCollisions</referencedby>
+        <referencedby refid="class_inventory_manager_1a3ba246e46fef5621ee856a0b16be0faa" compoundref="_inventory_manager_8cpp" startline="293" endline="370">InventoryManager::RemoveFromInventoryManager</referencedby>
+        <referencedby refid="class_inventory_manager_1a5bbb29a62327b708ec79942a3d18aece" compoundref="_inventory_manager_8cpp" startline="52" endline="83">InventoryManager::UsePotionSelected</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1aff4ffb0294cf1c1f81d0f4b1f8fc15ff" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::shield_potions</definition>
+        <argsstring></argsstring>
+        <name>shield_potions</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="37" column="21" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_inventory_manager_1a5b5e89fe9ebb4fe18db920a373c4052b" compoundref="_inventory_manager_8cpp" startline="85" endline="139">InventoryManager::DropItemSelected</referencedby>
+        <referencedby refid="class_inventory_manager_1aadd5ea163e9e6b8d9df1795443fb035a" compoundref="_inventory_manager_8cpp" startline="206" endline="291">InventoryManager::InsertIntoInventoryManager</referencedby>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">PlayerCollisions</referencedby>
+        <referencedby refid="class_inventory_manager_1a3ba246e46fef5621ee856a0b16be0faa" compoundref="_inventory_manager_8cpp" startline="293" endline="370">InventoryManager::RemoveFromInventoryManager</referencedby>
+        <referencedby refid="class_inventory_manager_1a5bbb29a62327b708ec79942a3d18aece" compoundref="_inventory_manager_8cpp" startline="52" endline="83">InventoryManager::UsePotionSelected</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1a84354c435ab9342fc19b09423053d1ed" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::magic_potions</definition>
+        <argsstring></argsstring>
+        <name>magic_potions</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="37" column="37" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_inventory_manager_1a5b5e89fe9ebb4fe18db920a373c4052b" compoundref="_inventory_manager_8cpp" startline="85" endline="139">InventoryManager::DropItemSelected</referencedby>
+        <referencedby refid="class_inventory_manager_1aadd5ea163e9e6b8d9df1795443fb035a" compoundref="_inventory_manager_8cpp" startline="206" endline="291">InventoryManager::InsertIntoInventoryManager</referencedby>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">PlayerCollisions</referencedby>
+        <referencedby refid="class_inventory_manager_1a5bbb29a62327b708ec79942a3d18aece" compoundref="_inventory_manager_8cpp" startline="52" endline="83">InventoryManager::UsePotionSelected</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1aeee533a8d8e4e2a00f77b6c493b3929f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Player::max_potions</definition>
+        <argsstring></argsstring>
+        <name>max_potions</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="38" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">PlayerCollisions</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_1a0dfa2c1fdd710480766dcb2cf85b2db4" prot="private" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char Player::c_player</definition>
+        <argsstring></argsstring>
+        <name>c_player</name>
+        <initializer>= &apos;P&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="49" column="12" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_player_1a4b2ed7452ebf86347df93b965f5c4966" compoundref="_player_8cpp" startline="10" endline="38">RenderPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1a3d88ecef0d65b5ca204f92c1a75c02c4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Player::waiting_to_start_combat</definition>
+        <argsstring></argsstring>
+        <name>waiting_to_start_combat</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="52" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="class_player_1a4e306abcd8bd537e80b89563ad77275c" compoundref="_player_8cpp" startline="133" endline="139">EnterCombatMode</referencedby>
+        <referencedby refid="class_player_1a459cda6070754195650bd10e0db43710" compoundref="_player_8cpp" startline="174" endline="233">PlayerInput</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1afeb496e92e437ad4d2da75f935f922ea" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Player::waiting_for_choice</definition>
+        <argsstring></argsstring>
+        <name>waiting_for_choice</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="53" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="class_player_1af437a788282ad5c25d54a10de8199d11" compoundref="_player_8cpp" startline="141" endline="167">EnterMessageMode</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_1a23faf24de68cf7d62a8b726a3c181ef0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Player::GetDamage</definition>
+        <argsstring>()</argsstring>
+        <name>GetDamage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="40" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Player.cpp" bodystart="241" bodyend="244"/>
+        <references refid="class_player_1a433fa478597adbefe4ac3911c5639968" compoundref="_player_8h" startline="32">damage</references>
+        <referencedby refid="class_combat_manager_1a2f5d5d9a45933a6e234bc3154fd6f894" compoundref="_combat_manager_8cpp" startline="56" endline="60">CombatManager::HitEnemy</referencedby>
+        <referencedby refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" compoundref="_combat_manager_8cpp" startline="68" endline="104">CombatManager::PrintStatements</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a8d962e02bc35d6181940a8aaf7a1a510" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Player::GetHealth</definition>
+        <argsstring>()</argsstring>
+        <name>GetHealth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="41" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Player.cpp" bodystart="246" bodyend="249"/>
+        <references refid="class_player_1aad33b52bfe73c4c978a3135172f286a0" compoundref="_player_8h" startline="34">health</references>
+        <referencedby refid="class_combat_manager_1aa3041a8bdc3eeddce47ef1eb0cd93899" compoundref="_combat_manager_8cpp" startline="62" endline="66">CombatManager::HitPlayer</referencedby>
+        <referencedby refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" compoundref="_combat_manager_8cpp" startline="68" endline="104">CombatManager::PrintStatements</referencedby>
+        <referencedby refid="class_combat_manager_1aec72d4fe1af9857010fb793735c145db" compoundref="_combat_manager_8cpp" startline="106" endline="116">CombatManager::UpdateResults</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a02ec140e8f48a44f442e97eb2a19a00e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::SetDesiredHealth</definition>
+        <argsstring>(int value)</argsstring>
+        <name>SetDesiredHealth</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="42" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Player.cpp" bodystart="169" bodyend="172"/>
+        <references refid="class_player_1aad33b52bfe73c4c978a3135172f286a0" compoundref="_player_8h" startline="34">health</references>
+        <referencedby refid="class_combat_manager_1aa3041a8bdc3eeddce47ef1eb0cd93899" compoundref="_combat_manager_8cpp" startline="62" endline="66">CombatManager::HitPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a4b2ed7452ebf86347df93b965f5c4966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::RenderPlayer</definition>
+        <argsstring>(MapManager &amp;m, ConsoleWindowManager &amp;c, InventoryManager &amp;i)</argsstring>
+        <name>RenderPlayer</name>
+        <param>
+          <type><ref refid="class_map_manager" kindref="compound">MapManager</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="class_inventory_manager" kindref="compound">InventoryManager</ref> &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="43" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Player.cpp" bodystart="10" bodyend="38"/>
+        <references refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3" compoundref="_console_window_manager_8h" startline="9">ConsoleWindowManager::BLACK</references>
+        <references refid="class_player_1a0dfa2c1fdd710480766dcb2cf85b2db4" compoundref="_player_8h" startline="49">c_player</references>
+        <references refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" compoundref="_macro_8cpp" startline="7" endline="13">Macro::GoToScreenPosition</references>
+        <references refid="class_inventory_manager_1a229268373b664e039dcd90f41282f5e4" compoundref="_inventory_manager_8h" startline="42">InventoryManager::inventory_open</references>
+        <references refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752" compoundref="_console_window_manager_8h" startline="12">ConsoleWindowManager::LIGHT_BLUE</references>
+        <references refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e" compoundref="_console_window_manager_8h" startline="14">ConsoleWindowManager::MAGENTA</references>
+        <references refid="class_map_manager_1a8718e18f0c51173645c2626e5e65cb32" compoundref="_map_manager_8h" startline="24">MapManager::new_map</references>
+        <references refid="class_player_1a5e4cebf1dffd936edc4a69867dc9d38c" compoundref="_player_8h" startline="23">player_position_x</references>
+        <references refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" compoundref="_player_8h" startline="25">player_position_x_new</references>
+        <references refid="class_player_1a1043d8ae834b0edbdf36765e73c32eb0" compoundref="_player_8h" startline="24">player_position_y</references>
+        <references refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" compoundref="_player_8h" startline="26">player_position_y_new</references>
+        <references refid="class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213" compoundref="_console_window_manager_8cpp" startline="58" endline="61">ConsoleWindowManager::SetConsoleWindowColor</references>
+        <references refid="class_map_manager_1af44d67473c8a932512d90fe08a5f10c2" compoundref="_map_manager_8h" startline="18">MapManager::width</references>
+        <referencedby refid="class_map_manager_1ab864df2edd061402a8ae649642545cf4" compoundref="_map_manager_8cpp" startline="72" endline="101">MapManager::LoadNextMap</referencedby>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="20" endline="46">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a848f89637b84d9692c96fc75cfa434eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::PlayerCollisions</definition>
+        <argsstring>(MapManager &amp;m, ConsoleWindowManager &amp;c, Player &amp;p, InventoryManager &amp;i, UserInterfaceManager &amp;ui)</argsstring>
+        <name>PlayerCollisions</name>
+        <param>
+          <type><ref refid="class_map_manager" kindref="compound">MapManager</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_inventory_manager" kindref="compound">InventoryManager</ref> &amp;</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="class_user_interface_manager" kindref="compound">UserInterfaceManager</ref> &amp;</type>
+          <declname>ui</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="44" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Player.cpp" bodystart="60" bodyend="131"/>
+        <references refid="class_player_1a3b587452a99abee05fafb51daadf6687" compoundref="_player_8cpp" startline="235" endline="239">BlankPosition</references>
+        <references refid="class_inventory_manager_1a2c9831d5f408cdb977ec3e8834445f4a" compoundref="_inventory_manager_8h" startline="34">InventoryManager::c_health</references>
+        <references refid="class_inventory_manager_1a5400f0bca8bb5930c0a65e988b8b9982" compoundref="_inventory_manager_8h" startline="36">InventoryManager::c_health_potion</references>
+        <references refid="class_inventory_manager_1a8339e1257c0c68ad1b5277f88cabc2ac" compoundref="_inventory_manager_8h" startline="38">InventoryManager::c_magic_potion</references>
+        <references refid="class_inventory_manager_1ae592f94b9da417fdbae15aaf94559640" compoundref="_inventory_manager_8h" startline="35">InventoryManager::c_shield</references>
+        <references refid="class_inventory_manager_1afed1401d4aa963b4833c0d64ac32ea00" compoundref="_inventory_manager_8h" startline="37">InventoryManager::c_shield_potion</references>
+        <references refid="class_map_manager_1a426775cb6ac19bd0e9b6ca79e93dc013" compoundref="_map_manager_8h" startline="22">MapManager::enemies</references>
+        <references refid="class_player_1a4e306abcd8bd537e80b89563ad77275c" compoundref="_player_8cpp" startline="133" endline="139">EnterCombatMode</references>
+        <references refid="class_player_1af437a788282ad5c25d54a10de8199d11" compoundref="_player_8cpp" startline="141" endline="167">EnterMessageMode</references>
+        <references refid="class_map_manager_1aaae3bf6e05a1e85d62b37357596b7e89" compoundref="_map_manager_8h" startline="30">MapManager::file_contents_read_in</references>
+        <references refid="class_map_manager_1a63237ae436886673f81ed41f38e7ffbe" compoundref="_map_manager_8cpp" startline="163" endline="181">MapManager::FindEnemy</references>
+        <references refid="class_map_manager_1a147a44e3b176a36a06689d4589cfb76f" compoundref="_map_manager_8cpp" startline="183" endline="201">MapManager::FindFriendly</references>
+        <references refid="class_map_manager_1a6c276cfffc5bfb5ca0448b192b00c071" compoundref="_map_manager_8h" startline="21">MapManager::generic_friendlies</references>
+        <references refid="class_inventory_manager_1a98a166d06e34c1f4dc503304f0861a6a" compoundref="_inventory_manager_8cpp" startline="179" endline="189">InventoryManager::GetInventoryHeadingLocation</references>
+        <references refid="class_player_1aad33b52bfe73c4c978a3135172f286a0" compoundref="_player_8h" startline="34">health</references>
+        <references refid="class_player_1aa55063fb11d6d041d7e72ef650824280" compoundref="_player_8h" startline="37">health_potions</references>
+        <references refid="class_inventory_manager_1aadd5ea163e9e6b8d9df1795443fb035a" compoundref="_inventory_manager_8cpp" startline="206" endline="291">InventoryManager::InsertIntoInventoryManager</references>
+        <references refid="class_user_interface_manager_1a20860ee0c0c01dba89ac4f81dba649dd" compoundref="_user_interface_manger_8h" startline="32">UserInterfaceManager::inventory</references>
+        <references refid="class_map_manager_1ab864df2edd061402a8ae649642545cf4" compoundref="_map_manager_8cpp" startline="72" endline="101">MapManager::LoadNextMap</references>
+        <references refid="class_player_1a84354c435ab9342fc19b09423053d1ed" compoundref="_player_8h" startline="37">magic_potions</references>
+        <references refid="class_player_1aeee533a8d8e4e2a00f77b6c493b3929f" compoundref="_player_8h" startline="38">max_potions</references>
+        <references refid="class_player_1ad4cfa39d8e172a78e2e8c1c8da13f080" compoundref="_player_8h" startline="36">max_stats</references>
+        <references refid="class_map_manager_1a8718e18f0c51173645c2626e5e65cb32" compoundref="_map_manager_8h" startline="24">MapManager::new_map</references>
+        <references refid="class_player_1a5e4cebf1dffd936edc4a69867dc9d38c" compoundref="_player_8h" startline="23">player_position_x</references>
+        <references refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" compoundref="_player_8h" startline="25">player_position_x_new</references>
+        <references refid="class_player_1a1043d8ae834b0edbdf36765e73c32eb0" compoundref="_player_8h" startline="24">player_position_y</references>
+        <references refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" compoundref="_player_8h" startline="26">player_position_y_new</references>
+        <references refid="class_player_1a8e27b94ff10ba3c236f57a8a721a5d40" compoundref="_player_8cpp" startline="40" endline="58">PlayerCollisionsChecks</references>
+        <references refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f" compoundref="_inventory_manager_8h" startline="25">InventoryManager::POTION</references>
+        <references refid="class_inventory_manager_1ae1b2153f7d99c00d92bb7e0516f3d32d" compoundref="_inventory_manager_8h" startline="29">InventoryManager::potion_inventory</references>
+        <references refid="class_player_1aeaeb39c73e57dbc0727f51a2b6c24b41" compoundref="_player_8h" startline="33">shield</references>
+        <references refid="class_player_1aff4ffb0294cf1c1f81d0f4b1f8fc15ff" compoundref="_player_8h" startline="37">shield_potions</references>
+        <references refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1af8f6596290d4e68df5ae27ec38bbbbff" compoundref="_inventory_manager_8h" startline="23">InventoryManager::WEAPON</references>
+        <references refid="class_inventory_manager_1a3af6cc9ac4341fba2fde51ae42ad3303" compoundref="_inventory_manager_8cpp" startline="160" endline="177">InventoryManager::WhatIsItem</references>
+        <references refid="class_map_manager_1af44d67473c8a932512d90fe08a5f10c2" compoundref="_map_manager_8h" startline="18">MapManager::width</references>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="20" endline="46">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a459cda6070754195650bd10e0db43710" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::PlayerInput</definition>
+        <argsstring>(InventoryManager &amp;i, ConsoleWindowManager &amp;c, MapManager &amp;m, Player &amp;p, ConsoleRendering &amp;r, UserInterfaceManager &amp;ui, CombatManager &amp;cm)</argsstring>
+        <name>PlayerInput</name>
+        <param>
+          <type><ref refid="class_inventory_manager" kindref="compound">InventoryManager</ref> &amp;</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="class_map_manager" kindref="compound">MapManager</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_console_rendering" kindref="compound">ConsoleRendering</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="class_user_interface_manager" kindref="compound">UserInterfaceManager</ref> &amp;</type>
+          <declname>ui</declname>
+        </param>
+        <param>
+          <type><ref refid="class_combat_manager" kindref="compound">CombatManager</ref> &amp;</type>
+          <declname>cm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="45" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Player.cpp" bodystart="174" bodyend="233"/>
+        <references refid="class_inventory_manager_1a5b5e89fe9ebb4fe18db920a373c4052b" compoundref="_inventory_manager_8cpp" startline="85" endline="139">InventoryManager::DropItemSelected</references>
+        <references refid="class_map_manager_1a426775cb6ac19bd0e9b6ca79e93dc013" compoundref="_map_manager_8h" startline="22">MapManager::enemies</references>
+        <references refid="class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80" compoundref="_combat_manager_8cpp" startline="7" endline="49">CombatManager::Fight</references>
+        <references refid="class_map_manager_1a63237ae436886673f81ed41f38e7ffbe" compoundref="_map_manager_8cpp" startline="163" endline="181">MapManager::FindEnemy</references>
+        <references refid="class_player_1afabc272a584435771820c92f2c8308f1" compoundref="_player_8h" startline="30">in_combat</references>
+        <references refid="class_inventory_manager_1a4c1df972584d8dd26d0156eb24ff2d25" compoundref="_inventory_manager_8h" startline="40">InventoryManager::inventory_index</references>
+        <references refid="class_inventory_manager_1a229268373b664e039dcd90f41282f5e4" compoundref="_inventory_manager_8h" startline="42">InventoryManager::inventory_open</references>
+        <references refid="class_inventory_manager_1acb6cf3d380d81c8129820734b05d0f6e" compoundref="_inventory_manager_8cpp" startline="14" endline="50">InventoryManager::InventoryControl</references>
+        <references refid="class_player_1a5e4cebf1dffd936edc4a69867dc9d38c" compoundref="_player_8h" startline="23">player_position_x</references>
+        <references refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" compoundref="_player_8h" startline="25">player_position_x_new</references>
+        <references refid="class_player_1a1043d8ae834b0edbdf36765e73c32eb0" compoundref="_player_8h" startline="24">player_position_y</references>
+        <references refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" compoundref="_player_8h" startline="26">player_position_y_new</references>
+        <references refid="class_inventory_manager_1a5bbb29a62327b708ec79942a3d18aece" compoundref="_inventory_manager_8cpp" startline="52" endline="83">InventoryManager::UsePotionSelected</references>
+        <references refid="class_player_1a3d88ecef0d65b5ca204f92c1a75c02c4" compoundref="_player_8h" startline="52">waiting_to_start_combat</references>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="20" endline="46">main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_1a8e27b94ff10ba3c236f57a8a721a5d40" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Player::PlayerCollisionsChecks</definition>
+        <argsstring>(int item, int item_max, MapManager &amp;m, Player &amp;p)</argsstring>
+        <name>PlayerCollisionsChecks</name>
+        <param>
+          <type>int</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>item_max</declname>
+        </param>
+        <param>
+          <type><ref refid="class_map_manager" kindref="compound">MapManager</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="56" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Player.cpp" bodystart="40" bodyend="58"/>
+        <references refid="class_player_1a3b587452a99abee05fafb51daadf6687" compoundref="_player_8cpp" startline="235" endline="239">BlankPosition</references>
+        <references refid="class_player_1a5e4cebf1dffd936edc4a69867dc9d38c" compoundref="_player_8h" startline="23">player_position_x</references>
+        <references refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" compoundref="_player_8h" startline="25">player_position_x_new</references>
+        <references refid="class_player_1a1043d8ae834b0edbdf36765e73c32eb0" compoundref="_player_8h" startline="24">player_position_y</references>
+        <references refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" compoundref="_player_8h" startline="26">player_position_y_new</references>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">PlayerCollisions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a3b587452a99abee05fafb51daadf6687" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Player::BlankPosition</definition>
+        <argsstring>(MapManager &amp;m, Player &amp;p)</argsstring>
+        <name>BlankPosition</name>
+        <param>
+          <type><ref refid="class_map_manager" kindref="compound">MapManager</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="57" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Player.cpp" bodystart="235" bodyend="239"/>
+        <references refid="class_map_manager_1a8718e18f0c51173645c2626e5e65cb32" compoundref="_map_manager_8h" startline="24">MapManager::new_map</references>
+        <references refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" compoundref="_player_8h" startline="25">player_position_x_new</references>
+        <references refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" compoundref="_player_8h" startline="26">player_position_y_new</references>
+        <references refid="class_map_manager_1af44d67473c8a932512d90fe08a5f10c2" compoundref="_map_manager_8h" startline="18">MapManager::width</references>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">PlayerCollisions</referencedby>
+        <referencedby refid="class_player_1a8e27b94ff10ba3c236f57a8a721a5d40" compoundref="_player_8cpp" startline="40" endline="58">PlayerCollisionsChecks</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a4e306abcd8bd537e80b89563ad77275c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::EnterCombatMode</definition>
+        <argsstring>(MapManager &amp;m, Enemy &amp;e)</argsstring>
+        <name>EnterCombatMode</name>
+        <param>
+          <type><ref refid="class_map_manager" kindref="compound">MapManager</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="class_enemy" kindref="compound">Enemy</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="59" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Player.cpp" bodystart="133" bodyend="139"/>
+        <references refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" compoundref="_macro_8cpp" startline="7" endline="13">Macro::GoToScreenPosition</references>
+        <references refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" compoundref="_map_manager_8h" startline="19">MapManager::height</references>
+        <references refid="class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c" compoundref="_enemy_8cpp" startline="6" endline="19">Enemy::PrintDetails</references>
+        <references refid="class_player_1a3d88ecef0d65b5ca204f92c1a75c02c4" compoundref="_player_8h" startline="52">waiting_to_start_combat</references>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">PlayerCollisions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1af437a788282ad5c25d54a10de8199d11" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::EnterMessageMode</definition>
+        <argsstring>(MapManager &amp;m, GenericFriendly &amp;f)</argsstring>
+        <name>EnterMessageMode</name>
+        <param>
+          <type><ref refid="class_map_manager" kindref="compound">MapManager</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="class_generic_friendly" kindref="compound">GenericFriendly</ref> &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Player.h" line="60" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Player.cpp" bodystart="141" bodyend="167"/>
+        <references refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" compoundref="_macro_8cpp" startline="7" endline="13">Macro::GoToScreenPosition</references>
+        <references refid="class_player_1aad33b52bfe73c4c978a3135172f286a0" compoundref="_player_8h" startline="34">health</references>
+        <references refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" compoundref="_map_manager_8h" startline="19">MapManager::height</references>
+        <references refid="class_player_1a03a20ecc0094ce6869d196b8effddd54" compoundref="_player_8h" startline="35">magic</references>
+        <references refid="class_generic_friendly_1adb5700625348a3c03f4623c6b3f1519b" compoundref="_generic_friendly_8cpp" startline="69" endline="77">GenericFriendly::PrintMessage</references>
+        <references refid="class_player_1aeaeb39c73e57dbc0727f51a2b6c24b41" compoundref="_player_8h" startline="33">shield</references>
+        <references refid="class_player_1afeb496e92e437ad4d2da75f935f922ea" compoundref="_player_8h" startline="53">waiting_for_choice</references>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">PlayerCollisions</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Player</label>
+        <link refid="class_player"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/University/ca-A00269349/Rogue/Player.h" line="19" column="1" bodyfile="D:/University/ca-A00269349/Rogue/Player.h" bodystart="20" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_player_1a3b587452a99abee05fafb51daadf6687" prot="private" virt="non-virtual"><scope>Player</scope><name>BlankPosition</name></member>
+      <member refid="class_player_1a0dfa2c1fdd710480766dcb2cf85b2db4" prot="private" virt="non-virtual"><scope>Player</scope><name>c_player</name></member>
+      <member refid="class_player_1a433fa478597adbefe4ac3911c5639968" prot="public" virt="non-virtual"><scope>Player</scope><name>damage</name></member>
+      <member refid="class_player_1a0df6cda292d01636309ab82d1445f8b5" prot="public" virt="non-virtual"><scope>Player</scope><name>end_game</name></member>
+      <member refid="class_player_1a4e306abcd8bd537e80b89563ad77275c" prot="private" virt="non-virtual"><scope>Player</scope><name>EnterCombatMode</name></member>
+      <member refid="class_player_1af437a788282ad5c25d54a10de8199d11" prot="private" virt="non-virtual"><scope>Player</scope><name>EnterMessageMode</name></member>
+      <member refid="class_player_1a23faf24de68cf7d62a8b726a3c181ef0" prot="public" virt="non-virtual"><scope>Player</scope><name>GetDamage</name></member>
+      <member refid="class_player_1a8d962e02bc35d6181940a8aaf7a1a510" prot="public" virt="non-virtual"><scope>Player</scope><name>GetHealth</name></member>
+      <member refid="class_player_1aad33b52bfe73c4c978a3135172f286a0" prot="public" virt="non-virtual"><scope>Player</scope><name>health</name></member>
+      <member refid="class_player_1aa55063fb11d6d041d7e72ef650824280" prot="public" virt="non-virtual"><scope>Player</scope><name>health_potions</name></member>
+      <member refid="class_player_1afabc272a584435771820c92f2c8308f1" prot="public" virt="non-virtual"><scope>Player</scope><name>in_combat</name></member>
+      <member refid="class_player_1a03a20ecc0094ce6869d196b8effddd54" prot="public" virt="non-virtual"><scope>Player</scope><name>magic</name></member>
+      <member refid="class_player_1a84354c435ab9342fc19b09423053d1ed" prot="public" virt="non-virtual"><scope>Player</scope><name>magic_potions</name></member>
+      <member refid="class_player_1aeee533a8d8e4e2a00f77b6c493b3929f" prot="public" virt="non-virtual"><scope>Player</scope><name>max_potions</name></member>
+      <member refid="class_player_1ad4cfa39d8e172a78e2e8c1c8da13f080" prot="public" virt="non-virtual"><scope>Player</scope><name>max_stats</name></member>
+      <member refid="class_player_1a5e4cebf1dffd936edc4a69867dc9d38c" prot="public" virt="non-virtual"><scope>Player</scope><name>player_position_x</name></member>
+      <member refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" prot="public" virt="non-virtual"><scope>Player</scope><name>player_position_x_new</name></member>
+      <member refid="class_player_1a1043d8ae834b0edbdf36765e73c32eb0" prot="public" virt="non-virtual"><scope>Player</scope><name>player_position_y</name></member>
+      <member refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" prot="public" virt="non-virtual"><scope>Player</scope><name>player_position_y_new</name></member>
+      <member refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" prot="public" virt="non-virtual"><scope>Player</scope><name>PlayerCollisions</name></member>
+      <member refid="class_player_1a8e27b94ff10ba3c236f57a8a721a5d40" prot="private" virt="non-virtual"><scope>Player</scope><name>PlayerCollisionsChecks</name></member>
+      <member refid="class_player_1a459cda6070754195650bd10e0db43710" prot="public" virt="non-virtual"><scope>Player</scope><name>PlayerInput</name></member>
+      <member refid="class_player_1a4b2ed7452ebf86347df93b965f5c4966" prot="public" virt="non-virtual"><scope>Player</scope><name>RenderPlayer</name></member>
+      <member refid="class_player_1a02ec140e8f48a44f442e97eb2a19a00e" prot="public" virt="non-virtual"><scope>Player</scope><name>SetDesiredHealth</name></member>
+      <member refid="class_player_1aeaeb39c73e57dbc0727f51a2b6c24b41" prot="public" virt="non-virtual"><scope>Player</scope><name>shield</name></member>
+      <member refid="class_player_1aff4ffb0294cf1c1f81d0f4b1f8fc15ff" prot="public" virt="non-virtual"><scope>Player</scope><name>shield_potions</name></member>
+      <member refid="class_player_1afeb496e92e437ad4d2da75f935f922ea" prot="private" virt="non-virtual"><scope>Player</scope><name>waiting_for_choice</name></member>
+      <member refid="class_player_1a3d88ecef0d65b5ca204f92c1a75c02c4" prot="private" virt="non-virtual"><scope>Player</scope><name>waiting_to_start_combat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

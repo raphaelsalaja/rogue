@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="namespace_macro" kind="namespace" language="C++">
+    <compoundname>Macro</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Macro::GoToScreenPosition</definition>
+        <argsstring>(short C, short R)</argsstring>
+        <name>GoToScreenPosition</name>
+        <param>
+          <type>short</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>R</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Macro.h" line="7" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Macro.cpp" bodystart="7" bodyend="13" declfile="D:/University/ca-A00269349/Rogue/Macro.h" declline="7" declcolumn="6"/>
+        <referencedby refid="class_debug_1a7da6fc420757f4d2ed80dd0de4593806" compoundref="_debug_8cpp" startline="11" endline="38">Debug::DebugControls</referencedby>
+        <referencedby refid="class_player_1a4e306abcd8bd537e80b89563ad77275c" compoundref="_player_8cpp" startline="133" endline="139">Player::EnterCombatMode</referencedby>
+        <referencedby refid="class_player_1af437a788282ad5c25d54a10de8199d11" compoundref="_player_8cpp" startline="141" endline="167">Player::EnterMessageMode</referencedby>
+        <referencedby refid="class_map_manager_1ab864df2edd061402a8ae649642545cf4" compoundref="_map_manager_8cpp" startline="72" endline="101">MapManager::LoadNextMap</referencedby>
+        <referencedby refid="class_console_rendering_1a2ab9a1bf1a53a6fe1dbb3921ee3bf90c" compoundref="_console_rendering_8cpp" startline="88" endline="107">ConsoleRendering::Print_Actions</referencedby>
+        <referencedby refid="class_console_rendering_1a1cec315984bd83c487a5aa1a66757c4c" compoundref="_console_rendering_8cpp" startline="65" endline="86">ConsoleRendering::Print_Actions_GUI</referencedby>
+        <referencedby refid="class_console_rendering_1a373778cb0d4174011a2c7eeaa7482ec1" compoundref="_console_rendering_8cpp" startline="10" endline="63">ConsoleRendering::Print_Stats</referencedby>
+        <referencedby refid="class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c" compoundref="_enemy_8cpp" startline="6" endline="19">Enemy::PrintDetails</referencedby>
+        <referencedby refid="class_generic_friendly_1adb5700625348a3c03f4623c6b3f1519b" compoundref="_generic_friendly_8cpp" startline="69" endline="77">GenericFriendly::PrintMessage</referencedby>
+        <referencedby refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" compoundref="_combat_manager_8cpp" startline="68" endline="104">CombatManager::PrintStatements</referencedby>
+        <referencedby refid="class_map_manager_1a4308dceb14fd959e59001c1a531e3f2b" compoundref="_map_manager_8cpp" startline="157" endline="161">MapManager::RefreshMap</referencedby>
+        <referencedby refid="class_console_rendering_1acc39d6331437f44bc3941ae5987f7279" compoundref="_console_rendering_8cpp" startline="168" endline="175">ConsoleRendering::Render_GUI</referencedby>
+        <referencedby refid="class_player_1a4b2ed7452ebf86347df93b965f5c4966" compoundref="_player_8cpp" startline="10" endline="38">Player::RenderPlayer</referencedby>
+        <referencedby refid="class_title_screen_manager_1a57d95e3e84ac914f5051d934daa95279" compoundref="_title_screen_manager_8cpp" startline="15" endline="25">TitleScreenManager::WaitForInput</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_macro_1a005f2a0ab24b96203446ec9a1a8b9a7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Macro::RepositionWindow</definition>
+        <argsstring>(int width, int height)</argsstring>
+        <name>RepositionWindow</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Macro.h" line="8" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Macro.cpp" bodystart="15" bodyend="32" declfile="D:/University/ca-A00269349/Rogue/Macro.h" declline="8" declcolumn="6"/>
+        <referencedby refid="class_title_screen_manager_1ab43408b2faef99086182e9309bc5d675" compoundref="_title_screen_manager_8cpp" startline="81" endline="88">TitleScreenManager::RenderTitle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Macro::ReplaceAll</definition>
+        <argsstring>(string str, const string &amp;from, const string &amp;to)</argsstring>
+        <name>ReplaceAll</name>
+        <param>
+          <type>string</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Macro.h" line="10" column="8" bodyfile="D:/University/ca-A00269349/Rogue/Macro.cpp" bodystart="34" bodyend="43" declfile="D:/University/ca-A00269349/Rogue/Macro.h" declline="10" declcolumn="8"/>
+        <referencedby refid="class_console_rendering_1a1cec315984bd83c487a5aa1a66757c4c" compoundref="_console_rendering_8cpp" startline="65" endline="86">ConsoleRendering::Print_Actions_GUI</referencedby>
+        <referencedby refid="class_console_rendering_1ab06c676702c77f5c624a7076837245b3" compoundref="_console_rendering_8cpp" startline="109" endline="124">ConsoleRendering::Print_Inventory</referencedby>
+        <referencedby refid="class_console_rendering_1a373778cb0d4174011a2c7eeaa7482ec1" compoundref="_console_rendering_8cpp" startline="10" endline="63">ConsoleRendering::Print_Stats</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_macro_1a5b7cf896002d88dc2e5ffede2f398709" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Macro::Separate</definition>
+        <argsstring>(int input, char from, char count)</argsstring>
+        <name>Separate</name>
+        <param>
+          <type>int</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Macro.h" line="12" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Macro.cpp" bodystart="45" bodyend="52" declfile="D:/University/ca-A00269349/Rogue/Macro.h" declline="12" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_macro_1a7192f07d19f55d7f8b863932a5078eab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Macro::GenerateRandomNumber</definition>
+        <argsstring>(int max)</argsstring>
+        <name>GenerateRandomNumber</name>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Macro.h" line="14" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Macro.cpp" bodystart="54" bodyend="58" declfile="D:/University/ca-A00269349/Rogue/Macro.h" declline="14" declcolumn="5"/>
+        <referencedby refid="class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0" compoundref="_random_item_generator_8cpp" startline="51" endline="59">RandomItemGenerator::CreateItem</referencedby>
+        <referencedby refid="class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875" compoundref="_non_playable_character_8cpp" startline="37" endline="40">NonPlayableCharacter::SetName</referencedby>
+        <referencedby refid="class_generic_friendly_1aa34e4c712d03f91ea3069dd007d91366" compoundref="_generic_friendly_8cpp" startline="64" endline="67">GenericFriendly::SetRandomMessage</referencedby>
+        <referencedby refid="class_random_item_generator_1a779176c9969633372b5a70a2daf57d5e" compoundref="_random_item_generator_8cpp" startline="41" endline="44">RandomItemGenerator::SetSpeed</referencedby>
+        <referencedby refid="class_random_item_generator_1a2b6f82fc5576dbe0b3dd4614bc60f305" compoundref="_random_item_generator_8cpp" startline="31" endline="34">RandomItemGenerator::SetStrength</referencedby>
+        <referencedby refid="class_random_weapon_1aea0b4d6a59c972b64ed00ba7b7894d5c" compoundref="_random_weapon_8cpp" startline="12" endline="15">RandomWeapon::SetType</referencedby>
+        <referencedby refid="class_random_item_generator_1a0cd93433c0ce88481b7f82ee43796a0f" compoundref="_random_item_generator_8cpp" startline="36" endline="39">RandomItemGenerator::SetWeight</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_macro_1a3500becfc34f5b1df2d6d976fb5f5f86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Macro::GenerateRandomNumberWithoutZero</definition>
+        <argsstring>(int max)</argsstring>
+        <name>GenerateRandomNumberWithoutZero</name>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Macro.h" line="15" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Macro.cpp" bodystart="60" bodyend="64" declfile="D:/University/ca-A00269349/Rogue/Macro.h" declline="15" declcolumn="5"/>
+        <referencedby refid="class_non_playable_character_1a017d601103d2bc66a6338073a051cab7" compoundref="_non_playable_character_8cpp" startline="47" endline="50">NonPlayableCharacter::SetHealth</referencedby>
+        <referencedby refid="class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e" compoundref="_non_playable_character_8cpp" startline="56" endline="59">NonPlayableCharacter::SetSpeed</referencedby>
+        <referencedby refid="class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2" compoundref="_non_playable_character_8cpp" startline="42" endline="45">NonPlayableCharacter::SetStrength</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/University/ca-A00269349/Rogue/Macro.h" line="5" column="1"/>
+  </compounddef>
+</doxygen>

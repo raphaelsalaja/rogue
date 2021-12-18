@@ -1,0 +1,467 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_console_rendering" xml:lang="en-US">
+<title>ConsoleRendering Class Reference</title>
+<indexterm><primary>ConsoleRendering</primary></indexterm>
+<para>
+<computeroutput>#include &lt;ConsoleRendering.h&gt;</computeroutput>
+</para>
+Collaboration diagram for ConsoleRendering:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_console_rendering_1af0d3b71e90fc9abb830fc156a4a1a455">Render_All</link> (<link linkend="_class_console_window_manager">ConsoleWindowManager</link> &amp;c, <link linkend="_class_map_manager">MapManager</link> &amp;m, <link linkend="_class_player">Player</link> &amp;p, <link linkend="_class_inventory_manager">InventoryManager</link> &amp;i, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp;ui)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_console_rendering_1acc39d6331437f44bc3941ae5987f7279">Render_GUI</link> (<link linkend="_class_map_manager">MapManager</link> &amp;m, <link linkend="_class_inventory_manager">InventoryManager</link> &amp;i)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_console_rendering_1a1cad1bf9be77b7a9ba9982685fa89658">Render_Stats</link> (<link linkend="_class_map_manager">MapManager</link> &amp;m, <link linkend="_class_player">Player</link> &amp;p, <link linkend="_class_inventory_manager">InventoryManager</link> &amp;i, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp;ui)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_console_rendering_1a3ba48c54dc22c278244cd45cfbb53a83">Render_Inventory</link> (<link linkend="_class_console_window_manager">ConsoleWindowManager</link> &amp;c, <link linkend="_class_map_manager">MapManager</link> &amp;m, <link linkend="_class_inventory_manager">InventoryManager</link> &amp;i, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp;ui)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_console_rendering_1a7e27d9009cfd84456437072e71d291d1">Render_Actions</link> (<link linkend="_class_map_manager">MapManager</link> &amp;m, <link linkend="_class_inventory_manager">InventoryManager</link> &amp;i, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp;ui)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_console_rendering_1a1cec315984bd83c487a5aa1a66757c4c">Print_Actions_GUI</link> (<link linkend="_class_map_manager">MapManager</link> &amp;m, <link linkend="_class_inventory_manager">InventoryManager</link> &amp;i, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp;ui)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_console_rendering_1a373778cb0d4174011a2c7eeaa7482ec1">Print_Stats</link> (<link linkend="_class_map_manager">MapManager</link> &amp;m, <link linkend="_class_player">Player</link> &amp;p, <link linkend="_class_inventory_manager">InventoryManager</link> &amp;i, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp;ui)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_console_rendering_1ab06c676702c77f5c624a7076837245b3">Print_Inventory</link> (<link linkend="_class_inventory_manager">InventoryManager</link> &amp;i, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp;ui)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_console_rendering_1a2ab9a1bf1a53a6fe1dbb3921ee3bf90c">Print_Actions</link> (char action, <link linkend="_class_map_manager">MapManager</link> &amp;m)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_console_rendering_1a480c8a8eddede335add4308b3e7cc3e5">Create_Stats_GUI</link> (std::string &amp;inventory)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_console_rendering_1a82e428c16737702dcc8f69f57c2dba45">Create_Inventory_GUI</link> (std::string &amp;inventory)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__console_rendering_8h_source_1l00012">12</link> of file <link linkend="__console_rendering_8h_source">ConsoleRendering.h</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_console_rendering_1a82e428c16737702dcc8f69f57c2dba45"/><section>
+    <title>Create_Inventory_GUI()</title>
+<indexterm><primary>Create_Inventory_GUI</primary><secondary>ConsoleRendering</secondary></indexterm>
+<indexterm><primary>ConsoleRendering</primary><secondary>Create_Inventory_GUI</secondary></indexterm>
+<para><computeroutput>void ConsoleRendering::Create_Inventory_GUI (std::string &amp; inventory)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__console_rendering_8cpp_source_1l00146">146</link> of file <link linkend="__console_rendering_8cpp_source">ConsoleRendering.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_rendering_1l00147"/>00147 {
+<anchor xml:id="_class_console_rendering_1l00148"/>00148 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_class_console_rendering_1l00149"/>00149 
+<anchor xml:id="_class_console_rendering_1l00150"/>00150 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">size_t</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;inventory.length();&#32;i++)
+<anchor xml:id="_class_console_rendering_1l00151"/>00151 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00152"/>00152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;-&quot;</emphasis>;
+<anchor xml:id="_class_console_rendering_1l00153"/>00153 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00154"/>00154 
+<anchor xml:id="_class_console_rendering_1l00155"/>00155 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_class_console_rendering_1l00156"/>00156 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;inventory;
+<anchor xml:id="_class_console_rendering_1l00157"/>00157 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_class_console_rendering_1l00158"/>00158 
+<anchor xml:id="_class_console_rendering_1l00159"/>00159 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">size_t</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;inventory.length();&#32;i++)
+<anchor xml:id="_class_console_rendering_1l00160"/>00160 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00161"/>00161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;-&quot;</emphasis>;
+<anchor xml:id="_class_console_rendering_1l00162"/>00162 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00163"/>00163 
+<anchor xml:id="_class_console_rendering_1l00164"/>00164 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_class_console_rendering_1l00165"/>00165 }
+</programlisting></section>
+<anchor xml:id="_class_console_rendering_1a480c8a8eddede335add4308b3e7cc3e5"/><section>
+    <title>Create_Stats_GUI()</title>
+<indexterm><primary>Create_Stats_GUI</primary><secondary>ConsoleRendering</secondary></indexterm>
+<indexterm><primary>ConsoleRendering</primary><secondary>Create_Stats_GUI</secondary></indexterm>
+<para><computeroutput>void ConsoleRendering::Create_Stats_GUI (std::string &amp; inventory)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__console_rendering_8cpp_source_1l00127">127</link> of file <link linkend="__console_rendering_8cpp_source">ConsoleRendering.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_rendering_1l00128"/>00128 {
+<anchor xml:id="_class_console_rendering_1l00129"/>00129 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_class_console_rendering_1l00130"/>00130 
+<anchor xml:id="_class_console_rendering_1l00131"/>00131 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">size_t</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;inventory.length();&#32;i++)
+<anchor xml:id="_class_console_rendering_1l00132"/>00132 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00133"/>00133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;-&quot;</emphasis>;
+<anchor xml:id="_class_console_rendering_1l00134"/>00134 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00135"/>00135 
+<anchor xml:id="_class_console_rendering_1l00136"/>00136 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_class_console_rendering_1l00137"/>00137 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;inventory;
+<anchor xml:id="_class_console_rendering_1l00138"/>00138 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_class_console_rendering_1l00139"/>00139 
+<anchor xml:id="_class_console_rendering_1l00140"/>00140 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">size_t</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;inventory.length();&#32;i++)
+<anchor xml:id="_class_console_rendering_1l00141"/>00141 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00142"/>00142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;-&quot;</emphasis>;
+<anchor xml:id="_class_console_rendering_1l00143"/>00143 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00144"/>00144 }
+</programlisting></section>
+<anchor xml:id="_class_console_rendering_1a2ab9a1bf1a53a6fe1dbb3921ee3bf90c"/><section>
+    <title>Print_Actions()</title>
+<indexterm><primary>Print_Actions</primary><secondary>ConsoleRendering</secondary></indexterm>
+<indexterm><primary>ConsoleRendering</primary><secondary>Print_Actions</secondary></indexterm>
+<para><computeroutput>void ConsoleRendering::Print_Actions (char action, <link linkend="_class_map_manager">MapManager</link> &amp; m)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__console_rendering_8cpp_source_1l00088">88</link> of file <link linkend="__console_rendering_8cpp_source">ConsoleRendering.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_rendering_1l00089"/>00089 {
+<anchor xml:id="_class_console_rendering_1l00090"/>00090 &#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">GoToScreenPosition</link>(0,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;2);
+<anchor xml:id="_class_console_rendering_1l00091"/>00091 
+<anchor xml:id="_class_console_rendering_1l00092"/>00092 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">switch</emphasis>&#32;(action)
+<anchor xml:id="_class_console_rendering_1l00093"/>00093 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00094"/>00094 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;I&apos;</emphasis>:&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;YOU&#32;GAINED&#32;1&#32;HEALTH&#32;FROM:&#32;HEALTH&#32;POTION&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&quot;</emphasis>;
+<anchor xml:id="_class_console_rendering_1l00095"/>00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_console_rendering_1l00096"/>00096 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;O&apos;</emphasis>:&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;YOU&#32;GAINED&#32;1&#32;SHIELD&#32;FROM:&#32;SHIELD&#32;POTION&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&quot;</emphasis>;
+<anchor xml:id="_class_console_rendering_1l00097"/>00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_console_rendering_1l00098"/>00098 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;P&apos;</emphasis>:&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;YOU&#32;GAINED&#32;1&#32;MAGIC&#32;FROM:&#32;MAGIC&#32;POTION&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&quot;</emphasis>;
+<anchor xml:id="_class_console_rendering_1l00099"/>00099 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_console_rendering_1l00100"/>00100 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;J&apos;</emphasis>:&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;YOU&#32;DROPPED&#32;1&#32;HEALTH&#32;POTION&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&quot;</emphasis>;
+<anchor xml:id="_class_console_rendering_1l00101"/>00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_console_rendering_1l00102"/>00102 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;K&apos;</emphasis>:&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;YOU&#32;DROPPED&#32;1&#32;SHIELD&#32;POTION&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&quot;</emphasis>;
+<anchor xml:id="_class_console_rendering_1l00103"/>00103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_console_rendering_1l00104"/>00104 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;L&apos;</emphasis>:&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;YOU&#32;DROPPED&#32;1&#32;MAGIC&#32;POTION&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&quot;</emphasis>;
+<anchor xml:id="_class_console_rendering_1l00105"/>00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_console_rendering_1l00106"/>00106 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00107"/>00107 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_a2ab9a1bf1a53a6fe1dbb3921ee3bf90c_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_console_rendering_1a1cec315984bd83c487a5aa1a66757c4c"/><section>
+    <title>Print_Actions_GUI()</title>
+<indexterm><primary>Print_Actions_GUI</primary><secondary>ConsoleRendering</secondary></indexterm>
+<indexterm><primary>ConsoleRendering</primary><secondary>Print_Actions_GUI</secondary></indexterm>
+<para><computeroutput>void ConsoleRendering::Print_Actions_GUI (<link linkend="_class_map_manager">MapManager</link> &amp; m, <link linkend="_class_inventory_manager">InventoryManager</link> &amp; i, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp; ui)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__console_rendering_8cpp_source_1l00065">65</link> of file <link linkend="__console_rendering_8cpp_source">ConsoleRendering.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_rendering_1l00066"/>00066 {
+<anchor xml:id="_class_console_rendering_1l00067"/>00067 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;y&#32;=&#32;1;
+<anchor xml:id="_class_console_rendering_1l00068"/>00068 
+<anchor xml:id="_class_console_rendering_1l00069"/>00069 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keyword">auto</emphasis>&amp;&#32;i&#32;:&#32;ui.<link linkend="_class_user_interface_manager_1a94ee9caef6d96f22208947fbff67695e">actions</link>)
+<anchor xml:id="_class_console_rendering_1l00070"/>00070 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00071"/>00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;x&#32;=&#32;i;
+<anchor xml:id="_class_console_rendering_1l00072"/>00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;-&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xCD&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00073"/>00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;&lt;&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xC9&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00074"/>00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;&gt;&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xBB&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;:&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xC8&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00076"/>00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;;&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xBC&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00077"/>00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;/&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xCC&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00078"/>00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;]&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xB9&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00079"/>00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;|&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xBA&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00080"/>00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;v&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xCB&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00081"/>00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;^&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xCA&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00082"/>00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">GoToScreenPosition</link>(40,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;y);
+<anchor xml:id="_class_console_rendering_1l00083"/>00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;y++;
+<anchor xml:id="_class_console_rendering_1l00084"/>00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;x&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_class_console_rendering_1l00085"/>00085 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00086"/>00086 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_a1cec315984bd83c487a5aa1a66757c4c_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_a1cec315984bd83c487a5aa1a66757c4c_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_console_rendering_1ab06c676702c77f5c624a7076837245b3"/><section>
+    <title>Print_Inventory()</title>
+<indexterm><primary>Print_Inventory</primary><secondary>ConsoleRendering</secondary></indexterm>
+<indexterm><primary>ConsoleRendering</primary><secondary>Print_Inventory</secondary></indexterm>
+<para><computeroutput>void ConsoleRendering::Print_Inventory (<link linkend="_class_inventory_manager">InventoryManager</link> &amp; i, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp; ui)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__console_rendering_8cpp_source_1l00109">109</link> of file <link linkend="__console_rendering_8cpp_source">ConsoleRendering.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_rendering_1l00110"/>00110 {
+<anchor xml:id="_class_console_rendering_1l00111"/>00111 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keyword">auto</emphasis>&amp;&#32;i&#32;:&#32;ui.<link linkend="_class_user_interface_manager_1a20860ee0c0c01dba89ac4f81dba649dd">inventory</link>)
+<anchor xml:id="_class_console_rendering_1l00112"/>00112 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00113"/>00113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;x&#32;=&#32;i;
+<anchor xml:id="_class_console_rendering_1l00114"/>00114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;-&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xCD&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00115"/>00115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;&lt;&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xC9&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00116"/>00116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;&gt;&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xBB&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00117"/>00117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;:&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xC8&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00118"/>00118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;;&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xBC&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00119"/>00119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;/&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xCC&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00120"/>00120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;]&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xB9&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00121"/>00121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;|&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xBA&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00122"/>00122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;x&#32;&lt;&lt;&#32;std::endl;
+<anchor xml:id="_class_console_rendering_1l00123"/>00123 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00124"/>00124 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_ab06c676702c77f5c624a7076837245b3_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_ab06c676702c77f5c624a7076837245b3_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_console_rendering_1a373778cb0d4174011a2c7eeaa7482ec1"/><section>
+    <title>Print_Stats()</title>
+<indexterm><primary>Print_Stats</primary><secondary>ConsoleRendering</secondary></indexterm>
+<indexterm><primary>ConsoleRendering</primary><secondary>Print_Stats</secondary></indexterm>
+<para><computeroutput>void ConsoleRendering::Print_Stats (<link linkend="_class_map_manager">MapManager</link> &amp; m, <link linkend="_class_player">Player</link> &amp; p, <link linkend="_class_inventory_manager">InventoryManager</link> &amp; i, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp; ui)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__console_rendering_8cpp_source_1l00010">10</link> of file <link linkend="__console_rendering_8cpp_source">ConsoleRendering.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_rendering_1l00011"/>00011 {
+<anchor xml:id="_class_console_rendering_1l00012"/>00012 &#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">GoToScreenPosition</link>(0,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;1);
+<anchor xml:id="_class_console_rendering_1l00013"/>00013 
+<anchor xml:id="_class_console_rendering_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keyword">auto</emphasis>&amp;&#32;i&#32;:&#32;ui.<link linkend="_class_user_interface_manager_1ad0aeed4967c2e70002de08625092babb">stats</link>)
+<anchor xml:id="_class_console_rendering_1l00015"/>00015 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;x&#32;=&#32;i;
+<anchor xml:id="_class_console_rendering_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;-&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xCD&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;&lt;&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xC9&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;&gt;&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xBB&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;:&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xC8&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;;&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xBC&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;/&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xCC&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;]&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xB9&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;|&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xBA&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;v&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xCB&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;=&#32;<link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">ReplaceAll</link>(<emphasis role="keywordtype">string</emphasis>(x),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;^&quot;</emphasis>),&#32;<emphasis role="keywordtype">string</emphasis>(<emphasis role="stringliteral">&quot;\xCA&quot;</emphasis>));
+<anchor xml:id="_class_console_rendering_1l00027"/>00027 
+<anchor xml:id="_class_console_rendering_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;x&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_class_console_rendering_1l00029"/>00029 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00030"/>00030 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(p.<link linkend="_class_player_1aad33b52bfe73c4c978a3135172f286a0">health</link>&#32;&gt;=&#32;10)
+<anchor xml:id="_class_console_rendering_1l00031"/>00031 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;x&#32;=&#32;to_string(p.<link linkend="_class_player_1aad33b52bfe73c4c978a3135172f286a0">health</link>);
+<anchor xml:id="_class_console_rendering_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ui.<link linkend="_class_user_interface_manager_1ad0aeed4967c2e70002de08625092babb">stats</link>.at(2).at(31)&#32;=&#32;x.at(1);
+<anchor xml:id="_class_console_rendering_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ui.<link linkend="_class_user_interface_manager_1ad0aeed4967c2e70002de08625092babb">stats</link>.at(2).at(29)&#32;=&#32;x.at(0);
+<anchor xml:id="_class_console_rendering_1l00035"/>00035 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00036"/>00036 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="_class_console_rendering_1l00037"/>00037 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;x&#32;=&#32;to_string(p.<link linkend="_class_player_1aad33b52bfe73c4c978a3135172f286a0">health</link>);
+<anchor xml:id="_class_console_rendering_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ui.<link linkend="_class_user_interface_manager_1ad0aeed4967c2e70002de08625092babb">stats</link>.at(2).at(31)&#32;=&#32;x.at(0);
+<anchor xml:id="_class_console_rendering_1l00040"/>00040 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00041"/>00041 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(p.<link linkend="_class_player_1aeaeb39c73e57dbc0727f51a2b6c24b41">shield</link>&#32;&gt;=&#32;10)
+<anchor xml:id="_class_console_rendering_1l00042"/>00042 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;x&#32;=&#32;to_string(p.<link linkend="_class_player_1aeaeb39c73e57dbc0727f51a2b6c24b41">shield</link>);
+<anchor xml:id="_class_console_rendering_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ui.<link linkend="_class_user_interface_manager_1ad0aeed4967c2e70002de08625092babb">stats</link>.at(4).at(31)&#32;=&#32;x.at(1);
+<anchor xml:id="_class_console_rendering_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ui.<link linkend="_class_user_interface_manager_1ad0aeed4967c2e70002de08625092babb">stats</link>.at(4).at(29)&#32;=&#32;x.at(0);
+<anchor xml:id="_class_console_rendering_1l00046"/>00046 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00047"/>00047 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="_class_console_rendering_1l00048"/>00048 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;x&#32;=&#32;to_string(p.<link linkend="_class_player_1aeaeb39c73e57dbc0727f51a2b6c24b41">shield</link>);
+<anchor xml:id="_class_console_rendering_1l00050"/>00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ui.<link linkend="_class_user_interface_manager_1ad0aeed4967c2e70002de08625092babb">stats</link>.at(4).at(31)&#32;=&#32;x.at(0);
+<anchor xml:id="_class_console_rendering_1l00051"/>00051 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00052"/>00052 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(p.<link linkend="_class_player_1a03a20ecc0094ce6869d196b8effddd54">magic</link>&#32;&gt;=&#32;10)
+<anchor xml:id="_class_console_rendering_1l00053"/>00053 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;x&#32;=&#32;to_string(p.<link linkend="_class_player_1a03a20ecc0094ce6869d196b8effddd54">magic</link>);
+<anchor xml:id="_class_console_rendering_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ui.<link linkend="_class_user_interface_manager_1ad0aeed4967c2e70002de08625092babb">stats</link>.at(6).at(31)&#32;=&#32;x.at(1);
+<anchor xml:id="_class_console_rendering_1l00056"/>00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ui.<link linkend="_class_user_interface_manager_1ad0aeed4967c2e70002de08625092babb">stats</link>.at(6).at(29)&#32;=&#32;x.at(0);
+<anchor xml:id="_class_console_rendering_1l00057"/>00057 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00058"/>00058 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="_class_console_rendering_1l00059"/>00059 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00060"/>00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;x&#32;=&#32;to_string(p.<link linkend="_class_player_1a03a20ecc0094ce6869d196b8effddd54">magic</link>);
+<anchor xml:id="_class_console_rendering_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ui.<link linkend="_class_user_interface_manager_1ad0aeed4967c2e70002de08625092babb">stats</link>.at(6).at(31)&#32;=&#32;x.at(0);
+<anchor xml:id="_class_console_rendering_1l00062"/>00062 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00063"/>00063 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_a373778cb0d4174011a2c7eeaa7482ec1_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_a373778cb0d4174011a2c7eeaa7482ec1_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_console_rendering_1a7e27d9009cfd84456437072e71d291d1"/><section>
+    <title>Render_Actions()</title>
+<indexterm><primary>Render_Actions</primary><secondary>ConsoleRendering</secondary></indexterm>
+<indexterm><primary>ConsoleRendering</primary><secondary>Render_Actions</secondary></indexterm>
+<para><computeroutput>void ConsoleRendering::Render_Actions (<link linkend="_class_map_manager">MapManager</link> &amp; m, <link linkend="_class_inventory_manager">InventoryManager</link> &amp; i, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp; ui)</computeroutput></para><para>
+Definition at line <link linkend="__console_rendering_8cpp_source_1l00182">182</link> of file <link linkend="__console_rendering_8cpp_source">ConsoleRendering.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_rendering_1l00183"/>00183 {
+<anchor xml:id="_class_console_rendering_1l00184"/>00184 &#32;&#32;&#32;&#32;<link linkend="_class_console_rendering_1a1cec315984bd83c487a5aa1a66757c4c">Print_Actions_GUI</link>(m,&#32;i,&#32;ui);
+<anchor xml:id="_class_console_rendering_1l00185"/>00185 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_a7e27d9009cfd84456437072e71d291d1_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_a7e27d9009cfd84456437072e71d291d1_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_console_rendering_1af0d3b71e90fc9abb830fc156a4a1a455"/><section>
+    <title>Render_All()</title>
+<indexterm><primary>Render_All</primary><secondary>ConsoleRendering</secondary></indexterm>
+<indexterm><primary>ConsoleRendering</primary><secondary>Render_All</secondary></indexterm>
+<para><computeroutput>void ConsoleRendering::Render_All (<link linkend="_class_console_window_manager">ConsoleWindowManager</link> &amp; c, <link linkend="_class_map_manager">MapManager</link> &amp; m, <link linkend="_class_player">Player</link> &amp; p, <link linkend="_class_inventory_manager">InventoryManager</link> &amp; i, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp; ui)</computeroutput></para><para>
+Definition at line <link linkend="__console_rendering_8cpp_source_1l00202">202</link> of file <link linkend="__console_rendering_8cpp_source">ConsoleRendering.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_rendering_1l00203"/>00203 {
+<anchor xml:id="_class_console_rendering_1l00204"/>00204 &#32;&#32;&#32;&#32;<link linkend="_class_console_rendering_1a1cad1bf9be77b7a9ba9982685fa89658">Render_Stats</link>(m,&#32;p,&#32;i,&#32;ui);
+<anchor xml:id="_class_console_rendering_1l00205"/>00205 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!p.<link linkend="_class_player_1afabc272a584435771820c92f2c8308f1">in_combat</link>)
+<anchor xml:id="_class_console_rendering_1l00206"/>00206 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00207"/>00207 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_rendering_1a7e27d9009cfd84456437072e71d291d1">Render_Actions</link>(m,&#32;i,&#32;ui);
+<anchor xml:id="_class_console_rendering_1l00208"/>00208 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00209"/>00209 &#32;&#32;&#32;&#32;<link linkend="_class_console_rendering_1acc39d6331437f44bc3941ae5987f7279">Render_GUI</link>(m,&#32;i);
+<anchor xml:id="_class_console_rendering_1l00210"/>00210 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_af0d3b71e90fc9abb830fc156a4a1a455_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_af0d3b71e90fc9abb830fc156a4a1a455_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_console_rendering_1acc39d6331437f44bc3941ae5987f7279"/><section>
+    <title>Render_GUI()</title>
+<indexterm><primary>Render_GUI</primary><secondary>ConsoleRendering</secondary></indexterm>
+<indexterm><primary>ConsoleRendering</primary><secondary>Render_GUI</secondary></indexterm>
+<para><computeroutput>void ConsoleRendering::Render_GUI (<link linkend="_class_map_manager">MapManager</link> &amp; m, <link linkend="_class_inventory_manager">InventoryManager</link> &amp; i)</computeroutput></para><para>
+Definition at line <link linkend="__console_rendering_8cpp_source_1l00168">168</link> of file <link linkend="__console_rendering_8cpp_source">ConsoleRendering.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_rendering_1l00169"/>00169 {
+<anchor xml:id="_class_console_rendering_1l00170"/>00170 &#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">GoToScreenPosition</link>(2,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;3);
+<anchor xml:id="_class_console_rendering_1l00171"/>00171 
+<anchor xml:id="_class_console_rendering_1l00172"/>00172 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!i.<link linkend="_class_inventory_manager_1a229268373b664e039dcd90f41282f5e4">inventory_open</link>)
+<anchor xml:id="_class_console_rendering_1l00173"/>00173 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00174"/>00174 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00175"/>00175 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_acc39d6331437f44bc3941ae5987f7279_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_acc39d6331437f44bc3941ae5987f7279_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_console_rendering_1a3ba48c54dc22c278244cd45cfbb53a83"/><section>
+    <title>Render_Inventory()</title>
+<indexterm><primary>Render_Inventory</primary><secondary>ConsoleRendering</secondary></indexterm>
+<indexterm><primary>ConsoleRendering</primary><secondary>Render_Inventory</secondary></indexterm>
+<para><computeroutput>void ConsoleRendering::Render_Inventory (<link linkend="_class_console_window_manager">ConsoleWindowManager</link> &amp; c, <link linkend="_class_map_manager">MapManager</link> &amp; m, <link linkend="_class_inventory_manager">InventoryManager</link> &amp; i, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp; ui)</computeroutput></para><para>
+Definition at line <link linkend="__console_rendering_8cpp_source_1l00187">187</link> of file <link linkend="__console_rendering_8cpp_source">ConsoleRendering.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_rendering_1l00188"/>00188 {
+<anchor xml:id="_class_console_rendering_1l00189"/>00189 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;DRAWS&#32;THE&#32;PLAYER&apos;S&#32;INVENTORY&#32;ON&#32;SCREEN</emphasis>
+<anchor xml:id="_class_console_rendering_1l00190"/>00190 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(i.<link linkend="_class_inventory_manager_1a229268373b664e039dcd90f41282f5e4">inventory_open</link>)
+<anchor xml:id="_class_console_rendering_1l00191"/>00191 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00192"/>00192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c.<link linkend="_class_console_window_manager_1aec3eb492b72b29b4b9c57d622b799e9c">BlankScreen</link>();
+<anchor xml:id="_class_console_rendering_1l00193"/>00193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_console_rendering_1ab06c676702c77f5c624a7076837245b3">Print_Inventory</link>(i,&#32;ui);
+<anchor xml:id="_class_console_rendering_1l00194"/>00194 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00195"/>00195 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="_class_console_rendering_1l00196"/>00196 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_console_rendering_1l00197"/>00197 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c.<link linkend="_class_console_window_manager_1aec3eb492b72b29b4b9c57d622b799e9c">BlankScreen</link>();
+<anchor xml:id="_class_console_rendering_1l00198"/>00198 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;m.<link linkend="_class_map_manager_1a3d93eb2a28003237aa76baf2cb0de02c">RenderMap</link>(c);
+<anchor xml:id="_class_console_rendering_1l00199"/>00199 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_console_rendering_1l00200"/>00200 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_a3ba48c54dc22c278244cd45cfbb53a83_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_a3ba48c54dc22c278244cd45cfbb53a83_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_console_rendering_1a1cad1bf9be77b7a9ba9982685fa89658"/><section>
+    <title>Render_Stats()</title>
+<indexterm><primary>Render_Stats</primary><secondary>ConsoleRendering</secondary></indexterm>
+<indexterm><primary>ConsoleRendering</primary><secondary>Render_Stats</secondary></indexterm>
+<para><computeroutput>void ConsoleRendering::Render_Stats (<link linkend="_class_map_manager">MapManager</link> &amp; m, <link linkend="_class_player">Player</link> &amp; p, <link linkend="_class_inventory_manager">InventoryManager</link> &amp; i, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp; ui)</computeroutput></para><para>
+Definition at line <link linkend="__console_rendering_8cpp_source_1l00177">177</link> of file <link linkend="__console_rendering_8cpp_source">ConsoleRendering.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_console_rendering_1l00178"/>00178 {
+<anchor xml:id="_class_console_rendering_1l00179"/>00179 &#32;&#32;&#32;&#32;<link linkend="_class_console_rendering_1a373778cb0d4174011a2c7eeaa7482ec1">Print_Stats</link>(m,&#32;p,&#32;i,&#32;ui);
+<anchor xml:id="_class_console_rendering_1l00180"/>00180 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_a1cad1bf9be77b7a9ba9982685fa89658_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_console_rendering_a1cad1bf9be77b7a9ba9982685fa89658_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+D:/University/ca-A00269349/Rogue/<link linkend="__console_rendering_8h">ConsoleRendering.h</link>D:/University/ca-A00269349/Rogue/<link linkend="__console_rendering_8cpp">ConsoleRendering.cpp</link></section>
+</section>

@@ -1,0 +1,112 @@
+\hypertarget{_non_playable_character_8cpp_source}{}\doxysection{Non\+Playable\+Character.\+cpp}
+\label{_non_playable_character_8cpp_source}\index{D:/University/ca-\/A00269349/Rogue/NonPlayableCharacter.cpp@{D:/University/ca-\/A00269349/Rogue/NonPlayableCharacter.cpp}}
+\mbox{\hyperlink{_non_playable_character_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_non_playable_character_8h}{NonPlayableCharacter.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_macro_8h}{Macro.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00005}00005 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00007}\mbox{\hyperlink{class_non_playable_character_a57985ac558ba9fc5abff448a4bbb8746}{00007}} \mbox{\hyperlink{class_non_playable_character_a57985ac558ba9fc5abff448a4bbb8746}{NonPlayableCharacter::NonPlayableCharacter}}()}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00008}00008 \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00009}00009     \mbox{\hyperlink{class_non_playable_character_a96182e6ac96d74025aec58b5c03f3824}{name}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00010}00010     \mbox{\hyperlink{class_non_playable_character_aff7b245f33c18e58e3056c18e5199e8c}{strength}} = 0;}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00011}00011     \mbox{\hyperlink{class_non_playable_character_aba25d6a44e649f3aa1aea32cd46191fa}{health}} = 0;}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00012}00012     \mbox{\hyperlink{class_non_playable_character_af6835f00acbdc12a7a9f920ef6801e0d}{attack\_speed}} = 0;}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00013}00013     \mbox{\hyperlink{class_non_playable_character_ab6703683eeb7deb2ac146dfcfced761f}{symbol}} = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00014}00014     \mbox{\hyperlink{class_non_playable_character_ac457178995a1ed93cdc8fdb38e916000}{passive}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00015}00015     \mbox{\hyperlink{class_non_playable_character_adb6c64e7dbc750efb7f2fa3f021e3627}{npc\_x}} = 0;}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00016}00016     \mbox{\hyperlink{class_non_playable_character_aeacd97bf866f7348710a6bd78a583ed7}{npc\_y}} = 0;}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00017}00017 \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00019}\mbox{\hyperlink{class_non_playable_character_af4fe8de9174af90d1a0088373d0e35c0}{00019}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_non_playable_character_af4fe8de9174af90d1a0088373d0e35c0}{NonPlayableCharacter::SetNamesArray}}()}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00020}00020 \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00021}00021 \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00023}\mbox{\hyperlink{class_non_playable_character_a4b3bd63666508f9ea91c83a4a1bec3d1}{00023}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_non_playable_character_a4b3bd63666508f9ea91c83a4a1bec3d1}{NonPlayableCharacter::CreateNonPlayableCharacter}}()}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00024}00024 \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00025}00025     \mbox{\hyperlink{class_non_playable_character_af4fe8de9174af90d1a0088373d0e35c0}{SetNamesArray}}();}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00026}00026     \mbox{\hyperlink{class_non_playable_character_a243b776f7671fc3458bf9ef6f9925875}{SetName}}();}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00027}00027     \mbox{\hyperlink{class_non_playable_character_a355f7bc2a43563faec957553fa4fd1e7}{SetPassive}}();}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00028}00028     \mbox{\hyperlink{class_non_playable_character_ada48fd505bbf5797c39f0b20aa995bbc}{SetSymbol}}();}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00029}00029     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_non_playable_character_ac457178995a1ed93cdc8fdb38e916000}{passive}})}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00030}00030     \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00031}00031         \mbox{\hyperlink{class_non_playable_character_a017d601103d2bc66a6338073a051cab7}{SetHealth}}();}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00032}00032         \mbox{\hyperlink{class_non_playable_character_a98e1d2355f2a3617b6a7a25ee737ee3e}{SetSpeed}}();}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00033}00033         \mbox{\hyperlink{class_non_playable_character_a9d5a16ef76a0e3339fd4ffc5d85bd8e2}{SetStrength}}();}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00034}00034     \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00035}00035 \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00037}\mbox{\hyperlink{class_non_playable_character_a243b776f7671fc3458bf9ef6f9925875}{00037}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_non_playable_character_a243b776f7671fc3458bf9ef6f9925875}{NonPlayableCharacter::SetName}}()}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00038}00038 \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00039}00039     \mbox{\hyperlink{class_non_playable_character_a96182e6ac96d74025aec58b5c03f3824}{name}} = \mbox{\hyperlink{class_non_playable_character_a7e5848d6face873445553e3731da84be}{name\_array}}[\mbox{\hyperlink{namespace_macro_a7192f07d19f55d7f8b863932a5078eab}{Macro::GenerateRandomNumber}}(\mbox{\hyperlink{class_non_playable_character_a7e5848d6face873445553e3731da84be}{name\_array}}-\/>length() -\/ 2)];}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00040}00040 \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00042}\mbox{\hyperlink{class_non_playable_character_a9d5a16ef76a0e3339fd4ffc5d85bd8e2}{00042}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_non_playable_character_a9d5a16ef76a0e3339fd4ffc5d85bd8e2}{NonPlayableCharacter::SetStrength}}()}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00043}00043 \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00044}00044     \mbox{\hyperlink{class_non_playable_character_aff7b245f33c18e58e3056c18e5199e8c}{strength}} = \mbox{\hyperlink{namespace_macro_a3500becfc34f5b1df2d6d976fb5f5f86}{Macro::GenerateRandomNumberWithoutZero}}(10);}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00045}00045 \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00047}\mbox{\hyperlink{class_non_playable_character_a017d601103d2bc66a6338073a051cab7}{00047}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_non_playable_character_a017d601103d2bc66a6338073a051cab7}{NonPlayableCharacter::SetHealth}}()}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00048}00048 \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00049}00049     \mbox{\hyperlink{class_non_playable_character_aba25d6a44e649f3aa1aea32cd46191fa}{health}} = \mbox{\hyperlink{namespace_macro_a3500becfc34f5b1df2d6d976fb5f5f86}{Macro::GenerateRandomNumberWithoutZero}}(10);}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00050}00050 \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00052}\mbox{\hyperlink{class_non_playable_character_a355f7bc2a43563faec957553fa4fd1e7}{00052}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_non_playable_character_a355f7bc2a43563faec957553fa4fd1e7}{NonPlayableCharacter::SetPassive}}()}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00053}00053 \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00054}00054 \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00056}\mbox{\hyperlink{class_non_playable_character_a98e1d2355f2a3617b6a7a25ee737ee3e}{00056}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_non_playable_character_a98e1d2355f2a3617b6a7a25ee737ee3e}{NonPlayableCharacter::SetSpeed}}()}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00057}00057 \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00058}00058     \mbox{\hyperlink{class_non_playable_character_af6835f00acbdc12a7a9f920ef6801e0d}{attack\_speed}} = \mbox{\hyperlink{namespace_macro_a3500becfc34f5b1df2d6d976fb5f5f86}{Macro::GenerateRandomNumberWithoutZero}}(5);}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00059}00059 \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00061}\mbox{\hyperlink{class_non_playable_character_ada48fd505bbf5797c39f0b20aa995bbc}{00061}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_non_playable_character_ada48fd505bbf5797c39f0b20aa995bbc}{NonPlayableCharacter::SetSymbol}}()}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00062}00062 \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00063}00063     \textcolor{keywordflow}{switch} (\mbox{\hyperlink{class_non_playable_character_ac457178995a1ed93cdc8fdb38e916000}{passive}})}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00064}00064     \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00065}00065     \textcolor{keywordflow}{case} \textcolor{keyword}{true}: \mbox{\hyperlink{class_non_playable_character_ab6703683eeb7deb2ac146dfcfced761f}{symbol}} = \mbox{\hyperlink{class_non_playable_character_aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9}{GENERIC\_FRIENDLY}};}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00066}00066         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00067}00067     \textcolor{keywordflow}{case} \textcolor{keyword}{false}: \mbox{\hyperlink{class_non_playable_character_ab6703683eeb7deb2ac146dfcfced761f}{symbol}} = \mbox{\hyperlink{class_non_playable_character_aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b}{ENEMY}};}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00068}00068         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00069}00069     \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00070}00070 \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00072}\mbox{\hyperlink{class_non_playable_character_a6ebdc6b058ea5dafe65132dd9ee46e6e}{00072}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_non_playable_character_a6ebdc6b058ea5dafe65132dd9ee46e6e}{NonPlayableCharacter::SetPosition}}(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y)}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00073}00073 \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00074}00074     \mbox{\hyperlink{class_non_playable_character_adb6c64e7dbc750efb7f2fa3f021e3627}{npc\_x}} = x;}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00075}00075     \mbox{\hyperlink{class_non_playable_character_aeacd97bf866f7348710a6bd78a583ed7}{npc\_y}} = y;}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00076}00076 \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00078}\mbox{\hyperlink{class_non_playable_character_aa18f226b35b28bd1ad318642a758abe2}{00078}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_non_playable_character_aa18f226b35b28bd1ad318642a758abe2}{NonPlayableCharacter::SetDesiredHealth}}(\textcolor{keywordtype}{int} value)}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00079}00079 \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00080}00080     \mbox{\hyperlink{class_non_playable_character_aba25d6a44e649f3aa1aea32cd46191fa}{health}} = value;}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00081}00081 \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00083}\mbox{\hyperlink{class_non_playable_character_aedf794670e71a33011caefd1d321a8f8}{00083}} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_non_playable_character_aedf794670e71a33011caefd1d321a8f8}{NonPlayableCharacter::GetName}}()}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00084}00084 \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00085}00085     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_non_playable_character_a96182e6ac96d74025aec58b5c03f3824}{name}};}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00086}00086 \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00088}\mbox{\hyperlink{class_non_playable_character_ab0ab52f45551b75625bdf02e65d3ef37}{00088}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_non_playable_character_ab0ab52f45551b75625bdf02e65d3ef37}{NonPlayableCharacter::GetHealth}}()}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00089}00089 \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00090}00090     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_non_playable_character_aba25d6a44e649f3aa1aea32cd46191fa}{health}};}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00091}00091 \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00093}\mbox{\hyperlink{class_non_playable_character_a39c610c17e10c8ee1b6bb03d65ed032f}{00093}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_non_playable_character_a39c610c17e10c8ee1b6bb03d65ed032f}{NonPlayableCharacter::GetDamage}}()}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00094}00094 \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00095}00095     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_non_playable_character_aff7b245f33c18e58e3056c18e5199e8c}{strength}};}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00096}00096 \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00098}\mbox{\hyperlink{class_non_playable_character_aad1bbaeea7152ff52113b318be9afc0d}{00098}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_non_playable_character_aad1bbaeea7152ff52113b318be9afc0d}{NonPlayableCharacter::GetX}}()}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00099}00099 \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00100}00100     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_non_playable_character_adb6c64e7dbc750efb7f2fa3f021e3627}{npc\_x}};}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00101}00101 \}}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00103}\mbox{\hyperlink{class_non_playable_character_a70b9980da4a02e7848c7561e498e8db9}{00103}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_non_playable_character_a70b9980da4a02e7848c7561e498e8db9}{NonPlayableCharacter::GetY}}()}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00104}00104 \{}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00105}00105     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_non_playable_character_aeacd97bf866f7348710a6bd78a583ed7}{npc\_y}};}
+\DoxyCodeLine{\Hypertarget{_non_playable_character_8cpp_source_l00106}00106 \}}
+
+\end{DoxyCode}

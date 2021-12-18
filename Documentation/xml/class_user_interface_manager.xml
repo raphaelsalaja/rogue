@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_user_interface_manager" kind="class" language="C++" prot="public">
+    <compoundname>UserInterfaceManager</compoundname>
+    <includes refid="_user_interface_manger_8h" local="no">UserInterfaceManger.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_user_interface_manager_1a94ee9caef6d96f22208947fbff67695e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; UserInterfaceManager::actions</definition>
+        <argsstring></argsstring>
+        <name>actions</name>
+        <initializer>{
+		&quot;&lt;------------------------------------------- A C T I O N S -&gt;&quot;,
+		&quot;|                                                           |&quot;,
+		&quot;|                                                           |&quot;,
+		&quot;|                                                           |&quot;,
+		&quot;|                                                           |&quot;,
+		&quot;|                                                           |&quot;,
+		&quot;|                                                           |&quot;,
+		&quot;|                                                           |&quot;,
+		&quot;:-----------------------------------------------------------;&quot;,
+	}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/UserInterfaceManger.h" line="8" column="13" bodyfile="D:/University/ca-A00269349/Rogue/UserInterfaceManger.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_console_rendering_1a1cec315984bd83c487a5aa1a66757c4c" compoundref="_console_rendering_8cpp" startline="65" endline="86">ConsoleRendering::Print_Actions_GUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_user_interface_manager_1ad0aeed4967c2e70002de08625092babb" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; UserInterfaceManager::stats</definition>
+        <argsstring></argsstring>
+        <name>stats</name>
+        <initializer>{
+		&quot;&lt;-------------------v---- S T A T S -&gt;&quot;,
+		&quot;|                   |                |&quot;,
+		&quot;|   H E A L T H     |                |&quot;,
+		&quot;|                   |                |&quot;,
+		&quot;|   S H I E L D     |                |&quot;,
+		&quot;|                   |                |&quot;,
+		&quot;|   M A G I C       |                |&quot;,
+		&quot;|                   |                |&quot;,
+		&quot;:-------------------^----------------;&quot;,
+	}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/UserInterfaceManger.h" line="20" column="13" bodyfile="D:/University/ca-A00269349/Rogue/UserInterfaceManger.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_console_rendering_1a373778cb0d4174011a2c7eeaa7482ec1" compoundref="_console_rendering_8cpp" startline="10" endline="63">ConsoleRendering::Print_Stats</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_user_interface_manager_1a20860ee0c0c01dba89ac4f81dba649dd" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; UserInterfaceManager::inventory</definition>
+        <argsstring></argsstring>
+        <name>inventory</name>
+        <initializer>{
+		&quot;&lt;------------------------------------------------------------------------------- I N V E N T O R Y -&gt;&quot;,
+		&quot;/-- P O T I O N S ----------------------------------------------------------------------------------]&quot;,
+		&quot;| HEALTH 0                                                                                          |&quot;,
+		&quot;| SHIELD 0                                                                                          |&quot;,
+		&quot;| MAGIC 0                                                                                           |&quot;,
+		&quot;/-- W E A P O N S ----------------------------------------------------------------------------------]&quot;,
+		&quot;| BLADE OF A THOUSAND CUTS                                                                          |&quot;,
+		&quot;| NIGHTBANE                                                                                         |&quot;,
+		&quot;| VENOM CARVER                                                                                      |&quot;,
+		&quot;| ANNIHILATION SABRE                                                                                |&quot;,
+		&quot;/-- A R M O U R ------------------------------------------------------------------------------------]&quot;,
+		&quot;| SOLDIER&apos;S TUNIC OF CATACLYSMS                                                                     |&quot;,
+		&quot;| SILENT ARMOR OF THE WICKED                                                                        |&quot;,
+		&quot;| STORMGUARD DEMON GREATPLATE                                                                       |&quot;,
+		&quot;/-- T R I N K E T S --------------------------------------------------------------------------------]&quot;,
+		&quot;| MIGHT OF FALLEN SOULS                                                                             |&quot;,
+		&quot;| HOPE OF CARNAGE                                                                                   |&quot;,
+		&quot;/---------------------------------------------------------------------------------------------------]&quot;,
+		&quot;|                                                                                                   |&quot;,
+		&quot;:---------------------------------------------------------------------------------------------------;&quot;
+	}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/UserInterfaceManger.h" line="32" column="13" bodyfile="D:/University/ca-A00269349/Rogue/UserInterfaceManger.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_inventory_manager_1a43d86630b1efa5dd593dc846e4a2b225" compoundref="_inventory_manager_8cpp" startline="191" endline="204">InventoryManager::AddSpaceAndEnding</referencedby>
+        <referencedby refid="class_inventory_manager_1a98a166d06e34c1f4dc503304f0861a6a" compoundref="_inventory_manager_8cpp" startline="179" endline="189">InventoryManager::GetInventoryHeadingLocation</referencedby>
+        <referencedby refid="class_inventory_manager_1aadd5ea163e9e6b8d9df1795443fb035a" compoundref="_inventory_manager_8cpp" startline="206" endline="291">InventoryManager::InsertIntoInventoryManager</referencedby>
+        <referencedby refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="60" endline="131">Player::PlayerCollisions</referencedby>
+        <referencedby refid="class_console_rendering_1ab06c676702c77f5c624a7076837245b3" compoundref="_console_rendering_8cpp" startline="109" endline="124">ConsoleRendering::Print_Inventory</referencedby>
+        <referencedby refid="class_inventory_manager_1a3ba246e46fef5621ee856a0b16be0faa" compoundref="_inventory_manager_8cpp" startline="293" endline="370">InventoryManager::RemoveFromInventoryManager</referencedby>
+        <referencedby refid="class_inventory_manager_1a0a4171b1ac086cc4122afdf2b929116b" compoundref="_inventory_manager_8cpp" startline="372" endline="378">InventoryManager::UpdateInventory</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>UserInterfaceManager</label>
+        <link refid="class_user_interface_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/University/ca-A00269349/Rogue/UserInterfaceManger.h" line="5" column="1" bodyfile="D:/University/ca-A00269349/Rogue/UserInterfaceManger.h" bodystart="6" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_user_interface_manager_1a94ee9caef6d96f22208947fbff67695e" prot="public" virt="non-virtual"><scope>UserInterfaceManager</scope><name>actions</name></member>
+      <member refid="class_user_interface_manager_1a20860ee0c0c01dba89ac4f81dba649dd" prot="public" virt="non-virtual"><scope>UserInterfaceManager</scope><name>inventory</name></member>
+      <member refid="class_user_interface_manager_1ad0aeed4967c2e70002de08625092babb" prot="public" virt="non-virtual"><scope>UserInterfaceManager</scope><name>stats</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

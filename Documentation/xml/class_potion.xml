@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_potion" kind="class" language="C++" prot="public">
+    <compoundname>Potion</compoundname>
+    <includes refid="_potion_8h" local="no">Potion.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_potion_1ad4d0c2ed693ae96f57492f3026bc8118" prot="public" static="no" strong="no">
+        <type></type>
+        <name>POTION_TYPE</name>
+        <enumvalue id="class_potion_1ad4d0c2ed693ae96f57492f3026bc8118a3f4e15a7fb0fac1c1cdacadaa88e9e61" prot="public">
+          <name>HEALTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_potion_1ad4d0c2ed693ae96f57492f3026bc8118a6c6a6011fb995d9765ef5975dd295ee0" prot="public">
+          <name>MAGIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_potion_1ad4d0c2ed693ae96f57492f3026bc8118a18014ebafdb9fa6be196851bd7578244" prot="public">
+          <name>SHIELD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Potion.h" line="38" column="1" bodyfile="D:/University/ca-A00269349/Rogue/Potion.h" bodystart="39" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_potion_1a85c11d5a142cf357f013f9101ad6a5f3" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Potion::POTION_NAME_CHOICES[3][6]</definition>
+        <argsstring>[3][6]</argsstring>
+        <name>POTION_NAME_CHOICES</name>
+        <initializer>{
+		{
+			&quot;Potion of Minor Healing&quot;,
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Small Healing&quot;,
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Plentiful Healing&quot;,
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Vigorous Healing&quot;,
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Extreme Healing&quot;,
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Ultimate Healing&quot;
+		},
+		{
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Minor Magicka&quot;,
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Small Magicka&quot;,
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Plentiful Magicka&quot;,
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Vigorous Magicka&quot;,
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Extreme Magicka&quot;,
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Ultimate Magicka&quot;
+		},
+		{
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Minor Magicka&quot;,
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Small Magicka&quot;,
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Plentiful Magicka&quot;,
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Vigorous Magicka&quot;,
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Extreme Magicka&quot;,
+			&quot;<ref refid="class_potion" kindref="compound">Potion</ref> of Ultimate Magicka&quot;
+		}
+	}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Potion.h" line="9" column="8" bodyfile="D:/University/ca-A00269349/Rogue/Potion.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_potion_1a52537ec9968236bc45d5e59e4080bb0b" compoundref="_potion_8cpp" startline="41" endline="57">SetPotionName</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_potion_1aca2b8acaa3abb7c03ae558a6147238ae" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Potion::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Potion.h" line="35" column="8" bodyfile="D:/University/ca-A00269349/Rogue/Potion.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_potion_1a39741067014fd25bc464a06609e775e8" compoundref="_potion_8cpp" startline="87" endline="96">CreateNewPotion</referencedby>
+        <referencedby refid="class_potion_1a52537ec9968236bc45d5e59e4080bb0b" compoundref="_potion_8cpp" startline="41" endline="57">SetPotionName</referencedby>
+        <referencedby refid="class_potion_1a00d35030d604b89563895187c8821aa6" compoundref="_potion_8cpp" startline="59" endline="85">SetStrength</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_potion_1a39b0c5f3beb5ab7865113342a64c0f53" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Potion::strength</definition>
+        <argsstring></argsstring>
+        <name>strength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Potion.h" line="36" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Potion.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_potion_1a39741067014fd25bc464a06609e775e8" compoundref="_potion_8cpp" startline="87" endline="96">CreateNewPotion</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_potion_1a5ca6d61b9f566e5cb48d4410f4a504b3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Potion::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Potion.h" line="36" column="14" bodyfile="D:/University/ca-A00269349/Rogue/Potion.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_potion_1a39741067014fd25bc464a06609e775e8" compoundref="_potion_8cpp" startline="87" endline="96">CreateNewPotion</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_potion_1aacb94beb4985307f1d399f530e212067" prot="public" static="no" mutable="no">
+        <type><ref refid="class_potion_1ad4d0c2ed693ae96f57492f3026bc8118" kindref="member">POTION_TYPE</ref></type>
+        <definition>POTION_TYPE Potion::POTION_TYPE_SELECTED</definition>
+        <argsstring></argsstring>
+        <name>POTION_TYPE_SELECTED</name>
+        <initializer>= <ref refid="class_potion_1ad4d0c2ed693ae96f57492f3026bc8118a3f4e15a7fb0fac1c1cdacadaa88e9e61" kindref="member">HEALTH</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Potion.h" line="45" column="13" bodyfile="D:/University/ca-A00269349/Rogue/Potion.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_potion_1a39741067014fd25bc464a06609e775e8" compoundref="_potion_8cpp" startline="87" endline="96">CreateNewPotion</referencedby>
+        <referencedby refid="class_potion_1a52537ec9968236bc45d5e59e4080bb0b" compoundref="_potion_8cpp" startline="41" endline="57">SetPotionName</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_potion_1a15975c54a32d08b755b33281475e627a" prot="private" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char Potion::SYMBOL</definition>
+        <argsstring></argsstring>
+        <name>SYMBOL</name>
+        <initializer>= &apos;P&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Potion.h" line="57" column="12" bodyfile="D:/University/ca-A00269349/Rogue/Potion.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_potion_1a32eb096773bd58c87a95795d55c58684" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Potion::Potion</definition>
+        <argsstring>()</argsstring>
+        <name>Potion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Potion.h" line="47" column="1" bodyfile="D:/University/ca-A00269349/Rogue/Potion.cpp" bodystart="8" bodyend="11"/>
+        <references refid="class_potion_1a39741067014fd25bc464a06609e775e8" compoundref="_potion_8cpp" startline="87" endline="96">CreateNewPotion</references>
+      </memberdef>
+      <memberdef kind="function" id="class_potion_1a8730c8052ec698171885bb5dacda9cca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Potion::~Potion</definition>
+        <argsstring>()</argsstring>
+        <name>~Potion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Potion.h" line="48" column="1" bodyfile="D:/University/ca-A00269349/Rogue/Potion.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_potion_1a004e553d634deb9413bffa4a577607e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Potion::GenerateRandomNumber</definition>
+        <argsstring>(int max)</argsstring>
+        <name>GenerateRandomNumber</name>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Potion.h" line="50" column="14" bodyfile="D:/University/ca-A00269349/Rogue/Potion.cpp" bodystart="17" bodyend="20"/>
+        <referencedby refid="class_potion_1a39741067014fd25bc464a06609e775e8" compoundref="_potion_8cpp" startline="87" endline="96">CreateNewPotion</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_potion_1a5c4337855a9492fcb3540d521faf875e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_potion_1ad4d0c2ed693ae96f57492f3026bc8118" kindref="member">POTION_TYPE</ref></type>
+        <definition>Potion::POTION_TYPE Potion::SetPotionType</definition>
+        <argsstring>(int potion_choice)</argsstring>
+        <name>SetPotionType</name>
+        <param>
+          <type>int</type>
+          <declname>potion_choice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Potion.h" line="51" column="13" bodyfile="D:/University/ca-A00269349/Rogue/Potion.cpp" bodystart="22" bodyend="39"/>
+        <referencedby refid="class_potion_1a39741067014fd25bc464a06609e775e8" compoundref="_potion_8cpp" startline="87" endline="96">CreateNewPotion</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_potion_1a52537ec9968236bc45d5e59e4080bb0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Potion::SetPotionName</definition>
+        <argsstring>(int potion_name_index, POTION_TYPE POTION_TYPE_SELECTED)</argsstring>
+        <name>SetPotionName</name>
+        <param>
+          <type>int</type>
+          <declname>potion_name_index</declname>
+        </param>
+        <param>
+          <type><ref refid="class_potion_1ad4d0c2ed693ae96f57492f3026bc8118" kindref="member">POTION_TYPE</ref></type>
+          <declname>POTION_TYPE_SELECTED</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Potion.h" line="52" column="8" bodyfile="D:/University/ca-A00269349/Rogue/Potion.cpp" bodystart="41" bodyend="57"/>
+        <references refid="class_potion_1aca2b8acaa3abb7c03ae558a6147238ae" compoundref="_potion_8h" startline="35">name</references>
+        <references refid="class_potion_1a85c11d5a142cf357f013f9101ad6a5f3" compoundref="_potion_8h" startline="9">POTION_NAME_CHOICES</references>
+        <references refid="class_potion_1aacb94beb4985307f1d399f530e212067" compoundref="_potion_8h" startline="45">POTION_TYPE_SELECTED</references>
+        <referencedby refid="class_potion_1a39741067014fd25bc464a06609e775e8" compoundref="_potion_8cpp" startline="87" endline="96">CreateNewPotion</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_potion_1a00d35030d604b89563895187c8821aa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Potion::SetStrength</definition>
+        <argsstring>(string name)</argsstring>
+        <name>SetStrength</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Potion.h" line="53" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Potion.cpp" bodystart="59" bodyend="85"/>
+        <references refid="class_potion_1aca2b8acaa3abb7c03ae558a6147238ae" compoundref="_potion_8h" startline="35">name</references>
+        <referencedby refid="class_potion_1a39741067014fd25bc464a06609e775e8" compoundref="_potion_8cpp" startline="87" endline="96">CreateNewPotion</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_potion_1a39741067014fd25bc464a06609e775e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Potion::CreateNewPotion</definition>
+        <argsstring>()</argsstring>
+        <name>CreateNewPotion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Potion.h" line="54" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Potion.cpp" bodystart="87" bodyend="96"/>
+        <references refid="class_potion_1a004e553d634deb9413bffa4a577607e5" compoundref="_potion_8cpp" startline="17" endline="20">GenerateRandomNumber</references>
+        <references refid="class_potion_1aca2b8acaa3abb7c03ae558a6147238ae" compoundref="_potion_8h" startline="35">name</references>
+        <references refid="class_potion_1aacb94beb4985307f1d399f530e212067" compoundref="_potion_8h" startline="45">POTION_TYPE_SELECTED</references>
+        <references refid="class_potion_1a52537ec9968236bc45d5e59e4080bb0b" compoundref="_potion_8cpp" startline="41" endline="57">SetPotionName</references>
+        <references refid="class_potion_1a5c4337855a9492fcb3540d521faf875e" compoundref="_potion_8cpp" startline="22" endline="39">SetPotionType</references>
+        <references refid="class_potion_1a00d35030d604b89563895187c8821aa6" compoundref="_potion_8cpp" startline="59" endline="85">SetStrength</references>
+        <references refid="class_potion_1a39b0c5f3beb5ab7865113342a64c0f53" compoundref="_potion_8h" startline="36">strength</references>
+        <references refid="class_potion_1a5ca6d61b9f566e5cb48d4410f4a504b3" compoundref="_potion_8h" startline="36">weight</references>
+        <referencedby refid="class_potion_1a32eb096773bd58c87a95795d55c58684" compoundref="_potion_8cpp" startline="8" endline="11">Potion</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Potion</label>
+        <link refid="class_potion"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/University/ca-A00269349/Rogue/Potion.h" line="6" column="1" bodyfile="D:/University/ca-A00269349/Rogue/Potion.h" bodystart="7" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_potion_1a39741067014fd25bc464a06609e775e8" prot="public" virt="non-virtual"><scope>Potion</scope><name>CreateNewPotion</name></member>
+      <member refid="class_potion_1a004e553d634deb9413bffa4a577607e5" prot="public" virt="non-virtual"><scope>Potion</scope><name>GenerateRandomNumber</name></member>
+      <member refid="class_potion_1ad4d0c2ed693ae96f57492f3026bc8118a3f4e15a7fb0fac1c1cdacadaa88e9e61" prot="public" virt="non-virtual"><scope>Potion</scope><name>HEALTH</name></member>
+      <member refid="class_potion_1ad4d0c2ed693ae96f57492f3026bc8118a6c6a6011fb995d9765ef5975dd295ee0" prot="public" virt="non-virtual"><scope>Potion</scope><name>MAGIC</name></member>
+      <member refid="class_potion_1aca2b8acaa3abb7c03ae558a6147238ae" prot="public" virt="non-virtual"><scope>Potion</scope><name>name</name></member>
+      <member refid="class_potion_1a32eb096773bd58c87a95795d55c58684" prot="public" virt="non-virtual"><scope>Potion</scope><name>Potion</name></member>
+      <member refid="class_potion_1a85c11d5a142cf357f013f9101ad6a5f3" prot="public" virt="non-virtual"><scope>Potion</scope><name>POTION_NAME_CHOICES</name></member>
+      <member refid="class_potion_1ad4d0c2ed693ae96f57492f3026bc8118" prot="public" virt="non-virtual"><scope>Potion</scope><name>POTION_TYPE</name></member>
+      <member refid="class_potion_1aacb94beb4985307f1d399f530e212067" prot="public" virt="non-virtual"><scope>Potion</scope><name>POTION_TYPE_SELECTED</name></member>
+      <member refid="class_potion_1a52537ec9968236bc45d5e59e4080bb0b" prot="public" virt="non-virtual"><scope>Potion</scope><name>SetPotionName</name></member>
+      <member refid="class_potion_1a5c4337855a9492fcb3540d521faf875e" prot="public" virt="non-virtual"><scope>Potion</scope><name>SetPotionType</name></member>
+      <member refid="class_potion_1a00d35030d604b89563895187c8821aa6" prot="public" virt="non-virtual"><scope>Potion</scope><name>SetStrength</name></member>
+      <member refid="class_potion_1ad4d0c2ed693ae96f57492f3026bc8118a18014ebafdb9fa6be196851bd7578244" prot="public" virt="non-virtual"><scope>Potion</scope><name>SHIELD</name></member>
+      <member refid="class_potion_1a39b0c5f3beb5ab7865113342a64c0f53" prot="public" virt="non-virtual"><scope>Potion</scope><name>strength</name></member>
+      <member refid="class_potion_1a15975c54a32d08b755b33281475e627a" prot="private" virt="non-virtual"><scope>Potion</scope><name>SYMBOL</name></member>
+      <member refid="class_potion_1a5ca6d61b9f566e5cb48d4410f4a504b3" prot="public" virt="non-virtual"><scope>Potion</scope><name>weight</name></member>
+      <member refid="class_potion_1a8730c8052ec698171885bb5dacda9cca" prot="public" virt="non-virtual"><scope>Potion</scope><name>~Potion</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

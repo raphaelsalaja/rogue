@@ -1,0 +1,492 @@
+\hypertarget{class_console_window_manager}{}\doxysection{Console\+Window\+Manager Class Reference}
+\label{class_console_window_manager}\index{ConsoleWindowManager@{ConsoleWindowManager}}
+
+
+{\ttfamily \#include $<$Console\+Window\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Console\+Window\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_window_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543}{COLORS}} \{ \newline
+\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3}{BLACK}} = 0
+, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a0123e45b31a6caef6bee87987431ba29}{DARK\+\_\+\+BLUE}} = 1
+, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ac7f09d6540d7f440678450da2e98291f}{DARK\+\_\+\+GREEN}} = 2
+, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752}{LIGHT\+\_\+\+BLUE}} = 3
+, \newline
+\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543adae46377de9e9accb9cb67221fbb2c36}{DARK\+\_\+\+RED}} = 4
+, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e}{MAGENTA}} = 5
+, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543aaf930b582883444109e9ef4104e75af5}{ORANGE}} = 6
+, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a760a27011eb2ba8d016475c828bd32b4}{LIGHT\+\_\+\+GRAY}} = 7
+, \newline
+\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ab6b44fb822219788637b3cd88c7a0e4a}{GRAY}} = 8
+, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b2a4e6f58e1a7c9bcc98461ec6689f9}{BLUE}} = 9
+, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ae5c13df1cfc28fdc2c55a856085f5b8a}{GREEN}} = 10
+, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543af19a5b9192c1fa96a5ae253ab37c714b}{CYAN}} = 11
+, \newline
+\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a241238b2c88c156285680b898b7bca5f}{RED}} = 12
+, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ab53cb0396e1962612ea761ff12a9119b}{PINK}} = 13
+, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ac2f74f3c14dbbde9c81c3eb43ad652d8}{YELLOW}} = 14
+, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543abfc98f0b1d34e7a616e51ab38123d4dc}{WHITE}} = 15
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_console_window_manager_aec3eb492b72b29b4b9c57d622b799e9c}{Blank\+Screen}} ()
+\item 
+void \mbox{\hyperlink{class_console_window_manager_ac4c2a46e7019be00cd1691f786587797}{Hide\+Console\+Cursor}} ()
+\item 
+void \mbox{\hyperlink{class_console_window_manager_a622c6a38370c75628b954f013436ecb9}{Set\+Window\+Display}} (int width, int height)
+\item 
+void \mbox{\hyperlink{class_console_window_manager_a04f302f741273b8c1ead23f11fb70e39}{Set\+Text}} ()
+\item 
+void \mbox{\hyperlink{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}{Set\+Console\+Window\+Color}} (\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543}{COLORS}} fg, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543}{COLORS}} bg)
+\item 
+void \mbox{\hyperlink{class_console_window_manager_abed5c169df20d3f830cc11b1dfbe4a6a}{Set\+Console\+Window\+Random\+Color}} (int random\+\_\+color)
+\item 
+void \mbox{\hyperlink{class_console_window_manager_a7994b8ccd83e4f0eecfa9c4c579b067b}{Reposition\+Window}} (int width, int height)
+\item 
+HANDLE \mbox{\hyperlink{class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90}{Get\+Console\+Handle}} ()
+\item 
+HWND \mbox{\hyperlink{class_console_window_manager_a13a64349bfa723a1c035752ea401ab2c}{Get\+Desktop\+Handle\+Window}} ()
+\item 
+HWND \mbox{\hyperlink{class_console_window_manager_a33a11dc816bf4174a52c680090f80d9d}{Get\+Console\+Handle\+Window}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+HANDLE \mbox{\hyperlink{class_console_window_manager_abdee4e17ebc10f03c5e74d45f8e4ed5c}{HANDLE\+\_\+\+CONSOLE}}
+\item 
+HWND \mbox{\hyperlink{class_console_window_manager_a1cc7bac864b3fb93af536bdea526b908}{HANDLE\+\_\+\+WINDOW\+\_\+\+DESKTOP}}
+\item 
+HWND \mbox{\hyperlink{class_console_window_manager_acf76563de7c4c73f97bb0c8ffc1c461e}{HANDLE\+\_\+\+WINDOW\+\_\+\+CONSOLE}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_console_window_manager_8h_source_l00004}{4}} of file \mbox{\hyperlink{_console_window_manager_8h_source}{Console\+Window\+Manager.\+h}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543}} 
+\index{ConsoleWindowManager@{ConsoleWindowManager}!COLORS@{COLORS}}
+\index{COLORS@{COLORS}!ConsoleWindowManager@{ConsoleWindowManager}}
+\doxysubsubsection{\texorpdfstring{COLORS}{COLORS}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543}{Console\+Window\+Manager\+::\+COLORS}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLACK@{BLACK}!ConsoleWindowManager@{ConsoleWindowManager}}\index{ConsoleWindowManager@{ConsoleWindowManager}!BLACK@{BLACK}}}\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3}} 
+BLACK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DARK\_BLUE@{DARK\_BLUE}!ConsoleWindowManager@{ConsoleWindowManager}}\index{ConsoleWindowManager@{ConsoleWindowManager}!DARK\_BLUE@{DARK\_BLUE}}}\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a0123e45b31a6caef6bee87987431ba29}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a0123e45b31a6caef6bee87987431ba29}} 
+DARK\+\_\+\+BLUE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DARK\_GREEN@{DARK\_GREEN}!ConsoleWindowManager@{ConsoleWindowManager}}\index{ConsoleWindowManager@{ConsoleWindowManager}!DARK\_GREEN@{DARK\_GREEN}}}\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ac7f09d6540d7f440678450da2e98291f}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ac7f09d6540d7f440678450da2e98291f}} 
+DARK\+\_\+\+GREEN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LIGHT\_BLUE@{LIGHT\_BLUE}!ConsoleWindowManager@{ConsoleWindowManager}}\index{ConsoleWindowManager@{ConsoleWindowManager}!LIGHT\_BLUE@{LIGHT\_BLUE}}}\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752}} 
+LIGHT\+\_\+\+BLUE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DARK\_RED@{DARK\_RED}!ConsoleWindowManager@{ConsoleWindowManager}}\index{ConsoleWindowManager@{ConsoleWindowManager}!DARK\_RED@{DARK\_RED}}}\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543adae46377de9e9accb9cb67221fbb2c36}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543adae46377de9e9accb9cb67221fbb2c36}} 
+DARK\+\_\+\+RED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAGENTA@{MAGENTA}!ConsoleWindowManager@{ConsoleWindowManager}}\index{ConsoleWindowManager@{ConsoleWindowManager}!MAGENTA@{MAGENTA}}}\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e}} 
+MAGENTA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ORANGE@{ORANGE}!ConsoleWindowManager@{ConsoleWindowManager}}\index{ConsoleWindowManager@{ConsoleWindowManager}!ORANGE@{ORANGE}}}\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543aaf930b582883444109e9ef4104e75af5}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543aaf930b582883444109e9ef4104e75af5}} 
+ORANGE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LIGHT\_GRAY@{LIGHT\_GRAY}!ConsoleWindowManager@{ConsoleWindowManager}}\index{ConsoleWindowManager@{ConsoleWindowManager}!LIGHT\_GRAY@{LIGHT\_GRAY}}}\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a760a27011eb2ba8d016475c828bd32b4}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a760a27011eb2ba8d016475c828bd32b4}} 
+LIGHT\+\_\+\+GRAY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRAY@{GRAY}!ConsoleWindowManager@{ConsoleWindowManager}}\index{ConsoleWindowManager@{ConsoleWindowManager}!GRAY@{GRAY}}}\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ab6b44fb822219788637b3cd88c7a0e4a}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ab6b44fb822219788637b3cd88c7a0e4a}} 
+GRAY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLUE@{BLUE}!ConsoleWindowManager@{ConsoleWindowManager}}\index{ConsoleWindowManager@{ConsoleWindowManager}!BLUE@{BLUE}}}\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b2a4e6f58e1a7c9bcc98461ec6689f9}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b2a4e6f58e1a7c9bcc98461ec6689f9}} 
+BLUE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GREEN@{GREEN}!ConsoleWindowManager@{ConsoleWindowManager}}\index{ConsoleWindowManager@{ConsoleWindowManager}!GREEN@{GREEN}}}\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ae5c13df1cfc28fdc2c55a856085f5b8a}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ae5c13df1cfc28fdc2c55a856085f5b8a}} 
+GREEN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CYAN@{CYAN}!ConsoleWindowManager@{ConsoleWindowManager}}\index{ConsoleWindowManager@{ConsoleWindowManager}!CYAN@{CYAN}}}\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543af19a5b9192c1fa96a5ae253ab37c714b}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543af19a5b9192c1fa96a5ae253ab37c714b}} 
+CYAN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RED@{RED}!ConsoleWindowManager@{ConsoleWindowManager}}\index{ConsoleWindowManager@{ConsoleWindowManager}!RED@{RED}}}\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a241238b2c88c156285680b898b7bca5f}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a241238b2c88c156285680b898b7bca5f}} 
+RED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PINK@{PINK}!ConsoleWindowManager@{ConsoleWindowManager}}\index{ConsoleWindowManager@{ConsoleWindowManager}!PINK@{PINK}}}\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ab53cb0396e1962612ea761ff12a9119b}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ab53cb0396e1962612ea761ff12a9119b}} 
+PINK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{YELLOW@{YELLOW}!ConsoleWindowManager@{ConsoleWindowManager}}\index{ConsoleWindowManager@{ConsoleWindowManager}!YELLOW@{YELLOW}}}\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ac2f74f3c14dbbde9c81c3eb43ad652d8}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ac2f74f3c14dbbde9c81c3eb43ad652d8}} 
+YELLOW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WHITE@{WHITE}!ConsoleWindowManager@{ConsoleWindowManager}}\index{ConsoleWindowManager@{ConsoleWindowManager}!WHITE@{WHITE}}}\mbox{\Hypertarget{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543abfc98f0b1d34e7a616e51ab38123d4dc}\label{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543abfc98f0b1d34e7a616e51ab38123d4dc}} 
+WHITE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_console_window_manager_8h_source_l00007}{7}} of file \mbox{\hyperlink{_console_window_manager_8h_source}{Console\+Window\+Manager.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00008}00008     \{}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00009}00009         \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3}{BLACK}} = 0,}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00010}00010         \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a0123e45b31a6caef6bee87987431ba29}{DARK\_BLUE}} = 1,}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00011}00011         \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ac7f09d6540d7f440678450da2e98291f}{DARK\_GREEN}} = 2,}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00012}00012         \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752}{LIGHT\_BLUE}} = 3,}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00013}00013         \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543adae46377de9e9accb9cb67221fbb2c36}{DARK\_RED}} = 4,}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00014}00014         \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e}{MAGENTA}} = 5,}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00015}00015         \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543aaf930b582883444109e9ef4104e75af5}{ORANGE}} = 6,}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00016}00016         \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a760a27011eb2ba8d016475c828bd32b4}{LIGHT\_GRAY}} = 7,}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00017}00017         \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ab6b44fb822219788637b3cd88c7a0e4a}{GRAY}} = 8,}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00018}00018         \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b2a4e6f58e1a7c9bcc98461ec6689f9}{BLUE}} = 9,}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00019}00019         \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ae5c13df1cfc28fdc2c55a856085f5b8a}{GREEN}} = 10,}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00020}00020         \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543af19a5b9192c1fa96a5ae253ab37c714b}{CYAN}} = 11,}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00021}00021         \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a241238b2c88c156285680b898b7bca5f}{RED}} = 12,}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00022}00022         \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ab53cb0396e1962612ea761ff12a9119b}{PINK}} = 13,}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00023}00023         \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ac2f74f3c14dbbde9c81c3eb43ad652d8}{YELLOW}} = 14,}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00024}00024         \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543abfc98f0b1d34e7a616e51ab38123d4dc}{WHITE}} = 15}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00025}00025     \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_console_window_manager_aec3eb492b72b29b4b9c57d622b799e9c}\label{class_console_window_manager_aec3eb492b72b29b4b9c57d622b799e9c}} 
+\index{ConsoleWindowManager@{ConsoleWindowManager}!BlankScreen@{BlankScreen}}
+\index{BlankScreen@{BlankScreen}!ConsoleWindowManager@{ConsoleWindowManager}}
+\doxysubsubsection{\texorpdfstring{BlankScreen()}{BlankScreen()}}
+{\footnotesize\ttfamily void Console\+Window\+Manager\+::\+Blank\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_console_window_manager_8cpp_source_l00018}{18}} of file \mbox{\hyperlink{_console_window_manager_8cpp_source}{Console\+Window\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00019}00019 \{}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00020}00020     system(\textcolor{stringliteral}{"{}CLS"{}});}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00021}00021 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_window_manager_aec3eb492b72b29b4b9c57d622b799e9c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90}\label{class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90}} 
+\index{ConsoleWindowManager@{ConsoleWindowManager}!GetConsoleHandle@{GetConsoleHandle}}
+\index{GetConsoleHandle@{GetConsoleHandle}!ConsoleWindowManager@{ConsoleWindowManager}}
+\doxysubsubsection{\texorpdfstring{GetConsoleHandle()}{GetConsoleHandle()}}
+{\footnotesize\ttfamily HANDLE Console\+Window\+Manager\+::\+Get\+Console\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_console_window_manager_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{_console_window_manager_8cpp_source}{Console\+Window\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00004}00004 \{}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00005}00005     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_console_window_manager_abdee4e17ebc10f03c5e74d45f8e4ed5c}{HANDLE\_CONSOLE}} = GetStdHandle(STD\_OUTPUT\_HANDLE);}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00006}00006 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_window_manager_a33a11dc816bf4174a52c680090f80d9d}\label{class_console_window_manager_a33a11dc816bf4174a52c680090f80d9d}} 
+\index{ConsoleWindowManager@{ConsoleWindowManager}!GetConsoleHandleWindow@{GetConsoleHandleWindow}}
+\index{GetConsoleHandleWindow@{GetConsoleHandleWindow}!ConsoleWindowManager@{ConsoleWindowManager}}
+\doxysubsubsection{\texorpdfstring{GetConsoleHandleWindow()}{GetConsoleHandleWindow()}}
+{\footnotesize\ttfamily HWND Console\+Window\+Manager\+::\+Get\+Console\+Handle\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_console_window_manager_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{_console_window_manager_8cpp_source}{Console\+Window\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00014}00014 \{}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00015}00015     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_console_window_manager_acf76563de7c4c73f97bb0c8ffc1c461e}{HANDLE\_WINDOW\_CONSOLE}} = GetConsoleWindow();}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00016}00016 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_window_manager_a33a11dc816bf4174a52c680090f80d9d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_window_manager_a13a64349bfa723a1c035752ea401ab2c}\label{class_console_window_manager_a13a64349bfa723a1c035752ea401ab2c}} 
+\index{ConsoleWindowManager@{ConsoleWindowManager}!GetDesktopHandleWindow@{GetDesktopHandleWindow}}
+\index{GetDesktopHandleWindow@{GetDesktopHandleWindow}!ConsoleWindowManager@{ConsoleWindowManager}}
+\doxysubsubsection{\texorpdfstring{GetDesktopHandleWindow()}{GetDesktopHandleWindow()}}
+{\footnotesize\ttfamily HWND Console\+Window\+Manager\+::\+Get\+Desktop\+Handle\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_console_window_manager_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{_console_window_manager_8cpp_source}{Console\+Window\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00010}00010     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_console_window_manager_a1cc7bac864b3fb93af536bdea526b908}{HANDLE\_WINDOW\_DESKTOP}} = GetDesktopWindow();}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00011}00011 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_console_window_manager_ac4c2a46e7019be00cd1691f786587797}\label{class_console_window_manager_ac4c2a46e7019be00cd1691f786587797}} 
+\index{ConsoleWindowManager@{ConsoleWindowManager}!HideConsoleCursor@{HideConsoleCursor}}
+\index{HideConsoleCursor@{HideConsoleCursor}!ConsoleWindowManager@{ConsoleWindowManager}}
+\doxysubsubsection{\texorpdfstring{HideConsoleCursor()}{HideConsoleCursor()}}
+{\footnotesize\ttfamily void Console\+Window\+Manager\+::\+Hide\+Console\+Cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_console_window_manager_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{_console_window_manager_8cpp_source}{Console\+Window\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00024}00024 \{}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00025}00025     CONSOLE\_CURSOR\_INFO CONSOLE\_CURSOR\_INFO\_CONSOLE;}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00026}00026     GetConsoleCursorInfo(\mbox{\hyperlink{class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90}{GetConsoleHandle}}(), \&CONSOLE\_CURSOR\_INFO\_CONSOLE);}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00027}00027     CONSOLE\_CURSOR\_INFO\_CONSOLE.bVisible = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00028}00028     SetConsoleCursorInfo(\mbox{\hyperlink{class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90}{GetConsoleHandle}}(), \&CONSOLE\_CURSOR\_INFO\_CONSOLE);}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00029}00029 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_window_manager_ac4c2a46e7019be00cd1691f786587797_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_window_manager_ac4c2a46e7019be00cd1691f786587797_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_window_manager_a7994b8ccd83e4f0eecfa9c4c579b067b}\label{class_console_window_manager_a7994b8ccd83e4f0eecfa9c4c579b067b}} 
+\index{ConsoleWindowManager@{ConsoleWindowManager}!RepositionWindow@{RepositionWindow}}
+\index{RepositionWindow@{RepositionWindow}!ConsoleWindowManager@{ConsoleWindowManager}}
+\doxysubsubsection{\texorpdfstring{RepositionWindow()}{RepositionWindow()}}
+{\footnotesize\ttfamily void Console\+Window\+Manager\+::\+Reposition\+Window (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}\label{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}} 
+\index{ConsoleWindowManager@{ConsoleWindowManager}!SetConsoleWindowColor@{SetConsoleWindowColor}}
+\index{SetConsoleWindowColor@{SetConsoleWindowColor}!ConsoleWindowManager@{ConsoleWindowManager}}
+\doxysubsubsection{\texorpdfstring{SetConsoleWindowColor()}{SetConsoleWindowColor()}}
+{\footnotesize\ttfamily void Console\+Window\+Manager\+::\+Set\+Console\+Window\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543}{COLORS}}}]{fg,  }\item[{\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543}{COLORS}}}]{bg }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_console_window_manager_8cpp_source_l00058}{58}} of file \mbox{\hyperlink{_console_window_manager_8cpp_source}{Console\+Window\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00059}00059 \{}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00060}00060     SetConsoleTextAttribute(\mbox{\hyperlink{class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90}{GetConsoleHandle}}(), fg + bg * 16);}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00061}00061 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_window_manager_abed5c169df20d3f830cc11b1dfbe4a6a}\label{class_console_window_manager_abed5c169df20d3f830cc11b1dfbe4a6a}} 
+\index{ConsoleWindowManager@{ConsoleWindowManager}!SetConsoleWindowRandomColor@{SetConsoleWindowRandomColor}}
+\index{SetConsoleWindowRandomColor@{SetConsoleWindowRandomColor}!ConsoleWindowManager@{ConsoleWindowManager}}
+\doxysubsubsection{\texorpdfstring{SetConsoleWindowRandomColor()}{SetConsoleWindowRandomColor()}}
+{\footnotesize\ttfamily void Console\+Window\+Manager\+::\+Set\+Console\+Window\+Random\+Color (\begin{DoxyParamCaption}\item[{int}]{random\+\_\+color }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_console_window_manager_8cpp_source_l00064}{64}} of file \mbox{\hyperlink{_console_window_manager_8cpp_source}{Console\+Window\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00065}00065 \{}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00066}00066     SetConsoleTextAttribute(\mbox{\hyperlink{class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90}{GetConsoleHandle}}(), random\_color + \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3}{BLACK}} * 16);}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00067}00067 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_window_manager_abed5c169df20d3f830cc11b1dfbe4a6a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_window_manager_abed5c169df20d3f830cc11b1dfbe4a6a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_window_manager_a04f302f741273b8c1ead23f11fb70e39}\label{class_console_window_manager_a04f302f741273b8c1ead23f11fb70e39}} 
+\index{ConsoleWindowManager@{ConsoleWindowManager}!SetText@{SetText}}
+\index{SetText@{SetText}!ConsoleWindowManager@{ConsoleWindowManager}}
+\doxysubsubsection{\texorpdfstring{SetText()}{SetText()}}
+{\footnotesize\ttfamily void Console\+Window\+Manager\+::\+Set\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_console_window_manager_8cpp_source_l00048}{48}} of file \mbox{\hyperlink{_console_window_manager_8cpp_source}{Console\+Window\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00049}00049 \{}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00050}00050     CONSOLE\_FONT\_INFOEX CONSOLE\_FONT = \{0\};}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00051}00051     CONSOLE\_FONT.cbSize = \textcolor{keyword}{sizeof} CONSOLE\_FONT;}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00052}00052     CONSOLE\_FONT.dwFontSize.X = 8;}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00053}00053     CONSOLE\_FONT.dwFontSize.Y = 12;}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00054}00054     wcscpy\_s(CONSOLE\_FONT.FaceName, L\textcolor{stringliteral}{"{}Terminal"{}});}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00055}00055     SetCurrentConsoleFontEx(\mbox{\hyperlink{class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90}{GetConsoleHandle}}(), 0, \&CONSOLE\_FONT);}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00056}00056 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_window_manager_a04f302f741273b8c1ead23f11fb70e39_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_console_window_manager_a04f302f741273b8c1ead23f11fb70e39_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_console_window_manager_a622c6a38370c75628b954f013436ecb9}\label{class_console_window_manager_a622c6a38370c75628b954f013436ecb9}} 
+\index{ConsoleWindowManager@{ConsoleWindowManager}!SetWindowDisplay@{SetWindowDisplay}}
+\index{SetWindowDisplay@{SetWindowDisplay}!ConsoleWindowManager@{ConsoleWindowManager}}
+\doxysubsubsection{\texorpdfstring{SetWindowDisplay()}{SetWindowDisplay()}}
+{\footnotesize\ttfamily void Console\+Window\+Manager\+::\+Set\+Window\+Display (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_console_window_manager_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{_console_window_manager_8cpp_source}{Console\+Window\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00032}00032 \{}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00033}00033     HMONITOR HANDLE\_MONITOR = MonitorFromWindow(\mbox{\hyperlink{class_console_window_manager_a33a11dc816bf4174a52c680090f80d9d}{GetConsoleHandleWindow}}(), MONITOR\_DEFAULTTONEAREST);}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00034}00034     \textcolor{keywordflow}{if} (HANDLE\_MONITOR)}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00035}00035     \{}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00036}00036         MONITORINFO MONITOR\_INFO\{\textcolor{keyword}{sizeof}(MONITOR\_INFO)\};}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00037}00037         \textcolor{keywordflow}{if} (::GetMonitorInfo(HANDLE\_MONITOR, \&MONITOR\_INFO))}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00038}00038         \{}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00039}00039             \textcolor{keywordtype}{int} x = (MONITOR\_INFO.rcWork.left + MONITOR\_INFO.rcWork.right) / 2 -\/ width / 2;}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00040}00040             \textcolor{keywordtype}{int} y = (MONITOR\_INFO.rcWork.top + MONITOR\_INFO.rcWork.bottom) / 2 -\/ height / 2;}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00041}00041             SetConsoleTitle(TEXT(\textcolor{stringliteral}{"{}ROGUE"{}}));}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00042}00042             SetWindowPos(\mbox{\hyperlink{class_console_window_manager_a33a11dc816bf4174a52c680090f80d9d}{GetConsoleHandleWindow}}(), \textcolor{keyword}{nullptr}, x, y, width, height,}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00043}00043                          SWP\_NOZORDER | SWP\_NOOWNERZORDER | SWP\_SHOWWINDOW);}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00044}00044         \}}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00045}00045     \}}
+\DoxyCodeLine{\Hypertarget{class_console_window_manager_l00046}00046 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_window_manager_a622c6a38370c75628b954f013436ecb9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_console_window_manager_a622c6a38370c75628b954f013436ecb9_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_console_window_manager_abdee4e17ebc10f03c5e74d45f8e4ed5c}\label{class_console_window_manager_abdee4e17ebc10f03c5e74d45f8e4ed5c}} 
+\index{ConsoleWindowManager@{ConsoleWindowManager}!HANDLE\_CONSOLE@{HANDLE\_CONSOLE}}
+\index{HANDLE\_CONSOLE@{HANDLE\_CONSOLE}!ConsoleWindowManager@{ConsoleWindowManager}}
+\doxysubsubsection{\texorpdfstring{HANDLE\_CONSOLE}{HANDLE\_CONSOLE}}
+{\footnotesize\ttfamily HANDLE Console\+Window\+Manager\+::\+HANDLE\+\_\+\+CONSOLE\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_console_window_manager_8h_source_l00041}{41}} of file \mbox{\hyperlink{_console_window_manager_8h_source}{Console\+Window\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_console_window_manager_acf76563de7c4c73f97bb0c8ffc1c461e}\label{class_console_window_manager_acf76563de7c4c73f97bb0c8ffc1c461e}} 
+\index{ConsoleWindowManager@{ConsoleWindowManager}!HANDLE\_WINDOW\_CONSOLE@{HANDLE\_WINDOW\_CONSOLE}}
+\index{HANDLE\_WINDOW\_CONSOLE@{HANDLE\_WINDOW\_CONSOLE}!ConsoleWindowManager@{ConsoleWindowManager}}
+\doxysubsubsection{\texorpdfstring{HANDLE\_WINDOW\_CONSOLE}{HANDLE\_WINDOW\_CONSOLE}}
+{\footnotesize\ttfamily HWND Console\+Window\+Manager\+::\+HANDLE\+\_\+\+WINDOW\+\_\+\+CONSOLE\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_console_window_manager_8h_source_l00043}{43}} of file \mbox{\hyperlink{_console_window_manager_8h_source}{Console\+Window\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_console_window_manager_a1cc7bac864b3fb93af536bdea526b908}\label{class_console_window_manager_a1cc7bac864b3fb93af536bdea526b908}} 
+\index{ConsoleWindowManager@{ConsoleWindowManager}!HANDLE\_WINDOW\_DESKTOP@{HANDLE\_WINDOW\_DESKTOP}}
+\index{HANDLE\_WINDOW\_DESKTOP@{HANDLE\_WINDOW\_DESKTOP}!ConsoleWindowManager@{ConsoleWindowManager}}
+\doxysubsubsection{\texorpdfstring{HANDLE\_WINDOW\_DESKTOP}{HANDLE\_WINDOW\_DESKTOP}}
+{\footnotesize\ttfamily HWND Console\+Window\+Manager\+::\+HANDLE\+\_\+\+WINDOW\+\_\+\+DESKTOP\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_console_window_manager_8h_source_l00042}{42}} of file \mbox{\hyperlink{_console_window_manager_8h_source}{Console\+Window\+Manager.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_console_window_manager_8h}{Console\+Window\+Manager.\+h}}\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_console_window_manager_8cpp}{Console\+Window\+Manager.\+cpp}}\end{DoxyCompactItemize}

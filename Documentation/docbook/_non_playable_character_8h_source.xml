@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__non_playable_character_8h_source" xml:lang="en-US">
+<title>NonPlayableCharacter.h</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__non_playable_character_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="__non_playable_character_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+<anchor xml:id="__non_playable_character_8h_source_1l00003"/>00003 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+<anchor xml:id="__non_playable_character_8h_source_1l00004"/>00004 
+<anchor xml:id="__non_playable_character_8h_source_1l00005"/><link linkend="_class_non_playable_character">00005</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_non_playable_character">NonPlayableCharacter</link>
+<anchor xml:id="__non_playable_character_8h_source_1l00006"/>00006 {
+<anchor xml:id="__non_playable_character_8h_source_1l00007"/>00007 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="__non_playable_character_8h_source_1l00008"/>00008 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746">NonPlayableCharacter</link>();
+<anchor xml:id="__non_playable_character_8h_source_1l00009"/><link linkend="_class_non_playable_character_1a1d4530eecfb04414d3980c22aa020b30">00009</link> &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a1d4530eecfb04414d3980c22aa020b30">~NonPlayableCharacter</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+<anchor xml:id="__non_playable_character_8h_source_1l00010"/>00010 
+<anchor xml:id="__non_playable_character_8h_source_1l00011"/>00011 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1af4fe8de9174af90d1a0088373d0e35c0">SetNamesArray</link>();
+<anchor xml:id="__non_playable_character_8h_source_1l00012"/>00012 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1a355f7bc2a43563faec957553fa4fd1e7">SetPassive</link>();
+<anchor xml:id="__non_playable_character_8h_source_1l00013"/>00013 
+<anchor xml:id="__non_playable_character_8h_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875">SetName</link>();
+<anchor xml:id="__non_playable_character_8h_source_1l00015"/>00015 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2">SetStrength</link>();
+<anchor xml:id="__non_playable_character_8h_source_1l00016"/>00016 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1a017d601103d2bc66a6338073a051cab7">SetHealth</link>();
+<anchor xml:id="__non_playable_character_8h_source_1l00017"/>00017 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e">SetSpeed</link>();
+<anchor xml:id="__non_playable_character_8h_source_1l00018"/>00018 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1ada48fd505bbf5797c39f0b20aa995bbc">SetSymbol</link>();
+<anchor xml:id="__non_playable_character_8h_source_1l00019"/>00019 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e">SetPosition</link>(<emphasis role="keywordtype">int</emphasis>&#32;x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;y);
+<anchor xml:id="__non_playable_character_8h_source_1l00020"/>00020 
+<anchor xml:id="__non_playable_character_8h_source_1l00021"/>00021 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1aa18f226b35b28bd1ad318642a758abe2">SetDesiredHealth</link>(<emphasis role="keywordtype">int</emphasis>&#32;value);
+<anchor xml:id="__non_playable_character_8h_source_1l00022"/>00022 
+<anchor xml:id="__non_playable_character_8h_source_1l00023"/>00023 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8">GetName</link>();
+<anchor xml:id="__non_playable_character_8h_source_1l00024"/>00024 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37">GetHealth</link>();
+<anchor xml:id="__non_playable_character_8h_source_1l00025"/>00025 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f">GetDamage</link>();
+<anchor xml:id="__non_playable_character_8h_source_1l00026"/>00026 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_non_playable_character_1aad1bbaeea7152ff52113b318be9afc0d">GetX</link>();
+<anchor xml:id="__non_playable_character_8h_source_1l00027"/>00027 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_non_playable_character_1a70b9980da4a02e7848c7561e498e8db9">GetY</link>();
+<anchor xml:id="__non_playable_character_8h_source_1l00028"/>00028 
+<anchor xml:id="__non_playable_character_8h_source_1l00029"/>00029 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1">CreateNonPlayableCharacter</link>();
+<anchor xml:id="__non_playable_character_8h_source_1l00030"/>00030 
+<anchor xml:id="__non_playable_character_8h_source_1l00031"/><link linkend="_class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000">00031</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000">passive</link>;
+<anchor xml:id="__non_playable_character_8h_source_1l00032"/><link linkend="_class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824">00032</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824">name</link>;
+<anchor xml:id="__non_playable_character_8h_source_1l00033"/><link linkend="_class_non_playable_character_1a7e5848d6face873445553e3731da84be">00033</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_non_playable_character_1a7e5848d6face873445553e3731da84be">name_array</link>[20];
+<anchor xml:id="__non_playable_character_8h_source_1l00034"/><link linkend="_class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c">00034</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c">strength</link>;
+<anchor xml:id="__non_playable_character_8h_source_1l00035"/>00035 
+<anchor xml:id="__non_playable_character_8h_source_1l00036"/>00036 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="__non_playable_character_8h_source_1l00037"/><link linkend="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89d">00037</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">enum</emphasis>&#32;<link linkend="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89d">NPC_TYPE</link>
+<anchor xml:id="__non_playable_character_8h_source_1l00038"/>00038 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__non_playable_character_8h_source_1l00039"/><link linkend="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b">00039</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b">ENEMY</link>&#32;=&#32;<emphasis role="charliteral">&apos;E&apos;</emphasis>,
+<anchor xml:id="__non_playable_character_8h_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9">GENERIC_FRIENDLY</link>&#32;=&#32;<emphasis role="charliteral">&apos;N&apos;</emphasis>
+<anchor xml:id="__non_playable_character_8h_source_1l00041"/><link linkend="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9">00041</link> &#32;&#32;&#32;&#32;};
+<anchor xml:id="__non_playable_character_8h_source_1l00042"/>00042 
+<anchor xml:id="__non_playable_character_8h_source_1l00043"/><link linkend="_class_non_playable_character_1ab6703683eeb7deb2ac146dfcfced761f">00043</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_class_non_playable_character_1ab6703683eeb7deb2ac146dfcfced761f">symbol</link>;
+<anchor xml:id="__non_playable_character_8h_source_1l00044"/>00044 
+<anchor xml:id="__non_playable_character_8h_source_1l00045"/><link linkend="_class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa">00045</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa">health</link>;
+<anchor xml:id="__non_playable_character_8h_source_1l00046"/><link linkend="_class_non_playable_character_1af6835f00acbdc12a7a9f920ef6801e0d">00046</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_non_playable_character_1af6835f00acbdc12a7a9f920ef6801e0d">attack_speed</link>;
+<anchor xml:id="__non_playable_character_8h_source_1l00047"/>00047 
+<anchor xml:id="__non_playable_character_8h_source_1l00048"/><link linkend="_class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627">00048</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627">npc_x</link>;
+<anchor xml:id="__non_playable_character_8h_source_1l00049"/><link linkend="_class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7">00049</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7">npc_y</link>;
+<anchor xml:id="__non_playable_character_8h_source_1l00050"/>00050 };
+</programlisting></section>

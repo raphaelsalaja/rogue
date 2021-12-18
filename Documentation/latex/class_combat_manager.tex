@@ -1,0 +1,453 @@
+\hypertarget{class_combat_manager}{}\doxysection{Combat\+Manager Class Reference}
+\label{class_combat_manager}\index{CombatManager@{CombatManager}}
+
+
+{\ttfamily \#include $<$Combat\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Combat\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combat_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_combat_manager_a51e91e52ad5e5de28ffc17ee50af5c80}{Fight}} (\mbox{\hyperlink{class_player}{Player}} \&p, \mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&m, \mbox{\hyperlink{class_enemy}{Enemy}} \&e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fd}{TURN}} \{ \mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11}{PLAYER}}
+, \mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b}{ENEMY}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019}{RESULTS}} \{ \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954}{PLAYER\+\_\+\+DEAD}}
+, \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c}{ENEMY\+\_\+\+DEAD}}
+, \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019ad523a0fd56212f42ab45a2a3d5d87b0c}{STILL\+\_\+\+ALIVE}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_combat_manager_aa470a607a6d3d76cef5d62c8f312d513}{Set\+Turn}} (\mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fd}{TURN}} desired\+\_\+turn)
+\item 
+void \mbox{\hyperlink{class_combat_manager_a2f5d5d9a45933a6e234bc3154fd6f894}{Hit\+Enemy}} (\mbox{\hyperlink{class_enemy}{Enemy}} \&e, \mbox{\hyperlink{class_player}{Player}} \&p)
+\item 
+void \mbox{\hyperlink{class_combat_manager_aa3041a8bdc3eeddce47ef1eb0cd93899}{Hit\+Player}} (\mbox{\hyperlink{class_enemy}{Enemy}} \&e, \mbox{\hyperlink{class_player}{Player}} \&p)
+\item 
+void \mbox{\hyperlink{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}{Print\+Statements}} (\mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&m, \mbox{\hyperlink{class_enemy}{Enemy}} \&e, \mbox{\hyperlink{class_player}{Player}} \&p, int statements)
+\item 
+void \mbox{\hyperlink{class_combat_manager_aec72d4fe1af9857010fb793735c145db}{Update\+Results}} (\mbox{\hyperlink{class_enemy}{Enemy}} \&e, \mbox{\hyperlink{class_player}{Player}} \&p)
+\item 
+void \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{Sleep\+Timer}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_combat_manager_a0f2db833cf98bb4a4ba946bf7ab11686}{sleep\+\_\+timer}} = 5000
+\item 
+\mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fd}{TURN}} \mbox{\hyperlink{class_combat_manager_a3c0b56cc5d4af6dde4aa585ebfd74f3e}{\+\_\+\+TURN}} = \mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b}{ENEMY}}
+\item 
+\mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019}{RESULTS}} \mbox{\hyperlink{class_combat_manager_a33cdc2357ba9ee866a38dcec4a10845f}{\+\_\+\+RESULTS}} = \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019ad523a0fd56212f42ab45a2a3d5d87b0c}{STILL\+\_\+\+ALIVE}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_combat_manager_8h_source_l00008}{8}} of file \mbox{\hyperlink{_combat_manager_8h_source}{Combat\+Manager.\+h}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019}\label{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019}} 
+\index{CombatManager@{CombatManager}!RESULTS@{RESULTS}}
+\index{RESULTS@{RESULTS}!CombatManager@{CombatManager}}
+\doxysubsubsection{\texorpdfstring{RESULTS}{RESULTS}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019}{Combat\+Manager\+::\+RESULTS}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PLAYER\_DEAD@{PLAYER\_DEAD}!CombatManager@{CombatManager}}\index{CombatManager@{CombatManager}!PLAYER\_DEAD@{PLAYER\_DEAD}}}\mbox{\Hypertarget{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954}\label{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954}} 
+PLAYER\+\_\+\+DEAD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENEMY\_DEAD@{ENEMY\_DEAD}!CombatManager@{CombatManager}}\index{CombatManager@{CombatManager}!ENEMY\_DEAD@{ENEMY\_DEAD}}}\mbox{\Hypertarget{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c}\label{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c}} 
+ENEMY\+\_\+\+DEAD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STILL\_ALIVE@{STILL\_ALIVE}!CombatManager@{CombatManager}}\index{CombatManager@{CombatManager}!STILL\_ALIVE@{STILL\_ALIVE}}}\mbox{\Hypertarget{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019ad523a0fd56212f42ab45a2a3d5d87b0c}\label{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019ad523a0fd56212f42ab45a2a3d5d87b0c}} 
+STILL\+\_\+\+ALIVE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_combat_manager_8h_source_l00022}{22}} of file \mbox{\hyperlink{_combat_manager_8h_source}{Combat\+Manager.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00023}00023     \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00024}00024         \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954}{PLAYER\_DEAD}},}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00025}00025         \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c}{ENEMY\_DEAD}},}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00026}00026         \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019ad523a0fd56212f42ab45a2a3d5d87b0c}{STILL\_ALIVE}}}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00027}00027     \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fd}\label{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fd}} 
+\index{CombatManager@{CombatManager}!TURN@{TURN}}
+\index{TURN@{TURN}!CombatManager@{CombatManager}}
+\doxysubsubsection{\texorpdfstring{TURN}{TURN}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fd}{Combat\+Manager\+::\+TURN}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PLAYER@{PLAYER}!CombatManager@{CombatManager}}\index{CombatManager@{CombatManager}!PLAYER@{PLAYER}}}\mbox{\Hypertarget{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11}\label{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11}} 
+PLAYER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENEMY@{ENEMY}!CombatManager@{CombatManager}}\index{CombatManager@{CombatManager}!ENEMY@{ENEMY}}}\mbox{\Hypertarget{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b}\label{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b}} 
+ENEMY&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_combat_manager_8h_source_l00016}{16}} of file \mbox{\hyperlink{_combat_manager_8h_source}{Combat\+Manager.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00017}00017     \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00018}00018         \mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11}{PLAYER}},}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00019}00019         \mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b}{ENEMY}}}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00020}00020     \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_combat_manager_a51e91e52ad5e5de28ffc17ee50af5c80}\label{class_combat_manager_a51e91e52ad5e5de28ffc17ee50af5c80}} 
+\index{CombatManager@{CombatManager}!Fight@{Fight}}
+\index{Fight@{Fight}!CombatManager@{CombatManager}}
+\doxysubsubsection{\texorpdfstring{Fight()}{Fight()}}
+{\footnotesize\ttfamily void Combat\+Manager\+::\+Fight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p,  }\item[{\mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&}]{m,  }\item[{\mbox{\hyperlink{class_enemy}{Enemy}} \&}]{e }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_combat_manager_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{_combat_manager_8cpp_source}{Combat\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00008}00008 \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00009}00009     \textcolor{keywordflow}{switch} (\mbox{\hyperlink{class_combat_manager_a3c0b56cc5d4af6dde4aa585ebfd74f3e}{\_TURN}})}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00010}00010     \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00011}00011     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11}{PLAYER}}: \mbox{\hyperlink{class_combat_manager_a2f5d5d9a45933a6e234bc3154fd6f894}{HitEnemy}}(e, p);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00012}00012         \mbox{\hyperlink{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}{PrintStatements}}(m, e, p, 1);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00013}00013         \mbox{\hyperlink{class_combat_manager_aec72d4fe1af9857010fb793735c145db}{UpdateResults}}(e, p);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00014}00014         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_combat_manager_a33cdc2357ba9ee866a38dcec4a10845f}{\_RESULTS}} == \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c}{ENEMY\_DEAD}})}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00015}00015         \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00016}00016             \mbox{\hyperlink{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}{PrintStatements}}(m, e, p, 6);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00017}00017             \textcolor{keywordflow}{while} (p.\mbox{\hyperlink{class_player_afabc272a584435771820c92f2c8308f1}{in\_combat}})}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00018}00018             \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00019}00019                 \textcolor{keywordflow}{if} (GetKeyState(VK\_RETURN) \& 0x8000)}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00020}00020                 \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00021}00021                     p.\mbox{\hyperlink{class_player_afabc272a584435771820c92f2c8308f1}{in\_combat}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00022}00022                 \}}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00023}00023             \}}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00024}00024             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00025}00025         \}}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00026}00026         \mbox{\hyperlink{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}{PrintStatements}}(m, e, p, 2);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00027}00027         \mbox{\hyperlink{class_combat_manager_aa470a607a6d3d76cef5d62c8f312d513}{SetTurn}}(\mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b}{ENEMY}});}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00028}00028         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00029}00029     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b}{ENEMY}}: \mbox{\hyperlink{class_combat_manager_aa3041a8bdc3eeddce47ef1eb0cd93899}{HitPlayer}}(e, p);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00030}00030         \mbox{\hyperlink{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}{PrintStatements}}(m, e, p, 3);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00031}00031         \mbox{\hyperlink{class_combat_manager_aec72d4fe1af9857010fb793735c145db}{UpdateResults}}(e, p);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00032}00032         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_combat_manager_a33cdc2357ba9ee866a38dcec4a10845f}{\_RESULTS}} == \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954}{PLAYER\_DEAD}})}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00033}00033         \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00034}00034             \mbox{\hyperlink{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}{PrintStatements}}(m, e, p, 5);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00035}00035             \textcolor{keywordflow}{while} (p.\mbox{\hyperlink{class_player_afabc272a584435771820c92f2c8308f1}{in\_combat}})}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00036}00036             \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00037}00037                 \textcolor{keywordflow}{if} (GetKeyState(VK\_RETURN) \& 0x8000)}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00038}00038                 \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00039}00039                     p.\mbox{\hyperlink{class_player_afabc272a584435771820c92f2c8308f1}{in\_combat}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00040}00040                     exit(1);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00041}00041                 \}}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00042}00042             \}}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00043}00043             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00044}00044         \}}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00045}00045         \mbox{\hyperlink{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}{PrintStatements}}(m, e, p, 4);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00046}00046         \mbox{\hyperlink{class_combat_manager_aa470a607a6d3d76cef5d62c8f312d513}{SetTurn}}(\mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11}{PLAYER}});}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00047}00047         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00048}00048     \}}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00049}00049 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combat_manager_a51e91e52ad5e5de28ffc17ee50af5c80_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combat_manager_a51e91e52ad5e5de28ffc17ee50af5c80_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_combat_manager_a2f5d5d9a45933a6e234bc3154fd6f894}\label{class_combat_manager_a2f5d5d9a45933a6e234bc3154fd6f894}} 
+\index{CombatManager@{CombatManager}!HitEnemy@{HitEnemy}}
+\index{HitEnemy@{HitEnemy}!CombatManager@{CombatManager}}
+\doxysubsubsection{\texorpdfstring{HitEnemy()}{HitEnemy()}}
+{\footnotesize\ttfamily void Combat\+Manager\+::\+Hit\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_enemy}{Enemy}} \&}]{e,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_combat_manager_8cpp_source_l00056}{56}} of file \mbox{\hyperlink{_combat_manager_8cpp_source}{Combat\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00057}00057 \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00058}00058     e.\mbox{\hyperlink{class_non_playable_character_aa18f226b35b28bd1ad318642a758abe2}{SetDesiredHealth}}(e.\mbox{\hyperlink{class_non_playable_character_ab0ab52f45551b75625bdf02e65d3ef37}{GetHealth}}() -\/ (p.\mbox{\hyperlink{class_player_a23faf24de68cf7d62a8b726a3c181ef0}{GetDamage}}()));}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00059}00059     \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{SleepTimer}}();}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00060}00060 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combat_manager_a2f5d5d9a45933a6e234bc3154fd6f894_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combat_manager_a2f5d5d9a45933a6e234bc3154fd6f894_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_combat_manager_aa3041a8bdc3eeddce47ef1eb0cd93899}\label{class_combat_manager_aa3041a8bdc3eeddce47ef1eb0cd93899}} 
+\index{CombatManager@{CombatManager}!HitPlayer@{HitPlayer}}
+\index{HitPlayer@{HitPlayer}!CombatManager@{CombatManager}}
+\doxysubsubsection{\texorpdfstring{HitPlayer()}{HitPlayer()}}
+{\footnotesize\ttfamily void Combat\+Manager\+::\+Hit\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_enemy}{Enemy}} \&}]{e,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_combat_manager_8cpp_source_l00062}{62}} of file \mbox{\hyperlink{_combat_manager_8cpp_source}{Combat\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00063}00063 \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00064}00064     p.\mbox{\hyperlink{class_player_a02ec140e8f48a44f442e97eb2a19a00e}{SetDesiredHealth}}(p.\mbox{\hyperlink{class_player_a8d962e02bc35d6181940a8aaf7a1a510}{GetHealth}}() -\/ e.\mbox{\hyperlink{class_non_playable_character_a39c610c17e10c8ee1b6bb03d65ed032f}{GetDamage}}());}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00065}00065     \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{SleepTimer}}();}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00066}00066 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combat_manager_aa3041a8bdc3eeddce47ef1eb0cd93899_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combat_manager_aa3041a8bdc3eeddce47ef1eb0cd93899_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}\label{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73}} 
+\index{CombatManager@{CombatManager}!PrintStatements@{PrintStatements}}
+\index{PrintStatements@{PrintStatements}!CombatManager@{CombatManager}}
+\doxysubsubsection{\texorpdfstring{PrintStatements()}{PrintStatements()}}
+{\footnotesize\ttfamily void Combat\+Manager\+::\+Print\+Statements (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&}]{m,  }\item[{\mbox{\hyperlink{class_enemy}{Enemy}} \&}]{e,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p,  }\item[{int}]{statements }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_combat_manager_8cpp_source_l00068}{68}} of file \mbox{\hyperlink{_combat_manager_8cpp_source}{Combat\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00069}00069 \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00070}00070     \textcolor{keywordtype}{string} statement;}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00071}00071     \textcolor{keywordflow}{switch} (statements)}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00072}00072     \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00073}00073     \textcolor{keywordflow}{case} 1: statement = \textcolor{stringliteral}{"{}YOU HIT "{}} + e.\mbox{\hyperlink{class_non_playable_character_aedf794670e71a33011caefd1d321a8f8}{GetName}}() + \textcolor{stringliteral}{"{} WITH "{}} + std::to\_string(p.\mbox{\hyperlink{class_player_a23faf24de68cf7d62a8b726a3c181ef0}{GetDamage}}()) + \textcolor{stringliteral}{"{} DAMAGE           "{}};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00074}00074         \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 3);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00075}00075         \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{SleepTimer}}();}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00076}00076         cout << statement;}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00077}00077         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00078}00078     \textcolor{keywordflow}{case} 2: statement = e.\mbox{\hyperlink{class_non_playable_character_aedf794670e71a33011caefd1d321a8f8}{GetName}}() + \textcolor{stringliteral}{"{} NOW HAS "{}} + std::to\_string(e.\mbox{\hyperlink{class_non_playable_character_ab0ab52f45551b75625bdf02e65d3ef37}{GetHealth}}()) + \textcolor{stringliteral}{"{} HEALTH                   "{}};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00079}00079         \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 3);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00080}00080         \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{SleepTimer}}();}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00081}00081         cout << statement;}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00082}00082         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00083}00083     \textcolor{keywordflow}{case} 3: statement = e.\mbox{\hyperlink{class_non_playable_character_aedf794670e71a33011caefd1d321a8f8}{GetName}}() + \textcolor{stringliteral}{"{} HIT YOU WITH "{}} + std::to\_string(e.\mbox{\hyperlink{class_non_playable_character_a39c610c17e10c8ee1b6bb03d65ed032f}{GetDamage}}()) + \textcolor{stringliteral}{"{} DAMAGE                "{}};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00084}00084         \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 3);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00085}00085         \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{SleepTimer}}();}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00086}00086         cout << statement;}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00087}00087         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00088}00088     \textcolor{keywordflow}{case} 4: statement = \textcolor{stringliteral}{"{}YOU NOW HAVE "{}} + std::to\_string(p.\mbox{\hyperlink{class_player_a8d962e02bc35d6181940a8aaf7a1a510}{GetHealth}}()) + \textcolor{stringliteral}{"{} HEALTH                   "{}};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00089}00089         \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 3);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00090}00090         \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{SleepTimer}}();}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00091}00091         cout << statement;}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00092}00092         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00093}00093     \textcolor{keywordflow}{case} 5: statement = \textcolor{stringliteral}{"{}YOU HAVE DIED, PRESS ENTER TO QUIT           "{}};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00094}00094         \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 3);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00095}00095         \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{SleepTimer}}();}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00096}00096         cout << statement;}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00097}00097         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00098}00098     \textcolor{keywordflow}{case} 6: statement = e.\mbox{\hyperlink{class_non_playable_character_aedf794670e71a33011caefd1d321a8f8}{GetName}}() + \textcolor{stringliteral}{"{} HAS DIED, PRESS ENTER TO CONTINUE           "{}};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00099}00099         \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 3);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00100}00100         \mbox{\hyperlink{class_combat_manager_a72df0ea85034f84597c1760d9af631af}{SleepTimer}}();}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00101}00101         cout << statement;}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00102}00102         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00103}00103     \}}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00104}00104 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combat_manager_a81d053576ebaa53529fa9c6c8280ae73_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_combat_manager_aa470a607a6d3d76cef5d62c8f312d513}\label{class_combat_manager_aa470a607a6d3d76cef5d62c8f312d513}} 
+\index{CombatManager@{CombatManager}!SetTurn@{SetTurn}}
+\index{SetTurn@{SetTurn}!CombatManager@{CombatManager}}
+\doxysubsubsection{\texorpdfstring{SetTurn()}{SetTurn()}}
+{\footnotesize\ttfamily void Combat\+Manager\+::\+Set\+Turn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fd}{TURN}}}]{desired\+\_\+turn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_combat_manager_8cpp_source_l00051}{51}} of file \mbox{\hyperlink{_combat_manager_8cpp_source}{Combat\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00052}00052 \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00053}00053     \mbox{\hyperlink{class_combat_manager_a3c0b56cc5d4af6dde4aa585ebfd74f3e}{\_TURN}} = desired\_turn;}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00054}00054 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combat_manager_aa470a607a6d3d76cef5d62c8f312d513_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_combat_manager_a72df0ea85034f84597c1760d9af631af}\label{class_combat_manager_a72df0ea85034f84597c1760d9af631af}} 
+\index{CombatManager@{CombatManager}!SleepTimer@{SleepTimer}}
+\index{SleepTimer@{SleepTimer}!CombatManager@{CombatManager}}
+\doxysubsubsection{\texorpdfstring{SleepTimer()}{SleepTimer()}}
+{\footnotesize\ttfamily void Combat\+Manager\+::\+Sleep\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_combat_manager_8cpp_source_l00118}{118}} of file \mbox{\hyperlink{_combat_manager_8cpp_source}{Combat\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00119}00119 \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00120}00120     Sleep(1000);}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00121}00121 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combat_manager_a72df0ea85034f84597c1760d9af631af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_combat_manager_aec72d4fe1af9857010fb793735c145db}\label{class_combat_manager_aec72d4fe1af9857010fb793735c145db}} 
+\index{CombatManager@{CombatManager}!UpdateResults@{UpdateResults}}
+\index{UpdateResults@{UpdateResults}!CombatManager@{CombatManager}}
+\doxysubsubsection{\texorpdfstring{UpdateResults()}{UpdateResults()}}
+{\footnotesize\ttfamily void Combat\+Manager\+::\+Update\+Results (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_enemy}{Enemy}} \&}]{e,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_combat_manager_8cpp_source_l00106}{106}} of file \mbox{\hyperlink{_combat_manager_8cpp_source}{Combat\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00107}00107 \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00108}00108     \textcolor{keywordflow}{if} (p.\mbox{\hyperlink{class_player_a8d962e02bc35d6181940a8aaf7a1a510}{GetHealth}}() <= 0)}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00109}00109     \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00110}00110         \mbox{\hyperlink{class_combat_manager_a33cdc2357ba9ee866a38dcec4a10845f}{\_RESULTS}} = \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954}{PLAYER\_DEAD}};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00111}00111     \}}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00112}00112     \textcolor{keywordflow}{if} (e.\mbox{\hyperlink{class_non_playable_character_ab0ab52f45551b75625bdf02e65d3ef37}{GetHealth}}() <= 0)}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00113}00113     \{}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00114}00114         \mbox{\hyperlink{class_combat_manager_a33cdc2357ba9ee866a38dcec4a10845f}{\_RESULTS}} = \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c}{ENEMY\_DEAD}};}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00115}00115     \}}
+\DoxyCodeLine{\Hypertarget{class_combat_manager_l00116}00116 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combat_manager_aec72d4fe1af9857010fb793735c145db_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combat_manager_aec72d4fe1af9857010fb793735c145db_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_combat_manager_a33cdc2357ba9ee866a38dcec4a10845f}\label{class_combat_manager_a33cdc2357ba9ee866a38dcec4a10845f}} 
+\index{CombatManager@{CombatManager}!\_RESULTS@{\_RESULTS}}
+\index{\_RESULTS@{\_RESULTS}!CombatManager@{CombatManager}}
+\doxysubsubsection{\texorpdfstring{\_RESULTS}{\_RESULTS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019}{RESULTS}} Combat\+Manager\+::\+\_\+\+RESULTS = \mbox{\hyperlink{class_combat_manager_a4d11c7c10cb5a7e601acb14a69145019ad523a0fd56212f42ab45a2a3d5d87b0c}{STILL\+\_\+\+ALIVE}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_combat_manager_8h_source_l00030}{30}} of file \mbox{\hyperlink{_combat_manager_8h_source}{Combat\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_combat_manager_a3c0b56cc5d4af6dde4aa585ebfd74f3e}\label{class_combat_manager_a3c0b56cc5d4af6dde4aa585ebfd74f3e}} 
+\index{CombatManager@{CombatManager}!\_TURN@{\_TURN}}
+\index{\_TURN@{\_TURN}!CombatManager@{CombatManager}}
+\doxysubsubsection{\texorpdfstring{\_TURN}{\_TURN}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fd}{TURN}} Combat\+Manager\+::\+\_\+\+TURN = \mbox{\hyperlink{class_combat_manager_acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b}{ENEMY}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_combat_manager_8h_source_l00029}{29}} of file \mbox{\hyperlink{_combat_manager_8h_source}{Combat\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_combat_manager_a0f2db833cf98bb4a4ba946bf7ab11686}\label{class_combat_manager_a0f2db833cf98bb4a4ba946bf7ab11686}} 
+\index{CombatManager@{CombatManager}!sleep\_timer@{sleep\_timer}}
+\index{sleep\_timer@{sleep\_timer}!CombatManager@{CombatManager}}
+\doxysubsubsection{\texorpdfstring{sleep\_timer}{sleep\_timer}}
+{\footnotesize\ttfamily int Combat\+Manager\+::sleep\+\_\+timer = 5000\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_combat_manager_8h_source_l00014}{14}} of file \mbox{\hyperlink{_combat_manager_8h_source}{Combat\+Manager.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_combat_manager_8h}{Combat\+Manager.\+h}}\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_combat_manager_8cpp}{Combat\+Manager.\+cpp}}\end{DoxyCompactItemize}

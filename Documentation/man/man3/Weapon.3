@@ -1,0 +1,167 @@
+.TH "Weapon" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Weapon
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Armour\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBWEAPON_TYPE\fP { \fBSWORD\fP, \fBSHIELD\fP, \fBARMOUR\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBWeapon\fP ()"
+.br
+.ti -1c
+.RI "\fB~Weapon\fP ()"
+.br
+.ti -1c
+.RI "unsigned int \fBGenerateRandomNumber\fP (int max)"
+.br
+.ti -1c
+.RI "\fBWEAPON_TYPE\fP \fBSetWeaponType\fP (int weapon_choice)"
+.br
+.ti -1c
+.RI "string \fBSetWeaponName\fP (int weapon_name_index, \fBWEAPON_TYPE\fP \fBWEAPON_TYPE_SELECTED\fP)"
+.br
+.ti -1c
+.RI "int \fBSetStrength\fP (string \fBname\fP)"
+.br
+.ti -1c
+.RI "void \fBCreateNewWeapon\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBWEAPON_NAME_CHOICES\fP [20]"
+.br
+.ti -1c
+.RI "string \fBname\fP"
+.br
+.ti -1c
+.RI "int \fBstrength\fP"
+.br
+.ti -1c
+.RI "int \fBweight\fP"
+.br
+.ti -1c
+.RI "\fBWEAPON_TYPE\fP \fBWEAPON_TYPE_SELECTED\fP = \fBSWORD\fP"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "const char \fBSYMBOL\fP = 'W'"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB6\fP of file \fBArmour\&.h\fP\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBWeapon::WEAPON_TYPE\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fISWORD \fP\fP
+.TP
+\fB\fISHIELD \fP\fP
+.TP
+\fB\fIARMOUR \fP\fP
+.PP
+Definition at line \fB35\fP of file \fBArmour\&.h\fP\&.
+.PP
+.nf
+36     {
+37         SWORD,
+38         SHIELD,
+39         ARMOUR
+40     };
+.fi
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Weapon::Weapon ()"
+
+.SS "Weapon::~Weapon ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Weapon::CreateNewWeapon ()"
+
+.SS "unsigned int Weapon::GenerateRandomNumber (int max)"
+
+.SS "int Weapon::SetStrength (string name)"
+
+.SS "string Weapon::SetWeaponName (int weapon_name_index, \fBWEAPON_TYPE\fP WEAPON_TYPE_SELECTED)"
+
+.SS "\fBWEAPON_TYPE\fP Weapon::SetWeaponType (int weapon_choice)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "string Weapon::name"
+
+.PP
+Definition at line \fB32\fP of file \fBArmour\&.h\fP\&.
+.SS "int Weapon::strength"
+
+.PP
+Definition at line \fB33\fP of file \fBArmour\&.h\fP\&.
+.SS "const char Weapon::SYMBOL = 'W'\fC [private]\fP"
+
+.PP
+Definition at line \fB54\fP of file \fBArmour\&.h\fP\&.
+.SS "string Weapon::WEAPON_NAME_CHOICES[20]"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        "Might of Fallen Souls",
+        "Hope of Carnage",
+        "Soldier's Tunic of Cataclysms",
+        "Silent Armor of the Wicked",
+        "Stormguard Demon Greatplate",
+        "Vindication Scaled Armor",
+        "Ivory Chestpiece of Smoldering Fortunes",
+        "Bronze Breastplate of Imminent Vengeance",
+        "Batteplate of Hallowed Dreams",
+        "Chestplate of Infernal Punishment",
+        "Edge of Discipline",
+        "Scales of the Breaking Storm",
+        "Retribution Greatplate of the Wicked",
+        "Battleworn Vest of the Daywalker",
+        "Thunderguard Titanium Chestpiece",
+        "Vengeance Golden Chestplate",
+        "Obsidian Cuirass of Hallowed Freedom",
+        "Iron Tunic of Blessed Kings",
+        "Vest of Blessed Memories",
+        "Chestguard of Fleeting Might"
+    }
+.fi
+.PP
+Definition at line \fB9\fP of file \fBArmour\&.h\fP\&.
+.SS "\fBWEAPON_TYPE\fP Weapon::WEAPON_TYPE_SELECTED = \fBSWORD\fP"
+
+.PP
+Definition at line \fB42\fP of file \fBArmour\&.h\fP\&.
+.SS "int Weapon::weight"
+
+.PP
+Definition at line \fB33\fP of file \fBArmour\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

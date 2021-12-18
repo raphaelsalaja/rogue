@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_generic_friendly" xml:lang="en-US">
+<title>GenericFriendly Class Reference</title>
+<indexterm><primary>GenericFriendly</primary></indexterm>
+<para>
+<computeroutput>#include &lt;GenericFriendly.h&gt;</computeroutput>
+</para>
+Inheritance diagram for GenericFriendly:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_generic_friendly__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for GenericFriendly:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_generic_friendly__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_generic_friendly_1af024c04814e88cb748cd4c21aad5589d">GenericFriendly</link> (int postition)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_generic_friendly_1adb5700625348a3c03f4623c6b3f1519b">PrintMessage</link> (<link linkend="_class_map_manager">MapManager</link> &amp;m)</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_generic_friendly_1a2e643ee12c7b86ac61f1d11439152b2b">GetMessage</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_generic_friendly_1a1da9785ab879ae2c7ab351b6a446a01a">messages_array</link> [20] {}</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3">message</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_generic_friendly_1a25b0d8bf58615b603725dfb44a7bd31f">SetNamesArray</link> () override</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_generic_friendly_1a495283c40fe995eafc8209c32303b14d">SetPassive</link> () override</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_generic_friendly_1abc234ce189ecbe2dd67798367a478ec6">SetMessages</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_generic_friendly_1aa34e4c712d03f91ea3069dd007d91366">SetRandomMessage</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__generic_friendly_8h_source_1l00008">8</link> of file <link linkend="__generic_friendly_8h_source">GenericFriendly.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_generic_friendly_1af024c04814e88cb748cd4c21aad5589d"/><section>
+    <title>GenericFriendly()</title>
+<indexterm><primary>GenericFriendly</primary><secondary>GenericFriendly</secondary></indexterm>
+<indexterm><primary>GenericFriendly</primary><secondary>GenericFriendly</secondary></indexterm>
+<para><computeroutput>GenericFriendly::GenericFriendly (int postition)</computeroutput></para><para>
+Definition at line <link linkend="__generic_friendly_8cpp_source_1l00053">53</link> of file <link linkend="__generic_friendly_8cpp_source">GenericFriendly.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_generic_friendly_1l00054"/>00054 {
+<anchor xml:id="_class_generic_friendly_1l00055"/>00055 &#32;&#32;&#32;&#32;<link linkend="_class_generic_friendly_1a495283c40fe995eafc8209c32303b14d">GenericFriendly::SetPassive</link>();
+<anchor xml:id="_class_generic_friendly_1l00056"/>00056 &#32;&#32;&#32;&#32;<link linkend="_class_generic_friendly_1a25b0d8bf58615b603725dfb44a7bd31f">GenericFriendly::SetNamesArray</link>();
+<anchor xml:id="_class_generic_friendly_1l00057"/>00057 
+<anchor xml:id="_class_generic_friendly_1l00058"/>00058 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e">SetPosition</link>(position,&#32;position);
+<anchor xml:id="_class_generic_friendly_1l00059"/>00059 
+<anchor xml:id="_class_generic_friendly_1l00060"/>00060 &#32;&#32;&#32;&#32;<link linkend="_class_generic_friendly_1abc234ce189ecbe2dd67798367a478ec6">SetMessages</link>();
+<anchor xml:id="_class_generic_friendly_1l00061"/>00061 &#32;&#32;&#32;&#32;<link linkend="_class_generic_friendly_1aa34e4c712d03f91ea3069dd007d91366">SetRandomMessage</link>();
+<anchor xml:id="_class_generic_friendly_1l00062"/>00062 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_generic_friendly_af024c04814e88cb748cd4c21aad5589d_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_generic_friendly_1a2e643ee12c7b86ac61f1d11439152b2b"/><section>
+    <title>GetMessage()</title>
+<indexterm><primary>GetMessage</primary><secondary>GenericFriendly</secondary></indexterm>
+<indexterm><primary>GenericFriendly</primary><secondary>GetMessage</secondary></indexterm>
+<para><computeroutput>string GenericFriendly::GetMessage ( )</computeroutput></para><para>
+Definition at line <link linkend="__generic_friendly_8cpp_source_1l00007">7</link> of file <link linkend="__generic_friendly_8cpp_source">GenericFriendly.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_generic_friendly_1l00008"/>00008 {
+<anchor xml:id="_class_generic_friendly_1l00009"/>00009 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3">message</link>;
+<anchor xml:id="_class_generic_friendly_1l00010"/>00010 }
+</programlisting></section>
+<anchor xml:id="_class_generic_friendly_1adb5700625348a3c03f4623c6b3f1519b"/><section>
+    <title>PrintMessage()</title>
+<indexterm><primary>PrintMessage</primary><secondary>GenericFriendly</secondary></indexterm>
+<indexterm><primary>GenericFriendly</primary><secondary>PrintMessage</secondary></indexterm>
+<para><computeroutput>void GenericFriendly::PrintMessage (<link linkend="_class_map_manager">MapManager</link> &amp; m)</computeroutput></para><para>
+Definition at line <link linkend="__generic_friendly_8cpp_source_1l00069">69</link> of file <link linkend="__generic_friendly_8cpp_source">GenericFriendly.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_generic_friendly_1l00070"/>00070 {
+<anchor xml:id="_class_generic_friendly_1l00071"/>00071 &#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">Macro::GoToScreenPosition</link>(45,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;3);
+<anchor xml:id="_class_generic_friendly_1l00072"/>00072 
+<anchor xml:id="_class_generic_friendly_1l00073"/>00073 &#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<link linkend="_class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3">message</link>;
+<anchor xml:id="_class_generic_friendly_1l00074"/>00074 &#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">Macro::GoToScreenPosition</link>(45,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;6);
+<anchor xml:id="_class_generic_friendly_1l00075"/>00075 
+<anchor xml:id="_class_generic_friendly_1l00076"/>00076 &#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;1:HEALTH&#32;2:SHIELD&#32;3:MAGIC&quot;</emphasis>;
+<anchor xml:id="_class_generic_friendly_1l00077"/>00077 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_generic_friendly_adb5700625348a3c03f4623c6b3f1519b_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_generic_friendly_adb5700625348a3c03f4623c6b3f1519b_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_generic_friendly_1abc234ce189ecbe2dd67798367a478ec6"/><section>
+    <title>SetMessages()</title>
+<indexterm><primary>SetMessages</primary><secondary>GenericFriendly</secondary></indexterm>
+<indexterm><primary>GenericFriendly</primary><secondary>SetMessages</secondary></indexterm>
+<para><computeroutput>void GenericFriendly::SetMessages ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__generic_friendly_8cpp_source_1l00030">30</link> of file <link linkend="__generic_friendly_8cpp_source">GenericFriendly.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_generic_friendly_1l00031"/>00031 {
+<anchor xml:id="_class_generic_friendly_1l00032"/>00032 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;array_size&#32;=&#32;20;
+<anchor xml:id="_class_generic_friendly_1l00033"/>00033 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;index&#32;=&#32;0;
+<anchor xml:id="_class_generic_friendly_1l00034"/>00034 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;current_line;
+<anchor xml:id="_class_generic_friendly_1l00035"/>00035 &#32;&#32;&#32;&#32;ifstream&#32;myfile(<emphasis role="stringliteral">&quot;NPC_Messages.txt&quot;</emphasis>);
+<anchor xml:id="_class_generic_friendly_1l00036"/>00036 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(myfile.is_open())
+<anchor xml:id="_class_generic_friendly_1l00037"/>00037 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_generic_friendly_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(!myfile.eof())
+<anchor xml:id="_class_generic_friendly_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_generic_friendly_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;getline(myfile,&#32;current_line);
+<anchor xml:id="_class_generic_friendly_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_generic_friendly_1a1da9785ab879ae2c7ab351b6a446a01a">messages_array</link>[index]&#32;=&#32;current_line;
+<anchor xml:id="_class_generic_friendly_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;index++;
+<anchor xml:id="_class_generic_friendly_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_generic_friendly_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;myfile.close();
+<anchor xml:id="_class_generic_friendly_1l00045"/>00045 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_generic_friendly_1l00046"/>00046 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_generic_friendly_abc234ce189ecbe2dd67798367a478ec6_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_generic_friendly_1a25b0d8bf58615b603725dfb44a7bd31f"/><section>
+    <title>SetNamesArray()</title>
+<indexterm><primary>SetNamesArray</primary><secondary>GenericFriendly</secondary></indexterm>
+<indexterm><primary>GenericFriendly</primary><secondary>SetNamesArray</secondary></indexterm>
+<para><computeroutput>void GenericFriendly::SetNamesArray ( )<computeroutput>[override]</computeroutput>, <computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_non_playable_character_1af4fe8de9174af90d1a0088373d0e35c0">NonPlayableCharacter</link>.</para>
+<para>
+Definition at line <link linkend="__generic_friendly_8cpp_source_1l00012">12</link> of file <link linkend="__generic_friendly_8cpp_source">GenericFriendly.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_generic_friendly_1l00013"/>00013 {
+<anchor xml:id="_class_generic_friendly_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;array_size&#32;=&#32;20;
+<anchor xml:id="_class_generic_friendly_1l00015"/>00015 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;index&#32;=&#32;0;
+<anchor xml:id="_class_generic_friendly_1l00016"/>00016 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;current_line;
+<anchor xml:id="_class_generic_friendly_1l00017"/>00017 &#32;&#32;&#32;&#32;ifstream&#32;myfile(<emphasis role="stringliteral">&quot;NPC_PassiveNames.txt&quot;</emphasis>);
+<anchor xml:id="_class_generic_friendly_1l00018"/>00018 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(myfile.is_open())
+<anchor xml:id="_class_generic_friendly_1l00019"/>00019 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_generic_friendly_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(!myfile.eof())
+<anchor xml:id="_class_generic_friendly_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_generic_friendly_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;getline(myfile,&#32;current_line);
+<anchor xml:id="_class_generic_friendly_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a7e5848d6face873445553e3731da84be">name_array</link>[index]&#32;=&#32;current_line;
+<anchor xml:id="_class_generic_friendly_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;index++;
+<anchor xml:id="_class_generic_friendly_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_generic_friendly_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;myfile.close();
+<anchor xml:id="_class_generic_friendly_1l00027"/>00027 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_generic_friendly_1l00028"/>00028 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_generic_friendly_a25b0d8bf58615b603725dfb44a7bd31f_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_generic_friendly_1a495283c40fe995eafc8209c32303b14d"/><section>
+    <title>SetPassive()</title>
+<indexterm><primary>SetPassive</primary><secondary>GenericFriendly</secondary></indexterm>
+<indexterm><primary>GenericFriendly</primary><secondary>SetPassive</secondary></indexterm>
+<para><computeroutput>void GenericFriendly::SetPassive ( )<computeroutput>[override]</computeroutput>, <computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_non_playable_character_1a355f7bc2a43563faec957553fa4fd1e7">NonPlayableCharacter</link>.</para>
+<para>
+Definition at line <link linkend="__generic_friendly_8cpp_source_1l00048">48</link> of file <link linkend="__generic_friendly_8cpp_source">GenericFriendly.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_generic_friendly_1l00049"/>00049 {
+<anchor xml:id="_class_generic_friendly_1l00050"/>00050 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000">passive</link>&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_class_generic_friendly_1l00051"/>00051 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_generic_friendly_a495283c40fe995eafc8209c32303b14d_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_generic_friendly_1aa34e4c712d03f91ea3069dd007d91366"/><section>
+    <title>SetRandomMessage()</title>
+<indexterm><primary>SetRandomMessage</primary><secondary>GenericFriendly</secondary></indexterm>
+<indexterm><primary>GenericFriendly</primary><secondary>SetRandomMessage</secondary></indexterm>
+<para><computeroutput>void GenericFriendly::SetRandomMessage ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__generic_friendly_8cpp_source_1l00064">64</link> of file <link linkend="__generic_friendly_8cpp_source">GenericFriendly.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_generic_friendly_1l00065"/>00065 {
+<anchor xml:id="_class_generic_friendly_1l00066"/>00066 &#32;&#32;&#32;&#32;<link linkend="_class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3">message</link>&#32;=&#32;<link linkend="_class_generic_friendly_1a1da9785ab879ae2c7ab351b6a446a01a">messages_array</link>[<link linkend="_namespace_macro_1a7192f07d19f55d7f8b863932a5078eab">Macro::GenerateRandomNumber</link>(<link linkend="_class_generic_friendly_1a1da9785ab879ae2c7ab351b6a446a01a">messages_array</link>-&gt;length()&#32;-&#32;2)];
+<anchor xml:id="_class_generic_friendly_1l00067"/>00067 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_generic_friendly_aa34e4c712d03f91ea3069dd007d91366_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_generic_friendly_aa34e4c712d03f91ea3069dd007d91366_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3"/><section>
+    <title>message</title>
+<indexterm><primary>message</primary><secondary>GenericFriendly</secondary></indexterm>
+<indexterm><primary>GenericFriendly</primary><secondary>message</secondary></indexterm>
+<para><computeroutput>string GenericFriendly::message</computeroutput></para><para>
+Definition at line <link linkend="__generic_friendly_8h_source_1l00013">13</link> of file <link linkend="__generic_friendly_8h_source">GenericFriendly.h</link>.</para>
+</section>
+<anchor xml:id="_class_generic_friendly_1a1da9785ab879ae2c7ab351b6a446a01a"/><section>
+    <title>messages_array</title>
+<indexterm><primary>messages_array</primary><secondary>GenericFriendly</secondary></indexterm>
+<indexterm><primary>GenericFriendly</primary><secondary>messages_array</secondary></indexterm>
+<para><computeroutput>string GenericFriendly::messages_array[20] {}</computeroutput></para><para>
+Definition at line <link linkend="__generic_friendly_8h_source_1l00012">12</link> of file <link linkend="__generic_friendly_8h_source">GenericFriendly.h</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+D:/University/ca-A00269349/Rogue/<link linkend="__generic_friendly_8h">GenericFriendly.h</link>D:/University/ca-A00269349/Rogue/<link linkend="__generic_friendly_8cpp">GenericFriendly.cpp</link></section>
+</section>

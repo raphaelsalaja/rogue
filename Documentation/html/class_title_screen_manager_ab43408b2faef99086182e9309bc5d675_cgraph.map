@@ -1,0 +1,11 @@
+<map id="TitleScreenManager::RenderTitle" name="TitleScreenManager::RenderTitle">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,217,133"/>
+<area shape="rect" id="node2" href="$class_title_screen_manager.html#adf50a2b60b08f7bbcef8f76030c9c734" title=" " alt="" coords="276,5,475,32"/>
+<area shape="rect" id="node3" href="$class_title_screen_manager.html#aa49b8813b2ea79d1bd4fdaaa741776f1" title=" " alt="" coords="276,56,475,83"/>
+<area shape="rect" id="node6" href="$class_title_screen_manager.html#afe6669aa18831e8efed3b0d9c744b973" title=" " alt="" coords="275,107,476,133"/>
+<area shape="rect" id="node7" href="$namespace_macro.html#a005f2a0ab24b96203446ec9a1a8b9a7f" title=" " alt="" coords="289,157,461,184"/>
+<area shape="rect" id="node8" href="$class_title_screen_manager.html#a57d95e3e84ac914f5051d934daa95279" title=" " alt="" coords="265,208,485,235"/>
+<area shape="rect" id="node4" href="$class_console_window_manager.html#abed5c169df20d3f830cc11b1dfbe4a6a" title=" " alt="" coords="533,56,896,83"/>
+<area shape="rect" id="node5" href="$class_console_window_manager.html#a63347b06eb482fbc128215f17b7b4a90" title=" " alt="" coords="944,56,1224,83"/>
+<area shape="rect" id="node9" href="$namespace_macro.html#a86a559b7afd1b6babc93aeb1177b6509" title=" " alt="" coords="621,208,808,235"/>
+</map>

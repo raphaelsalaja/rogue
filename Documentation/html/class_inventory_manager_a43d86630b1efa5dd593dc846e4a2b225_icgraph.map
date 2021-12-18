@@ -1,0 +1,11 @@
+<map id="InventoryManager::AddSpaceAndEnding" name="InventoryManager::AddSpaceAndEnding">
+<area shape="rect" id="node1" title=" " alt="" coords="969,56,1227,83"/>
+<area shape="rect" id="node2" href="$class_inventory_manager.html#aadd5ea163e9e6b8d9df1795443fb035a" title=" " alt="" coords="617,5,910,32"/>
+<area shape="rect" id="node5" href="$class_inventory_manager.html#a3ba246e46fef5621ee856a0b16be0faa" title=" " alt="" coords="605,56,921,83"/>
+<area shape="rect" id="node9" href="$class_inventory_manager.html#a0a4171b1ac086cc4122afdf2b929116b" title=" " alt="" coords="649,107,878,133"/>
+<area shape="rect" id="node3" href="$class_player.html#a848f89637b84d9692c96fc75cfa434eb" title=" " alt="" coords="104,19,264,45"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,56,108"/>
+<area shape="rect" id="node6" href="$class_inventory_manager.html#a5b5e89fe9ebb4fe18db920a373c4052b" title=" " alt="" coords="315,56,554,83"/>
+<area shape="rect" id="node8" href="$class_inventory_manager.html#a5bbb29a62327b708ec79942a3d18aece" title=" " alt="" coords="312,107,557,133"/>
+<area shape="rect" id="node7" href="$class_player.html#a459cda6070754195650bd10e0db43710" title=" " alt="" coords="117,81,251,108"/>
+</map>

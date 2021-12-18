@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_rogue_8cpp" kind="file" language="C++">
+    <compoundname>Rogue.cpp</compoundname>
+    <includes refid="_console_rendering_8h" local="yes">ConsoleRendering.h</includes>
+    <includes refid="_player_8h" local="yes">Player.h</includes>
+    <includes refid="_map_manager_8h" local="yes">MapManager.h</includes>
+    <includes refid="_console_window_manager_8h" local="yes">ConsoleWindowManager.h</includes>
+    <includes refid="_inventory_manager_8h" local="yes">InventoryManager.h</includes>
+    <includes refid="_macro_8h" local="yes">Macro.h</includes>
+    <includes refid="_title_screen_manager_8h" local="yes">TitleScreenManager.h</includes>
+    <includes refid="_user_interface_manger_8h" local="yes">UserInterfaceManger.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>ConsoleRendering.h</label>
+        <link refid="_console_rendering_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ConsoleWindowManager.h</label>
+        <link refid="_console_window_manager_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>InventoryManager.h</label>
+        <link refid="_inventory_manager_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Macro.h</label>
+        <link refid="_macro_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MapManager.h</label>
+        <link refid="_map_manager_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/Rogue.cpp</label>
+        <link refid="_rogue_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>TitleScreenManager.h</label>
+        <link refid="_title_screen_manager_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>UserInterfaceManger.h</label>
+        <link refid="_user_interface_manger_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="9">
+        <label>windows.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_rogue_8cpp_1ab33f009bbf0014008fee22ab59eb456e" prot="public" static="no" mutable="no">
+        <type><ref refid="class_user_interface_manager" kindref="compound">UserInterfaceManager</ref></type>
+        <definition>UserInterfaceManager USER_INTERFACE_MANGER</definition>
+        <argsstring></argsstring>
+        <name>USER_INTERFACE_MANGER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Rogue.cpp" line="13" column="22" bodyfile="D:/University/ca-A00269349/Rogue/Rogue.cpp" bodystart="13" bodyend="-1"/>
+        <referencedby refid="_rogue_8cpp_1acdef7a1fd863a6d3770c1268cb06add3" compoundref="_rogue_8cpp" startline="21" endline="43">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_rogue_8cpp_1a52711d0719ad0c02fa4f2c742813e7f0" prot="public" static="no" mutable="no">
+        <type><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref></type>
+        <definition>ConsoleWindowManager CONSOLE_WINDOW_CONTROL</definition>
+        <argsstring></argsstring>
+        <name>CONSOLE_WINDOW_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Rogue.cpp" line="14" column="22" bodyfile="D:/University/ca-A00269349/Rogue/Rogue.cpp" bodystart="14" bodyend="-1"/>
+        <referencedby refid="_rogue_8cpp_1acdef7a1fd863a6d3770c1268cb06add3" compoundref="_rogue_8cpp" startline="21" endline="43">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_rogue_8cpp_1a806a41afb970cd8a620461e98ad3db90" prot="public" static="no" mutable="no">
+        <type><ref refid="class_console_rendering" kindref="compound">ConsoleRendering</ref></type>
+        <definition>ConsoleRendering CONSOLE_RENDERING</definition>
+        <argsstring></argsstring>
+        <name>CONSOLE_RENDERING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Rogue.cpp" line="15" column="18" bodyfile="D:/University/ca-A00269349/Rogue/Rogue.cpp" bodystart="15" bodyend="-1"/>
+        <referencedby refid="_rogue_8cpp_1acdef7a1fd863a6d3770c1268cb06add3" compoundref="_rogue_8cpp" startline="21" endline="43">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_rogue_8cpp_1a718d4e579df04c02826cdf72ec321bec" prot="public" static="no" mutable="no">
+        <type><ref refid="class_title_screen_manager" kindref="compound">TitleScreenManager</ref></type>
+        <definition>TitleScreenManager TITLE_SCREEN_MANAGER</definition>
+        <argsstring></argsstring>
+        <name>TITLE_SCREEN_MANAGER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Rogue.cpp" line="16" column="20" bodyfile="D:/University/ca-A00269349/Rogue/Rogue.cpp" bodystart="16" bodyend="-1"/>
+        <referencedby refid="_rogue_8cpp_1acdef7a1fd863a6d3770c1268cb06add3" compoundref="_rogue_8cpp" startline="21" endline="43">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_rogue_8cpp_1a3f3a4ca134fbd7af9a23dbf89fbf2abf" prot="public" static="no" mutable="no">
+        <type><ref refid="class_inventory_manager" kindref="compound">InventoryManager</ref></type>
+        <definition>InventoryManager INVENTORY_MANAGER</definition>
+        <argsstring></argsstring>
+        <name>INVENTORY_MANAGER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Rogue.cpp" line="17" column="18" bodyfile="D:/University/ca-A00269349/Rogue/Rogue.cpp" bodystart="17" bodyend="-1"/>
+        <referencedby refid="_rogue_8cpp_1acdef7a1fd863a6d3770c1268cb06add3" compoundref="_rogue_8cpp" startline="21" endline="43">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_rogue_8cpp_1afea7375d22be68e08b9fc4df9e407361" prot="public" static="no" mutable="no">
+        <type><ref refid="class_map_manager" kindref="compound">MapManager</ref></type>
+        <definition>MapManager MAP_MANAGER</definition>
+        <argsstring></argsstring>
+        <name>MAP_MANAGER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Rogue.cpp" line="18" column="12" bodyfile="D:/University/ca-A00269349/Rogue/Rogue.cpp" bodystart="18" bodyend="-1"/>
+        <referencedby refid="_rogue_8cpp_1acdef7a1fd863a6d3770c1268cb06add3" compoundref="_rogue_8cpp" startline="21" endline="43">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_rogue_8cpp_1ac9837546356061cb5cf10ca0a5866859" prot="public" static="no" mutable="no">
+        <type><ref refid="class_player" kindref="compound">Player</ref></type>
+        <definition>Player PLAYER</definition>
+        <argsstring></argsstring>
+        <name>PLAYER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Rogue.cpp" line="19" column="8" bodyfile="D:/University/ca-A00269349/Rogue/Rogue.cpp" bodystart="19" bodyend="-1"/>
+        <referencedby refid="_rogue_8cpp_1acdef7a1fd863a6d3770c1268cb06add3" compoundref="_rogue_8cpp" startline="21" endline="43">main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_rogue_8cpp_1acdef7a1fd863a6d3770c1268cb06add3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Rogue.cpp" line="21" column="6" bodyfile="D:/University/ca-A00269349/Rogue/Rogue.cpp" bodystart="21" bodyend="43"/>
+        <references refid="_rogue_8cpp_1a806a41afb970cd8a620461e98ad3db90" compoundref="_rogue_8cpp" startline="15">CONSOLE_RENDERING</references>
+        <references refid="_rogue_8cpp_1a52711d0719ad0c02fa4f2c742813e7f0" compoundref="_rogue_8cpp" startline="14">CONSOLE_WINDOW_CONTROL</references>
+        <references refid="class_inventory_manager_1a2dc2d5245ceb9d916d0b8137007e9acd" compoundref="_inventory_manager_8cpp" startline="380" endline="394">InventoryManager::CurrentInventoryIndex</references>
+        <references refid="_rogue_8cpp_1a3f3a4ca134fbd7af9a23dbf89fbf2abf" compoundref="_rogue_8cpp" startline="17">INVENTORY_MANAGER</references>
+        <references refid="class_inventory_manager_1a293535f9ed1a4147a3a18a7795f4c201" compoundref="_inventory_manager_8cpp" startline="141" endline="158">InventoryManager::InventoryInput</references>
+        <references refid="class_map_manager_1a68b9e24db6a6d5cbab5ee7c2f055997f" compoundref="_map_manager_8h" startline="19">MapManager::loading_next_map</references>
+        <references refid="_rogue_8cpp_1afea7375d22be68e08b9fc4df9e407361" compoundref="_rogue_8cpp" startline="18">MAP_MANAGER</references>
+        <references refid="_rogue_8cpp_1ac9837546356061cb5cf10ca0a5866859" compoundref="_rogue_8cpp" startline="19">PLAYER</references>
+        <references refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" compoundref="_player_8cpp" startline="59" endline="122">Player::PlayerCollisions</references>
+        <references refid="class_player_1a96411c540f0a79f601ee153547a9c1d7" compoundref="_player_8cpp" startline="124" endline="171">Player::PlayerInput</references>
+        <references refid="class_console_rendering_1af0d3b71e90fc9abb830fc156a4a1a455" compoundref="_console_rendering_8cpp" startline="202" endline="207">ConsoleRendering::Render_All</references>
+        <references refid="class_map_manager_1a3d93eb2a28003237aa76baf2cb0de02c" compoundref="_map_manager_8cpp" startline="132" endline="146">MapManager::RenderMap</references>
+        <references refid="class_player_1a4b2ed7452ebf86347df93b965f5c4966" compoundref="_player_8cpp" startline="9" endline="37">Player::RenderPlayer</references>
+        <references refid="class_title_screen_manager_1ab43408b2faef99086182e9309bc5d675" compoundref="_title_screen_manager_8cpp" startline="81" endline="88">TitleScreenManager::RenderTitle</references>
+        <references refid="class_console_window_manager_1a04f302f741273b8c1ead23f11fb70e39" compoundref="_console_window_manager_8cpp" startline="48" endline="56">ConsoleWindowManager::SetText</references>
+        <references refid="class_console_window_manager_1a622c6a38370c75628b954f013436ecb9" compoundref="_console_window_manager_8cpp" startline="31" endline="46">ConsoleWindowManager::SetWindowDisplay</references>
+        <references refid="class_console_window_manager_1aa6c8c336cb2d4348968a1f6a70395813" compoundref="_console_window_manager_8cpp" startline="23" endline="29">ConsoleWindowManager::ShowConsoleCursor</references>
+        <references refid="_rogue_8cpp_1a718d4e579df04c02826cdf72ec321bec" compoundref="_rogue_8cpp" startline="16">TITLE_SCREEN_MANAGER</references>
+        <references refid="class_inventory_manager_1a0a4171b1ac086cc4122afdf2b929116b" compoundref="_inventory_manager_8cpp" startline="372" endline="378">InventoryManager::UpdateInventory</references>
+        <references refid="_rogue_8cpp_1ab33f009bbf0014008fee22ab59eb456e" compoundref="_rogue_8cpp" startline="13">USER_INTERFACE_MANGER</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_console_rendering_8h" kindref="compound">ConsoleRendering.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_8h" kindref="compound">Player.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_map_manager_8h" kindref="compound">MapManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_console_window_manager_8h" kindref="compound">ConsoleWindowManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_inventory_manager_8h" kindref="compound">InventoryManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_macro_8h" kindref="compound">Macro.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_title_screen_manager_8h" kindref="compound">TitleScreenManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_user_interface_manger_8h" kindref="compound">UserInterfaceManger.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_macro" kindref="compound">Macro</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_rogue_8cpp_1ab33f009bbf0014008fee22ab59eb456e" refkind="member"><highlight class="normal"><ref refid="class_user_interface_manager" kindref="compound">UserInterfaceManager</ref><sp/><ref refid="_rogue_8cpp_1ab33f009bbf0014008fee22ab59eb456e" kindref="member">USER_INTERFACE_MANGER</ref>;</highlight></codeline>
+<codeline lineno="14" refid="_rogue_8cpp_1a52711d0719ad0c02fa4f2c742813e7f0" refkind="member"><highlight class="normal"><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref><sp/><ref refid="_rogue_8cpp_1a52711d0719ad0c02fa4f2c742813e7f0" kindref="member">CONSOLE_WINDOW_CONTROL</ref>;</highlight></codeline>
+<codeline lineno="15" refid="_rogue_8cpp_1a806a41afb970cd8a620461e98ad3db90" refkind="member"><highlight class="normal"><ref refid="class_console_rendering" kindref="compound">ConsoleRendering</ref><sp/><ref refid="_rogue_8cpp_1a806a41afb970cd8a620461e98ad3db90" kindref="member">CONSOLE_RENDERING</ref>;</highlight></codeline>
+<codeline lineno="16" refid="_rogue_8cpp_1a718d4e579df04c02826cdf72ec321bec" refkind="member"><highlight class="normal"><ref refid="class_title_screen_manager" kindref="compound">TitleScreenManager</ref><sp/><ref refid="_rogue_8cpp_1a718d4e579df04c02826cdf72ec321bec" kindref="member">TITLE_SCREEN_MANAGER</ref>;</highlight></codeline>
+<codeline lineno="17" refid="_rogue_8cpp_1a3f3a4ca134fbd7af9a23dbf89fbf2abf" refkind="member"><highlight class="normal"><ref refid="class_inventory_manager" kindref="compound">InventoryManager</ref><sp/><ref refid="_rogue_8cpp_1a3f3a4ca134fbd7af9a23dbf89fbf2abf" kindref="member">INVENTORY_MANAGER</ref>;</highlight></codeline>
+<codeline lineno="18" refid="_rogue_8cpp_1afea7375d22be68e08b9fc4df9e407361" refkind="member"><highlight class="normal"><ref refid="class_map_manager" kindref="compound">MapManager</ref><sp/><ref refid="_rogue_8cpp_1afea7375d22be68e08b9fc4df9e407361" kindref="member">MAP_MANAGER</ref>;</highlight></codeline>
+<codeline lineno="19" refid="_rogue_8cpp_1ac9837546356061cb5cf10ca0a5866859" refkind="member"><highlight class="normal"><ref refid="class_player" kindref="compound">Player</ref><sp/><ref refid="_rogue_8cpp_1ac9837546356061cb5cf10ca0a5866859" kindref="member">PLAYER</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_rogue_8cpp_1acdef7a1fd863a6d3770c1268cb06add3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_rogue_8cpp_1acdef7a1fd863a6d3770c1268cb06add3" kindref="member">main</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_rogue_8cpp_1a52711d0719ad0c02fa4f2c742813e7f0" kindref="member">CONSOLE_WINDOW_CONTROL</ref>.<ref refid="class_console_window_manager_1a04f302f741273b8c1ead23f11fb70e39" kindref="member">SetText</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_rogue_8cpp_1a52711d0719ad0c02fa4f2c742813e7f0" kindref="member">CONSOLE_WINDOW_CONTROL</ref>.<ref refid="class_console_window_manager_1aa6c8c336cb2d4348968a1f6a70395813" kindref="member">ShowConsoleCursor</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_rogue_8cpp_1a718d4e579df04c02826cdf72ec321bec" kindref="member">TITLE_SCREEN_MANAGER</ref>.<ref refid="class_title_screen_manager_1ab43408b2faef99086182e9309bc5d675" kindref="member">RenderTitle</ref>(<ref refid="_rogue_8cpp_1a52711d0719ad0c02fa4f2c742813e7f0" kindref="member">CONSOLE_WINDOW_CONTROL</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_rogue_8cpp_1a52711d0719ad0c02fa4f2c742813e7f0" kindref="member">CONSOLE_WINDOW_CONTROL</ref>.<ref refid="class_console_window_manager_1a622c6a38370c75628b954f013436ecb9" kindref="member">SetWindowDisplay</ref>(850,<sp/>550);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_rogue_8cpp_1afea7375d22be68e08b9fc4df9e407361" kindref="member">MAP_MANAGER</ref>.<ref refid="class_map_manager_1a3d93eb2a28003237aa76baf2cb0de02c" kindref="member">RenderMap</ref>(<ref refid="_rogue_8cpp_1a52711d0719ad0c02fa4f2c742813e7f0" kindref="member">CONSOLE_WINDOW_CONTROL</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<ref refid="_rogue_8cpp_1afea7375d22be68e08b9fc4df9e407361" kindref="member">MAP_MANAGER</ref>.<ref refid="class_map_manager_1a68b9e24db6a6d5cbab5ee7c2f055997f" kindref="member">loading_next_map</ref>)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rogue_8cpp_1a52711d0719ad0c02fa4f2c742813e7f0" kindref="member">CONSOLE_WINDOW_CONTROL</ref>.<ref refid="class_console_window_manager_1aa6c8c336cb2d4348968a1f6a70395813" kindref="member">ShowConsoleCursor</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rogue_8cpp_1a3f3a4ca134fbd7af9a23dbf89fbf2abf" kindref="member">INVENTORY_MANAGER</ref>.<ref refid="class_inventory_manager_1a2dc2d5245ceb9d916d0b8137007e9acd" kindref="member">CurrentInventoryIndex</ref>(<ref refid="_rogue_8cpp_1a3f3a4ca134fbd7af9a23dbf89fbf2abf" kindref="member">INVENTORY_MANAGER</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rogue_8cpp_1a3f3a4ca134fbd7af9a23dbf89fbf2abf" kindref="member">INVENTORY_MANAGER</ref>.<ref refid="class_inventory_manager_1a0a4171b1ac086cc4122afdf2b929116b" kindref="member">UpdateInventory</ref>(<ref refid="_rogue_8cpp_1a3f3a4ca134fbd7af9a23dbf89fbf2abf" kindref="member">INVENTORY_MANAGER</ref>,<sp/><ref refid="_rogue_8cpp_1ab33f009bbf0014008fee22ab59eb456e" kindref="member">USER_INTERFACE_MANGER</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rogue_8cpp_1ac9837546356061cb5cf10ca0a5866859" kindref="member">PLAYER</ref>.<ref refid="class_player_1a96411c540f0a79f601ee153547a9c1d7" kindref="member">PlayerInput</ref>(<ref refid="_rogue_8cpp_1a3f3a4ca134fbd7af9a23dbf89fbf2abf" kindref="member">INVENTORY_MANAGER</ref>,<sp/><ref refid="_rogue_8cpp_1a52711d0719ad0c02fa4f2c742813e7f0" kindref="member">CONSOLE_WINDOW_CONTROL</ref>,<sp/><ref refid="_rogue_8cpp_1afea7375d22be68e08b9fc4df9e407361" kindref="member">MAP_MANAGER</ref>,<sp/><ref refid="_rogue_8cpp_1ac9837546356061cb5cf10ca0a5866859" kindref="member">PLAYER</ref>,<sp/><ref refid="_rogue_8cpp_1a806a41afb970cd8a620461e98ad3db90" kindref="member">CONSOLE_RENDERING</ref>,<sp/><ref refid="_rogue_8cpp_1ab33f009bbf0014008fee22ab59eb456e" kindref="member">USER_INTERFACE_MANGER</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rogue_8cpp_1a3f3a4ca134fbd7af9a23dbf89fbf2abf" kindref="member">INVENTORY_MANAGER</ref>.<ref refid="class_inventory_manager_1a293535f9ed1a4147a3a18a7795f4c201" kindref="member">InventoryInput</ref>(<ref refid="_rogue_8cpp_1a52711d0719ad0c02fa4f2c742813e7f0" kindref="member">CONSOLE_WINDOW_CONTROL</ref>,<sp/><ref refid="_rogue_8cpp_1afea7375d22be68e08b9fc4df9e407361" kindref="member">MAP_MANAGER</ref>,<sp/><ref refid="_rogue_8cpp_1a3f3a4ca134fbd7af9a23dbf89fbf2abf" kindref="member">INVENTORY_MANAGER</ref>,<sp/><ref refid="_rogue_8cpp_1a806a41afb970cd8a620461e98ad3db90" kindref="member">CONSOLE_RENDERING</ref>,<sp/><ref refid="_rogue_8cpp_1ab33f009bbf0014008fee22ab59eb456e" kindref="member">USER_INTERFACE_MANGER</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rogue_8cpp_1ac9837546356061cb5cf10ca0a5866859" kindref="member">PLAYER</ref>.<ref refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" kindref="member">PlayerCollisions</ref>(<ref refid="_rogue_8cpp_1afea7375d22be68e08b9fc4df9e407361" kindref="member">MAP_MANAGER</ref>,<sp/><ref refid="_rogue_8cpp_1a52711d0719ad0c02fa4f2c742813e7f0" kindref="member">CONSOLE_WINDOW_CONTROL</ref>,<sp/><ref refid="_rogue_8cpp_1ac9837546356061cb5cf10ca0a5866859" kindref="member">PLAYER</ref>,<sp/><ref refid="_rogue_8cpp_1a3f3a4ca134fbd7af9a23dbf89fbf2abf" kindref="member">INVENTORY_MANAGER</ref>,<sp/><ref refid="_rogue_8cpp_1ab33f009bbf0014008fee22ab59eb456e" kindref="member">USER_INTERFACE_MANGER</ref>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rogue_8cpp_1ac9837546356061cb5cf10ca0a5866859" kindref="member">PLAYER</ref>.<ref refid="class_player_1a4b2ed7452ebf86347df93b965f5c4966" kindref="member">RenderPlayer</ref>(<ref refid="_rogue_8cpp_1afea7375d22be68e08b9fc4df9e407361" kindref="member">MAP_MANAGER</ref>,<sp/><ref refid="_rogue_8cpp_1a52711d0719ad0c02fa4f2c742813e7f0" kindref="member">CONSOLE_WINDOW_CONTROL</ref>,<sp/><ref refid="_rogue_8cpp_1a3f3a4ca134fbd7af9a23dbf89fbf2abf" kindref="member">INVENTORY_MANAGER</ref>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_rogue_8cpp_1a806a41afb970cd8a620461e98ad3db90" kindref="member">CONSOLE_RENDERING</ref>.<ref refid="class_console_rendering_1af0d3b71e90fc9abb830fc156a4a1a455" kindref="member">Render_All</ref>(<ref refid="_rogue_8cpp_1a52711d0719ad0c02fa4f2c742813e7f0" kindref="member">CONSOLE_WINDOW_CONTROL</ref>,<sp/><ref refid="_rogue_8cpp_1afea7375d22be68e08b9fc4df9e407361" kindref="member">MAP_MANAGER</ref>,<sp/><ref refid="_rogue_8cpp_1ac9837546356061cb5cf10ca0a5866859" kindref="member">PLAYER</ref>,<sp/><ref refid="_rogue_8cpp_1a3f3a4ca134fbd7af9a23dbf89fbf2abf" kindref="member">INVENTORY_MANAGER</ref>,<sp/><ref refid="_rogue_8cpp_1ab33f009bbf0014008fee22ab59eb456e" kindref="member">USER_INTERFACE_MANGER</ref>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/University/ca-A00269349/Rogue/Rogue.cpp"/>
+  </compounddef>
+</doxygen>

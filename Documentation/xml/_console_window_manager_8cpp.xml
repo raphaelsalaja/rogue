@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_console_window_manager_8cpp" kind="file" language="C++">
+    <compoundname>ConsoleWindowManager.cpp</compoundname>
+    <includes refid="_console_window_manager_8h" local="yes">ConsoleWindowManager.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/ConsoleWindowManager.cpp</label>
+        <link refid="_console_window_manager_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ConsoleWindowManager.h</label>
+        <link refid="_console_window_manager_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>windows.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_console_window_manager_8h" kindref="compound">ConsoleWindowManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90" refkind="member"><highlight class="normal">HANDLE<sp/><ref refid="class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90" kindref="member">ConsoleWindowManager::GetConsoleHandle</ref>()</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1abdee4e17ebc10f03c5e74d45f8e4ed5c" kindref="member">HANDLE_CONSOLE</ref><sp/>=<sp/>GetStdHandle(STD_OUTPUT_HANDLE);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_console_window_manager_1a13a64349bfa723a1c035752ea401ab2c" refkind="member"><highlight class="normal">HWND<sp/><ref refid="class_console_window_manager_1a13a64349bfa723a1c035752ea401ab2c" kindref="member">ConsoleWindowManager::GetDesktopHandleWindow</ref>()</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1a1cc7bac864b3fb93af536bdea526b908" kindref="member">HANDLE_WINDOW_DESKTOP</ref><sp/>=<sp/>GetDesktopWindow();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d" refkind="member"><highlight class="normal">HWND<sp/><ref refid="class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d" kindref="member">ConsoleWindowManager::GetConsoleHandleWindow</ref>()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1acf76563de7c4c73f97bb0c8ffc1c461e" kindref="member">HANDLE_WINDOW_CONSOLE</ref><sp/>=<sp/>GetConsoleWindow();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_console_window_manager_1aec3eb492b72b29b4b9c57d622b799e9c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1aec3eb492b72b29b4b9c57d622b799e9c" kindref="member">ConsoleWindowManager::BlankScreen</ref>()</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;CLS&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_console_window_manager_1ac4c2a46e7019be00cd1691f786587797" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1ac4c2a46e7019be00cd1691f786587797" kindref="member">ConsoleWindowManager::HideConsoleCursor</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>CONSOLE_CURSOR_INFO<sp/>CONSOLE_CURSOR_INFO_CONSOLE;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>GetConsoleCursorInfo(<ref refid="class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90" kindref="member">GetConsoleHandle</ref>(),<sp/>&amp;CONSOLE_CURSOR_INFO_CONSOLE);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>CONSOLE_CURSOR_INFO_CONSOLE.bVisible<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>SetConsoleCursorInfo(<ref refid="class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90" kindref="member">GetConsoleHandle</ref>(),<sp/>&amp;CONSOLE_CURSOR_INFO_CONSOLE);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="class_console_window_manager_1a622c6a38370c75628b954f013436ecb9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1a622c6a38370c75628b954f013436ecb9" kindref="member">ConsoleWindowManager::SetWindowDisplay</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>HMONITOR<sp/>HANDLE_MONITOR<sp/>=<sp/>MonitorFromWindow(<ref refid="class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d" kindref="member">GetConsoleHandleWindow</ref>(),<sp/>MONITOR_DEFAULTTONEAREST);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(HANDLE_MONITOR)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MONITORINFO<sp/>MONITOR_INFO{</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(MONITOR_INFO)};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(::GetMonitorInfo(HANDLE_MONITOR,<sp/>&amp;MONITOR_INFO))</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>(MONITOR_INFO.rcWork.left<sp/>+<sp/>MONITOR_INFO.rcWork.right)<sp/>/<sp/>2<sp/>-<sp/>width<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>(MONITOR_INFO.rcWork.top<sp/>+<sp/>MONITOR_INFO.rcWork.bottom)<sp/>/<sp/>2<sp/>-<sp/>height<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetConsoleTitle(TEXT(</highlight><highlight class="stringliteral">&quot;ROGUE&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetWindowPos(<ref refid="class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d" kindref="member">GetConsoleHandleWindow</ref>(),<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>x,<sp/>y,<sp/>width,<sp/>height,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SWP_NOZORDER<sp/>|<sp/>SWP_NOOWNERZORDER<sp/>|<sp/>SWP_SHOWWINDOW);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_console_window_manager_1a04f302f741273b8c1ead23f11fb70e39" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1a04f302f741273b8c1ead23f11fb70e39" kindref="member">ConsoleWindowManager::SetText</ref>()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>CONSOLE_FONT_INFOEX<sp/>CONSOLE_FONT<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>CONSOLE_FONT.cbSize<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>CONSOLE_FONT;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>CONSOLE_FONT.dwFontSize.X<sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>CONSOLE_FONT.dwFontSize.Y<sp/>=<sp/>12;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>wcscpy_s(CONSOLE_FONT.FaceName,<sp/>L</highlight><highlight class="stringliteral">&quot;Terminal&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>SetCurrentConsoleFontEx(<ref refid="class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90" kindref="member">GetConsoleHandle</ref>(),<sp/>0,<sp/>&amp;CONSOLE_FONT);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213" kindref="member">ConsoleWindowManager::SetConsoleWindowColor</ref>(<ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543" kindref="member">COLORS</ref><sp/>fg,<sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543" kindref="member">COLORS</ref><sp/>bg)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>SetConsoleTextAttribute(<ref refid="class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90" kindref="member">GetConsoleHandle</ref>(),<sp/>fg<sp/>+<sp/>bg<sp/>*<sp/>16);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_console_window_manager_1abed5c169df20d3f830cc11b1dfbe4a6a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1abed5c169df20d3f830cc11b1dfbe4a6a" kindref="member">ConsoleWindowManager::SetConsoleWindowRandomColor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>random_color)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>SetConsoleTextAttribute(<ref refid="class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90" kindref="member">GetConsoleHandle</ref>(),<sp/>random_color<sp/>+<sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3" kindref="member">BLACK</ref><sp/>*<sp/>16);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.cpp"/>
+  </compounddef>
+</doxygen>

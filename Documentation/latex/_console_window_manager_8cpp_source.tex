@@ -1,0 +1,73 @@
+\hypertarget{_console_window_manager_8cpp_source}{}\doxysection{Console\+Window\+Manager.\+cpp}
+\label{_console_window_manager_8cpp_source}\index{D:/University/ca-\/A00269349/Rogue/ConsoleWindowManager.cpp@{D:/University/ca-\/A00269349/Rogue/ConsoleWindowManager.cpp}}
+\mbox{\hyperlink{_console_window_manager_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_console_window_manager_8h}{ConsoleWindowManager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00003}\mbox{\hyperlink{class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90}{00003}} HANDLE \mbox{\hyperlink{class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90}{ConsoleWindowManager::GetConsoleHandle}}()}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00004}00004 \{}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00005}00005     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_console_window_manager_abdee4e17ebc10f03c5e74d45f8e4ed5c}{HANDLE\_CONSOLE}} = GetStdHandle(STD\_OUTPUT\_HANDLE);}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00006}00006 \}}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00008}\mbox{\hyperlink{class_console_window_manager_a13a64349bfa723a1c035752ea401ab2c}{00008}} HWND \mbox{\hyperlink{class_console_window_manager_a13a64349bfa723a1c035752ea401ab2c}{ConsoleWindowManager::GetDesktopHandleWindow}}()}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00010}00010     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_console_window_manager_a1cc7bac864b3fb93af536bdea526b908}{HANDLE\_WINDOW\_DESKTOP}} = GetDesktopWindow();}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00011}00011 \}}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00013}\mbox{\hyperlink{class_console_window_manager_a33a11dc816bf4174a52c680090f80d9d}{00013}} HWND \mbox{\hyperlink{class_console_window_manager_a33a11dc816bf4174a52c680090f80d9d}{ConsoleWindowManager::GetConsoleHandleWindow}}()}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00014}00014 \{}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00015}00015     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_console_window_manager_acf76563de7c4c73f97bb0c8ffc1c461e}{HANDLE\_WINDOW\_CONSOLE}} = GetConsoleWindow();}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00016}00016 \}}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00018}\mbox{\hyperlink{class_console_window_manager_aec3eb492b72b29b4b9c57d622b799e9c}{00018}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_console_window_manager_aec3eb492b72b29b4b9c57d622b799e9c}{ConsoleWindowManager::BlankScreen}}()}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00019}00019 \{}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00020}00020     system(\textcolor{stringliteral}{"{}CLS"{}});}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00021}00021 \}}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00023}\mbox{\hyperlink{class_console_window_manager_ac4c2a46e7019be00cd1691f786587797}{00023}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_console_window_manager_ac4c2a46e7019be00cd1691f786587797}{ConsoleWindowManager::HideConsoleCursor}}()}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00024}00024 \{}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00025}00025     CONSOLE\_CURSOR\_INFO CONSOLE\_CURSOR\_INFO\_CONSOLE;}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00026}00026     GetConsoleCursorInfo(\mbox{\hyperlink{class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90}{GetConsoleHandle}}(), \&CONSOLE\_CURSOR\_INFO\_CONSOLE);}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00027}00027     CONSOLE\_CURSOR\_INFO\_CONSOLE.bVisible = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00028}00028     SetConsoleCursorInfo(\mbox{\hyperlink{class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90}{GetConsoleHandle}}(), \&CONSOLE\_CURSOR\_INFO\_CONSOLE);}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00029}00029 \}}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00031}\mbox{\hyperlink{class_console_window_manager_a622c6a38370c75628b954f013436ecb9}{00031}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_console_window_manager_a622c6a38370c75628b954f013436ecb9}{ConsoleWindowManager::SetWindowDisplay}}(\textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} height)}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00032}00032 \{}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00033}00033     HMONITOR HANDLE\_MONITOR = MonitorFromWindow(\mbox{\hyperlink{class_console_window_manager_a33a11dc816bf4174a52c680090f80d9d}{GetConsoleHandleWindow}}(), MONITOR\_DEFAULTTONEAREST);}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00034}00034     \textcolor{keywordflow}{if} (HANDLE\_MONITOR)}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00035}00035     \{}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00036}00036         MONITORINFO MONITOR\_INFO\{\textcolor{keyword}{sizeof}(MONITOR\_INFO)\};}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00037}00037         \textcolor{keywordflow}{if} (::GetMonitorInfo(HANDLE\_MONITOR, \&MONITOR\_INFO))}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00038}00038         \{}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00039}00039             \textcolor{keywordtype}{int} x = (MONITOR\_INFO.rcWork.left + MONITOR\_INFO.rcWork.right) / 2 -\/ width / 2;}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00040}00040             \textcolor{keywordtype}{int} y = (MONITOR\_INFO.rcWork.top + MONITOR\_INFO.rcWork.bottom) / 2 -\/ height / 2;}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00041}00041             SetConsoleTitle(TEXT(\textcolor{stringliteral}{"{}ROGUE"{}}));}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00042}00042             SetWindowPos(\mbox{\hyperlink{class_console_window_manager_a33a11dc816bf4174a52c680090f80d9d}{GetConsoleHandleWindow}}(), \textcolor{keyword}{nullptr}, x, y, width, height,}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00043}00043                          SWP\_NOZORDER | SWP\_NOOWNERZORDER | SWP\_SHOWWINDOW);}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00044}00044         \}}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00045}00045     \}}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00046}00046 \}}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00048}\mbox{\hyperlink{class_console_window_manager_a04f302f741273b8c1ead23f11fb70e39}{00048}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_console_window_manager_a04f302f741273b8c1ead23f11fb70e39}{ConsoleWindowManager::SetText}}()}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00049}00049 \{}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00050}00050     CONSOLE\_FONT\_INFOEX CONSOLE\_FONT = \{0\};}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00051}00051     CONSOLE\_FONT.cbSize = \textcolor{keyword}{sizeof} CONSOLE\_FONT;}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00052}00052     CONSOLE\_FONT.dwFontSize.X = 8;}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00053}00053     CONSOLE\_FONT.dwFontSize.Y = 12;}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00054}00054     wcscpy\_s(CONSOLE\_FONT.FaceName, L\textcolor{stringliteral}{"{}Terminal"{}});}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00055}00055     SetCurrentConsoleFontEx(\mbox{\hyperlink{class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90}{GetConsoleHandle}}(), 0, \&CONSOLE\_FONT);}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00056}00056 \}}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00058}\mbox{\hyperlink{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}{00058}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}{ConsoleWindowManager::SetConsoleWindowColor}}(\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543}{COLORS}} fg, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543}{COLORS}} bg)}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00059}00059 \{}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00060}00060     SetConsoleTextAttribute(\mbox{\hyperlink{class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90}{GetConsoleHandle}}(), fg + bg * 16);}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00061}00061 \}}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00064}\mbox{\hyperlink{class_console_window_manager_abed5c169df20d3f830cc11b1dfbe4a6a}{00064}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_console_window_manager_abed5c169df20d3f830cc11b1dfbe4a6a}{ConsoleWindowManager::SetConsoleWindowRandomColor}}(\textcolor{keywordtype}{int} random\_color)}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00065}00065 \{}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00066}00066     SetConsoleTextAttribute(\mbox{\hyperlink{class_console_window_manager_a63347b06eb482fbc128215f17b7b4a90}{GetConsoleHandle}}(), random\_color + \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3}{BLACK}} * 16);}
+\DoxyCodeLine{\Hypertarget{_console_window_manager_8cpp_source_l00067}00067 \}}
+
+\end{DoxyCode}

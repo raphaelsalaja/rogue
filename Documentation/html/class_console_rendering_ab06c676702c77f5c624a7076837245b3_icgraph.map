@@ -1,0 +1,10 @@
+<map id="ConsoleRendering::Print_Inventory" name="ConsoleRendering::Print_Inventory">
+<area shape="rect" id="node1" title=" " alt="" coords="948,81,1171,108"/>
+<area shape="rect" id="node2" href="$class_console_rendering.html#a3ba48c54dc22c278244cd45cfbb53a83" title=" " alt="" coords="663,81,900,108"/>
+<area shape="rect" id="node3" href="$class_inventory_manager.html#a5b5e89fe9ebb4fe18db920a373c4052b" title=" " alt="" coords="373,5,611,32"/>
+<area shape="rect" id="node6" href="$class_inventory_manager.html#acb6cf3d380d81c8129820734b05d0f6e" title=" " alt="" coords="377,56,607,83"/>
+<area shape="rect" id="node7" href="$class_inventory_manager.html#a293535f9ed1a4147a3a18a7795f4c201" title=" " alt="" coords="104,132,321,159"/>
+<area shape="rect" id="node8" href="$class_inventory_manager.html#a5bbb29a62327b708ec79942a3d18aece" title=" " alt="" coords="369,107,615,133"/>
+<area shape="rect" id="node4" href="$class_player.html#a459cda6070754195650bd10e0db43710" title=" " alt="" coords="146,69,279,96"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,107,56,133"/>
+</map>

@@ -1,0 +1,33 @@
+\hypertarget{_random_item_generator_8h_source}{}\doxysection{Random\+Item\+Generator.\+h}
+\label{_random_item_generator_8h_source}\index{D:/University/ca-\/A00269349/Rogue/RandomItemGenerator.h@{D:/University/ca-\/A00269349/Rogue/RandomItemGenerator.h}}
+\mbox{\hyperlink{_random_item_generator_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00002}00002 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00003}00003 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00005}\mbox{\hyperlink{class_random_item_generator}{00005}} \textcolor{keyword}{class }\mbox{\hyperlink{class_random_item_generator}{RandomItemGenerator}}}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00006}00006 \{}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00007}00007 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00008}00008     \mbox{\hyperlink{class_random_item_generator_a8a1d39701f3d5a6997309c824d22d333}{RandomItemGenerator}}();}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00009}00009     \mbox{\hyperlink{class_random_item_generator_a81f88c7721872cb577532fa2f8a28249}{\string~RandomItemGenerator}}();}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00011}00011     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_random_item_generator_a76d898718b27df8a3c5be2ccaf3efdc5}{SetType}}(\textcolor{keywordtype}{int} choice);}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00012}00012     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_random_item_generator_a3816c88713a59914f16f50d29245b2d7}{SetItemNames}}(\textcolor{keywordtype}{string} file\_name);}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00013}00013     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_random_item_generator_a7658f6593d6c57602738827102f73ece}{SetName}}(\textcolor{keywordtype}{int} name\_index, \textcolor{keywordtype}{string} \mbox{\hyperlink{class_random_item_generator_a375a42a9160dd1ff376b4408e2b03629}{type}});}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00014}00014     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_random_item_generator_a2b6f82fc5576dbe0b3dd4614bc60f305}{SetStrength}}();}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00015}00015     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_random_item_generator_a0cd93433c0ce88481b7f82ee43796a0f}{SetWeight}}();}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00016}00016     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_random_item_generator_a779176c9969633372b5a70a2daf57d5e}{SetSpeed}}();}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00017}00017     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_random_item_generator_ae16b7ab7234236eb33cfd6f562f8c57e}{SetSymbol}}(\textcolor{keywordtype}{char} \mbox{\hyperlink{class_random_item_generator_ab7e63cc7320671a21e3aaf7a6e800c78}{symbol}});}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00019}00019     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_random_item_generator_afa526acb6d33fca117a7d741f23877a0}{CreateItem}}(\textcolor{keywordtype}{char} \mbox{\hyperlink{class_random_item_generator_ab7e63cc7320671a21e3aaf7a6e800c78}{symbol}}, \textcolor{keywordtype}{char} item\_type\_amount);}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00021}\mbox{\hyperlink{class_random_item_generator_acb103418c26d2dc505b21ecdad9cc0fc}{00021}}     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_random_item_generator_acb103418c26d2dc505b21ecdad9cc0fc}{name}}, \mbox{\hyperlink{class_random_item_generator_a375a42a9160dd1ff376b4408e2b03629}{type}};}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00022}\mbox{\hyperlink{class_random_item_generator_a456d04a342662178e5d17e86312bfb6c}{00022}}     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_random_item_generator_a456d04a342662178e5d17e86312bfb6c}{ITEM\_TYPES}}[20]\{\};}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00024}00024 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00025}\mbox{\hyperlink{class_random_item_generator_a3c4fe14226e1b9c3326db7f97a2d33c4}{00025}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_random_item_generator_a87d0cc780a37457b3d2ce5154564f464}{strength}}, \mbox{\hyperlink{class_random_item_generator_a41bd17718f417ca1b1467b7ca8f81bfe}{weight}}, \mbox{\hyperlink{class_random_item_generator_a3c4fe14226e1b9c3326db7f97a2d33c4}{speed}};}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00026}\mbox{\hyperlink{class_random_item_generator_ab7e63cc7320671a21e3aaf7a6e800c78}{00026}}     \textcolor{keywordtype}{char} \mbox{\hyperlink{class_random_item_generator_ab7e63cc7320671a21e3aaf7a6e800c78}{symbol}};}
+\DoxyCodeLine{\Hypertarget{_random_item_generator_8h_source_l00027}00027 \};}
+
+\end{DoxyCode}

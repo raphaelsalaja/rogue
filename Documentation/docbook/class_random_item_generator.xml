@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_random_item_generator" xml:lang="en-US">
+<title>RandomItemGenerator Class Reference</title>
+<indexterm><primary>RandomItemGenerator</primary></indexterm>
+<para>
+<computeroutput>#include &lt;RandomItemGenerator.h&gt;</computeroutput>
+</para>
+Inheritance diagram for RandomItemGenerator:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_item_generator__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for RandomItemGenerator:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_item_generator__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_random_item_generator_1a8a1d39701f3d5a6997309c824d22d333">RandomItemGenerator</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_random_item_generator_1a81f88c7721872cb577532fa2f8a28249">~RandomItemGenerator</link> ()</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_random_item_generator_1a76d898718b27df8a3c5be2ccaf3efdc5">SetType</link> (int choice)</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_random_item_generator_1a3816c88713a59914f16f50d29245b2d7">SetItemNames</link> (string file_name)</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_random_item_generator_1a7658f6593d6c57602738827102f73ece">SetName</link> (int name_index, string <link linkend="_class_random_item_generator_1a375a42a9160dd1ff376b4408e2b03629">type</link>)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_random_item_generator_1a2b6f82fc5576dbe0b3dd4614bc60f305">SetStrength</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_random_item_generator_1a0cd93433c0ce88481b7f82ee43796a0f">SetWeight</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_random_item_generator_1a779176c9969633372b5a70a2daf57d5e">SetSpeed</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_random_item_generator_1ae16b7ab7234236eb33cfd6f562f8c57e">SetSymbol</link> (char <link linkend="_class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78">symbol</link>)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0">CreateItem</link> (char <link linkend="_class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78">symbol</link>, char item_type_amount)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_random_item_generator_1acb103418c26d2dc505b21ecdad9cc0fc">name</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_class_random_item_generator_1a375a42a9160dd1ff376b4408e2b03629">type</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_class_random_item_generator_1a456d04a342662178e5d17e86312bfb6c">ITEM_TYPES</link> [20] {}</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_random_item_generator_1a87d0cc780a37457b3d2ce5154564f464">strength</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_random_item_generator_1a41bd17718f417ca1b1467b7ca8f81bfe">weight</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_random_item_generator_1a3c4fe14226e1b9c3326db7f97a2d33c4">speed</link></para>
+</listitem>
+            <listitem><para>char <link linkend="_class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78">symbol</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__random_item_generator_8h_source_1l00005">5</link> of file <link linkend="__random_item_generator_8h_source">RandomItemGenerator.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_random_item_generator_1a8a1d39701f3d5a6997309c824d22d333"/><section>
+    <title>RandomItemGenerator()</title>
+<indexterm><primary>RandomItemGenerator</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<para><computeroutput>RandomItemGenerator::RandomItemGenerator ( )</computeroutput></para><para>
+Definition at line <link linkend="__random_item_generator_8cpp_source_1l00005">5</link> of file <link linkend="__random_item_generator_8cpp_source">RandomItemGenerator.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_random_item_generator_1l00006"/>00006 {
+<anchor xml:id="_class_random_item_generator_1l00007"/>00007 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1acb103418c26d2dc505b21ecdad9cc0fc">name</link>&#32;=&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+<anchor xml:id="_class_random_item_generator_1l00008"/>00008 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a375a42a9160dd1ff376b4408e2b03629">type</link>&#32;=&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+<anchor xml:id="_class_random_item_generator_1l00009"/>00009 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a87d0cc780a37457b3d2ce5154564f464">strength</link>&#32;=&#32;0;
+<anchor xml:id="_class_random_item_generator_1l00010"/>00010 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a41bd17718f417ca1b1467b7ca8f81bfe">weight</link>&#32;=&#32;0;
+<anchor xml:id="_class_random_item_generator_1l00011"/>00011 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a3c4fe14226e1b9c3326db7f97a2d33c4">speed</link>&#32;=&#32;0;
+<anchor xml:id="_class_random_item_generator_1l00012"/>00012 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78">symbol</link>&#32;=&#32;<emphasis role="charliteral">&apos;&#32;&apos;</emphasis>;
+<anchor xml:id="_class_random_item_generator_1l00013"/>00013 }
+</programlisting></section>
+<anchor xml:id="_class_random_item_generator_1a81f88c7721872cb577532fa2f8a28249"/><section>
+    <title>~RandomItemGenerator()</title>
+<indexterm><primary>~RandomItemGenerator</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>~RandomItemGenerator</secondary></indexterm>
+<para><computeroutput>RandomItemGenerator::~RandomItemGenerator ( )</computeroutput></para><para>
+Definition at line <link linkend="__random_item_generator_8cpp_source_1l00015">15</link> of file <link linkend="__random_item_generator_8cpp_source">RandomItemGenerator.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_random_item_generator_1l00016"/>00016 {
+<anchor xml:id="_class_random_item_generator_1l00017"/>00017 }
+</programlisting></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0"/><section>
+    <title>CreateItem()</title>
+<indexterm><primary>CreateItem</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>CreateItem</secondary></indexterm>
+<para><computeroutput>void RandomItemGenerator::CreateItem (char symbol, char item_type_amount)</computeroutput></para><para>
+Definition at line <link linkend="__random_item_generator_8cpp_source_1l00051">51</link> of file <link linkend="__random_item_generator_8cpp_source">RandomItemGenerator.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_random_item_generator_1l00052"/>00052 {
+<anchor xml:id="_class_random_item_generator_1l00053"/>00053 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a76d898718b27df8a3c5be2ccaf3efdc5">SetType</link>(<link linkend="_namespace_macro_1a7192f07d19f55d7f8b863932a5078eab">Macro::GenerateRandomNumber</link>(item_type_amount));
+<anchor xml:id="_class_random_item_generator_1l00054"/>00054 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a7658f6593d6c57602738827102f73ece">SetName</link>(<link linkend="_namespace_macro_1a7192f07d19f55d7f8b863932a5078eab">Macro::GenerateRandomNumber</link>(<link linkend="_class_random_item_generator_1a456d04a342662178e5d17e86312bfb6c">ITEM_TYPES</link>-&gt;length()),&#32;<link linkend="_class_random_item_generator_1a375a42a9160dd1ff376b4408e2b03629">type</link>);
+<anchor xml:id="_class_random_item_generator_1l00055"/>00055 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a2b6f82fc5576dbe0b3dd4614bc60f305">SetStrength</link>();
+<anchor xml:id="_class_random_item_generator_1l00056"/>00056 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a0cd93433c0ce88481b7f82ee43796a0f">SetWeight</link>();
+<anchor xml:id="_class_random_item_generator_1l00057"/>00057 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a779176c9969633372b5a70a2daf57d5e">SetSpeed</link>();
+<anchor xml:id="_class_random_item_generator_1l00058"/>00058 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1ae16b7ab7234236eb33cfd6f562f8c57e">SetSymbol</link>(<link linkend="_class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78">symbol</link>);
+<anchor xml:id="_class_random_item_generator_1l00059"/>00059 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_item_generator_afa526acb6d33fca117a7d741f23877a0_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_item_generator_afa526acb6d33fca117a7d741f23877a0_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_random_item_generator_1a3816c88713a59914f16f50d29245b2d7"/><section>
+    <title>SetItemNames()</title>
+<indexterm><primary>SetItemNames</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>SetItemNames</secondary></indexterm>
+<para><computeroutput>void RandomItemGenerator::SetItemNames (string file_name)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented in <link linkend="_class_random_weapon_1ae9993590b69800be2b76a618fc5651f8">RandomWeapon</link>.</para>
+<para>
+Definition at line <link linkend="__random_item_generator_8cpp_source_1l00023">23</link> of file <link linkend="__random_item_generator_8cpp_source">RandomItemGenerator.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_random_item_generator_1l00024"/>00024 {
+<anchor xml:id="_class_random_item_generator_1l00025"/>00025 }
+</programlisting></section>
+<anchor xml:id="_class_random_item_generator_1a7658f6593d6c57602738827102f73ece"/><section>
+    <title>SetName()</title>
+<indexterm><primary>SetName</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>SetName</secondary></indexterm>
+<para><computeroutput>void RandomItemGenerator::SetName (int name_index, string type)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__random_item_generator_8cpp_source_1l00027">27</link> of file <link linkend="__random_item_generator_8cpp_source">RandomItemGenerator.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_random_item_generator_1l00028"/>00028 {
+<anchor xml:id="_class_random_item_generator_1l00029"/>00029 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_item_generator_a7658f6593d6c57602738827102f73ece_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_random_item_generator_1a779176c9969633372b5a70a2daf57d5e"/><section>
+    <title>SetSpeed()</title>
+<indexterm><primary>SetSpeed</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>SetSpeed</secondary></indexterm>
+<para><computeroutput>void RandomItemGenerator::SetSpeed ( )</computeroutput></para><para>
+Definition at line <link linkend="__random_item_generator_8cpp_source_1l00041">41</link> of file <link linkend="__random_item_generator_8cpp_source">RandomItemGenerator.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_random_item_generator_1l00042"/>00042 {
+<anchor xml:id="_class_random_item_generator_1l00043"/>00043 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a3c4fe14226e1b9c3326db7f97a2d33c4">speed</link>&#32;=&#32;<link linkend="_namespace_macro_1a7192f07d19f55d7f8b863932a5078eab">Macro::GenerateRandomNumber</link>(10);
+<anchor xml:id="_class_random_item_generator_1l00044"/>00044 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_item_generator_a779176c9969633372b5a70a2daf57d5e_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_item_generator_a779176c9969633372b5a70a2daf57d5e_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_random_item_generator_1a2b6f82fc5576dbe0b3dd4614bc60f305"/><section>
+    <title>SetStrength()</title>
+<indexterm><primary>SetStrength</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>SetStrength</secondary></indexterm>
+<para><computeroutput>void RandomItemGenerator::SetStrength ( )</computeroutput></para><para>
+Definition at line <link linkend="__random_item_generator_8cpp_source_1l00031">31</link> of file <link linkend="__random_item_generator_8cpp_source">RandomItemGenerator.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_random_item_generator_1l00032"/>00032 {
+<anchor xml:id="_class_random_item_generator_1l00033"/>00033 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a87d0cc780a37457b3d2ce5154564f464">strength</link>&#32;=&#32;<link linkend="_namespace_macro_1a7192f07d19f55d7f8b863932a5078eab">Macro::GenerateRandomNumber</link>(10);
+<anchor xml:id="_class_random_item_generator_1l00034"/>00034 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_item_generator_a2b6f82fc5576dbe0b3dd4614bc60f305_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_item_generator_a2b6f82fc5576dbe0b3dd4614bc60f305_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_random_item_generator_1ae16b7ab7234236eb33cfd6f562f8c57e"/><section>
+    <title>SetSymbol()</title>
+<indexterm><primary>SetSymbol</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>SetSymbol</secondary></indexterm>
+<para><computeroutput>void RandomItemGenerator::SetSymbol (char symbol)</computeroutput></para><para>
+Definition at line <link linkend="__random_item_generator_8cpp_source_1l00046">46</link> of file <link linkend="__random_item_generator_8cpp_source">RandomItemGenerator.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_random_item_generator_1l00047"/>00047 {
+<anchor xml:id="_class_random_item_generator_1l00048"/>00048 &#32;&#32;&#32;&#32;this-&gt;<link linkend="_class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78">symbol</link>&#32;=&#32;<link linkend="_class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78">symbol</link>;
+<anchor xml:id="_class_random_item_generator_1l00049"/>00049 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_item_generator_ae16b7ab7234236eb33cfd6f562f8c57e_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_random_item_generator_1a76d898718b27df8a3c5be2ccaf3efdc5"/><section>
+    <title>SetType()</title>
+<indexterm><primary>SetType</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>SetType</secondary></indexterm>
+<para><computeroutput>void RandomItemGenerator::SetType (int choice)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented in <link linkend="_class_random_weapon_1aea0b4d6a59c972b64ed00ba7b7894d5c">RandomWeapon</link>.</para>
+<para>
+Definition at line <link linkend="__random_item_generator_8cpp_source_1l00019">19</link> of file <link linkend="__random_item_generator_8cpp_source">RandomItemGenerator.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_random_item_generator_1l00020"/>00020 {
+<anchor xml:id="_class_random_item_generator_1l00021"/>00021 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_item_generator_a76d898718b27df8a3c5be2ccaf3efdc5_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_random_item_generator_1a0cd93433c0ce88481b7f82ee43796a0f"/><section>
+    <title>SetWeight()</title>
+<indexterm><primary>SetWeight</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>SetWeight</secondary></indexterm>
+<para><computeroutput>void RandomItemGenerator::SetWeight ( )</computeroutput></para><para>
+Definition at line <link linkend="__random_item_generator_8cpp_source_1l00036">36</link> of file <link linkend="__random_item_generator_8cpp_source">RandomItemGenerator.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_random_item_generator_1l00037"/>00037 {
+<anchor xml:id="_class_random_item_generator_1l00038"/>00038 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a41bd17718f417ca1b1467b7ca8f81bfe">weight</link>&#32;=&#32;<link linkend="_namespace_macro_1a7192f07d19f55d7f8b863932a5078eab">Macro::GenerateRandomNumber</link>(10);
+<anchor xml:id="_class_random_item_generator_1l00039"/>00039 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_item_generator_a0cd93433c0ce88481b7f82ee43796a0f_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_item_generator_a0cd93433c0ce88481b7f82ee43796a0f_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_random_item_generator_1a456d04a342662178e5d17e86312bfb6c"/><section>
+    <title>ITEM_TYPES</title>
+<indexterm><primary>ITEM_TYPES</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>ITEM_TYPES</secondary></indexterm>
+<para><computeroutput>string RandomItemGenerator::ITEM_TYPES[20] {}</computeroutput></para><para>
+Definition at line <link linkend="__random_item_generator_8h_source_1l00022">22</link> of file <link linkend="__random_item_generator_8h_source">RandomItemGenerator.h</link>.</para>
+</section>
+<anchor xml:id="_class_random_item_generator_1acb103418c26d2dc505b21ecdad9cc0fc"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>string RandomItemGenerator::name</computeroutput></para><para>
+Definition at line <link linkend="__random_item_generator_8h_source_1l00021">21</link> of file <link linkend="__random_item_generator_8h_source">RandomItemGenerator.h</link>.</para>
+</section>
+<anchor xml:id="_class_random_item_generator_1a3c4fe14226e1b9c3326db7f97a2d33c4"/><section>
+    <title>speed</title>
+<indexterm><primary>speed</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>speed</secondary></indexterm>
+<para><computeroutput>int RandomItemGenerator::speed<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__random_item_generator_8h_source_1l00025">25</link> of file <link linkend="__random_item_generator_8h_source">RandomItemGenerator.h</link>.</para>
+</section>
+<anchor xml:id="_class_random_item_generator_1a87d0cc780a37457b3d2ce5154564f464"/><section>
+    <title>strength</title>
+<indexterm><primary>strength</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>strength</secondary></indexterm>
+<para><computeroutput>int RandomItemGenerator::strength<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__random_item_generator_8h_source_1l00025">25</link> of file <link linkend="__random_item_generator_8h_source">RandomItemGenerator.h</link>.</para>
+</section>
+<anchor xml:id="_class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78"/><section>
+    <title>symbol</title>
+<indexterm><primary>symbol</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>symbol</secondary></indexterm>
+<para><computeroutput>char RandomItemGenerator::symbol<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__random_item_generator_8h_source_1l00026">26</link> of file <link linkend="__random_item_generator_8h_source">RandomItemGenerator.h</link>.</para>
+</section>
+<anchor xml:id="_class_random_item_generator_1a375a42a9160dd1ff376b4408e2b03629"/><section>
+    <title>type</title>
+<indexterm><primary>type</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>type</secondary></indexterm>
+<para><computeroutput>string RandomItemGenerator::type</computeroutput></para><para>
+Definition at line <link linkend="__random_item_generator_8h_source_1l00021">21</link> of file <link linkend="__random_item_generator_8h_source">RandomItemGenerator.h</link>.</para>
+</section>
+<anchor xml:id="_class_random_item_generator_1a41bd17718f417ca1b1467b7ca8f81bfe"/><section>
+    <title>weight</title>
+<indexterm><primary>weight</primary><secondary>RandomItemGenerator</secondary></indexterm>
+<indexterm><primary>RandomItemGenerator</primary><secondary>weight</secondary></indexterm>
+<para><computeroutput>int RandomItemGenerator::weight<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__random_item_generator_8h_source_1l00025">25</link> of file <link linkend="__random_item_generator_8h_source">RandomItemGenerator.h</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+D:/University/ca-A00269349/Rogue/<link linkend="__random_item_generator_8h">RandomItemGenerator.h</link>D:/University/ca-A00269349/Rogue/<link linkend="__random_item_generator_8cpp">RandomItemGenerator.cpp</link></section>
+</section>

@@ -1,0 +1,661 @@
+\hypertarget{class_non_playable_character}{}\doxysection{Non\+Playable\+Character Class Reference}
+\label{class_non_playable_character}\index{NonPlayableCharacter@{NonPlayableCharacter}}
+
+
+{\ttfamily \#include $<$Non\+Playable\+Character.\+h$>$}
+
+
+
+Inheritance diagram for Non\+Playable\+Character\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Non\+Playable\+Character\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_non_playable_character__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_non_playable_character_a57985ac558ba9fc5abff448a4bbb8746}{Non\+Playable\+Character}} ()
+\item 
+\mbox{\hyperlink{class_non_playable_character_a1d4530eecfb04414d3980c22aa020b30}{$\sim$\+Non\+Playable\+Character}} ()=default
+\item 
+virtual void \mbox{\hyperlink{class_non_playable_character_af4fe8de9174af90d1a0088373d0e35c0}{Set\+Names\+Array}} ()
+\item 
+virtual void \mbox{\hyperlink{class_non_playable_character_a355f7bc2a43563faec957553fa4fd1e7}{Set\+Passive}} ()
+\item 
+void \mbox{\hyperlink{class_non_playable_character_a243b776f7671fc3458bf9ef6f9925875}{Set\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_non_playable_character_a9d5a16ef76a0e3339fd4ffc5d85bd8e2}{Set\+Strength}} ()
+\item 
+void \mbox{\hyperlink{class_non_playable_character_a017d601103d2bc66a6338073a051cab7}{Set\+Health}} ()
+\item 
+void \mbox{\hyperlink{class_non_playable_character_a98e1d2355f2a3617b6a7a25ee737ee3e}{Set\+Speed}} ()
+\item 
+void \mbox{\hyperlink{class_non_playable_character_ada48fd505bbf5797c39f0b20aa995bbc}{Set\+Symbol}} ()
+\item 
+void \mbox{\hyperlink{class_non_playable_character_a6ebdc6b058ea5dafe65132dd9ee46e6e}{Set\+Position}} (int x, int y)
+\item 
+void \mbox{\hyperlink{class_non_playable_character_aa18f226b35b28bd1ad318642a758abe2}{Set\+Desired\+Health}} (int value)
+\item 
+string \mbox{\hyperlink{class_non_playable_character_aedf794670e71a33011caefd1d321a8f8}{Get\+Name}} ()
+\item 
+int \mbox{\hyperlink{class_non_playable_character_ab0ab52f45551b75625bdf02e65d3ef37}{Get\+Health}} ()
+\item 
+int \mbox{\hyperlink{class_non_playable_character_a39c610c17e10c8ee1b6bb03d65ed032f}{Get\+Damage}} ()
+\item 
+int \mbox{\hyperlink{class_non_playable_character_aad1bbaeea7152ff52113b318be9afc0d}{GetX}} ()
+\item 
+int \mbox{\hyperlink{class_non_playable_character_a70b9980da4a02e7848c7561e498e8db9}{GetY}} ()
+\item 
+void \mbox{\hyperlink{class_non_playable_character_a4b3bd63666508f9ea91c83a4a1bec3d1}{Create\+Non\+Playable\+Character}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_non_playable_character_ac457178995a1ed93cdc8fdb38e916000}{passive}}
+\item 
+string \mbox{\hyperlink{class_non_playable_character_a96182e6ac96d74025aec58b5c03f3824}{name}}
+\item 
+string \mbox{\hyperlink{class_non_playable_character_a7e5848d6face873445553e3731da84be}{name\+\_\+array}} \mbox{[}20\mbox{]}
+\item 
+unsigned int \mbox{\hyperlink{class_non_playable_character_aff7b245f33c18e58e3056c18e5199e8c}{strength}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_non_playable_character_aca92139bb78554c56aead68b4c7bd89d}{NPC\+\_\+\+TYPE}} \{ \mbox{\hyperlink{class_non_playable_character_aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b}{ENEMY}} = \textquotesingle{}E\textquotesingle{}
+, \mbox{\hyperlink{class_non_playable_character_aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9}{GENERIC\+\_\+\+FRIENDLY}} = \textquotesingle{}N\textquotesingle{}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{class_non_playable_character_ab6703683eeb7deb2ac146dfcfced761f}{symbol}}
+\item 
+unsigned int \mbox{\hyperlink{class_non_playable_character_aba25d6a44e649f3aa1aea32cd46191fa}{health}}
+\item 
+unsigned int \mbox{\hyperlink{class_non_playable_character_af6835f00acbdc12a7a9f920ef6801e0d}{attack\+\_\+speed}}
+\item 
+unsigned int \mbox{\hyperlink{class_non_playable_character_adb6c64e7dbc750efb7f2fa3f021e3627}{npc\+\_\+x}}
+\item 
+unsigned int \mbox{\hyperlink{class_non_playable_character_aeacd97bf866f7348710a6bd78a583ed7}{npc\+\_\+y}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8h_source_l00005}{5}} of file \mbox{\hyperlink{_non_playable_character_8h_source}{Non\+Playable\+Character.\+h}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_non_playable_character_aca92139bb78554c56aead68b4c7bd89d}\label{class_non_playable_character_aca92139bb78554c56aead68b4c7bd89d}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!NPC\_TYPE@{NPC\_TYPE}}
+\index{NPC\_TYPE@{NPC\_TYPE}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{NPC\_TYPE}{NPC\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_non_playable_character_aca92139bb78554c56aead68b4c7bd89d}{Non\+Playable\+Character\+::\+NPC\+\_\+\+TYPE}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENEMY@{ENEMY}!NonPlayableCharacter@{NonPlayableCharacter}}\index{NonPlayableCharacter@{NonPlayableCharacter}!ENEMY@{ENEMY}}}\mbox{\Hypertarget{class_non_playable_character_aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b}\label{class_non_playable_character_aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b}} 
+ENEMY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GENERIC\_FRIENDLY@{GENERIC\_FRIENDLY}!NonPlayableCharacter@{NonPlayableCharacter}}\index{NonPlayableCharacter@{NonPlayableCharacter}!GENERIC\_FRIENDLY@{GENERIC\_FRIENDLY}}}\mbox{\Hypertarget{class_non_playable_character_aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9}\label{class_non_playable_character_aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9}} 
+GENERIC\+\_\+\+FRIENDLY&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8h_source_l00037}{37}} of file \mbox{\hyperlink{_non_playable_character_8h_source}{Non\+Playable\+Character.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00038}00038     \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00039}00039         \mbox{\hyperlink{class_non_playable_character_aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b}{ENEMY}} = \textcolor{charliteral}{'E'},}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00040}00040         \mbox{\hyperlink{class_non_playable_character_aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9}{GENERIC\_FRIENDLY}} = \textcolor{charliteral}{'N'}}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00041}00041     \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_non_playable_character_a57985ac558ba9fc5abff448a4bbb8746}\label{class_non_playable_character_a57985ac558ba9fc5abff448a4bbb8746}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!NonPlayableCharacter@{NonPlayableCharacter}}
+\index{NonPlayableCharacter@{NonPlayableCharacter}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{NonPlayableCharacter()}{NonPlayableCharacter()}}
+{\footnotesize\ttfamily Non\+Playable\+Character\+::\+Non\+Playable\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{_non_playable_character_8cpp_source}{Non\+Playable\+Character.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00008}00008 \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00009}00009     \mbox{\hyperlink{class_non_playable_character_a96182e6ac96d74025aec58b5c03f3824}{name}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00010}00010     \mbox{\hyperlink{class_non_playable_character_aff7b245f33c18e58e3056c18e5199e8c}{strength}} = 0;}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00011}00011     \mbox{\hyperlink{class_non_playable_character_aba25d6a44e649f3aa1aea32cd46191fa}{health}} = 0;}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00012}00012     \mbox{\hyperlink{class_non_playable_character_af6835f00acbdc12a7a9f920ef6801e0d}{attack\_speed}} = 0;}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00013}00013     \mbox{\hyperlink{class_non_playable_character_ab6703683eeb7deb2ac146dfcfced761f}{symbol}} = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00014}00014     \mbox{\hyperlink{class_non_playable_character_ac457178995a1ed93cdc8fdb38e916000}{passive}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00015}00015     \mbox{\hyperlink{class_non_playable_character_adb6c64e7dbc750efb7f2fa3f021e3627}{npc\_x}} = 0;}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00016}00016     \mbox{\hyperlink{class_non_playable_character_aeacd97bf866f7348710a6bd78a583ed7}{npc\_y}} = 0;}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00017}00017 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_non_playable_character_a1d4530eecfb04414d3980c22aa020b30}\label{class_non_playable_character_a1d4530eecfb04414d3980c22aa020b30}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!````~NonPlayableCharacter@{$\sim$NonPlayableCharacter}}
+\index{````~NonPlayableCharacter@{$\sim$NonPlayableCharacter}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{$\sim$NonPlayableCharacter()}{~NonPlayableCharacter()}}
+{\footnotesize\ttfamily Non\+Playable\+Character\+::$\sim$\+Non\+Playable\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_non_playable_character_a4b3bd63666508f9ea91c83a4a1bec3d1}\label{class_non_playable_character_a4b3bd63666508f9ea91c83a4a1bec3d1}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!CreateNonPlayableCharacter@{CreateNonPlayableCharacter}}
+\index{CreateNonPlayableCharacter@{CreateNonPlayableCharacter}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{CreateNonPlayableCharacter()}{CreateNonPlayableCharacter()}}
+{\footnotesize\ttfamily void Non\+Playable\+Character\+::\+Create\+Non\+Playable\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{_non_playable_character_8cpp_source}{Non\+Playable\+Character.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00024}00024 \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00025}00025     \mbox{\hyperlink{class_non_playable_character_af4fe8de9174af90d1a0088373d0e35c0}{SetNamesArray}}();}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00026}00026     \mbox{\hyperlink{class_non_playable_character_a243b776f7671fc3458bf9ef6f9925875}{SetName}}();}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00027}00027     \mbox{\hyperlink{class_non_playable_character_a355f7bc2a43563faec957553fa4fd1e7}{SetPassive}}();}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00028}00028     \mbox{\hyperlink{class_non_playable_character_ada48fd505bbf5797c39f0b20aa995bbc}{SetSymbol}}();}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00029}00029     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_non_playable_character_ac457178995a1ed93cdc8fdb38e916000}{passive}})}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00030}00030     \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00031}00031         \mbox{\hyperlink{class_non_playable_character_a017d601103d2bc66a6338073a051cab7}{SetHealth}}();}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00032}00032         \mbox{\hyperlink{class_non_playable_character_a98e1d2355f2a3617b6a7a25ee737ee3e}{SetSpeed}}();}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00033}00033         \mbox{\hyperlink{class_non_playable_character_a9d5a16ef76a0e3339fd4ffc5d85bd8e2}{SetStrength}}();}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00034}00034     \}}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00035}00035 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_a4b3bd63666508f9ea91c83a4a1bec3d1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_non_playable_character_a39c610c17e10c8ee1b6bb03d65ed032f}\label{class_non_playable_character_a39c610c17e10c8ee1b6bb03d65ed032f}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!GetDamage@{GetDamage}}
+\index{GetDamage@{GetDamage}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{GetDamage()}{GetDamage()}}
+{\footnotesize\ttfamily int Non\+Playable\+Character\+::\+Get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8cpp_source_l00093}{93}} of file \mbox{\hyperlink{_non_playable_character_8cpp_source}{Non\+Playable\+Character.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00094}00094 \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00095}00095     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_non_playable_character_aff7b245f33c18e58e3056c18e5199e8c}{strength}};}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00096}00096 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_a39c610c17e10c8ee1b6bb03d65ed032f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_non_playable_character_ab0ab52f45551b75625bdf02e65d3ef37}\label{class_non_playable_character_ab0ab52f45551b75625bdf02e65d3ef37}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!GetHealth@{GetHealth}}
+\index{GetHealth@{GetHealth}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{GetHealth()}{GetHealth()}}
+{\footnotesize\ttfamily int Non\+Playable\+Character\+::\+Get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8cpp_source_l00088}{88}} of file \mbox{\hyperlink{_non_playable_character_8cpp_source}{Non\+Playable\+Character.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00089}00089 \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00090}00090     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_non_playable_character_aba25d6a44e649f3aa1aea32cd46191fa}{health}};}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00091}00091 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_ab0ab52f45551b75625bdf02e65d3ef37_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_non_playable_character_aedf794670e71a33011caefd1d321a8f8}\label{class_non_playable_character_aedf794670e71a33011caefd1d321a8f8}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!GetName@{GetName}}
+\index{GetName@{GetName}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily string Non\+Playable\+Character\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8cpp_source_l00083}{83}} of file \mbox{\hyperlink{_non_playable_character_8cpp_source}{Non\+Playable\+Character.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00084}00084 \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00085}00085     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_non_playable_character_a96182e6ac96d74025aec58b5c03f3824}{name}};}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00086}00086 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_aedf794670e71a33011caefd1d321a8f8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_non_playable_character_aad1bbaeea7152ff52113b318be9afc0d}\label{class_non_playable_character_aad1bbaeea7152ff52113b318be9afc0d}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!GetX@{GetX}}
+\index{GetX@{GetX}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{GetX()}{GetX()}}
+{\footnotesize\ttfamily int Non\+Playable\+Character\+::\+GetX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8cpp_source_l00098}{98}} of file \mbox{\hyperlink{_non_playable_character_8cpp_source}{Non\+Playable\+Character.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00099}00099 \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00100}00100     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_non_playable_character_adb6c64e7dbc750efb7f2fa3f021e3627}{npc\_x}};}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00101}00101 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_non_playable_character_a70b9980da4a02e7848c7561e498e8db9}\label{class_non_playable_character_a70b9980da4a02e7848c7561e498e8db9}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!GetY@{GetY}}
+\index{GetY@{GetY}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{GetY()}{GetY()}}
+{\footnotesize\ttfamily int Non\+Playable\+Character\+::\+GetY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8cpp_source_l00103}{103}} of file \mbox{\hyperlink{_non_playable_character_8cpp_source}{Non\+Playable\+Character.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00104}00104 \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00105}00105     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_non_playable_character_aeacd97bf866f7348710a6bd78a583ed7}{npc\_y}};}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00106}00106 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_non_playable_character_aa18f226b35b28bd1ad318642a758abe2}\label{class_non_playable_character_aa18f226b35b28bd1ad318642a758abe2}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!SetDesiredHealth@{SetDesiredHealth}}
+\index{SetDesiredHealth@{SetDesiredHealth}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{SetDesiredHealth()}{SetDesiredHealth()}}
+{\footnotesize\ttfamily void Non\+Playable\+Character\+::\+Set\+Desired\+Health (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8cpp_source_l00078}{78}} of file \mbox{\hyperlink{_non_playable_character_8cpp_source}{Non\+Playable\+Character.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00079}00079 \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00080}00080     \mbox{\hyperlink{class_non_playable_character_aba25d6a44e649f3aa1aea32cd46191fa}{health}} = value;}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00081}00081 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_aa18f226b35b28bd1ad318642a758abe2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_non_playable_character_a017d601103d2bc66a6338073a051cab7}\label{class_non_playable_character_a017d601103d2bc66a6338073a051cab7}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!SetHealth@{SetHealth}}
+\index{SetHealth@{SetHealth}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{SetHealth()}{SetHealth()}}
+{\footnotesize\ttfamily void Non\+Playable\+Character\+::\+Set\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8cpp_source_l00047}{47}} of file \mbox{\hyperlink{_non_playable_character_8cpp_source}{Non\+Playable\+Character.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00048}00048 \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00049}00049     \mbox{\hyperlink{class_non_playable_character_aba25d6a44e649f3aa1aea32cd46191fa}{health}} = \mbox{\hyperlink{namespace_macro_a3500becfc34f5b1df2d6d976fb5f5f86}{Macro::GenerateRandomNumberWithoutZero}}(10);}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00050}00050 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_a017d601103d2bc66a6338073a051cab7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_a017d601103d2bc66a6338073a051cab7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_non_playable_character_a243b776f7671fc3458bf9ef6f9925875}\label{class_non_playable_character_a243b776f7671fc3458bf9ef6f9925875}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!SetName@{SetName}}
+\index{SetName@{SetName}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{SetName()}{SetName()}}
+{\footnotesize\ttfamily void Non\+Playable\+Character\+::\+Set\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8cpp_source_l00037}{37}} of file \mbox{\hyperlink{_non_playable_character_8cpp_source}{Non\+Playable\+Character.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00038}00038 \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00039}00039     \mbox{\hyperlink{class_non_playable_character_a96182e6ac96d74025aec58b5c03f3824}{name}} = \mbox{\hyperlink{class_non_playable_character_a7e5848d6face873445553e3731da84be}{name\_array}}[\mbox{\hyperlink{namespace_macro_a7192f07d19f55d7f8b863932a5078eab}{Macro::GenerateRandomNumber}}(\mbox{\hyperlink{class_non_playable_character_a7e5848d6face873445553e3731da84be}{name\_array}}-\/>length() -\/ 2)];}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00040}00040 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_a243b776f7671fc3458bf9ef6f9925875_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_a243b776f7671fc3458bf9ef6f9925875_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_non_playable_character_af4fe8de9174af90d1a0088373d0e35c0}\label{class_non_playable_character_af4fe8de9174af90d1a0088373d0e35c0}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!SetNamesArray@{SetNamesArray}}
+\index{SetNamesArray@{SetNamesArray}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{SetNamesArray()}{SetNamesArray()}}
+{\footnotesize\ttfamily void Non\+Playable\+Character\+::\+Set\+Names\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_enemy_a9c1d6efc8b2099d83797600d67a52017}{Enemy}}, and \mbox{\hyperlink{class_generic_friendly_a25b0d8bf58615b603725dfb44a7bd31f}{Generic\+Friendly}}.
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{_non_playable_character_8cpp_source}{Non\+Playable\+Character.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00020}00020 \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00021}00021 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_af4fe8de9174af90d1a0088373d0e35c0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_non_playable_character_a355f7bc2a43563faec957553fa4fd1e7}\label{class_non_playable_character_a355f7bc2a43563faec957553fa4fd1e7}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!SetPassive@{SetPassive}}
+\index{SetPassive@{SetPassive}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{SetPassive()}{SetPassive()}}
+{\footnotesize\ttfamily void Non\+Playable\+Character\+::\+Set\+Passive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_enemy_a01f5ffaa127a837d3f315ff3910a9f28}{Enemy}}, and \mbox{\hyperlink{class_generic_friendly_a495283c40fe995eafc8209c32303b14d}{Generic\+Friendly}}.
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8cpp_source_l00052}{52}} of file \mbox{\hyperlink{_non_playable_character_8cpp_source}{Non\+Playable\+Character.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00053}00053 \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00054}00054 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_a355f7bc2a43563faec957553fa4fd1e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_non_playable_character_a6ebdc6b058ea5dafe65132dd9ee46e6e}\label{class_non_playable_character_a6ebdc6b058ea5dafe65132dd9ee46e6e}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Non\+Playable\+Character\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{_non_playable_character_8cpp_source}{Non\+Playable\+Character.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00073}00073 \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00074}00074     \mbox{\hyperlink{class_non_playable_character_adb6c64e7dbc750efb7f2fa3f021e3627}{npc\_x}} = x;}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00075}00075     \mbox{\hyperlink{class_non_playable_character_aeacd97bf866f7348710a6bd78a583ed7}{npc\_y}} = y;}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00076}00076 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_a6ebdc6b058ea5dafe65132dd9ee46e6e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_non_playable_character_a98e1d2355f2a3617b6a7a25ee737ee3e}\label{class_non_playable_character_a98e1d2355f2a3617b6a7a25ee737ee3e}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!SetSpeed@{SetSpeed}}
+\index{SetSpeed@{SetSpeed}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{SetSpeed()}{SetSpeed()}}
+{\footnotesize\ttfamily void Non\+Playable\+Character\+::\+Set\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8cpp_source_l00056}{56}} of file \mbox{\hyperlink{_non_playable_character_8cpp_source}{Non\+Playable\+Character.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00057}00057 \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00058}00058     \mbox{\hyperlink{class_non_playable_character_af6835f00acbdc12a7a9f920ef6801e0d}{attack\_speed}} = \mbox{\hyperlink{namespace_macro_a3500becfc34f5b1df2d6d976fb5f5f86}{Macro::GenerateRandomNumberWithoutZero}}(5);}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00059}00059 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_a98e1d2355f2a3617b6a7a25ee737ee3e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_a98e1d2355f2a3617b6a7a25ee737ee3e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_non_playable_character_a9d5a16ef76a0e3339fd4ffc5d85bd8e2}\label{class_non_playable_character_a9d5a16ef76a0e3339fd4ffc5d85bd8e2}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!SetStrength@{SetStrength}}
+\index{SetStrength@{SetStrength}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{SetStrength()}{SetStrength()}}
+{\footnotesize\ttfamily void Non\+Playable\+Character\+::\+Set\+Strength (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8cpp_source_l00042}{42}} of file \mbox{\hyperlink{_non_playable_character_8cpp_source}{Non\+Playable\+Character.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00043}00043 \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00044}00044     \mbox{\hyperlink{class_non_playable_character_aff7b245f33c18e58e3056c18e5199e8c}{strength}} = \mbox{\hyperlink{namespace_macro_a3500becfc34f5b1df2d6d976fb5f5f86}{Macro::GenerateRandomNumberWithoutZero}}(10);}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00045}00045 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_a9d5a16ef76a0e3339fd4ffc5d85bd8e2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_a9d5a16ef76a0e3339fd4ffc5d85bd8e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_non_playable_character_ada48fd505bbf5797c39f0b20aa995bbc}\label{class_non_playable_character_ada48fd505bbf5797c39f0b20aa995bbc}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!SetSymbol@{SetSymbol}}
+\index{SetSymbol@{SetSymbol}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{SetSymbol()}{SetSymbol()}}
+{\footnotesize\ttfamily void Non\+Playable\+Character\+::\+Set\+Symbol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{_non_playable_character_8cpp_source}{Non\+Playable\+Character.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00062}00062 \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00063}00063     \textcolor{keywordflow}{switch} (\mbox{\hyperlink{class_non_playable_character_ac457178995a1ed93cdc8fdb38e916000}{passive}})}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00064}00064     \{}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00065}00065     \textcolor{keywordflow}{case} \textcolor{keyword}{true}: \mbox{\hyperlink{class_non_playable_character_ab6703683eeb7deb2ac146dfcfced761f}{symbol}} = \mbox{\hyperlink{class_non_playable_character_aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9}{GENERIC\_FRIENDLY}};}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00066}00066         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00067}00067     \textcolor{keywordflow}{case} \textcolor{keyword}{false}: \mbox{\hyperlink{class_non_playable_character_ab6703683eeb7deb2ac146dfcfced761f}{symbol}} = \mbox{\hyperlink{class_non_playable_character_aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b}{ENEMY}};}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00068}00068         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00069}00069     \}}
+\DoxyCodeLine{\Hypertarget{class_non_playable_character_l00070}00070 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_non_playable_character_ada48fd505bbf5797c39f0b20aa995bbc_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_non_playable_character_af6835f00acbdc12a7a9f920ef6801e0d}\label{class_non_playable_character_af6835f00acbdc12a7a9f920ef6801e0d}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!attack\_speed@{attack\_speed}}
+\index{attack\_speed@{attack\_speed}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{attack\_speed}{attack\_speed}}
+{\footnotesize\ttfamily unsigned int Non\+Playable\+Character\+::attack\+\_\+speed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8h_source_l00046}{46}} of file \mbox{\hyperlink{_non_playable_character_8h_source}{Non\+Playable\+Character.\+h}}.
+
+\mbox{\Hypertarget{class_non_playable_character_aba25d6a44e649f3aa1aea32cd46191fa}\label{class_non_playable_character_aba25d6a44e649f3aa1aea32cd46191fa}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!health@{health}}
+\index{health@{health}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily unsigned int Non\+Playable\+Character\+::health\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8h_source_l00045}{45}} of file \mbox{\hyperlink{_non_playable_character_8h_source}{Non\+Playable\+Character.\+h}}.
+
+\mbox{\Hypertarget{class_non_playable_character_a96182e6ac96d74025aec58b5c03f3824}\label{class_non_playable_character_a96182e6ac96d74025aec58b5c03f3824}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!name@{name}}
+\index{name@{name}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Non\+Playable\+Character\+::name}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8h_source_l00032}{32}} of file \mbox{\hyperlink{_non_playable_character_8h_source}{Non\+Playable\+Character.\+h}}.
+
+\mbox{\Hypertarget{class_non_playable_character_a7e5848d6face873445553e3731da84be}\label{class_non_playable_character_a7e5848d6face873445553e3731da84be}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!name\_array@{name\_array}}
+\index{name\_array@{name\_array}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{name\_array}{name\_array}}
+{\footnotesize\ttfamily string Non\+Playable\+Character\+::name\+\_\+array\mbox{[}20\mbox{]}}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8h_source_l00033}{33}} of file \mbox{\hyperlink{_non_playable_character_8h_source}{Non\+Playable\+Character.\+h}}.
+
+\mbox{\Hypertarget{class_non_playable_character_adb6c64e7dbc750efb7f2fa3f021e3627}\label{class_non_playable_character_adb6c64e7dbc750efb7f2fa3f021e3627}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!npc\_x@{npc\_x}}
+\index{npc\_x@{npc\_x}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{npc\_x}{npc\_x}}
+{\footnotesize\ttfamily unsigned int Non\+Playable\+Character\+::npc\+\_\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8h_source_l00048}{48}} of file \mbox{\hyperlink{_non_playable_character_8h_source}{Non\+Playable\+Character.\+h}}.
+
+\mbox{\Hypertarget{class_non_playable_character_aeacd97bf866f7348710a6bd78a583ed7}\label{class_non_playable_character_aeacd97bf866f7348710a6bd78a583ed7}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!npc\_y@{npc\_y}}
+\index{npc\_y@{npc\_y}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{npc\_y}{npc\_y}}
+{\footnotesize\ttfamily unsigned int Non\+Playable\+Character\+::npc\+\_\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8h_source_l00049}{49}} of file \mbox{\hyperlink{_non_playable_character_8h_source}{Non\+Playable\+Character.\+h}}.
+
+\mbox{\Hypertarget{class_non_playable_character_ac457178995a1ed93cdc8fdb38e916000}\label{class_non_playable_character_ac457178995a1ed93cdc8fdb38e916000}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!passive@{passive}}
+\index{passive@{passive}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{passive}{passive}}
+{\footnotesize\ttfamily bool Non\+Playable\+Character\+::passive}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8h_source_l00031}{31}} of file \mbox{\hyperlink{_non_playable_character_8h_source}{Non\+Playable\+Character.\+h}}.
+
+\mbox{\Hypertarget{class_non_playable_character_aff7b245f33c18e58e3056c18e5199e8c}\label{class_non_playable_character_aff7b245f33c18e58e3056c18e5199e8c}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!strength@{strength}}
+\index{strength@{strength}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{strength}{strength}}
+{\footnotesize\ttfamily unsigned int Non\+Playable\+Character\+::strength}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8h_source_l00034}{34}} of file \mbox{\hyperlink{_non_playable_character_8h_source}{Non\+Playable\+Character.\+h}}.
+
+\mbox{\Hypertarget{class_non_playable_character_ab6703683eeb7deb2ac146dfcfced761f}\label{class_non_playable_character_ab6703683eeb7deb2ac146dfcfced761f}} 
+\index{NonPlayableCharacter@{NonPlayableCharacter}!symbol@{symbol}}
+\index{symbol@{symbol}!NonPlayableCharacter@{NonPlayableCharacter}}
+\doxysubsubsection{\texorpdfstring{symbol}{symbol}}
+{\footnotesize\ttfamily char Non\+Playable\+Character\+::symbol\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_non_playable_character_8h_source_l00043}{43}} of file \mbox{\hyperlink{_non_playable_character_8h_source}{Non\+Playable\+Character.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_non_playable_character_8h}{Non\+Playable\+Character.\+h}}\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_non_playable_character_8cpp}{Non\+Playable\+Character.\+cpp}}\end{DoxyCompactItemize}

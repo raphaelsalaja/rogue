@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_weapon" xml:lang="en-US">
+<title>Weapon Class Reference</title>
+<indexterm><primary>Weapon</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Armour.h&gt;</computeroutput>
+</para>
+Collaboration diagram for Weapon:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_weapon__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67">WEAPON_TYPE</link> { <link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a">SWORD</link>
+, <link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67aaeec0571fea89fdc7c3ae39b79dca509">SHIELD</link>
+, <link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67aeb9724671a53a074e70378ac1d2596c7">ARMOUR</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_weapon_1a42dbc46dd70319a24763992c4ebbd396">Weapon</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_weapon_1a420e7ba3d2017e6de3e93eb579cfd3fa">~Weapon</link> ()</para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_class_weapon_1a2dd096e208c2827552c41cad1f47e8e3">GenerateRandomNumber</link> (int max)</para>
+</listitem>
+            <listitem><para><link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67">WEAPON_TYPE</link> <link linkend="_class_weapon_1a6b2437dd9e5541ef6f40ce35d96477c7">SetWeaponType</link> (int weapon_choice)</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_weapon_1ab1b14ca4579850bf0385c3e94ba35e57">SetWeaponName</link> (int weapon_name_index, <link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67">WEAPON_TYPE</link> <link linkend="_class_weapon_1a378d7783971053b498d26d456f5c3bb7">WEAPON_TYPE_SELECTED</link>)</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_weapon_1a23087012d905e32bbb224e49055a7181">SetStrength</link> (string <link linkend="_class_weapon_1a6b683bce956944a128d3ee25a88c7ac1">name</link>)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_weapon_1aa3a7809b2c34df9d7775f57f7560c106">CreateNewWeapon</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_weapon_1ae6618a552c19d68197e216b2926637a8">WEAPON_NAME_CHOICES</link> [20]</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_weapon_1a6b683bce956944a128d3ee25a88c7ac1">name</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_weapon_1a4a9381f1b461ca75cf0928defe49fbc0">strength</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_weapon_1a9f519847c0970ed12ffdb22b2de6162b">weight</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67">WEAPON_TYPE</link> <link linkend="_class_weapon_1a378d7783971053b498d26d456f5c3bb7">WEAPON_TYPE_SELECTED</link> = <link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a">SWORD</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>const char <link linkend="_class_weapon_1a834aaff0b69ffac71d827ff6b62cbe8c">SYMBOL</link> = &apos;W&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__armour_8h_source_1l00006">6</link> of file <link linkend="__armour_8h_source">Armour.h</link>.</para>
+</section>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67"/><section>
+    <title>WEAPON_TYPE</title>
+<indexterm><primary>WEAPON_TYPE</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>WEAPON_TYPE</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67">Weapon::WEAPON_TYPE</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>SWORD</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>SWORD</secondary></indexterm>
+<anchor xml:id="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a"/>SWORD</entry><entry></entry></row><row><entry><indexterm><primary>SHIELD</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>SHIELD</secondary></indexterm>
+<anchor xml:id="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67aaeec0571fea89fdc7c3ae39b79dca509"/>SHIELD</entry><entry></entry></row><row><entry><indexterm><primary>ARMOUR</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>ARMOUR</secondary></indexterm>
+<anchor xml:id="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67aeb9724671a53a074e70378ac1d2596c7"/>ARMOUR</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+Definition at line <link linkend="__armour_8h_source_1l00035">35</link> of file <link linkend="__armour_8h_source">Armour.h</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_weapon_1l00036"/>00036 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_weapon_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a">SWORD</link>,
+<anchor xml:id="_class_weapon_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67aaeec0571fea89fdc7c3ae39b79dca509">SHIELD</link>,
+<anchor xml:id="_class_weapon_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67aeb9724671a53a074e70378ac1d2596c7">ARMOUR</link>
+<anchor xml:id="_class_weapon_1l00040"/>00040 &#32;&#32;&#32;&#32;};
+</programlisting></section>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_weapon_1a42dbc46dd70319a24763992c4ebbd396"/><section>
+    <title>Weapon()</title>
+<indexterm><primary>Weapon</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>Weapon</secondary></indexterm>
+<para><computeroutput>Weapon::Weapon ( )</computeroutput></para></section>
+<anchor xml:id="_class_weapon_1a420e7ba3d2017e6de3e93eb579cfd3fa"/><section>
+    <title>~Weapon()</title>
+<indexterm><primary>~Weapon</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>~Weapon</secondary></indexterm>
+<para><computeroutput>Weapon::~Weapon ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_weapon_1aa3a7809b2c34df9d7775f57f7560c106"/><section>
+    <title>CreateNewWeapon()</title>
+<indexterm><primary>CreateNewWeapon</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>CreateNewWeapon</secondary></indexterm>
+<para><computeroutput>void Weapon::CreateNewWeapon ( )</computeroutput></para></section>
+<anchor xml:id="_class_weapon_1a2dd096e208c2827552c41cad1f47e8e3"/><section>
+    <title>GenerateRandomNumber()</title>
+<indexterm><primary>GenerateRandomNumber</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>GenerateRandomNumber</secondary></indexterm>
+<para><computeroutput>unsigned int Weapon::GenerateRandomNumber (int max)</computeroutput></para></section>
+<anchor xml:id="_class_weapon_1a23087012d905e32bbb224e49055a7181"/><section>
+    <title>SetStrength()</title>
+<indexterm><primary>SetStrength</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>SetStrength</secondary></indexterm>
+<para><computeroutput>int Weapon::SetStrength (string name)</computeroutput></para></section>
+<anchor xml:id="_class_weapon_1ab1b14ca4579850bf0385c3e94ba35e57"/><section>
+    <title>SetWeaponName()</title>
+<indexterm><primary>SetWeaponName</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>SetWeaponName</secondary></indexterm>
+<para><computeroutput>string Weapon::SetWeaponName (int weapon_name_index, <link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67">WEAPON_TYPE</link> WEAPON_TYPE_SELECTED)</computeroutput></para></section>
+<anchor xml:id="_class_weapon_1a6b2437dd9e5541ef6f40ce35d96477c7"/><section>
+    <title>SetWeaponType()</title>
+<indexterm><primary>SetWeaponType</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>SetWeaponType</secondary></indexterm>
+<para><computeroutput><link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67">WEAPON_TYPE</link> Weapon::SetWeaponType (int weapon_choice)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_weapon_1a6b683bce956944a128d3ee25a88c7ac1"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>string Weapon::name</computeroutput></para><para>
+Definition at line <link linkend="__armour_8h_source_1l00032">32</link> of file <link linkend="__armour_8h_source">Armour.h</link>.</para>
+</section>
+<anchor xml:id="_class_weapon_1a4a9381f1b461ca75cf0928defe49fbc0"/><section>
+    <title>strength</title>
+<indexterm><primary>strength</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>strength</secondary></indexterm>
+<para><computeroutput>int Weapon::strength</computeroutput></para><para>
+Definition at line <link linkend="__armour_8h_source_1l00033">33</link> of file <link linkend="__armour_8h_source">Armour.h</link>.</para>
+</section>
+<anchor xml:id="_class_weapon_1a834aaff0b69ffac71d827ff6b62cbe8c"/><section>
+    <title>SYMBOL</title>
+<indexterm><primary>SYMBOL</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>SYMBOL</secondary></indexterm>
+<para><computeroutput>const char Weapon::SYMBOL = &apos;W&apos;<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__armour_8h_source_1l00054">54</link> of file <link linkend="__armour_8h_source">Armour.h</link>.</para>
+</section>
+<anchor xml:id="_class_weapon_1ae6618a552c19d68197e216b2926637a8"/><section>
+    <title>WEAPON_NAME_CHOICES</title>
+<indexterm><primary>WEAPON_NAME_CHOICES</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>WEAPON_NAME_CHOICES</secondary></indexterm>
+<para><computeroutput>string Weapon::WEAPON_NAME_CHOICES[20]</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Might&#32;of&#32;Fallen&#32;Souls&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Hope&#32;of&#32;Carnage&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Soldier&apos;s&#32;Tunic&#32;of&#32;Cataclysms&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Silent&#32;Armor&#32;of&#32;the&#32;Wicked&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Stormguard&#32;Demon&#32;Greatplate&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Vindication&#32;Scaled&#32;Armor&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Ivory&#32;Chestpiece&#32;of&#32;Smoldering&#32;Fortunes&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Bronze&#32;Breastplate&#32;of&#32;Imminent&#32;Vengeance&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Batteplate&#32;of&#32;Hallowed&#32;Dreams&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Chestplate&#32;of&#32;Infernal&#32;Punishment&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Edge&#32;of&#32;Discipline&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Scales&#32;of&#32;the&#32;Breaking&#32;Storm&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Retribution&#32;Greatplate&#32;of&#32;the&#32;Wicked&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Battleworn&#32;Vest&#32;of&#32;the&#32;Daywalker&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Thunderguard&#32;Titanium&#32;Chestpiece&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Vengeance&#32;Golden&#32;Chestplate&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Obsidian&#32;Cuirass&#32;of&#32;Hallowed&#32;Freedom&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Iron&#32;Tunic&#32;of&#32;Blessed&#32;Kings&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Vest&#32;of&#32;Blessed&#32;Memories&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Chestguard&#32;of&#32;Fleeting&#32;Might&quot;</emphasis>
+&#32;&#32;&#32;&#32;}
+</programlisting><para>
+Definition at line <link linkend="__armour_8h_source_1l00009">9</link> of file <link linkend="__armour_8h_source">Armour.h</link>.</para>
+</section>
+<anchor xml:id="_class_weapon_1a378d7783971053b498d26d456f5c3bb7"/><section>
+    <title>WEAPON_TYPE_SELECTED</title>
+<indexterm><primary>WEAPON_TYPE_SELECTED</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>WEAPON_TYPE_SELECTED</secondary></indexterm>
+<para><computeroutput><link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67">WEAPON_TYPE</link> Weapon::WEAPON_TYPE_SELECTED = <link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a">SWORD</link></computeroutput></para><para>
+Definition at line <link linkend="__armour_8h_source_1l00042">42</link> of file <link linkend="__armour_8h_source">Armour.h</link>.</para>
+</section>
+<anchor xml:id="_class_weapon_1a9f519847c0970ed12ffdb22b2de6162b"/><section>
+    <title>weight</title>
+<indexterm><primary>weight</primary><secondary>Weapon</secondary></indexterm>
+<indexterm><primary>Weapon</primary><secondary>weight</secondary></indexterm>
+<para><computeroutput>int Weapon::weight</computeroutput></para><para>
+Definition at line <link linkend="__armour_8h_source_1l00033">33</link> of file <link linkend="__armour_8h_source">Armour.h</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/University/ca-A00269349/Rogue/<link linkend="__armour_8h">Armour.h</link></section>
+</section>

@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_enemy_8cpp" kind="file" language="C++">
+    <compoundname>Enemy.cpp</compoundname>
+    <includes refid="_enemy_8h" local="yes">Enemy.h</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">iostream</includes>
+    <includes refid="_macro_8h" local="yes">Macro.h</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>CombatManager.h</label>
+        <link refid="_combat_manager_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ConsoleWindowManager.h</label>
+        <link refid="_console_window_manager_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>GenericFriendly.h</label>
+        <link refid="_generic_friendly_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>InventoryManager.h</label>
+        <link refid="_inventory_manager_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Macro.h</label>
+        <link refid="_macro_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>MapManager.h</label>
+        <link refid="_map_manager_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>NonPlayableCharacter.h</label>
+        <link refid="_non_playable_character_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>UserInterfaceManger.h</label>
+        <link refid="_user_interface_manger_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>fstream</label>
+      </node>
+      <node id="15">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+      <node id="10">
+        <label>windows.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_enemy_8h" kindref="compound">Enemy.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_macro_8h" kindref="compound">Macro.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c" kindref="member">Enemy::PrintDetails</ref>(<ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824" kindref="member">name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ENGAGED<sp/>WITH<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8" kindref="member">GetName</ref>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" kindref="member">Macro::GoToScreenPosition</ref>(45,<sp/>m.<ref refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" kindref="member">height</ref><sp/>+<sp/>3);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" kindref="member">Macro::GoToScreenPosition</ref>(45,<sp/>m.<ref refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" kindref="member">height</ref><sp/>+<sp/>5);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa" kindref="member">health</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;THEY<sp/>HAVE<sp/>A<sp/>HEALTH<sp/>OF<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(<ref refid="class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37" kindref="member">GetHealth</ref>());</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa" kindref="member">health</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" kindref="member">Macro::GoToScreenPosition</ref>(45,<sp/>m.<ref refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" kindref="member">height</ref><sp/>+<sp/>7);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>damage<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;THEY<sp/>POSSES<sp/>A<sp/>STRENGTH<sp/>OF<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(<ref refid="class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f" kindref="member">GetDamage</ref>());</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>damage;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_enemy_1a9c1d6efc8b2099d83797600d67a52017" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enemy_1a9c1d6efc8b2099d83797600d67a52017" kindref="member">Enemy::SetNamesArray</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>array_size<sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>current_line;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>ifstream<sp/>myfile(</highlight><highlight class="stringliteral">&quot;NPC_EnemyNames.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(myfile.is_open())</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!myfile.eof())</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getline(myfile,<sp/>current_line);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_non_playable_character_1a7e5848d6face873445553e3731da84be" kindref="member">name_array</ref>[index]<sp/>=<sp/>current_line;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index++;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myfile.close();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_enemy_1a01f5ffaa127a837d3f315ff3910a9f28" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enemy_1a01f5ffaa127a837d3f315ff3910a9f28" kindref="member">Enemy::SetPassive</ref>()</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000" kindref="member">passive</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_enemy_1a98f0d2110309536798101b88d2d1d8c9" refkind="member"><highlight class="normal"><ref refid="class_enemy_1a98f0d2110309536798101b88d2d1d8c9" kindref="member">Enemy::Enemy</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_enemy_1a01f5ffaa127a837d3f315ff3910a9f28" kindref="member">Enemy::SetPassive</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_enemy_1a9c1d6efc8b2099d83797600d67a52017" kindref="member">Enemy::SetNamesArray</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e" kindref="member">SetPosition</ref>(x,<sp/>y);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_non_playable_character_1a017d601103d2bc66a6338073a051cab7" kindref="member">SetHealth</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e" kindref="member">SetSpeed</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2" kindref="member">SetStrength</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875" kindref="member">SetName</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/University/ca-A00269349/Rogue/Enemy.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__enemy_8cpp_source" xml:lang="en-US">
+<title>Enemy.cpp</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/Enemy.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__enemy_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__enemy_8h">Enemy.h</link>&quot;</emphasis>
+<anchor xml:id="__enemy_8cpp_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&lt;fstream&gt;</emphasis>
+<anchor xml:id="__enemy_8cpp_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+<anchor xml:id="__enemy_8cpp_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__macro_8h">Macro.h</link>&quot;</emphasis>
+<anchor xml:id="__enemy_8cpp_source_1l00005"/>00005 
+<anchor xml:id="__enemy_8cpp_source_1l00006"/><link linkend="_class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c">00006</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c">Enemy::PrintDetails</link>(<link linkend="_class_map_manager">MapManager</link>&amp;&#32;m)
+<anchor xml:id="__enemy_8cpp_source_1l00007"/>00007 {
+<anchor xml:id="__enemy_8cpp_source_1l00008"/>00008 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824">name</link>&#32;=&#32;<emphasis role="stringliteral">&quot;ENGAGED&#32;WITH&#32;&quot;</emphasis>&#32;+&#32;<link linkend="_class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8">GetName</link>();
+<anchor xml:id="__enemy_8cpp_source_1l00009"/>00009 &#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">Macro::GoToScreenPosition</link>(45,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;3);
+<anchor xml:id="__enemy_8cpp_source_1l00010"/>00010 &#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<link linkend="_class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824">name</link>;
+<anchor xml:id="__enemy_8cpp_source_1l00011"/>00011 
+<anchor xml:id="__enemy_8cpp_source_1l00012"/>00012 &#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">Macro::GoToScreenPosition</link>(45,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;5);
+<anchor xml:id="__enemy_8cpp_source_1l00013"/>00013 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa">health</link>&#32;=&#32;<emphasis role="stringliteral">&quot;THEY&#32;HAVE&#32;A&#32;HEALTH&#32;OF&#32;&quot;</emphasis>&#32;+&#32;std::to_string(<link linkend="_class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37">GetHealth</link>());
+<anchor xml:id="__enemy_8cpp_source_1l00014"/>00014 &#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<link linkend="_class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa">health</link>;
+<anchor xml:id="__enemy_8cpp_source_1l00015"/>00015 
+<anchor xml:id="__enemy_8cpp_source_1l00016"/>00016 &#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">Macro::GoToScreenPosition</link>(45,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;7);
+<anchor xml:id="__enemy_8cpp_source_1l00017"/>00017 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;damage&#32;=&#32;<emphasis role="stringliteral">&quot;THEY&#32;POSSES&#32;A&#32;STRENGTH&#32;OF&#32;&quot;</emphasis>&#32;+&#32;std::to_string(<link linkend="_class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f">GetDamage</link>());
+<anchor xml:id="__enemy_8cpp_source_1l00018"/>00018 &#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;damage;
+<anchor xml:id="__enemy_8cpp_source_1l00019"/>00019 }
+<anchor xml:id="__enemy_8cpp_source_1l00020"/>00020 
+<anchor xml:id="__enemy_8cpp_source_1l00021"/><link linkend="_class_enemy_1a9c1d6efc8b2099d83797600d67a52017">00021</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_enemy_1a9c1d6efc8b2099d83797600d67a52017">Enemy::SetNamesArray</link>()
+<anchor xml:id="__enemy_8cpp_source_1l00022"/>00022 {
+<anchor xml:id="__enemy_8cpp_source_1l00023"/>00023 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;array_size&#32;=&#32;20;
+<anchor xml:id="__enemy_8cpp_source_1l00024"/>00024 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;index&#32;=&#32;0;
+<anchor xml:id="__enemy_8cpp_source_1l00025"/>00025 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;current_line;
+<anchor xml:id="__enemy_8cpp_source_1l00026"/>00026 &#32;&#32;&#32;&#32;ifstream&#32;myfile(<emphasis role="stringliteral">&quot;NPC_EnemyNames.txt&quot;</emphasis>);
+<anchor xml:id="__enemy_8cpp_source_1l00027"/>00027 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(myfile.is_open())
+<anchor xml:id="__enemy_8cpp_source_1l00028"/>00028 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__enemy_8cpp_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(!myfile.eof())
+<anchor xml:id="__enemy_8cpp_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__enemy_8cpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;getline(myfile,&#32;current_line);
+<anchor xml:id="__enemy_8cpp_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a7e5848d6face873445553e3731da84be">name_array</link>[index]&#32;=&#32;current_line;
+<anchor xml:id="__enemy_8cpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;index++;
+<anchor xml:id="__enemy_8cpp_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__enemy_8cpp_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;myfile.close();
+<anchor xml:id="__enemy_8cpp_source_1l00036"/>00036 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__enemy_8cpp_source_1l00037"/>00037 }
+<anchor xml:id="__enemy_8cpp_source_1l00038"/>00038 
+<anchor xml:id="__enemy_8cpp_source_1l00039"/><link linkend="_class_enemy_1a01f5ffaa127a837d3f315ff3910a9f28">00039</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_enemy_1a01f5ffaa127a837d3f315ff3910a9f28">Enemy::SetPassive</link>()
+<anchor xml:id="__enemy_8cpp_source_1l00040"/>00040 {
+<anchor xml:id="__enemy_8cpp_source_1l00041"/>00041 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000">passive</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__enemy_8cpp_source_1l00042"/>00042 }
+<anchor xml:id="__enemy_8cpp_source_1l00043"/>00043 
+<anchor xml:id="__enemy_8cpp_source_1l00044"/><link linkend="_class_enemy_1a98f0d2110309536798101b88d2d1d8c9">00044</link> <link linkend="_class_enemy_1a98f0d2110309536798101b88d2d1d8c9">Enemy::Enemy</link>(<emphasis role="keywordtype">int</emphasis>&#32;x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;y)
+<anchor xml:id="__enemy_8cpp_source_1l00045"/>00045 {
+<anchor xml:id="__enemy_8cpp_source_1l00046"/>00046 &#32;&#32;&#32;&#32;<link linkend="_class_enemy_1a01f5ffaa127a837d3f315ff3910a9f28">Enemy::SetPassive</link>();
+<anchor xml:id="__enemy_8cpp_source_1l00047"/>00047 &#32;&#32;&#32;&#32;<link linkend="_class_enemy_1a9c1d6efc8b2099d83797600d67a52017">Enemy::SetNamesArray</link>();
+<anchor xml:id="__enemy_8cpp_source_1l00048"/>00048 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e">SetPosition</link>(x,&#32;y);
+<anchor xml:id="__enemy_8cpp_source_1l00049"/>00049 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a017d601103d2bc66a6338073a051cab7">SetHealth</link>();
+<anchor xml:id="__enemy_8cpp_source_1l00050"/>00050 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e">SetSpeed</link>();
+<anchor xml:id="__enemy_8cpp_source_1l00051"/>00051 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2">SetStrength</link>();
+<anchor xml:id="__enemy_8cpp_source_1l00052"/>00052 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875">SetName</link>();
+<anchor xml:id="__enemy_8cpp_source_1l00053"/>00053 }
+</programlisting></section>

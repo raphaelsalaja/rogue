@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__enemy_8h_source" xml:lang="en-US">
+<title>Enemy.h</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/Enemy.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__enemy_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="__enemy_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__non_playable_character_8h">NonPlayableCharacter.h</link>&quot;</emphasis>
+<anchor xml:id="__enemy_8h_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__map_manager_8h">MapManager.h</link>&quot;</emphasis>
+<anchor xml:id="__enemy_8h_source_1l00004"/>00004 
+<anchor xml:id="__enemy_8h_source_1l00005"/><link linkend="_class_enemy">00005</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_enemy">Enemy</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_non_playable_character">NonPlayableCharacter</link>
+<anchor xml:id="__enemy_8h_source_1l00006"/>00006 {
+<anchor xml:id="__enemy_8h_source_1l00007"/>00007 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="__enemy_8h_source_1l00008"/>00008 &#32;&#32;&#32;&#32;<link linkend="_class_enemy_1a98f0d2110309536798101b88d2d1d8c9">Enemy</link>(<emphasis role="keywordtype">int</emphasis>&#32;x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;y);
+<anchor xml:id="__enemy_8h_source_1l00009"/>00009 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c">PrintDetails</link>(<link linkend="_class_map_manager">MapManager</link>&amp;&#32;m);
+<anchor xml:id="__enemy_8h_source_1l00010"/>00010 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="__enemy_8h_source_1l00011"/>00011 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_enemy_1a9c1d6efc8b2099d83797600d67a52017">SetNamesArray</link>()&#32;<emphasis role="keyword">override</emphasis>;
+<anchor xml:id="__enemy_8h_source_1l00012"/>00012 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_enemy_1a01f5ffaa127a837d3f315ff3910a9f28">SetPassive</link>()&#32;<emphasis role="keyword">override</emphasis>;
+<anchor xml:id="__enemy_8h_source_1l00013"/>00013 };
+</programlisting></section>

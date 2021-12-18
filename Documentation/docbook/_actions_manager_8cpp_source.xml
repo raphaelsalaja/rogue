@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__actions_manager_8cpp_source" xml:lang="en-US">
+<title>ActionsManager.cpp</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/ActionsManager.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__actions_manager_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;ActionsManager.h&quot;</emphasis>
+</programlisting></section>

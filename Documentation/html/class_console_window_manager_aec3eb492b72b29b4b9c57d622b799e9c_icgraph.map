@@ -1,0 +1,13 @@
+<map id="ConsoleWindowManager::BlankScreen" name="ConsoleWindowManager::BlankScreen">
+<area shape="rect" id="node1" title=" " alt="" coords="1167,107,1413,133"/>
+<area shape="rect" id="node2" href="$class_inventory_manager.html#a5b5e89fe9ebb4fe18db920a373c4052b" title=" " alt="" coords="373,5,611,32"/>
+<area shape="rect" id="node5" href="$class_map_manager.html#ab864df2edd061402a8ae649642545cf4" title=" " alt="" coords="689,259,874,285"/>
+<area shape="rect" id="node7" href="$class_console_rendering.html#a3ba48c54dc22c278244cd45cfbb53a83" title=" " alt="" coords="663,107,900,133"/>
+<area shape="rect" id="node10" href="$class_inventory_manager.html#a5bbb29a62327b708ec79942a3d18aece" title=" " alt="" coords="369,56,615,83"/>
+<area shape="rect" id="node11" href="$class_map_manager.html#a3d93eb2a28003237aa76baf2cb0de02c" title=" " alt="" coords="948,183,1119,209"/>
+<area shape="rect" id="node3" href="$class_player.html#a459cda6070754195650bd10e0db43710" title=" " alt="" coords="146,81,279,108"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,183,56,209"/>
+<area shape="rect" id="node6" href="$class_player.html#a848f89637b84d9692c96fc75cfa434eb" title=" " alt="" coords="133,259,293,285"/>
+<area shape="rect" id="node8" href="$class_inventory_manager.html#acb6cf3d380d81c8129820734b05d0f6e" title=" " alt="" coords="377,107,607,133"/>
+<area shape="rect" id="node9" href="$class_inventory_manager.html#a293535f9ed1a4147a3a18a7795f4c201" title=" " alt="" coords="104,157,321,184"/>
+</map>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__macro_8h" xml:lang="en-US">
+<title>D:/University/ca-A00269349/Rogue/Macro.h File Reference</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/Macro.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;string&gt;
+</programlisting>Include dependency graph for Macro.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_macro_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_macro_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_macro">Macro</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">Macro::GoToScreenPosition</link> (short C, short R)</para>
+</listitem>
+            <listitem><para>void <link linkend="_namespace_macro_1a005f2a0ab24b96203446ec9a1a8b9a7f">Macro::RepositionWindow</link> (int width, int height)</para>
+</listitem>
+            <listitem><para>string <link linkend="_namespace_macro_1a9b30bbcb1b1dffca82735239b6e6da98">Macro::ReplaceAll</link> (string str, const string &amp;from, const string &amp;to)</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespace_macro_1a5b7cf896002d88dc2e5ffede2f398709">Macro::Separate</link> (int input, char from, char count)</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespace_macro_1a7192f07d19f55d7f8b863932a5078eab">Macro::GenerateRandomNumber</link> (int max)</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespace_macro_1a3500becfc34f5b1df2d6d976fb5f5f86">Macro::GenerateRandomNumberWithoutZero</link> (int max)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

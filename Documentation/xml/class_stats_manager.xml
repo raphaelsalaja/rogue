@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_stats_manager" kind="class" language="C++" prot="public">
+    <compoundname>StatsManager</compoundname>
+    <includes refid="_stats_manager_8h" local="no">StatsManager.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>StatsManager</label>
+        <link refid="class_stats_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/University/ca-A00269349/Rogue/StatsManager.h" line="5" column="1" bodyfile="D:/University/ca-A00269349/Rogue/StatsManager.h" bodystart="6" bodyend="8"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,183 @@
+.TH "GenericFriendly" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GenericFriendly
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GenericFriendly\&.h>\fP
+.PP
+Inherits \fBNonPlayableCharacter\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGenericFriendly\fP (int postition)"
+.br
+.ti -1c
+.RI "void \fBPrintMessage\fP (\fBMapManager\fP &m)"
+.br
+.ti -1c
+.RI "string \fBGetMessage\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBmessages_array\fP [20] {}"
+.br
+.ti -1c
+.RI "string \fBmessage\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetNamesArray\fP () override"
+.br
+.ti -1c
+.RI "void \fBSetPassive\fP () override"
+.br
+.ti -1c
+.RI "void \fBSetMessages\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetRandomMessage\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB8\fP of file \fBGenericFriendly\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GenericFriendly::GenericFriendly (int postition)"
+
+.PP
+Definition at line \fB53\fP of file \fBGenericFriendly\&.cpp\fP\&.
+.PP
+.nf
+54 {
+55     GenericFriendly::SetPassive();
+56     GenericFriendly::SetNamesArray();
+57 
+58     SetPosition(position, position);
+59 
+60     SetMessages();
+61     SetRandomMessage();
+62 }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "string GenericFriendly::GetMessage ()"
+
+.PP
+Definition at line \fB7\fP of file \fBGenericFriendly\&.cpp\fP\&.
+.PP
+.nf
+8 {
+9     return message;
+10 }
+.fi
+.SS "void GenericFriendly::PrintMessage (\fBMapManager\fP & m)"
+
+.PP
+Definition at line \fB69\fP of file \fBGenericFriendly\&.cpp\fP\&.
+.PP
+.nf
+70 {
+71     Macro::GoToScreenPosition(45, m\&.height + 3);
+72 
+73     std::cout << message;
+74     Macro::GoToScreenPosition(45, m\&.height + 6);
+75 
+76     std::cout << "1:HEALTH 2:SHIELD 3:MAGIC";
+77 }
+.fi
+.SS "void GenericFriendly::SetMessages ()\fC [private]\fP"
+
+.PP
+Definition at line \fB30\fP of file \fBGenericFriendly\&.cpp\fP\&.
+.PP
+.nf
+31 {
+32     int array_size = 20;
+33     int index = 0;
+34     string current_line;
+35     ifstream myfile("NPC_Messages\&.txt");
+36     if (myfile\&.is_open())
+37     {
+38         while (!myfile\&.eof())
+39         {
+40             getline(myfile, current_line);
+41             messages_array[index] = current_line;
+42             index++;
+43         }
+44         myfile\&.close();
+45     }
+46 }
+.fi
+.SS "void GenericFriendly::SetNamesArray ()\fC [override]\fP, \fC [private]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBNonPlayableCharacter\fP\&.
+.PP
+Definition at line \fB12\fP of file \fBGenericFriendly\&.cpp\fP\&.
+.PP
+.nf
+13 {
+14     int array_size = 20;
+15     int index = 0;
+16     string current_line;
+17     ifstream myfile("NPC_PassiveNames\&.txt");
+18     if (myfile\&.is_open())
+19     {
+20         while (!myfile\&.eof())
+21         {
+22             getline(myfile, current_line);
+23             name_array[index] = current_line;
+24             index++;
+25         }
+26         myfile\&.close();
+27     }
+28 }
+.fi
+.SS "void GenericFriendly::SetPassive ()\fC [override]\fP, \fC [private]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBNonPlayableCharacter\fP\&.
+.PP
+Definition at line \fB48\fP of file \fBGenericFriendly\&.cpp\fP\&.
+.PP
+.nf
+49 {
+50     passive = true;
+51 }
+.fi
+.SS "void GenericFriendly::SetRandomMessage ()\fC [private]\fP"
+
+.PP
+Definition at line \fB64\fP of file \fBGenericFriendly\&.cpp\fP\&.
+.PP
+.nf
+65 {
+66     message = messages_array[Macro::GenerateRandomNumber(messages_array->length() - 2)];
+67 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "string GenericFriendly::message"
+
+.PP
+Definition at line \fB13\fP of file \fBGenericFriendly\&.h\fP\&.
+.SS "string GenericFriendly::messages_array[20] {}"
+
+.PP
+Definition at line \fB12\fP of file \fBGenericFriendly\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

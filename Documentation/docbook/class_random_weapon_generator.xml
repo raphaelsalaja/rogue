@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_random_weapon_generator" xml:lang="en-US">
+<title>RandomWeaponGenerator Class Reference</title>
+<indexterm><primary>RandomWeaponGenerator</primary></indexterm>
+<para>
+<computeroutput>#include &lt;RandomWeaponGenerator.h&gt;</computeroutput>
+</para>
+Collaboration diagram for RandomWeaponGenerator:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_weapon_generator__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_random_weapon_generator_1a2c168cdf90bbfd3cabe6e7ef8c22ac1d">RandomWeaponGenerator</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_random_weapon_generator_1a348e766a0ea955644359f288069d8697">~RandomWeaponGenerator</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__random_weapon_generator_8h_source_1l00006">6</link> of file <link linkend="__random_weapon_generator_8h_source">RandomWeaponGenerator.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_random_weapon_generator_1a2c168cdf90bbfd3cabe6e7ef8c22ac1d"/><section>
+    <title>RandomWeaponGenerator()</title>
+<indexterm><primary>RandomWeaponGenerator</primary><secondary>RandomWeaponGenerator</secondary></indexterm>
+<indexterm><primary>RandomWeaponGenerator</primary><secondary>RandomWeaponGenerator</secondary></indexterm>
+<para><computeroutput>RandomWeaponGenerator::RandomWeaponGenerator ( )</computeroutput></para></section>
+<anchor xml:id="_class_random_weapon_generator_1a348e766a0ea955644359f288069d8697"/><section>
+    <title>~RandomWeaponGenerator()</title>
+<indexterm><primary>~RandomWeaponGenerator</primary><secondary>RandomWeaponGenerator</secondary></indexterm>
+<indexterm><primary>RandomWeaponGenerator</primary><secondary>~RandomWeaponGenerator</secondary></indexterm>
+<para><computeroutput>RandomWeaponGenerator::~RandomWeaponGenerator ( )</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+D:/University/ca-A00269349/Rogue/<link linkend="__random_weapon_generator_8h">RandomWeaponGenerator.h</link></section>
+</section>

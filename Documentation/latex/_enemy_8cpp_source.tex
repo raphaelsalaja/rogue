@@ -1,0 +1,59 @@
+\hypertarget{_enemy_8cpp_source}{}\doxysection{Enemy.\+cpp}
+\label{_enemy_8cpp_source}\index{D:/University/ca-\/A00269349/Rogue/Enemy.cpp@{D:/University/ca-\/A00269349/Rogue/Enemy.cpp}}
+\mbox{\hyperlink{_enemy_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_enemy_8h}{Enemy.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_macro_8h}{Macro.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00006}\mbox{\hyperlink{class_enemy_ac7ed9a6bf787591c189fdc9799f85e7c}{00006}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_enemy_ac7ed9a6bf787591c189fdc9799f85e7c}{Enemy::PrintDetails}}(\mbox{\hyperlink{class_map_manager}{MapManager}}\& m)}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00007}00007 \{}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00008}00008     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_non_playable_character_a96182e6ac96d74025aec58b5c03f3824}{name}} = \textcolor{stringliteral}{"{}ENGAGED WITH "{}} + \mbox{\hyperlink{class_non_playable_character_aedf794670e71a33011caefd1d321a8f8}{GetName}}();}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00009}00009     \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 3);}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00010}00010     std::cout << \mbox{\hyperlink{class_non_playable_character_a96182e6ac96d74025aec58b5c03f3824}{name}};}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00012}00012     \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 5);}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00013}00013     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_non_playable_character_aba25d6a44e649f3aa1aea32cd46191fa}{health}} = \textcolor{stringliteral}{"{}THEY HAVE A HEALTH OF "{}} + std::to\_string(\mbox{\hyperlink{class_non_playable_character_ab0ab52f45551b75625bdf02e65d3ef37}{GetHealth}}());}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00014}00014     std::cout << \mbox{\hyperlink{class_non_playable_character_aba25d6a44e649f3aa1aea32cd46191fa}{health}};}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00016}00016     \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 7);}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00017}00017     \textcolor{keywordtype}{string} damage = \textcolor{stringliteral}{"{}THEY POSSES A STRENGTH OF "{}} + std::to\_string(\mbox{\hyperlink{class_non_playable_character_a39c610c17e10c8ee1b6bb03d65ed032f}{GetDamage}}());}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00018}00018     std::cout << damage;}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00019}00019 \}}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00021}\mbox{\hyperlink{class_enemy_a9c1d6efc8b2099d83797600d67a52017}{00021}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_enemy_a9c1d6efc8b2099d83797600d67a52017}{Enemy::SetNamesArray}}()}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00022}00022 \{}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00023}00023     \textcolor{keywordtype}{int} array\_size = 20;}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00024}00024     \textcolor{keywordtype}{int} index = 0;}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00025}00025     \textcolor{keywordtype}{string} current\_line;}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00026}00026     ifstream myfile(\textcolor{stringliteral}{"{}NPC\_EnemyNames.txt"{}});}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00027}00027     \textcolor{keywordflow}{if} (myfile.is\_open())}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00028}00028     \{}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00029}00029         \textcolor{keywordflow}{while} (!myfile.eof())}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00030}00030         \{}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00031}00031             getline(myfile, current\_line);}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00032}00032             \mbox{\hyperlink{class_non_playable_character_a7e5848d6face873445553e3731da84be}{name\_array}}[index] = current\_line;}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00033}00033             index++;}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00034}00034         \}}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00035}00035         myfile.close();}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00036}00036     \}}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00037}00037 \}}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00039}\mbox{\hyperlink{class_enemy_a01f5ffaa127a837d3f315ff3910a9f28}{00039}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_enemy_a01f5ffaa127a837d3f315ff3910a9f28}{Enemy::SetPassive}}()}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00040}00040 \{}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00041}00041     \mbox{\hyperlink{class_non_playable_character_ac457178995a1ed93cdc8fdb38e916000}{passive}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00042}00042 \}}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00044}\mbox{\hyperlink{class_enemy_a98f0d2110309536798101b88d2d1d8c9}{00044}} \mbox{\hyperlink{class_enemy_a98f0d2110309536798101b88d2d1d8c9}{Enemy::Enemy}}(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y)}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00045}00045 \{}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00046}00046     \mbox{\hyperlink{class_enemy_a01f5ffaa127a837d3f315ff3910a9f28}{Enemy::SetPassive}}();}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00047}00047     \mbox{\hyperlink{class_enemy_a9c1d6efc8b2099d83797600d67a52017}{Enemy::SetNamesArray}}();}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00048}00048     \mbox{\hyperlink{class_non_playable_character_a6ebdc6b058ea5dafe65132dd9ee46e6e}{SetPosition}}(x, y);}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00049}00049     \mbox{\hyperlink{class_non_playable_character_a017d601103d2bc66a6338073a051cab7}{SetHealth}}();}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00050}00050     \mbox{\hyperlink{class_non_playable_character_a98e1d2355f2a3617b6a7a25ee737ee3e}{SetSpeed}}();}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00051}00051     \mbox{\hyperlink{class_non_playable_character_a9d5a16ef76a0e3339fd4ffc5d85bd8e2}{SetStrength}}();}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00052}00052     \mbox{\hyperlink{class_non_playable_character_a243b776f7671fc3458bf9ef6f9925875}{SetName}}();}
+\DoxyCodeLine{\Hypertarget{_enemy_8cpp_source_l00053}00053 \}}
+
+\end{DoxyCode}

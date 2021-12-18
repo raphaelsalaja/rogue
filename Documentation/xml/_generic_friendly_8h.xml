@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_generic_friendly_8h" kind="file" language="C++">
+    <compoundname>GenericFriendly.h</compoundname>
+    <includes refid="_non_playable_character_8h" local="yes">NonPlayableCharacter.h</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="_map_manager_8h" local="yes">MapManager.h</includes>
+    <includedby refid="_generic_friendly_8cpp" local="yes">D:/University/ca-A00269349/Rogue/GenericFriendly.cpp</includedby>
+    <includedby refid="_map_manager_8h" local="yes">D:/University/ca-A00269349/Rogue/MapManager.h</includedby>
+    <includedby refid="_player_8h" local="yes">D:/University/ca-A00269349/Rogue/Player.h</includedby>
+    <incdepgraph>
+      <node id="13">
+        <label>CombatManager.h</label>
+        <link refid="_combat_manager_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ConsoleWindowManager.h</label>
+        <link refid="_console_window_manager_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/GenericFriendly.h</label>
+        <link refid="_generic_friendly_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>InventoryManager.h</label>
+        <link refid="_inventory_manager_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>MapManager.h</label>
+        <link refid="_map_manager_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NonPlayableCharacter.h</label>
+        <link refid="_non_playable_character_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>UserInterfaceManger.h</label>
+        <link refid="_user_interface_manger_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>fstream</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+      <node id="10">
+        <label>windows.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="11">
+        <label>D:/University/ca-A00269349/Rogue/CombatManager.cpp</label>
+        <link refid="_combat_manager_8cpp"/>
+      </node>
+      <node id="10">
+        <label>D:/University/ca-A00269349/Rogue/CombatManager.h</label>
+        <link refid="_combat_manager_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>D:/University/ca-A00269349/Rogue/ConsoleRendering.cpp</label>
+        <link refid="_console_rendering_8cpp"/>
+      </node>
+      <node id="4">
+        <label>D:/University/ca-A00269349/Rogue/ConsoleRendering.h</label>
+        <link refid="_console_rendering_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>D:/University/ca-A00269349/Rogue/Debug.cpp</label>
+        <link refid="_debug_8cpp"/>
+      </node>
+      <node id="17">
+        <label>D:/University/ca-A00269349/Rogue/Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+      </node>
+      <node id="9">
+        <label>D:/University/ca-A00269349/Rogue/Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>D:/University/ca-A00269349/Rogue/GenericFriendly.cpp</label>
+        <link refid="_generic_friendly_8cpp"/>
+      </node>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/GenericFriendly.h</label>
+        <link refid="_generic_friendly_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>D:/University/ca-A00269349/Rogue/InventoryManager.cpp</label>
+        <link refid="_inventory_manager_8cpp"/>
+      </node>
+      <node id="13">
+        <label>D:/University/ca-A00269349/Rogue/InventoryManager.h</label>
+        <link refid="_inventory_manager_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>D:/University/ca-A00269349/Rogue/MapManager.cpp</label>
+        <link refid="_map_manager_8cpp"/>
+      </node>
+      <node id="3">
+        <label>D:/University/ca-A00269349/Rogue/MapManager.h</label>
+        <link refid="_map_manager_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>D:/University/ca-A00269349/Rogue/Player.cpp</label>
+        <link refid="_player_8cpp"/>
+      </node>
+      <node id="12">
+        <label>D:/University/ca-A00269349/Rogue/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>D:/University/ca-A00269349/Rogue/TitleScreenManager.cpp</label>
+        <link refid="_title_screen_manager_8cpp"/>
+      </node>
+      <node id="15">
+        <label>D:/University/ca-A00269349/Rogue/TitleScreenManager.h</label>
+        <link refid="_title_screen_manager_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>D:/University/ca-A00269349/Rogue/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_generic_friendly" prot="public">GenericFriendly</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_non_playable_character_8h" kindref="compound">NonPlayableCharacter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_map_manager_8h" kindref="compound">MapManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_map_manager" kindref="compound">MapManager</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_generic_friendly" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_generic_friendly" kindref="compound">GenericFriendly</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_non_playable_character" kindref="compound">NonPlayableCharacter</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_generic_friendly_1af024c04814e88cb748cd4c21aad5589d" kindref="member">GenericFriendly</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>postition);</highlight></codeline>
+<codeline lineno="12" refid="class_generic_friendly_1a1da9785ab879ae2c7ab351b6a446a01a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_generic_friendly_1a1da9785ab879ae2c7ab351b6a446a01a" kindref="member">messages_array</ref>[20]{};</highlight></codeline>
+<codeline lineno="13" refid="class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3" kindref="member">message</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_generic_friendly_1adb5700625348a3c03f4623c6b3f1519b" kindref="member">PrintMessage</ref>(<ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_generic_friendly_1a2e643ee12c7b86ac61f1d11439152b2b" kindref="member">GetMessage</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_generic_friendly_1a25b0d8bf58615b603725dfb44a7bd31f" kindref="member">SetNamesArray</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_generic_friendly_1a495283c40fe995eafc8209c32303b14d" kindref="member">SetPassive</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_generic_friendly_1abc234ce189ecbe2dd67798367a478ec6" kindref="member">SetMessages</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_generic_friendly_1aa34e4c712d03f91ea3069dd007d91366" kindref="member">SetRandomMessage</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="D:/University/ca-A00269349/Rogue/GenericFriendly.h"/>
+  </compounddef>
+</doxygen>

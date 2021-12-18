@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_combat_manager_8h" kind="file" language="C++">
+    <compoundname>CombatManager.h</compoundname>
+    <includes refid="_player_8h" local="yes">Player.h</includes>
+    <includes refid="_enemy_8h" local="yes">Enemy.h</includes>
+    <includedby refid="_combat_manager_8cpp" local="yes">D:/University/ca-A00269349/Rogue/CombatManager.cpp</includedby>
+    <includedby refid="_player_8h" local="yes">D:/University/ca-A00269349/Rogue/Player.h</includedby>
+    <includedby refid="main_8cpp" local="yes">D:/University/ca-A00269349/Rogue/main.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/CombatManager.h</label>
+        <link refid="_combat_manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ConsoleWindowManager.h</label>
+        <link refid="_console_window_manager_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>GenericFriendly.h</label>
+        <link refid="_generic_friendly_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>InventoryManager.h</label>
+        <link refid="_inventory_manager_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>MapManager.h</label>
+        <link refid="_map_manager_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>NonPlayableCharacter.h</label>
+        <link refid="_non_playable_character_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>UserInterfaceManger.h</label>
+        <link refid="_user_interface_manger_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>fstream</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+      <node id="7">
+        <label>windows.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/University/ca-A00269349/Rogue/CombatManager.cpp</label>
+        <link refid="_combat_manager_8cpp"/>
+      </node>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/CombatManager.h</label>
+        <link refid="_combat_manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>D:/University/ca-A00269349/Rogue/ConsoleRendering.cpp</label>
+        <link refid="_console_rendering_8cpp"/>
+      </node>
+      <node id="5">
+        <label>D:/University/ca-A00269349/Rogue/ConsoleRendering.h</label>
+        <link refid="_console_rendering_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>D:/University/ca-A00269349/Rogue/Debug.cpp</label>
+        <link refid="_debug_8cpp"/>
+      </node>
+      <node id="12">
+        <label>D:/University/ca-A00269349/Rogue/Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+      </node>
+      <node id="11">
+        <label>D:/University/ca-A00269349/Rogue/Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>D:/University/ca-A00269349/Rogue/GenericFriendly.cpp</label>
+        <link refid="_generic_friendly_8cpp"/>
+      </node>
+      <node id="13">
+        <label>D:/University/ca-A00269349/Rogue/GenericFriendly.h</label>
+        <link refid="_generic_friendly_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>D:/University/ca-A00269349/Rogue/InventoryManager.cpp</label>
+        <link refid="_inventory_manager_8cpp"/>
+      </node>
+      <node id="4">
+        <label>D:/University/ca-A00269349/Rogue/InventoryManager.h</label>
+        <link refid="_inventory_manager_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>D:/University/ca-A00269349/Rogue/MapManager.cpp</label>
+        <link refid="_map_manager_8cpp"/>
+      </node>
+      <node id="9">
+        <label>D:/University/ca-A00269349/Rogue/MapManager.h</label>
+        <link refid="_map_manager_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>D:/University/ca-A00269349/Rogue/Player.cpp</label>
+        <link refid="_player_8cpp"/>
+      </node>
+      <node id="3">
+        <label>D:/University/ca-A00269349/Rogue/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>D:/University/ca-A00269349/Rogue/TitleScreenManager.cpp</label>
+        <link refid="_title_screen_manager_8cpp"/>
+      </node>
+      <node id="17">
+        <label>D:/University/ca-A00269349/Rogue/TitleScreenManager.h</label>
+        <link refid="_title_screen_manager_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>D:/University/ca-A00269349/Rogue/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_combat_manager" prot="public">CombatManager</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_8h" kindref="compound">Player.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_enemy_8h" kindref="compound">Enemy.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_map_manager" kindref="compound">MapManager</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_player" kindref="compound">Player</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_enemy" kindref="compound">Enemy</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_combat_manager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_combat_manager" kindref="compound">CombatManager</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80" kindref="member">Fight</ref>(<ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p,<sp/><ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m,<sp/><ref refid="class_enemy" kindref="compound">Enemy</ref>&amp;<sp/>e);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14" refid="class_combat_manager_1a0f2db833cf98bb4a4ba946bf7ab11686" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1a0f2db833cf98bb4a4ba946bf7ab11686" kindref="member">sleep_timer</ref><sp/>=<sp/>5000;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fd" kindref="member">TURN</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18" refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11" kindref="member">PLAYER</ref>,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b" kindref="member">ENEMY</ref></highlight></codeline>
+<codeline lineno="20" refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019" kindref="member">RESULTS</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24" refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954" kindref="member">PLAYER_DEAD</ref>,</highlight></codeline>
+<codeline lineno="25" refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c" kindref="member">ENEMY_DEAD</ref>,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ad523a0fd56212f42ab45a2a3d5d87b0c" kindref="member">STILL_ALIVE</ref></highlight></codeline>
+<codeline lineno="27" refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ad523a0fd56212f42ab45a2a3d5d87b0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_combat_manager_1a3c0b56cc5d4af6dde4aa585ebfd74f3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fd" kindref="member">TURN</ref><sp/><ref refid="class_combat_manager_1a3c0b56cc5d4af6dde4aa585ebfd74f3e" kindref="member">_TURN</ref><sp/>=<sp/><ref refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b" kindref="member">ENEMY</ref>;</highlight></codeline>
+<codeline lineno="30" refid="class_combat_manager_1a33cdc2357ba9ee866a38dcec4a10845f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019" kindref="member">RESULTS</ref><sp/><ref refid="class_combat_manager_1a33cdc2357ba9ee866a38dcec4a10845f" kindref="member">_RESULTS</ref><sp/>=<sp/><ref refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ad523a0fd56212f42ab45a2a3d5d87b0c" kindref="member">STILL_ALIVE</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1aa470a607a6d3d76cef5d62c8f312d513" kindref="member">SetTurn</ref>(<ref refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fd" kindref="member">TURN</ref><sp/>desired_turn);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1a2f5d5d9a45933a6e234bc3154fd6f894" kindref="member">HitEnemy</ref>(<ref refid="class_enemy" kindref="compound">Enemy</ref>&amp;<sp/>e,<sp/><ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1aa3041a8bdc3eeddce47ef1eb0cd93899" kindref="member">HitPlayer</ref>(<ref refid="class_enemy" kindref="compound">Enemy</ref>&amp;<sp/>e,<sp/><ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" kindref="member">PrintStatements</ref>(<ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m,<sp/><ref refid="class_enemy" kindref="compound">Enemy</ref>&amp;<sp/>e,<sp/><ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>statements);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1aec72d4fe1af9857010fb793735c145db" kindref="member">UpdateResults</ref>(<ref refid="class_enemy" kindref="compound">Enemy</ref>&amp;<sp/>e,<sp/><ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1a72df0ea85034f84597c1760d9af631af" kindref="member">SleepTimer</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="D:/University/ca-A00269349/Rogue/CombatManager.h"/>
+  </compounddef>
+</doxygen>

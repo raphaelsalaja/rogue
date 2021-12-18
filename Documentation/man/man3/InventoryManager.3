@@ -1,0 +1,764 @@
+.TH "InventoryManager" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+InventoryManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <InventoryManager\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBITEM_TYPE\fP { \fBBLANK\fP = 0, \fBWEAPON\fP = 1, \fBARMOUR\fP = 2, \fBPOTION\fP = 3, \fBTRINKET\fP = 4 }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBInsertIntoInventoryManager\fP (\fBITEM_TYPE\fP item, char nextMove, \fBPlayer\fP &p, \fBUserInterfaceManager\fP &ui)"
+.br
+.ti -1c
+.RI "void \fBRemoveFromInventoryManager\fP (\fBITEM_TYPE\fP item, char nextMove, \fBPlayer\fP &p, \fBUserInterfaceManager\fP &ui)"
+.br
+.ti -1c
+.RI "void \fBInventoryStart\fP ()"
+.br
+.ti -1c
+.RI "void \fBInventoryControl\fP (char action, \fBConsoleRendering\fP &r, \fBInventoryManager\fP &i, \fBConsoleWindowManager\fP &c, \fBMapManager\fP &m, \fBUserInterfaceManager\fP &ui)"
+.br
+.ti -1c
+.RI "void \fBUsePotionSelected\fP (int potion, \fBPlayer\fP &p, \fBConsoleWindowManager\fP &c, \fBMapManager\fP &m, \fBInventoryManager\fP &i, \fBConsoleRendering\fP &r, \fBUserInterfaceManager\fP &ui)"
+.br
+.ti -1c
+.RI "void \fBDropItemSelected\fP (int type, \fBPlayer\fP &p, \fBConsoleWindowManager\fP &c, \fBMapManager\fP &m, \fBInventoryManager\fP &i, \fBConsoleRendering\fP &r, \fBUserInterfaceManager\fP &ui)"
+.br
+.ti -1c
+.RI "void \fBInventoryInput\fP (\fBConsoleWindowManager\fP &c, \fBMapManager\fP &m, \fBInventoryManager\fP &i, \fBConsoleRendering\fP &r, \fBUserInterfaceManager\fP &ui)"
+.br
+.ti -1c
+.RI "void \fBUpdateInventory\fP (\fBInventoryManager\fP &i, \fBUserInterfaceManager\fP &ui)"
+.br
+.ti -1c
+.RI "int \fBGetInventoryHeadingLocation\fP (string s, \fBUserInterfaceManager\fP &ui)"
+.br
+.ti -1c
+.RI "string \fBCurrentInventoryIndex\fP (\fBInventoryManager\fP &i)"
+.br
+.ti -1c
+.RI "string \fBAddSpaceAndEnding\fP (string input, \fBUserInterfaceManager\fP &ui)"
+.br
+.ti -1c
+.RI "\fBITEM_TYPE\fP \fBWhatIsItem\fP (char letter)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "vector< string > \fBpotion_inventory\fP"
+.br
+.ti -1c
+.RI "char \fBc_health\fP = 'h'"
+.br
+.ti -1c
+.RI "char \fBc_shield\fP = 's'"
+.br
+.ti -1c
+.RI "char \fBc_health_potion\fP = 'H'"
+.br
+.ti -1c
+.RI "char \fBc_shield_potion\fP = 'S'"
+.br
+.ti -1c
+.RI "char \fBc_magic_potion\fP = 'M'"
+.br
+.ti -1c
+.RI "unsigned int \fBinventory_index\fP = 1"
+.br
+.ti -1c
+.RI "bool \fBinventory_open\fP = false"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fButilities\fP [3][2]"
+.br
+.ti -1c
+.RI "string \fBweaponsAndArmour\fP [3][2]"
+.br
+.ti -1c
+.RI "string \fBtrinkets\fP [2][2]"
+.br
+.ti -1c
+.RI "char \fBpotion_chars\fP [3]"
+.br
+.ti -1c
+.RI "char \fBweapon_chars\fP [3]"
+.br
+.ti -1c
+.RI "bool \fBhighlight\fP = false"
+.br
+.ti -1c
+.RI "bool \fBon_title_screen\fP = true"
+.br
+.ti -1c
+.RI "vector< string > \fBweapon_inventory\fP"
+.br
+.ti -1c
+.RI "vector< string > \fBarmour_inventory\fP"
+.br
+.ti -1c
+.RI "vector< string > \fBtrinket_inventory\fP"
+.br
+.ti -1c
+.RI "vector< string > \fButility_inventory\fP"
+.br
+.ti -1c
+.RI "string \fBitem_picked_up\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB17\fP of file \fBInventoryManager\&.h\fP\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBInventoryManager::ITEM_TYPE\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIBLANK \fP\fP
+.TP
+\fB\fIWEAPON \fP\fP
+.TP
+\fB\fIARMOUR \fP\fP
+.TP
+\fB\fIPOTION \fP\fP
+.TP
+\fB\fITRINKET \fP\fP
+.PP
+Definition at line \fB20\fP of file \fBInventoryManager\&.h\fP\&.
+.PP
+.nf
+21     {
+22         BLANK = 0,
+23         WEAPON = 1,
+24         ARMOUR = 2,
+25         POTION = 3,
+26         TRINKET = 4
+27     };
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "string InventoryManager::AddSpaceAndEnding (string input, \fBUserInterfaceManager\fP & ui)"
+
+.PP
+Definition at line \fB191\fP of file \fBInventoryManager\&.cpp\fP\&.
+.PP
+.nf
+192 {
+193     int inventory_length = ui\&.inventory\&.at(1)\&.length();
+194     int input_length = input\&.length();
+195     int length_to_add = inventory_length - input_length;
+196 
+197     for (int i = 0; i < length_to_add; i++)
+198     {
+199         input\&.push_back(' ');
+200     }
+201     char x = '\xBA';
+202     input\&.at(inventory_length - 1) = x;
+203     return input;
+204 }
+.fi
+.SS "string InventoryManager::CurrentInventoryIndex (\fBInventoryManager\fP & i)"
+
+.PP
+Definition at line \fB380\fP of file \fBInventoryManager\&.cpp\fP\&.
+.PP
+.nf
+381 {
+382     // RETURNS THE CURRENTLY SELECTED INVENTORY INDEX
+383     string output;
+384     switch (i\&.inventory_index)
+385     {
+386     case 1: output = "CURRENT SELECTION IS THE HEALTH POTION";
+387         break;
+388     case 2: output = "CURRENT SELECTION IS THE SHIELD POTION";
+389         break;
+390     case 3: output = "CURRENT SELECTION IS THE MAGIC POTION";
+391         break;
+392     }
+393     return output;
+394 }
+.fi
+.SS "void InventoryManager::DropItemSelected (int type, \fBPlayer\fP & p, \fBConsoleWindowManager\fP & c, \fBMapManager\fP & m, \fBInventoryManager\fP & i, \fBConsoleRendering\fP & r, \fBUserInterfaceManager\fP & ui)"
+
+.PP
+Definition at line \fB85\fP of file \fBInventoryManager\&.cpp\fP\&.
+.PP
+.nf
+86 {
+87     int x = p\&.player_position_x + 1;
+88     int y = p\&.player_position_y;
+89     type = inventory_index;
+90     switch (type)
+91     {
+92     case 1: if (p\&.health_potions > 0)
+93         {
+94             if (m\&.IsEmpty(x, y))
+95             {
+96                 m\&.new_map[y * m\&.width + x] = c_health_potion;
+97             }
+98             else
+99             {
+100                 m\&.new_map[y * m\&.width + x] = c_health_potion;
+101             }
+102             p\&.health_potions--;
+103             i\&.RemoveFromInventoryManager(POTION, c_health_potion, p, ui);
+104         }
+105         break;
+106     case 2: if (p\&.shield_potions > 0)
+107         {
+108             if (m\&.IsEmpty(x, y))
+109             {
+110                 m\&.new_map[y * m\&.width + x] = c_shield_potion;
+111             }
+112             else
+113             {
+114                 m\&.new_map[y * m\&.width + x] = c_shield_potion;
+115             }
+116             p\&.shield_potions--;
+117             i\&.RemoveFromInventoryManager(POTION, c_shield_potion, p, ui);
+118         }
+119         break;
+120     case 3: if (p\&.magic_potions > 0)
+121         {
+122             if (m\&.IsEmpty(x, y))
+123             {
+124                 m\&.new_map[y * m\&.width + x] = c_magic_potion;
+125             }
+126             else
+127             {
+128                 m\&.new_map[y * m\&.width + x] = c_magic_potion;
+129             }
+130             p\&.magic_potions--;
+131             i\&.RemoveFromInventoryManager(POTION, c_magic_potion, p, ui);
+132         }
+133         break;
+134     default: break;
+135     }
+136     c\&.BlankScreen();
+137     UpdateInventory(i, ui);
+138     r\&.Render_Inventory(c, m, i, ui);
+139 }
+.fi
+.SS "int InventoryManager::GetInventoryHeadingLocation (string s, \fBUserInterfaceManager\fP & ui)"
+
+.PP
+Definition at line \fB179\fP of file \fBInventoryManager\&.cpp\fP\&.
+.PP
+.nf
+180 {
+181     for (size_t i = 0; i < ui\&.inventory\&.size(); i++)
+182     {
+183         string s = ui\&.inventory\&.at(i);
+184         if ((strstr(s\&.c_str(), s\&.c_str())))
+185         {
+186             return i;
+187         }
+188     }
+189 }
+.fi
+.SS "bool InventoryManager::InsertIntoInventoryManager (\fBITEM_TYPE\fP item, char nextMove, \fBPlayer\fP & p, \fBUserInterfaceManager\fP & ui)"
+
+.PP
+Definition at line \fB206\fP of file \fBInventoryManager\&.cpp\fP\&.
+.PP
+.nf
+207 {
+208     switch (item)
+209     {
+210     case WEAPON: break;
+211     case POTION: if (nextMove == c_health_potion)
+212         {
+213             if (potion_inventory\&.size() != 0)
+214             {
+215                 for (size_t i = 0; i < potion_inventory\&.size(); i++)
+216                 {
+217                     string s = potion_inventory\&.at(i);
+218                     if (strstr(s\&.c_str(), "HEALTH"))
+219                     {
+220                         for (size_t i = 0; i < ui\&.inventory\&.size(); i++)
+221                         {
+222                             string s = ui\&.inventory\&.at(i);
+223                             if (strstr(s\&.c_str(), "HEALTH"))
+224                             {
+225                                 ui\&.inventory\&.at(i) = "| HEALTH " + to_string(p\&.health_potions);
+226                                 ui\&.inventory\&.at(i) = AddSpaceAndEnding(ui\&.inventory\&.at(i), ui);
+227                                 return true;
+228                             }
+229                         }
+230                     }
+231                 }
+232             }
+233             potion_inventory\&.push_back("|  HEALTH 1");
+234             return false;
+235         }
+236         if (nextMove == c_shield_potion)
+237         {
+238             if (potion_inventory\&.size() != 0)
+239             {
+240                 for (size_t i = 0; i < potion_inventory\&.size(); i++)
+241                 {
+242                     string s = potion_inventory\&.at(i);
+243                     if (strstr(s\&.c_str(), "SHIELD"))
+244                     {
+245                         for (size_t i = 0; i < ui\&.inventory\&.size(); i++)
+246                         {
+247                             string s = ui\&.inventory\&.at(i);
+248                             if (strstr(s\&.c_str(), "SHIELD"))
+249                             {
+250                                 ui\&.inventory\&.at(i) = "| SHIELD " + to_string(p\&.shield_potions);
+251                                 ui\&.inventory\&.at(i) = AddSpaceAndEnding(ui\&.inventory\&.at(i), ui);
+252 
+253                                 return true;
+254                             }
+255                         }
+256                     }
+257                 }
+258             }
+259             potion_inventory\&.push_back("|  SHIELD 1");
+260             return false;
+261         }
+262         if (nextMove == c_magic_potion)
+263         {
+264             if (potion_inventory\&.size() != 0)
+265             {
+266                 for (size_t i = 0; i < potion_inventory\&.size(); i++)
+267                 {
+268                     string s = potion_inventory\&.at(i);
+269                     if (strstr(s\&.c_str(), "MAGIC"))
+270                     {
+271                         for (size_t i = 0; i < ui\&.inventory\&.size(); i++)
+272                         {
+273                             string s = ui\&.inventory\&.at(i);
+274                             if (strstr(s\&.c_str(), "MAGIC"))
+275                             {
+276                                 ui\&.inventory\&.at(i) = "| MAGIC " + to_string(p\&.magic_potions);
+277                                 ui\&.inventory\&.at(i) = AddSpaceAndEnding(ui\&.inventory\&.at(i), ui);
+278 
+279                                 return true;
+280                             }
+281                         }
+282                     }
+283                 }
+284             }
+285             potion_inventory\&.push_back("|  MAGIC 1");
+286             return false;
+287         }
+288         break;
+289     case BLANK: break;
+290     }
+291 }
+.fi
+.SS "void InventoryManager::InventoryControl (char action, \fBConsoleRendering\fP & r, \fBInventoryManager\fP & i, \fBConsoleWindowManager\fP & c, \fBMapManager\fP & m, \fBUserInterfaceManager\fP & ui)"
+
+.PP
+Definition at line \fB14\fP of file \fBInventoryManager\&.cpp\fP\&.
+.PP
+.nf
+15 {
+16     cout << endl;
+17     int inventory_temp = inventory_index;
+18     switch (action)
+19     {
+20     case 'o': inventory_open = true;
+21         break;
+22 
+23     case 'c': inventory_open = false;
+24         break;
+25 
+26     case 'n': inventory_temp++;
+27         if (inventory_temp > 3)
+28         {
+29             inventory_index = 1;
+30         }
+31         else
+32         {
+33             inventory_index = inventory_index + 1;
+34         }
+35 
+36         break;
+37 
+38     case 'b': inventory_temp--;
+39         if (inventory_temp < 1)
+40         {
+41             inventory_index = 3;
+42         }
+43         else
+44         {
+45             inventory_index--;
+46         }
+47         r\&.Render_Inventory(c, m, i, ui);
+48         break;
+49     }
+50 }
+.fi
+.SS "void InventoryManager::InventoryInput (\fBConsoleWindowManager\fP & c, \fBMapManager\fP & m, \fBInventoryManager\fP & i, \fBConsoleRendering\fP & r, \fBUserInterfaceManager\fP & ui)"
+
+.PP
+Definition at line \fB141\fP of file \fBInventoryManager\&.cpp\fP\&.
+.PP
+.nf
+142 {
+143     if (GetKeyState('T') & 0x8000)
+144     {
+145         if (inventory_open == false)
+146         {
+147             inventory_open = true;
+148             r\&.Render_Inventory(c, m, i, ui);
+149             Sleep(60);
+150         }
+151         else
+152         {
+153             inventory_open = false;
+154             r\&.Render_Inventory(c, m, i, ui);
+155             Sleep(60);
+156         }
+157     }
+158 }
+.fi
+.SS "void InventoryManager::InventoryStart ()"
+
+.PP
+Definition at line \fB6\fP of file \fBInventoryManager\&.cpp\fP\&.
+.PP
+.nf
+7 {
+8     for (int i = 0; i < 3; i++)
+9     {
+10         //inventory\&.push_back(i);
+11     }
+12 }
+.fi
+.SS "void InventoryManager::RemoveFromInventoryManager (\fBITEM_TYPE\fP item, char nextMove, \fBPlayer\fP & p, \fBUserInterfaceManager\fP & ui)"
+
+.PP
+Definition at line \fB293\fP of file \fBInventoryManager\&.cpp\fP\&.
+.PP
+.nf
+294 {
+295     switch (item)
+296     {
+297     case WEAPON: break;
+298     case POTION: if (nextMove == c_health_potion)
+299         {
+300             if (potion_inventory\&.size() != 0)
+301             {
+302                 for (size_t i = 0; i < potion_inventory\&.size(); i++)
+303                 {
+304                     string s = potion_inventory\&.at(i);
+305                     if (strstr(s\&.c_str(), "HEALTH"))
+306                     {
+307                         for (size_t i = 0; i < ui\&.inventory\&.size(); i++)
+308                         {
+309                             string s = ui\&.inventory\&.at(i);
+310                             if (strstr(s\&.c_str(), "HEALTH"))
+311                             {
+312                                 ui\&.inventory\&.at(i) = "| HEALTH " + to_string(p\&.health_potions);
+313                                 ui\&.inventory\&.at(i) = AddSpaceAndEnding(ui\&.inventory\&.at(i), ui);
+314                             }
+315                         }
+316                     }
+317                 }
+318             }
+319             potion_inventory\&.push_back("|  HEALTH 1");
+320         }
+321         if (nextMove == c_shield_potion)
+322         {
+323             if (potion_inventory\&.size() != 0)
+324             {
+325                 for (size_t i = 0; i < potion_inventory\&.size(); i++)
+326                 {
+327                     string s = potion_inventory\&.at(i);
+328                     if (strstr(s\&.c_str(), "SHIELD"))
+329                     {
+330                         for (size_t i = 0; i < ui\&.inventory\&.size(); i++)
+331                         {
+332                             string s = ui\&.inventory\&.at(i);
+333                             if (strstr(s\&.c_str(), "SHIELD"))
+334                             {
+335                                 ui\&.inventory\&.at(i) = "| SHIELD " + to_string(p\&.shield_potions);
+336                                 ui\&.inventory\&.at(i) = AddSpaceAndEnding(ui\&.inventory\&.at(i), ui);
+337                             }
+338                         }
+339                     }
+340                 }
+341             }
+342             potion_inventory\&.push_back("|  SHIELD 1");
+343         }
+344         if (nextMove == c_magic_potion)
+345         {
+346             if (potion_inventory\&.size() != 0)
+347             {
+348                 for (size_t i = 0; i < potion_inventory\&.size(); i++)
+349                 {
+350                     string s = potion_inventory\&.at(i);
+351                     if (strstr(s\&.c_str(), "MAGIC"))
+352                     {
+353                         for (size_t i = 0; i < ui\&.inventory\&.size(); i++)
+354                         {
+355                             string s = ui\&.inventory\&.at(i);
+356                             if (strstr(s\&.c_str(), "MAGIC"))
+357                             {
+358                                 ui\&.inventory\&.at(i) = "| MAGIC " + to_string(p\&.shield_potions);
+359                                 ui\&.inventory\&.at(i) = AddSpaceAndEnding(ui\&.inventory\&.at(i), ui);
+360                             }
+361                         }
+362                     }
+363                 }
+364             }
+365             potion_inventory\&.push_back("|  MAGIC 1");
+366         }
+367         break;
+368     case BLANK: break;
+369     }
+370 }
+.fi
+.SS "void InventoryManager::UpdateInventory (\fBInventoryManager\fP & i, \fBUserInterfaceManager\fP & ui)"
+
+.PP
+Definition at line \fB372\fP of file \fBInventoryManager\&.cpp\fP\&.
+.PP
+.nf
+373 {
+374     string selection = i\&.CurrentInventoryIndex(i);
+375     string selection_print = "|  " + selection;
+376     selection_print = AddSpaceAndEnding(selection_print, ui);
+377     ui\&.inventory\&.at(ui\&.inventory\&.size() - 2) = selection_print;
+378 }
+.fi
+.SS "void InventoryManager::UsePotionSelected (int potion, \fBPlayer\fP & p, \fBConsoleWindowManager\fP & c, \fBMapManager\fP & m, \fBInventoryManager\fP & i, \fBConsoleRendering\fP & r, \fBUserInterfaceManager\fP & ui)"
+
+.PP
+Definition at line \fB52\fP of file \fBInventoryManager\&.cpp\fP\&.
+.PP
+.nf
+53 {
+54     potion = inventory_index;
+55     switch (potion)
+56     {
+57     case 1: if (p\&.health_potions != 0 && p\&.health != p\&.max_stats)
+58         {
+59             p\&.health++;
+60             p\&.health_potions--;
+61             i\&.RemoveFromInventoryManager(POTION, c_health_potion, p, ui);
+62         }
+63         break;
+64     case 2: if (p\&.shield_potions != 0 && p\&.shield != p\&.max_stats)
+65         {
+66             p\&.shield++;
+67             p\&.shield_potions--;
+68             i\&.RemoveFromInventoryManager(POTION, c_shield_potion, p, ui);
+69         }
+70         break;
+71     case 3: if (p\&.magic_potions != 0 && p\&.magic != p\&.max_stats)
+72         {
+73             p\&.magic++;
+74             p\&.magic_potions--;
+75             i\&.RemoveFromInventoryManager(POTION, c_magic_potion, p, ui);
+76         }
+77         break;
+78     }
+79     c\&.BlankScreen();
+80 
+81     UpdateInventory(i, ui);
+82     r\&.Render_Inventory(c, m, i, ui);
+83 }
+.fi
+.SS "\fBInventoryManager::ITEM_TYPE\fP InventoryManager::WhatIsItem (char letter)"
+
+.PP
+Definition at line \fB160\fP of file \fBInventoryManager\&.cpp\fP\&.
+.PP
+.nf
+161 {
+162     for (size_t i = 0; i < sizeof(potion_chars); i++)
+163     {
+164         if (letter == weapon_chars[i])
+165         {
+166             return WEAPON;
+167         }
+168     }
+169     for (size_t i = 0; i < sizeof(potion_chars); i++)
+170     {
+171         if (letter == potion_chars[i])
+172         {
+173             return POTION;
+174         }
+175     }
+176     return BLANK;
+177 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "vector<string> InventoryManager::armour_inventory\fC [private]\fP"
+
+.PP
+Definition at line \fB111\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "char InventoryManager::c_health = 'h'"
+
+.PP
+Definition at line \fB34\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "char InventoryManager::c_health_potion = 'H'"
+
+.PP
+Definition at line \fB36\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "char InventoryManager::c_magic_potion = 'M'"
+
+.PP
+Definition at line \fB38\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "char InventoryManager::c_shield = 's'"
+
+.PP
+Definition at line \fB35\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "char InventoryManager::c_shield_potion = 'S'"
+
+.PP
+Definition at line \fB37\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "bool InventoryManager::highlight = false\fC [private]\fP"
+
+.PP
+Definition at line \fB108\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "unsigned int InventoryManager::inventory_index = 1"
+
+.PP
+Definition at line \fB40\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "bool InventoryManager::inventory_open = false"
+
+.PP
+Definition at line \fB42\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "string InventoryManager::item_picked_up\fC [private]\fP"
+
+.PP
+Definition at line \fB115\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "bool InventoryManager::on_title_screen = true\fC [private]\fP"
+
+.PP
+Definition at line \fB109\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "char InventoryManager::potion_chars[3]\fC [private]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+= {
+        'H',
+        'S',
+        'M'
+    }
+.fi
+.PP
+Definition at line \fB97\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "vector<string> InventoryManager::potion_inventory"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        "HEALTH",
+        "SHIELD",
+        "MAGIC"
+    }
+.fi
+.PP
+Definition at line \fB29\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "vector<string> InventoryManager::trinket_inventory\fC [private]\fP"
+
+.PP
+Definition at line \fB112\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "string InventoryManager::trinkets[2][2]\fC [private]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+= {
+        {
+            "GLOWING PENCHANT"
+        },
+        {
+            "ENCHANTED PENCHANT"
+        }
+    }
+.fi
+.PP
+Definition at line \fB88\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "string InventoryManager::utilities[3][2]\fC [private]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+= {
+        {
+            "HEALTH",
+            "POTION"
+        },
+        {
+            "MAGIC",
+            "POTION"
+        },
+        {
+            "SHIELD",
+            "POTION"
+        }
+    }
+.fi
+.PP
+Definition at line \fB60\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "vector<string> InventoryManager::utility_inventory\fC [private]\fP"
+
+.PP
+Definition at line \fB113\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "char InventoryManager::weapon_chars[3]\fC [private]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+= {
+        '/',
+        'O',
+        'Q'
+    }
+.fi
+.PP
+Definition at line \fB102\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "vector<string> InventoryManager::weapon_inventory\fC [private]\fP"
+
+.PP
+Definition at line \fB110\fP of file \fBInventoryManager\&.h\fP\&.
+.SS "string InventoryManager::weaponsAndArmour[3][2]\fC [private]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+= {
+        {
+            "DULL SWORD",
+            "ONE"
+        },
+        {
+            "DULL BRACERS",
+            "ONE"
+        },
+        {
+            "DULL HELMET",
+            "ONE"
+        }
+    }
+.fi
+.PP
+Definition at line \fB74\fP of file \fBInventoryManager\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

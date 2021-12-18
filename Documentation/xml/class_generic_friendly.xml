@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_generic_friendly" kind="class" language="C++" prot="public">
+    <compoundname>GenericFriendly</compoundname>
+    <basecompoundref refid="class_non_playable_character" prot="public" virt="non-virtual">NonPlayableCharacter</basecompoundref>
+    <includes refid="_generic_friendly_8h" local="no">GenericFriendly.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_generic_friendly_1a1da9785ab879ae2c7ab351b6a446a01a" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GenericFriendly::messages_array[20]</definition>
+        <argsstring>[20]</argsstring>
+        <name>messages_array</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/GenericFriendly.h" line="12" column="8" bodyfile="D:/University/ca-A00269349/Rogue/GenericFriendly.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_generic_friendly_1abc234ce189ecbe2dd67798367a478ec6" compoundref="_generic_friendly_8cpp" startline="30" endline="46">SetMessages</referencedby>
+        <referencedby refid="class_generic_friendly_1aa34e4c712d03f91ea3069dd007d91366" compoundref="_generic_friendly_8cpp" startline="64" endline="67">SetRandomMessage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GenericFriendly::message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/GenericFriendly.h" line="13" column="8" bodyfile="D:/University/ca-A00269349/Rogue/GenericFriendly.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_generic_friendly_1a2e643ee12c7b86ac61f1d11439152b2b" compoundref="_generic_friendly_8cpp" startline="7" endline="10">GetMessage</referencedby>
+        <referencedby refid="class_generic_friendly_1adb5700625348a3c03f4623c6b3f1519b" compoundref="_generic_friendly_8cpp" startline="69" endline="77">PrintMessage</referencedby>
+        <referencedby refid="class_generic_friendly_1aa34e4c712d03f91ea3069dd007d91366" compoundref="_generic_friendly_8cpp" startline="64" endline="67">SetRandomMessage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_generic_friendly_1af024c04814e88cb748cd4c21aad5589d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GenericFriendly::GenericFriendly</definition>
+        <argsstring>(int postition)</argsstring>
+        <name>GenericFriendly</name>
+        <param>
+          <type>int</type>
+          <declname>postition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/GenericFriendly.h" line="11" column="1" bodyfile="D:/University/ca-A00269349/Rogue/GenericFriendly.cpp" bodystart="53" bodyend="62"/>
+        <references refid="class_generic_friendly_1abc234ce189ecbe2dd67798367a478ec6" compoundref="_generic_friendly_8cpp" startline="30" endline="46">SetMessages</references>
+        <references refid="class_generic_friendly_1a25b0d8bf58615b603725dfb44a7bd31f" compoundref="_generic_friendly_8cpp" startline="12" endline="28">SetNamesArray</references>
+        <references refid="class_generic_friendly_1a495283c40fe995eafc8209c32303b14d" compoundref="_generic_friendly_8cpp" startline="48" endline="51">SetPassive</references>
+        <references refid="class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e" compoundref="_non_playable_character_8cpp" startline="72" endline="76">NonPlayableCharacter::SetPosition</references>
+        <references refid="class_generic_friendly_1aa34e4c712d03f91ea3069dd007d91366" compoundref="_generic_friendly_8cpp" startline="64" endline="67">SetRandomMessage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_friendly_1adb5700625348a3c03f4623c6b3f1519b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GenericFriendly::PrintMessage</definition>
+        <argsstring>(MapManager &amp;m)</argsstring>
+        <name>PrintMessage</name>
+        <param>
+          <type><ref refid="class_map_manager" kindref="compound">MapManager</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/GenericFriendly.h" line="14" column="6" bodyfile="D:/University/ca-A00269349/Rogue/GenericFriendly.cpp" bodystart="69" bodyend="77"/>
+        <references refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" compoundref="_macro_8cpp" startline="7" endline="13">Macro::GoToScreenPosition</references>
+        <references refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" compoundref="_map_manager_8h" startline="19">MapManager::height</references>
+        <references refid="class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3" compoundref="_generic_friendly_8h" startline="13">message</references>
+        <referencedby refid="class_player_1af437a788282ad5c25d54a10de8199d11" compoundref="_player_8cpp" startline="141" endline="167">Player::EnterMessageMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_friendly_1a2e643ee12c7b86ac61f1d11439152b2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string GenericFriendly::GetMessage</definition>
+        <argsstring>()</argsstring>
+        <name>GetMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/GenericFriendly.h" line="16" column="8" bodyfile="D:/University/ca-A00269349/Rogue/GenericFriendly.cpp" bodystart="7" bodyend="10"/>
+        <references refid="class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3" compoundref="_generic_friendly_8h" startline="13">message</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_generic_friendly_1a25b0d8bf58615b603725dfb44a7bd31f" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GenericFriendly::SetNamesArray</definition>
+        <argsstring>() override</argsstring>
+        <name>SetNamesArray</name>
+        <reimplements refid="class_non_playable_character_1af4fe8de9174af90d1a0088373d0e35c0">SetNamesArray</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/GenericFriendly.h" line="18" column="6" bodyfile="D:/University/ca-A00269349/Rogue/GenericFriendly.cpp" bodystart="12" bodyend="28"/>
+        <references refid="class_non_playable_character_1a7e5848d6face873445553e3731da84be" compoundref="_non_playable_character_8h" startline="33">NonPlayableCharacter::name_array</references>
+        <referencedby refid="class_generic_friendly_1af024c04814e88cb748cd4c21aad5589d" compoundref="_generic_friendly_8cpp" startline="53" endline="62">GenericFriendly</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_friendly_1a495283c40fe995eafc8209c32303b14d" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GenericFriendly::SetPassive</definition>
+        <argsstring>() override</argsstring>
+        <name>SetPassive</name>
+        <reimplements refid="class_non_playable_character_1a355f7bc2a43563faec957553fa4fd1e7">SetPassive</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/GenericFriendly.h" line="19" column="6" bodyfile="D:/University/ca-A00269349/Rogue/GenericFriendly.cpp" bodystart="48" bodyend="51"/>
+        <references refid="class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000" compoundref="_non_playable_character_8h" startline="31">NonPlayableCharacter::passive</references>
+        <referencedby refid="class_generic_friendly_1af024c04814e88cb748cd4c21aad5589d" compoundref="_generic_friendly_8cpp" startline="53" endline="62">GenericFriendly</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_friendly_1abc234ce189ecbe2dd67798367a478ec6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GenericFriendly::SetMessages</definition>
+        <argsstring>()</argsstring>
+        <name>SetMessages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/GenericFriendly.h" line="20" column="6" bodyfile="D:/University/ca-A00269349/Rogue/GenericFriendly.cpp" bodystart="30" bodyend="46"/>
+        <references refid="class_generic_friendly_1a1da9785ab879ae2c7ab351b6a446a01a" compoundref="_generic_friendly_8h" startline="12">messages_array</references>
+        <referencedby refid="class_generic_friendly_1af024c04814e88cb748cd4c21aad5589d" compoundref="_generic_friendly_8cpp" startline="53" endline="62">GenericFriendly</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_friendly_1aa34e4c712d03f91ea3069dd007d91366" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GenericFriendly::SetRandomMessage</definition>
+        <argsstring>()</argsstring>
+        <name>SetRandomMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/GenericFriendly.h" line="21" column="6" bodyfile="D:/University/ca-A00269349/Rogue/GenericFriendly.cpp" bodystart="64" bodyend="67"/>
+        <references refid="namespace_macro_1a7192f07d19f55d7f8b863932a5078eab" compoundref="_macro_8cpp" startline="54" endline="58">Macro::GenerateRandomNumber</references>
+        <references refid="class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3" compoundref="_generic_friendly_8h" startline="13">message</references>
+        <references refid="class_generic_friendly_1a1da9785ab879ae2c7ab351b6a446a01a" compoundref="_generic_friendly_8h" startline="12">messages_array</references>
+        <referencedby refid="class_generic_friendly_1af024c04814e88cb748cd4c21aad5589d" compoundref="_generic_friendly_8cpp" startline="53" endline="62">GenericFriendly</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GenericFriendly</label>
+        <link refid="class_generic_friendly"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NonPlayableCharacter</label>
+        <link refid="class_non_playable_character"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>GenericFriendly</label>
+        <link refid="class_generic_friendly"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NonPlayableCharacter</label>
+        <link refid="class_non_playable_character"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/University/ca-A00269349/Rogue/GenericFriendly.h" line="8" column="1" bodyfile="D:/University/ca-A00269349/Rogue/GenericFriendly.h" bodystart="9" bodyend="22"/>
+    <listofallmembers>
+      <member refid="class_non_playable_character_1af6835f00acbdc12a7a9f920ef6801e0d" prot="private" virt="non-virtual"><scope>GenericFriendly</scope><name>attack_speed</name></member>
+      <member refid="class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>CreateNonPlayableCharacter</name></member>
+      <member refid="class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b" prot="private" virt="non-virtual"><scope>GenericFriendly</scope><name>ENEMY</name></member>
+      <member refid="class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9" prot="private" virt="non-virtual"><scope>GenericFriendly</scope><name>GENERIC_FRIENDLY</name></member>
+      <member refid="class_generic_friendly_1af024c04814e88cb748cd4c21aad5589d" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>GenericFriendly</name></member>
+      <member refid="class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>GetDamage</name></member>
+      <member refid="class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>GetHealth</name></member>
+      <member refid="class_generic_friendly_1a2e643ee12c7b86ac61f1d11439152b2b" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>GetMessage</name></member>
+      <member refid="class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>GetName</name></member>
+      <member refid="class_non_playable_character_1aad1bbaeea7152ff52113b318be9afc0d" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>GetX</name></member>
+      <member refid="class_non_playable_character_1a70b9980da4a02e7848c7561e498e8db9" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>GetY</name></member>
+      <member refid="class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa" prot="private" virt="non-virtual"><scope>GenericFriendly</scope><name>health</name></member>
+      <member refid="class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>message</name></member>
+      <member refid="class_generic_friendly_1a1da9785ab879ae2c7ab351b6a446a01a" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>messages_array</name></member>
+      <member refid="class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>name</name></member>
+      <member refid="class_non_playable_character_1a7e5848d6face873445553e3731da84be" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>name_array</name></member>
+      <member refid="class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>NonPlayableCharacter</name></member>
+      <member refid="class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89d" prot="private" virt="non-virtual"><scope>GenericFriendly</scope><name>NPC_TYPE</name></member>
+      <member refid="class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627" prot="private" virt="non-virtual"><scope>GenericFriendly</scope><name>npc_x</name></member>
+      <member refid="class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7" prot="private" virt="non-virtual"><scope>GenericFriendly</scope><name>npc_y</name></member>
+      <member refid="class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>passive</name></member>
+      <member refid="class_generic_friendly_1adb5700625348a3c03f4623c6b3f1519b" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>PrintMessage</name></member>
+      <member refid="class_non_playable_character_1aa18f226b35b28bd1ad318642a758abe2" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>SetDesiredHealth</name></member>
+      <member refid="class_non_playable_character_1a017d601103d2bc66a6338073a051cab7" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>SetHealth</name></member>
+      <member refid="class_generic_friendly_1abc234ce189ecbe2dd67798367a478ec6" prot="private" virt="non-virtual"><scope>GenericFriendly</scope><name>SetMessages</name></member>
+      <member refid="class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>SetName</name></member>
+      <member refid="class_generic_friendly_1a25b0d8bf58615b603725dfb44a7bd31f" prot="private" virt="virtual"><scope>GenericFriendly</scope><name>SetNamesArray</name></member>
+      <member refid="class_generic_friendly_1a495283c40fe995eafc8209c32303b14d" prot="private" virt="virtual"><scope>GenericFriendly</scope><name>SetPassive</name></member>
+      <member refid="class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>SetPosition</name></member>
+      <member refid="class_generic_friendly_1aa34e4c712d03f91ea3069dd007d91366" prot="private" virt="non-virtual"><scope>GenericFriendly</scope><name>SetRandomMessage</name></member>
+      <member refid="class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>SetSpeed</name></member>
+      <member refid="class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>SetStrength</name></member>
+      <member refid="class_non_playable_character_1ada48fd505bbf5797c39f0b20aa995bbc" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>SetSymbol</name></member>
+      <member refid="class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>strength</name></member>
+      <member refid="class_non_playable_character_1ab6703683eeb7deb2ac146dfcfced761f" prot="private" virt="non-virtual"><scope>GenericFriendly</scope><name>symbol</name></member>
+      <member refid="class_non_playable_character_1a1d4530eecfb04414d3980c22aa020b30" prot="public" virt="non-virtual"><scope>GenericFriendly</scope><name>~NonPlayableCharacter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

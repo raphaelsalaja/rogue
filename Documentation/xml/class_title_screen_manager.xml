@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_title_screen_manager" kind="class" language="C++" prot="public">
+    <compoundname>TitleScreenManager</compoundname>
+    <includes refid="_title_screen_manager_8h" local="no">TitleScreenManager.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_title_screen_manager_1a1513c7492bb1309c3e5d85cb66fbda4e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TitleScreenManager::on_title_screen</definition>
+        <argsstring></argsstring>
+        <name>on_title_screen</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" line="9" column="6" bodyfile="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_title_screen_manager_1a57d95e3e84ac914f5051d934daa95279" compoundref="_title_screen_manager_8cpp" startline="15" endline="25">WaitForInput</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_title_screen_manager_1a86d9cebd8f78508088eef8cf774288bc" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* TitleScreenManager::title_map</definition>
+        <argsstring></argsstring>
+        <name>title_map</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" line="11" column="6" bodyfile="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_title_screen_manager_1adf50a2b60b08f7bbcef8f76030c9c734" compoundref="_title_screen_manager_8cpp" startline="27" endline="36">LoadTitle</referencedby>
+        <referencedby refid="class_title_screen_manager_1aa49b8813b2ea79d1bd4fdaaa741776f1" compoundref="_title_screen_manager_8cpp" startline="63" endline="79">PrintTitle</referencedby>
+        <referencedby refid="class_title_screen_manager_1afe6669aa18831e8efed3b0d9c744b973" compoundref="_title_screen_manager_8cpp" startline="38" endline="61">ReadTitle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_title_screen_manager_1a3aaf2df6f1e273b4af3fdc43d50ad558" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string TitleScreenManager::title_screen_file_contents</definition>
+        <argsstring></argsstring>
+        <name>title_screen_file_contents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" line="13" column="8" bodyfile="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_title_screen_manager_1afe6669aa18831e8efed3b0d9c744b973" compoundref="_title_screen_manager_8cpp" startline="38" endline="61">ReadTitle</referencedby>
+        <referencedby refid="class_title_screen_manager_1ab43408b2faef99086182e9309bc5d675" compoundref="_title_screen_manager_8cpp" startline="81" endline="88">RenderTitle</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_title_screen_manager_1a4e70113f2688af301ef026b4bc717add" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int TitleScreenManager::screen_width</definition>
+        <argsstring></argsstring>
+        <name>screen_width</name>
+        <initializer>= 858</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" line="21" column="11" bodyfile="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_title_screen_manager_1ab43408b2faef99086182e9309bc5d675" compoundref="_title_screen_manager_8cpp" startline="81" endline="88">RenderTitle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_title_screen_manager_1a249d7f8ef496e52c0f0148c952f3e458" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int TitleScreenManager::screen_height</definition>
+        <argsstring></argsstring>
+        <name>screen_height</name>
+        <initializer>= 300</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" line="22" column="11" bodyfile="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_title_screen_manager_1ab43408b2faef99086182e9309bc5d675" compoundref="_title_screen_manager_8cpp" startline="81" endline="88">RenderTitle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_title_screen_manager_1aaf3cc960f36fd41aade021039120a39a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TitleScreenManager::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" line="23" column="5" bodyfile="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_title_screen_manager_1adf50a2b60b08f7bbcef8f76030c9c734" compoundref="_title_screen_manager_8cpp" startline="27" endline="36">LoadTitle</referencedby>
+        <referencedby refid="class_title_screen_manager_1aa49b8813b2ea79d1bd4fdaaa741776f1" compoundref="_title_screen_manager_8cpp" startline="63" endline="79">PrintTitle</referencedby>
+        <referencedby refid="class_title_screen_manager_1afe6669aa18831e8efed3b0d9c744b973" compoundref="_title_screen_manager_8cpp" startline="38" endline="61">ReadTitle</referencedby>
+        <referencedby refid="class_title_screen_manager_1ab43408b2faef99086182e9309bc5d675" compoundref="_title_screen_manager_8cpp" startline="81" endline="88">RenderTitle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TitleScreenManager::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" line="24" column="5" bodyfile="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_title_screen_manager_1adf50a2b60b08f7bbcef8f76030c9c734" compoundref="_title_screen_manager_8cpp" startline="27" endline="36">LoadTitle</referencedby>
+        <referencedby refid="class_title_screen_manager_1aa49b8813b2ea79d1bd4fdaaa741776f1" compoundref="_title_screen_manager_8cpp" startline="63" endline="79">PrintTitle</referencedby>
+        <referencedby refid="class_title_screen_manager_1afe6669aa18831e8efed3b0d9c744b973" compoundref="_title_screen_manager_8cpp" startline="38" endline="61">ReadTitle</referencedby>
+        <referencedby refid="class_title_screen_manager_1ab43408b2faef99086182e9309bc5d675" compoundref="_title_screen_manager_8cpp" startline="81" endline="88">RenderTitle</referencedby>
+        <referencedby refid="class_title_screen_manager_1a57d95e3e84ac914f5051d934daa95279" compoundref="_title_screen_manager_8cpp" startline="15" endline="25">WaitForInput</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_title_screen_manager_1a57d95e3e84ac914f5051d934daa95279" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TitleScreenManager::WaitForInput</definition>
+        <argsstring>()</argsstring>
+        <name>WaitForInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" line="15" column="6" bodyfile="D:/University/ca-A00269349/Rogue/TitleScreenManager.cpp" bodystart="15" bodyend="25"/>
+        <references refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" compoundref="_macro_8cpp" startline="7" endline="13">Macro::GoToScreenPosition</references>
+        <references refid="class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6" compoundref="_title_screen_manager_8h" startline="24">height</references>
+        <references refid="class_title_screen_manager_1a1513c7492bb1309c3e5d85cb66fbda4e" compoundref="_title_screen_manager_8h" startline="9">on_title_screen</references>
+        <referencedby refid="class_title_screen_manager_1ab43408b2faef99086182e9309bc5d675" compoundref="_title_screen_manager_8cpp" startline="81" endline="88">RenderTitle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_title_screen_manager_1adf50a2b60b08f7bbcef8f76030c9c734" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TitleScreenManager::LoadTitle</definition>
+        <argsstring>(int width, int height, string input)</argsstring>
+        <name>LoadTitle</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" line="16" column="6" bodyfile="D:/University/ca-A00269349/Rogue/TitleScreenManager.cpp" bodystart="27" bodyend="36"/>
+        <references refid="class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6" compoundref="_title_screen_manager_8h" startline="24">height</references>
+        <references refid="class_title_screen_manager_1a86d9cebd8f78508088eef8cf774288bc" compoundref="_title_screen_manager_8h" startline="11">title_map</references>
+        <references refid="class_title_screen_manager_1aaf3cc960f36fd41aade021039120a39a" compoundref="_title_screen_manager_8h" startline="23">width</references>
+        <referencedby refid="class_title_screen_manager_1ab43408b2faef99086182e9309bc5d675" compoundref="_title_screen_manager_8cpp" startline="81" endline="88">RenderTitle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_title_screen_manager_1afe6669aa18831e8efed3b0d9c744b973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TitleScreenManager::ReadTitle</definition>
+        <argsstring>()</argsstring>
+        <name>ReadTitle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" line="17" column="6" bodyfile="D:/University/ca-A00269349/Rogue/TitleScreenManager.cpp" bodystart="38" bodyend="61"/>
+        <references refid="class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6" compoundref="_title_screen_manager_8h" startline="24">height</references>
+        <references refid="class_title_screen_manager_1a86d9cebd8f78508088eef8cf774288bc" compoundref="_title_screen_manager_8h" startline="11">title_map</references>
+        <references refid="class_title_screen_manager_1a3aaf2df6f1e273b4af3fdc43d50ad558" compoundref="_title_screen_manager_8h" startline="13">title_screen_file_contents</references>
+        <references refid="class_title_screen_manager_1aaf3cc960f36fd41aade021039120a39a" compoundref="_title_screen_manager_8h" startline="23">width</references>
+        <referencedby refid="class_title_screen_manager_1ab43408b2faef99086182e9309bc5d675" compoundref="_title_screen_manager_8cpp" startline="81" endline="88">RenderTitle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_title_screen_manager_1aa49b8813b2ea79d1bd4fdaaa741776f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TitleScreenManager::PrintTitle</definition>
+        <argsstring>(int width, int height, ConsoleWindowManager &amp;cw_manager)</argsstring>
+        <name>PrintTitle</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref> &amp;</type>
+          <declname>cw_manager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" line="18" column="6" bodyfile="D:/University/ca-A00269349/Rogue/TitleScreenManager.cpp" bodystart="63" bodyend="79"/>
+        <references refid="class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6" compoundref="_title_screen_manager_8h" startline="24">height</references>
+        <references refid="class_console_window_manager_1abed5c169df20d3f830cc11b1dfbe4a6a" compoundref="_console_window_manager_8cpp" startline="64" endline="67">ConsoleWindowManager::SetConsoleWindowRandomColor</references>
+        <references refid="class_title_screen_manager_1a86d9cebd8f78508088eef8cf774288bc" compoundref="_title_screen_manager_8h" startline="11">title_map</references>
+        <references refid="class_title_screen_manager_1aaf3cc960f36fd41aade021039120a39a" compoundref="_title_screen_manager_8h" startline="23">width</references>
+        <referencedby refid="class_title_screen_manager_1ab43408b2faef99086182e9309bc5d675" compoundref="_title_screen_manager_8cpp" startline="81" endline="88">RenderTitle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_title_screen_manager_1ab43408b2faef99086182e9309bc5d675" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TitleScreenManager::RenderTitle</definition>
+        <argsstring>(ConsoleWindowManager &amp;cw_manager)</argsstring>
+        <name>RenderTitle</name>
+        <param>
+          <type><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref> &amp;</type>
+          <declname>cw_manager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" line="19" column="6" bodyfile="D:/University/ca-A00269349/Rogue/TitleScreenManager.cpp" bodystart="81" bodyend="88"/>
+        <references refid="class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6" compoundref="_title_screen_manager_8h" startline="24">height</references>
+        <references refid="class_title_screen_manager_1adf50a2b60b08f7bbcef8f76030c9c734" compoundref="_title_screen_manager_8cpp" startline="27" endline="36">LoadTitle</references>
+        <references refid="class_title_screen_manager_1aa49b8813b2ea79d1bd4fdaaa741776f1" compoundref="_title_screen_manager_8cpp" startline="63" endline="79">PrintTitle</references>
+        <references refid="class_title_screen_manager_1afe6669aa18831e8efed3b0d9c744b973" compoundref="_title_screen_manager_8cpp" startline="38" endline="61">ReadTitle</references>
+        <references refid="namespace_macro_1a005f2a0ab24b96203446ec9a1a8b9a7f" compoundref="_macro_8cpp" startline="15" endline="32">Macro::RepositionWindow</references>
+        <references refid="class_title_screen_manager_1a249d7f8ef496e52c0f0148c952f3e458" compoundref="_title_screen_manager_8h" startline="22">screen_height</references>
+        <references refid="class_title_screen_manager_1a4e70113f2688af301ef026b4bc717add" compoundref="_title_screen_manager_8h" startline="21">screen_width</references>
+        <references refid="class_title_screen_manager_1a3aaf2df6f1e273b4af3fdc43d50ad558" compoundref="_title_screen_manager_8h" startline="13">title_screen_file_contents</references>
+        <references refid="class_title_screen_manager_1a57d95e3e84ac914f5051d934daa95279" compoundref="_title_screen_manager_8cpp" startline="15" endline="25">WaitForInput</references>
+        <references refid="class_title_screen_manager_1aaf3cc960f36fd41aade021039120a39a" compoundref="_title_screen_manager_8h" startline="23">width</references>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="20" endline="46">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>TitleScreenManager</label>
+        <link refid="class_title_screen_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" line="6" column="1" bodyfile="D:/University/ca-A00269349/Rogue/TitleScreenManager.h" bodystart="7" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_title_screen_manager_1abff70c5ba25dbd5e48b6a61922e47ff6" prot="private" virt="non-virtual"><scope>TitleScreenManager</scope><name>height</name></member>
+      <member refid="class_title_screen_manager_1adf50a2b60b08f7bbcef8f76030c9c734" prot="public" virt="non-virtual"><scope>TitleScreenManager</scope><name>LoadTitle</name></member>
+      <member refid="class_title_screen_manager_1a1513c7492bb1309c3e5d85cb66fbda4e" prot="public" virt="non-virtual"><scope>TitleScreenManager</scope><name>on_title_screen</name></member>
+      <member refid="class_title_screen_manager_1aa49b8813b2ea79d1bd4fdaaa741776f1" prot="public" virt="non-virtual"><scope>TitleScreenManager</scope><name>PrintTitle</name></member>
+      <member refid="class_title_screen_manager_1afe6669aa18831e8efed3b0d9c744b973" prot="public" virt="non-virtual"><scope>TitleScreenManager</scope><name>ReadTitle</name></member>
+      <member refid="class_title_screen_manager_1ab43408b2faef99086182e9309bc5d675" prot="public" virt="non-virtual"><scope>TitleScreenManager</scope><name>RenderTitle</name></member>
+      <member refid="class_title_screen_manager_1a249d7f8ef496e52c0f0148c952f3e458" prot="private" virt="non-virtual"><scope>TitleScreenManager</scope><name>screen_height</name></member>
+      <member refid="class_title_screen_manager_1a4e70113f2688af301ef026b4bc717add" prot="private" virt="non-virtual"><scope>TitleScreenManager</scope><name>screen_width</name></member>
+      <member refid="class_title_screen_manager_1a86d9cebd8f78508088eef8cf774288bc" prot="public" virt="non-virtual"><scope>TitleScreenManager</scope><name>title_map</name></member>
+      <member refid="class_title_screen_manager_1a3aaf2df6f1e273b4af3fdc43d50ad558" prot="public" virt="non-virtual"><scope>TitleScreenManager</scope><name>title_screen_file_contents</name></member>
+      <member refid="class_title_screen_manager_1a57d95e3e84ac914f5051d934daa95279" prot="public" virt="non-virtual"><scope>TitleScreenManager</scope><name>WaitForInput</name></member>
+      <member refid="class_title_screen_manager_1aaf3cc960f36fd41aade021039120a39a" prot="private" virt="non-virtual"><scope>TitleScreenManager</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

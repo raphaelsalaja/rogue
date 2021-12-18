@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__weapon_8cpp_source" xml:lang="en-US">
+<title>Weapon.cpp</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/Weapon.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__weapon_8cpp_source_1l00001"/>00001 
+<anchor xml:id="__weapon_8cpp_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+<anchor xml:id="__weapon_8cpp_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&lt;ctime&gt;</emphasis>
+<anchor xml:id="__weapon_8cpp_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&lt;cstdlib&gt;</emphasis>
+<anchor xml:id="__weapon_8cpp_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__weapon_8h">Weapon.h</link>&quot;</emphasis>
+<anchor xml:id="__weapon_8cpp_source_1l00006"/>00006 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+<anchor xml:id="__weapon_8cpp_source_1l00007"/>00007 
+<anchor xml:id="__weapon_8cpp_source_1l00008"/><link linkend="_class_weapon_1a42dbc46dd70319a24763992c4ebbd396">00008</link> <link linkend="_class_weapon_1a42dbc46dd70319a24763992c4ebbd396">Weapon::Weapon</link>()
+<anchor xml:id="__weapon_8cpp_source_1l00009"/>00009 {
+<anchor xml:id="__weapon_8cpp_source_1l00010"/>00010 &#32;&#32;&#32;&#32;<link linkend="_class_weapon_1aa3a7809b2c34df9d7775f57f7560c106">CreateNewWeapon</link>();
+<anchor xml:id="__weapon_8cpp_source_1l00011"/>00011 }
+<anchor xml:id="__weapon_8cpp_source_1l00012"/>00012 
+<anchor xml:id="__weapon_8cpp_source_1l00013"/><link linkend="_class_weapon_1a420e7ba3d2017e6de3e93eb579cfd3fa">00013</link> <link linkend="_class_weapon_1a420e7ba3d2017e6de3e93eb579cfd3fa">Weapon::~Weapon</link>()
+<anchor xml:id="__weapon_8cpp_source_1l00014"/>00014 {
+<anchor xml:id="__weapon_8cpp_source_1l00015"/>00015 }
+<anchor xml:id="__weapon_8cpp_source_1l00016"/>00016 
+<anchor xml:id="__weapon_8cpp_source_1l00017"/><link linkend="_class_weapon_1a2dd096e208c2827552c41cad1f47e8e3">00017</link> <emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_weapon_1a2dd096e208c2827552c41cad1f47e8e3">Weapon::GenerateRandomNumber</link>(<emphasis role="keywordtype">int</emphasis>&#32;max)
+<anchor xml:id="__weapon_8cpp_source_1l00018"/>00018 {
+<anchor xml:id="__weapon_8cpp_source_1l00019"/>00019 &#32;&#32;&#32;&#32;srand(time(0));
+<anchor xml:id="__weapon_8cpp_source_1l00020"/>00020 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;rand()&#32;%&#32;max;
+<anchor xml:id="__weapon_8cpp_source_1l00021"/>00021 }
+<anchor xml:id="__weapon_8cpp_source_1l00022"/>00022 
+<anchor xml:id="__weapon_8cpp_source_1l00023"/><link linkend="_class_weapon_1a45bbb178329cea234b54d4b569db5c17">00023</link> <link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67">Weapon::WEAPON_TYPE</link>&#32;<link linkend="_class_weapon_1a45bbb178329cea234b54d4b569db5c17">Weapon::SetWeaponType</link>(<emphasis role="keywordtype">int</emphasis>&#32;weapon_choice)
+<anchor xml:id="__weapon_8cpp_source_1l00024"/>00024 {
+<anchor xml:id="__weapon_8cpp_source_1l00025"/>00025 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">switch</emphasis>&#32;(weapon_choice)
+<anchor xml:id="__weapon_8cpp_source_1l00026"/>00026 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__weapon_8cpp_source_1l00027"/>00027 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;0:
+<anchor xml:id="__weapon_8cpp_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;Weapon::WEAPON_TYPE::SWORD;
+<anchor xml:id="__weapon_8cpp_source_1l00029"/>00029 
+<anchor xml:id="__weapon_8cpp_source_1l00030"/>00030 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;1:
+<anchor xml:id="__weapon_8cpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;Weapon::WEAPON_TYPE::GUN;
+<anchor xml:id="__weapon_8cpp_source_1l00032"/>00032 
+<anchor xml:id="__weapon_8cpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;2:
+<anchor xml:id="__weapon_8cpp_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;Weapon::WEAPON_TYPE::DAGGER;
+<anchor xml:id="__weapon_8cpp_source_1l00035"/>00035 
+<anchor xml:id="__weapon_8cpp_source_1l00036"/>00036 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">default</emphasis>:
+<anchor xml:id="__weapon_8cpp_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;Weapon::WEAPON_TYPE::SWORD;
+<anchor xml:id="__weapon_8cpp_source_1l00038"/>00038 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__weapon_8cpp_source_1l00039"/>00039 }
+<anchor xml:id="__weapon_8cpp_source_1l00040"/>00040 
+<anchor xml:id="__weapon_8cpp_source_1l00041"/><link linkend="_class_weapon_1ab1b14ca4579850bf0385c3e94ba35e57">00041</link> <emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_weapon_1ab1b14ca4579850bf0385c3e94ba35e57">Weapon::SetWeaponName</link>(<emphasis role="keywordtype">int</emphasis>&#32;weapon_name_index,&#32;<link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67">WEAPON_TYPE</link>&#32;WEAPON_TYPE_SELECTED)
+<anchor xml:id="__weapon_8cpp_source_1l00042"/>00042 {
+<anchor xml:id="__weapon_8cpp_source_1l00043"/>00043 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_weapon_1a6b683bce956944a128d3ee25a88c7ac1">name</link>;
+<anchor xml:id="__weapon_8cpp_source_1l00044"/>00044 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">switch</emphasis>&#32;(<link linkend="_class_weapon_1a378d7783971053b498d26d456f5c3bb7">WEAPON_TYPE_SELECTED</link>)
+<anchor xml:id="__weapon_8cpp_source_1l00045"/>00045 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__weapon_8cpp_source_1l00046"/>00046 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;Weapon::WEAPON_TYPE::SWORD:
+<anchor xml:id="__weapon_8cpp_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a6b683bce956944a128d3ee25a88c7ac1">name</link>&#32;=&#32;<link linkend="_class_weapon_1a2367140f69d8e9fb3f3caec6f88a598f">WEAPON_NAME_CHOICES</link>[weapon_name_index];
+<anchor xml:id="__weapon_8cpp_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__weapon_8cpp_source_1l00049"/>00049 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;Weapon::WEAPON_TYPE::DAGGER:
+<anchor xml:id="__weapon_8cpp_source_1l00050"/>00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a6b683bce956944a128d3ee25a88c7ac1">name</link>&#32;=&#32;<link linkend="_class_weapon_1a2367140f69d8e9fb3f3caec6f88a598f">WEAPON_NAME_CHOICES</link>[weapon_name_index];
+<anchor xml:id="__weapon_8cpp_source_1l00051"/>00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__weapon_8cpp_source_1l00052"/>00052 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;Weapon::WEAPON_TYPE::GUN:
+<anchor xml:id="__weapon_8cpp_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a6b683bce956944a128d3ee25a88c7ac1">name</link>&#32;=&#32;<link linkend="_class_weapon_1a2367140f69d8e9fb3f3caec6f88a598f">WEAPON_NAME_CHOICES</link>[weapon_name_index];
+<anchor xml:id="__weapon_8cpp_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__weapon_8cpp_source_1l00055"/>00055 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">default</emphasis>:
+<anchor xml:id="__weapon_8cpp_source_1l00056"/>00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a6b683bce956944a128d3ee25a88c7ac1">name</link>&#32;=&#32;<link linkend="_class_weapon_1a2367140f69d8e9fb3f3caec6f88a598f">WEAPON_NAME_CHOICES</link>[weapon_name_index];
+<anchor xml:id="__weapon_8cpp_source_1l00057"/>00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__weapon_8cpp_source_1l00058"/>00058 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__weapon_8cpp_source_1l00059"/>00059 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_weapon_1a6b683bce956944a128d3ee25a88c7ac1">name</link>;
+<anchor xml:id="__weapon_8cpp_source_1l00060"/>00060 }
+<anchor xml:id="__weapon_8cpp_source_1l00061"/>00061 
+<anchor xml:id="__weapon_8cpp_source_1l00062"/><link linkend="_class_weapon_1a19a033a262067005a41239ba0e103df1">00062</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_weapon_1a19a033a262067005a41239ba0e103df1">Weapon::SetStrength</link>()
+<anchor xml:id="__weapon_8cpp_source_1l00063"/>00063 {
+<anchor xml:id="__weapon_8cpp_source_1l00064"/>00064 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_weapon_1a2dd096e208c2827552c41cad1f47e8e3">GenerateRandomNumber</link>(10);
+<anchor xml:id="__weapon_8cpp_source_1l00065"/>00065 }
+<anchor xml:id="__weapon_8cpp_source_1l00066"/>00066 
+<anchor xml:id="__weapon_8cpp_source_1l00067"/><link linkend="_class_weapon_1aa3a7809b2c34df9d7775f57f7560c106">00067</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_weapon_1aa3a7809b2c34df9d7775f57f7560c106">Weapon::CreateNewWeapon</link>()
+<anchor xml:id="__weapon_8cpp_source_1l00068"/>00068 {
+<anchor xml:id="__weapon_8cpp_source_1l00069"/>00069 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;weapon_choice&#32;=&#32;<link linkend="_class_weapon_1a2dd096e208c2827552c41cad1f47e8e3">GenerateRandomNumber</link>(2);
+<anchor xml:id="__weapon_8cpp_source_1l00070"/>00070 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;weapon_name_index&#32;=&#32;<link linkend="_class_weapon_1a2dd096e208c2827552c41cad1f47e8e3">GenerateRandomNumber</link>(19);
+<anchor xml:id="__weapon_8cpp_source_1l00071"/>00071 
+<anchor xml:id="__weapon_8cpp_source_1l00072"/>00072 &#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a378d7783971053b498d26d456f5c3bb7">WEAPON_TYPE_SELECTED</link>&#32;=&#32;<link linkend="_class_weapon_1a45bbb178329cea234b54d4b569db5c17">SetWeaponType</link>(weapon_choice);
+<anchor xml:id="__weapon_8cpp_source_1l00073"/>00073 &#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a6b683bce956944a128d3ee25a88c7ac1">name</link>&#32;=&#32;<link linkend="_class_weapon_1ab1b14ca4579850bf0385c3e94ba35e57">SetWeaponName</link>(weapon_name_index,&#32;<link linkend="_class_weapon_1a378d7783971053b498d26d456f5c3bb7">WEAPON_TYPE_SELECTED</link>);
+<anchor xml:id="__weapon_8cpp_source_1l00074"/>00074 &#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a4a9381f1b461ca75cf0928defe49fbc0">strength</link>&#32;=&#32;<link linkend="_class_weapon_1a19a033a262067005a41239ba0e103df1">SetStrength</link>();
+<anchor xml:id="__weapon_8cpp_source_1l00075"/>00075 &#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a9f519847c0970ed12ffdb22b2de6162b">weight</link>&#32;=&#32;<link linkend="_class_weapon_1a19a033a262067005a41239ba0e103df1">SetStrength</link>();
+<anchor xml:id="__weapon_8cpp_source_1l00076"/>00076 }
+</programlisting></section>

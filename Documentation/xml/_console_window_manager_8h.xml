@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_console_window_manager_8h" kind="file" language="C++">
+    <compoundname>ConsoleWindowManager.h</compoundname>
+    <includes local="no">windows.h</includes>
+    <includedby refid="_console_window_manager_8cpp" local="yes">D:/University/ca-A00269349/Rogue/ConsoleWindowManager.cpp</includedby>
+    <includedby refid="_debug_8cpp" local="yes">D:/University/ca-A00269349/Rogue/Debug.cpp</includedby>
+    <includedby refid="_inventory_manager_8h" local="yes">D:/University/ca-A00269349/Rogue/InventoryManager.h</includedby>
+    <includedby refid="_macro_8cpp" local="yes">D:/University/ca-A00269349/Rogue/Macro.cpp</includedby>
+    <includedby refid="_map_manager_8h" local="yes">D:/University/ca-A00269349/Rogue/MapManager.h</includedby>
+    <includedby refid="_player_8cpp" local="yes">D:/University/ca-A00269349/Rogue/Player.cpp</includedby>
+    <includedby refid="_player_8h" local="yes">D:/University/ca-A00269349/Rogue/Player.h</includedby>
+    <includedby refid="_title_screen_manager_8cpp" local="yes">D:/University/ca-A00269349/Rogue/TitleScreenManager.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">D:/University/ca-A00269349/Rogue/main.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h</label>
+        <link refid="_console_window_manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>windows.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="11">
+        <label>D:/University/ca-A00269349/Rogue/CombatManager.cpp</label>
+        <link refid="_combat_manager_8cpp"/>
+      </node>
+      <node id="10">
+        <label>D:/University/ca-A00269349/Rogue/CombatManager.h</label>
+        <link refid="_combat_manager_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>D:/University/ca-A00269349/Rogue/ConsoleRendering.cpp</label>
+        <link refid="_console_rendering_8cpp"/>
+      </node>
+      <node id="5">
+        <label>D:/University/ca-A00269349/Rogue/ConsoleRendering.h</label>
+        <link refid="_console_rendering_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>D:/University/ca-A00269349/Rogue/ConsoleWindowManager.cpp</label>
+        <link refid="_console_window_manager_8cpp"/>
+      </node>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h</label>
+        <link refid="_console_window_manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>D:/University/ca-A00269349/Rogue/Debug.cpp</label>
+        <link refid="_debug_8cpp"/>
+      </node>
+      <node id="14">
+        <label>D:/University/ca-A00269349/Rogue/Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+      </node>
+      <node id="13">
+        <label>D:/University/ca-A00269349/Rogue/Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>D:/University/ca-A00269349/Rogue/GenericFriendly.cpp</label>
+        <link refid="_generic_friendly_8cpp"/>
+      </node>
+      <node id="15">
+        <label>D:/University/ca-A00269349/Rogue/GenericFriendly.h</label>
+        <link refid="_generic_friendly_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>D:/University/ca-A00269349/Rogue/InventoryManager.cpp</label>
+        <link refid="_inventory_manager_8cpp"/>
+      </node>
+      <node id="4">
+        <label>D:/University/ca-A00269349/Rogue/InventoryManager.h</label>
+        <link refid="_inventory_manager_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>D:/University/ca-A00269349/Rogue/Macro.cpp</label>
+        <link refid="_macro_8cpp"/>
+      </node>
+      <node id="17">
+        <label>D:/University/ca-A00269349/Rogue/MapManager.cpp</label>
+        <link refid="_map_manager_8cpp"/>
+      </node>
+      <node id="12">
+        <label>D:/University/ca-A00269349/Rogue/MapManager.h</label>
+        <link refid="_map_manager_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>D:/University/ca-A00269349/Rogue/Player.cpp</label>
+        <link refid="_player_8cpp"/>
+      </node>
+      <node id="9">
+        <label>D:/University/ca-A00269349/Rogue/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>D:/University/ca-A00269349/Rogue/TitleScreenManager.cpp</label>
+        <link refid="_title_screen_manager_8cpp"/>
+      </node>
+      <node id="19">
+        <label>D:/University/ca-A00269349/Rogue/TitleScreenManager.h</label>
+        <link refid="_title_screen_manager_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>D:/University/ca-A00269349/Rogue/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_console_window_manager" prot="public">ConsoleWindowManager</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_console_window_manager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="7" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543" kindref="member">COLORS</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3" kindref="member">BLACK</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="10" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a0123e45b31a6caef6bee87987431ba29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a0123e45b31a6caef6bee87987431ba29" kindref="member">DARK_BLUE</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="11" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ac7f09d6540d7f440678450da2e98291f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ac7f09d6540d7f440678450da2e98291f" kindref="member">DARK_GREEN</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="12" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752" kindref="member">LIGHT_BLUE</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="13" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543adae46377de9e9accb9cb67221fbb2c36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543adae46377de9e9accb9cb67221fbb2c36" kindref="member">DARK_RED</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="14" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e" kindref="member">MAGENTA</ref><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="15" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aaf930b582883444109e9ef4104e75af5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aaf930b582883444109e9ef4104e75af5" kindref="member">ORANGE</ref><sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="16" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a760a27011eb2ba8d016475c828bd32b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a760a27011eb2ba8d016475c828bd32b4" kindref="member">LIGHT_GRAY</ref><sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="17" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ab6b44fb822219788637b3cd88c7a0e4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ab6b44fb822219788637b3cd88c7a0e4a" kindref="member">GRAY</ref><sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="18" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b2a4e6f58e1a7c9bcc98461ec6689f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b2a4e6f58e1a7c9bcc98461ec6689f9" kindref="member">BLUE</ref><sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="19" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ae5c13df1cfc28fdc2c55a856085f5b8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ae5c13df1cfc28fdc2c55a856085f5b8a" kindref="member">GREEN</ref><sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="20" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543af19a5b9192c1fa96a5ae253ab37c714b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543af19a5b9192c1fa96a5ae253ab37c714b" kindref="member">CYAN</ref><sp/>=<sp/>11,</highlight></codeline>
+<codeline lineno="21" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a241238b2c88c156285680b898b7bca5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a241238b2c88c156285680b898b7bca5f" kindref="member">RED</ref><sp/>=<sp/>12,</highlight></codeline>
+<codeline lineno="22" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ab53cb0396e1962612ea761ff12a9119b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ab53cb0396e1962612ea761ff12a9119b" kindref="member">PINK</ref><sp/>=<sp/>13,</highlight></codeline>
+<codeline lineno="23" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ac2f74f3c14dbbde9c81c3eb43ad652d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ac2f74f3c14dbbde9c81c3eb43ad652d8" kindref="member">YELLOW</ref><sp/>=<sp/>14,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543abfc98f0b1d34e7a616e51ab38123d4dc" kindref="member">WHITE</ref><sp/>=<sp/>15</highlight></codeline>
+<codeline lineno="25" refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543abfc98f0b1d34e7a616e51ab38123d4dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1aec3eb492b72b29b4b9c57d622b799e9c" kindref="member">BlankScreen</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1ac4c2a46e7019be00cd1691f786587797" kindref="member">HideConsoleCursor</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1a622c6a38370c75628b954f013436ecb9" kindref="member">SetWindowDisplay</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1a04f302f741273b8c1ead23f11fb70e39" kindref="member">SetText</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213" kindref="member">SetConsoleWindowColor</ref>(<ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543" kindref="member">COLORS</ref><sp/>fg,<sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543" kindref="member">COLORS</ref><sp/>bg);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1abed5c169df20d3f830cc11b1dfbe4a6a" kindref="member">SetConsoleWindowRandomColor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>random_color);</highlight></codeline>
+<codeline lineno="33" refid="class_console_window_manager_1a7994b8ccd83e4f0eecfa9c4c579b067b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_console_window_manager_1a7994b8ccd83e4f0eecfa9c4c579b067b" kindref="member">RepositionWindow</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>HANDLE<sp/><ref refid="class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90" kindref="member">GetConsoleHandle</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>HWND<sp/><ref refid="class_console_window_manager_1a13a64349bfa723a1c035752ea401ab2c" kindref="member">GetDesktopHandleWindow</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>HWND<sp/><ref refid="class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d" kindref="member">GetConsoleHandleWindow</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41" refid="class_console_window_manager_1abdee4e17ebc10f03c5e74d45f8e4ed5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HANDLE<sp/><ref refid="class_console_window_manager_1abdee4e17ebc10f03c5e74d45f8e4ed5c" kindref="member">HANDLE_CONSOLE</ref>;</highlight></codeline>
+<codeline lineno="42" refid="class_console_window_manager_1a1cc7bac864b3fb93af536bdea526b908" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HWND<sp/><ref refid="class_console_window_manager_1a1cc7bac864b3fb93af536bdea526b908" kindref="member">HANDLE_WINDOW_DESKTOP</ref>;</highlight></codeline>
+<codeline lineno="43" refid="class_console_window_manager_1acf76563de7c4c73f97bb0c8ffc1c461e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HWND<sp/><ref refid="class_console_window_manager_1acf76563de7c4c73f97bb0c8ffc1c461e" kindref="member">HANDLE_WINDOW_CONSOLE</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h"/>
+  </compounddef>
+</doxygen>

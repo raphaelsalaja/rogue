@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__non_playable_character_8cpp_source" xml:lang="en-US">
+<title>NonPlayableCharacter.cpp</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__non_playable_character_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__non_playable_character_8h">NonPlayableCharacter.h</link>&quot;</emphasis>
+<anchor xml:id="__non_playable_character_8cpp_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__macro_8h">Macro.h</link>&quot;</emphasis>
+<anchor xml:id="__non_playable_character_8cpp_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&lt;fstream&gt;</emphasis>
+<anchor xml:id="__non_playable_character_8cpp_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&lt;cmath&gt;</emphasis>
+<anchor xml:id="__non_playable_character_8cpp_source_1l00005"/>00005 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00006"/>00006 
+<anchor xml:id="__non_playable_character_8cpp_source_1l00007"/><link linkend="_class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746">00007</link> <link linkend="_class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746">NonPlayableCharacter::NonPlayableCharacter</link>()
+<anchor xml:id="__non_playable_character_8cpp_source_1l00008"/>00008 {
+<anchor xml:id="__non_playable_character_8cpp_source_1l00009"/>00009 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824">name</link>&#32;=&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00010"/>00010 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c">strength</link>&#32;=&#32;0;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00011"/>00011 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa">health</link>&#32;=&#32;0;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00012"/>00012 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1af6835f00acbdc12a7a9f920ef6801e0d">attack_speed</link>&#32;=&#32;0;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00013"/>00013 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1ab6703683eeb7deb2ac146dfcfced761f">symbol</link>&#32;=&#32;<emphasis role="charliteral">&apos;&#32;&apos;</emphasis>;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000">passive</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00015"/>00015 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627">npc_x</link>&#32;=&#32;0;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00016"/>00016 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7">npc_y</link>&#32;=&#32;0;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00017"/>00017 }
+<anchor xml:id="__non_playable_character_8cpp_source_1l00018"/>00018 
+<anchor xml:id="__non_playable_character_8cpp_source_1l00019"/><link linkend="_class_non_playable_character_1af4fe8de9174af90d1a0088373d0e35c0">00019</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1af4fe8de9174af90d1a0088373d0e35c0">NonPlayableCharacter::SetNamesArray</link>()
+<anchor xml:id="__non_playable_character_8cpp_source_1l00020"/>00020 {
+<anchor xml:id="__non_playable_character_8cpp_source_1l00021"/>00021 }
+<anchor xml:id="__non_playable_character_8cpp_source_1l00022"/>00022 
+<anchor xml:id="__non_playable_character_8cpp_source_1l00023"/><link linkend="_class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1">00023</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1">NonPlayableCharacter::CreateNonPlayableCharacter</link>()
+<anchor xml:id="__non_playable_character_8cpp_source_1l00024"/>00024 {
+<anchor xml:id="__non_playable_character_8cpp_source_1l00025"/>00025 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1af4fe8de9174af90d1a0088373d0e35c0">SetNamesArray</link>();
+<anchor xml:id="__non_playable_character_8cpp_source_1l00026"/>00026 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875">SetName</link>();
+<anchor xml:id="__non_playable_character_8cpp_source_1l00027"/>00027 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a355f7bc2a43563faec957553fa4fd1e7">SetPassive</link>();
+<anchor xml:id="__non_playable_character_8cpp_source_1l00028"/>00028 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1ada48fd505bbf5797c39f0b20aa995bbc">SetSymbol</link>();
+<anchor xml:id="__non_playable_character_8cpp_source_1l00029"/>00029 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!<link linkend="_class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000">passive</link>)
+<anchor xml:id="__non_playable_character_8cpp_source_1l00030"/>00030 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__non_playable_character_8cpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a017d601103d2bc66a6338073a051cab7">SetHealth</link>();
+<anchor xml:id="__non_playable_character_8cpp_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e">SetSpeed</link>();
+<anchor xml:id="__non_playable_character_8cpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2">SetStrength</link>();
+<anchor xml:id="__non_playable_character_8cpp_source_1l00034"/>00034 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__non_playable_character_8cpp_source_1l00035"/>00035 }
+<anchor xml:id="__non_playable_character_8cpp_source_1l00036"/>00036 
+<anchor xml:id="__non_playable_character_8cpp_source_1l00037"/><link linkend="_class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875">00037</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875">NonPlayableCharacter::SetName</link>()
+<anchor xml:id="__non_playable_character_8cpp_source_1l00038"/>00038 {
+<anchor xml:id="__non_playable_character_8cpp_source_1l00039"/>00039 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824">name</link>&#32;=&#32;<link linkend="_class_non_playable_character_1a7e5848d6face873445553e3731da84be">name_array</link>[<link linkend="_namespace_macro_1a7192f07d19f55d7f8b863932a5078eab">Macro::GenerateRandomNumber</link>(<link linkend="_class_non_playable_character_1a7e5848d6face873445553e3731da84be">name_array</link>-&gt;length()&#32;-&#32;2)];
+<anchor xml:id="__non_playable_character_8cpp_source_1l00040"/>00040 }
+<anchor xml:id="__non_playable_character_8cpp_source_1l00041"/>00041 
+<anchor xml:id="__non_playable_character_8cpp_source_1l00042"/><link linkend="_class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2">00042</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2">NonPlayableCharacter::SetStrength</link>()
+<anchor xml:id="__non_playable_character_8cpp_source_1l00043"/>00043 {
+<anchor xml:id="__non_playable_character_8cpp_source_1l00044"/>00044 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c">strength</link>&#32;=&#32;<link linkend="_namespace_macro_1a3500becfc34f5b1df2d6d976fb5f5f86">Macro::GenerateRandomNumberWithoutZero</link>(10);
+<anchor xml:id="__non_playable_character_8cpp_source_1l00045"/>00045 }
+<anchor xml:id="__non_playable_character_8cpp_source_1l00046"/>00046 
+<anchor xml:id="__non_playable_character_8cpp_source_1l00047"/><link linkend="_class_non_playable_character_1a017d601103d2bc66a6338073a051cab7">00047</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1a017d601103d2bc66a6338073a051cab7">NonPlayableCharacter::SetHealth</link>()
+<anchor xml:id="__non_playable_character_8cpp_source_1l00048"/>00048 {
+<anchor xml:id="__non_playable_character_8cpp_source_1l00049"/>00049 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa">health</link>&#32;=&#32;<link linkend="_namespace_macro_1a3500becfc34f5b1df2d6d976fb5f5f86">Macro::GenerateRandomNumberWithoutZero</link>(10);
+<anchor xml:id="__non_playable_character_8cpp_source_1l00050"/>00050 }
+<anchor xml:id="__non_playable_character_8cpp_source_1l00051"/>00051 
+<anchor xml:id="__non_playable_character_8cpp_source_1l00052"/><link linkend="_class_non_playable_character_1a355f7bc2a43563faec957553fa4fd1e7">00052</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1a355f7bc2a43563faec957553fa4fd1e7">NonPlayableCharacter::SetPassive</link>()
+<anchor xml:id="__non_playable_character_8cpp_source_1l00053"/>00053 {
+<anchor xml:id="__non_playable_character_8cpp_source_1l00054"/>00054 }
+<anchor xml:id="__non_playable_character_8cpp_source_1l00055"/>00055 
+<anchor xml:id="__non_playable_character_8cpp_source_1l00056"/><link linkend="_class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e">00056</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e">NonPlayableCharacter::SetSpeed</link>()
+<anchor xml:id="__non_playable_character_8cpp_source_1l00057"/>00057 {
+<anchor xml:id="__non_playable_character_8cpp_source_1l00058"/>00058 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1af6835f00acbdc12a7a9f920ef6801e0d">attack_speed</link>&#32;=&#32;<link linkend="_namespace_macro_1a3500becfc34f5b1df2d6d976fb5f5f86">Macro::GenerateRandomNumberWithoutZero</link>(5);
+<anchor xml:id="__non_playable_character_8cpp_source_1l00059"/>00059 }
+<anchor xml:id="__non_playable_character_8cpp_source_1l00060"/>00060 
+<anchor xml:id="__non_playable_character_8cpp_source_1l00061"/><link linkend="_class_non_playable_character_1ada48fd505bbf5797c39f0b20aa995bbc">00061</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1ada48fd505bbf5797c39f0b20aa995bbc">NonPlayableCharacter::SetSymbol</link>()
+<anchor xml:id="__non_playable_character_8cpp_source_1l00062"/>00062 {
+<anchor xml:id="__non_playable_character_8cpp_source_1l00063"/>00063 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">switch</emphasis>&#32;(<link linkend="_class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000">passive</link>)
+<anchor xml:id="__non_playable_character_8cpp_source_1l00064"/>00064 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__non_playable_character_8cpp_source_1l00065"/>00065 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="keyword">true</emphasis>:&#32;<link linkend="_class_non_playable_character_1ab6703683eeb7deb2ac146dfcfced761f">symbol</link>&#32;=&#32;<link linkend="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9">GENERIC_FRIENDLY</link>;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00066"/>00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00067"/>00067 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="keyword">false</emphasis>:&#32;<link linkend="_class_non_playable_character_1ab6703683eeb7deb2ac146dfcfced761f">symbol</link>&#32;=&#32;<link linkend="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b">ENEMY</link>;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00068"/>00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00069"/>00069 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__non_playable_character_8cpp_source_1l00070"/>00070 }
+<anchor xml:id="__non_playable_character_8cpp_source_1l00071"/>00071 
+<anchor xml:id="__non_playable_character_8cpp_source_1l00072"/><link linkend="_class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e">00072</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e">NonPlayableCharacter::SetPosition</link>(<emphasis role="keywordtype">int</emphasis>&#32;x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;y)
+<anchor xml:id="__non_playable_character_8cpp_source_1l00073"/>00073 {
+<anchor xml:id="__non_playable_character_8cpp_source_1l00074"/>00074 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627">npc_x</link>&#32;=&#32;x;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00075"/>00075 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7">npc_y</link>&#32;=&#32;y;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00076"/>00076 }
+<anchor xml:id="__non_playable_character_8cpp_source_1l00077"/>00077 
+<anchor xml:id="__non_playable_character_8cpp_source_1l00078"/><link linkend="_class_non_playable_character_1aa18f226b35b28bd1ad318642a758abe2">00078</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_non_playable_character_1aa18f226b35b28bd1ad318642a758abe2">NonPlayableCharacter::SetDesiredHealth</link>(<emphasis role="keywordtype">int</emphasis>&#32;value)
+<anchor xml:id="__non_playable_character_8cpp_source_1l00079"/>00079 {
+<anchor xml:id="__non_playable_character_8cpp_source_1l00080"/>00080 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa">health</link>&#32;=&#32;value;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00081"/>00081 }
+<anchor xml:id="__non_playable_character_8cpp_source_1l00082"/>00082 
+<anchor xml:id="__non_playable_character_8cpp_source_1l00083"/><link linkend="_class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8">00083</link> <emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8">NonPlayableCharacter::GetName</link>()
+<anchor xml:id="__non_playable_character_8cpp_source_1l00084"/>00084 {
+<anchor xml:id="__non_playable_character_8cpp_source_1l00085"/>00085 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824">name</link>;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00086"/>00086 }
+<anchor xml:id="__non_playable_character_8cpp_source_1l00087"/>00087 
+<anchor xml:id="__non_playable_character_8cpp_source_1l00088"/><link linkend="_class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37">00088</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37">NonPlayableCharacter::GetHealth</link>()
+<anchor xml:id="__non_playable_character_8cpp_source_1l00089"/>00089 {
+<anchor xml:id="__non_playable_character_8cpp_source_1l00090"/>00090 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa">health</link>;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00091"/>00091 }
+<anchor xml:id="__non_playable_character_8cpp_source_1l00092"/>00092 
+<anchor xml:id="__non_playable_character_8cpp_source_1l00093"/><link linkend="_class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f">00093</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f">NonPlayableCharacter::GetDamage</link>()
+<anchor xml:id="__non_playable_character_8cpp_source_1l00094"/>00094 {
+<anchor xml:id="__non_playable_character_8cpp_source_1l00095"/>00095 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c">strength</link>;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00096"/>00096 }
+<anchor xml:id="__non_playable_character_8cpp_source_1l00097"/>00097 
+<anchor xml:id="__non_playable_character_8cpp_source_1l00098"/><link linkend="_class_non_playable_character_1aad1bbaeea7152ff52113b318be9afc0d">00098</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_non_playable_character_1aad1bbaeea7152ff52113b318be9afc0d">NonPlayableCharacter::GetX</link>()
+<anchor xml:id="__non_playable_character_8cpp_source_1l00099"/>00099 {
+<anchor xml:id="__non_playable_character_8cpp_source_1l00100"/>00100 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627">npc_x</link>;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00101"/>00101 }
+<anchor xml:id="__non_playable_character_8cpp_source_1l00102"/>00102 
+<anchor xml:id="__non_playable_character_8cpp_source_1l00103"/><link linkend="_class_non_playable_character_1a70b9980da4a02e7848c7561e498e8db9">00103</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_non_playable_character_1a70b9980da4a02e7848c7561e498e8db9">NonPlayableCharacter::GetY</link>()
+<anchor xml:id="__non_playable_character_8cpp_source_1l00104"/>00104 {
+<anchor xml:id="__non_playable_character_8cpp_source_1l00105"/>00105 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7">npc_y</link>;
+<anchor xml:id="__non_playable_character_8cpp_source_1l00106"/>00106 }
+</programlisting></section>

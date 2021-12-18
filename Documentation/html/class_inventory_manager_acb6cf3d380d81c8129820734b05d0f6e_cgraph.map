@@ -1,0 +1,13 @@
+<map id="InventoryManager::InventoryControl" name="InventoryManager::InventoryControl">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,235,83"/>
+<area shape="rect" id="node2" href="$class_console_rendering.html#a3ba48c54dc22c278244cd45cfbb53a83" title=" " alt="" coords="283,56,520,83"/>
+<area shape="rect" id="node3" href="$class_console_window_manager.html#aec3eb492b72b29b4b9c57d622b799e9c" title=" " alt="" coords="839,56,1085,83"/>
+<area shape="rect" id="node4" href="$class_console_rendering.html#ab06c676702c77f5c624a7076837245b3" title=" " alt="" coords="568,5,791,32"/>
+<area shape="rect" id="node6" href="$class_map_manager.html#a3d93eb2a28003237aa76baf2cb0de02c" title=" " alt="" coords="594,107,765,133"/>
+<area shape="rect" id="node5" href="$namespace_macro.html#a9b30bbcb1b1dffca82735239b6e6da98" title=" " alt="" coords="898,5,1026,32"/>
+<area shape="rect" id="node7" href="$class_map_manager.html#a0376a5b8e5baed3a0845887d16920752" title=" " alt="" coords="883,208,1041,235"/>
+<area shape="rect" id="node8" href="$class_map_manager.html#ae924c576229d40970074e76875dab3bb" title=" " alt="" coords="883,107,1041,133"/>
+<area shape="rect" id="node11" href="$class_map_manager.html#a83822e33297caa6a3e1f3f48b52b2530" title=" " alt="" coords="882,157,1042,184"/>
+<area shape="rect" id="node9" href="$class_console_window_manager.html#af7015ed96cbd06f5261d671e62e15213" title=" " alt="" coords="1133,107,1448,133"/>
+<area shape="rect" id="node10" href="$class_console_window_manager.html#a63347b06eb482fbc128215f17b7b4a90" title=" " alt="" coords="1496,107,1776,133"/>
+</map>

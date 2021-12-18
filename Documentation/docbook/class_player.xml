@@ -1,0 +1,667 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_player" xml:lang="en-US">
+<title>Player Class Reference</title>
+<indexterm><primary>Player</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Player.h&gt;</computeroutput>
+</para>
+Collaboration diagram for Player:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_player_1a23faf24de68cf7d62a8b726a3c181ef0">GetDamage</link> ()</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1a8d962e02bc35d6181940a8aaf7a1a510">GetHealth</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1a02ec140e8f48a44f442e97eb2a19a00e">SetDesiredHealth</link> (int value)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1a4b2ed7452ebf86347df93b965f5c4966">RenderPlayer</link> (<link linkend="_class_map_manager">MapManager</link> &amp;m, <link linkend="_class_console_window_manager">ConsoleWindowManager</link> &amp;c, <link linkend="_class_inventory_manager">InventoryManager</link> &amp;i)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1a848f89637b84d9692c96fc75cfa434eb">PlayerCollisions</link> (<link linkend="_class_map_manager">MapManager</link> &amp;m, <link linkend="_class_console_window_manager">ConsoleWindowManager</link> &amp;c, <link linkend="_class_player">Player</link> &amp;p, <link linkend="_class_inventory_manager">InventoryManager</link> &amp;i, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp;ui)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1a459cda6070754195650bd10e0db43710">PlayerInput</link> (<link linkend="_class_inventory_manager">InventoryManager</link> &amp;i, <link linkend="_class_console_window_manager">ConsoleWindowManager</link> &amp;c, <link linkend="_class_map_manager">MapManager</link> &amp;m, <link linkend="_class_player">Player</link> &amp;p, <link linkend="_class_console_rendering">ConsoleRendering</link> &amp;r, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp;ui, <link linkend="_class_combat_manager">CombatManager</link> &amp;cm)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_player_1a5e4cebf1dffd936edc4a69867dc9d38c">player_position_x</link> = 20</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1a1043d8ae834b0edbdf36765e73c32eb0">player_position_y</link> = 10</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1a295efe0018307edab6aaeaad9dae6e0b">player_position_x_new</link> = <link linkend="_class_player_1a5e4cebf1dffd936edc4a69867dc9d38c">player_position_x</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1a7ddbc65116b9c73791679dc1aa049980">player_position_y_new</link> = <link linkend="_class_player_1a1043d8ae834b0edbdf36765e73c32eb0">player_position_y</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_player_1a0df6cda292d01636309ab82d1445f8b5">end_game</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_player_1afabc272a584435771820c92f2c8308f1">in_combat</link> = false</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1a433fa478597adbefe4ac3911c5639968">damage</link> = 10</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1aeaeb39c73e57dbc0727f51a2b6c24b41">shield</link> = 5</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1aad33b52bfe73c4c978a3135172f286a0">health</link> = 50</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1a03a20ecc0094ce6869d196b8effddd54">magic</link> = 9</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1ad4cfa39d8e172a78e2e8c1c8da13f080">max_stats</link> = 10</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1aa55063fb11d6d041d7e72ef650824280">health_potions</link> = 0</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1aff4ffb0294cf1c1f81d0f4b1f8fc15ff">shield_potions</link> = 0</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1a84354c435ab9342fc19b09423053d1ed">magic_potions</link> = 0</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1aeee533a8d8e4e2a00f77b6c493b3929f">max_potions</link> = 10</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_player_1a8e27b94ff10ba3c236f57a8a721a5d40">PlayerCollisionsChecks</link> (int item, int item_max, <link linkend="_class_map_manager">MapManager</link> &amp;m, <link linkend="_class_player">Player</link> &amp;p)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_player_1a3b587452a99abee05fafb51daadf6687">BlankPosition</link> (<link linkend="_class_map_manager">MapManager</link> &amp;m, <link linkend="_class_player">Player</link> &amp;p)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1a4e306abcd8bd537e80b89563ad77275c">EnterCombatMode</link> (<link linkend="_class_map_manager">MapManager</link> &amp;m, <link linkend="_class_enemy">Enemy</link> &amp;e)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1af437a788282ad5c25d54a10de8199d11">EnterMessageMode</link> (<link linkend="_class_map_manager">MapManager</link> &amp;m, <link linkend="_class_generic_friendly">GenericFriendly</link> &amp;f)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>const char <link linkend="_class_player_1a0dfa2c1fdd710480766dcb2cf85b2db4">c_player</link> = &apos;P&apos;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_player_1a3d88ecef0d65b5ca204f92c1a75c02c4">waiting_to_start_combat</link> = false</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_player_1afeb496e92e437ad4d2da75f935f922ea">waiting_for_choice</link> = false</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__player_8h_source_1l00019">19</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_player_1a3b587452a99abee05fafb51daadf6687"/><section>
+    <title>BlankPosition()</title>
+<indexterm><primary>BlankPosition</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>BlankPosition</secondary></indexterm>
+<para><computeroutput>bool Player::BlankPosition (<link linkend="_class_map_manager">MapManager</link> &amp; m, <link linkend="_class_player">Player</link> &amp; p)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8cpp_source_1l00235">235</link> of file <link linkend="__player_8cpp_source">Player.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_player_1l00236"/>00236 {
+<anchor xml:id="_class_player_1l00237"/>00237 &#32;&#32;&#32;&#32;m.<link linkend="_class_map_manager_1a8718e18f0c51173645c2626e5e65cb32">new_map</link>[p.<link linkend="_class_player_1a7ddbc65116b9c73791679dc1aa049980">player_position_y_new</link>&#32;*&#32;m.<link linkend="_class_map_manager_1af44d67473c8a932512d90fe08a5f10c2">width</link>&#32;+&#32;p.<link linkend="_class_player_1a295efe0018307edab6aaeaad9dae6e0b">player_position_x_new</link>]&#32;=&#32;<emphasis role="charliteral">&apos;*&apos;</emphasis>;
+<anchor xml:id="_class_player_1l00238"/>00238 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_class_player_1l00239"/>00239 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_a3b587452a99abee05fafb51daadf6687_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_player_1a4e306abcd8bd537e80b89563ad77275c"/><section>
+    <title>EnterCombatMode()</title>
+<indexterm><primary>EnterCombatMode</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>EnterCombatMode</secondary></indexterm>
+<para><computeroutput>void Player::EnterCombatMode (<link linkend="_class_map_manager">MapManager</link> &amp; m, <link linkend="_class_enemy">Enemy</link> &amp; e)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8cpp_source_1l00133">133</link> of file <link linkend="__player_8cpp_source">Player.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_player_1l00134"/>00134 {
+<anchor xml:id="_class_player_1l00135"/>00135 &#32;&#32;&#32;&#32;e.<link linkend="_class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c">PrintDetails</link>(m);
+<anchor xml:id="_class_player_1l00136"/>00136 &#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">GoToScreenPosition</link>(45,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;7);
+<anchor xml:id="_class_player_1l00137"/>00137 &#32;&#32;&#32;&#32;Sleep(2500);
+<anchor xml:id="_class_player_1l00138"/>00138 &#32;&#32;&#32;&#32;<link linkend="_class_player_1a3d88ecef0d65b5ca204f92c1a75c02c4">waiting_to_start_combat</link>&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_class_player_1l00139"/>00139 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_a4e306abcd8bd537e80b89563ad77275c_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_a4e306abcd8bd537e80b89563ad77275c_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_player_1af437a788282ad5c25d54a10de8199d11"/><section>
+    <title>EnterMessageMode()</title>
+<indexterm><primary>EnterMessageMode</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>EnterMessageMode</secondary></indexterm>
+<para><computeroutput>void Player::EnterMessageMode (<link linkend="_class_map_manager">MapManager</link> &amp; m, <link linkend="_class_generic_friendly">GenericFriendly</link> &amp; f)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8cpp_source_1l00141">141</link> of file <link linkend="__player_8cpp_source">Player.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_player_1l00142"/>00142 {
+<anchor xml:id="_class_player_1l00143"/>00143 &#32;&#32;&#32;&#32;<link linkend="_class_player_1afeb496e92e437ad4d2da75f935f922ea">waiting_for_choice</link>&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_class_player_1l00144"/>00144 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(<link linkend="_class_player_1afeb496e92e437ad4d2da75f935f922ea">waiting_for_choice</link>)
+<anchor xml:id="_class_player_1l00145"/>00145 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00146"/>00146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;f.<link linkend="_class_generic_friendly_1adb5700625348a3c03f4623c6b3f1519b">PrintMessage</link>(m);
+<anchor xml:id="_class_player_1l00147"/>00147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">GoToScreenPosition</link>(45,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;7);
+<anchor xml:id="_class_player_1l00148"/>00148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(GetKeyState(<emphasis role="charliteral">&apos;1&apos;</emphasis>)&#32;&amp;&#32;0x8000)
+<anchor xml:id="_class_player_1l00149"/>00149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00150"/>00150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1aad33b52bfe73c4c978a3135172f286a0">health</link>++;
+<anchor xml:id="_class_player_1l00151"/>00151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1afeb496e92e437ad4d2da75f935f922ea">waiting_for_choice</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_class_player_1l00152"/>00152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Sleep(60);
+<anchor xml:id="_class_player_1l00153"/>00153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00154"/>00154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(GetKeyState(<emphasis role="charliteral">&apos;2&apos;</emphasis>)&#32;&amp;&#32;0x8000)
+<anchor xml:id="_class_player_1l00155"/>00155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00156"/>00156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1aeaeb39c73e57dbc0727f51a2b6c24b41">shield</link>++;
+<anchor xml:id="_class_player_1l00157"/>00157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1afeb496e92e437ad4d2da75f935f922ea">waiting_for_choice</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_class_player_1l00158"/>00158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Sleep(60);
+<anchor xml:id="_class_player_1l00159"/>00159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00160"/>00160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(GetKeyState(<emphasis role="charliteral">&apos;3&apos;</emphasis>)&#32;&amp;&#32;0x8000)
+<anchor xml:id="_class_player_1l00161"/>00161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00162"/>00162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1a03a20ecc0094ce6869d196b8effddd54">magic</link>++;
+<anchor xml:id="_class_player_1l00163"/>00163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1afeb496e92e437ad4d2da75f935f922ea">waiting_for_choice</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_class_player_1l00164"/>00164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Sleep(60);
+<anchor xml:id="_class_player_1l00165"/>00165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00166"/>00166 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00167"/>00167 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_af437a788282ad5c25d54a10de8199d11_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_af437a788282ad5c25d54a10de8199d11_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_player_1a23faf24de68cf7d62a8b726a3c181ef0"/><section>
+    <title>GetDamage()</title>
+<indexterm><primary>GetDamage</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>GetDamage</secondary></indexterm>
+<para><computeroutput>int Player::GetDamage ( )</computeroutput></para><para>
+Definition at line <link linkend="__player_8cpp_source_1l00241">241</link> of file <link linkend="__player_8cpp_source">Player.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_player_1l00242"/>00242 {
+<anchor xml:id="_class_player_1l00243"/>00243 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_player_1a433fa478597adbefe4ac3911c5639968">damage</link>;
+<anchor xml:id="_class_player_1l00244"/>00244 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_a23faf24de68cf7d62a8b726a3c181ef0_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_player_1a8d962e02bc35d6181940a8aaf7a1a510"/><section>
+    <title>GetHealth()</title>
+<indexterm><primary>GetHealth</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>GetHealth</secondary></indexterm>
+<para><computeroutput>int Player::GetHealth ( )</computeroutput></para><para>
+Definition at line <link linkend="__player_8cpp_source_1l00246">246</link> of file <link linkend="__player_8cpp_source">Player.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_player_1l00247"/>00247 {
+<anchor xml:id="_class_player_1l00248"/>00248 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_player_1aad33b52bfe73c4c978a3135172f286a0">health</link>;
+<anchor xml:id="_class_player_1l00249"/>00249 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_a8d962e02bc35d6181940a8aaf7a1a510_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_player_1a848f89637b84d9692c96fc75cfa434eb"/><section>
+    <title>PlayerCollisions()</title>
+<indexterm><primary>PlayerCollisions</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>PlayerCollisions</secondary></indexterm>
+<para><computeroutput>void Player::PlayerCollisions (<link linkend="_class_map_manager">MapManager</link> &amp; m, <link linkend="_class_console_window_manager">ConsoleWindowManager</link> &amp; c, <link linkend="_class_player">Player</link> &amp; p, <link linkend="_class_inventory_manager">InventoryManager</link> &amp; i, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp; ui)</computeroutput></para><para>
+Definition at line <link linkend="__player_8cpp_source_1l00060">60</link> of file <link linkend="__player_8cpp_source">Player.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_player_1l00061"/>00061 {
+<anchor xml:id="_class_player_1l00062"/>00062 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;c_wall&#32;=&#32;<emphasis role="charliteral">&apos;#&apos;</emphasis>;
+<anchor xml:id="_class_player_1l00063"/>00063 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;c_wall_1&#32;=&#32;<emphasis role="charliteral">&apos;-&apos;</emphasis>;
+<anchor xml:id="_class_player_1l00064"/>00064 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;c_wall_2&#32;=&#32;<emphasis role="charliteral">&apos;|&apos;</emphasis>;
+<anchor xml:id="_class_player_1l00065"/>00065 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;c_wall_3&#32;=&#32;<emphasis role="charliteral">&apos;.&apos;</emphasis>;
+<anchor xml:id="_class_player_1l00066"/>00066 &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;c_level_portal&#32;=&#32;<emphasis role="charliteral">&apos;[&apos;</emphasis>;
+<anchor xml:id="_class_player_1l00067"/>00067 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;health_c&#32;=&#32;i.<link linkend="_class_inventory_manager_1a2c9831d5f408cdb977ec3e8834445f4a">c_health</link>;
+<anchor xml:id="_class_player_1l00068"/>00068 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;shield_c&#32;=&#32;i.<link linkend="_class_inventory_manager_1ae592f94b9da417fdbae15aaf94559640">c_shield</link>;
+<anchor xml:id="_class_player_1l00069"/>00069 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;health_p&#32;=&#32;i.<link linkend="_class_inventory_manager_1a5400f0bca8bb5930c0a65e988b8b9982">c_health_potion</link>;
+<anchor xml:id="_class_player_1l00070"/>00070 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;shield_p&#32;=&#32;i.<link linkend="_class_inventory_manager_1afed1401d4aa963b4833c0d64ac32ea00">c_shield_potion</link>;
+<anchor xml:id="_class_player_1l00071"/>00071 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;magic_p&#32;=&#32;i.<link linkend="_class_inventory_manager_1a8339e1257c0c68ad1b5277f88cabc2ac">c_magic_potion</link>;
+<anchor xml:id="_class_player_1l00072"/>00072 
+<anchor xml:id="_class_player_1l00073"/>00073 &#32;&#32;&#32;&#32;<emphasis role="keyword">auto</emphasis>&#32;inventory_table_iterator&#32;=&#32;ui.<link linkend="_class_user_interface_manager_1a20860ee0c0c01dba89ac4f81dba649dd">inventory</link>.begin();
+<anchor xml:id="_class_player_1l00074"/>00074 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;inventory_headings[4]{
+<anchor xml:id="_class_player_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;W&#32;E&#32;A&#32;P&#32;O&#32;N&#32;S&quot;</emphasis>,
+<anchor xml:id="_class_player_1l00076"/>00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;P&#32;O&#32;T&#32;I&#32;O&#32;N&#32;S&quot;</emphasis>,
+<anchor xml:id="_class_player_1l00077"/>00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;A&#32;R&#32;M&#32;O&#32;U&#32;R&quot;</emphasis>,
+<anchor xml:id="_class_player_1l00078"/>00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;T&#32;R&#32;I&#32;N&#32;K&#32;E&#32;T&#32;S&quot;</emphasis>
+<anchor xml:id="_class_player_1l00079"/>00079 &#32;&#32;&#32;&#32;};
+<anchor xml:id="_class_player_1l00080"/>00080 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;nextMove&#32;=&#32;m.<link linkend="_class_map_manager_1a8718e18f0c51173645c2626e5e65cb32">new_map</link>[<link linkend="_class_player_1a7ddbc65116b9c73791679dc1aa049980">player_position_y_new</link>&#32;*&#32;m.<link linkend="_class_map_manager_1af44d67473c8a932512d90fe08a5f10c2">width</link>&#32;+&#32;<link linkend="_class_player_1a295efe0018307edab6aaeaad9dae6e0b">player_position_x_new</link>];
+<anchor xml:id="_class_player_1l00081"/>00081 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;f&#32;=&#32;m.<link linkend="_class_map_manager_1aaae3bf6e05a1e85d62b37357596b7e89">file_contents_read_in</link>;
+<anchor xml:id="_class_player_1l00082"/>00082 
+<anchor xml:id="_class_player_1l00083"/>00083 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">switch</emphasis>&#32;(nextMove)
+<anchor xml:id="_class_player_1l00084"/>00084 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00085"/>00085 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;c_wall:
+<anchor xml:id="_class_player_1l00086"/>00086 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;c_wall_1:
+<anchor xml:id="_class_player_1l00087"/>00087 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;c_wall_2:
+<anchor xml:id="_class_player_1l00088"/>00088 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;c_wall_3:&#32;p.<link linkend="_class_player_1a295efe0018307edab6aaeaad9dae6e0b">player_position_x_new</link>&#32;=&#32;p.<link linkend="_class_player_1a5e4cebf1dffd936edc4a69867dc9d38c">player_position_x</link>;
+<anchor xml:id="_class_player_1l00089"/>00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;p.<link linkend="_class_player_1a7ddbc65116b9c73791679dc1aa049980">player_position_y_new</link>&#32;=&#32;p.<link linkend="_class_player_1a1043d8ae834b0edbdf36765e73c32eb0">player_position_y</link>;
+<anchor xml:id="_class_player_1l00090"/>00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_player_1l00091"/>00091 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;h&apos;</emphasis>:&#32;<link linkend="_class_player_1aad33b52bfe73c4c978a3135172f286a0">health</link>&#32;=&#32;<link linkend="_class_player_1a8e27b94ff10ba3c236f57a8a721a5d40">PlayerCollisionsChecks</link>(<link linkend="_class_player_1aad33b52bfe73c4c978a3135172f286a0">health</link>,&#32;<link linkend="_class_player_1ad4cfa39d8e172a78e2e8c1c8da13f080">max_stats</link>,&#32;m,&#32;p);
+<anchor xml:id="_class_player_1l00092"/>00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_player_1l00093"/>00093 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;s&apos;</emphasis>:&#32;<link linkend="_class_player_1aeaeb39c73e57dbc0727f51a2b6c24b41">shield</link>&#32;=&#32;<link linkend="_class_player_1a8e27b94ff10ba3c236f57a8a721a5d40">PlayerCollisionsChecks</link>(<link linkend="_class_player_1aeaeb39c73e57dbc0727f51a2b6c24b41">shield</link>,&#32;<link linkend="_class_player_1ad4cfa39d8e172a78e2e8c1c8da13f080">max_stats</link>,&#32;m,&#32;p);
+<anchor xml:id="_class_player_1l00094"/>00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_player_1l00095"/>00095 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;H&apos;</emphasis>:&#32;<link linkend="_class_player_1aa55063fb11d6d041d7e72ef650824280">health_potions</link>&#32;=&#32;<link linkend="_class_player_1a8e27b94ff10ba3c236f57a8a721a5d40">PlayerCollisionsChecks</link>(<link linkend="_class_player_1aa55063fb11d6d041d7e72ef650824280">health_potions</link>,&#32;<link linkend="_class_player_1aeee533a8d8e4e2a00f77b6c493b3929f">max_potions</link>,&#32;m,&#32;p);
+<anchor xml:id="_class_player_1l00096"/>00096 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;S&apos;</emphasis>:&#32;<link linkend="_class_player_1aff4ffb0294cf1c1f81d0f4b1f8fc15ff">shield_potions</link>&#32;=&#32;<link linkend="_class_player_1a8e27b94ff10ba3c236f57a8a721a5d40">PlayerCollisionsChecks</link>(<link linkend="_class_player_1aff4ffb0294cf1c1f81d0f4b1f8fc15ff">shield_potions</link>,&#32;<link linkend="_class_player_1aeee533a8d8e4e2a00f77b6c493b3929f">max_potions</link>,&#32;m,&#32;p);
+<anchor xml:id="_class_player_1l00097"/>00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_player_1l00098"/>00098 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;M&apos;</emphasis>:&#32;<link linkend="_class_player_1a84354c435ab9342fc19b09423053d1ed">magic_potions</link>&#32;=&#32;<link linkend="_class_player_1a8e27b94ff10ba3c236f57a8a721a5d40">PlayerCollisionsChecks</link>(<link linkend="_class_player_1a84354c435ab9342fc19b09423053d1ed">magic_potions</link>,&#32;<link linkend="_class_player_1aeee533a8d8e4e2a00f77b6c493b3929f">max_potions</link>,&#32;m,&#32;p);
+<anchor xml:id="_class_player_1l00099"/>00099 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_player_1l00100"/>00100 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;N&apos;</emphasis>:&#32;<emphasis role="comment">//&#32;PRINT&#32;MESSAGE</emphasis>
+<anchor xml:id="_class_player_1l00101"/>00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1af437a788282ad5c25d54a10de8199d11">EnterMessageMode</link>(m,&#32;m.<link linkend="_class_map_manager_1a6c276cfffc5bfb5ca0448b192b00c071">generic_friendlies</link>.at(m.<link linkend="_class_map_manager_1a147a44e3b176a36a06689d4589cfb76f">FindFriendly</link>(p)));
+<anchor xml:id="_class_player_1l00102"/>00102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1a3b587452a99abee05fafb51daadf6687">BlankPosition</link>(m,&#32;p);
+<anchor xml:id="_class_player_1l00103"/>00103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_player_1l00104"/>00104 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;E&apos;</emphasis>:&#32;<emphasis role="comment">//&#32;ENTER&#32;COMBAT&#32;MODE</emphasis>
+<anchor xml:id="_class_player_1l00105"/>00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1a4e306abcd8bd537e80b89563ad77275c">EnterCombatMode</link>(m,&#32;m.<link linkend="_class_map_manager_1a426775cb6ac19bd0e9b6ca79e93dc013">enemies</link>.at(m.<link linkend="_class_map_manager_1a63237ae436886673f81ed41f38e7ffbe">FindEnemy</link>(p)));
+<anchor xml:id="_class_player_1l00106"/>00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1a3b587452a99abee05fafb51daadf6687">BlankPosition</link>(m,&#32;p);
+<anchor xml:id="_class_player_1l00107"/>00107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_player_1l00108"/>00108 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;c_level_portal:
+<anchor xml:id="_class_player_1l00109"/>00109 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00110"/>00110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;m.<link linkend="_class_map_manager_1ab864df2edd061402a8ae649642545cf4">LoadNextMap</link>(m,&#32;c,&#32;p,&#32;i);
+<anchor xml:id="_class_player_1l00111"/>00111 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00112"/>00112 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_player_1l00113"/>00113 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00114"/>00114 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;item_picked_up;
+<anchor xml:id="_class_player_1l00115"/>00115 &#32;&#32;&#32;&#32;<link linkend="_class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1">InventoryManager::ITEM_TYPE</link>&#32;type&#32;=&#32;i.<link linkend="_class_inventory_manager_1a3af6cc9ac4341fba2fde51ae42ad3303">WhatIsItem</link>(nextMove);
+<anchor xml:id="_class_player_1l00116"/>00116 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">switch</emphasis>&#32;(type)
+<anchor xml:id="_class_player_1l00117"/>00117 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00118"/>00118 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<link linkend="_class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1af8f6596290d4e68df5ae27ec38bbbbff">InventoryManager::WEAPON</link>:&#32;ui.<link linkend="_class_user_interface_manager_1a20860ee0c0c01dba89ac4f81dba649dd">inventory</link>.insert(inventory_table_iterator,&#32;<emphasis role="stringliteral">&quot;TEST&quot;</emphasis>);
+<anchor xml:id="_class_player_1l00119"/>00119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_player_1l00120"/>00120 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<link linkend="_class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f">InventoryManager::POTION</link>:&#32;<emphasis role="keywordtype">int</emphasis>&#32;index&#32;=&#32;i.<link linkend="_class_inventory_manager_1a98a166d06e34c1f4dc503304f0861a6a">GetInventoryHeadingLocation</link>(inventory_headings[1],&#32;ui);
+<anchor xml:id="_class_player_1l00121"/>00121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;advance(inventory_table_iterator,&#32;index&#32;+&#32;1);
+<anchor xml:id="_class_player_1l00122"/>00122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(i.<link linkend="_class_inventory_manager_1aadd5ea163e9e6b8d9df1795443fb035a">InsertIntoInventoryManager</link>(type,&#32;nextMove,&#32;p,&#32;ui))
+<anchor xml:id="_class_player_1l00123"/>00123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00124"/>00124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00125"/>00125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="_class_player_1l00126"/>00126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00127"/>00127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ui.<link linkend="_class_user_interface_manager_1a20860ee0c0c01dba89ac4f81dba649dd">inventory</link>.insert(inventory_table_iterator,&#32;i.<link linkend="_class_inventory_manager_1ae1b2153f7d99c00d92bb7e0516f3d32d">potion_inventory</link>.at(i.<link linkend="_class_inventory_manager_1ae1b2153f7d99c00d92bb7e0516f3d32d">potion_inventory</link>.size()&#32;-&#32;1));
+<anchor xml:id="_class_player_1l00128"/>00128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00129"/>00129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_player_1l00130"/>00130 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00131"/>00131 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_a848f89637b84d9692c96fc75cfa434eb_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_a848f89637b84d9692c96fc75cfa434eb_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_player_1a8e27b94ff10ba3c236f57a8a721a5d40"/><section>
+    <title>PlayerCollisionsChecks()</title>
+<indexterm><primary>PlayerCollisionsChecks</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>PlayerCollisionsChecks</secondary></indexterm>
+<para><computeroutput>int Player::PlayerCollisionsChecks (int item, int item_max, <link linkend="_class_map_manager">MapManager</link> &amp; m, <link linkend="_class_player">Player</link> &amp; p)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8cpp_source_1l00040">40</link> of file <link linkend="__player_8cpp_source">Player.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_player_1l00041"/>00041 {
+<anchor xml:id="_class_player_1l00042"/>00042 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;cleared&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_class_player_1l00043"/>00043 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(item&#32;!=&#32;item_max)
+<anchor xml:id="_class_player_1l00044"/>00044 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cleared&#32;=&#32;<link linkend="_class_player_1a3b587452a99abee05fafb51daadf6687">BlankPosition</link>(m,&#32;p);
+<anchor xml:id="_class_player_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cleared)
+<anchor xml:id="_class_player_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;item++;
+<anchor xml:id="_class_player_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00050"/>00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cleared&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_class_player_1l00051"/>00051 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00052"/>00052 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="_class_player_1l00053"/>00053 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;p.<link linkend="_class_player_1a295efe0018307edab6aaeaad9dae6e0b">player_position_x_new</link>&#32;=&#32;p.<link linkend="_class_player_1a5e4cebf1dffd936edc4a69867dc9d38c">player_position_x</link>;
+<anchor xml:id="_class_player_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;p.<link linkend="_class_player_1a7ddbc65116b9c73791679dc1aa049980">player_position_y_new</link>&#32;=&#32;p.<link linkend="_class_player_1a1043d8ae834b0edbdf36765e73c32eb0">player_position_y</link>;
+<anchor xml:id="_class_player_1l00056"/>00056 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00057"/>00057 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;item;
+<anchor xml:id="_class_player_1l00058"/>00058 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_a8e27b94ff10ba3c236f57a8a721a5d40_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_a8e27b94ff10ba3c236f57a8a721a5d40_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_player_1a459cda6070754195650bd10e0db43710"/><section>
+    <title>PlayerInput()</title>
+<indexterm><primary>PlayerInput</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>PlayerInput</secondary></indexterm>
+<para><computeroutput>void Player::PlayerInput (<link linkend="_class_inventory_manager">InventoryManager</link> &amp; i, <link linkend="_class_console_window_manager">ConsoleWindowManager</link> &amp; c, <link linkend="_class_map_manager">MapManager</link> &amp; m, <link linkend="_class_player">Player</link> &amp; p, <link linkend="_class_console_rendering">ConsoleRendering</link> &amp; r, <link linkend="_class_user_interface_manager">UserInterfaceManager</link> &amp; ui, <link linkend="_class_combat_manager">CombatManager</link> &amp; cm)</computeroutput></para><para>
+Definition at line <link linkend="__player_8cpp_source_1l00174">174</link> of file <link linkend="__player_8cpp_source">Player.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_player_1l00175"/>00175 {
+<anchor xml:id="_class_player_1l00176"/>00176 &#32;&#32;&#32;&#32;<link linkend="_class_player_1a295efe0018307edab6aaeaad9dae6e0b">player_position_x_new</link>&#32;=&#32;<link linkend="_class_player_1a5e4cebf1dffd936edc4a69867dc9d38c">player_position_x</link>;
+<anchor xml:id="_class_player_1l00177"/>00177 &#32;&#32;&#32;&#32;<link linkend="_class_player_1a7ddbc65116b9c73791679dc1aa049980">player_position_y_new</link>&#32;=&#32;<link linkend="_class_player_1a1043d8ae834b0edbdf36765e73c32eb0">player_position_y</link>;
+<anchor xml:id="_class_player_1l00178"/>00178 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(i.<link linkend="_class_inventory_manager_1a229268373b664e039dcd90f41282f5e4">inventory_open</link>)
+<anchor xml:id="_class_player_1l00179"/>00179 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00180"/>00180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(GetKeyState(VK_RIGHT)&#32;&amp;&#32;0x8000)
+<anchor xml:id="_class_player_1l00181"/>00181 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00182"/>00182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i.<link linkend="_class_inventory_manager_1acb6cf3d380d81c8129820734b05d0f6e">InventoryControl</link>(<emphasis role="charliteral">&apos;n&apos;</emphasis>,&#32;r,&#32;i,&#32;c,&#32;m,&#32;ui);
+<anchor xml:id="_class_player_1l00183"/>00183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Sleep(60);
+<anchor xml:id="_class_player_1l00184"/>00184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00185"/>00185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(GetKeyState(VK_LEFT)&#32;&amp;&#32;0x8000)
+<anchor xml:id="_class_player_1l00186"/>00186 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00187"/>00187 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i.<link linkend="_class_inventory_manager_1acb6cf3d380d81c8129820734b05d0f6e">InventoryControl</link>(<emphasis role="charliteral">&apos;b&apos;</emphasis>,&#32;r,&#32;i,&#32;c,&#32;m,&#32;ui);
+<anchor xml:id="_class_player_1l00188"/>00188 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Sleep(60);
+<anchor xml:id="_class_player_1l00189"/>00189 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00190"/>00190 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(GetKeyState(VK_BACK)&#32;&amp;&#32;0x8000)
+<anchor xml:id="_class_player_1l00191"/>00191 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00192"/>00192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i.<link linkend="_class_inventory_manager_1a5b5e89fe9ebb4fe18db920a373c4052b">DropItemSelected</link>(i.<link linkend="_class_inventory_manager_1a4c1df972584d8dd26d0156eb24ff2d25">inventory_index</link>,&#32;p,&#32;c,&#32;m,&#32;i,&#32;r,&#32;ui);
+<anchor xml:id="_class_player_1l00193"/>00193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00194"/>00194 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(GetKeyState(VK_RETURN)&#32;&amp;&#32;0x8000)
+<anchor xml:id="_class_player_1l00195"/>00195 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00196"/>00196 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i.<link linkend="_class_inventory_manager_1a5bbb29a62327b708ec79942a3d18aece">UsePotionSelected</link>(i.<link linkend="_class_inventory_manager_1a4c1df972584d8dd26d0156eb24ff2d25">inventory_index</link>,&#32;p,&#32;c,&#32;m,&#32;i,&#32;r,&#32;ui);
+<anchor xml:id="_class_player_1l00197"/>00197 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00198"/>00198 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00199"/>00199 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_player_1a3d88ecef0d65b5ca204f92c1a75c02c4">waiting_to_start_combat</link>)
+<anchor xml:id="_class_player_1l00200"/>00200 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00201"/>00201 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1afabc272a584435771820c92f2c8308f1">in_combat</link>&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_class_player_1l00202"/>00202 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1a3d88ecef0d65b5ca204f92c1a75c02c4">waiting_to_start_combat</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_class_player_1l00203"/>00203 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00204"/>00204 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_player_1afabc272a584435771820c92f2c8308f1">in_combat</link>)
+<anchor xml:id="_class_player_1l00205"/>00205 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00206"/>00206 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(<link linkend="_class_player_1afabc272a584435771820c92f2c8308f1">in_combat</link>)
+<anchor xml:id="_class_player_1l00207"/>00207 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00208"/>00208 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cm.<link linkend="_class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80">Fight</link>(p,&#32;m,&#32;m.<link linkend="_class_map_manager_1a426775cb6ac19bd0e9b6ca79e93dc013">enemies</link>.at(m.<link linkend="_class_map_manager_1a63237ae436886673f81ed41f38e7ffbe">FindEnemy</link>(p)));
+<anchor xml:id="_class_player_1l00209"/>00209 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00210"/>00210 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00211"/>00211 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="_class_player_1l00212"/>00212 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00213"/>00213 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(GetKeyState(VK_UP)&#32;&amp;&#32;0x8000)
+<anchor xml:id="_class_player_1l00214"/>00214 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00215"/>00215 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1a7ddbc65116b9c73791679dc1aa049980">player_position_y_new</link>&#32;=&#32;<link linkend="_class_player_1a1043d8ae834b0edbdf36765e73c32eb0">player_position_y</link>&#32;-&#32;1;
+<anchor xml:id="_class_player_1l00216"/>00216 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00217"/>00217 
+<anchor xml:id="_class_player_1l00218"/>00218 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(GetKeyState(VK_DOWN)&#32;&amp;&#32;0x8000)
+<anchor xml:id="_class_player_1l00219"/>00219 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00220"/>00220 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1a7ddbc65116b9c73791679dc1aa049980">player_position_y_new</link>&#32;=&#32;<link linkend="_class_player_1a1043d8ae834b0edbdf36765e73c32eb0">player_position_y</link>&#32;+&#32;1;
+<anchor xml:id="_class_player_1l00221"/>00221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00222"/>00222 
+<anchor xml:id="_class_player_1l00223"/>00223 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(GetKeyState(VK_RIGHT)&#32;&amp;&#32;0x8000)
+<anchor xml:id="_class_player_1l00224"/>00224 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00225"/>00225 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1a295efe0018307edab6aaeaad9dae6e0b">player_position_x_new</link>&#32;=&#32;<link linkend="_class_player_1a5e4cebf1dffd936edc4a69867dc9d38c">player_position_x</link>&#32;+&#32;1;
+<anchor xml:id="_class_player_1l00226"/>00226 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00227"/>00227 
+<anchor xml:id="_class_player_1l00228"/>00228 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(GetKeyState(VK_LEFT)&#32;&amp;&#32;0x8000)
+<anchor xml:id="_class_player_1l00229"/>00229 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00230"/>00230 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1a295efe0018307edab6aaeaad9dae6e0b">player_position_x_new</link>&#32;=&#32;<link linkend="_class_player_1a5e4cebf1dffd936edc4a69867dc9d38c">player_position_x</link>&#32;-&#32;1;
+<anchor xml:id="_class_player_1l00231"/>00231 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00232"/>00232 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00233"/>00233 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_a459cda6070754195650bd10e0db43710_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_a459cda6070754195650bd10e0db43710_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_player_1a4b2ed7452ebf86347df93b965f5c4966"/><section>
+    <title>RenderPlayer()</title>
+<indexterm><primary>RenderPlayer</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>RenderPlayer</secondary></indexterm>
+<para><computeroutput>void Player::RenderPlayer (<link linkend="_class_map_manager">MapManager</link> &amp; m, <link linkend="_class_console_window_manager">ConsoleWindowManager</link> &amp; c, <link linkend="_class_inventory_manager">InventoryManager</link> &amp; i)</computeroutput></para><para>
+Definition at line <link linkend="__player_8cpp_source_1l00010">10</link> of file <link linkend="__player_8cpp_source">Player.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_player_1l00011"/>00011 {
+<anchor xml:id="_class_player_1l00012"/>00012 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!i.<link linkend="_class_inventory_manager_1a229268373b664e039dcd90f41282f5e4">inventory_open</link>)
+<anchor xml:id="_class_player_1l00013"/>00013 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;BLANKS&#32;THE&#32;PLAYER&apos;S&#32;OLD&#32;POSITION</emphasis>
+<anchor xml:id="_class_player_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">GoToScreenPosition</link>(<link linkend="_class_player_1a5e4cebf1dffd936edc4a69867dc9d38c">player_position_x</link>,&#32;<link linkend="_class_player_1a1043d8ae834b0edbdf36765e73c32eb0">player_position_y</link>);
+<anchor xml:id="_class_player_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">switch</emphasis>&#32;(m.<link linkend="_class_map_manager_1a8718e18f0c51173645c2626e5e65cb32">new_map</link>[<link linkend="_class_player_1a1043d8ae834b0edbdf36765e73c32eb0">player_position_y</link>&#32;*&#32;m.<link linkend="_class_map_manager_1af44d67473c8a932512d90fe08a5f10c2">width</link>&#32;+&#32;<link linkend="_class_player_1a5e4cebf1dffd936edc4a69867dc9d38c">player_position_x</link>])
+<anchor xml:id="_class_player_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_player_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="charliteral">&apos;=&apos;</emphasis>:&#32;c.<link linkend="_class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213">SetConsoleWindowColor</link>(<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752">ConsoleWindowManager::LIGHT_BLUE</link>,&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e">ConsoleWindowManager::MAGENTA</link>);
+<anchor xml:id="_class_player_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&apos;\xB0&apos;</emphasis>;
+<anchor xml:id="_class_player_1l00020"/>00020 
+<anchor xml:id="_class_player_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_player_1l00022"/>00022 
+<anchor xml:id="_class_player_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">default</emphasis>:&#32;c.<link linkend="_class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213">SetConsoleWindowColor</link>(<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752">ConsoleWindowManager::LIGHT_BLUE</link>,&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3">ConsoleWindowManager::BLACK</link>);
+<anchor xml:id="_class_player_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&apos;\xFA&apos;</emphasis>;
+<anchor xml:id="_class_player_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00026"/>00026 
+<anchor xml:id="_class_player_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;DRAWS&#32;THE&#32;PLAYER&apos;S&#32;OLD&#32;POSITION</emphasis>
+<anchor xml:id="_class_player_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">GoToScreenPosition</link>(<link linkend="_class_player_1a295efe0018307edab6aaeaad9dae6e0b">player_position_x_new</link>,&#32;<link linkend="_class_player_1a7ddbc65116b9c73791679dc1aa049980">player_position_y_new</link>);
+<anchor xml:id="_class_player_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<link linkend="_class_player_1a0dfa2c1fdd710480766dcb2cf85b2db4">c_player</link>;
+<anchor xml:id="_class_player_1l00030"/>00030 
+<anchor xml:id="_class_player_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1a5e4cebf1dffd936edc4a69867dc9d38c">player_position_x</link>&#32;=&#32;<link linkend="_class_player_1a295efe0018307edab6aaeaad9dae6e0b">player_position_x_new</link>;
+<anchor xml:id="_class_player_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_player_1a1043d8ae834b0edbdf36765e73c32eb0">player_position_y</link>&#32;=&#32;<link linkend="_class_player_1a7ddbc65116b9c73791679dc1aa049980">player_position_y_new</link>;
+<anchor xml:id="_class_player_1l00033"/>00033 
+<anchor xml:id="_class_player_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Sleep(60);
+<anchor xml:id="_class_player_1l00035"/>00035 
+<anchor xml:id="_class_player_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c.<link linkend="_class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213">SetConsoleWindowColor</link>(<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752">ConsoleWindowManager::LIGHT_BLUE</link>,&#32;<link linkend="_class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3">ConsoleWindowManager::BLACK</link>);
+<anchor xml:id="_class_player_1l00037"/>00037 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_player_1l00038"/>00038 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_a4b2ed7452ebf86347df93b965f5c4966_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_a4b2ed7452ebf86347df93b965f5c4966_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_player_1a02ec140e8f48a44f442e97eb2a19a00e"/><section>
+    <title>SetDesiredHealth()</title>
+<indexterm><primary>SetDesiredHealth</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>SetDesiredHealth</secondary></indexterm>
+<para><computeroutput>void Player::SetDesiredHealth (int value)</computeroutput></para><para>
+Definition at line <link linkend="__player_8cpp_source_1l00169">169</link> of file <link linkend="__player_8cpp_source">Player.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_player_1l00170"/>00170 {
+<anchor xml:id="_class_player_1l00171"/>00171 &#32;&#32;&#32;&#32;<link linkend="_class_player_1aad33b52bfe73c4c978a3135172f286a0">health</link>&#32;=&#32;value;
+<anchor xml:id="_class_player_1l00172"/>00172 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_player_a02ec140e8f48a44f442e97eb2a19a00e_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_player_1a0dfa2c1fdd710480766dcb2cf85b2db4"/><section>
+    <title>c_player</title>
+<indexterm><primary>c_player</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>c_player</secondary></indexterm>
+<para><computeroutput>const char Player::c_player = &apos;P&apos;<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00049">49</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1a433fa478597adbefe4ac3911c5639968"/><section>
+    <title>damage</title>
+<indexterm><primary>damage</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>damage</secondary></indexterm>
+<para><computeroutput>int Player::damage = 10</computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00032">32</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1a0df6cda292d01636309ab82d1445f8b5"/><section>
+    <title>end_game</title>
+<indexterm><primary>end_game</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>end_game</secondary></indexterm>
+<para><computeroutput>bool Player::end_game</computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00029">29</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1aad33b52bfe73c4c978a3135172f286a0"/><section>
+    <title>health</title>
+<indexterm><primary>health</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>health</secondary></indexterm>
+<para><computeroutput>int Player::health = 50</computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00034">34</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1aa55063fb11d6d041d7e72ef650824280"/><section>
+    <title>health_potions</title>
+<indexterm><primary>health_potions</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>health_potions</secondary></indexterm>
+<para><computeroutput>int Player::health_potions = 0</computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00037">37</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1afabc272a584435771820c92f2c8308f1"/><section>
+    <title>in_combat</title>
+<indexterm><primary>in_combat</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>in_combat</secondary></indexterm>
+<para><computeroutput>bool Player::in_combat = false</computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00030">30</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1a03a20ecc0094ce6869d196b8effddd54"/><section>
+    <title>magic</title>
+<indexterm><primary>magic</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>magic</secondary></indexterm>
+<para><computeroutput>int Player::magic = 9</computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00035">35</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1a84354c435ab9342fc19b09423053d1ed"/><section>
+    <title>magic_potions</title>
+<indexterm><primary>magic_potions</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>magic_potions</secondary></indexterm>
+<para><computeroutput>int Player::magic_potions = 0</computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00037">37</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1aeee533a8d8e4e2a00f77b6c493b3929f"/><section>
+    <title>max_potions</title>
+<indexterm><primary>max_potions</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>max_potions</secondary></indexterm>
+<para><computeroutput>int Player::max_potions = 10</computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00038">38</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1ad4cfa39d8e172a78e2e8c1c8da13f080"/><section>
+    <title>max_stats</title>
+<indexterm><primary>max_stats</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>max_stats</secondary></indexterm>
+<para><computeroutput>int Player::max_stats = 10</computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00036">36</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1a5e4cebf1dffd936edc4a69867dc9d38c"/><section>
+    <title>player_position_x</title>
+<indexterm><primary>player_position_x</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>player_position_x</secondary></indexterm>
+<para><computeroutput>int Player::player_position_x = 20</computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00023">23</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1a295efe0018307edab6aaeaad9dae6e0b"/><section>
+    <title>player_position_x_new</title>
+<indexterm><primary>player_position_x_new</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>player_position_x_new</secondary></indexterm>
+<para><computeroutput>int Player::player_position_x_new = <link linkend="_class_player_1a5e4cebf1dffd936edc4a69867dc9d38c">player_position_x</link></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00025">25</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1a1043d8ae834b0edbdf36765e73c32eb0"/><section>
+    <title>player_position_y</title>
+<indexterm><primary>player_position_y</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>player_position_y</secondary></indexterm>
+<para><computeroutput>int Player::player_position_y = 10</computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00024">24</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1a7ddbc65116b9c73791679dc1aa049980"/><section>
+    <title>player_position_y_new</title>
+<indexterm><primary>player_position_y_new</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>player_position_y_new</secondary></indexterm>
+<para><computeroutput>int Player::player_position_y_new = <link linkend="_class_player_1a1043d8ae834b0edbdf36765e73c32eb0">player_position_y</link></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00026">26</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1aeaeb39c73e57dbc0727f51a2b6c24b41"/><section>
+    <title>shield</title>
+<indexterm><primary>shield</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>shield</secondary></indexterm>
+<para><computeroutput>int Player::shield = 5</computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00033">33</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1aff4ffb0294cf1c1f81d0f4b1f8fc15ff"/><section>
+    <title>shield_potions</title>
+<indexterm><primary>shield_potions</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>shield_potions</secondary></indexterm>
+<para><computeroutput>int Player::shield_potions = 0</computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00037">37</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1afeb496e92e437ad4d2da75f935f922ea"/><section>
+    <title>waiting_for_choice</title>
+<indexterm><primary>waiting_for_choice</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>waiting_for_choice</secondary></indexterm>
+<para><computeroutput>bool Player::waiting_for_choice = false<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00053">53</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<anchor xml:id="_class_player_1a3d88ecef0d65b5ca204f92c1a75c02c4"/><section>
+    <title>waiting_to_start_combat</title>
+<indexterm><primary>waiting_to_start_combat</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>waiting_to_start_combat</secondary></indexterm>
+<para><computeroutput>bool Player::waiting_to_start_combat = false<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00052">52</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+D:/University/ca-A00269349/Rogue/<link linkend="__player_8h">Player.h</link>D:/University/ca-A00269349/Rogue/<link linkend="__player_8cpp">Player.cpp</link></section>
+</section>

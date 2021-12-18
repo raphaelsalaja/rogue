@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_weapon_8h" kind="file" language="C++">
+    <compoundname>Weapon.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">ctime</includes>
+    <includes local="no">cstdlib</includes>
+    <includedby refid="_weapon_8cpp" local="yes">D:/University/ca-A00269349/Rogue/Weapon.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/Weapon.h</label>
+        <link refid="_weapon_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cstdlib</label>
+      </node>
+      <node id="3">
+        <label>ctime</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/University/ca-A00269349/Rogue/Weapon.cpp</label>
+        <link refid="_weapon_8cpp"/>
+      </node>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/Weapon.h</label>
+        <link refid="_weapon_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_weapon" prot="public">Weapon</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_weapon" kindref="compound">Weapon</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_weapon_1a2367140f69d8e9fb3f3caec6f88a598f" kindref="member">WEAPON_NAME_CHOICES</ref>[20]{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Scalpel&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Blade<sp/>of<sp/>a<sp/>Thousand<sp/>Cuts&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Nightbane&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Venom<sp/>Carver&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Annihilation<sp/>Sabre&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Honor&apos;s<sp/>Iron<sp/>Longsword&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Extinction<sp/>Iron<sp/>Skewer&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Destiny&apos;s<sp/>Song,<sp/>Quickblade<sp/>of<sp/>the<sp/>Oracle&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Night&apos;s<sp/>Edge,<sp/>Last<sp/>Stand<sp/>of<sp/>Cruelty&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Rigormortis,<sp/>Longsword<sp/>of<sp/>Broken<sp/>Dreams&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Despair&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Azurewrath&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Slice<sp/>of<sp/>Life&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Demonic<sp/>Sabre&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Malevolent<sp/>Deflector&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Twilight&apos;s<sp/>Silver<sp/>Sword&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Fire<sp/>Infused<sp/>Copper<sp/>Swiftblade&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Vengeance,<sp/>Edge<sp/>of<sp/>Justice&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Arondite,<sp/>Bond<sp/>of<sp/>Riddles&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Wit&apos;s<sp/>End,<sp/>Secret<sp/>of<sp/>the<sp/>Dead&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_weapon_1a6b683bce956944a128d3ee25a88c7ac1" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_weapon_1a4a9381f1b461ca75cf0928defe49fbc0" kindref="member">strength</ref>,<sp/><ref refid="class_weapon_1a9f519847c0970ed12ffdb22b2de6162b" kindref="member">weight</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67" kindref="member">WEAPON_TYPE</ref></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67a1575731f81cad9b652cf53e89ec00e7b" kindref="member">SWORD</ref>,</highlight></codeline>
+<codeline lineno="40" refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67a8f961e6ca53c82ffc637bf6e929c3af0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67a8f961e6ca53c82ffc637bf6e929c3af0" kindref="member">DAGGER</ref>,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67ad2f83e4c047409d071eadd24b0e291e7" kindref="member">GUN</ref></highlight></codeline>
+<codeline lineno="42" refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67ad2f83e4c047409d071eadd24b0e291e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67" kindref="member">WEAPON_TYPE</ref><sp/><ref refid="class_weapon_1a378d7783971053b498d26d456f5c3bb7" kindref="member">WEAPON_TYPE_SELECTED</ref><sp/>=<sp/><ref refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67a1575731f81cad9b652cf53e89ec00e7b" kindref="member">SWORD</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_weapon_1a42dbc46dd70319a24763992c4ebbd396" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_weapon_1a42dbc46dd70319a24763992c4ebbd396" kindref="member">Weapon</ref>();</highlight></codeline>
+<codeline lineno="47" refid="class_weapon_1a420e7ba3d2017e6de3e93eb579cfd3fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_weapon_1a420e7ba3d2017e6de3e93eb579cfd3fa" kindref="member">~Weapon</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_weapon_1a2dd096e208c2827552c41cad1f47e8e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_weapon_1a2dd096e208c2827552c41cad1f47e8e3" kindref="member">GenerateRandomNumber</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="50" refid="class_weapon_1a6b2437dd9e5541ef6f40ce35d96477c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67" kindref="member">WEAPON_TYPE</ref><sp/><ref refid="class_weapon_1a6b2437dd9e5541ef6f40ce35d96477c7" kindref="member">SetWeaponType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>weapon_choice);</highlight></codeline>
+<codeline lineno="51" refid="class_weapon_1ab1b14ca4579850bf0385c3e94ba35e57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_weapon_1ab1b14ca4579850bf0385c3e94ba35e57" kindref="member">SetWeaponName</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>weapon_name_index,<sp/><ref refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67" kindref="member">WEAPON_TYPE</ref><sp/><ref refid="class_weapon_1a378d7783971053b498d26d456f5c3bb7" kindref="member">WEAPON_TYPE_SELECTED</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_weapon_1a19a033a262067005a41239ba0e103df1" kindref="member">SetStrength</ref>();</highlight></codeline>
+<codeline lineno="53" refid="class_weapon_1aa3a7809b2c34df9d7775f57f7560c106" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_weapon_1aa3a7809b2c34df9d7775f57f7560c106" kindref="member">CreateNewWeapon</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>SYMBOL<sp/>=<sp/></highlight><highlight class="charliteral">&apos;W&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="D:/University/ca-A00269349/Rogue/Weapon.h"/>
+  </compounddef>
+</doxygen>

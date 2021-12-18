@@ -1,0 +1,131 @@
+.TH "RandomWeapon" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RandomWeapon
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <RandomWeapon\&.h>\fP
+.PP
+Inherits \fBRandomItemGenerator\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRandomWeapon\fP ()"
+.br
+.ti -1c
+.RI "\fB~RandomWeapon\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetType\fP (int choice) override"
+.br
+.ti -1c
+.RI "void \fBSetItemNames\fP (string file_name) override"
+.br
+.ti -1c
+.RI "void \fBGenerateRandomWeapon\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "char \fBsymbol\fP = 'W'"
+.br
+.ti -1c
+.RI "string \fBweapon_types\fP [5]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB4\fP of file \fBRandomWeapon\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "RandomWeapon::RandomWeapon ()"
+
+.PP
+Definition at line \fB8\fP of file \fBRandomWeapon\&.cpp\fP\&.
+.PP
+.nf
+9 {
+10 }
+.fi
+.SS "RandomWeapon::~RandomWeapon ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void RandomWeapon::GenerateRandomWeapon ()"
+
+.PP
+Definition at line \fB36\fP of file \fBRandomWeapon\&.cpp\fP\&.
+.PP
+.nf
+37 {
+38     CreateItem(symbol, weapon_types->length());
+39 }
+.fi
+.SS "void RandomWeapon::SetItemNames (string file_name)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBRandomItemGenerator\fP\&.
+.PP
+Definition at line \fB17\fP of file \fBRandomWeapon\&.cpp\fP\&.
+.PP
+.nf
+18 {
+19     int index = 0;
+20     string line;
+21     ifstream myfile(file_name);
+22     if (myfile\&.is_open())
+23     {
+24         while (!myfile\&.eof())
+25         {
+26             getline(myfile, line);
+27             ITEM_TYPES[index] = line;
+28             cout << ITEM_TYPES[index] << endl;
+29             index++;
+30         }
+31         myfile\&.close();
+32     }
+33     else { cout << "FILE CANNOT BE OPENED"; }
+34 }
+.fi
+.SS "void RandomWeapon::SetType (int choice)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBRandomItemGenerator\fP\&.
+.PP
+Definition at line \fB12\fP of file \fBRandomWeapon\&.cpp\fP\&.
+.PP
+.nf
+13 {
+14     type = Macro::GenerateRandomNumber(weapon_types->length());
+15 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "char RandomWeapon::symbol = 'W'"
+
+.PP
+Definition at line \fB14\fP of file \fBRandomWeapon\&.h\fP\&.
+.SS "string RandomWeapon::weapon_types[5]"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        "SWORD",
+        "DUAL SWORD",
+        "SPEAR",
+        "GREAT SWORD",
+        "KNIFE"
+    }
+.fi
+.PP
+Definition at line \fB16\fP of file \fBRandomWeapon\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

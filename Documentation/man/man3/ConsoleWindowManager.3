@@ -1,0 +1,261 @@
+.TH "ConsoleWindowManager" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ConsoleWindowManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ConsoleWindowManager\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBCOLORS\fP { \fBBLACK\fP = 0, \fBDARK_BLUE\fP = 1, \fBDARK_GREEN\fP = 2, \fBLIGHT_BLUE\fP = 3, \fBDARK_RED\fP = 4, \fBMAGENTA\fP = 5, \fBORANGE\fP = 6, \fBLIGHT_GRAY\fP = 7, \fBGRAY\fP = 8, \fBBLUE\fP = 9, \fBGREEN\fP = 10, \fBCYAN\fP = 11, \fBRED\fP = 12, \fBPINK\fP = 13, \fBYELLOW\fP = 14, \fBWHITE\fP = 15 }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBBlankScreen\fP ()"
+.br
+.ti -1c
+.RI "void \fBHideConsoleCursor\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetWindowDisplay\fP (int width, int height)"
+.br
+.ti -1c
+.RI "void \fBSetText\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetConsoleWindowColor\fP (\fBCOLORS\fP fg, \fBCOLORS\fP bg)"
+.br
+.ti -1c
+.RI "void \fBSetConsoleWindowRandomColor\fP (int random_color)"
+.br
+.ti -1c
+.RI "void \fBRepositionWindow\fP (int width, int height)"
+.br
+.ti -1c
+.RI "HANDLE \fBGetConsoleHandle\fP ()"
+.br
+.ti -1c
+.RI "HWND \fBGetDesktopHandleWindow\fP ()"
+.br
+.ti -1c
+.RI "HWND \fBGetConsoleHandleWindow\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "HANDLE \fBHANDLE_CONSOLE\fP"
+.br
+.ti -1c
+.RI "HWND \fBHANDLE_WINDOW_DESKTOP\fP"
+.br
+.ti -1c
+.RI "HWND \fBHANDLE_WINDOW_CONSOLE\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB4\fP of file \fBConsoleWindowManager\&.h\fP\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBConsoleWindowManager::COLORS\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIBLACK \fP\fP
+.TP
+\fB\fIDARK_BLUE \fP\fP
+.TP
+\fB\fIDARK_GREEN \fP\fP
+.TP
+\fB\fILIGHT_BLUE \fP\fP
+.TP
+\fB\fIDARK_RED \fP\fP
+.TP
+\fB\fIMAGENTA \fP\fP
+.TP
+\fB\fIORANGE \fP\fP
+.TP
+\fB\fILIGHT_GRAY \fP\fP
+.TP
+\fB\fIGRAY \fP\fP
+.TP
+\fB\fIBLUE \fP\fP
+.TP
+\fB\fIGREEN \fP\fP
+.TP
+\fB\fICYAN \fP\fP
+.TP
+\fB\fIRED \fP\fP
+.TP
+\fB\fIPINK \fP\fP
+.TP
+\fB\fIYELLOW \fP\fP
+.TP
+\fB\fIWHITE \fP\fP
+.PP
+Definition at line \fB7\fP of file \fBConsoleWindowManager\&.h\fP\&.
+.PP
+.nf
+8     {
+9         BLACK = 0,
+10         DARK_BLUE = 1,
+11         DARK_GREEN = 2,
+12         LIGHT_BLUE = 3,
+13         DARK_RED = 4,
+14         MAGENTA = 5,
+15         ORANGE = 6,
+16         LIGHT_GRAY = 7,
+17         GRAY = 8,
+18         BLUE = 9,
+19         GREEN = 10,
+20         CYAN = 11,
+21         RED = 12,
+22         PINK = 13,
+23         YELLOW = 14,
+24         WHITE = 15
+25     };
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void ConsoleWindowManager::BlankScreen ()"
+
+.PP
+Definition at line \fB18\fP of file \fBConsoleWindowManager\&.cpp\fP\&.
+.PP
+.nf
+19 {
+20     system("CLS");
+21 }
+.fi
+.SS "HANDLE ConsoleWindowManager::GetConsoleHandle ()"
+
+.PP
+Definition at line \fB3\fP of file \fBConsoleWindowManager\&.cpp\fP\&.
+.PP
+.nf
+4 {
+5     return HANDLE_CONSOLE = GetStdHandle(STD_OUTPUT_HANDLE);
+6 }
+.fi
+.SS "HWND ConsoleWindowManager::GetConsoleHandleWindow ()"
+
+.PP
+Definition at line \fB13\fP of file \fBConsoleWindowManager\&.cpp\fP\&.
+.PP
+.nf
+14 {
+15     return HANDLE_WINDOW_CONSOLE = GetConsoleWindow();
+16 }
+.fi
+.SS "HWND ConsoleWindowManager::GetDesktopHandleWindow ()"
+
+.PP
+Definition at line \fB8\fP of file \fBConsoleWindowManager\&.cpp\fP\&.
+.PP
+.nf
+9 {
+10     return HANDLE_WINDOW_DESKTOP = GetDesktopWindow();
+11 }
+.fi
+.SS "void ConsoleWindowManager::HideConsoleCursor ()"
+
+.PP
+Definition at line \fB23\fP of file \fBConsoleWindowManager\&.cpp\fP\&.
+.PP
+.nf
+24 {
+25     CONSOLE_CURSOR_INFO CONSOLE_CURSOR_INFO_CONSOLE;
+26     GetConsoleCursorInfo(GetConsoleHandle(), &CONSOLE_CURSOR_INFO_CONSOLE);
+27     CONSOLE_CURSOR_INFO_CONSOLE\&.bVisible = false;
+28     SetConsoleCursorInfo(GetConsoleHandle(), &CONSOLE_CURSOR_INFO_CONSOLE);
+29 }
+.fi
+.SS "void ConsoleWindowManager::RepositionWindow (int width, int height)"
+
+.SS "void ConsoleWindowManager::SetConsoleWindowColor (\fBCOLORS\fP fg, \fBCOLORS\fP bg)"
+
+.PP
+Definition at line \fB58\fP of file \fBConsoleWindowManager\&.cpp\fP\&.
+.PP
+.nf
+59 {
+60     SetConsoleTextAttribute(GetConsoleHandle(), fg + bg * 16);
+61 }
+.fi
+.SS "void ConsoleWindowManager::SetConsoleWindowRandomColor (int random_color)"
+
+.PP
+Definition at line \fB64\fP of file \fBConsoleWindowManager\&.cpp\fP\&.
+.PP
+.nf
+65 {
+66     SetConsoleTextAttribute(GetConsoleHandle(), random_color + BLACK * 16);
+67 }
+.fi
+.SS "void ConsoleWindowManager::SetText ()"
+
+.PP
+Definition at line \fB48\fP of file \fBConsoleWindowManager\&.cpp\fP\&.
+.PP
+.nf
+49 {
+50     CONSOLE_FONT_INFOEX CONSOLE_FONT = {0};
+51     CONSOLE_FONT\&.cbSize = sizeof CONSOLE_FONT;
+52     CONSOLE_FONT\&.dwFontSize\&.X = 8;
+53     CONSOLE_FONT\&.dwFontSize\&.Y = 12;
+54     wcscpy_s(CONSOLE_FONT\&.FaceName, L"Terminal");
+55     SetCurrentConsoleFontEx(GetConsoleHandle(), 0, &CONSOLE_FONT);
+56 }
+.fi
+.SS "void ConsoleWindowManager::SetWindowDisplay (int width, int height)"
+
+.PP
+Definition at line \fB31\fP of file \fBConsoleWindowManager\&.cpp\fP\&.
+.PP
+.nf
+32 {
+33     HMONITOR HANDLE_MONITOR = MonitorFromWindow(GetConsoleHandleWindow(), MONITOR_DEFAULTTONEAREST);
+34     if (HANDLE_MONITOR)
+35     {
+36         MONITORINFO MONITOR_INFO{sizeof(MONITOR_INFO)};
+37         if (::GetMonitorInfo(HANDLE_MONITOR, &MONITOR_INFO))
+38         {
+39             int x = (MONITOR_INFO\&.rcWork\&.left + MONITOR_INFO\&.rcWork\&.right) / 2 - width / 2;
+40             int y = (MONITOR_INFO\&.rcWork\&.top + MONITOR_INFO\&.rcWork\&.bottom) / 2 - height / 2;
+41             SetConsoleTitle(TEXT("ROGUE"));
+42             SetWindowPos(GetConsoleHandleWindow(), nullptr, x, y, width, height,
+43                          SWP_NOZORDER | SWP_NOOWNERZORDER | SWP_SHOWWINDOW);
+44         }
+45     }
+46 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "HANDLE ConsoleWindowManager::HANDLE_CONSOLE\fC [private]\fP"
+
+.PP
+Definition at line \fB41\fP of file \fBConsoleWindowManager\&.h\fP\&.
+.SS "HWND ConsoleWindowManager::HANDLE_WINDOW_CONSOLE\fC [private]\fP"
+
+.PP
+Definition at line \fB43\fP of file \fBConsoleWindowManager\&.h\fP\&.
+.SS "HWND ConsoleWindowManager::HANDLE_WINDOW_DESKTOP\fC [private]\fP"
+
+.PP
+Definition at line \fB42\fP of file \fBConsoleWindowManager\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

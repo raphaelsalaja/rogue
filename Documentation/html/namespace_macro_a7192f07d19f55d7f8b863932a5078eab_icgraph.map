@@ -1,0 +1,14 @@
+<map id="Macro::GenerateRandomNumber" name="Macro::GenerateRandomNumber">
+<area shape="rect" id="node1" title=" " alt="" coords="992,157,1204,184"/>
+<area shape="rect" id="node2" href="$class_random_item_generator.html#afa526acb6d33fca117a7d741f23877a0" title=" " alt="" coords="377,81,603,108"/>
+<area shape="rect" id="node4" href="$class_non_playable_character.html#a243b776f7671fc3458bf9ef6f9925875" title=" " alt="" coords="716,208,929,235"/>
+<area shape="rect" id="node7" href="$class_generic_friendly.html#aa34e4c712d03f91ea3069dd007d91366" title=" " alt="" coords="701,309,944,336"/>
+<area shape="rect" id="node9" href="$class_random_item_generator.html#a779176c9969633372b5a70a2daf57d5e" title=" " alt="" coords="713,5,932,32"/>
+<area shape="rect" id="node10" href="$class_random_item_generator.html#a2b6f82fc5576dbe0b3dd4614bc60f305" title=" " alt="" coords="707,56,938,83"/>
+<area shape="rect" id="node11" href="$class_random_weapon.html#aea0b4d6a59c972b64ed00ba7b7894d5c" title=" " alt="" coords="735,259,910,285"/>
+<area shape="rect" id="node12" href="$class_random_item_generator.html#a0cd93433c0ce88481b7f82ee43796a0f" title=" " alt="" coords="712,107,933,133"/>
+<area shape="rect" id="node3" href="$class_random_weapon.html#a48fd5758c4c65e266d3ba9bfe3e6c90b" title=" " alt="" coords="5,81,279,108"/>
+<area shape="rect" id="node5" href="$class_non_playable_character.html#a4b3bd63666508f9ea91c83a4a1bec3d1" title=" " alt="" coords="327,183,653,209"/>
+<area shape="rect" id="node6" href="$class_enemy.html#a98f0d2110309536798101b88d2d1d8c9" title=" " alt="" coords="434,233,546,260"/>
+<area shape="rect" id="node8" href="$class_generic_friendly.html#af024c04814e88cb748cd4c21aad5589d" title=" " alt="" coords="384,309,596,336"/>
+</map>

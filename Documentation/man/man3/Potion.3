@@ -1,0 +1,284 @@
+.TH "Potion" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Potion
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Potion\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBPOTION_TYPE\fP { \fBHEALTH\fP, \fBMAGIC\fP, \fBSHIELD\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPotion\fP ()"
+.br
+.ti -1c
+.RI "\fB~Potion\fP ()"
+.br
+.ti -1c
+.RI "unsigned int \fBGenerateRandomNumber\fP (int max)"
+.br
+.ti -1c
+.RI "\fBPOTION_TYPE\fP \fBSetPotionType\fP (int potion_choice)"
+.br
+.ti -1c
+.RI "string \fBSetPotionName\fP (int potion_name_index, \fBPOTION_TYPE\fP \fBPOTION_TYPE_SELECTED\fP)"
+.br
+.ti -1c
+.RI "int \fBSetStrength\fP (string \fBname\fP)"
+.br
+.ti -1c
+.RI "void \fBCreateNewPotion\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBPOTION_NAME_CHOICES\fP [3][6]"
+.br
+.ti -1c
+.RI "string \fBname\fP"
+.br
+.ti -1c
+.RI "int \fBstrength\fP"
+.br
+.ti -1c
+.RI "int \fBweight\fP"
+.br
+.ti -1c
+.RI "\fBPOTION_TYPE\fP \fBPOTION_TYPE_SELECTED\fP = \fBHEALTH\fP"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "const char \fBSYMBOL\fP = 'P'"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB6\fP of file \fBPotion\&.h\fP\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBPotion::POTION_TYPE\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIHEALTH \fP\fP
+.TP
+\fB\fIMAGIC \fP\fP
+.TP
+\fB\fISHIELD \fP\fP
+.PP
+Definition at line \fB38\fP of file \fBPotion\&.h\fP\&.
+.PP
+.nf
+39     {
+40         HEALTH,
+41         MAGIC,
+42         SHIELD
+43     };
+.fi
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Potion::Potion ()"
+
+.PP
+Definition at line \fB8\fP of file \fBPotion\&.cpp\fP\&.
+.PP
+.nf
+9 {
+10     CreateNewPotion();
+11 }
+.fi
+.SS "Potion::~Potion ()"
+
+.PP
+Definition at line \fB13\fP of file \fBPotion\&.cpp\fP\&.
+.PP
+.nf
+14 {
+15 }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void Potion::CreateNewPotion ()"
+
+.PP
+Definition at line \fB87\fP of file \fBPotion\&.cpp\fP\&.
+.PP
+.nf
+88 {
+89     int potion_choice = GenerateRandomNumber(2);
+90     int potion_name_index = GenerateRandomNumber(5);
+91 
+92     POTION_TYPE_SELECTED = SetPotionType(potion_choice);
+93     name = SetPotionName(potion_name_index, POTION_TYPE_SELECTED);
+94     strength = SetStrength(name);
+95     weight = SetStrength(name);
+96 }
+.fi
+.SS "unsigned int Potion::GenerateRandomNumber (int max)"
+
+.PP
+Definition at line \fB17\fP of file \fBPotion\&.cpp\fP\&.
+.PP
+.nf
+17                                                  {
+18     srand(time(0));
+19     return rand() % max;
+20 }
+.fi
+.SS "string Potion::SetPotionName (int potion_name_index, \fBPOTION_TYPE\fP POTION_TYPE_SELECTED)"
+
+.PP
+Definition at line \fB41\fP of file \fBPotion\&.cpp\fP\&.
+.PP
+.nf
+42 {
+43     string name;
+44     switch (POTION_TYPE_SELECTED)
+45     {
+46     case Potion::POTION_TYPE::HEALTH:
+47         name = POTION_NAME_CHOICES[0][potion_name_index];
+48         break;
+49     case Potion::POTION_TYPE::SHIELD:
+50         name = POTION_NAME_CHOICES[1][potion_name_index];
+51         break;
+52     case Potion::POTION_TYPE::MAGIC:
+53         name = POTION_NAME_CHOICES[2][potion_name_index];
+54         break;
+55     }
+56     return name;
+57 }
+.fi
+.SS "\fBPotion::POTION_TYPE\fP Potion::SetPotionType (int potion_choice)"
+
+.PP
+Definition at line \fB22\fP of file \fBPotion\&.cpp\fP\&.
+.PP
+.nf
+23 {
+24     switch (potion_choice)
+25     {
+26     case 0:
+27         return Potion::POTION_TYPE::HEALTH;
+28     
+29     case 1:
+30         return Potion::POTION_TYPE::MAGIC;
+31     
+32     case 2:
+33         return Potion::POTION_TYPE::SHIELD;
+34         
+35     default:
+36         return Potion::POTION_TYPE::HEALTH;
+37     
+38     }
+39 }
+.fi
+.SS "int Potion::SetStrength (string name)"
+
+.PP
+Definition at line \fB59\fP of file \fBPotion\&.cpp\fP\&.
+.PP
+.nf
+59                                    {
+60     if ((strstr(name\&.c_str(), "Minor")))
+61     {
+62         return 1;
+63     }
+64     if ((strstr(name\&.c_str(), "Small")))
+65     {
+66         return 2;
+67     }
+68     if ((strstr(name\&.c_str(), "Plentiful")))
+69     {
+70         return 3;
+71     }
+72     if ((strstr(name\&.c_str(), "Vigorous")))
+73     {
+74         return 4;
+75     }
+76     if ((strstr(name\&.c_str(), "Extreme")))
+77     {
+78         return 5;
+79     }
+80     if ((strstr(name\&.c_str(), "Ultimate")))
+81     {
+82         return 6;
+83     }
+84     return 0;
+85 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "string Potion::name"
+
+.PP
+Definition at line \fB35\fP of file \fBPotion\&.h\fP\&.
+.SS "string Potion::POTION_NAME_CHOICES[3][6]"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        {
+            "Potion of Minor Healing",
+            "Potion of Small Healing",
+            "Potion of Plentiful Healing",
+            "Potion of Vigorous Healing",
+            "Potion of Extreme Healing",
+            "Potion of Ultimate Healing"
+        },
+        {
+            "Potion of Minor Magicka",
+            "Potion of Small Magicka",
+            "Potion of Plentiful Magicka",
+            "Potion of Vigorous Magicka",
+            "Potion of Extreme Magicka",
+            "Potion of Ultimate Magicka"
+        },
+        {
+            "Potion of Minor Magicka",
+            "Potion of Small Magicka",
+            "Potion of Plentiful Magicka",
+            "Potion of Vigorous Magicka",
+            "Potion of Extreme Magicka",
+            "Potion of Ultimate Magicka"
+        }
+    }
+.fi
+.PP
+Definition at line \fB9\fP of file \fBPotion\&.h\fP\&.
+.SS "\fBPOTION_TYPE\fP Potion::POTION_TYPE_SELECTED = \fBHEALTH\fP"
+
+.PP
+Definition at line \fB45\fP of file \fBPotion\&.h\fP\&.
+.SS "int Potion::strength"
+
+.PP
+Definition at line \fB36\fP of file \fBPotion\&.h\fP\&.
+.SS "const char Potion::SYMBOL = 'P'\fC [private]\fP"
+
+.PP
+Definition at line \fB57\fP of file \fBPotion\&.h\fP\&.
+.SS "int Potion::weight"
+
+.PP
+Definition at line \fB36\fP of file \fBPotion\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

@@ -1,0 +1,5 @@
+<map id="TitleScreenManager::PrintTitle" name="TitleScreenManager::PrintTitle">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,204,32"/>
+<area shape="rect" id="node2" href="$class_console_window_manager.html#abed5c169df20d3f830cc11b1dfbe4a6a" title=" " alt="" coords="252,5,615,32"/>
+<area shape="rect" id="node3" href="$class_console_window_manager.html#a63347b06eb482fbc128215f17b7b4a90" title=" " alt="" coords="663,5,943,32"/>
+</map>

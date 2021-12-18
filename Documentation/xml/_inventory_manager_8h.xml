@@ -1,0 +1,381 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_inventory_manager_8h" kind="file" language="C++">
+    <compoundname>InventoryManager.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes refid="_player_8h" local="yes">Player.h</includes>
+    <includes refid="_console_window_manager_8h" local="yes">ConsoleWindowManager.h</includes>
+    <includes refid="_user_interface_manger_8h" local="yes">UserInterfaceManger.h</includes>
+    <includedby refid="_console_rendering_8h" local="yes">D:/University/ca-A00269349/Rogue/ConsoleRendering.h</includedby>
+    <includedby refid="_inventory_manager_8cpp" local="yes">D:/University/ca-A00269349/Rogue/InventoryManager.cpp</includedby>
+    <includedby refid="_player_8h" local="yes">D:/University/ca-A00269349/Rogue/Player.h</includedby>
+    <includedby refid="main_8cpp" local="yes">D:/University/ca-A00269349/Rogue/main.cpp</includedby>
+    <incdepgraph>
+      <node id="13">
+        <label>CombatManager.h</label>
+        <link refid="_combat_manager_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ConsoleWindowManager.h</label>
+        <link refid="_console_window_manager_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>GenericFriendly.h</label>
+        <link refid="_generic_friendly_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/InventoryManager.h</label>
+        <link refid="_inventory_manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>MapManager.h</label>
+        <link refid="_map_manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>NonPlayableCharacter.h</label>
+        <link refid="_non_playable_character_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>UserInterfaceManger.h</label>
+        <link refid="_user_interface_manger_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>fstream</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>windows.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>D:/University/ca-A00269349/Rogue/CombatManager.cpp</label>
+        <link refid="_combat_manager_8cpp"/>
+      </node>
+      <node id="7">
+        <label>D:/University/ca-A00269349/Rogue/CombatManager.h</label>
+        <link refid="_combat_manager_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>D:/University/ca-A00269349/Rogue/ConsoleRendering.cpp</label>
+        <link refid="_console_rendering_8cpp"/>
+      </node>
+      <node id="2">
+        <label>D:/University/ca-A00269349/Rogue/ConsoleRendering.h</label>
+        <link refid="_console_rendering_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>D:/University/ca-A00269349/Rogue/Debug.cpp</label>
+        <link refid="_debug_8cpp"/>
+      </node>
+      <node id="12">
+        <label>D:/University/ca-A00269349/Rogue/Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+      </node>
+      <node id="11">
+        <label>D:/University/ca-A00269349/Rogue/Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>D:/University/ca-A00269349/Rogue/GenericFriendly.cpp</label>
+        <link refid="_generic_friendly_8cpp"/>
+      </node>
+      <node id="13">
+        <label>D:/University/ca-A00269349/Rogue/GenericFriendly.h</label>
+        <link refid="_generic_friendly_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>D:/University/ca-A00269349/Rogue/InventoryManager.cpp</label>
+        <link refid="_inventory_manager_8cpp"/>
+      </node>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/InventoryManager.h</label>
+        <link refid="_inventory_manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>D:/University/ca-A00269349/Rogue/MapManager.cpp</label>
+        <link refid="_map_manager_8cpp"/>
+      </node>
+      <node id="9">
+        <label>D:/University/ca-A00269349/Rogue/MapManager.h</label>
+        <link refid="_map_manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>D:/University/ca-A00269349/Rogue/Player.cpp</label>
+        <link refid="_player_8cpp"/>
+      </node>
+      <node id="6">
+        <label>D:/University/ca-A00269349/Rogue/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>D:/University/ca-A00269349/Rogue/TitleScreenManager.cpp</label>
+        <link refid="_title_screen_manager_8cpp"/>
+      </node>
+      <node id="17">
+        <label>D:/University/ca-A00269349/Rogue/TitleScreenManager.h</label>
+        <link refid="_title_screen_manager_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>D:/University/ca-A00269349/Rogue/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_inventory_manager" prot="public">InventoryManager</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_8h" kindref="compound">Player.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_console_window_manager_8h" kindref="compound">ConsoleWindowManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_user_interface_manger_8h" kindref="compound">UserInterfaceManger.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_user_interface_manager" kindref="compound">UserInterfaceManager</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_console_rendering" kindref="compound">ConsoleRendering</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_player" kindref="compound">Player</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_map_manager" kindref="compound">MapManager</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_inventory_manager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_inventory_manager" kindref="compound">InventoryManager</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1" kindref="member">ITEM_TYPE</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22" refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1abd97fe1f81e0a1d13f2e2ed0914f3a21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1abd97fe1f81e0a1d13f2e2ed0914f3a21" kindref="member">BLANK</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="23" refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1af8f6596290d4e68df5ae27ec38bbbbff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1af8f6596290d4e68df5ae27ec38bbbbff" kindref="member">WEAPON</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="24" refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1ae181ef7275cde223032e8378a248d691" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1ae181ef7275cde223032e8378a248d691" kindref="member">ARMOUR</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="25" refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f" kindref="member">POTION</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1adb93614be5d6a744075c56517bfc7279" kindref="member">TRINKET</ref><sp/>=<sp/>4</highlight></codeline>
+<codeline lineno="27" refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1adb93614be5d6a744075c56517bfc7279" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_inventory_manager_1ae1b2153f7d99c00d92bb7e0516f3d32d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/><ref refid="class_inventory_manager_1ae1b2153f7d99c00d92bb7e0516f3d32d" kindref="member">potion_inventory</ref>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;HEALTH&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;SHIELD&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MAGIC&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="34" refid="class_inventory_manager_1a2c9831d5f408cdb977ec3e8834445f4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a2c9831d5f408cdb977ec3e8834445f4a" kindref="member">c_health</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35" refid="class_inventory_manager_1ae592f94b9da417fdbae15aaf94559640" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1ae592f94b9da417fdbae15aaf94559640" kindref="member">c_shield</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;s&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36" refid="class_inventory_manager_1a5400f0bca8bb5930c0a65e988b8b9982" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a5400f0bca8bb5930c0a65e988b8b9982" kindref="member">c_health_potion</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;H&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37" refid="class_inventory_manager_1afed1401d4aa963b4833c0d64ac32ea00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1afed1401d4aa963b4833c0d64ac32ea00" kindref="member">c_shield_potion</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;S&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38" refid="class_inventory_manager_1a8339e1257c0c68ad1b5277f88cabc2ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a8339e1257c0c68ad1b5277f88cabc2ac" kindref="member">c_magic_potion</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;M&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_inventory_manager_1a4c1df972584d8dd26d0156eb24ff2d25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a4c1df972584d8dd26d0156eb24ff2d25" kindref="member">inventory_index</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="class_inventory_manager_1a229268373b664e039dcd90f41282f5e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a229268373b664e039dcd90f41282f5e4" kindref="member">inventory_open</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1aadd5ea163e9e6b8d9df1795443fb035a" kindref="member">InsertIntoInventoryManager</ref>(<ref refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1" kindref="member">ITEM_TYPE</ref><sp/>item,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>nextMove,<sp/><ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p,<sp/><ref refid="class_user_interface_manager" kindref="compound">UserInterfaceManager</ref>&amp;<sp/>ui);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a3ba246e46fef5621ee856a0b16be0faa" kindref="member">RemoveFromInventoryManager</ref>(<ref refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1" kindref="member">ITEM_TYPE</ref><sp/>item,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>nextMove,<sp/><ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p,<sp/><ref refid="class_user_interface_manager" kindref="compound">UserInterfaceManager</ref>&amp;<sp/>ui);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a347851015e020a56b5bb1484a4cdfef9" kindref="member">InventoryStart</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1acb6cf3d380d81c8129820734b05d0f6e" kindref="member">InventoryControl</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>action,<sp/><ref refid="class_console_rendering" kindref="compound">ConsoleRendering</ref>&amp;<sp/>r,<sp/><ref refid="class_inventory_manager" kindref="compound">InventoryManager</ref>&amp;<sp/>i,<sp/><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref>&amp;<sp/>c,<sp/><ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m,<sp/><ref refid="class_user_interface_manager" kindref="compound">UserInterfaceManager</ref>&amp;<sp/>ui);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a5bbb29a62327b708ec79942a3d18aece" kindref="member">UsePotionSelected</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>potion,<sp/><ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p,<sp/><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref>&amp;<sp/>c,<sp/><ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m,<sp/><ref refid="class_inventory_manager" kindref="compound">InventoryManager</ref>&amp;<sp/>i,<sp/><ref refid="class_console_rendering" kindref="compound">ConsoleRendering</ref>&amp;<sp/>r,<sp/><ref refid="class_user_interface_manager" kindref="compound">UserInterfaceManager</ref>&amp;<sp/>ui);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a5b5e89fe9ebb4fe18db920a373c4052b" kindref="member">DropItemSelected</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type,<sp/><ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p,<sp/><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref>&amp;<sp/>c,<sp/><ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m,<sp/><ref refid="class_inventory_manager" kindref="compound">InventoryManager</ref>&amp;<sp/>i,<sp/><ref refid="class_console_rendering" kindref="compound">ConsoleRendering</ref>&amp;<sp/>r,<sp/><ref refid="class_user_interface_manager" kindref="compound">UserInterfaceManager</ref>&amp;<sp/>ui);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a293535f9ed1a4147a3a18a7795f4c201" kindref="member">InventoryInput</ref>(<ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref>&amp;<sp/>c,<sp/><ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m,<sp/><ref refid="class_inventory_manager" kindref="compound">InventoryManager</ref>&amp;<sp/>i,<sp/><ref refid="class_console_rendering" kindref="compound">ConsoleRendering</ref>&amp;<sp/>r,<sp/><ref refid="class_user_interface_manager" kindref="compound">UserInterfaceManager</ref>&amp;<sp/>ui);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a0a4171b1ac086cc4122afdf2b929116b" kindref="member">UpdateInventory</ref>(<ref refid="class_inventory_manager" kindref="compound">InventoryManager</ref>&amp;<sp/>i,<sp/><ref refid="class_user_interface_manager" kindref="compound">UserInterfaceManager</ref>&amp;<sp/>ui);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a98a166d06e34c1f4dc503304f0861a6a" kindref="member">GetInventoryHeadingLocation</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>s,<sp/><ref refid="class_user_interface_manager" kindref="compound">UserInterfaceManager</ref>&amp;<sp/>ui);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a2dc2d5245ceb9d916d0b8137007e9acd" kindref="member">CurrentInventoryIndex</ref>(<ref refid="class_inventory_manager" kindref="compound">InventoryManager</ref>&amp;<sp/>i);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a43d86630b1efa5dd593dc846e4a2b225" kindref="member">AddSpaceAndEnding</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>input,<sp/><ref refid="class_user_interface_manager" kindref="compound">UserInterfaceManager</ref>&amp;<sp/>ui);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1" kindref="member">ITEM_TYPE</ref><sp/><ref refid="class_inventory_manager_1a3af6cc9ac4341fba2fde51ae42ad3303" kindref="member">WhatIsItem</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>letter);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60" refid="class_inventory_manager_1a9e7c74ab66faa814d213c577a1a7a12c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a9e7c74ab66faa814d213c577a1a7a12c" kindref="member">utilities</ref>[3][2]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;HEALTH&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;POTION&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MAGIC&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;POTION&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;SHIELD&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;POTION&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="74" refid="class_inventory_manager_1abe635a768be352b26de8df72fc6514ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1abe635a768be352b26de8df72fc6514ab" kindref="member">weaponsAndArmour</ref>[3][2]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;DULL<sp/>SWORD&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ONE&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;DULL<sp/>BRACERS&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ONE&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;DULL<sp/>HELMET&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ONE&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="88" refid="class_inventory_manager_1a0b7dd28d3ce68fb6bbd323985c24fa32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a0b7dd28d3ce68fb6bbd323985c24fa32" kindref="member">trinkets</ref>[2][2]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;GLOWING<sp/>PENCHANT&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ENCHANTED<sp/>PENCHANT&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="class_inventory_manager_1a362aba51c79823a8339255c7440931b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a362aba51c79823a8339255c7440931b8" kindref="member">potion_chars</ref>[3]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;H&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;S&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;M&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="102" refid="class_inventory_manager_1a879cd59d717d4b320c0306bc19976205" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a879cd59d717d4b320c0306bc19976205" kindref="member">weapon_chars</ref>[3]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;O&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="charliteral">&apos;Q&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="class_inventory_manager_1a991d76eafd9f5367550645f283b433b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a991d76eafd9f5367550645f283b433b5" kindref="member">highlight</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109" refid="class_inventory_manager_1a575a85618f13c55803911a82704b91e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a575a85618f13c55803911a82704b91e6" kindref="member">on_title_screen</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110" refid="class_inventory_manager_1a50de8d49ee2176a5c9ecb9973d3e9537" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/><ref refid="class_inventory_manager_1a50de8d49ee2176a5c9ecb9973d3e9537" kindref="member">weapon_inventory</ref>;</highlight></codeline>
+<codeline lineno="111" refid="class_inventory_manager_1a6c7df66ca745fb453c66d364c09e467b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/><ref refid="class_inventory_manager_1a6c7df66ca745fb453c66d364c09e467b" kindref="member">armour_inventory</ref>;</highlight></codeline>
+<codeline lineno="112" refid="class_inventory_manager_1a6bebfa8fc99dfc630c1f4dbe2345fad4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/><ref refid="class_inventory_manager_1a6bebfa8fc99dfc630c1f4dbe2345fad4" kindref="member">trinket_inventory</ref>;</highlight></codeline>
+<codeline lineno="113" refid="class_inventory_manager_1af0a08f75d03dfa8e0a531378d147a980" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/><ref refid="class_inventory_manager_1af0a08f75d03dfa8e0a531378d147a980" kindref="member">utility_inventory</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="class_inventory_manager_1ae9c104f31a821143951f6fd47c8f2151" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1ae9c104f31a821143951f6fd47c8f2151" kindref="member">item_picked_up</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="D:/University/ca-A00269349/Rogue/InventoryManager.h"/>
+  </compounddef>
+</doxygen>

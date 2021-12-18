@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_g_l_o_s_s_a_r_y_8cpp" kind="file" language="C++">
+    <compoundname>GLOSSARY.cpp</compoundname>
+    <includes local="yes">GLOSSARY.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/GLOSSARY.cpp</label>
+        <link refid="_g_l_o_s_s_a_r_y_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GLOSSARY.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;GLOSSARY.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/University/ca-A00269349/Rogue/GLOSSARY.cpp"/>
+  </compounddef>
+</doxygen>

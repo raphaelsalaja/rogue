@@ -1,0 +1,186 @@
+\hypertarget{namespace_macro}{}\doxysection{Macro Namespace Reference}
+\label{namespace_macro}\index{Macro@{Macro}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Go\+To\+Screen\+Position}} (short C, short R)
+\item 
+void \mbox{\hyperlink{namespace_macro_a005f2a0ab24b96203446ec9a1a8b9a7f}{Reposition\+Window}} (int width, int height)
+\item 
+string \mbox{\hyperlink{namespace_macro_a9b30bbcb1b1dffca82735239b6e6da98}{Replace\+All}} (string str, const string \&from, const string \&to)
+\item 
+int \mbox{\hyperlink{namespace_macro_a5b7cf896002d88dc2e5ffede2f398709}{Separate}} (int input, char from, char count)
+\item 
+int \mbox{\hyperlink{namespace_macro_a7192f07d19f55d7f8b863932a5078eab}{Generate\+Random\+Number}} (int max)
+\item 
+int \mbox{\hyperlink{namespace_macro_a3500becfc34f5b1df2d6d976fb5f5f86}{Generate\+Random\+Number\+Without\+Zero}} (int max)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_macro_a7192f07d19f55d7f8b863932a5078eab}\label{namespace_macro_a7192f07d19f55d7f8b863932a5078eab}} 
+\index{Macro@{Macro}!GenerateRandomNumber@{GenerateRandomNumber}}
+\index{GenerateRandomNumber@{GenerateRandomNumber}!Macro@{Macro}}
+\doxysubsubsection{\texorpdfstring{GenerateRandomNumber()}{GenerateRandomNumber()}}
+{\footnotesize\ttfamily int Macro\+::\+Generate\+Random\+Number (\begin{DoxyParamCaption}\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_macro_8cpp_source_l00054}{54}} of file \mbox{\hyperlink{_macro_8cpp_source}{Macro.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00055}00055 \{}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00056}00056     srand(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{unsigned}\textcolor{keyword}{>}(time(\textcolor{keyword}{nullptr})));}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00057}00057     \textcolor{keywordflow}{return} rand() \% max;}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00058}00058 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_macro_a7192f07d19f55d7f8b863932a5078eab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_macro_a3500becfc34f5b1df2d6d976fb5f5f86}\label{namespace_macro_a3500becfc34f5b1df2d6d976fb5f5f86}} 
+\index{Macro@{Macro}!GenerateRandomNumberWithoutZero@{GenerateRandomNumberWithoutZero}}
+\index{GenerateRandomNumberWithoutZero@{GenerateRandomNumberWithoutZero}!Macro@{Macro}}
+\doxysubsubsection{\texorpdfstring{GenerateRandomNumberWithoutZero()}{GenerateRandomNumberWithoutZero()}}
+{\footnotesize\ttfamily int Macro\+::\+Generate\+Random\+Number\+Without\+Zero (\begin{DoxyParamCaption}\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_macro_8cpp_source_l00060}{60}} of file \mbox{\hyperlink{_macro_8cpp_source}{Macro.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00061}00061 \{}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00062}00062     srand(time(\textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00063}00063     \textcolor{keywordflow}{return} (rand() \% max) + 1.0;}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00064}00064 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_macro_a3500becfc34f5b1df2d6d976fb5f5f86_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}\label{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}} 
+\index{Macro@{Macro}!GoToScreenPosition@{GoToScreenPosition}}
+\index{GoToScreenPosition@{GoToScreenPosition}!Macro@{Macro}}
+\doxysubsubsection{\texorpdfstring{GoToScreenPosition()}{GoToScreenPosition()}}
+{\footnotesize\ttfamily void Macro\+::\+Go\+To\+Screen\+Position (\begin{DoxyParamCaption}\item[{short}]{C,  }\item[{short}]{R }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_macro_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{_macro_8cpp_source}{Macro.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00008}00008 \{}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00009}00009     COORD xy;}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00010}00010     xy.X = C;}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00011}00011     xy.Y = R;}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00012}00012     SetConsoleCursorPosition(GetStdHandle(STD\_OUTPUT\_HANDLE), xy);}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00013}00013 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_macro_a9b30bbcb1b1dffca82735239b6e6da98}\label{namespace_macro_a9b30bbcb1b1dffca82735239b6e6da98}} 
+\index{Macro@{Macro}!ReplaceAll@{ReplaceAll}}
+\index{ReplaceAll@{ReplaceAll}!Macro@{Macro}}
+\doxysubsubsection{\texorpdfstring{ReplaceAll()}{ReplaceAll()}}
+{\footnotesize\ttfamily string Macro\+::\+Replace\+All (\begin{DoxyParamCaption}\item[{string}]{str,  }\item[{const string \&}]{from,  }\item[{const string \&}]{to }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_macro_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{_macro_8cpp_source}{Macro.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00035}00035 \{}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00036}00036     \textcolor{keywordtype}{size\_t} start\_pos = 0;}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00037}00037     \textcolor{keywordflow}{while} ((start\_pos = str.find(from, start\_pos)) != string::npos)}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00038}00038     \{}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00039}00039         str.replace(start\_pos, from.length(), to);}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00040}00040         start\_pos += to.length(); \textcolor{comment}{// Handles case where 'to' is a substring of 'from'}}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00041}00041     \}}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00042}00042     \textcolor{keywordflow}{return} str;}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00043}00043 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_macro_a9b30bbcb1b1dffca82735239b6e6da98_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_macro_a005f2a0ab24b96203446ec9a1a8b9a7f}\label{namespace_macro_a005f2a0ab24b96203446ec9a1a8b9a7f}} 
+\index{Macro@{Macro}!RepositionWindow@{RepositionWindow}}
+\index{RepositionWindow@{RepositionWindow}!Macro@{Macro}}
+\doxysubsubsection{\texorpdfstring{RepositionWindow()}{RepositionWindow()}}
+{\footnotesize\ttfamily void Macro\+::\+Reposition\+Window (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_macro_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{_macro_8cpp_source}{Macro.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00016}00016 \{}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00017}00017     HWND hConsoleWnd = GetConsoleWindow();}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00018}00018     HMONITOR hMonitor = MonitorFromWindow(hConsoleWnd, MONITOR\_DEFAULTTONEAREST);}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00019}00019     \textcolor{keywordflow}{if} (hMonitor)}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00020}00020     \{}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00021}00021         MONITORINFO info\{}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00022}00022             \textcolor{keyword}{sizeof}(info)}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00023}00023         \}; \textcolor{comment}{// set cbSize member and fill the rest with zero}}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00024}00024         \textcolor{keywordflow}{if} (::GetMonitorInfo(hMonitor, \&info))}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00025}00025         \{}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00026}00026             \textcolor{keywordtype}{int} x = (info.rcWork.left + info.rcWork.right) / 2 -\/ width / 2;}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00027}00027             \textcolor{keywordtype}{int} y = (info.rcWork.top + info.rcWork.bottom) / 2 -\/ height / 2;}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00028}00028             SetConsoleTitle(TEXT(\textcolor{stringliteral}{"{}ROGUE"{}}));}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00029}00029             SetWindowPos(hConsoleWnd, \textcolor{keyword}{nullptr}, x, y, width, height, SWP\_NOZORDER | SWP\_NOOWNERZORDER | SWP\_SHOWWINDOW);}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00030}00030         \}}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00031}00031     \}}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00032}00032 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_macro_a005f2a0ab24b96203446ec9a1a8b9a7f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_macro_a5b7cf896002d88dc2e5ffede2f398709}\label{namespace_macro_a5b7cf896002d88dc2e5ffede2f398709}} 
+\index{Macro@{Macro}!Separate@{Separate}}
+\index{Separate@{Separate}!Macro@{Macro}}
+\doxysubsubsection{\texorpdfstring{Separate()}{Separate()}}
+{\footnotesize\ttfamily int Macro\+::\+Separate (\begin{DoxyParamCaption}\item[{int}]{input,  }\item[{char}]{from,  }\item[{char}]{count }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_macro_8cpp_source_l00045}{45}} of file \mbox{\hyperlink{_macro_8cpp_source}{Macro.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00046}00046 \{}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00047}00047     \textcolor{keywordtype}{int} d = 1;}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00048}00048     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < from; i++, d *= 10);}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00049}00049     \textcolor{keywordtype}{int} m = 1;}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00050}00050     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < count; i++, m *= 10);}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00051}00051     \textcolor{keywordflow}{return} ((input / d) \% m);}
+\DoxyCodeLine{\Hypertarget{namespace_macro_l00052}00052 \}}
+
+\end{DoxyCode}

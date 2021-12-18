@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_console_window_manager" kind="class" language="C++" prot="public">
+    <compoundname>ConsoleWindowManager</compoundname>
+    <includes refid="_console_window_manager_8h" local="no">ConsoleWindowManager.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543" prot="public" static="no" strong="no">
+        <type></type>
+        <name>COLORS</name>
+        <enumvalue id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3" prot="public">
+          <name>BLACK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a0123e45b31a6caef6bee87987431ba29" prot="public">
+          <name>DARK_BLUE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ac7f09d6540d7f440678450da2e98291f" prot="public">
+          <name>DARK_GREEN</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752" prot="public">
+          <name>LIGHT_BLUE</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543adae46377de9e9accb9cb67221fbb2c36" prot="public">
+          <name>DARK_RED</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e" prot="public">
+          <name>MAGENTA</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aaf930b582883444109e9ef4104e75af5" prot="public">
+          <name>ORANGE</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a760a27011eb2ba8d016475c828bd32b4" prot="public">
+          <name>LIGHT_GRAY</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ab6b44fb822219788637b3cd88c7a0e4a" prot="public">
+          <name>GRAY</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b2a4e6f58e1a7c9bcc98461ec6689f9" prot="public">
+          <name>BLUE</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ae5c13df1cfc28fdc2c55a856085f5b8a" prot="public">
+          <name>GREEN</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543af19a5b9192c1fa96a5ae253ab37c714b" prot="public">
+          <name>CYAN</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a241238b2c88c156285680b898b7bca5f" prot="public">
+          <name>RED</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ab53cb0396e1962612ea761ff12a9119b" prot="public">
+          <name>PINK</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ac2f74f3c14dbbde9c81c3eb43ad652d8" prot="public">
+          <name>YELLOW</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543abfc98f0b1d34e7a616e51ab38123d4dc" prot="public">
+          <name>WHITE</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" line="7" column="1" bodyfile="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" bodystart="8" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_console_window_manager_1abdee4e17ebc10f03c5e74d45f8e4ed5c" prot="private" static="no" mutable="no">
+        <type>HANDLE</type>
+        <definition>HANDLE ConsoleWindowManager::HANDLE_CONSOLE</definition>
+        <argsstring></argsstring>
+        <name>HANDLE_CONSOLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" line="41" column="8" bodyfile="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90" compoundref="_console_window_manager_8cpp" startline="3" endline="6">GetConsoleHandle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_console_window_manager_1a1cc7bac864b3fb93af536bdea526b908" prot="private" static="no" mutable="no">
+        <type>HWND</type>
+        <definition>HWND ConsoleWindowManager::HANDLE_WINDOW_DESKTOP</definition>
+        <argsstring></argsstring>
+        <name>HANDLE_WINDOW_DESKTOP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" line="42" column="6" bodyfile="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_console_window_manager_1a13a64349bfa723a1c035752ea401ab2c" compoundref="_console_window_manager_8cpp" startline="8" endline="11">GetDesktopHandleWindow</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_console_window_manager_1acf76563de7c4c73f97bb0c8ffc1c461e" prot="private" static="no" mutable="no">
+        <type>HWND</type>
+        <definition>HWND ConsoleWindowManager::HANDLE_WINDOW_CONSOLE</definition>
+        <argsstring></argsstring>
+        <name>HANDLE_WINDOW_CONSOLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" line="43" column="6" bodyfile="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d" compoundref="_console_window_manager_8cpp" startline="13" endline="16">GetConsoleHandleWindow</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_console_window_manager_1aec3eb492b72b29b4b9c57d622b799e9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConsoleWindowManager::BlankScreen</definition>
+        <argsstring>()</argsstring>
+        <name>BlankScreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" line="27" column="6" bodyfile="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.cpp" bodystart="18" bodyend="21"/>
+        <referencedby refid="class_inventory_manager_1a5b5e89fe9ebb4fe18db920a373c4052b" compoundref="_inventory_manager_8cpp" startline="85" endline="139">InventoryManager::DropItemSelected</referencedby>
+        <referencedby refid="class_map_manager_1ab864df2edd061402a8ae649642545cf4" compoundref="_map_manager_8cpp" startline="72" endline="101">MapManager::LoadNextMap</referencedby>
+        <referencedby refid="class_console_rendering_1a3ba48c54dc22c278244cd45cfbb53a83" compoundref="_console_rendering_8cpp" startline="187" endline="200">ConsoleRendering::Render_Inventory</referencedby>
+        <referencedby refid="class_map_manager_1a3d93eb2a28003237aa76baf2cb0de02c" compoundref="_map_manager_8cpp" startline="141" endline="155">MapManager::RenderMap</referencedby>
+        <referencedby refid="class_inventory_manager_1a5bbb29a62327b708ec79942a3d18aece" compoundref="_inventory_manager_8cpp" startline="52" endline="83">InventoryManager::UsePotionSelected</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_console_window_manager_1ac4c2a46e7019be00cd1691f786587797" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConsoleWindowManager::HideConsoleCursor</definition>
+        <argsstring>()</argsstring>
+        <name>HideConsoleCursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" line="28" column="6" bodyfile="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.cpp" bodystart="23" bodyend="29"/>
+        <references refid="class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90" compoundref="_console_window_manager_8cpp" startline="3" endline="6">GetConsoleHandle</references>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="20" endline="46">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_console_window_manager_1a622c6a38370c75628b954f013436ecb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConsoleWindowManager::SetWindowDisplay</definition>
+        <argsstring>(int width, int height)</argsstring>
+        <name>SetWindowDisplay</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" line="29" column="6" bodyfile="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.cpp" bodystart="31" bodyend="46"/>
+        <references refid="class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d" compoundref="_console_window_manager_8cpp" startline="13" endline="16">GetConsoleHandleWindow</references>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="20" endline="46">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_console_window_manager_1a04f302f741273b8c1ead23f11fb70e39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConsoleWindowManager::SetText</definition>
+        <argsstring>()</argsstring>
+        <name>SetText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" line="30" column="6" bodyfile="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.cpp" bodystart="48" bodyend="56"/>
+        <references refid="class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90" compoundref="_console_window_manager_8cpp" startline="3" endline="6">GetConsoleHandle</references>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="20" endline="46">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConsoleWindowManager::SetConsoleWindowColor</definition>
+        <argsstring>(COLORS fg, COLORS bg)</argsstring>
+        <name>SetConsoleWindowColor</name>
+        <param>
+          <type><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543" kindref="member">COLORS</ref></type>
+          <declname>fg</declname>
+        </param>
+        <param>
+          <type><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543" kindref="member">COLORS</ref></type>
+          <declname>bg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" line="31" column="6" bodyfile="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.cpp" bodystart="58" bodyend="61"/>
+        <references refid="class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90" compoundref="_console_window_manager_8cpp" startline="3" endline="6">GetConsoleHandle</references>
+        <referencedby refid="class_map_manager_1ae924c576229d40970074e76875dab3bb" compoundref="_map_manager_8cpp" startline="10" endline="59">MapManager::PrintMap</referencedby>
+        <referencedby refid="class_player_1a4b2ed7452ebf86347df93b965f5c4966" compoundref="_player_8cpp" startline="10" endline="38">Player::RenderPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_console_window_manager_1abed5c169df20d3f830cc11b1dfbe4a6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConsoleWindowManager::SetConsoleWindowRandomColor</definition>
+        <argsstring>(int random_color)</argsstring>
+        <name>SetConsoleWindowRandomColor</name>
+        <param>
+          <type>int</type>
+          <declname>random_color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" line="32" column="6" bodyfile="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.cpp" bodystart="64" bodyend="67"/>
+        <references refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3" compoundref="_console_window_manager_8h" startline="9">BLACK</references>
+        <references refid="class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90" compoundref="_console_window_manager_8cpp" startline="3" endline="6">GetConsoleHandle</references>
+        <referencedby refid="class_title_screen_manager_1aa49b8813b2ea79d1bd4fdaaa741776f1" compoundref="_title_screen_manager_8cpp" startline="63" endline="79">TitleScreenManager::PrintTitle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_console_window_manager_1a7994b8ccd83e4f0eecfa9c4c579b067b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConsoleWindowManager::RepositionWindow</definition>
+        <argsstring>(int width, int height)</argsstring>
+        <name>RepositionWindow</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" line="33" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HANDLE</type>
+        <definition>HANDLE ConsoleWindowManager::GetConsoleHandle</definition>
+        <argsstring>()</argsstring>
+        <name>GetConsoleHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" line="35" column="8" bodyfile="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.cpp" bodystart="3" bodyend="6"/>
+        <references refid="class_console_window_manager_1abdee4e17ebc10f03c5e74d45f8e4ed5c" compoundref="_console_window_manager_8h" startline="41">HANDLE_CONSOLE</references>
+        <referencedby refid="class_console_window_manager_1ac4c2a46e7019be00cd1691f786587797" compoundref="_console_window_manager_8cpp" startline="23" endline="29">HideConsoleCursor</referencedby>
+        <referencedby refid="class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213" compoundref="_console_window_manager_8cpp" startline="58" endline="61">SetConsoleWindowColor</referencedby>
+        <referencedby refid="class_console_window_manager_1abed5c169df20d3f830cc11b1dfbe4a6a" compoundref="_console_window_manager_8cpp" startline="64" endline="67">SetConsoleWindowRandomColor</referencedby>
+        <referencedby refid="class_console_window_manager_1a04f302f741273b8c1ead23f11fb70e39" compoundref="_console_window_manager_8cpp" startline="48" endline="56">SetText</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_console_window_manager_1a13a64349bfa723a1c035752ea401ab2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HWND</type>
+        <definition>HWND ConsoleWindowManager::GetDesktopHandleWindow</definition>
+        <argsstring>()</argsstring>
+        <name>GetDesktopHandleWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" line="37" column="6" bodyfile="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.cpp" bodystart="8" bodyend="11"/>
+        <references refid="class_console_window_manager_1a1cc7bac864b3fb93af536bdea526b908" compoundref="_console_window_manager_8h" startline="42">HANDLE_WINDOW_DESKTOP</references>
+      </memberdef>
+      <memberdef kind="function" id="class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HWND</type>
+        <definition>HWND ConsoleWindowManager::GetConsoleHandleWindow</definition>
+        <argsstring>()</argsstring>
+        <name>GetConsoleHandleWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" line="38" column="6" bodyfile="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.cpp" bodystart="13" bodyend="16"/>
+        <references refid="class_console_window_manager_1acf76563de7c4c73f97bb0c8ffc1c461e" compoundref="_console_window_manager_8h" startline="43">HANDLE_WINDOW_CONSOLE</references>
+        <referencedby refid="class_console_window_manager_1a622c6a38370c75628b954f013436ecb9" compoundref="_console_window_manager_8cpp" startline="31" endline="46">SetWindowDisplay</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ConsoleWindowManager</label>
+        <link refid="class_console_window_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" line="4" column="1" bodyfile="D:/University/ca-A00269349/Rogue/ConsoleWindowManager.h" bodystart="5" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>BLACK</name></member>
+      <member refid="class_console_window_manager_1aec3eb492b72b29b4b9c57d622b799e9c" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>BlankScreen</name></member>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b2a4e6f58e1a7c9bcc98461ec6689f9" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>BLUE</name></member>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>COLORS</name></member>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543af19a5b9192c1fa96a5ae253ab37c714b" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>CYAN</name></member>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a0123e45b31a6caef6bee87987431ba29" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>DARK_BLUE</name></member>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ac7f09d6540d7f440678450da2e98291f" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>DARK_GREEN</name></member>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543adae46377de9e9accb9cb67221fbb2c36" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>DARK_RED</name></member>
+      <member refid="class_console_window_manager_1a63347b06eb482fbc128215f17b7b4a90" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>GetConsoleHandle</name></member>
+      <member refid="class_console_window_manager_1a33a11dc816bf4174a52c680090f80d9d" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>GetConsoleHandleWindow</name></member>
+      <member refid="class_console_window_manager_1a13a64349bfa723a1c035752ea401ab2c" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>GetDesktopHandleWindow</name></member>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ab6b44fb822219788637b3cd88c7a0e4a" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>GRAY</name></member>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ae5c13df1cfc28fdc2c55a856085f5b8a" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>GREEN</name></member>
+      <member refid="class_console_window_manager_1abdee4e17ebc10f03c5e74d45f8e4ed5c" prot="private" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>HANDLE_CONSOLE</name></member>
+      <member refid="class_console_window_manager_1acf76563de7c4c73f97bb0c8ffc1c461e" prot="private" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>HANDLE_WINDOW_CONSOLE</name></member>
+      <member refid="class_console_window_manager_1a1cc7bac864b3fb93af536bdea526b908" prot="private" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>HANDLE_WINDOW_DESKTOP</name></member>
+      <member refid="class_console_window_manager_1ac4c2a46e7019be00cd1691f786587797" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>HideConsoleCursor</name></member>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>LIGHT_BLUE</name></member>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a760a27011eb2ba8d016475c828bd32b4" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>LIGHT_GRAY</name></member>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>MAGENTA</name></member>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aaf930b582883444109e9ef4104e75af5" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>ORANGE</name></member>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ab53cb0396e1962612ea761ff12a9119b" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>PINK</name></member>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a241238b2c88c156285680b898b7bca5f" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>RED</name></member>
+      <member refid="class_console_window_manager_1a7994b8ccd83e4f0eecfa9c4c579b067b" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>RepositionWindow</name></member>
+      <member refid="class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>SetConsoleWindowColor</name></member>
+      <member refid="class_console_window_manager_1abed5c169df20d3f830cc11b1dfbe4a6a" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>SetConsoleWindowRandomColor</name></member>
+      <member refid="class_console_window_manager_1a04f302f741273b8c1ead23f11fb70e39" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>SetText</name></member>
+      <member refid="class_console_window_manager_1a622c6a38370c75628b954f013436ecb9" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>SetWindowDisplay</name></member>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543abfc98f0b1d34e7a616e51ab38123d4dc" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>WHITE</name></member>
+      <member refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543ac2f74f3c14dbbde9c81c3eb43ad652d8" prot="public" virt="non-virtual"><scope>ConsoleWindowManager</scope><name>YELLOW</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

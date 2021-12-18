@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__random_item_generator_8h_source" xml:lang="en-US">
+<title>RandomItemGenerator.h</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/RandomItemGenerator.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__random_item_generator_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="__random_item_generator_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+<anchor xml:id="__random_item_generator_8h_source_1l00003"/>00003 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+<anchor xml:id="__random_item_generator_8h_source_1l00004"/>00004 
+<anchor xml:id="__random_item_generator_8h_source_1l00005"/><link linkend="_class_random_item_generator">00005</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_random_item_generator">RandomItemGenerator</link>
+<anchor xml:id="__random_item_generator_8h_source_1l00006"/>00006 {
+<anchor xml:id="__random_item_generator_8h_source_1l00007"/>00007 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="__random_item_generator_8h_source_1l00008"/>00008 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a8a1d39701f3d5a6997309c824d22d333">RandomItemGenerator</link>();
+<anchor xml:id="__random_item_generator_8h_source_1l00009"/>00009 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a81f88c7721872cb577532fa2f8a28249">~RandomItemGenerator</link>();
+<anchor xml:id="__random_item_generator_8h_source_1l00010"/>00010 
+<anchor xml:id="__random_item_generator_8h_source_1l00011"/>00011 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_random_item_generator_1a76d898718b27df8a3c5be2ccaf3efdc5">SetType</link>(<emphasis role="keywordtype">int</emphasis>&#32;choice);
+<anchor xml:id="__random_item_generator_8h_source_1l00012"/>00012 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_random_item_generator_1a3816c88713a59914f16f50d29245b2d7">SetItemNames</link>(<emphasis role="keywordtype">string</emphasis>&#32;file_name);
+<anchor xml:id="__random_item_generator_8h_source_1l00013"/>00013 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_random_item_generator_1a7658f6593d6c57602738827102f73ece">SetName</link>(<emphasis role="keywordtype">int</emphasis>&#32;name_index,&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_random_item_generator_1a375a42a9160dd1ff376b4408e2b03629">type</link>);
+<anchor xml:id="__random_item_generator_8h_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_random_item_generator_1a2b6f82fc5576dbe0b3dd4614bc60f305">SetStrength</link>();
+<anchor xml:id="__random_item_generator_8h_source_1l00015"/>00015 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_random_item_generator_1a0cd93433c0ce88481b7f82ee43796a0f">SetWeight</link>();
+<anchor xml:id="__random_item_generator_8h_source_1l00016"/>00016 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_random_item_generator_1a779176c9969633372b5a70a2daf57d5e">SetSpeed</link>();
+<anchor xml:id="__random_item_generator_8h_source_1l00017"/>00017 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_random_item_generator_1ae16b7ab7234236eb33cfd6f562f8c57e">SetSymbol</link>(<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78">symbol</link>);
+<anchor xml:id="__random_item_generator_8h_source_1l00018"/>00018 
+<anchor xml:id="__random_item_generator_8h_source_1l00019"/>00019 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0">CreateItem</link>(<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78">symbol</link>,&#32;<emphasis role="keywordtype">char</emphasis>&#32;item_type_amount);
+<anchor xml:id="__random_item_generator_8h_source_1l00020"/>00020 
+<anchor xml:id="__random_item_generator_8h_source_1l00021"/><link linkend="_class_random_item_generator_1acb103418c26d2dc505b21ecdad9cc0fc">00021</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_random_item_generator_1acb103418c26d2dc505b21ecdad9cc0fc">name</link>,&#32;<link linkend="_class_random_item_generator_1a375a42a9160dd1ff376b4408e2b03629">type</link>;
+<anchor xml:id="__random_item_generator_8h_source_1l00022"/><link linkend="_class_random_item_generator_1a456d04a342662178e5d17e86312bfb6c">00022</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_random_item_generator_1a456d04a342662178e5d17e86312bfb6c">ITEM_TYPES</link>[20]{};
+<anchor xml:id="__random_item_generator_8h_source_1l00023"/>00023 
+<anchor xml:id="__random_item_generator_8h_source_1l00024"/>00024 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="__random_item_generator_8h_source_1l00025"/><link linkend="_class_random_item_generator_1a3c4fe14226e1b9c3326db7f97a2d33c4">00025</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_random_item_generator_1a87d0cc780a37457b3d2ce5154564f464">strength</link>,&#32;<link linkend="_class_random_item_generator_1a41bd17718f417ca1b1467b7ca8f81bfe">weight</link>,&#32;<link linkend="_class_random_item_generator_1a3c4fe14226e1b9c3326db7f97a2d33c4">speed</link>;
+<anchor xml:id="__random_item_generator_8h_source_1l00026"/><link linkend="_class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78">00026</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78">symbol</link>;
+<anchor xml:id="__random_item_generator_8h_source_1l00027"/>00027 };
+</programlisting></section>

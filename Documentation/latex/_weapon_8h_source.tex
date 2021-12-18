@@ -1,0 +1,63 @@
+\hypertarget{_weapon_8h_source}{}\doxysection{Weapon.\+h}
+\label{_weapon_8h_source}\index{D:/University/ca-\/A00269349/Rogue/Weapon.h@{D:/University/ca-\/A00269349/Rogue/Weapon.h}}
+\mbox{\hyperlink{_weapon_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00002}00002 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00003}00003 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00006}00006 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00008}00008 \textcolor{keyword}{class }\mbox{\hyperlink{class_weapon}{Weapon}}}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00010}00010 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00011}00011     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_weapon_a2367140f69d8e9fb3f3caec6f88a598f}{WEAPON\_NAME\_CHOICES}}[20]\{}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00012}00012         \textcolor{stringliteral}{"{}Scalpel"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00013}00013         \textcolor{stringliteral}{"{}Blade of a Thousand Cuts"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00014}00014         \textcolor{stringliteral}{"{}Nightbane"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00015}00015         \textcolor{stringliteral}{"{}Venom Carver"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00016}00016         \textcolor{stringliteral}{"{}Annihilation Sabre"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00017}00017         \textcolor{stringliteral}{"{}Honor's Iron Longsword"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00018}00018         \textcolor{stringliteral}{"{}Extinction Iron Skewer"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00019}00019         \textcolor{stringliteral}{"{}Destiny's Song, Quickblade of the Oracle"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00020}00020         \textcolor{stringliteral}{"{}Night's Edge, Last Stand of Cruelty"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00021}00021         \textcolor{stringliteral}{"{}Rigormortis, Longsword of Broken Dreams"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00022}00022         \textcolor{stringliteral}{"{}Despair"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00023}00023         \textcolor{stringliteral}{"{}Azurewrath"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00024}00024         \textcolor{stringliteral}{"{}Slice of Life"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00025}00025         \textcolor{stringliteral}{"{}Demonic Sabre"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00026}00026         \textcolor{stringliteral}{"{}Malevolent Deflector"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00027}00027         \textcolor{stringliteral}{"{}Twilight's Silver Sword"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00028}00028         \textcolor{stringliteral}{"{}Fire Infused Copper Swiftblade"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00029}00029         \textcolor{stringliteral}{"{}Vengeance, Edge of Justice"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00030}00030         \textcolor{stringliteral}{"{}Arondite, Bond of Riddles"{}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00031}00031         \textcolor{stringliteral}{"{}Wit's End, Secret of the Dead"{}}}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00032}00032     \};}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00034}00034     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_weapon_a6b683bce956944a128d3ee25a88c7ac1}{name}};}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00035}00035     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_weapon_a4a9381f1b461ca75cf0928defe49fbc0}{strength}}, \mbox{\hyperlink{class_weapon_a9f519847c0970ed12ffdb22b2de6162b}{weight}};}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00037}\mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67}{00037}}     \textcolor{keyword}{enum} \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67}{WEAPON\_TYPE}}}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00038}00038     \{}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00039}00039         \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67a1575731f81cad9b652cf53e89ec00e7b}{SWORD}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00040}\mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67a8f961e6ca53c82ffc637bf6e929c3af0}{00040}}         \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67a8f961e6ca53c82ffc637bf6e929c3af0}{DAGGER}},}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00041}00041         \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67ad2f83e4c047409d071eadd24b0e291e7}{GUN}}}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00042}\mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67ad2f83e4c047409d071eadd24b0e291e7}{00042}}     \};}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00044}00044     \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67}{WEAPON\_TYPE}} \mbox{\hyperlink{class_weapon_a378d7783971053b498d26d456f5c3bb7}{WEAPON\_TYPE\_SELECTED}} = \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67a1575731f81cad9b652cf53e89ec00e7b}{SWORD}};}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00046}\mbox{\hyperlink{class_weapon_a42dbc46dd70319a24763992c4ebbd396}{00046}}     \mbox{\hyperlink{class_weapon_a42dbc46dd70319a24763992c4ebbd396}{Weapon}}();}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00047}\mbox{\hyperlink{class_weapon_a420e7ba3d2017e6de3e93eb579cfd3fa}{00047}}     \mbox{\hyperlink{class_weapon_a420e7ba3d2017e6de3e93eb579cfd3fa}{\string~Weapon}}();}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00049}\mbox{\hyperlink{class_weapon_a2dd096e208c2827552c41cad1f47e8e3}{00049}}     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_weapon_a2dd096e208c2827552c41cad1f47e8e3}{GenerateRandomNumber}}(\textcolor{keywordtype}{int} max);}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00050}\mbox{\hyperlink{class_weapon_a6b2437dd9e5541ef6f40ce35d96477c7}{00050}}     \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67}{WEAPON\_TYPE}} \mbox{\hyperlink{class_weapon_a6b2437dd9e5541ef6f40ce35d96477c7}{SetWeaponType}}(\textcolor{keywordtype}{int} weapon\_choice);}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00051}\mbox{\hyperlink{class_weapon_ab1b14ca4579850bf0385c3e94ba35e57}{00051}}     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_weapon_ab1b14ca4579850bf0385c3e94ba35e57}{SetWeaponName}}(\textcolor{keywordtype}{int} weapon\_name\_index, \mbox{\hyperlink{class_weapon_a0bfb82517497d5ff8c7d31786875de67}{WEAPON\_TYPE}} \mbox{\hyperlink{class_weapon_a378d7783971053b498d26d456f5c3bb7}{WEAPON\_TYPE\_SELECTED}});}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00052}00052     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_weapon_a19a033a262067005a41239ba0e103df1}{SetStrength}}();}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00053}\mbox{\hyperlink{class_weapon_aa3a7809b2c34df9d7775f57f7560c106}{00053}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_weapon_aa3a7809b2c34df9d7775f57f7560c106}{CreateNewWeapon}}();}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00055}00055 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00056}00056     \textcolor{keyword}{const} \textcolor{keywordtype}{char} SYMBOL = \textcolor{charliteral}{'W'};}
+\DoxyCodeLine{\Hypertarget{_weapon_8h_source_l00057}00057 \};}
+
+\end{DoxyCode}

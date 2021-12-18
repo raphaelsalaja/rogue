@@ -1,0 +1,8 @@
+<map id="Player::EnterCombatMode" name="Player::EnterCombatMode">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,180,57"/>
+<area shape="rect" id="node2" href="$namespace_macro.html#a86a559b7afd1b6babc93aeb1177b6509" title=" " alt="" coords="435,5,622,32"/>
+<area shape="rect" id="node3" href="$class_enemy.html#ac7ed9a6bf787591c189fdc9799f85e7c" title=" " alt="" coords="228,56,367,83"/>
+<area shape="rect" id="node4" href="$class_non_playable_character.html#a39c610c17e10c8ee1b6bb03d65ed032f" title=" " alt="" coords="415,56,643,83"/>
+<area shape="rect" id="node5" href="$class_non_playable_character.html#ab0ab52f45551b75625bdf02e65d3ef37" title=" " alt="" coords="420,107,637,133"/>
+<area shape="rect" id="node6" href="$class_non_playable_character.html#aedf794670e71a33011caefd1d321a8f8" title=" " alt="" coords="421,157,636,184"/>
+</map>

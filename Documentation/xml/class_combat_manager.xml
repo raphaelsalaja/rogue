@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_combat_manager" kind="class" language="C++" prot="public">
+    <compoundname>CombatManager</compoundname>
+    <includes refid="_combat_manager_8h" local="no">CombatManager.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fd" prot="private" static="no" strong="no">
+        <type></type>
+        <name>TURN</name>
+        <enumvalue id="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11" prot="private">
+          <name>PLAYER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b" prot="private">
+          <name>ENEMY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/CombatManager.h" line="16" column="1" bodyfile="D:/University/ca-A00269349/Rogue/CombatManager.h" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019" prot="private" static="no" strong="no">
+        <type></type>
+        <name>RESULTS</name>
+        <enumvalue id="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954" prot="private">
+          <name>PLAYER_DEAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c" prot="private">
+          <name>ENEMY_DEAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ad523a0fd56212f42ab45a2a3d5d87b0c" prot="private">
+          <name>STILL_ALIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/CombatManager.h" line="22" column="1" bodyfile="D:/University/ca-A00269349/Rogue/CombatManager.h" bodystart="23" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_combat_manager_1a0f2db833cf98bb4a4ba946bf7ab11686" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CombatManager::sleep_timer</definition>
+        <argsstring></argsstring>
+        <name>sleep_timer</name>
+        <initializer>= 5000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/CombatManager.h" line="14" column="5" bodyfile="D:/University/ca-A00269349/Rogue/CombatManager.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_combat_manager_1a3c0b56cc5d4af6dde4aa585ebfd74f3e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fd" kindref="member">TURN</ref></type>
+        <definition>TURN CombatManager::_TURN</definition>
+        <argsstring></argsstring>
+        <name>_TURN</name>
+        <initializer>= <ref refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b" kindref="member">ENEMY</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/CombatManager.h" line="29" column="6" bodyfile="D:/University/ca-A00269349/Rogue/CombatManager.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80" compoundref="_combat_manager_8cpp" startline="7" endline="49">Fight</referencedby>
+        <referencedby refid="class_combat_manager_1aa470a607a6d3d76cef5d62c8f312d513" compoundref="_combat_manager_8cpp" startline="51" endline="54">SetTurn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_combat_manager_1a33cdc2357ba9ee866a38dcec4a10845f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019" kindref="member">RESULTS</ref></type>
+        <definition>RESULTS CombatManager::_RESULTS</definition>
+        <argsstring></argsstring>
+        <name>_RESULTS</name>
+        <initializer>= <ref refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ad523a0fd56212f42ab45a2a3d5d87b0c" kindref="member">STILL_ALIVE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/CombatManager.h" line="30" column="9" bodyfile="D:/University/ca-A00269349/Rogue/CombatManager.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80" compoundref="_combat_manager_8cpp" startline="7" endline="49">Fight</referencedby>
+        <referencedby refid="class_combat_manager_1aec72d4fe1af9857010fb793735c145db" compoundref="_combat_manager_8cpp" startline="106" endline="116">UpdateResults</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CombatManager::Fight</definition>
+        <argsstring>(Player &amp;p, MapManager &amp;m, Enemy &amp;e)</argsstring>
+        <name>Fight</name>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_map_manager" kindref="compound">MapManager</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="class_enemy" kindref="compound">Enemy</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/CombatManager.h" line="11" column="6" bodyfile="D:/University/ca-A00269349/Rogue/CombatManager.cpp" bodystart="7" bodyend="49"/>
+        <references refid="class_combat_manager_1a33cdc2357ba9ee866a38dcec4a10845f" compoundref="_combat_manager_8h" startline="30">_RESULTS</references>
+        <references refid="class_combat_manager_1a3c0b56cc5d4af6dde4aa585ebfd74f3e" compoundref="_combat_manager_8h" startline="29">_TURN</references>
+        <references refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b" compoundref="_combat_manager_8h" startline="19">ENEMY</references>
+        <references refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c" compoundref="_combat_manager_8h" startline="25">ENEMY_DEAD</references>
+        <references refid="class_combat_manager_1a2f5d5d9a45933a6e234bc3154fd6f894" compoundref="_combat_manager_8cpp" startline="56" endline="60">HitEnemy</references>
+        <references refid="class_combat_manager_1aa3041a8bdc3eeddce47ef1eb0cd93899" compoundref="_combat_manager_8cpp" startline="62" endline="66">HitPlayer</references>
+        <references refid="class_player_1afabc272a584435771820c92f2c8308f1" compoundref="_player_8h" startline="30">Player::in_combat</references>
+        <references refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11" compoundref="_combat_manager_8h" startline="18">PLAYER</references>
+        <references refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954" compoundref="_combat_manager_8h" startline="24">PLAYER_DEAD</references>
+        <references refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" compoundref="_combat_manager_8cpp" startline="68" endline="104">PrintStatements</references>
+        <references refid="class_combat_manager_1aa470a607a6d3d76cef5d62c8f312d513" compoundref="_combat_manager_8cpp" startline="51" endline="54">SetTurn</references>
+        <references refid="class_combat_manager_1aec72d4fe1af9857010fb793735c145db" compoundref="_combat_manager_8cpp" startline="106" endline="116">UpdateResults</references>
+        <referencedby refid="class_player_1a459cda6070754195650bd10e0db43710" compoundref="_player_8cpp" startline="174" endline="233">Player::PlayerInput</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_combat_manager_1aa470a607a6d3d76cef5d62c8f312d513" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CombatManager::SetTurn</definition>
+        <argsstring>(TURN desired_turn)</argsstring>
+        <name>SetTurn</name>
+        <param>
+          <type><ref refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fd" kindref="member">TURN</ref></type>
+          <declname>desired_turn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/CombatManager.h" line="32" column="6" bodyfile="D:/University/ca-A00269349/Rogue/CombatManager.cpp" bodystart="51" bodyend="54"/>
+        <references refid="class_combat_manager_1a3c0b56cc5d4af6dde4aa585ebfd74f3e" compoundref="_combat_manager_8h" startline="29">_TURN</references>
+        <referencedby refid="class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80" compoundref="_combat_manager_8cpp" startline="7" endline="49">Fight</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_combat_manager_1a2f5d5d9a45933a6e234bc3154fd6f894" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CombatManager::HitEnemy</definition>
+        <argsstring>(Enemy &amp;e, Player &amp;p)</argsstring>
+        <name>HitEnemy</name>
+        <param>
+          <type><ref refid="class_enemy" kindref="compound">Enemy</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/CombatManager.h" line="34" column="6" bodyfile="D:/University/ca-A00269349/Rogue/CombatManager.cpp" bodystart="56" bodyend="60"/>
+        <references refid="class_player_1a23faf24de68cf7d62a8b726a3c181ef0" compoundref="_player_8cpp" startline="241" endline="244">Player::GetDamage</references>
+        <references refid="class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37" compoundref="_non_playable_character_8cpp" startline="88" endline="91">NonPlayableCharacter::GetHealth</references>
+        <references refid="class_non_playable_character_1aa18f226b35b28bd1ad318642a758abe2" compoundref="_non_playable_character_8cpp" startline="78" endline="81">NonPlayableCharacter::SetDesiredHealth</references>
+        <references refid="class_combat_manager_1a72df0ea85034f84597c1760d9af631af" compoundref="_combat_manager_8cpp" startline="118" endline="121">SleepTimer</references>
+        <referencedby refid="class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80" compoundref="_combat_manager_8cpp" startline="7" endline="49">Fight</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_combat_manager_1aa3041a8bdc3eeddce47ef1eb0cd93899" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CombatManager::HitPlayer</definition>
+        <argsstring>(Enemy &amp;e, Player &amp;p)</argsstring>
+        <name>HitPlayer</name>
+        <param>
+          <type><ref refid="class_enemy" kindref="compound">Enemy</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/CombatManager.h" line="35" column="6" bodyfile="D:/University/ca-A00269349/Rogue/CombatManager.cpp" bodystart="62" bodyend="66"/>
+        <references refid="class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f" compoundref="_non_playable_character_8cpp" startline="93" endline="96">NonPlayableCharacter::GetDamage</references>
+        <references refid="class_player_1a8d962e02bc35d6181940a8aaf7a1a510" compoundref="_player_8cpp" startline="246" endline="249">Player::GetHealth</references>
+        <references refid="class_player_1a02ec140e8f48a44f442e97eb2a19a00e" compoundref="_player_8cpp" startline="169" endline="172">Player::SetDesiredHealth</references>
+        <references refid="class_combat_manager_1a72df0ea85034f84597c1760d9af631af" compoundref="_combat_manager_8cpp" startline="118" endline="121">SleepTimer</references>
+        <referencedby refid="class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80" compoundref="_combat_manager_8cpp" startline="7" endline="49">Fight</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CombatManager::PrintStatements</definition>
+        <argsstring>(MapManager &amp;m, Enemy &amp;e, Player &amp;p, int statements)</argsstring>
+        <name>PrintStatements</name>
+        <param>
+          <type><ref refid="class_map_manager" kindref="compound">MapManager</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="class_enemy" kindref="compound">Enemy</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>statements</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/CombatManager.h" line="37" column="6" bodyfile="D:/University/ca-A00269349/Rogue/CombatManager.cpp" bodystart="68" bodyend="104"/>
+        <references refid="class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f" compoundref="_non_playable_character_8cpp" startline="93" endline="96">NonPlayableCharacter::GetDamage</references>
+        <references refid="class_player_1a23faf24de68cf7d62a8b726a3c181ef0" compoundref="_player_8cpp" startline="241" endline="244">Player::GetDamage</references>
+        <references refid="class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37" compoundref="_non_playable_character_8cpp" startline="88" endline="91">NonPlayableCharacter::GetHealth</references>
+        <references refid="class_player_1a8d962e02bc35d6181940a8aaf7a1a510" compoundref="_player_8cpp" startline="246" endline="249">Player::GetHealth</references>
+        <references refid="class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8" compoundref="_non_playable_character_8cpp" startline="83" endline="86">NonPlayableCharacter::GetName</references>
+        <references refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" compoundref="_macro_8cpp" startline="7" endline="13">Macro::GoToScreenPosition</references>
+        <references refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" compoundref="_map_manager_8h" startline="19">MapManager::height</references>
+        <references refid="class_combat_manager_1a72df0ea85034f84597c1760d9af631af" compoundref="_combat_manager_8cpp" startline="118" endline="121">SleepTimer</references>
+        <referencedby refid="class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80" compoundref="_combat_manager_8cpp" startline="7" endline="49">Fight</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_combat_manager_1aec72d4fe1af9857010fb793735c145db" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CombatManager::UpdateResults</definition>
+        <argsstring>(Enemy &amp;e, Player &amp;p)</argsstring>
+        <name>UpdateResults</name>
+        <param>
+          <type><ref refid="class_enemy" kindref="compound">Enemy</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/CombatManager.h" line="39" column="6" bodyfile="D:/University/ca-A00269349/Rogue/CombatManager.cpp" bodystart="106" bodyend="116"/>
+        <references refid="class_combat_manager_1a33cdc2357ba9ee866a38dcec4a10845f" compoundref="_combat_manager_8h" startline="30">_RESULTS</references>
+        <references refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c" compoundref="_combat_manager_8h" startline="25">ENEMY_DEAD</references>
+        <references refid="class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37" compoundref="_non_playable_character_8cpp" startline="88" endline="91">NonPlayableCharacter::GetHealth</references>
+        <references refid="class_player_1a8d962e02bc35d6181940a8aaf7a1a510" compoundref="_player_8cpp" startline="246" endline="249">Player::GetHealth</references>
+        <references refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954" compoundref="_combat_manager_8h" startline="24">PLAYER_DEAD</references>
+        <referencedby refid="class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80" compoundref="_combat_manager_8cpp" startline="7" endline="49">Fight</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_combat_manager_1a72df0ea85034f84597c1760d9af631af" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CombatManager::SleepTimer</definition>
+        <argsstring>()</argsstring>
+        <name>SleepTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/CombatManager.h" line="41" column="6" bodyfile="D:/University/ca-A00269349/Rogue/CombatManager.cpp" bodystart="118" bodyend="121"/>
+        <referencedby refid="class_combat_manager_1a2f5d5d9a45933a6e234bc3154fd6f894" compoundref="_combat_manager_8cpp" startline="56" endline="60">HitEnemy</referencedby>
+        <referencedby refid="class_combat_manager_1aa3041a8bdc3eeddce47ef1eb0cd93899" compoundref="_combat_manager_8cpp" startline="62" endline="66">HitPlayer</referencedby>
+        <referencedby refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" compoundref="_combat_manager_8cpp" startline="68" endline="104">PrintStatements</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>CombatManager</label>
+        <link refid="class_combat_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/University/ca-A00269349/Rogue/CombatManager.h" line="8" column="1" bodyfile="D:/University/ca-A00269349/Rogue/CombatManager.h" bodystart="9" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_combat_manager_1a33cdc2357ba9ee866a38dcec4a10845f" prot="private" virt="non-virtual"><scope>CombatManager</scope><name>_RESULTS</name></member>
+      <member refid="class_combat_manager_1a3c0b56cc5d4af6dde4aa585ebfd74f3e" prot="private" virt="non-virtual"><scope>CombatManager</scope><name>_TURN</name></member>
+      <member refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b" prot="private" virt="non-virtual"><scope>CombatManager</scope><name>ENEMY</name></member>
+      <member refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c" prot="private" virt="non-virtual"><scope>CombatManager</scope><name>ENEMY_DEAD</name></member>
+      <member refid="class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80" prot="public" virt="non-virtual"><scope>CombatManager</scope><name>Fight</name></member>
+      <member refid="class_combat_manager_1a2f5d5d9a45933a6e234bc3154fd6f894" prot="private" virt="non-virtual"><scope>CombatManager</scope><name>HitEnemy</name></member>
+      <member refid="class_combat_manager_1aa3041a8bdc3eeddce47ef1eb0cd93899" prot="private" virt="non-virtual"><scope>CombatManager</scope><name>HitPlayer</name></member>
+      <member refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11" prot="private" virt="non-virtual"><scope>CombatManager</scope><name>PLAYER</name></member>
+      <member refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954" prot="private" virt="non-virtual"><scope>CombatManager</scope><name>PLAYER_DEAD</name></member>
+      <member refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" prot="private" virt="non-virtual"><scope>CombatManager</scope><name>PrintStatements</name></member>
+      <member refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019" prot="private" virt="non-virtual"><scope>CombatManager</scope><name>RESULTS</name></member>
+      <member refid="class_combat_manager_1aa470a607a6d3d76cef5d62c8f312d513" prot="private" virt="non-virtual"><scope>CombatManager</scope><name>SetTurn</name></member>
+      <member refid="class_combat_manager_1a0f2db833cf98bb4a4ba946bf7ab11686" prot="private" virt="non-virtual"><scope>CombatManager</scope><name>sleep_timer</name></member>
+      <member refid="class_combat_manager_1a72df0ea85034f84597c1760d9af631af" prot="private" virt="non-virtual"><scope>CombatManager</scope><name>SleepTimer</name></member>
+      <member refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ad523a0fd56212f42ab45a2a3d5d87b0c" prot="private" virt="non-virtual"><scope>CombatManager</scope><name>STILL_ALIVE</name></member>
+      <member refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fd" prot="private" virt="non-virtual"><scope>CombatManager</scope><name>TURN</name></member>
+      <member refid="class_combat_manager_1aec72d4fe1af9857010fb793735c145db" prot="private" virt="non-virtual"><scope>CombatManager</scope><name>UpdateResults</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,420 @@
+\hypertarget{class_random_item_generator}{}\doxysection{Random\+Item\+Generator Class Reference}
+\label{class_random_item_generator}\index{RandomItemGenerator@{RandomItemGenerator}}
+
+
+{\ttfamily \#include $<$Random\+Item\+Generator.\+h$>$}
+
+
+
+Inheritance diagram for Random\+Item\+Generator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_random_item_generator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Random\+Item\+Generator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_random_item_generator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_random_item_generator_a8a1d39701f3d5a6997309c824d22d333}{Random\+Item\+Generator}} ()
+\item 
+\mbox{\hyperlink{class_random_item_generator_a81f88c7721872cb577532fa2f8a28249}{$\sim$\+Random\+Item\+Generator}} ()
+\item 
+virtual void \mbox{\hyperlink{class_random_item_generator_a76d898718b27df8a3c5be2ccaf3efdc5}{Set\+Type}} (int choice)
+\item 
+virtual void \mbox{\hyperlink{class_random_item_generator_a3816c88713a59914f16f50d29245b2d7}{Set\+Item\+Names}} (string file\+\_\+name)
+\item 
+virtual void \mbox{\hyperlink{class_random_item_generator_a7658f6593d6c57602738827102f73ece}{Set\+Name}} (int name\+\_\+index, string \mbox{\hyperlink{class_random_item_generator_a375a42a9160dd1ff376b4408e2b03629}{type}})
+\item 
+void \mbox{\hyperlink{class_random_item_generator_a2b6f82fc5576dbe0b3dd4614bc60f305}{Set\+Strength}} ()
+\item 
+void \mbox{\hyperlink{class_random_item_generator_a0cd93433c0ce88481b7f82ee43796a0f}{Set\+Weight}} ()
+\item 
+void \mbox{\hyperlink{class_random_item_generator_a779176c9969633372b5a70a2daf57d5e}{Set\+Speed}} ()
+\item 
+void \mbox{\hyperlink{class_random_item_generator_ae16b7ab7234236eb33cfd6f562f8c57e}{Set\+Symbol}} (char \mbox{\hyperlink{class_random_item_generator_ab7e63cc7320671a21e3aaf7a6e800c78}{symbol}})
+\item 
+void \mbox{\hyperlink{class_random_item_generator_afa526acb6d33fca117a7d741f23877a0}{Create\+Item}} (char \mbox{\hyperlink{class_random_item_generator_ab7e63cc7320671a21e3aaf7a6e800c78}{symbol}}, char item\+\_\+type\+\_\+amount)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_random_item_generator_acb103418c26d2dc505b21ecdad9cc0fc}{name}}
+\item 
+string \mbox{\hyperlink{class_random_item_generator_a375a42a9160dd1ff376b4408e2b03629}{type}}
+\item 
+string \mbox{\hyperlink{class_random_item_generator_a456d04a342662178e5d17e86312bfb6c}{ITEM\+\_\+\+TYPES}} \mbox{[}20\mbox{]} \{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_random_item_generator_a87d0cc780a37457b3d2ce5154564f464}{strength}}
+\item 
+int \mbox{\hyperlink{class_random_item_generator_a41bd17718f417ca1b1467b7ca8f81bfe}{weight}}
+\item 
+int \mbox{\hyperlink{class_random_item_generator_a3c4fe14226e1b9c3326db7f97a2d33c4}{speed}}
+\item 
+char \mbox{\hyperlink{class_random_item_generator_ab7e63cc7320671a21e3aaf7a6e800c78}{symbol}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8h_source_l00005}{5}} of file \mbox{\hyperlink{_random_item_generator_8h_source}{Random\+Item\+Generator.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_random_item_generator_a8a1d39701f3d5a6997309c824d22d333}\label{class_random_item_generator_a8a1d39701f3d5a6997309c824d22d333}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!RandomItemGenerator@{RandomItemGenerator}}
+\index{RandomItemGenerator@{RandomItemGenerator}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomItemGenerator()}{RandomItemGenerator()}}
+{\footnotesize\ttfamily Random\+Item\+Generator\+::\+Random\+Item\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{_random_item_generator_8cpp_source}{Random\+Item\+Generator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00006}00006 \{}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00007}00007     \mbox{\hyperlink{class_random_item_generator_acb103418c26d2dc505b21ecdad9cc0fc}{name}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00008}00008     \mbox{\hyperlink{class_random_item_generator_a375a42a9160dd1ff376b4408e2b03629}{type}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00009}00009     \mbox{\hyperlink{class_random_item_generator_a87d0cc780a37457b3d2ce5154564f464}{strength}} = 0;}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00010}00010     \mbox{\hyperlink{class_random_item_generator_a41bd17718f417ca1b1467b7ca8f81bfe}{weight}} = 0;}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00011}00011     \mbox{\hyperlink{class_random_item_generator_a3c4fe14226e1b9c3326db7f97a2d33c4}{speed}} = 0;}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00012}00012     \mbox{\hyperlink{class_random_item_generator_ab7e63cc7320671a21e3aaf7a6e800c78}{symbol}} = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00013}00013 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_random_item_generator_a81f88c7721872cb577532fa2f8a28249}\label{class_random_item_generator_a81f88c7721872cb577532fa2f8a28249}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!````~RandomItemGenerator@{$\sim$RandomItemGenerator}}
+\index{````~RandomItemGenerator@{$\sim$RandomItemGenerator}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{$\sim$RandomItemGenerator()}{~RandomItemGenerator()}}
+{\footnotesize\ttfamily Random\+Item\+Generator\+::$\sim$\+Random\+Item\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{_random_item_generator_8cpp_source}{Random\+Item\+Generator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00016}00016 \{}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00017}00017 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_random_item_generator_afa526acb6d33fca117a7d741f23877a0}\label{class_random_item_generator_afa526acb6d33fca117a7d741f23877a0}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!CreateItem@{CreateItem}}
+\index{CreateItem@{CreateItem}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{CreateItem()}{CreateItem()}}
+{\footnotesize\ttfamily void Random\+Item\+Generator\+::\+Create\+Item (\begin{DoxyParamCaption}\item[{char}]{symbol,  }\item[{char}]{item\+\_\+type\+\_\+amount }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8cpp_source_l00051}{51}} of file \mbox{\hyperlink{_random_item_generator_8cpp_source}{Random\+Item\+Generator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00052}00052 \{}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00053}00053     \mbox{\hyperlink{class_random_item_generator_a76d898718b27df8a3c5be2ccaf3efdc5}{SetType}}(\mbox{\hyperlink{namespace_macro_a7192f07d19f55d7f8b863932a5078eab}{Macro::GenerateRandomNumber}}(item\_type\_amount));}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00054}00054     \mbox{\hyperlink{class_random_item_generator_a7658f6593d6c57602738827102f73ece}{SetName}}(\mbox{\hyperlink{namespace_macro_a7192f07d19f55d7f8b863932a5078eab}{Macro::GenerateRandomNumber}}(\mbox{\hyperlink{class_random_item_generator_a456d04a342662178e5d17e86312bfb6c}{ITEM\_TYPES}}-\/>length()), \mbox{\hyperlink{class_random_item_generator_a375a42a9160dd1ff376b4408e2b03629}{type}});}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00055}00055     \mbox{\hyperlink{class_random_item_generator_a2b6f82fc5576dbe0b3dd4614bc60f305}{SetStrength}}();}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00056}00056     \mbox{\hyperlink{class_random_item_generator_a0cd93433c0ce88481b7f82ee43796a0f}{SetWeight}}();}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00057}00057     \mbox{\hyperlink{class_random_item_generator_a779176c9969633372b5a70a2daf57d5e}{SetSpeed}}();}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00058}00058     \mbox{\hyperlink{class_random_item_generator_ae16b7ab7234236eb33cfd6f562f8c57e}{SetSymbol}}(\mbox{\hyperlink{class_random_item_generator_ab7e63cc7320671a21e3aaf7a6e800c78}{symbol}});}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00059}00059 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_random_item_generator_afa526acb6d33fca117a7d741f23877a0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_random_item_generator_afa526acb6d33fca117a7d741f23877a0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_random_item_generator_a3816c88713a59914f16f50d29245b2d7}\label{class_random_item_generator_a3816c88713a59914f16f50d29245b2d7}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!SetItemNames@{SetItemNames}}
+\index{SetItemNames@{SetItemNames}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{SetItemNames()}{SetItemNames()}}
+{\footnotesize\ttfamily void Random\+Item\+Generator\+::\+Set\+Item\+Names (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_random_weapon_ae9993590b69800be2b76a618fc5651f8}{Random\+Weapon}}.
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{_random_item_generator_8cpp_source}{Random\+Item\+Generator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00024}00024 \{}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00025}00025 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_random_item_generator_a7658f6593d6c57602738827102f73ece}\label{class_random_item_generator_a7658f6593d6c57602738827102f73ece}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!SetName@{SetName}}
+\index{SetName@{SetName}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{SetName()}{SetName()}}
+{\footnotesize\ttfamily void Random\+Item\+Generator\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{int}]{name\+\_\+index,  }\item[{string}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{_random_item_generator_8cpp_source}{Random\+Item\+Generator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00028}00028 \{}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00029}00029 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_random_item_generator_a7658f6593d6c57602738827102f73ece_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_random_item_generator_a779176c9969633372b5a70a2daf57d5e}\label{class_random_item_generator_a779176c9969633372b5a70a2daf57d5e}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!SetSpeed@{SetSpeed}}
+\index{SetSpeed@{SetSpeed}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{SetSpeed()}{SetSpeed()}}
+{\footnotesize\ttfamily void Random\+Item\+Generator\+::\+Set\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8cpp_source_l00041}{41}} of file \mbox{\hyperlink{_random_item_generator_8cpp_source}{Random\+Item\+Generator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00042}00042 \{}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00043}00043     \mbox{\hyperlink{class_random_item_generator_a3c4fe14226e1b9c3326db7f97a2d33c4}{speed}} = \mbox{\hyperlink{namespace_macro_a7192f07d19f55d7f8b863932a5078eab}{Macro::GenerateRandomNumber}}(10);}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00044}00044 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_random_item_generator_a779176c9969633372b5a70a2daf57d5e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_random_item_generator_a779176c9969633372b5a70a2daf57d5e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_random_item_generator_a2b6f82fc5576dbe0b3dd4614bc60f305}\label{class_random_item_generator_a2b6f82fc5576dbe0b3dd4614bc60f305}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!SetStrength@{SetStrength}}
+\index{SetStrength@{SetStrength}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{SetStrength()}{SetStrength()}}
+{\footnotesize\ttfamily void Random\+Item\+Generator\+::\+Set\+Strength (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{_random_item_generator_8cpp_source}{Random\+Item\+Generator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00032}00032 \{}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00033}00033     \mbox{\hyperlink{class_random_item_generator_a87d0cc780a37457b3d2ce5154564f464}{strength}} = \mbox{\hyperlink{namespace_macro_a7192f07d19f55d7f8b863932a5078eab}{Macro::GenerateRandomNumber}}(10);}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00034}00034 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_random_item_generator_a2b6f82fc5576dbe0b3dd4614bc60f305_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_random_item_generator_a2b6f82fc5576dbe0b3dd4614bc60f305_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_random_item_generator_ae16b7ab7234236eb33cfd6f562f8c57e}\label{class_random_item_generator_ae16b7ab7234236eb33cfd6f562f8c57e}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!SetSymbol@{SetSymbol}}
+\index{SetSymbol@{SetSymbol}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{SetSymbol()}{SetSymbol()}}
+{\footnotesize\ttfamily void Random\+Item\+Generator\+::\+Set\+Symbol (\begin{DoxyParamCaption}\item[{char}]{symbol }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8cpp_source_l00046}{46}} of file \mbox{\hyperlink{_random_item_generator_8cpp_source}{Random\+Item\+Generator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00047}00047 \{}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00048}00048     this-\/>\mbox{\hyperlink{class_random_item_generator_ab7e63cc7320671a21e3aaf7a6e800c78}{symbol}} = \mbox{\hyperlink{class_random_item_generator_ab7e63cc7320671a21e3aaf7a6e800c78}{symbol}};}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00049}00049 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_random_item_generator_ae16b7ab7234236eb33cfd6f562f8c57e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_random_item_generator_a76d898718b27df8a3c5be2ccaf3efdc5}\label{class_random_item_generator_a76d898718b27df8a3c5be2ccaf3efdc5}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!SetType@{SetType}}
+\index{SetType@{SetType}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{SetType()}{SetType()}}
+{\footnotesize\ttfamily void Random\+Item\+Generator\+::\+Set\+Type (\begin{DoxyParamCaption}\item[{int}]{choice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_random_weapon_aea0b4d6a59c972b64ed00ba7b7894d5c}{Random\+Weapon}}.
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{_random_item_generator_8cpp_source}{Random\+Item\+Generator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00020}00020 \{}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00021}00021 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_random_item_generator_a76d898718b27df8a3c5be2ccaf3efdc5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_random_item_generator_a0cd93433c0ce88481b7f82ee43796a0f}\label{class_random_item_generator_a0cd93433c0ce88481b7f82ee43796a0f}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!SetWeight@{SetWeight}}
+\index{SetWeight@{SetWeight}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{SetWeight()}{SetWeight()}}
+{\footnotesize\ttfamily void Random\+Item\+Generator\+::\+Set\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{_random_item_generator_8cpp_source}{Random\+Item\+Generator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00037}00037 \{}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00038}00038     \mbox{\hyperlink{class_random_item_generator_a41bd17718f417ca1b1467b7ca8f81bfe}{weight}} = \mbox{\hyperlink{namespace_macro_a7192f07d19f55d7f8b863932a5078eab}{Macro::GenerateRandomNumber}}(10);}
+\DoxyCodeLine{\Hypertarget{class_random_item_generator_l00039}00039 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_random_item_generator_a0cd93433c0ce88481b7f82ee43796a0f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_random_item_generator_a0cd93433c0ce88481b7f82ee43796a0f_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_random_item_generator_a456d04a342662178e5d17e86312bfb6c}\label{class_random_item_generator_a456d04a342662178e5d17e86312bfb6c}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!ITEM\_TYPES@{ITEM\_TYPES}}
+\index{ITEM\_TYPES@{ITEM\_TYPES}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{ITEM\_TYPES}{ITEM\_TYPES}}
+{\footnotesize\ttfamily string Random\+Item\+Generator\+::\+ITEM\+\_\+\+TYPES\mbox{[}20\mbox{]} \{\}}
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8h_source_l00022}{22}} of file \mbox{\hyperlink{_random_item_generator_8h_source}{Random\+Item\+Generator.\+h}}.
+
+\mbox{\Hypertarget{class_random_item_generator_acb103418c26d2dc505b21ecdad9cc0fc}\label{class_random_item_generator_acb103418c26d2dc505b21ecdad9cc0fc}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!name@{name}}
+\index{name@{name}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Random\+Item\+Generator\+::name}
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8h_source_l00021}{21}} of file \mbox{\hyperlink{_random_item_generator_8h_source}{Random\+Item\+Generator.\+h}}.
+
+\mbox{\Hypertarget{class_random_item_generator_a3c4fe14226e1b9c3326db7f97a2d33c4}\label{class_random_item_generator_a3c4fe14226e1b9c3326db7f97a2d33c4}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!speed@{speed}}
+\index{speed@{speed}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily int Random\+Item\+Generator\+::speed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8h_source_l00025}{25}} of file \mbox{\hyperlink{_random_item_generator_8h_source}{Random\+Item\+Generator.\+h}}.
+
+\mbox{\Hypertarget{class_random_item_generator_a87d0cc780a37457b3d2ce5154564f464}\label{class_random_item_generator_a87d0cc780a37457b3d2ce5154564f464}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!strength@{strength}}
+\index{strength@{strength}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{strength}{strength}}
+{\footnotesize\ttfamily int Random\+Item\+Generator\+::strength\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8h_source_l00025}{25}} of file \mbox{\hyperlink{_random_item_generator_8h_source}{Random\+Item\+Generator.\+h}}.
+
+\mbox{\Hypertarget{class_random_item_generator_ab7e63cc7320671a21e3aaf7a6e800c78}\label{class_random_item_generator_ab7e63cc7320671a21e3aaf7a6e800c78}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!symbol@{symbol}}
+\index{symbol@{symbol}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{symbol}{symbol}}
+{\footnotesize\ttfamily char Random\+Item\+Generator\+::symbol\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8h_source_l00026}{26}} of file \mbox{\hyperlink{_random_item_generator_8h_source}{Random\+Item\+Generator.\+h}}.
+
+\mbox{\Hypertarget{class_random_item_generator_a375a42a9160dd1ff376b4408e2b03629}\label{class_random_item_generator_a375a42a9160dd1ff376b4408e2b03629}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!type@{type}}
+\index{type@{type}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily string Random\+Item\+Generator\+::type}
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8h_source_l00021}{21}} of file \mbox{\hyperlink{_random_item_generator_8h_source}{Random\+Item\+Generator.\+h}}.
+
+\mbox{\Hypertarget{class_random_item_generator_a41bd17718f417ca1b1467b7ca8f81bfe}\label{class_random_item_generator_a41bd17718f417ca1b1467b7ca8f81bfe}} 
+\index{RandomItemGenerator@{RandomItemGenerator}!weight@{weight}}
+\index{weight@{weight}!RandomItemGenerator@{RandomItemGenerator}}
+\doxysubsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily int Random\+Item\+Generator\+::weight\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_random_item_generator_8h_source_l00025}{25}} of file \mbox{\hyperlink{_random_item_generator_8h_source}{Random\+Item\+Generator.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_random_item_generator_8h}{Random\+Item\+Generator.\+h}}\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_random_item_generator_8cpp}{Random\+Item\+Generator.\+cpp}}\end{DoxyCompactItemize}

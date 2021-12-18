@@ -1,0 +1,226 @@
+.TH "RandomItemGenerator" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RandomItemGenerator
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <RandomItemGenerator\&.h>\fP
+.PP
+Inherited by \fBRandomWeapon\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRandomItemGenerator\fP ()"
+.br
+.ti -1c
+.RI "\fB~RandomItemGenerator\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetType\fP (int choice)"
+.br
+.ti -1c
+.RI "virtual void \fBSetItemNames\fP (string file_name)"
+.br
+.ti -1c
+.RI "virtual void \fBSetName\fP (int name_index, string \fBtype\fP)"
+.br
+.ti -1c
+.RI "void \fBSetStrength\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetWeight\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetSpeed\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetSymbol\fP (char \fBsymbol\fP)"
+.br
+.ti -1c
+.RI "void \fBCreateItem\fP (char \fBsymbol\fP, char item_type_amount)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBname\fP"
+.br
+.ti -1c
+.RI "string \fBtype\fP"
+.br
+.ti -1c
+.RI "string \fBITEM_TYPES\fP [20] {}"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBstrength\fP"
+.br
+.ti -1c
+.RI "int \fBweight\fP"
+.br
+.ti -1c
+.RI "int \fBspeed\fP"
+.br
+.ti -1c
+.RI "char \fBsymbol\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB5\fP of file \fBRandomItemGenerator\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "RandomItemGenerator::RandomItemGenerator ()"
+
+.PP
+Definition at line \fB5\fP of file \fBRandomItemGenerator\&.cpp\fP\&.
+.PP
+.nf
+6 {
+7     name = "";
+8     type = "";
+9     strength = 0;
+10     weight = 0;
+11     speed = 0;
+12     symbol = ' ';
+13 }
+.fi
+.SS "RandomItemGenerator::~RandomItemGenerator ()"
+
+.PP
+Definition at line \fB15\fP of file \fBRandomItemGenerator\&.cpp\fP\&.
+.PP
+.nf
+16 {
+17 }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void RandomItemGenerator::CreateItem (char symbol, char item_type_amount)"
+
+.PP
+Definition at line \fB51\fP of file \fBRandomItemGenerator\&.cpp\fP\&.
+.PP
+.nf
+52 {
+53     SetType(Macro::GenerateRandomNumber(item_type_amount));
+54     SetName(Macro::GenerateRandomNumber(ITEM_TYPES->length()), type);
+55     SetStrength();
+56     SetWeight();
+57     SetSpeed();
+58     SetSymbol(symbol);
+59 }
+.fi
+.SS "void RandomItemGenerator::SetItemNames (string file_name)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBRandomWeapon\fP\&.
+.PP
+Definition at line \fB23\fP of file \fBRandomItemGenerator\&.cpp\fP\&.
+.PP
+.nf
+24 {
+25 }
+.fi
+.SS "void RandomItemGenerator::SetName (int name_index, string type)\fC [virtual]\fP"
+
+.PP
+Definition at line \fB27\fP of file \fBRandomItemGenerator\&.cpp\fP\&.
+.PP
+.nf
+28 {
+29 }
+.fi
+.SS "void RandomItemGenerator::SetSpeed ()"
+
+.PP
+Definition at line \fB41\fP of file \fBRandomItemGenerator\&.cpp\fP\&.
+.PP
+.nf
+42 {
+43     speed = Macro::GenerateRandomNumber(10);
+44 }
+.fi
+.SS "void RandomItemGenerator::SetStrength ()"
+
+.PP
+Definition at line \fB31\fP of file \fBRandomItemGenerator\&.cpp\fP\&.
+.PP
+.nf
+32 {
+33     strength = Macro::GenerateRandomNumber(10);
+34 }
+.fi
+.SS "void RandomItemGenerator::SetSymbol (char symbol)"
+
+.PP
+Definition at line \fB46\fP of file \fBRandomItemGenerator\&.cpp\fP\&.
+.PP
+.nf
+47 {
+48     this->symbol = symbol;
+49 }
+.fi
+.SS "void RandomItemGenerator::SetType (int choice)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBRandomWeapon\fP\&.
+.PP
+Definition at line \fB19\fP of file \fBRandomItemGenerator\&.cpp\fP\&.
+.PP
+.nf
+20 {
+21 }
+.fi
+.SS "void RandomItemGenerator::SetWeight ()"
+
+.PP
+Definition at line \fB36\fP of file \fBRandomItemGenerator\&.cpp\fP\&.
+.PP
+.nf
+37 {
+38     weight = Macro::GenerateRandomNumber(10);
+39 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "string RandomItemGenerator::ITEM_TYPES[20] {}"
+
+.PP
+Definition at line \fB22\fP of file \fBRandomItemGenerator\&.h\fP\&.
+.SS "string RandomItemGenerator::name"
+
+.PP
+Definition at line \fB21\fP of file \fBRandomItemGenerator\&.h\fP\&.
+.SS "int RandomItemGenerator::speed\fC [private]\fP"
+
+.PP
+Definition at line \fB25\fP of file \fBRandomItemGenerator\&.h\fP\&.
+.SS "int RandomItemGenerator::strength\fC [private]\fP"
+
+.PP
+Definition at line \fB25\fP of file \fBRandomItemGenerator\&.h\fP\&.
+.SS "char RandomItemGenerator::symbol\fC [private]\fP"
+
+.PP
+Definition at line \fB26\fP of file \fBRandomItemGenerator\&.h\fP\&.
+.SS "string RandomItemGenerator::type"
+
+.PP
+Definition at line \fB21\fP of file \fBRandomItemGenerator\&.h\fP\&.
+.SS "int RandomItemGenerator::weight\fC [private]\fP"
+
+.PP
+Definition at line \fB25\fP of file \fBRandomItemGenerator\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

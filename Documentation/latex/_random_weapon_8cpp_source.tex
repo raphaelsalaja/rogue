@@ -1,0 +1,45 @@
+\hypertarget{_random_weapon_8cpp_source}{}\doxysection{Random\+Weapon.\+cpp}
+\label{_random_weapon_8cpp_source}\index{D:/University/ca-\/A00269349/Rogue/RandomWeapon.cpp@{D:/University/ca-\/A00269349/Rogue/RandomWeapon.cpp}}
+\mbox{\hyperlink{_random_weapon_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_random_weapon_8h}{RandomWeapon.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_macro_8h}{Macro.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00008}\mbox{\hyperlink{class_random_weapon_a69377a159321fc074496c769271fcb30}{00008}} \mbox{\hyperlink{class_random_weapon_a69377a159321fc074496c769271fcb30}{RandomWeapon::RandomWeapon}}()}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00010}00010 \}}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00012}\mbox{\hyperlink{class_random_weapon_aea0b4d6a59c972b64ed00ba7b7894d5c}{00012}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_random_weapon_aea0b4d6a59c972b64ed00ba7b7894d5c}{RandomWeapon::SetType}}(\textcolor{keywordtype}{int} choice)}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00013}00013 \{}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00014}00014     \mbox{\hyperlink{class_random_item_generator_a375a42a9160dd1ff376b4408e2b03629}{type}} = \mbox{\hyperlink{namespace_macro_a7192f07d19f55d7f8b863932a5078eab}{Macro::GenerateRandomNumber}}(\mbox{\hyperlink{class_random_weapon_a03eb992d360d55a4f96eea49e0757977}{weapon\_types}}-\/>length());}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00015}00015 \}}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00017}\mbox{\hyperlink{class_random_weapon_ae9993590b69800be2b76a618fc5651f8}{00017}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_random_weapon_ae9993590b69800be2b76a618fc5651f8}{RandomWeapon::SetItemNames}}(\textcolor{keywordtype}{string} file\_name)}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00018}00018 \{}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00019}00019     \textcolor{keywordtype}{int} index = 0;}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00020}00020     \textcolor{keywordtype}{string} line;}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00021}00021     ifstream myfile(file\_name);}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00022}00022     \textcolor{keywordflow}{if} (myfile.is\_open())}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00023}00023     \{}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00024}00024         \textcolor{keywordflow}{while} (!myfile.eof())}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00025}00025         \{}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00026}00026             getline(myfile, line);}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00027}00027             \mbox{\hyperlink{class_random_item_generator_a456d04a342662178e5d17e86312bfb6c}{ITEM\_TYPES}}[index] = line;}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00028}00028             cout << \mbox{\hyperlink{class_random_item_generator_a456d04a342662178e5d17e86312bfb6c}{ITEM\_TYPES}}[index] << endl;}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00029}00029             index++;}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00030}00030         \}}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00031}00031         myfile.close();}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00032}00032     \}}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00033}00033     \textcolor{keywordflow}{else} \{ cout << \textcolor{stringliteral}{"{}FILE CANNOT BE OPENED"{}}; \}}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00034}00034 \}}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00036}\mbox{\hyperlink{class_random_weapon_a48fd5758c4c65e266d3ba9bfe3e6c90b}{00036}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_random_weapon_a48fd5758c4c65e266d3ba9bfe3e6c90b}{RandomWeapon::GenerateRandomWeapon}}()}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00037}00037 \{}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00038}00038     \mbox{\hyperlink{class_random_item_generator_afa526acb6d33fca117a7d741f23877a0}{CreateItem}}(\mbox{\hyperlink{class_random_weapon_a498bfb916d002b8f31c6e84fc70fc6ff}{symbol}}, \mbox{\hyperlink{class_random_weapon_a03eb992d360d55a4f96eea49e0757977}{weapon\_types}}-\/>length());}
+\DoxyCodeLine{\Hypertarget{_random_weapon_8cpp_source_l00039}00039 \}}
+
+\end{DoxyCode}

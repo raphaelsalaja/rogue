@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__random_weapon_8h" xml:lang="en-US">
+<title>D:/University/ca-A00269349/Rogue/RandomWeapon.h File Reference</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/RandomWeapon.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;RandomItemGenerator.h&quot;
+</programlisting>Include dependency graph for RandomWeapon.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_random_weapon_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_random_weapon_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_random_weapon">RandomWeapon</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

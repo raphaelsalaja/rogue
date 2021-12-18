@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__armour_8h_source" xml:lang="en-US">
+<title>Armour.h</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/Armour.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__armour_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="__armour_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+<anchor xml:id="__armour_8h_source_1l00003"/>00003 
+<anchor xml:id="__armour_8h_source_1l00004"/>00004 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+<anchor xml:id="__armour_8h_source_1l00005"/>00005 
+<anchor xml:id="__armour_8h_source_1l00006"/><link linkend="_class_weapon">00006</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_weapon">Weapon</link>
+<anchor xml:id="__armour_8h_source_1l00007"/>00007 {
+<anchor xml:id="__armour_8h_source_1l00008"/>00008 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="__armour_8h_source_1l00009"/><link linkend="_class_weapon_1ae6618a552c19d68197e216b2926637a8">00009</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_weapon_1ae6618a552c19d68197e216b2926637a8">WEAPON_NAME_CHOICES</link>[20]{
+<anchor xml:id="__armour_8h_source_1l00010"/>00010 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Might&#32;of&#32;Fallen&#32;Souls&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00011"/>00011 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Hope&#32;of&#32;Carnage&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00012"/>00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Soldier&apos;s&#32;Tunic&#32;of&#32;Cataclysms&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Silent&#32;Armor&#32;of&#32;the&#32;Wicked&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Stormguard&#32;Demon&#32;Greatplate&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Vindication&#32;Scaled&#32;Armor&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Ivory&#32;Chestpiece&#32;of&#32;Smoldering&#32;Fortunes&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Bronze&#32;Breastplate&#32;of&#32;Imminent&#32;Vengeance&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Batteplate&#32;of&#32;Hallowed&#32;Dreams&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Chestplate&#32;of&#32;Infernal&#32;Punishment&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Edge&#32;of&#32;Discipline&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Scales&#32;of&#32;the&#32;Breaking&#32;Storm&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Retribution&#32;Greatplate&#32;of&#32;the&#32;Wicked&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Battleworn&#32;Vest&#32;of&#32;the&#32;Daywalker&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Thunderguard&#32;Titanium&#32;Chestpiece&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Vengeance&#32;Golden&#32;Chestplate&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Obsidian&#32;Cuirass&#32;of&#32;Hallowed&#32;Freedom&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Iron&#32;Tunic&#32;of&#32;Blessed&#32;Kings&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Vest&#32;of&#32;Blessed&#32;Memories&quot;</emphasis>,
+<anchor xml:id="__armour_8h_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Chestguard&#32;of&#32;Fleeting&#32;Might&quot;</emphasis>
+<anchor xml:id="__armour_8h_source_1l00030"/>00030 &#32;&#32;&#32;&#32;};
+<anchor xml:id="__armour_8h_source_1l00031"/>00031 
+<anchor xml:id="__armour_8h_source_1l00032"/><link linkend="_class_weapon_1a6b683bce956944a128d3ee25a88c7ac1">00032</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_weapon_1a6b683bce956944a128d3ee25a88c7ac1">name</link>;
+<anchor xml:id="__armour_8h_source_1l00033"/><link linkend="_class_weapon_1a4a9381f1b461ca75cf0928defe49fbc0">00033</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_weapon_1a4a9381f1b461ca75cf0928defe49fbc0">strength</link>,&#32;<link linkend="_class_weapon_1a9f519847c0970ed12ffdb22b2de6162b">weight</link>;
+<anchor xml:id="__armour_8h_source_1l00034"/>00034 
+<anchor xml:id="__armour_8h_source_1l00035"/><link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67">00035</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">enum</emphasis>&#32;<link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67">WEAPON_TYPE</link>
+<anchor xml:id="__armour_8h_source_1l00036"/>00036 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__armour_8h_source_1l00037"/><link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a">00037</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a">SWORD</link>,
+<anchor xml:id="__armour_8h_source_1l00038"/><link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67aaeec0571fea89fdc7c3ae39b79dca509">00038</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67aaeec0571fea89fdc7c3ae39b79dca509">SHIELD</link>,
+<anchor xml:id="__armour_8h_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67aeb9724671a53a074e70378ac1d2596c7">ARMOUR</link>
+<anchor xml:id="__armour_8h_source_1l00040"/><link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67aeb9724671a53a074e70378ac1d2596c7">00040</link> &#32;&#32;&#32;&#32;};
+<anchor xml:id="__armour_8h_source_1l00041"/>00041 
+<anchor xml:id="__armour_8h_source_1l00042"/><link linkend="_class_weapon_1a378d7783971053b498d26d456f5c3bb7">00042</link> &#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67">WEAPON_TYPE</link>&#32;<link linkend="_class_weapon_1a378d7783971053b498d26d456f5c3bb7">WEAPON_TYPE_SELECTED</link>&#32;=&#32;<link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a">SWORD</link>;
+<anchor xml:id="__armour_8h_source_1l00043"/>00043 
+<anchor xml:id="__armour_8h_source_1l00044"/><link linkend="_class_weapon_1a42dbc46dd70319a24763992c4ebbd396">00044</link> &#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a42dbc46dd70319a24763992c4ebbd396">Weapon</link>();
+<anchor xml:id="__armour_8h_source_1l00045"/><link linkend="_class_weapon_1a420e7ba3d2017e6de3e93eb579cfd3fa">00045</link> &#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a420e7ba3d2017e6de3e93eb579cfd3fa">~Weapon</link>();
+<anchor xml:id="__armour_8h_source_1l00046"/>00046 
+<anchor xml:id="__armour_8h_source_1l00047"/><link linkend="_class_weapon_1a2dd096e208c2827552c41cad1f47e8e3">00047</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_weapon_1a2dd096e208c2827552c41cad1f47e8e3">GenerateRandomNumber</link>(<emphasis role="keywordtype">int</emphasis>&#32;max);
+<anchor xml:id="__armour_8h_source_1l00048"/><link linkend="_class_weapon_1a6b2437dd9e5541ef6f40ce35d96477c7">00048</link> &#32;&#32;&#32;&#32;<link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67">WEAPON_TYPE</link>&#32;<link linkend="_class_weapon_1a6b2437dd9e5541ef6f40ce35d96477c7">SetWeaponType</link>(<emphasis role="keywordtype">int</emphasis>&#32;weapon_choice);
+<anchor xml:id="__armour_8h_source_1l00049"/><link linkend="_class_weapon_1ab1b14ca4579850bf0385c3e94ba35e57">00049</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_weapon_1ab1b14ca4579850bf0385c3e94ba35e57">SetWeaponName</link>(<emphasis role="keywordtype">int</emphasis>&#32;weapon_name_index,&#32;<link linkend="_class_weapon_1a0bfb82517497d5ff8c7d31786875de67">WEAPON_TYPE</link>&#32;<link linkend="_class_weapon_1a378d7783971053b498d26d456f5c3bb7">WEAPON_TYPE_SELECTED</link>);
+<anchor xml:id="__armour_8h_source_1l00050"/><link linkend="_class_weapon_1a23087012d905e32bbb224e49055a7181">00050</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_weapon_1a23087012d905e32bbb224e49055a7181">SetStrength</link>(<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_weapon_1a6b683bce956944a128d3ee25a88c7ac1">name</link>);
+<anchor xml:id="__armour_8h_source_1l00051"/><link linkend="_class_weapon_1aa3a7809b2c34df9d7775f57f7560c106">00051</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_weapon_1aa3a7809b2c34df9d7775f57f7560c106">CreateNewWeapon</link>();
+<anchor xml:id="__armour_8h_source_1l00052"/>00052 
+<anchor xml:id="__armour_8h_source_1l00053"/>00053 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="__armour_8h_source_1l00054"/><link linkend="_class_weapon_1a834aaff0b69ffac71d827ff6b62cbe8c">00054</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_class_weapon_1a834aaff0b69ffac71d827ff6b62cbe8c">SYMBOL</link>&#32;=&#32;<emphasis role="charliteral">&apos;W&apos;</emphasis>;
+<anchor xml:id="__armour_8h_source_1l00055"/>00055 };
+</programlisting></section>

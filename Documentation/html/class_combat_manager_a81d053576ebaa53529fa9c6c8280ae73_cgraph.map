@@ -1,0 +1,10 @@
+<map id="CombatManager::PrintStatements" name="CombatManager::PrintStatements">
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,224,184"/>
+<area shape="rect" id="node2" href="$class_non_playable_character.html#a39c610c17e10c8ee1b6bb03d65ed032f" title=" " alt="" coords="272,5,500,32"/>
+<area shape="rect" id="node3" href="$class_player.html#a23faf24de68cf7d62a8b726a3c181ef0" title=" " alt="" coords="318,56,454,83"/>
+<area shape="rect" id="node4" href="$class_non_playable_character.html#ab0ab52f45551b75625bdf02e65d3ef37" title=" " alt="" coords="277,107,495,133"/>
+<area shape="rect" id="node5" href="$class_player.html#a8d962e02bc35d6181940a8aaf7a1a510" title=" " alt="" coords="323,157,449,184"/>
+<area shape="rect" id="node6" href="$class_non_playable_character.html#aedf794670e71a33011caefd1d321a8f8" title=" " alt="" coords="279,208,493,235"/>
+<area shape="rect" id="node7" href="$namespace_macro.html#a86a559b7afd1b6babc93aeb1177b6509" title=" " alt="" coords="293,259,479,285"/>
+<area shape="rect" id="node8" href="$class_combat_manager.html#a72df0ea85034f84597c1760d9af631af" title=" " alt="" coords="291,309,481,336"/>
+</map>

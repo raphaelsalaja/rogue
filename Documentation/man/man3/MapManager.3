@@ -1,0 +1,375 @@
+.TH "MapManager" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MapManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MapManager\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBLoadNextMap\fP (\fBMapManager\fP &m, \fBConsoleWindowManager\fP &c, \fBPlayer\fP &p, \fBInventoryManager\fP &i)"
+.br
+.ti -1c
+.RI "void \fBRenderMap\fP (\fBConsoleWindowManager\fP &c)"
+.br
+.ti -1c
+.RI "bool \fBIsEmpty\fP (int x, int y)"
+.br
+.ti -1c
+.RI "void \fBLoadMap\fP (string input)"
+.br
+.ti -1c
+.RI "int \fBFindEnemy\fP (\fBPlayer\fP &p)"
+.br
+.ti -1c
+.RI "int \fBFindFriendly\fP (\fBPlayer\fP &p)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "unsigned int \fBlevel_index\fP = 1"
+.br
+.ti -1c
+.RI "unsigned int \fBwidth\fP = 0"
+.br
+.ti -1c
+.RI "unsigned int \fBheight\fP = 0"
+.br
+.ti -1c
+.RI "vector< \fBGenericFriendly\fP > \fBgeneric_friendlies\fP"
+.br
+.ti -1c
+.RI "vector< \fBEnemy\fP > \fBenemies\fP"
+.br
+.ti -1c
+.RI "char * \fBnew_map\fP = nullptr"
+.br
+.ti -1c
+.RI "bool \fBhas_rendered_map\fP = false"
+.br
+.ti -1c
+.RI "bool \fBloading_next_map\fP = false"
+.br
+.ti -1c
+.RI "string \fBfile_name_start\fP = 'MAP_'"
+.br
+.ti -1c
+.RI "string \fBfile_name_end\fP = '\&.txt'"
+.br
+.ti -1c
+.RI "string \fBfile_contents_read_in\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBReadMap\fP ()"
+.br
+.ti -1c
+.RI "void \fBPrintMap\fP (\fBConsoleWindowManager\fP &c)"
+.br
+.ti -1c
+.RI "void \fBRefreshMap\fP (\fBConsoleWindowManager\fP &c)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB14\fP of file \fBMapManager\&.h\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "int MapManager::FindEnemy (\fBPlayer\fP & p)"
+
+.PP
+Definition at line \fB163\fP of file \fBMapManager\&.cpp\fP\&.
+.PP
+.nf
+164 {
+165     int player_pos = p\&.player_position_y_new * width + p\&.player_position_x_new;
+166 
+167     int enemy_pos;
+168     // LOOP THOUGH VECTOR AND MATCH
+169 
+170     bool matching;
+171 
+172     for (int i = 0; i < enemies\&.size() - 1; i++)
+173     {
+174         enemy_pos = enemies\&.at(i)\&.GetX();
+175         matching = enemy_pos == player_pos;
+176         if (matching)
+177         {
+178             return i;
+179         }
+180     }
+181 }
+.fi
+.SS "int MapManager::FindFriendly (\fBPlayer\fP & p)"
+
+.PP
+Definition at line \fB183\fP of file \fBMapManager\&.cpp\fP\&.
+.PP
+.nf
+184 {
+185     int player_pos = p\&.player_position_y_new * width + p\&.player_position_x_new;
+186 
+187     int friendly_pos;
+188     // LOOP THOUGH VECTOR AND MATCH
+189 
+190     bool matching;
+191 
+192     for (int i = 0; i < generic_friendlies\&.size() - 1; i++)
+193     {
+194         friendly_pos = generic_friendlies\&.at(i)\&.GetX();
+195         matching = friendly_pos == player_pos;
+196         if (matching)
+197         {
+198             return i;
+199         }
+200     }
+201 }
+.fi
+.SS "bool MapManager::IsEmpty (int x, int y)"
+
+.PP
+Definition at line \fB103\fP of file \fBMapManager\&.cpp\fP\&.
+.PP
+.nf
+104 {
+105     if (new_map[y * width + x] == '\&.')
+106     {
+107         return true;
+108     }
+109     return false;
+110 }
+.fi
+.SS "void MapManager::LoadMap (string input)"
+
+.PP
+Definition at line \fB61\fP of file \fBMapManager\&.cpp\fP\&.
+.PP
+.nf
+62 {
+63     for (int i = 0; i < width; i++)
+64     {
+65         for (int j = 0; j < height; j++)
+66         {
+67             new_map[i * height + j] = input\&.at(i * height + j);
+68         }
+69     }
+70 }
+.fi
+.SS "void MapManager::LoadNextMap (\fBMapManager\fP & m, \fBConsoleWindowManager\fP & c, \fBPlayer\fP & p, \fBInventoryManager\fP & i)"
+
+.PP
+Definition at line \fB72\fP of file \fBMapManager\&.cpp\fP\&.
+.PP
+.nf
+73 {
+74     if (level_index != 7)
+75     {
+76         level_index++;
+77 
+78         loading_next_map = true;
+79         while (loading_next_map)
+80         {
+81             c\&.BlankScreen();
+82 
+83             p\&.player_position_x_new = 20;
+84             p\&.player_position_y_new = 10;
+85 
+86             p\&.RenderPlayer(m, c, i);
+87             has_rendered_map = false;
+88             RenderMap(c);
+89             loading_next_map = false;
+90         }
+91     }
+92     else
+93     {
+94         while (true)
+95         {
+96             p\&.in_combat = true;
+97             GoToScreenPosition(45, m\&.height + 3);
+98             cout << "CONGRATULATIONS, YOU WON :)";
+99         }
+100     }
+101 }
+.fi
+.SS "void MapManager::PrintMap (\fBConsoleWindowManager\fP & c)\fC [private]\fP"
+
+.PP
+Definition at line \fB10\fP of file \fBMapManager\&.cpp\fP\&.
+.PP
+.nf
+11 {
+12     for (int i = 0; i < width; i++)
+13     {
+14         for (int j = 0; j < height; j++)
+15         {
+16             char next_char = new_map[i * height + j];
+17             switch (next_char)
+18             {
+19             case '-':
+20             case '|': c\&.SetConsoleWindowColor(ConsoleWindowManager::LIGHT_BLUE, ConsoleWindowManager::BLACK);
+21                 cout << '\xB1';
+22                 break;
+23             case '#': c\&.SetConsoleWindowColor(ConsoleWindowManager::DARK_BLUE, ConsoleWindowManager::BLACK);
+24                 cout << '\xB2';
+25                 break;
+26             case '\&.': c\&.SetConsoleWindowColor(ConsoleWindowManager::BLACK, ConsoleWindowManager::MAGENTA);
+27                 cout << ' ';
+28                 break;
+29             case '*': c\&.SetConsoleWindowColor(ConsoleWindowManager::LIGHT_BLUE, ConsoleWindowManager::BLACK);
+30                 cout << '\xFA';
+31                 break;
+32             case '=': c\&.SetConsoleWindowColor(ConsoleWindowManager::LIGHT_BLUE, ConsoleWindowManager::MAGENTA);
+33                 cout << '\xB0';
+34                 break;
+35             case '1': c\&.SetConsoleWindowColor(ConsoleWindowManager::BLUE, ConsoleWindowManager::BLACK);
+36                 cout << '\xDB';
+37                 break;
+38             case ' ': c\&.SetConsoleWindowColor(ConsoleWindowManager::CYAN, ConsoleWindowManager::MAGENTA);
+39                 cout << new_map[i * height + j];
+40                 break;
+41             case '[': c\&.SetConsoleWindowColor(ConsoleWindowManager::YELLOW, ConsoleWindowManager::BLACK);
+42                 cout << '\xAF';
+43                 break;
+44             case 'N': c\&.SetConsoleWindowColor(ConsoleWindowManager::GREEN, ConsoleWindowManager::BLACK);
+45                 generic_friendlies\&.emplace_back(GenericFriendly(i * height + j));
+46                 cout << '\xBE';
+47                 break;
+48             case 'E': c\&.SetConsoleWindowColor(ConsoleWindowManager::RED, ConsoleWindowManager::BLACK);
+49                 enemies\&.emplace_back(Enemy(i * height + j, i * height + j));
+50                 cout << '\xF5';
+51                 break;
+52             default: c\&.SetConsoleWindowColor(ConsoleWindowManager::LIGHT_BLUE, ConsoleWindowManager::BLACK);
+53                 cout << new_map[i * height + j];
+54                 break;
+55             }
+56         }
+57     }
+58     c\&.SetConsoleWindowColor(ConsoleWindowManager::LIGHT_BLUE, ConsoleWindowManager::BLACK);
+59 }
+.fi
+.SS "void MapManager::ReadMap ()\fC [private]\fP"
+
+.PP
+Definition at line \fB112\fP of file \fBMapManager\&.cpp\fP\&.
+.PP
+.nf
+113 {
+114     string file_line_string;
+115     bool width_retrieved = false;
+116     ifstream file(file_name_start + to_string(level_index) + file_name_end);
+117 
+118     width = 0;
+119     height = 0;
+120     file_contents_read_in = "";
+121 
+122     while (getline(file, file_line_string))
+123     {
+124         file_contents_read_in += file_line_string;
+125         file_contents_read_in\&.push_back('\n');
+126         char current_char = file_contents_read_in\&.at(file_contents_read_in\&.length() - 1);
+127         if (current_char == '\n')
+128         {
+129             if (width_retrieved == false)
+130             {
+131                 width = file_contents_read_in\&.length();
+132                 width_retrieved = true;
+133             }
+134             height++;
+135         }
+136     }
+137 
+138     new_map = new char[width * height];
+139 }
+.fi
+.SS "void MapManager::RefreshMap (\fBConsoleWindowManager\fP & c)\fC [private]\fP"
+
+.PP
+Definition at line \fB157\fP of file \fBMapManager\&.cpp\fP\&.
+.PP
+.nf
+158 {
+159     GoToScreenPosition(0, 0);
+160     PrintMap(c);
+161 }
+.fi
+.SS "void MapManager::RenderMap (\fBConsoleWindowManager\fP & c)"
+
+.PP
+Definition at line \fB141\fP of file \fBMapManager\&.cpp\fP\&.
+.PP
+.nf
+142 {
+143     if (has_rendered_map)
+144     {
+145         PrintMap(c);
+146     }
+147     else
+148     {
+149         c\&.BlankScreen();
+150         ReadMap();
+151         LoadMap(file_contents_read_in);
+152         PrintMap(c);
+153         has_rendered_map = true;
+154     }
+155 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "vector<\fBEnemy\fP> MapManager::enemies"
+
+.PP
+Definition at line \fB22\fP of file \fBMapManager\&.h\fP\&.
+.SS "string MapManager::file_contents_read_in"
+
+.PP
+Definition at line \fB30\fP of file \fBMapManager\&.h\fP\&.
+.SS "string MapManager::file_name_end = '\&.txt'"
+
+.PP
+Definition at line \fB29\fP of file \fBMapManager\&.h\fP\&.
+.SS "string MapManager::file_name_start = 'MAP_'"
+
+.PP
+Definition at line \fB28\fP of file \fBMapManager\&.h\fP\&.
+.SS "vector<\fBGenericFriendly\fP> MapManager::generic_friendlies"
+
+.PP
+Definition at line \fB21\fP of file \fBMapManager\&.h\fP\&.
+.SS "bool MapManager::has_rendered_map = false"
+
+.PP
+Definition at line \fB25\fP of file \fBMapManager\&.h\fP\&.
+.SS "unsigned int MapManager::height = 0"
+
+.PP
+Definition at line \fB19\fP of file \fBMapManager\&.h\fP\&.
+.SS "unsigned int MapManager::level_index = 1"
+
+.PP
+Definition at line \fB17\fP of file \fBMapManager\&.h\fP\&.
+.SS "bool MapManager::loading_next_map = false"
+
+.PP
+Definition at line \fB26\fP of file \fBMapManager\&.h\fP\&.
+.SS "char* MapManager::new_map = nullptr"
+
+.PP
+Definition at line \fB24\fP of file \fBMapManager\&.h\fP\&.
+.SS "unsigned int MapManager::width = 0"
+
+.PP
+Definition at line \fB18\fP of file \fBMapManager\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

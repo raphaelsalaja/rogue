@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__debug_8h_source" xml:lang="en-US">
+<title>Debug.h</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/Debug.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__debug_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="__debug_8h_source_1l00002"/>00002 
+<anchor xml:id="__debug_8h_source_1l00003"/>00003 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_map_manager">MapManager</link>;
+<anchor xml:id="__debug_8h_source_1l00004"/>00004 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_player">Player</link>;
+<anchor xml:id="__debug_8h_source_1l00005"/>00005 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_inventory_manager">InventoryManager</link>;
+<anchor xml:id="__debug_8h_source_1l00006"/>00006 
+<anchor xml:id="__debug_8h_source_1l00007"/><link linkend="_class_debug">00007</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_debug">Debug</link>
+<anchor xml:id="__debug_8h_source_1l00008"/>00008 {
+<anchor xml:id="__debug_8h_source_1l00009"/>00009 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="__debug_8h_source_1l00010"/>00010 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_debug_1a7da6fc420757f4d2ed80dd0de4593806">DebugControls</link>(<link linkend="_class_map_manager">MapManager</link>&amp;&#32;m,&#32;<link linkend="_class_player">Player</link>&amp;&#32;p,&#32;<link linkend="_class_inventory_manager">InventoryManager</link>&amp;&#32;i);
+<anchor xml:id="__debug_8h_source_1l00011"/>00011 };
+</programlisting></section>

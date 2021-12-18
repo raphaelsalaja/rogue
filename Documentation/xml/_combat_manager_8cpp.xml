@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_combat_manager_8cpp" kind="file" language="C++">
+    <compoundname>CombatManager.cpp</compoundname>
+    <includes refid="_combat_manager_8h" local="yes">CombatManager.h</includes>
+    <includes local="no">iostream</includes>
+    <includes refid="_macro_8h" local="yes">Macro.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/CombatManager.cpp</label>
+        <link refid="_combat_manager_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CombatManager.h</label>
+        <link refid="_combat_manager_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ConsoleWindowManager.h</label>
+        <link refid="_console_window_manager_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>GenericFriendly.h</label>
+        <link refid="_generic_friendly_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>InventoryManager.h</label>
+        <link refid="_inventory_manager_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Macro.h</label>
+        <link refid="_macro_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>MapManager.h</label>
+        <link refid="_map_manager_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>NonPlayableCharacter.h</label>
+        <link refid="_non_playable_character_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>UserInterfaceManger.h</label>
+        <link refid="_user_interface_manger_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>fstream</label>
+      </node>
+      <node id="15">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="8">
+        <label>windows.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_combat_manager_8h" kindref="compound">CombatManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_macro_8h" kindref="compound">Macro.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80" kindref="member">CombatManager::Fight</ref>(<ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p,<sp/><ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m,<sp/><ref refid="class_enemy" kindref="compound">Enemy</ref>&amp;<sp/>e)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="class_combat_manager_1a3c0b56cc5d4af6dde4aa585ebfd74f3e" kindref="member">_TURN</ref>)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11" kindref="member">PLAYER</ref>:<sp/><ref refid="class_combat_manager_1a2f5d5d9a45933a6e234bc3154fd6f894" kindref="member">HitEnemy</ref>(e,<sp/>p);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" kindref="member">PrintStatements</ref>(m,<sp/>e,<sp/>p,<sp/>1);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1aec72d4fe1af9857010fb793735c145db" kindref="member">UpdateResults</ref>(e,<sp/>p);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_combat_manager_1a33cdc2357ba9ee866a38dcec4a10845f" kindref="member">_RESULTS</ref><sp/>==<sp/><ref refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c" kindref="member">ENEMY_DEAD</ref>)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" kindref="member">PrintStatements</ref>(m,<sp/>e,<sp/>p,<sp/>6);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(p.<ref refid="class_player_1afabc272a584435771820c92f2c8308f1" kindref="member">in_combat</ref>)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(GetKeyState(VK_RETURN)<sp/>&amp;<sp/>0x8000)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p.<ref refid="class_player_1afabc272a584435771820c92f2c8308f1" kindref="member">in_combat</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" kindref="member">PrintStatements</ref>(m,<sp/>e,<sp/>p,<sp/>2);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1aa470a607a6d3d76cef5d62c8f312d513" kindref="member">SetTurn</ref>(<ref refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b" kindref="member">ENEMY</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b" kindref="member">ENEMY</ref>:<sp/><ref refid="class_combat_manager_1aa3041a8bdc3eeddce47ef1eb0cd93899" kindref="member">HitPlayer</ref>(e,<sp/>p);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" kindref="member">PrintStatements</ref>(m,<sp/>e,<sp/>p,<sp/>3);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1aec72d4fe1af9857010fb793735c145db" kindref="member">UpdateResults</ref>(e,<sp/>p);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_combat_manager_1a33cdc2357ba9ee866a38dcec4a10845f" kindref="member">_RESULTS</ref><sp/>==<sp/><ref refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954" kindref="member">PLAYER_DEAD</ref>)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" kindref="member">PrintStatements</ref>(m,<sp/>e,<sp/>p,<sp/>5);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(p.<ref refid="class_player_1afabc272a584435771820c92f2c8308f1" kindref="member">in_combat</ref>)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(GetKeyState(VK_RETURN)<sp/>&amp;<sp/>0x8000)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p.<ref refid="class_player_1afabc272a584435771820c92f2c8308f1" kindref="member">in_combat</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" kindref="member">PrintStatements</ref>(m,<sp/>e,<sp/>p,<sp/>4);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1aa470a607a6d3d76cef5d62c8f312d513" kindref="member">SetTurn</ref>(<ref refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11" kindref="member">PLAYER</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="class_combat_manager_1aa470a607a6d3d76cef5d62c8f312d513" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1aa470a607a6d3d76cef5d62c8f312d513" kindref="member">CombatManager::SetTurn</ref>(<ref refid="class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fd" kindref="member">TURN</ref><sp/>desired_turn)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a3c0b56cc5d4af6dde4aa585ebfd74f3e" kindref="member">_TURN</ref><sp/>=<sp/>desired_turn;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="class_combat_manager_1a2f5d5d9a45933a6e234bc3154fd6f894" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1a2f5d5d9a45933a6e234bc3154fd6f894" kindref="member">CombatManager::HitEnemy</ref>(<ref refid="class_enemy" kindref="compound">Enemy</ref>&amp;<sp/>e,<sp/><ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>e.<ref refid="class_non_playable_character_1aa18f226b35b28bd1ad318642a758abe2" kindref="member">SetDesiredHealth</ref>(e.<ref refid="class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37" kindref="member">GetHealth</ref>()<sp/>-<sp/>(p.<ref refid="class_player_1a23faf24de68cf7d62a8b726a3c181ef0" kindref="member">GetDamage</ref>()));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a72df0ea85034f84597c1760d9af631af" kindref="member">SleepTimer</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="class_combat_manager_1aa3041a8bdc3eeddce47ef1eb0cd93899" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1aa3041a8bdc3eeddce47ef1eb0cd93899" kindref="member">CombatManager::HitPlayer</ref>(<ref refid="class_enemy" kindref="compound">Enemy</ref>&amp;<sp/>e,<sp/><ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>p.<ref refid="class_player_1a02ec140e8f48a44f442e97eb2a19a00e" kindref="member">SetDesiredHealth</ref>(p.<ref refid="class_player_1a8d962e02bc35d6181940a8aaf7a1a510" kindref="member">GetHealth</ref>()<sp/>-<sp/>e.<ref refid="class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f" kindref="member">GetDamage</ref>());</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a72df0ea85034f84597c1760d9af631af" kindref="member">SleepTimer</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" kindref="member">CombatManager::PrintStatements</ref>(<ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m,<sp/><ref refid="class_enemy" kindref="compound">Enemy</ref>&amp;<sp/>e,<sp/><ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>statements)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>statement;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(statements)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:<sp/>statement<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;YOU<sp/>HIT<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>e.<ref refid="class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8" kindref="member">GetName</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>WITH<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(p.<ref refid="class_player_1a23faf24de68cf7d62a8b726a3c181ef0" kindref="member">GetDamage</ref>())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>DAMAGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" kindref="member">Macro::GoToScreenPosition</ref>(45,<sp/>m.<ref refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" kindref="member">height</ref><sp/>+<sp/>3);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a72df0ea85034f84597c1760d9af631af" kindref="member">SleepTimer</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>statement;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:<sp/>statement<sp/>=<sp/>e.<ref refid="class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8" kindref="member">GetName</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>NOW<sp/>HAS<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(e.<ref refid="class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37" kindref="member">GetHealth</ref>())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>HEALTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" kindref="member">Macro::GoToScreenPosition</ref>(45,<sp/>m.<ref refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" kindref="member">height</ref><sp/>+<sp/>3);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a72df0ea85034f84597c1760d9af631af" kindref="member">SleepTimer</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>statement;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:<sp/>statement<sp/>=<sp/>e.<ref refid="class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8" kindref="member">GetName</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>HIT<sp/>YOU<sp/>WITH<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(e.<ref refid="class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f" kindref="member">GetDamage</ref>())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>DAMAGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" kindref="member">Macro::GoToScreenPosition</ref>(45,<sp/>m.<ref refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" kindref="member">height</ref><sp/>+<sp/>3);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a72df0ea85034f84597c1760d9af631af" kindref="member">SleepTimer</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>statement;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>4:<sp/>statement<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;YOU<sp/>NOW<sp/>HAVE<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(p.<ref refid="class_player_1a8d962e02bc35d6181940a8aaf7a1a510" kindref="member">GetHealth</ref>())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>HEALTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" kindref="member">Macro::GoToScreenPosition</ref>(45,<sp/>m.<ref refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" kindref="member">height</ref><sp/>+<sp/>3);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a72df0ea85034f84597c1760d9af631af" kindref="member">SleepTimer</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>statement;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>5:<sp/>statement<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;YOU<sp/>HAVE<sp/>DIED,<sp/>PRESS<sp/>ENTER<sp/>TO<sp/>QUIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" kindref="member">Macro::GoToScreenPosition</ref>(45,<sp/>m.<ref refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" kindref="member">height</ref><sp/>+<sp/>3);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a72df0ea85034f84597c1760d9af631af" kindref="member">SleepTimer</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>statement;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>6:<sp/>statement<sp/>=<sp/>e.<ref refid="class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8" kindref="member">GetName</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>HAS<sp/>DIED,<sp/>PRESS<sp/>ENTER<sp/>TO<sp/>CONTINUE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" kindref="member">Macro::GoToScreenPosition</ref>(45,<sp/>m.<ref refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" kindref="member">height</ref><sp/>+<sp/>3);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a72df0ea85034f84597c1760d9af631af" kindref="member">SleepTimer</ref>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>statement;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="class_combat_manager_1aec72d4fe1af9857010fb793735c145db" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1aec72d4fe1af9857010fb793735c145db" kindref="member">CombatManager::UpdateResults</ref>(<ref refid="class_enemy" kindref="compound">Enemy</ref>&amp;<sp/>e,<sp/><ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p.<ref refid="class_player_1a8d962e02bc35d6181940a8aaf7a1a510" kindref="member">GetHealth</ref>()<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a33cdc2357ba9ee866a38dcec4a10845f" kindref="member">_RESULTS</ref><sp/>=<sp/><ref refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954" kindref="member">PLAYER_DEAD</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(e.<ref refid="class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37" kindref="member">GetHealth</ref>()<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_combat_manager_1a33cdc2357ba9ee866a38dcec4a10845f" kindref="member">_RESULTS</ref><sp/>=<sp/><ref refid="class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c" kindref="member">ENEMY_DEAD</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="class_combat_manager_1a72df0ea85034f84597c1760d9af631af" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_combat_manager_1a72df0ea85034f84597c1760d9af631af" kindref="member">CombatManager::SleepTimer</ref>()</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>Sleep(1000);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/University/ca-A00269349/Rogue/CombatManager.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1100 @@
+\hypertarget{class_inventory_manager}{}\doxysection{Inventory\+Manager Class Reference}
+\label{class_inventory_manager}\index{InventoryManager@{InventoryManager}}
+
+
+{\ttfamily \#include $<$Inventory\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Inventory\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1}{ITEM\+\_\+\+TYPE}} \{ \newline
+\mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1abd97fe1f81e0a1d13f2e2ed0914f3a21}{BLANK}} = 0
+, \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1af8f6596290d4e68df5ae27ec38bbbbff}{WEAPON}} = 1
+, \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1ae181ef7275cde223032e8378a248d691}{ARMOUR}} = 2
+, \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f}{POTION}} = 3
+, \newline
+\mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1adb93614be5d6a744075c56517bfc7279}{TRINKET}} = 4
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_inventory_manager_aadd5ea163e9e6b8d9df1795443fb035a}{Insert\+Into\+Inventory\+Manager}} (\mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1}{ITEM\+\_\+\+TYPE}} item, char next\+Move, \mbox{\hyperlink{class_player}{Player}} \&p, \mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&ui)
+\item 
+void \mbox{\hyperlink{class_inventory_manager_a3ba246e46fef5621ee856a0b16be0faa}{Remove\+From\+Inventory\+Manager}} (\mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1}{ITEM\+\_\+\+TYPE}} item, char next\+Move, \mbox{\hyperlink{class_player}{Player}} \&p, \mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&ui)
+\item 
+void \mbox{\hyperlink{class_inventory_manager_a347851015e020a56b5bb1484a4cdfef9}{Inventory\+Start}} ()
+\item 
+void \mbox{\hyperlink{class_inventory_manager_acb6cf3d380d81c8129820734b05d0f6e}{Inventory\+Control}} (char action, \mbox{\hyperlink{class_console_rendering}{Console\+Rendering}} \&r, \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&i, \mbox{\hyperlink{class_console_window_manager}{Console\+Window\+Manager}} \&c, \mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&m, \mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&ui)
+\item 
+void \mbox{\hyperlink{class_inventory_manager_a5bbb29a62327b708ec79942a3d18aece}{Use\+Potion\+Selected}} (int potion, \mbox{\hyperlink{class_player}{Player}} \&p, \mbox{\hyperlink{class_console_window_manager}{Console\+Window\+Manager}} \&c, \mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&m, \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&i, \mbox{\hyperlink{class_console_rendering}{Console\+Rendering}} \&r, \mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&ui)
+\item 
+void \mbox{\hyperlink{class_inventory_manager_a5b5e89fe9ebb4fe18db920a373c4052b}{Drop\+Item\+Selected}} (int type, \mbox{\hyperlink{class_player}{Player}} \&p, \mbox{\hyperlink{class_console_window_manager}{Console\+Window\+Manager}} \&c, \mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&m, \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&i, \mbox{\hyperlink{class_console_rendering}{Console\+Rendering}} \&r, \mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&ui)
+\item 
+void \mbox{\hyperlink{class_inventory_manager_a293535f9ed1a4147a3a18a7795f4c201}{Inventory\+Input}} (\mbox{\hyperlink{class_console_window_manager}{Console\+Window\+Manager}} \&c, \mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&m, \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&i, \mbox{\hyperlink{class_console_rendering}{Console\+Rendering}} \&r, \mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&ui)
+\item 
+void \mbox{\hyperlink{class_inventory_manager_a0a4171b1ac086cc4122afdf2b929116b}{Update\+Inventory}} (\mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&i, \mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&ui)
+\item 
+int \mbox{\hyperlink{class_inventory_manager_a98a166d06e34c1f4dc503304f0861a6a}{Get\+Inventory\+Heading\+Location}} (string s, \mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&ui)
+\item 
+string \mbox{\hyperlink{class_inventory_manager_a2dc2d5245ceb9d916d0b8137007e9acd}{Current\+Inventory\+Index}} (\mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&i)
+\item 
+string \mbox{\hyperlink{class_inventory_manager_a43d86630b1efa5dd593dc846e4a2b225}{Add\+Space\+And\+Ending}} (string input, \mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&ui)
+\item 
+\mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1}{ITEM\+\_\+\+TYPE}} \mbox{\hyperlink{class_inventory_manager_a3af6cc9ac4341fba2fde51ae42ad3303}{What\+Is\+Item}} (char letter)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\+\_\+inventory}}
+\item 
+char \mbox{\hyperlink{class_inventory_manager_a2c9831d5f408cdb977ec3e8834445f4a}{c\+\_\+health}} = \textquotesingle{}h\textquotesingle{}
+\item 
+char \mbox{\hyperlink{class_inventory_manager_ae592f94b9da417fdbae15aaf94559640}{c\+\_\+shield}} = \textquotesingle{}s\textquotesingle{}
+\item 
+char \mbox{\hyperlink{class_inventory_manager_a5400f0bca8bb5930c0a65e988b8b9982}{c\+\_\+health\+\_\+potion}} = \textquotesingle{}H\textquotesingle{}
+\item 
+char \mbox{\hyperlink{class_inventory_manager_afed1401d4aa963b4833c0d64ac32ea00}{c\+\_\+shield\+\_\+potion}} = \textquotesingle{}S\textquotesingle{}
+\item 
+char \mbox{\hyperlink{class_inventory_manager_a8339e1257c0c68ad1b5277f88cabc2ac}{c\+\_\+magic\+\_\+potion}} = \textquotesingle{}M\textquotesingle{}
+\item 
+unsigned int \mbox{\hyperlink{class_inventory_manager_a4c1df972584d8dd26d0156eb24ff2d25}{inventory\+\_\+index}} = 1
+\item 
+bool \mbox{\hyperlink{class_inventory_manager_a229268373b664e039dcd90f41282f5e4}{inventory\+\_\+open}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_inventory_manager_a9e7c74ab66faa814d213c577a1a7a12c}{utilities}} \mbox{[}3\mbox{]}\mbox{[}2\mbox{]}
+\item 
+string \mbox{\hyperlink{class_inventory_manager_abe635a768be352b26de8df72fc6514ab}{weapons\+And\+Armour}} \mbox{[}3\mbox{]}\mbox{[}2\mbox{]}
+\item 
+string \mbox{\hyperlink{class_inventory_manager_a0b7dd28d3ce68fb6bbd323985c24fa32}{trinkets}} \mbox{[}2\mbox{]}\mbox{[}2\mbox{]}
+\item 
+char \mbox{\hyperlink{class_inventory_manager_a362aba51c79823a8339255c7440931b8}{potion\+\_\+chars}} \mbox{[}3\mbox{]}
+\item 
+char \mbox{\hyperlink{class_inventory_manager_a879cd59d717d4b320c0306bc19976205}{weapon\+\_\+chars}} \mbox{[}3\mbox{]}
+\item 
+bool \mbox{\hyperlink{class_inventory_manager_a991d76eafd9f5367550645f283b433b5}{highlight}} = false
+\item 
+bool \mbox{\hyperlink{class_inventory_manager_a575a85618f13c55803911a82704b91e6}{on\+\_\+title\+\_\+screen}} = true
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_inventory_manager_a50de8d49ee2176a5c9ecb9973d3e9537}{weapon\+\_\+inventory}}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_inventory_manager_a6c7df66ca745fb453c66d364c09e467b}{armour\+\_\+inventory}}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_inventory_manager_a6bebfa8fc99dfc630c1f4dbe2345fad4}{trinket\+\_\+inventory}}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_inventory_manager_af0a08f75d03dfa8e0a531378d147a980}{utility\+\_\+inventory}}
+\item 
+string \mbox{\hyperlink{class_inventory_manager_ae9c104f31a821143951f6fd47c8f2151}{item\+\_\+picked\+\_\+up}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00017}{17}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1}\label{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1}} 
+\index{InventoryManager@{InventoryManager}!ITEM\_TYPE@{ITEM\_TYPE}}
+\index{ITEM\_TYPE@{ITEM\_TYPE}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{ITEM\_TYPE}{ITEM\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1}{Inventory\+Manager\+::\+ITEM\+\_\+\+TYPE}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLANK@{BLANK}!InventoryManager@{InventoryManager}}\index{InventoryManager@{InventoryManager}!BLANK@{BLANK}}}\mbox{\Hypertarget{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1abd97fe1f81e0a1d13f2e2ed0914f3a21}\label{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1abd97fe1f81e0a1d13f2e2ed0914f3a21}} 
+BLANK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WEAPON@{WEAPON}!InventoryManager@{InventoryManager}}\index{InventoryManager@{InventoryManager}!WEAPON@{WEAPON}}}\mbox{\Hypertarget{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1af8f6596290d4e68df5ae27ec38bbbbff}\label{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1af8f6596290d4e68df5ae27ec38bbbbff}} 
+WEAPON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARMOUR@{ARMOUR}!InventoryManager@{InventoryManager}}\index{InventoryManager@{InventoryManager}!ARMOUR@{ARMOUR}}}\mbox{\Hypertarget{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1ae181ef7275cde223032e8378a248d691}\label{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1ae181ef7275cde223032e8378a248d691}} 
+ARMOUR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{POTION@{POTION}!InventoryManager@{InventoryManager}}\index{InventoryManager@{InventoryManager}!POTION@{POTION}}}\mbox{\Hypertarget{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f}\label{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f}} 
+POTION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TRINKET@{TRINKET}!InventoryManager@{InventoryManager}}\index{InventoryManager@{InventoryManager}!TRINKET@{TRINKET}}}\mbox{\Hypertarget{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1adb93614be5d6a744075c56517bfc7279}\label{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1adb93614be5d6a744075c56517bfc7279}} 
+TRINKET&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00020}{20}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00021}00021     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00022}00022         \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1abd97fe1f81e0a1d13f2e2ed0914f3a21}{BLANK}} = 0,}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00023}00023         \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1af8f6596290d4e68df5ae27ec38bbbbff}{WEAPON}} = 1,}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00024}00024         \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1ae181ef7275cde223032e8378a248d691}{ARMOUR}} = 2,}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00025}00025         \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f}{POTION}} = 3,}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00026}00026         \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1adb93614be5d6a744075c56517bfc7279}{TRINKET}} = 4}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00027}00027     \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_inventory_manager_a43d86630b1efa5dd593dc846e4a2b225}\label{class_inventory_manager_a43d86630b1efa5dd593dc846e4a2b225}} 
+\index{InventoryManager@{InventoryManager}!AddSpaceAndEnding@{AddSpaceAndEnding}}
+\index{AddSpaceAndEnding@{AddSpaceAndEnding}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{AddSpaceAndEnding()}{AddSpaceAndEnding()}}
+{\footnotesize\ttfamily string Inventory\+Manager\+::\+Add\+Space\+And\+Ending (\begin{DoxyParamCaption}\item[{string}]{input,  }\item[{\mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&}]{ui }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8cpp_source_l00191}{191}} of file \mbox{\hyperlink{_inventory_manager_8cpp_source}{Inventory\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00192}00192 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00193}00193     \textcolor{keywordtype}{int} inventory\_length = ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(1).length();}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00194}00194     \textcolor{keywordtype}{int} input\_length = input.length();}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00195}00195     \textcolor{keywordtype}{int} length\_to\_add = inventory\_length -\/ input\_length;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00196}00196 }
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00197}00197     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < length\_to\_add; i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00198}00198     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00199}00199         input.push\_back(\textcolor{charliteral}{' '});}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00200}00200     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00201}00201     \textcolor{keywordtype}{char} x = \textcolor{stringliteral}{'\(\backslash\)xBA'};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00202}00202     input.at(inventory\_length -\/ 1) = x;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00203}00203     \textcolor{keywordflow}{return} input;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00204}00204 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_a43d86630b1efa5dd593dc846e4a2b225_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inventory_manager_a2dc2d5245ceb9d916d0b8137007e9acd}\label{class_inventory_manager_a2dc2d5245ceb9d916d0b8137007e9acd}} 
+\index{InventoryManager@{InventoryManager}!CurrentInventoryIndex@{CurrentInventoryIndex}}
+\index{CurrentInventoryIndex@{CurrentInventoryIndex}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{CurrentInventoryIndex()}{CurrentInventoryIndex()}}
+{\footnotesize\ttfamily string Inventory\+Manager\+::\+Current\+Inventory\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&}]{i }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8cpp_source_l00380}{380}} of file \mbox{\hyperlink{_inventory_manager_8cpp_source}{Inventory\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00381}00381 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00382}00382     \textcolor{comment}{// RETURNS THE CURRENTLY SELECTED INVENTORY INDEX}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00383}00383     \textcolor{keywordtype}{string} output;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00384}00384     \textcolor{keywordflow}{switch} (i.\mbox{\hyperlink{class_inventory_manager_a4c1df972584d8dd26d0156eb24ff2d25}{inventory\_index}})}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00385}00385     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00386}00386     \textcolor{keywordflow}{case} 1: output = \textcolor{stringliteral}{"{}CURRENT SELECTION IS THE HEALTH POTION"{}};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00387}00387         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00388}00388     \textcolor{keywordflow}{case} 2: output = \textcolor{stringliteral}{"{}CURRENT SELECTION IS THE SHIELD POTION"{}};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00389}00389         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00390}00390     \textcolor{keywordflow}{case} 3: output = \textcolor{stringliteral}{"{}CURRENT SELECTION IS THE MAGIC POTION"{}};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00391}00391         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00392}00392     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00393}00393     \textcolor{keywordflow}{return} output;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00394}00394 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_a2dc2d5245ceb9d916d0b8137007e9acd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inventory_manager_a5b5e89fe9ebb4fe18db920a373c4052b}\label{class_inventory_manager_a5b5e89fe9ebb4fe18db920a373c4052b}} 
+\index{InventoryManager@{InventoryManager}!DropItemSelected@{DropItemSelected}}
+\index{DropItemSelected@{DropItemSelected}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{DropItemSelected()}{DropItemSelected()}}
+{\footnotesize\ttfamily void Inventory\+Manager\+::\+Drop\+Item\+Selected (\begin{DoxyParamCaption}\item[{int}]{type,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p,  }\item[{\mbox{\hyperlink{class_console_window_manager}{Console\+Window\+Manager}} \&}]{c,  }\item[{\mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&}]{m,  }\item[{\mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&}]{i,  }\item[{\mbox{\hyperlink{class_console_rendering}{Console\+Rendering}} \&}]{r,  }\item[{\mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&}]{ui }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8cpp_source_l00085}{85}} of file \mbox{\hyperlink{_inventory_manager_8cpp_source}{Inventory\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00086}00086 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00087}00087     \textcolor{keywordtype}{int} x = p.\mbox{\hyperlink{class_player_a5e4cebf1dffd936edc4a69867dc9d38c}{player\_position\_x}} + 1;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00088}00088     \textcolor{keywordtype}{int} y = p.\mbox{\hyperlink{class_player_a1043d8ae834b0edbdf36765e73c32eb0}{player\_position\_y}};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00089}00089     type = \mbox{\hyperlink{class_inventory_manager_a4c1df972584d8dd26d0156eb24ff2d25}{inventory\_index}};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00090}00090     \textcolor{keywordflow}{switch} (type)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00091}00091     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00092}00092     \textcolor{keywordflow}{case} 1: \textcolor{keywordflow}{if} (p.\mbox{\hyperlink{class_player_aa55063fb11d6d041d7e72ef650824280}{health\_potions}} > 0)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00093}00093         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00094}00094             \textcolor{keywordflow}{if} (m.\mbox{\hyperlink{class_map_manager_afab5c5f3312e023fed2304c937156c02}{IsEmpty}}(x, y))}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00095}00095             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00096}00096                 m.\mbox{\hyperlink{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}{new\_map}}[y * m.\mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{width}} + x] = \mbox{\hyperlink{class_inventory_manager_a5400f0bca8bb5930c0a65e988b8b9982}{c\_health\_potion}};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00097}00097             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00098}00098             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00099}00099             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00100}00100                 m.\mbox{\hyperlink{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}{new\_map}}[y * m.\mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{width}} + x] = \mbox{\hyperlink{class_inventory_manager_a5400f0bca8bb5930c0a65e988b8b9982}{c\_health\_potion}};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00101}00101             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00102}00102             p.\mbox{\hyperlink{class_player_aa55063fb11d6d041d7e72ef650824280}{health\_potions}}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00103}00103             i.\mbox{\hyperlink{class_inventory_manager_a3ba246e46fef5621ee856a0b16be0faa}{RemoveFromInventoryManager}}(\mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f}{POTION}}, \mbox{\hyperlink{class_inventory_manager_a5400f0bca8bb5930c0a65e988b8b9982}{c\_health\_potion}}, p, ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00104}00104         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00105}00105         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00106}00106     \textcolor{keywordflow}{case} 2: \textcolor{keywordflow}{if} (p.\mbox{\hyperlink{class_player_aff4ffb0294cf1c1f81d0f4b1f8fc15ff}{shield\_potions}} > 0)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00107}00107         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00108}00108             \textcolor{keywordflow}{if} (m.\mbox{\hyperlink{class_map_manager_afab5c5f3312e023fed2304c937156c02}{IsEmpty}}(x, y))}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00109}00109             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00110}00110                 m.\mbox{\hyperlink{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}{new\_map}}[y * m.\mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{width}} + x] = \mbox{\hyperlink{class_inventory_manager_afed1401d4aa963b4833c0d64ac32ea00}{c\_shield\_potion}};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00111}00111             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00112}00112             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00113}00113             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00114}00114                 m.\mbox{\hyperlink{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}{new\_map}}[y * m.\mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{width}} + x] = \mbox{\hyperlink{class_inventory_manager_afed1401d4aa963b4833c0d64ac32ea00}{c\_shield\_potion}};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00115}00115             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00116}00116             p.\mbox{\hyperlink{class_player_aff4ffb0294cf1c1f81d0f4b1f8fc15ff}{shield\_potions}}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00117}00117             i.\mbox{\hyperlink{class_inventory_manager_a3ba246e46fef5621ee856a0b16be0faa}{RemoveFromInventoryManager}}(\mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f}{POTION}}, \mbox{\hyperlink{class_inventory_manager_afed1401d4aa963b4833c0d64ac32ea00}{c\_shield\_potion}}, p, ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00118}00118         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00119}00119         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00120}00120     \textcolor{keywordflow}{case} 3: \textcolor{keywordflow}{if} (p.\mbox{\hyperlink{class_player_a84354c435ab9342fc19b09423053d1ed}{magic\_potions}} > 0)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00121}00121         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00122}00122             \textcolor{keywordflow}{if} (m.\mbox{\hyperlink{class_map_manager_afab5c5f3312e023fed2304c937156c02}{IsEmpty}}(x, y))}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00123}00123             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00124}00124                 m.\mbox{\hyperlink{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}{new\_map}}[y * m.\mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{width}} + x] = \mbox{\hyperlink{class_inventory_manager_a8339e1257c0c68ad1b5277f88cabc2ac}{c\_magic\_potion}};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00125}00125             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00126}00126             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00127}00127             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00128}00128                 m.\mbox{\hyperlink{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}{new\_map}}[y * m.\mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{width}} + x] = \mbox{\hyperlink{class_inventory_manager_a8339e1257c0c68ad1b5277f88cabc2ac}{c\_magic\_potion}};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00129}00129             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00130}00130             p.\mbox{\hyperlink{class_player_a84354c435ab9342fc19b09423053d1ed}{magic\_potions}}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00131}00131             i.\mbox{\hyperlink{class_inventory_manager_a3ba246e46fef5621ee856a0b16be0faa}{RemoveFromInventoryManager}}(\mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f}{POTION}}, \mbox{\hyperlink{class_inventory_manager_a8339e1257c0c68ad1b5277f88cabc2ac}{c\_magic\_potion}}, p, ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00132}00132         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00133}00133         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00134}00134     \textcolor{keywordflow}{default}: \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00135}00135     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00136}00136     c.\mbox{\hyperlink{class_console_window_manager_aec3eb492b72b29b4b9c57d622b799e9c}{BlankScreen}}();}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00137}00137     \mbox{\hyperlink{class_inventory_manager_a0a4171b1ac086cc4122afdf2b929116b}{UpdateInventory}}(i, ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00138}00138     r.\mbox{\hyperlink{class_console_rendering_a3ba48c54dc22c278244cd45cfbb53a83}{Render\_Inventory}}(c, m, i, ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00139}00139 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_a5b5e89fe9ebb4fe18db920a373c4052b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_a5b5e89fe9ebb4fe18db920a373c4052b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inventory_manager_a98a166d06e34c1f4dc503304f0861a6a}\label{class_inventory_manager_a98a166d06e34c1f4dc503304f0861a6a}} 
+\index{InventoryManager@{InventoryManager}!GetInventoryHeadingLocation@{GetInventoryHeadingLocation}}
+\index{GetInventoryHeadingLocation@{GetInventoryHeadingLocation}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{GetInventoryHeadingLocation()}{GetInventoryHeadingLocation()}}
+{\footnotesize\ttfamily int Inventory\+Manager\+::\+Get\+Inventory\+Heading\+Location (\begin{DoxyParamCaption}\item[{string}]{s,  }\item[{\mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&}]{ui }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8cpp_source_l00179}{179}} of file \mbox{\hyperlink{_inventory_manager_8cpp_source}{Inventory\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00180}00180 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00181}00181     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.size(); i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00182}00182     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00183}00183         \textcolor{keywordtype}{string} s = ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00184}00184         \textcolor{keywordflow}{if} ((strstr(s.c\_str(), s.c\_str())))}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00185}00185         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00186}00186             \textcolor{keywordflow}{return} i;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00187}00187         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00188}00188     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00189}00189 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_a98a166d06e34c1f4dc503304f0861a6a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inventory_manager_aadd5ea163e9e6b8d9df1795443fb035a}\label{class_inventory_manager_aadd5ea163e9e6b8d9df1795443fb035a}} 
+\index{InventoryManager@{InventoryManager}!InsertIntoInventoryManager@{InsertIntoInventoryManager}}
+\index{InsertIntoInventoryManager@{InsertIntoInventoryManager}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{InsertIntoInventoryManager()}{InsertIntoInventoryManager()}}
+{\footnotesize\ttfamily bool Inventory\+Manager\+::\+Insert\+Into\+Inventory\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1}{ITEM\+\_\+\+TYPE}}}]{item,  }\item[{char}]{next\+Move,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p,  }\item[{\mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&}]{ui }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8cpp_source_l00206}{206}} of file \mbox{\hyperlink{_inventory_manager_8cpp_source}{Inventory\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00207}00207 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00208}00208     \textcolor{keywordflow}{switch} (item)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00209}00209     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00210}00210     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1af8f6596290d4e68df5ae27ec38bbbbff}{WEAPON}}: \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00211}00211     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f}{POTION}}: \textcolor{keywordflow}{if} (nextMove == \mbox{\hyperlink{class_inventory_manager_a5400f0bca8bb5930c0a65e988b8b9982}{c\_health\_potion}})}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00212}00212         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00213}00213             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.size() != 0)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00214}00214             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00215}00215                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.size(); i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00216}00216                 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00217}00217                     \textcolor{keywordtype}{string} s = \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.at(i);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00218}00218                     \textcolor{keywordflow}{if} (strstr(s.c\_str(), \textcolor{stringliteral}{"{}HEALTH"{}}))}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00219}00219                     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00220}00220                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.size(); i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00221}00221                         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00222}00222                             \textcolor{keywordtype}{string} s = ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00223}00223                             \textcolor{keywordflow}{if} (strstr(s.c\_str(), \textcolor{stringliteral}{"{}HEALTH"{}}))}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00224}00224                             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00225}00225                                 ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i) = \textcolor{stringliteral}{"{}| HEALTH "{}} + to\_string(p.\mbox{\hyperlink{class_player_aa55063fb11d6d041d7e72ef650824280}{health\_potions}});}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00226}00226                                 ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i) = \mbox{\hyperlink{class_inventory_manager_a43d86630b1efa5dd593dc846e4a2b225}{AddSpaceAndEnding}}(ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i), ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00227}00227                                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00228}00228                             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00229}00229                         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00230}00230                     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00231}00231                 \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00232}00232             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00233}00233             \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.push\_back(\textcolor{stringliteral}{"{}|  HEALTH 1"{}});}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00234}00234             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00235}00235         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00236}00236         \textcolor{keywordflow}{if} (nextMove == \mbox{\hyperlink{class_inventory_manager_afed1401d4aa963b4833c0d64ac32ea00}{c\_shield\_potion}})}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00237}00237         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00238}00238             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.size() != 0)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00239}00239             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00240}00240                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.size(); i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00241}00241                 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00242}00242                     \textcolor{keywordtype}{string} s = \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.at(i);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00243}00243                     \textcolor{keywordflow}{if} (strstr(s.c\_str(), \textcolor{stringliteral}{"{}SHIELD"{}}))}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00244}00244                     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00245}00245                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.size(); i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00246}00246                         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00247}00247                             \textcolor{keywordtype}{string} s = ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00248}00248                             \textcolor{keywordflow}{if} (strstr(s.c\_str(), \textcolor{stringliteral}{"{}SHIELD"{}}))}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00249}00249                             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00250}00250                                 ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i) = \textcolor{stringliteral}{"{}| SHIELD "{}} + to\_string(p.\mbox{\hyperlink{class_player_aff4ffb0294cf1c1f81d0f4b1f8fc15ff}{shield\_potions}});}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00251}00251                                 ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i) = \mbox{\hyperlink{class_inventory_manager_a43d86630b1efa5dd593dc846e4a2b225}{AddSpaceAndEnding}}(ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i), ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00252}00252 }
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00253}00253                                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00254}00254                             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00255}00255                         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00256}00256                     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00257}00257                 \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00258}00258             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00259}00259             \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.push\_back(\textcolor{stringliteral}{"{}|  SHIELD 1"{}});}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00260}00260             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00261}00261         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00262}00262         \textcolor{keywordflow}{if} (nextMove == \mbox{\hyperlink{class_inventory_manager_a8339e1257c0c68ad1b5277f88cabc2ac}{c\_magic\_potion}})}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00263}00263         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00264}00264             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.size() != 0)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00265}00265             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00266}00266                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.size(); i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00267}00267                 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00268}00268                     \textcolor{keywordtype}{string} s = \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.at(i);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00269}00269                     \textcolor{keywordflow}{if} (strstr(s.c\_str(), \textcolor{stringliteral}{"{}MAGIC"{}}))}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00270}00270                     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00271}00271                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.size(); i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00272}00272                         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00273}00273                             \textcolor{keywordtype}{string} s = ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00274}00274                             \textcolor{keywordflow}{if} (strstr(s.c\_str(), \textcolor{stringliteral}{"{}MAGIC"{}}))}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00275}00275                             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00276}00276                                 ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i) = \textcolor{stringliteral}{"{}| MAGIC "{}} + to\_string(p.\mbox{\hyperlink{class_player_a84354c435ab9342fc19b09423053d1ed}{magic\_potions}});}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00277}00277                                 ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i) = \mbox{\hyperlink{class_inventory_manager_a43d86630b1efa5dd593dc846e4a2b225}{AddSpaceAndEnding}}(ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i), ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00278}00278 }
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00279}00279                                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00280}00280                             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00281}00281                         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00282}00282                     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00283}00283                 \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00284}00284             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00285}00285             \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.push\_back(\textcolor{stringliteral}{"{}|  MAGIC 1"{}});}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00286}00286             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00287}00287         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00288}00288         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00289}00289     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1abd97fe1f81e0a1d13f2e2ed0914f3a21}{BLANK}}: \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00290}00290     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00291}00291 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_aadd5ea163e9e6b8d9df1795443fb035a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_aadd5ea163e9e6b8d9df1795443fb035a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inventory_manager_acb6cf3d380d81c8129820734b05d0f6e}\label{class_inventory_manager_acb6cf3d380d81c8129820734b05d0f6e}} 
+\index{InventoryManager@{InventoryManager}!InventoryControl@{InventoryControl}}
+\index{InventoryControl@{InventoryControl}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{InventoryControl()}{InventoryControl()}}
+{\footnotesize\ttfamily void Inventory\+Manager\+::\+Inventory\+Control (\begin{DoxyParamCaption}\item[{char}]{action,  }\item[{\mbox{\hyperlink{class_console_rendering}{Console\+Rendering}} \&}]{r,  }\item[{\mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&}]{i,  }\item[{\mbox{\hyperlink{class_console_window_manager}{Console\+Window\+Manager}} \&}]{c,  }\item[{\mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&}]{m,  }\item[{\mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&}]{ui }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{_inventory_manager_8cpp_source}{Inventory\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00015}00015 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00016}00016     cout << endl;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00017}00017     \textcolor{keywordtype}{int} inventory\_temp = \mbox{\hyperlink{class_inventory_manager_a4c1df972584d8dd26d0156eb24ff2d25}{inventory\_index}};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00018}00018     \textcolor{keywordflow}{switch} (action)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00019}00019     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00020}00020     \textcolor{keywordflow}{case} \textcolor{charliteral}{'o'}: \mbox{\hyperlink{class_inventory_manager_a229268373b664e039dcd90f41282f5e4}{inventory\_open}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00021}00021         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00023}00023     \textcolor{keywordflow}{case} \textcolor{charliteral}{'c'}: \mbox{\hyperlink{class_inventory_manager_a229268373b664e039dcd90f41282f5e4}{inventory\_open}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00024}00024         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00026}00026     \textcolor{keywordflow}{case} \textcolor{charliteral}{'n'}: inventory\_temp++;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00027}00027         \textcolor{keywordflow}{if} (inventory\_temp > 3)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00028}00028         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00029}00029             \mbox{\hyperlink{class_inventory_manager_a4c1df972584d8dd26d0156eb24ff2d25}{inventory\_index}} = 1;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00030}00030         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00031}00031         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00032}00032         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00033}00033             \mbox{\hyperlink{class_inventory_manager_a4c1df972584d8dd26d0156eb24ff2d25}{inventory\_index}} = \mbox{\hyperlink{class_inventory_manager_a4c1df972584d8dd26d0156eb24ff2d25}{inventory\_index}} + 1;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00034}00034         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00036}00036         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00038}00038     \textcolor{keywordflow}{case} \textcolor{charliteral}{'b'}: inventory\_temp-\/-\/;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00039}00039         \textcolor{keywordflow}{if} (inventory\_temp < 1)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00040}00040         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00041}00041             \mbox{\hyperlink{class_inventory_manager_a4c1df972584d8dd26d0156eb24ff2d25}{inventory\_index}} = 3;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00042}00042         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00043}00043         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00044}00044         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00045}00045             \mbox{\hyperlink{class_inventory_manager_a4c1df972584d8dd26d0156eb24ff2d25}{inventory\_index}}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00046}00046         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00047}00047         r.\mbox{\hyperlink{class_console_rendering_a3ba48c54dc22c278244cd45cfbb53a83}{Render\_Inventory}}(c, m, i, ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00048}00048         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00049}00049     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00050}00050 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_acb6cf3d380d81c8129820734b05d0f6e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_acb6cf3d380d81c8129820734b05d0f6e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inventory_manager_a293535f9ed1a4147a3a18a7795f4c201}\label{class_inventory_manager_a293535f9ed1a4147a3a18a7795f4c201}} 
+\index{InventoryManager@{InventoryManager}!InventoryInput@{InventoryInput}}
+\index{InventoryInput@{InventoryInput}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{InventoryInput()}{InventoryInput()}}
+{\footnotesize\ttfamily void Inventory\+Manager\+::\+Inventory\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_window_manager}{Console\+Window\+Manager}} \&}]{c,  }\item[{\mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&}]{m,  }\item[{\mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&}]{i,  }\item[{\mbox{\hyperlink{class_console_rendering}{Console\+Rendering}} \&}]{r,  }\item[{\mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&}]{ui }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8cpp_source_l00141}{141}} of file \mbox{\hyperlink{_inventory_manager_8cpp_source}{Inventory\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00142}00142 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00143}00143     \textcolor{keywordflow}{if} (GetKeyState(\textcolor{charliteral}{'T'}) \& 0x8000)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00144}00144     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00145}00145         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_inventory_manager_a229268373b664e039dcd90f41282f5e4}{inventory\_open}} == \textcolor{keyword}{false})}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00146}00146         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00147}00147             \mbox{\hyperlink{class_inventory_manager_a229268373b664e039dcd90f41282f5e4}{inventory\_open}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00148}00148             r.\mbox{\hyperlink{class_console_rendering_a3ba48c54dc22c278244cd45cfbb53a83}{Render\_Inventory}}(c, m, i, ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00149}00149             Sleep(60);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00150}00150         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00151}00151         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00152}00152         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00153}00153             \mbox{\hyperlink{class_inventory_manager_a229268373b664e039dcd90f41282f5e4}{inventory\_open}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00154}00154             r.\mbox{\hyperlink{class_console_rendering_a3ba48c54dc22c278244cd45cfbb53a83}{Render\_Inventory}}(c, m, i, ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00155}00155             Sleep(60);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00156}00156         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00157}00157     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00158}00158 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_a293535f9ed1a4147a3a18a7795f4c201_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{class_inventory_manager_a293535f9ed1a4147a3a18a7795f4c201_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inventory_manager_a347851015e020a56b5bb1484a4cdfef9}\label{class_inventory_manager_a347851015e020a56b5bb1484a4cdfef9}} 
+\index{InventoryManager@{InventoryManager}!InventoryStart@{InventoryStart}}
+\index{InventoryStart@{InventoryStart}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{InventoryStart()}{InventoryStart()}}
+{\footnotesize\ttfamily void Inventory\+Manager\+::\+Inventory\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{_inventory_manager_8cpp_source}{Inventory\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00007}00007 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00008}00008     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 3; i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00009}00009     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00010}00010         \textcolor{comment}{//inventory.push\_back(i);}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00011}00011     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00012}00012 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_inventory_manager_a3ba246e46fef5621ee856a0b16be0faa}\label{class_inventory_manager_a3ba246e46fef5621ee856a0b16be0faa}} 
+\index{InventoryManager@{InventoryManager}!RemoveFromInventoryManager@{RemoveFromInventoryManager}}
+\index{RemoveFromInventoryManager@{RemoveFromInventoryManager}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{RemoveFromInventoryManager()}{RemoveFromInventoryManager()}}
+{\footnotesize\ttfamily void Inventory\+Manager\+::\+Remove\+From\+Inventory\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1}{ITEM\+\_\+\+TYPE}}}]{item,  }\item[{char}]{next\+Move,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p,  }\item[{\mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&}]{ui }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8cpp_source_l00293}{293}} of file \mbox{\hyperlink{_inventory_manager_8cpp_source}{Inventory\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00294}00294 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00295}00295     \textcolor{keywordflow}{switch} (item)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00296}00296     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00297}00297     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1af8f6596290d4e68df5ae27ec38bbbbff}{WEAPON}}: \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00298}00298     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f}{POTION}}: \textcolor{keywordflow}{if} (nextMove == \mbox{\hyperlink{class_inventory_manager_a5400f0bca8bb5930c0a65e988b8b9982}{c\_health\_potion}})}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00299}00299         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00300}00300             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.size() != 0)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00301}00301             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00302}00302                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.size(); i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00303}00303                 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00304}00304                     \textcolor{keywordtype}{string} s = \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.at(i);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00305}00305                     \textcolor{keywordflow}{if} (strstr(s.c\_str(), \textcolor{stringliteral}{"{}HEALTH"{}}))}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00306}00306                     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00307}00307                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.size(); i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00308}00308                         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00309}00309                             \textcolor{keywordtype}{string} s = ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00310}00310                             \textcolor{keywordflow}{if} (strstr(s.c\_str(), \textcolor{stringliteral}{"{}HEALTH"{}}))}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00311}00311                             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00312}00312                                 ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i) = \textcolor{stringliteral}{"{}| HEALTH "{}} + to\_string(p.\mbox{\hyperlink{class_player_aa55063fb11d6d041d7e72ef650824280}{health\_potions}});}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00313}00313                                 ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i) = \mbox{\hyperlink{class_inventory_manager_a43d86630b1efa5dd593dc846e4a2b225}{AddSpaceAndEnding}}(ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i), ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00314}00314                             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00315}00315                         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00316}00316                     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00317}00317                 \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00318}00318             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00319}00319             \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.push\_back(\textcolor{stringliteral}{"{}|  HEALTH 1"{}});}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00320}00320         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00321}00321         \textcolor{keywordflow}{if} (nextMove == \mbox{\hyperlink{class_inventory_manager_afed1401d4aa963b4833c0d64ac32ea00}{c\_shield\_potion}})}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00322}00322         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00323}00323             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.size() != 0)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00324}00324             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00325}00325                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.size(); i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00326}00326                 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00327}00327                     \textcolor{keywordtype}{string} s = \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.at(i);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00328}00328                     \textcolor{keywordflow}{if} (strstr(s.c\_str(), \textcolor{stringliteral}{"{}SHIELD"{}}))}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00329}00329                     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00330}00330                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.size(); i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00331}00331                         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00332}00332                             \textcolor{keywordtype}{string} s = ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00333}00333                             \textcolor{keywordflow}{if} (strstr(s.c\_str(), \textcolor{stringliteral}{"{}SHIELD"{}}))}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00334}00334                             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00335}00335                                 ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i) = \textcolor{stringliteral}{"{}| SHIELD "{}} + to\_string(p.\mbox{\hyperlink{class_player_aff4ffb0294cf1c1f81d0f4b1f8fc15ff}{shield\_potions}});}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00336}00336                                 ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i) = \mbox{\hyperlink{class_inventory_manager_a43d86630b1efa5dd593dc846e4a2b225}{AddSpaceAndEnding}}(ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i), ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00337}00337                             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00338}00338                         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00339}00339                     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00340}00340                 \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00341}00341             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00342}00342             \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.push\_back(\textcolor{stringliteral}{"{}|  SHIELD 1"{}});}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00343}00343         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00344}00344         \textcolor{keywordflow}{if} (nextMove == \mbox{\hyperlink{class_inventory_manager_a8339e1257c0c68ad1b5277f88cabc2ac}{c\_magic\_potion}})}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00345}00345         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00346}00346             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.size() != 0)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00347}00347             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00348}00348                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.size(); i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00349}00349                 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00350}00350                     \textcolor{keywordtype}{string} s = \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.at(i);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00351}00351                     \textcolor{keywordflow}{if} (strstr(s.c\_str(), \textcolor{stringliteral}{"{}MAGIC"{}}))}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00352}00352                     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00353}00353                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.size(); i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00354}00354                         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00355}00355                             \textcolor{keywordtype}{string} s = ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00356}00356                             \textcolor{keywordflow}{if} (strstr(s.c\_str(), \textcolor{stringliteral}{"{}MAGIC"{}}))}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00357}00357                             \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00358}00358                                 ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i) = \textcolor{stringliteral}{"{}| MAGIC "{}} + to\_string(p.\mbox{\hyperlink{class_player_aff4ffb0294cf1c1f81d0f4b1f8fc15ff}{shield\_potions}});}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00359}00359                                 ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i) = \mbox{\hyperlink{class_inventory_manager_a43d86630b1efa5dd593dc846e4a2b225}{AddSpaceAndEnding}}(ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(i), ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00360}00360                             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00361}00361                         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00362}00362                     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00363}00363                 \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00364}00364             \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00365}00365             \mbox{\hyperlink{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}{potion\_inventory}}.push\_back(\textcolor{stringliteral}{"{}|  MAGIC 1"{}});}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00366}00366         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00367}00367         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00368}00368     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1abd97fe1f81e0a1d13f2e2ed0914f3a21}{BLANK}}: \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00369}00369     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00370}00370 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_a3ba246e46fef5621ee856a0b16be0faa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_a3ba246e46fef5621ee856a0b16be0faa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inventory_manager_a0a4171b1ac086cc4122afdf2b929116b}\label{class_inventory_manager_a0a4171b1ac086cc4122afdf2b929116b}} 
+\index{InventoryManager@{InventoryManager}!UpdateInventory@{UpdateInventory}}
+\index{UpdateInventory@{UpdateInventory}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{UpdateInventory()}{UpdateInventory()}}
+{\footnotesize\ttfamily void Inventory\+Manager\+::\+Update\+Inventory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&}]{i,  }\item[{\mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&}]{ui }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8cpp_source_l00372}{372}} of file \mbox{\hyperlink{_inventory_manager_8cpp_source}{Inventory\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00373}00373 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00374}00374     \textcolor{keywordtype}{string} selection = i.\mbox{\hyperlink{class_inventory_manager_a2dc2d5245ceb9d916d0b8137007e9acd}{CurrentInventoryIndex}}(i);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00375}00375     \textcolor{keywordtype}{string} selection\_print = \textcolor{stringliteral}{"{}|  "{}} + selection;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00376}00376     selection\_print = \mbox{\hyperlink{class_inventory_manager_a43d86630b1efa5dd593dc846e4a2b225}{AddSpaceAndEnding}}(selection\_print, ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00377}00377     ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.at(ui.\mbox{\hyperlink{class_user_interface_manager_a20860ee0c0c01dba89ac4f81dba649dd}{inventory}}.size() -\/ 2) = selection\_print;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00378}00378 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_a0a4171b1ac086cc4122afdf2b929116b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_a0a4171b1ac086cc4122afdf2b929116b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inventory_manager_a5bbb29a62327b708ec79942a3d18aece}\label{class_inventory_manager_a5bbb29a62327b708ec79942a3d18aece}} 
+\index{InventoryManager@{InventoryManager}!UsePotionSelected@{UsePotionSelected}}
+\index{UsePotionSelected@{UsePotionSelected}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{UsePotionSelected()}{UsePotionSelected()}}
+{\footnotesize\ttfamily void Inventory\+Manager\+::\+Use\+Potion\+Selected (\begin{DoxyParamCaption}\item[{int}]{potion,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p,  }\item[{\mbox{\hyperlink{class_console_window_manager}{Console\+Window\+Manager}} \&}]{c,  }\item[{\mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&}]{m,  }\item[{\mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&}]{i,  }\item[{\mbox{\hyperlink{class_console_rendering}{Console\+Rendering}} \&}]{r,  }\item[{\mbox{\hyperlink{class_user_interface_manager}{User\+Interface\+Manager}} \&}]{ui }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8cpp_source_l00052}{52}} of file \mbox{\hyperlink{_inventory_manager_8cpp_source}{Inventory\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00053}00053 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00054}00054     potion = \mbox{\hyperlink{class_inventory_manager_a4c1df972584d8dd26d0156eb24ff2d25}{inventory\_index}};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00055}00055     \textcolor{keywordflow}{switch} (potion)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00056}00056     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00057}00057     \textcolor{keywordflow}{case} 1: \textcolor{keywordflow}{if} (p.\mbox{\hyperlink{class_player_aa55063fb11d6d041d7e72ef650824280}{health\_potions}} != 0 \&\& p.\mbox{\hyperlink{class_player_aad33b52bfe73c4c978a3135172f286a0}{health}} != p.\mbox{\hyperlink{class_player_ad4cfa39d8e172a78e2e8c1c8da13f080}{max\_stats}})}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00058}00058         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00059}00059             p.\mbox{\hyperlink{class_player_aad33b52bfe73c4c978a3135172f286a0}{health}}++;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00060}00060             p.\mbox{\hyperlink{class_player_aa55063fb11d6d041d7e72ef650824280}{health\_potions}}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00061}00061             i.\mbox{\hyperlink{class_inventory_manager_a3ba246e46fef5621ee856a0b16be0faa}{RemoveFromInventoryManager}}(\mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f}{POTION}}, \mbox{\hyperlink{class_inventory_manager_a5400f0bca8bb5930c0a65e988b8b9982}{c\_health\_potion}}, p, ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00062}00062         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00063}00063         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00064}00064     \textcolor{keywordflow}{case} 2: \textcolor{keywordflow}{if} (p.\mbox{\hyperlink{class_player_aff4ffb0294cf1c1f81d0f4b1f8fc15ff}{shield\_potions}} != 0 \&\& p.\mbox{\hyperlink{class_player_aeaeb39c73e57dbc0727f51a2b6c24b41}{shield}} != p.\mbox{\hyperlink{class_player_ad4cfa39d8e172a78e2e8c1c8da13f080}{max\_stats}})}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00065}00065         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00066}00066             p.\mbox{\hyperlink{class_player_aeaeb39c73e57dbc0727f51a2b6c24b41}{shield}}++;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00067}00067             p.\mbox{\hyperlink{class_player_aff4ffb0294cf1c1f81d0f4b1f8fc15ff}{shield\_potions}}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00068}00068             i.\mbox{\hyperlink{class_inventory_manager_a3ba246e46fef5621ee856a0b16be0faa}{RemoveFromInventoryManager}}(\mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f}{POTION}}, \mbox{\hyperlink{class_inventory_manager_afed1401d4aa963b4833c0d64ac32ea00}{c\_shield\_potion}}, p, ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00069}00069         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00070}00070         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00071}00071     \textcolor{keywordflow}{case} 3: \textcolor{keywordflow}{if} (p.\mbox{\hyperlink{class_player_a84354c435ab9342fc19b09423053d1ed}{magic\_potions}} != 0 \&\& p.\mbox{\hyperlink{class_player_a03a20ecc0094ce6869d196b8effddd54}{magic}} != p.\mbox{\hyperlink{class_player_ad4cfa39d8e172a78e2e8c1c8da13f080}{max\_stats}})}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00072}00072         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00073}00073             p.\mbox{\hyperlink{class_player_a03a20ecc0094ce6869d196b8effddd54}{magic}}++;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00074}00074             p.\mbox{\hyperlink{class_player_a84354c435ab9342fc19b09423053d1ed}{magic\_potions}}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00075}00075             i.\mbox{\hyperlink{class_inventory_manager_a3ba246e46fef5621ee856a0b16be0faa}{RemoveFromInventoryManager}}(\mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f}{POTION}}, \mbox{\hyperlink{class_inventory_manager_a8339e1257c0c68ad1b5277f88cabc2ac}{c\_magic\_potion}}, p, ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00076}00076         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00077}00077         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00078}00078     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00079}00079     c.\mbox{\hyperlink{class_console_window_manager_aec3eb492b72b29b4b9c57d622b799e9c}{BlankScreen}}();}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00081}00081     \mbox{\hyperlink{class_inventory_manager_a0a4171b1ac086cc4122afdf2b929116b}{UpdateInventory}}(i, ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00082}00082     r.\mbox{\hyperlink{class_console_rendering_a3ba48c54dc22c278244cd45cfbb53a83}{Render\_Inventory}}(c, m, i, ui);}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00083}00083 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_a5bbb29a62327b708ec79942a3d18aece_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_a5bbb29a62327b708ec79942a3d18aece_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inventory_manager_a3af6cc9ac4341fba2fde51ae42ad3303}\label{class_inventory_manager_a3af6cc9ac4341fba2fde51ae42ad3303}} 
+\index{InventoryManager@{InventoryManager}!WhatIsItem@{WhatIsItem}}
+\index{WhatIsItem@{WhatIsItem}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{WhatIsItem()}{WhatIsItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1}{Inventory\+Manager\+::\+ITEM\+\_\+\+TYPE}} Inventory\+Manager\+::\+What\+Is\+Item (\begin{DoxyParamCaption}\item[{char}]{letter }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8cpp_source_l00160}{160}} of file \mbox{\hyperlink{_inventory_manager_8cpp_source}{Inventory\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00161}00161 \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00162}00162     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \textcolor{keyword}{sizeof}(\mbox{\hyperlink{class_inventory_manager_a362aba51c79823a8339255c7440931b8}{potion\_chars}}); i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00163}00163     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00164}00164         \textcolor{keywordflow}{if} (letter == \mbox{\hyperlink{class_inventory_manager_a879cd59d717d4b320c0306bc19976205}{weapon\_chars}}[i])}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00165}00165         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00166}00166             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1af8f6596290d4e68df5ae27ec38bbbbff}{WEAPON}};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00167}00167         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00168}00168     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00169}00169     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \textcolor{keyword}{sizeof}(\mbox{\hyperlink{class_inventory_manager_a362aba51c79823a8339255c7440931b8}{potion\_chars}}); i++)}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00170}00170     \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00171}00171         \textcolor{keywordflow}{if} (letter == \mbox{\hyperlink{class_inventory_manager_a362aba51c79823a8339255c7440931b8}{potion\_chars}}[i])}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00172}00172         \{}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00173}00173             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f}{POTION}};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00174}00174         \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00175}00175     \}}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00176}00176     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_inventory_manager_a8296ced6bfb4bbf10b1efbb8599a3bd1abd97fe1f81e0a1d13f2e2ed0914f3a21}{BLANK}};}
+\DoxyCodeLine{\Hypertarget{class_inventory_manager_l00177}00177 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_manager_a3af6cc9ac4341fba2fde51ae42ad3303_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_inventory_manager_a6c7df66ca745fb453c66d364c09e467b}\label{class_inventory_manager_a6c7df66ca745fb453c66d364c09e467b}} 
+\index{InventoryManager@{InventoryManager}!armour\_inventory@{armour\_inventory}}
+\index{armour\_inventory@{armour\_inventory}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{armour\_inventory}{armour\_inventory}}
+{\footnotesize\ttfamily vector$<$string$>$ Inventory\+Manager\+::armour\+\_\+inventory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00111}{111}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_a2c9831d5f408cdb977ec3e8834445f4a}\label{class_inventory_manager_a2c9831d5f408cdb977ec3e8834445f4a}} 
+\index{InventoryManager@{InventoryManager}!c\_health@{c\_health}}
+\index{c\_health@{c\_health}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{c\_health}{c\_health}}
+{\footnotesize\ttfamily char Inventory\+Manager\+::c\+\_\+health = \textquotesingle{}h\textquotesingle{}}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00034}{34}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_a5400f0bca8bb5930c0a65e988b8b9982}\label{class_inventory_manager_a5400f0bca8bb5930c0a65e988b8b9982}} 
+\index{InventoryManager@{InventoryManager}!c\_health\_potion@{c\_health\_potion}}
+\index{c\_health\_potion@{c\_health\_potion}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{c\_health\_potion}{c\_health\_potion}}
+{\footnotesize\ttfamily char Inventory\+Manager\+::c\+\_\+health\+\_\+potion = \textquotesingle{}H\textquotesingle{}}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00036}{36}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_a8339e1257c0c68ad1b5277f88cabc2ac}\label{class_inventory_manager_a8339e1257c0c68ad1b5277f88cabc2ac}} 
+\index{InventoryManager@{InventoryManager}!c\_magic\_potion@{c\_magic\_potion}}
+\index{c\_magic\_potion@{c\_magic\_potion}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{c\_magic\_potion}{c\_magic\_potion}}
+{\footnotesize\ttfamily char Inventory\+Manager\+::c\+\_\+magic\+\_\+potion = \textquotesingle{}M\textquotesingle{}}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00038}{38}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_ae592f94b9da417fdbae15aaf94559640}\label{class_inventory_manager_ae592f94b9da417fdbae15aaf94559640}} 
+\index{InventoryManager@{InventoryManager}!c\_shield@{c\_shield}}
+\index{c\_shield@{c\_shield}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{c\_shield}{c\_shield}}
+{\footnotesize\ttfamily char Inventory\+Manager\+::c\+\_\+shield = \textquotesingle{}s\textquotesingle{}}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00035}{35}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_afed1401d4aa963b4833c0d64ac32ea00}\label{class_inventory_manager_afed1401d4aa963b4833c0d64ac32ea00}} 
+\index{InventoryManager@{InventoryManager}!c\_shield\_potion@{c\_shield\_potion}}
+\index{c\_shield\_potion@{c\_shield\_potion}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{c\_shield\_potion}{c\_shield\_potion}}
+{\footnotesize\ttfamily char Inventory\+Manager\+::c\+\_\+shield\+\_\+potion = \textquotesingle{}S\textquotesingle{}}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00037}{37}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_a991d76eafd9f5367550645f283b433b5}\label{class_inventory_manager_a991d76eafd9f5367550645f283b433b5}} 
+\index{InventoryManager@{InventoryManager}!highlight@{highlight}}
+\index{highlight@{highlight}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{highlight}{highlight}}
+{\footnotesize\ttfamily bool Inventory\+Manager\+::highlight = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00108}{108}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_a4c1df972584d8dd26d0156eb24ff2d25}\label{class_inventory_manager_a4c1df972584d8dd26d0156eb24ff2d25}} 
+\index{InventoryManager@{InventoryManager}!inventory\_index@{inventory\_index}}
+\index{inventory\_index@{inventory\_index}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{inventory\_index}{inventory\_index}}
+{\footnotesize\ttfamily unsigned int Inventory\+Manager\+::inventory\+\_\+index = 1}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00040}{40}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_a229268373b664e039dcd90f41282f5e4}\label{class_inventory_manager_a229268373b664e039dcd90f41282f5e4}} 
+\index{InventoryManager@{InventoryManager}!inventory\_open@{inventory\_open}}
+\index{inventory\_open@{inventory\_open}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{inventory\_open}{inventory\_open}}
+{\footnotesize\ttfamily bool Inventory\+Manager\+::inventory\+\_\+open = false}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00042}{42}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_ae9c104f31a821143951f6fd47c8f2151}\label{class_inventory_manager_ae9c104f31a821143951f6fd47c8f2151}} 
+\index{InventoryManager@{InventoryManager}!item\_picked\_up@{item\_picked\_up}}
+\index{item\_picked\_up@{item\_picked\_up}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{item\_picked\_up}{item\_picked\_up}}
+{\footnotesize\ttfamily string Inventory\+Manager\+::item\+\_\+picked\+\_\+up\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00115}{115}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_a575a85618f13c55803911a82704b91e6}\label{class_inventory_manager_a575a85618f13c55803911a82704b91e6}} 
+\index{InventoryManager@{InventoryManager}!on\_title\_screen@{on\_title\_screen}}
+\index{on\_title\_screen@{on\_title\_screen}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{on\_title\_screen}{on\_title\_screen}}
+{\footnotesize\ttfamily bool Inventory\+Manager\+::on\+\_\+title\+\_\+screen = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00109}{109}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_a362aba51c79823a8339255c7440931b8}\label{class_inventory_manager_a362aba51c79823a8339255c7440931b8}} 
+\index{InventoryManager@{InventoryManager}!potion\_chars@{potion\_chars}}
+\index{potion\_chars@{potion\_chars}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{potion\_chars}{potion\_chars}}
+{\footnotesize\ttfamily char Inventory\+Manager\+::potion\+\_\+chars\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{        \textcolor{charliteral}{'H'},}
+\DoxyCodeLine{        \textcolor{charliteral}{'S'},}
+\DoxyCodeLine{        \textcolor{charliteral}{'M'}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00097}{97}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}\label{class_inventory_manager_ae1b2153f7d99c00d92bb7e0516f3d32d}} 
+\index{InventoryManager@{InventoryManager}!potion\_inventory@{potion\_inventory}}
+\index{potion\_inventory@{potion\_inventory}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{potion\_inventory}{potion\_inventory}}
+{\footnotesize\ttfamily vector$<$string$>$ Inventory\+Manager\+::potion\+\_\+inventory}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}HEALTH"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}SHIELD"{}},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}MAGIC"{}}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00029}{29}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_a6bebfa8fc99dfc630c1f4dbe2345fad4}\label{class_inventory_manager_a6bebfa8fc99dfc630c1f4dbe2345fad4}} 
+\index{InventoryManager@{InventoryManager}!trinket\_inventory@{trinket\_inventory}}
+\index{trinket\_inventory@{trinket\_inventory}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{trinket\_inventory}{trinket\_inventory}}
+{\footnotesize\ttfamily vector$<$string$>$ Inventory\+Manager\+::trinket\+\_\+inventory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00112}{112}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_a0b7dd28d3ce68fb6bbd323985c24fa32}\label{class_inventory_manager_a0b7dd28d3ce68fb6bbd323985c24fa32}} 
+\index{InventoryManager@{InventoryManager}!trinkets@{trinkets}}
+\index{trinkets@{trinkets}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{trinkets}{trinkets}}
+{\footnotesize\ttfamily string Inventory\+Manager\+::trinkets\mbox{[}2\mbox{]}\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}GLOWING PENCHANT"{}}}
+\DoxyCodeLine{        \},}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}ENCHANTED PENCHANT"{}}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00088}{88}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_a9e7c74ab66faa814d213c577a1a7a12c}\label{class_inventory_manager_a9e7c74ab66faa814d213c577a1a7a12c}} 
+\index{InventoryManager@{InventoryManager}!utilities@{utilities}}
+\index{utilities@{utilities}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{utilities}{utilities}}
+{\footnotesize\ttfamily string Inventory\+Manager\+::utilities\mbox{[}3\mbox{]}\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}HEALTH"{}},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}POTION"{}}}
+\DoxyCodeLine{        \},}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}MAGIC"{}},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}POTION"{}}}
+\DoxyCodeLine{        \},}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}SHIELD"{}},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}POTION"{}}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00060}{60}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_af0a08f75d03dfa8e0a531378d147a980}\label{class_inventory_manager_af0a08f75d03dfa8e0a531378d147a980}} 
+\index{InventoryManager@{InventoryManager}!utility\_inventory@{utility\_inventory}}
+\index{utility\_inventory@{utility\_inventory}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{utility\_inventory}{utility\_inventory}}
+{\footnotesize\ttfamily vector$<$string$>$ Inventory\+Manager\+::utility\+\_\+inventory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00113}{113}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_a879cd59d717d4b320c0306bc19976205}\label{class_inventory_manager_a879cd59d717d4b320c0306bc19976205}} 
+\index{InventoryManager@{InventoryManager}!weapon\_chars@{weapon\_chars}}
+\index{weapon\_chars@{weapon\_chars}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{weapon\_chars}{weapon\_chars}}
+{\footnotesize\ttfamily char Inventory\+Manager\+::weapon\+\_\+chars\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{        \textcolor{charliteral}{'/'},}
+\DoxyCodeLine{        \textcolor{charliteral}{'O'},}
+\DoxyCodeLine{        \textcolor{charliteral}{'Q'}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00102}{102}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_a50de8d49ee2176a5c9ecb9973d3e9537}\label{class_inventory_manager_a50de8d49ee2176a5c9ecb9973d3e9537}} 
+\index{InventoryManager@{InventoryManager}!weapon\_inventory@{weapon\_inventory}}
+\index{weapon\_inventory@{weapon\_inventory}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{weapon\_inventory}{weapon\_inventory}}
+{\footnotesize\ttfamily vector$<$string$>$ Inventory\+Manager\+::weapon\+\_\+inventory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00110}{110}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_inventory_manager_abe635a768be352b26de8df72fc6514ab}\label{class_inventory_manager_abe635a768be352b26de8df72fc6514ab}} 
+\index{InventoryManager@{InventoryManager}!weaponsAndArmour@{weaponsAndArmour}}
+\index{weaponsAndArmour@{weaponsAndArmour}!InventoryManager@{InventoryManager}}
+\doxysubsubsection{\texorpdfstring{weaponsAndArmour}{weaponsAndArmour}}
+{\footnotesize\ttfamily string Inventory\+Manager\+::weapons\+And\+Armour\mbox{[}3\mbox{]}\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}DULL SWORD"{}},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}ONE"{}}}
+\DoxyCodeLine{        \},}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}DULL BRACERS"{}},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}ONE"{}}}
+\DoxyCodeLine{        \},}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}DULL HELMET"{}},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}ONE"{}}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_inventory_manager_8h_source_l00074}{74}} of file \mbox{\hyperlink{_inventory_manager_8h_source}{Inventory\+Manager.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_inventory_manager_8h}{Inventory\+Manager.\+h}}\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_inventory_manager_8cpp}{Inventory\+Manager.\+cpp}}\end{DoxyCompactItemize}

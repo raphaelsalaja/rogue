@@ -1,0 +1,7 @@
+<map id="CombatManager::HitPlayer" name="CombatManager::HitPlayer">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,184,108"/>
+<area shape="rect" id="node2" href="$class_non_playable_character.html#a39c610c17e10c8ee1b6bb03d65ed032f" title=" " alt="" coords="232,5,460,32"/>
+<area shape="rect" id="node3" href="$class_player.html#a8d962e02bc35d6181940a8aaf7a1a510" title=" " alt="" coords="283,56,409,83"/>
+<area shape="rect" id="node4" href="$class_player.html#a02ec140e8f48a44f442e97eb2a19a00e" title=" " alt="" coords="262,107,430,133"/>
+<area shape="rect" id="node5" href="$class_combat_manager.html#a72df0ea85034f84597c1760d9af631af" title=" " alt="" coords="251,157,441,184"/>
+</map>

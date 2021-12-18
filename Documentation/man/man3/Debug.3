@@ -1,0 +1,61 @@
+.TH "Debug" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Debug
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Debug\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBDebugControls\fP (\fBMapManager\fP &m, \fBPlayer\fP &p, \fBInventoryManager\fP &i)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB7\fP of file \fBDebug\&.h\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Debug::DebugControls (\fBMapManager\fP & m, \fBPlayer\fP & p, \fBInventoryManager\fP & i)"
+
+.PP
+Definition at line \fB11\fP of file \fBDebug\&.cpp\fP\&.
+.PP
+.nf
+12 {
+13     GoToScreenPosition(0, m\&.height + 1);
+14     if (GetKeyState('B') & 0x8000)
+15     {
+16         if (p\&.health != 0)
+17         {
+18             p\&.health--;
+19         }
+20         cout << "YOU TOOK 1 DAMAGE TO HEALTH                   ";
+21     }
+22     if (GetKeyState('N') & 0x8000)
+23     {
+24         if (p\&.shield != 0)
+25         {
+26             p\&.shield--;
+27         }
+28         cout << "YOU TOOK 1 DAMAGE TO SHIELD                   ";
+29     }
+30     if (GetKeyState('M') & 0x8000)
+31     {
+32         if (p\&.magic != 0)
+33         {
+34             p\&.magic--;
+35         }
+36         cout << "YOU USED 1 MAGIC                              ";
+37     }
+38 }
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

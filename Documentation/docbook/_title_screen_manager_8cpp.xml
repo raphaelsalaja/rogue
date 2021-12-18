@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__title_screen_manager_8cpp" xml:lang="en-US">
+<title>D:/University/ca-A00269349/Rogue/TitleScreenManager.cpp File Reference</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/TitleScreenManager.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;TitleScreenManager.h&quot;
+#include &lt;iostream&gt;
+#include &quot;ConsoleWindowManager.h&quot;
+#include &quot;Macro.h&quot;
+#include &lt;stdio.h&gt;
+#include &lt;fcntl.h&gt;
+#include &lt;windows.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;fstream&gt;
+#include &lt;string&gt;
+#include &lt;regex&gt;
+</programlisting>Include dependency graph for TitleScreenManager.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_title_screen_manager_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>

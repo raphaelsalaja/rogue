@@ -1,0 +1,548 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_non_playable_character" kind="class" language="C++" prot="public">
+    <compoundname>NonPlayableCharacter</compoundname>
+    <derivedcompoundref refid="class_enemy" prot="public" virt="non-virtual">Enemy</derivedcompoundref>
+    <derivedcompoundref refid="class_generic_friendly" prot="public" virt="non-virtual">GenericFriendly</derivedcompoundref>
+    <includes refid="_non_playable_character_8h" local="no">NonPlayableCharacter.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89d" prot="private" static="no" strong="no">
+        <type></type>
+        <name>NPC_TYPE</name>
+        <enumvalue id="class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b" prot="private">
+          <name>ENEMY</name>
+          <initializer>= &apos;E&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9" prot="private">
+          <name>GENERIC_FRIENDLY</name>
+          <initializer>= &apos;N&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="37" column="1" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" bodystart="38" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool NonPlayableCharacter::passive</definition>
+        <argsstring></argsstring>
+        <name>passive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="31" column="6" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1" compoundref="_non_playable_character_8cpp" startline="23" endline="35">CreateNonPlayableCharacter</referencedby>
+        <referencedby refid="class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746" compoundref="_non_playable_character_8cpp" startline="7" endline="17">NonPlayableCharacter</referencedby>
+        <referencedby refid="class_enemy_1a01f5ffaa127a837d3f315ff3910a9f28" compoundref="_enemy_8cpp" startline="39" endline="42">Enemy::SetPassive</referencedby>
+        <referencedby refid="class_generic_friendly_1a495283c40fe995eafc8209c32303b14d" compoundref="_generic_friendly_8cpp" startline="48" endline="51">GenericFriendly::SetPassive</referencedby>
+        <referencedby refid="class_non_playable_character_1ada48fd505bbf5797c39f0b20aa995bbc" compoundref="_non_playable_character_8cpp" startline="61" endline="70">SetSymbol</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string NonPlayableCharacter::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="32" column="8" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8" compoundref="_non_playable_character_8cpp" startline="83" endline="86">GetName</referencedby>
+        <referencedby refid="class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746" compoundref="_non_playable_character_8cpp" startline="7" endline="17">NonPlayableCharacter</referencedby>
+        <referencedby refid="class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c" compoundref="_enemy_8cpp" startline="6" endline="19">Enemy::PrintDetails</referencedby>
+        <referencedby refid="class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875" compoundref="_non_playable_character_8cpp" startline="37" endline="40">SetName</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_non_playable_character_1a7e5848d6face873445553e3731da84be" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string NonPlayableCharacter::name_array[20]</definition>
+        <argsstring>[20]</argsstring>
+        <name>name_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="33" column="8" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875" compoundref="_non_playable_character_8cpp" startline="37" endline="40">SetName</referencedby>
+        <referencedby refid="class_enemy_1a9c1d6efc8b2099d83797600d67a52017" compoundref="_enemy_8cpp" startline="21" endline="37">Enemy::SetNamesArray</referencedby>
+        <referencedby refid="class_generic_friendly_1a25b0d8bf58615b603725dfb44a7bd31f" compoundref="_generic_friendly_8cpp" startline="12" endline="28">GenericFriendly::SetNamesArray</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int NonPlayableCharacter::strength</definition>
+        <argsstring></argsstring>
+        <name>strength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="34" column="14" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f" compoundref="_non_playable_character_8cpp" startline="93" endline="96">GetDamage</referencedby>
+        <referencedby refid="class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746" compoundref="_non_playable_character_8cpp" startline="7" endline="17">NonPlayableCharacter</referencedby>
+        <referencedby refid="class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2" compoundref="_non_playable_character_8cpp" startline="42" endline="45">SetStrength</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_non_playable_character_1ab6703683eeb7deb2ac146dfcfced761f" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char NonPlayableCharacter::symbol</definition>
+        <argsstring></argsstring>
+        <name>symbol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="43" column="6" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746" compoundref="_non_playable_character_8cpp" startline="7" endline="17">NonPlayableCharacter</referencedby>
+        <referencedby refid="class_non_playable_character_1ada48fd505bbf5797c39f0b20aa995bbc" compoundref="_non_playable_character_8cpp" startline="61" endline="70">SetSymbol</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int NonPlayableCharacter::health</definition>
+        <argsstring></argsstring>
+        <name>health</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="45" column="14" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37" compoundref="_non_playable_character_8cpp" startline="88" endline="91">GetHealth</referencedby>
+        <referencedby refid="class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746" compoundref="_non_playable_character_8cpp" startline="7" endline="17">NonPlayableCharacter</referencedby>
+        <referencedby refid="class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c" compoundref="_enemy_8cpp" startline="6" endline="19">Enemy::PrintDetails</referencedby>
+        <referencedby refid="class_non_playable_character_1aa18f226b35b28bd1ad318642a758abe2" compoundref="_non_playable_character_8cpp" startline="78" endline="81">SetDesiredHealth</referencedby>
+        <referencedby refid="class_non_playable_character_1a017d601103d2bc66a6338073a051cab7" compoundref="_non_playable_character_8cpp" startline="47" endline="50">SetHealth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_non_playable_character_1af6835f00acbdc12a7a9f920ef6801e0d" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int NonPlayableCharacter::attack_speed</definition>
+        <argsstring></argsstring>
+        <name>attack_speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="46" column="14" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746" compoundref="_non_playable_character_8cpp" startline="7" endline="17">NonPlayableCharacter</referencedby>
+        <referencedby refid="class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e" compoundref="_non_playable_character_8cpp" startline="56" endline="59">SetSpeed</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int NonPlayableCharacter::npc_x</definition>
+        <argsstring></argsstring>
+        <name>npc_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="48" column="14" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="class_non_playable_character_1aad1bbaeea7152ff52113b318be9afc0d" compoundref="_non_playable_character_8cpp" startline="98" endline="101">GetX</referencedby>
+        <referencedby refid="class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746" compoundref="_non_playable_character_8cpp" startline="7" endline="17">NonPlayableCharacter</referencedby>
+        <referencedby refid="class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e" compoundref="_non_playable_character_8cpp" startline="72" endline="76">SetPosition</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int NonPlayableCharacter::npc_y</definition>
+        <argsstring></argsstring>
+        <name>npc_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="49" column="14" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_non_playable_character_1a70b9980da4a02e7848c7561e498e8db9" compoundref="_non_playable_character_8cpp" startline="103" endline="106">GetY</referencedby>
+        <referencedby refid="class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746" compoundref="_non_playable_character_8cpp" startline="7" endline="17">NonPlayableCharacter</referencedby>
+        <referencedby refid="class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e" compoundref="_non_playable_character_8cpp" startline="72" endline="76">SetPosition</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NonPlayableCharacter::NonPlayableCharacter</definition>
+        <argsstring>()</argsstring>
+        <name>NonPlayableCharacter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="8" column="1" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp" bodystart="7" bodyend="17"/>
+        <references refid="class_non_playable_character_1af6835f00acbdc12a7a9f920ef6801e0d" compoundref="_non_playable_character_8h" startline="46">attack_speed</references>
+        <references refid="class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa" compoundref="_non_playable_character_8h" startline="45">health</references>
+        <references refid="class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824" compoundref="_non_playable_character_8h" startline="32">name</references>
+        <references refid="class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627" compoundref="_non_playable_character_8h" startline="48">npc_x</references>
+        <references refid="class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7" compoundref="_non_playable_character_8h" startline="49">npc_y</references>
+        <references refid="class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000" compoundref="_non_playable_character_8h" startline="31">passive</references>
+        <references refid="class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c" compoundref="_non_playable_character_8h" startline="34">strength</references>
+        <references refid="class_non_playable_character_1ab6703683eeb7deb2ac146dfcfced761f" compoundref="_non_playable_character_8h" startline="43">symbol</references>
+      </memberdef>
+      <memberdef kind="function" id="class_non_playable_character_1a1d4530eecfb04414d3980c22aa020b30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NonPlayableCharacter::~NonPlayableCharacter</definition>
+        <argsstring>()=default</argsstring>
+        <name>~NonPlayableCharacter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="9" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_non_playable_character_1af4fe8de9174af90d1a0088373d0e35c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NonPlayableCharacter::SetNamesArray</definition>
+        <argsstring>()</argsstring>
+        <name>SetNamesArray</name>
+        <reimplementedby refid="class_enemy_1a9c1d6efc8b2099d83797600d67a52017">SetNamesArray</reimplementedby>
+        <reimplementedby refid="class_generic_friendly_1a25b0d8bf58615b603725dfb44a7bd31f">SetNamesArray</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="11" column="14" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp" bodystart="19" bodyend="21"/>
+        <referencedby refid="class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1" compoundref="_non_playable_character_8cpp" startline="23" endline="35">CreateNonPlayableCharacter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_non_playable_character_1a355f7bc2a43563faec957553fa4fd1e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NonPlayableCharacter::SetPassive</definition>
+        <argsstring>()</argsstring>
+        <name>SetPassive</name>
+        <reimplementedby refid="class_enemy_1a01f5ffaa127a837d3f315ff3910a9f28">SetPassive</reimplementedby>
+        <reimplementedby refid="class_generic_friendly_1a495283c40fe995eafc8209c32303b14d">SetPassive</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="12" column="14" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp" bodystart="52" bodyend="54"/>
+        <referencedby refid="class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1" compoundref="_non_playable_character_8cpp" startline="23" endline="35">CreateNonPlayableCharacter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NonPlayableCharacter::SetName</definition>
+        <argsstring>()</argsstring>
+        <name>SetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="14" column="6" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp" bodystart="37" bodyend="40"/>
+        <references refid="namespace_macro_1a7192f07d19f55d7f8b863932a5078eab" compoundref="_macro_8cpp" startline="54" endline="58">Macro::GenerateRandomNumber</references>
+        <references refid="class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824" compoundref="_non_playable_character_8h" startline="32">name</references>
+        <references refid="class_non_playable_character_1a7e5848d6face873445553e3731da84be" compoundref="_non_playable_character_8h" startline="33">name_array</references>
+        <referencedby refid="class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1" compoundref="_non_playable_character_8cpp" startline="23" endline="35">CreateNonPlayableCharacter</referencedby>
+        <referencedby refid="class_enemy_1a98f0d2110309536798101b88d2d1d8c9" compoundref="_enemy_8cpp" startline="44" endline="53">Enemy::Enemy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NonPlayableCharacter::SetStrength</definition>
+        <argsstring>()</argsstring>
+        <name>SetStrength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="15" column="6" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp" bodystart="42" bodyend="45"/>
+        <references refid="namespace_macro_1a3500becfc34f5b1df2d6d976fb5f5f86" compoundref="_macro_8cpp" startline="60" endline="64">Macro::GenerateRandomNumberWithoutZero</references>
+        <references refid="class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c" compoundref="_non_playable_character_8h" startline="34">strength</references>
+        <referencedby refid="class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1" compoundref="_non_playable_character_8cpp" startline="23" endline="35">CreateNonPlayableCharacter</referencedby>
+        <referencedby refid="class_enemy_1a98f0d2110309536798101b88d2d1d8c9" compoundref="_enemy_8cpp" startline="44" endline="53">Enemy::Enemy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_non_playable_character_1a017d601103d2bc66a6338073a051cab7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NonPlayableCharacter::SetHealth</definition>
+        <argsstring>()</argsstring>
+        <name>SetHealth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="16" column="6" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp" bodystart="47" bodyend="50"/>
+        <references refid="namespace_macro_1a3500becfc34f5b1df2d6d976fb5f5f86" compoundref="_macro_8cpp" startline="60" endline="64">Macro::GenerateRandomNumberWithoutZero</references>
+        <references refid="class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa" compoundref="_non_playable_character_8h" startline="45">health</references>
+        <referencedby refid="class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1" compoundref="_non_playable_character_8cpp" startline="23" endline="35">CreateNonPlayableCharacter</referencedby>
+        <referencedby refid="class_enemy_1a98f0d2110309536798101b88d2d1d8c9" compoundref="_enemy_8cpp" startline="44" endline="53">Enemy::Enemy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NonPlayableCharacter::SetSpeed</definition>
+        <argsstring>()</argsstring>
+        <name>SetSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="17" column="6" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp" bodystart="56" bodyend="59"/>
+        <references refid="class_non_playable_character_1af6835f00acbdc12a7a9f920ef6801e0d" compoundref="_non_playable_character_8h" startline="46">attack_speed</references>
+        <references refid="namespace_macro_1a3500becfc34f5b1df2d6d976fb5f5f86" compoundref="_macro_8cpp" startline="60" endline="64">Macro::GenerateRandomNumberWithoutZero</references>
+        <referencedby refid="class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1" compoundref="_non_playable_character_8cpp" startline="23" endline="35">CreateNonPlayableCharacter</referencedby>
+        <referencedby refid="class_enemy_1a98f0d2110309536798101b88d2d1d8c9" compoundref="_enemy_8cpp" startline="44" endline="53">Enemy::Enemy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_non_playable_character_1ada48fd505bbf5797c39f0b20aa995bbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NonPlayableCharacter::SetSymbol</definition>
+        <argsstring>()</argsstring>
+        <name>SetSymbol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="18" column="6" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp" bodystart="61" bodyend="70"/>
+        <references refid="class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b" compoundref="_non_playable_character_8h" startline="39">ENEMY</references>
+        <references refid="class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9" compoundref="_non_playable_character_8h" startline="40">GENERIC_FRIENDLY</references>
+        <references refid="class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000" compoundref="_non_playable_character_8h" startline="31">passive</references>
+        <references refid="class_non_playable_character_1ab6703683eeb7deb2ac146dfcfced761f" compoundref="_non_playable_character_8h" startline="43">symbol</references>
+        <referencedby refid="class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1" compoundref="_non_playable_character_8cpp" startline="23" endline="35">CreateNonPlayableCharacter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NonPlayableCharacter::SetPosition</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>SetPosition</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="19" column="6" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp" bodystart="72" bodyend="76"/>
+        <references refid="class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627" compoundref="_non_playable_character_8h" startline="48">npc_x</references>
+        <references refid="class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7" compoundref="_non_playable_character_8h" startline="49">npc_y</references>
+        <referencedby refid="class_enemy_1a98f0d2110309536798101b88d2d1d8c9" compoundref="_enemy_8cpp" startline="44" endline="53">Enemy::Enemy</referencedby>
+        <referencedby refid="class_generic_friendly_1af024c04814e88cb748cd4c21aad5589d" compoundref="_generic_friendly_8cpp" startline="53" endline="62">GenericFriendly::GenericFriendly</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_non_playable_character_1aa18f226b35b28bd1ad318642a758abe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NonPlayableCharacter::SetDesiredHealth</definition>
+        <argsstring>(int value)</argsstring>
+        <name>SetDesiredHealth</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="21" column="6" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp" bodystart="78" bodyend="81"/>
+        <references refid="class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa" compoundref="_non_playable_character_8h" startline="45">health</references>
+        <referencedby refid="class_combat_manager_1a2f5d5d9a45933a6e234bc3154fd6f894" compoundref="_combat_manager_8cpp" startline="56" endline="60">CombatManager::HitEnemy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string NonPlayableCharacter::GetName</definition>
+        <argsstring>()</argsstring>
+        <name>GetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="23" column="8" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp" bodystart="83" bodyend="86"/>
+        <references refid="class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824" compoundref="_non_playable_character_8h" startline="32">name</references>
+        <referencedby refid="class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c" compoundref="_enemy_8cpp" startline="6" endline="19">Enemy::PrintDetails</referencedby>
+        <referencedby refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" compoundref="_combat_manager_8cpp" startline="68" endline="104">CombatManager::PrintStatements</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int NonPlayableCharacter::GetHealth</definition>
+        <argsstring>()</argsstring>
+        <name>GetHealth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="24" column="5" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp" bodystart="88" bodyend="91"/>
+        <references refid="class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa" compoundref="_non_playable_character_8h" startline="45">health</references>
+        <referencedby refid="class_combat_manager_1a2f5d5d9a45933a6e234bc3154fd6f894" compoundref="_combat_manager_8cpp" startline="56" endline="60">CombatManager::HitEnemy</referencedby>
+        <referencedby refid="class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c" compoundref="_enemy_8cpp" startline="6" endline="19">Enemy::PrintDetails</referencedby>
+        <referencedby refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" compoundref="_combat_manager_8cpp" startline="68" endline="104">CombatManager::PrintStatements</referencedby>
+        <referencedby refid="class_combat_manager_1aec72d4fe1af9857010fb793735c145db" compoundref="_combat_manager_8cpp" startline="106" endline="116">CombatManager::UpdateResults</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int NonPlayableCharacter::GetDamage</definition>
+        <argsstring>()</argsstring>
+        <name>GetDamage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="25" column="5" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp" bodystart="93" bodyend="96"/>
+        <references refid="class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c" compoundref="_non_playable_character_8h" startline="34">strength</references>
+        <referencedby refid="class_combat_manager_1aa3041a8bdc3eeddce47ef1eb0cd93899" compoundref="_combat_manager_8cpp" startline="62" endline="66">CombatManager::HitPlayer</referencedby>
+        <referencedby refid="class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c" compoundref="_enemy_8cpp" startline="6" endline="19">Enemy::PrintDetails</referencedby>
+        <referencedby refid="class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73" compoundref="_combat_manager_8cpp" startline="68" endline="104">CombatManager::PrintStatements</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_non_playable_character_1aad1bbaeea7152ff52113b318be9afc0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int NonPlayableCharacter::GetX</definition>
+        <argsstring>()</argsstring>
+        <name>GetX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="26" column="5" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp" bodystart="98" bodyend="101"/>
+        <references refid="class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627" compoundref="_non_playable_character_8h" startline="48">npc_x</references>
+      </memberdef>
+      <memberdef kind="function" id="class_non_playable_character_1a70b9980da4a02e7848c7561e498e8db9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int NonPlayableCharacter::GetY</definition>
+        <argsstring>()</argsstring>
+        <name>GetY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="27" column="5" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp" bodystart="103" bodyend="106"/>
+        <references refid="class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7" compoundref="_non_playable_character_8h" startline="49">npc_y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NonPlayableCharacter::CreateNonPlayableCharacter</definition>
+        <argsstring>()</argsstring>
+        <name>CreateNonPlayableCharacter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="29" column="6" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.cpp" bodystart="23" bodyend="35"/>
+        <references refid="class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000" compoundref="_non_playable_character_8h" startline="31">passive</references>
+        <references refid="class_non_playable_character_1a017d601103d2bc66a6338073a051cab7" compoundref="_non_playable_character_8cpp" startline="47" endline="50">SetHealth</references>
+        <references refid="class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875" compoundref="_non_playable_character_8cpp" startline="37" endline="40">SetName</references>
+        <references refid="class_non_playable_character_1af4fe8de9174af90d1a0088373d0e35c0" compoundref="_non_playable_character_8cpp" startline="19" endline="21">SetNamesArray</references>
+        <references refid="class_non_playable_character_1a355f7bc2a43563faec957553fa4fd1e7" compoundref="_non_playable_character_8cpp" startline="52" endline="54">SetPassive</references>
+        <references refid="class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e" compoundref="_non_playable_character_8cpp" startline="56" endline="59">SetSpeed</references>
+        <references refid="class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2" compoundref="_non_playable_character_8cpp" startline="42" endline="45">SetStrength</references>
+        <references refid="class_non_playable_character_1ada48fd505bbf5797c39f0b20aa995bbc" compoundref="_non_playable_character_8cpp" startline="61" endline="70">SetSymbol</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>GenericFriendly</label>
+        <link refid="class_generic_friendly"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NonPlayableCharacter</label>
+        <link refid="class_non_playable_character"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>NonPlayableCharacter</label>
+        <link refid="class_non_playable_character"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" line="5" column="1" bodyfile="D:/University/ca-A00269349/Rogue/NonPlayableCharacter.h" bodystart="6" bodyend="50"/>
+    <listofallmembers>
+      <member refid="class_non_playable_character_1af6835f00acbdc12a7a9f920ef6801e0d" prot="private" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>attack_speed</name></member>
+      <member refid="class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>CreateNonPlayableCharacter</name></member>
+      <member refid="class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b" prot="private" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>ENEMY</name></member>
+      <member refid="class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9" prot="private" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>GENERIC_FRIENDLY</name></member>
+      <member refid="class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>GetDamage</name></member>
+      <member refid="class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>GetHealth</name></member>
+      <member refid="class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>GetName</name></member>
+      <member refid="class_non_playable_character_1aad1bbaeea7152ff52113b318be9afc0d" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>GetX</name></member>
+      <member refid="class_non_playable_character_1a70b9980da4a02e7848c7561e498e8db9" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>GetY</name></member>
+      <member refid="class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa" prot="private" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>health</name></member>
+      <member refid="class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>name</name></member>
+      <member refid="class_non_playable_character_1a7e5848d6face873445553e3731da84be" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>name_array</name></member>
+      <member refid="class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>NonPlayableCharacter</name></member>
+      <member refid="class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89d" prot="private" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>NPC_TYPE</name></member>
+      <member refid="class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627" prot="private" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>npc_x</name></member>
+      <member refid="class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7" prot="private" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>npc_y</name></member>
+      <member refid="class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>passive</name></member>
+      <member refid="class_non_playable_character_1aa18f226b35b28bd1ad318642a758abe2" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>SetDesiredHealth</name></member>
+      <member refid="class_non_playable_character_1a017d601103d2bc66a6338073a051cab7" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>SetHealth</name></member>
+      <member refid="class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>SetName</name></member>
+      <member refid="class_non_playable_character_1af4fe8de9174af90d1a0088373d0e35c0" prot="public" virt="virtual"><scope>NonPlayableCharacter</scope><name>SetNamesArray</name></member>
+      <member refid="class_non_playable_character_1a355f7bc2a43563faec957553fa4fd1e7" prot="public" virt="virtual"><scope>NonPlayableCharacter</scope><name>SetPassive</name></member>
+      <member refid="class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>SetPosition</name></member>
+      <member refid="class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>SetSpeed</name></member>
+      <member refid="class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>SetStrength</name></member>
+      <member refid="class_non_playable_character_1ada48fd505bbf5797c39f0b20aa995bbc" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>SetSymbol</name></member>
+      <member refid="class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>strength</name></member>
+      <member refid="class_non_playable_character_1ab6703683eeb7deb2ac146dfcfced761f" prot="private" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>symbol</name></member>
+      <member refid="class_non_playable_character_1a1d4530eecfb04414d3980c22aa020b30" prot="public" virt="non-virtual"><scope>NonPlayableCharacter</scope><name>~NonPlayableCharacter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

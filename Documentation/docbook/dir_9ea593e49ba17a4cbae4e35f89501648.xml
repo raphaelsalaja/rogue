@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_9ea593e49ba17a4cbae4e35f89501648" xml:lang="en-US">
+<title>D:/University/ca-A00269349/Rogue Directory Reference</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__actions_manager_8cpp">ActionsManager.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__armour_8h">Armour.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__console_rendering_8cpp">ConsoleRendering.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__console_rendering_8h">ConsoleRendering.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__console_window_manager_8cpp">ConsoleWindowManager.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__console_window_manager_8h">ConsoleWindowManager.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__debug_8cpp">Debug.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__debug_8h">Debug.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__g_l_o_s_s_a_r_y_8cpp">GLOSSARY.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__inventory_manager_8cpp">InventoryManager.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__inventory_manager_8h">InventoryManager.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__macro_8cpp">Macro.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__macro_8h">Macro.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__map_manager_8cpp">MapManager.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__map_manager_8h">MapManager.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__player_8cpp">Player.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__player_8h">Player.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__potion_8cpp">Potion.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__potion_8h">Potion.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__rogue_8cpp">Rogue.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__stats_manager_8cpp">StatsManager.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__stats_manager_8h">StatsManager.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__title_screen_manager_8cpp">TitleScreenManager.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__title_screen_manager_8h">TitleScreenManager.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__user_interface_manger_8h">UserInterfaceManger.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__weapon_8cpp">Weapon.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__weapon_8h">Weapon.h</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

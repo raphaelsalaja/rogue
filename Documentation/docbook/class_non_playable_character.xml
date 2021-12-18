@@ -1,0 +1,551 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_non_playable_character" xml:lang="en-US">
+<title>NonPlayableCharacter Class Reference</title>
+<indexterm><primary>NonPlayableCharacter</primary></indexterm>
+<para>
+<computeroutput>#include &lt;NonPlayableCharacter.h&gt;</computeroutput>
+</para>
+Inheritance diagram for NonPlayableCharacter:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for NonPlayableCharacter:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746">NonPlayableCharacter</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_non_playable_character_1a1d4530eecfb04414d3980c22aa020b30">~NonPlayableCharacter</link> ()=default</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_non_playable_character_1af4fe8de9174af90d1a0088373d0e35c0">SetNamesArray</link> ()</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_non_playable_character_1a355f7bc2a43563faec957553fa4fd1e7">SetPassive</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875">SetName</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2">SetStrength</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_non_playable_character_1a017d601103d2bc66a6338073a051cab7">SetHealth</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e">SetSpeed</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_non_playable_character_1ada48fd505bbf5797c39f0b20aa995bbc">SetSymbol</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e">SetPosition</link> (int x, int y)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_non_playable_character_1aa18f226b35b28bd1ad318642a758abe2">SetDesiredHealth</link> (int value)</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8">GetName</link> ()</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37">GetHealth</link> ()</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f">GetDamage</link> ()</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_non_playable_character_1aad1bbaeea7152ff52113b318be9afc0d">GetX</link> ()</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_non_playable_character_1a70b9980da4a02e7848c7561e498e8db9">GetY</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1">CreateNonPlayableCharacter</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000">passive</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824">name</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_class_non_playable_character_1a7e5848d6face873445553e3731da84be">name_array</link> [20]</para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c">strength</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Types    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89d">NPC_TYPE</link> { <link linkend="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b">ENEMY</link> = &apos;E&apos;
+, <link linkend="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9">GENERIC_FRIENDLY</link> = &apos;N&apos;
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>char <link linkend="_class_non_playable_character_1ab6703683eeb7deb2ac146dfcfced761f">symbol</link></para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa">health</link></para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_class_non_playable_character_1af6835f00acbdc12a7a9f920ef6801e0d">attack_speed</link></para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627">npc_x</link></para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7">npc_y</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__non_playable_character_8h_source_1l00005">5</link> of file <link linkend="__non_playable_character_8h_source">NonPlayableCharacter.h</link>.</para>
+</section>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89d"/><section>
+    <title>NPC_TYPE</title>
+<indexterm><primary>NPC_TYPE</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>NPC_TYPE</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89d">NonPlayableCharacter::NPC_TYPE</link><computeroutput>[private]</computeroutput></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>ENEMY</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>ENEMY</secondary></indexterm>
+<anchor xml:id="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b"/>ENEMY</entry><entry></entry></row><row><entry><indexterm><primary>GENERIC_FRIENDLY</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>GENERIC_FRIENDLY</secondary></indexterm>
+<anchor xml:id="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9"/>GENERIC_FRIENDLY</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+Definition at line <link linkend="__non_playable_character_8h_source_1l00037">37</link> of file <link linkend="__non_playable_character_8h_source">NonPlayableCharacter.h</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00038"/>00038 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_non_playable_character_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b">ENEMY</link>&#32;=&#32;<emphasis role="charliteral">&apos;E&apos;</emphasis>,
+<anchor xml:id="_class_non_playable_character_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9">GENERIC_FRIENDLY</link>&#32;=&#32;<emphasis role="charliteral">&apos;N&apos;</emphasis>
+<anchor xml:id="_class_non_playable_character_1l00041"/>00041 &#32;&#32;&#32;&#32;};
+</programlisting></section>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_non_playable_character_1a57985ac558ba9fc5abff448a4bbb8746"/><section>
+    <title>NonPlayableCharacter()</title>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<para><computeroutput>NonPlayableCharacter::NonPlayableCharacter ( )</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8cpp_source_1l00007">7</link> of file <link linkend="__non_playable_character_8cpp_source">NonPlayableCharacter.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00008"/>00008 {
+<anchor xml:id="_class_non_playable_character_1l00009"/>00009 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824">name</link>&#32;=&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+<anchor xml:id="_class_non_playable_character_1l00010"/>00010 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c">strength</link>&#32;=&#32;0;
+<anchor xml:id="_class_non_playable_character_1l00011"/>00011 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa">health</link>&#32;=&#32;0;
+<anchor xml:id="_class_non_playable_character_1l00012"/>00012 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1af6835f00acbdc12a7a9f920ef6801e0d">attack_speed</link>&#32;=&#32;0;
+<anchor xml:id="_class_non_playable_character_1l00013"/>00013 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1ab6703683eeb7deb2ac146dfcfced761f">symbol</link>&#32;=&#32;<emphasis role="charliteral">&apos;&#32;&apos;</emphasis>;
+<anchor xml:id="_class_non_playable_character_1l00014"/>00014 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000">passive</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_class_non_playable_character_1l00015"/>00015 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627">npc_x</link>&#32;=&#32;0;
+<anchor xml:id="_class_non_playable_character_1l00016"/>00016 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7">npc_y</link>&#32;=&#32;0;
+<anchor xml:id="_class_non_playable_character_1l00017"/>00017 }
+</programlisting></section>
+<anchor xml:id="_class_non_playable_character_1a1d4530eecfb04414d3980c22aa020b30"/><section>
+    <title>~NonPlayableCharacter()</title>
+<indexterm><primary>~NonPlayableCharacter</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>~NonPlayableCharacter</secondary></indexterm>
+<para><computeroutput>NonPlayableCharacter::~NonPlayableCharacter ( )<computeroutput>[default]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_non_playable_character_1a4b3bd63666508f9ea91c83a4a1bec3d1"/><section>
+    <title>CreateNonPlayableCharacter()</title>
+<indexterm><primary>CreateNonPlayableCharacter</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>CreateNonPlayableCharacter</secondary></indexterm>
+<para><computeroutput>void NonPlayableCharacter::CreateNonPlayableCharacter ( )</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8cpp_source_1l00023">23</link> of file <link linkend="__non_playable_character_8cpp_source">NonPlayableCharacter.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00024"/>00024 {
+<anchor xml:id="_class_non_playable_character_1l00025"/>00025 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1af4fe8de9174af90d1a0088373d0e35c0">SetNamesArray</link>();
+<anchor xml:id="_class_non_playable_character_1l00026"/>00026 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875">SetName</link>();
+<anchor xml:id="_class_non_playable_character_1l00027"/>00027 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a355f7bc2a43563faec957553fa4fd1e7">SetPassive</link>();
+<anchor xml:id="_class_non_playable_character_1l00028"/>00028 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1ada48fd505bbf5797c39f0b20aa995bbc">SetSymbol</link>();
+<anchor xml:id="_class_non_playable_character_1l00029"/>00029 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!<link linkend="_class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000">passive</link>)
+<anchor xml:id="_class_non_playable_character_1l00030"/>00030 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_non_playable_character_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a017d601103d2bc66a6338073a051cab7">SetHealth</link>();
+<anchor xml:id="_class_non_playable_character_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e">SetSpeed</link>();
+<anchor xml:id="_class_non_playable_character_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2">SetStrength</link>();
+<anchor xml:id="_class_non_playable_character_1l00034"/>00034 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_non_playable_character_1l00035"/>00035 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_a4b3bd63666508f9ea91c83a4a1bec3d1_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f"/><section>
+    <title>GetDamage()</title>
+<indexterm><primary>GetDamage</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>GetDamage</secondary></indexterm>
+<para><computeroutput>int NonPlayableCharacter::GetDamage ( )</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8cpp_source_1l00093">93</link> of file <link linkend="__non_playable_character_8cpp_source">NonPlayableCharacter.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00094"/>00094 {
+<anchor xml:id="_class_non_playable_character_1l00095"/>00095 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c">strength</link>;
+<anchor xml:id="_class_non_playable_character_1l00096"/>00096 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_a39c610c17e10c8ee1b6bb03d65ed032f_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37"/><section>
+    <title>GetHealth()</title>
+<indexterm><primary>GetHealth</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>GetHealth</secondary></indexterm>
+<para><computeroutput>int NonPlayableCharacter::GetHealth ( )</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8cpp_source_1l00088">88</link> of file <link linkend="__non_playable_character_8cpp_source">NonPlayableCharacter.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00089"/>00089 {
+<anchor xml:id="_class_non_playable_character_1l00090"/>00090 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa">health</link>;
+<anchor xml:id="_class_non_playable_character_1l00091"/>00091 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_ab0ab52f45551b75625bdf02e65d3ef37_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8"/><section>
+    <title>GetName()</title>
+<indexterm><primary>GetName</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>GetName</secondary></indexterm>
+<para><computeroutput>string NonPlayableCharacter::GetName ( )</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8cpp_source_1l00083">83</link> of file <link linkend="__non_playable_character_8cpp_source">NonPlayableCharacter.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00084"/>00084 {
+<anchor xml:id="_class_non_playable_character_1l00085"/>00085 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824">name</link>;
+<anchor xml:id="_class_non_playable_character_1l00086"/>00086 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_aedf794670e71a33011caefd1d321a8f8_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1aad1bbaeea7152ff52113b318be9afc0d"/><section>
+    <title>GetX()</title>
+<indexterm><primary>GetX</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>GetX</secondary></indexterm>
+<para><computeroutput>int NonPlayableCharacter::GetX ( )</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8cpp_source_1l00098">98</link> of file <link linkend="__non_playable_character_8cpp_source">NonPlayableCharacter.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00099"/>00099 {
+<anchor xml:id="_class_non_playable_character_1l00100"/>00100 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627">npc_x</link>;
+<anchor xml:id="_class_non_playable_character_1l00101"/>00101 }
+</programlisting></section>
+<anchor xml:id="_class_non_playable_character_1a70b9980da4a02e7848c7561e498e8db9"/><section>
+    <title>GetY()</title>
+<indexterm><primary>GetY</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>GetY</secondary></indexterm>
+<para><computeroutput>int NonPlayableCharacter::GetY ( )</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8cpp_source_1l00103">103</link> of file <link linkend="__non_playable_character_8cpp_source">NonPlayableCharacter.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00104"/>00104 {
+<anchor xml:id="_class_non_playable_character_1l00105"/>00105 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7">npc_y</link>;
+<anchor xml:id="_class_non_playable_character_1l00106"/>00106 }
+</programlisting></section>
+<anchor xml:id="_class_non_playable_character_1aa18f226b35b28bd1ad318642a758abe2"/><section>
+    <title>SetDesiredHealth()</title>
+<indexterm><primary>SetDesiredHealth</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>SetDesiredHealth</secondary></indexterm>
+<para><computeroutput>void NonPlayableCharacter::SetDesiredHealth (int value)</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8cpp_source_1l00078">78</link> of file <link linkend="__non_playable_character_8cpp_source">NonPlayableCharacter.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00079"/>00079 {
+<anchor xml:id="_class_non_playable_character_1l00080"/>00080 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa">health</link>&#32;=&#32;value;
+<anchor xml:id="_class_non_playable_character_1l00081"/>00081 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_aa18f226b35b28bd1ad318642a758abe2_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1a017d601103d2bc66a6338073a051cab7"/><section>
+    <title>SetHealth()</title>
+<indexterm><primary>SetHealth</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>SetHealth</secondary></indexterm>
+<para><computeroutput>void NonPlayableCharacter::SetHealth ( )</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8cpp_source_1l00047">47</link> of file <link linkend="__non_playable_character_8cpp_source">NonPlayableCharacter.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00048"/>00048 {
+<anchor xml:id="_class_non_playable_character_1l00049"/>00049 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa">health</link>&#32;=&#32;<link linkend="_namespace_macro_1a3500becfc34f5b1df2d6d976fb5f5f86">Macro::GenerateRandomNumberWithoutZero</link>(10);
+<anchor xml:id="_class_non_playable_character_1l00050"/>00050 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_a017d601103d2bc66a6338073a051cab7_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_a017d601103d2bc66a6338073a051cab7_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1a243b776f7671fc3458bf9ef6f9925875"/><section>
+    <title>SetName()</title>
+<indexterm><primary>SetName</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>SetName</secondary></indexterm>
+<para><computeroutput>void NonPlayableCharacter::SetName ( )</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8cpp_source_1l00037">37</link> of file <link linkend="__non_playable_character_8cpp_source">NonPlayableCharacter.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00038"/>00038 {
+<anchor xml:id="_class_non_playable_character_1l00039"/>00039 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824">name</link>&#32;=&#32;<link linkend="_class_non_playable_character_1a7e5848d6face873445553e3731da84be">name_array</link>[<link linkend="_namespace_macro_1a7192f07d19f55d7f8b863932a5078eab">Macro::GenerateRandomNumber</link>(<link linkend="_class_non_playable_character_1a7e5848d6face873445553e3731da84be">name_array</link>-&gt;length()&#32;-&#32;2)];
+<anchor xml:id="_class_non_playable_character_1l00040"/>00040 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_a243b776f7671fc3458bf9ef6f9925875_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_a243b776f7671fc3458bf9ef6f9925875_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1af4fe8de9174af90d1a0088373d0e35c0"/><section>
+    <title>SetNamesArray()</title>
+<indexterm><primary>SetNamesArray</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>SetNamesArray</secondary></indexterm>
+<para><computeroutput>void NonPlayableCharacter::SetNamesArray ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented in <link linkend="_class_enemy_1a9c1d6efc8b2099d83797600d67a52017">Enemy</link>, and <link linkend="_class_generic_friendly_1a25b0d8bf58615b603725dfb44a7bd31f">GenericFriendly</link>.</para>
+<para>
+Definition at line <link linkend="__non_playable_character_8cpp_source_1l00019">19</link> of file <link linkend="__non_playable_character_8cpp_source">NonPlayableCharacter.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00020"/>00020 {
+<anchor xml:id="_class_non_playable_character_1l00021"/>00021 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_af4fe8de9174af90d1a0088373d0e35c0_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1a355f7bc2a43563faec957553fa4fd1e7"/><section>
+    <title>SetPassive()</title>
+<indexterm><primary>SetPassive</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>SetPassive</secondary></indexterm>
+<para><computeroutput>void NonPlayableCharacter::SetPassive ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented in <link linkend="_class_enemy_1a01f5ffaa127a837d3f315ff3910a9f28">Enemy</link>, and <link linkend="_class_generic_friendly_1a495283c40fe995eafc8209c32303b14d">GenericFriendly</link>.</para>
+<para>
+Definition at line <link linkend="__non_playable_character_8cpp_source_1l00052">52</link> of file <link linkend="__non_playable_character_8cpp_source">NonPlayableCharacter.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00053"/>00053 {
+<anchor xml:id="_class_non_playable_character_1l00054"/>00054 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_a355f7bc2a43563faec957553fa4fd1e7_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1a6ebdc6b058ea5dafe65132dd9ee46e6e"/><section>
+    <title>SetPosition()</title>
+<indexterm><primary>SetPosition</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>SetPosition</secondary></indexterm>
+<para><computeroutput>void NonPlayableCharacter::SetPosition (int x, int y)</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8cpp_source_1l00072">72</link> of file <link linkend="__non_playable_character_8cpp_source">NonPlayableCharacter.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00073"/>00073 {
+<anchor xml:id="_class_non_playable_character_1l00074"/>00074 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627">npc_x</link>&#32;=&#32;x;
+<anchor xml:id="_class_non_playable_character_1l00075"/>00075 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7">npc_y</link>&#32;=&#32;y;
+<anchor xml:id="_class_non_playable_character_1l00076"/>00076 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_a6ebdc6b058ea5dafe65132dd9ee46e6e_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1a98e1d2355f2a3617b6a7a25ee737ee3e"/><section>
+    <title>SetSpeed()</title>
+<indexterm><primary>SetSpeed</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>SetSpeed</secondary></indexterm>
+<para><computeroutput>void NonPlayableCharacter::SetSpeed ( )</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8cpp_source_1l00056">56</link> of file <link linkend="__non_playable_character_8cpp_source">NonPlayableCharacter.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00057"/>00057 {
+<anchor xml:id="_class_non_playable_character_1l00058"/>00058 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1af6835f00acbdc12a7a9f920ef6801e0d">attack_speed</link>&#32;=&#32;<link linkend="_namespace_macro_1a3500becfc34f5b1df2d6d976fb5f5f86">Macro::GenerateRandomNumberWithoutZero</link>(5);
+<anchor xml:id="_class_non_playable_character_1l00059"/>00059 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_a98e1d2355f2a3617b6a7a25ee737ee3e_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_a98e1d2355f2a3617b6a7a25ee737ee3e_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1a9d5a16ef76a0e3339fd4ffc5d85bd8e2"/><section>
+    <title>SetStrength()</title>
+<indexterm><primary>SetStrength</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>SetStrength</secondary></indexterm>
+<para><computeroutput>void NonPlayableCharacter::SetStrength ( )</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8cpp_source_1l00042">42</link> of file <link linkend="__non_playable_character_8cpp_source">NonPlayableCharacter.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00043"/>00043 {
+<anchor xml:id="_class_non_playable_character_1l00044"/>00044 &#32;&#32;&#32;&#32;<link linkend="_class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c">strength</link>&#32;=&#32;<link linkend="_namespace_macro_1a3500becfc34f5b1df2d6d976fb5f5f86">Macro::GenerateRandomNumberWithoutZero</link>(10);
+<anchor xml:id="_class_non_playable_character_1l00045"/>00045 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_a9d5a16ef76a0e3339fd4ffc5d85bd8e2_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_a9d5a16ef76a0e3339fd4ffc5d85bd8e2_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1ada48fd505bbf5797c39f0b20aa995bbc"/><section>
+    <title>SetSymbol()</title>
+<indexterm><primary>SetSymbol</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>SetSymbol</secondary></indexterm>
+<para><computeroutput>void NonPlayableCharacter::SetSymbol ( )</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8cpp_source_1l00061">61</link> of file <link linkend="__non_playable_character_8cpp_source">NonPlayableCharacter.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_non_playable_character_1l00062"/>00062 {
+<anchor xml:id="_class_non_playable_character_1l00063"/>00063 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">switch</emphasis>&#32;(<link linkend="_class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000">passive</link>)
+<anchor xml:id="_class_non_playable_character_1l00064"/>00064 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_non_playable_character_1l00065"/>00065 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="keyword">true</emphasis>:&#32;<link linkend="_class_non_playable_character_1ab6703683eeb7deb2ac146dfcfced761f">symbol</link>&#32;=&#32;<link linkend="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89dad514c6a906862dbbc3f78df6338599b9">GENERIC_FRIENDLY</link>;
+<anchor xml:id="_class_non_playable_character_1l00066"/>00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_non_playable_character_1l00067"/>00067 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<emphasis role="keyword">false</emphasis>:&#32;<link linkend="_class_non_playable_character_1ab6703683eeb7deb2ac146dfcfced761f">symbol</link>&#32;=&#32;<link linkend="_class_non_playable_character_1aca92139bb78554c56aead68b4c7bd89da9eb3063ca40a7d2377306d3f08adee7b">ENEMY</link>;
+<anchor xml:id="_class_non_playable_character_1l00068"/>00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_class_non_playable_character_1l00069"/>00069 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_non_playable_character_1l00070"/>00070 }
+</programlisting>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_non_playable_character_ada48fd505bbf5797c39f0b20aa995bbc_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_non_playable_character_1af6835f00acbdc12a7a9f920ef6801e0d"/><section>
+    <title>attack_speed</title>
+<indexterm><primary>attack_speed</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>attack_speed</secondary></indexterm>
+<para><computeroutput>unsigned int NonPlayableCharacter::attack_speed<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8h_source_1l00046">46</link> of file <link linkend="__non_playable_character_8h_source">NonPlayableCharacter.h</link>.</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1aba25d6a44e649f3aa1aea32cd46191fa"/><section>
+    <title>health</title>
+<indexterm><primary>health</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>health</secondary></indexterm>
+<para><computeroutput>unsigned int NonPlayableCharacter::health<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8h_source_1l00045">45</link> of file <link linkend="__non_playable_character_8h_source">NonPlayableCharacter.h</link>.</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1a96182e6ac96d74025aec58b5c03f3824"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>string NonPlayableCharacter::name</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8h_source_1l00032">32</link> of file <link linkend="__non_playable_character_8h_source">NonPlayableCharacter.h</link>.</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1a7e5848d6face873445553e3731da84be"/><section>
+    <title>name_array</title>
+<indexterm><primary>name_array</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>name_array</secondary></indexterm>
+<para><computeroutput>string NonPlayableCharacter::name_array[20]</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8h_source_1l00033">33</link> of file <link linkend="__non_playable_character_8h_source">NonPlayableCharacter.h</link>.</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1adb6c64e7dbc750efb7f2fa3f021e3627"/><section>
+    <title>npc_x</title>
+<indexterm><primary>npc_x</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>npc_x</secondary></indexterm>
+<para><computeroutput>unsigned int NonPlayableCharacter::npc_x<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8h_source_1l00048">48</link> of file <link linkend="__non_playable_character_8h_source">NonPlayableCharacter.h</link>.</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1aeacd97bf866f7348710a6bd78a583ed7"/><section>
+    <title>npc_y</title>
+<indexterm><primary>npc_y</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>npc_y</secondary></indexterm>
+<para><computeroutput>unsigned int NonPlayableCharacter::npc_y<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8h_source_1l00049">49</link> of file <link linkend="__non_playable_character_8h_source">NonPlayableCharacter.h</link>.</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1ac457178995a1ed93cdc8fdb38e916000"/><section>
+    <title>passive</title>
+<indexterm><primary>passive</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>passive</secondary></indexterm>
+<para><computeroutput>bool NonPlayableCharacter::passive</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8h_source_1l00031">31</link> of file <link linkend="__non_playable_character_8h_source">NonPlayableCharacter.h</link>.</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1aff7b245f33c18e58e3056c18e5199e8c"/><section>
+    <title>strength</title>
+<indexterm><primary>strength</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>strength</secondary></indexterm>
+<para><computeroutput>unsigned int NonPlayableCharacter::strength</computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8h_source_1l00034">34</link> of file <link linkend="__non_playable_character_8h_source">NonPlayableCharacter.h</link>.</para>
+</section>
+<anchor xml:id="_class_non_playable_character_1ab6703683eeb7deb2ac146dfcfced761f"/><section>
+    <title>symbol</title>
+<indexterm><primary>symbol</primary><secondary>NonPlayableCharacter</secondary></indexterm>
+<indexterm><primary>NonPlayableCharacter</primary><secondary>symbol</secondary></indexterm>
+<para><computeroutput>char NonPlayableCharacter::symbol<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__non_playable_character_8h_source_1l00043">43</link> of file <link linkend="__non_playable_character_8h_source">NonPlayableCharacter.h</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+D:/University/ca-A00269349/Rogue/<link linkend="__non_playable_character_8h">NonPlayableCharacter.h</link>D:/University/ca-A00269349/Rogue/<link linkend="__non_playable_character_8cpp">NonPlayableCharacter.cpp</link></section>
+</section>

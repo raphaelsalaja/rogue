@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_player_8cpp" kind="file" language="C++">
+    <compoundname>Player.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="_player_8h" local="yes">Player.h</includes>
+    <includes refid="_map_manager_8h" local="yes">MapManager.h</includes>
+    <includes refid="_console_window_manager_8h" local="yes">ConsoleWindowManager.h</includes>
+    <includes refid="_macro_8h" local="yes">Macro.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>CombatManager.h</label>
+        <link refid="_combat_manager_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ConsoleWindowManager.h</label>
+        <link refid="_console_window_manager_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>GenericFriendly.h</label>
+        <link refid="_generic_friendly_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>InventoryManager.h</label>
+        <link refid="_inventory_manager_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Macro.h</label>
+        <link refid="_macro_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>MapManager.h</label>
+        <link refid="_map_manager_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>NonPlayableCharacter.h</label>
+        <link refid="_non_playable_character_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/University/ca-A00269349/Rogue/Player.cpp</label>
+        <link refid="_player_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>UserInterfaceManger.h</label>
+        <link refid="_user_interface_manger_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>fstream</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="8">
+        <label>windows.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_8h" kindref="compound">Player.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_map_manager_8h" kindref="compound">MapManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_console_window_manager_8h" kindref="compound">ConsoleWindowManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_macro_8h" kindref="compound">Macro.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_macro" kindref="compound">Macro</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_player_1a4b2ed7452ebf86347df93b965f5c4966" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a4b2ed7452ebf86347df93b965f5c4966" kindref="member">Player::RenderPlayer</ref>(<ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m,<sp/><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref>&amp;<sp/>c,<sp/><ref refid="class_inventory_manager" kindref="compound">InventoryManager</ref>&amp;<sp/>i)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!i.<ref refid="class_inventory_manager_1a229268373b664e039dcd90f41282f5e4" kindref="member">inventory_open</ref>)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>BLANKS<sp/>THE<sp/>PLAYER&apos;S<sp/>OLD<sp/>POSITION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" kindref="member">GoToScreenPosition</ref>(<ref refid="class_player_1a5e4cebf1dffd936edc4a69867dc9d38c" kindref="member">player_position_x</ref>,<sp/><ref refid="class_player_1a1043d8ae834b0edbdf36765e73c32eb0" kindref="member">player_position_y</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(m.<ref refid="class_map_manager_1a8718e18f0c51173645c2626e5e65cb32" kindref="member">new_map</ref>[<ref refid="class_player_1a1043d8ae834b0edbdf36765e73c32eb0" kindref="member">player_position_y</ref><sp/>*<sp/>m.<ref refid="class_map_manager_1af44d67473c8a932512d90fe08a5f10c2" kindref="member">width</ref><sp/>+<sp/><ref refid="class_player_1a5e4cebf1dffd936edc4a69867dc9d38c" kindref="member">player_position_x</ref>])</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;=&apos;</highlight><highlight class="normal">:<sp/>c.<ref refid="class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213" kindref="member">SetConsoleWindowColor</ref>(<ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752" kindref="member">ConsoleWindowManager::LIGHT_BLUE</ref>,<sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e" kindref="member">ConsoleWindowManager::MAGENTA</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&apos;\xB0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/>c.<ref refid="class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213" kindref="member">SetConsoleWindowColor</ref>(<ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752" kindref="member">ConsoleWindowManager::LIGHT_BLUE</ref>,<sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3" kindref="member">ConsoleWindowManager::BLACK</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&apos;\xFA&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DRAWS<sp/>THE<sp/>PLAYER&apos;S<sp/>OLD<sp/>POSITION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" kindref="member">GoToScreenPosition</ref>(<ref refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" kindref="member">player_position_x_new</ref>,<sp/><ref refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" kindref="member">player_position_y_new</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="class_player_1a0dfa2c1fdd710480766dcb2cf85b2db4" kindref="member">c_player</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1a5e4cebf1dffd936edc4a69867dc9d38c" kindref="member">player_position_x</ref><sp/>=<sp/><ref refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" kindref="member">player_position_x_new</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1a1043d8ae834b0edbdf36765e73c32eb0" kindref="member">player_position_y</ref><sp/>=<sp/><ref refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" kindref="member">player_position_y_new</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sleep(60);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c.<ref refid="class_console_window_manager_1af7015ed96cbd06f5261d671e62e15213" kindref="member">SetConsoleWindowColor</ref>(<ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752" kindref="member">ConsoleWindowManager::LIGHT_BLUE</ref>,<sp/><ref refid="class_console_window_manager_1a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3" kindref="member">ConsoleWindowManager::BLACK</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_player_1a8e27b94ff10ba3c236f57a8a721a5d40" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_player_1a8e27b94ff10ba3c236f57a8a721a5d40" kindref="member">Player::PlayerCollisionsChecks</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>item,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>item_max,<sp/><ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m,<sp/><ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cleared<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(item<sp/>!=<sp/>item_max)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleared<sp/>=<sp/><ref refid="class_player_1a3b587452a99abee05fafb51daadf6687" kindref="member">BlankPosition</ref>(m,<sp/>p);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cleared)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>item++;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleared<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p.<ref refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" kindref="member">player_position_x_new</ref><sp/>=<sp/>p.<ref refid="class_player_1a5e4cebf1dffd936edc4a69867dc9d38c" kindref="member">player_position_x</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p.<ref refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" kindref="member">player_position_y_new</ref><sp/>=<sp/>p.<ref refid="class_player_1a1043d8ae834b0edbdf36765e73c32eb0" kindref="member">player_position_y</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>item;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a848f89637b84d9692c96fc75cfa434eb" kindref="member">Player::PlayerCollisions</ref>(<ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m,<sp/><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref>&amp;<sp/>c,<sp/><ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p,<sp/><ref refid="class_inventory_manager" kindref="compound">InventoryManager</ref>&amp;<sp/>i,<sp/><ref refid="class_user_interface_manager" kindref="compound">UserInterfaceManager</ref>&amp;<sp/>ui)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c_wall<sp/>=<sp/></highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c_wall_1<sp/>=<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c_wall_2<sp/>=<sp/></highlight><highlight class="charliteral">&apos;|&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c_wall_3<sp/>=<sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c_level_portal<sp/>=<sp/></highlight><highlight class="charliteral">&apos;[&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>health_c<sp/>=<sp/>i.<ref refid="class_inventory_manager_1a2c9831d5f408cdb977ec3e8834445f4a" kindref="member">c_health</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>shield_c<sp/>=<sp/>i.<ref refid="class_inventory_manager_1ae592f94b9da417fdbae15aaf94559640" kindref="member">c_shield</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>health_p<sp/>=<sp/>i.<ref refid="class_inventory_manager_1a5400f0bca8bb5930c0a65e988b8b9982" kindref="member">c_health_potion</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>shield_p<sp/>=<sp/>i.<ref refid="class_inventory_manager_1afed1401d4aa963b4833c0d64ac32ea00" kindref="member">c_shield_potion</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>magic_p<sp/>=<sp/>i.<ref refid="class_inventory_manager_1a8339e1257c0c68ad1b5277f88cabc2ac" kindref="member">c_magic_potion</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>inventory_table_iterator<sp/>=<sp/>ui.<ref refid="class_user_interface_manager_1a20860ee0c0c01dba89ac4f81dba649dd" kindref="member">inventory</ref>.begin();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>inventory_headings[4]{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;W<sp/>E<sp/>A<sp/>P<sp/>O<sp/>N<sp/>S&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;P<sp/>O<sp/>T<sp/>I<sp/>O<sp/>N<sp/>S&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;A<sp/>R<sp/>M<sp/>O<sp/>U<sp/>R&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;T<sp/>R<sp/>I<sp/>N<sp/>K<sp/>E<sp/>T<sp/>S&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>nextMove<sp/>=<sp/>m.<ref refid="class_map_manager_1a8718e18f0c51173645c2626e5e65cb32" kindref="member">new_map</ref>[<ref refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" kindref="member">player_position_y_new</ref><sp/>*<sp/>m.<ref refid="class_map_manager_1af44d67473c8a932512d90fe08a5f10c2" kindref="member">width</ref><sp/>+<sp/><ref refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" kindref="member">player_position_x_new</ref>];</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>f<sp/>=<sp/>m.<ref refid="class_map_manager_1aaae3bf6e05a1e85d62b37357596b7e89" kindref="member">file_contents_read_in</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(nextMove)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>c_wall:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>c_wall_1:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>c_wall_2:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>c_wall_3:<sp/>p.<ref refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" kindref="member">player_position_x_new</ref><sp/>=<sp/>p.<ref refid="class_player_1a5e4cebf1dffd936edc4a69867dc9d38c" kindref="member">player_position_x</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p.<ref refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" kindref="member">player_position_y_new</ref><sp/>=<sp/>p.<ref refid="class_player_1a1043d8ae834b0edbdf36765e73c32eb0" kindref="member">player_position_y</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">:<sp/><ref refid="class_player_1aad33b52bfe73c4c978a3135172f286a0" kindref="member">health</ref><sp/>=<sp/><ref refid="class_player_1a8e27b94ff10ba3c236f57a8a721a5d40" kindref="member">PlayerCollisionsChecks</ref>(<ref refid="class_player_1aad33b52bfe73c4c978a3135172f286a0" kindref="member">health</ref>,<sp/><ref refid="class_player_1ad4cfa39d8e172a78e2e8c1c8da13f080" kindref="member">max_stats</ref>,<sp/>m,<sp/>p);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;s&apos;</highlight><highlight class="normal">:<sp/><ref refid="class_player_1aeaeb39c73e57dbc0727f51a2b6c24b41" kindref="member">shield</ref><sp/>=<sp/><ref refid="class_player_1a8e27b94ff10ba3c236f57a8a721a5d40" kindref="member">PlayerCollisionsChecks</ref>(<ref refid="class_player_1aeaeb39c73e57dbc0727f51a2b6c24b41" kindref="member">shield</ref>,<sp/><ref refid="class_player_1ad4cfa39d8e172a78e2e8c1c8da13f080" kindref="member">max_stats</ref>,<sp/>m,<sp/>p);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;H&apos;</highlight><highlight class="normal">:<sp/><ref refid="class_player_1aa55063fb11d6d041d7e72ef650824280" kindref="member">health_potions</ref><sp/>=<sp/><ref refid="class_player_1a8e27b94ff10ba3c236f57a8a721a5d40" kindref="member">PlayerCollisionsChecks</ref>(<ref refid="class_player_1aa55063fb11d6d041d7e72ef650824280" kindref="member">health_potions</ref>,<sp/><ref refid="class_player_1aeee533a8d8e4e2a00f77b6c493b3929f" kindref="member">max_potions</ref>,<sp/>m,<sp/>p);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;S&apos;</highlight><highlight class="normal">:<sp/><ref refid="class_player_1aff4ffb0294cf1c1f81d0f4b1f8fc15ff" kindref="member">shield_potions</ref><sp/>=<sp/><ref refid="class_player_1a8e27b94ff10ba3c236f57a8a721a5d40" kindref="member">PlayerCollisionsChecks</ref>(<ref refid="class_player_1aff4ffb0294cf1c1f81d0f4b1f8fc15ff" kindref="member">shield_potions</ref>,<sp/><ref refid="class_player_1aeee533a8d8e4e2a00f77b6c493b3929f" kindref="member">max_potions</ref>,<sp/>m,<sp/>p);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;M&apos;</highlight><highlight class="normal">:<sp/><ref refid="class_player_1a84354c435ab9342fc19b09423053d1ed" kindref="member">magic_potions</ref><sp/>=<sp/><ref refid="class_player_1a8e27b94ff10ba3c236f57a8a721a5d40" kindref="member">PlayerCollisionsChecks</ref>(<ref refid="class_player_1a84354c435ab9342fc19b09423053d1ed" kindref="member">magic_potions</ref>,<sp/><ref refid="class_player_1aeee533a8d8e4e2a00f77b6c493b3929f" kindref="member">max_potions</ref>,<sp/>m,<sp/>p);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;N&apos;</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>PRINT<sp/>MESSAGE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1af437a788282ad5c25d54a10de8199d11" kindref="member">EnterMessageMode</ref>(m,<sp/>m.<ref refid="class_map_manager_1a6c276cfffc5bfb5ca0448b192b00c071" kindref="member">generic_friendlies</ref>.at(m.<ref refid="class_map_manager_1a147a44e3b176a36a06689d4589cfb76f" kindref="member">FindFriendly</ref>(p)));</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1a3b587452a99abee05fafb51daadf6687" kindref="member">BlankPosition</ref>(m,<sp/>p);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;E&apos;</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>ENTER<sp/>COMBAT<sp/>MODE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1a4e306abcd8bd537e80b89563ad77275c" kindref="member">EnterCombatMode</ref>(m,<sp/>m.<ref refid="class_map_manager_1a426775cb6ac19bd0e9b6ca79e93dc013" kindref="member">enemies</ref>.at(m.<ref refid="class_map_manager_1a63237ae436886673f81ed41f38e7ffbe" kindref="member">FindEnemy</ref>(p)));</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1a3b587452a99abee05fafb51daadf6687" kindref="member">BlankPosition</ref>(m,<sp/>p);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>c_level_portal:</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m.<ref refid="class_map_manager_1ab864df2edd061402a8ae649642545cf4" kindref="member">LoadNextMap</ref>(m,<sp/>c,<sp/>p,<sp/>i);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>item_picked_up;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1" kindref="member">InventoryManager::ITEM_TYPE</ref><sp/>type<sp/>=<sp/>i.<ref refid="class_inventory_manager_1a3af6cc9ac4341fba2fde51ae42ad3303" kindref="member">WhatIsItem</ref>(nextMove);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(type)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1af8f6596290d4e68df5ae27ec38bbbbff" kindref="member">InventoryManager::WEAPON</ref>:<sp/>ui.<ref refid="class_user_interface_manager_1a20860ee0c0c01dba89ac4f81dba649dd" kindref="member">inventory</ref>.insert(inventory_table_iterator,<sp/></highlight><highlight class="stringliteral">&quot;TEST&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_inventory_manager_1a8296ced6bfb4bbf10b1efbb8599a3bd1a2a02f25b240eb67ac6ad53056fdbaa2f" kindref="member">InventoryManager::POTION</ref>:<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>i.<ref refid="class_inventory_manager_1a98a166d06e34c1f4dc503304f0861a6a" kindref="member">GetInventoryHeadingLocation</ref>(inventory_headings[1],<sp/>ui);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>advance(inventory_table_iterator,<sp/>index<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i.<ref refid="class_inventory_manager_1aadd5ea163e9e6b8d9df1795443fb035a" kindref="member">InsertIntoInventoryManager</ref>(type,<sp/>nextMove,<sp/>p,<sp/>ui))</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui.<ref refid="class_user_interface_manager_1a20860ee0c0c01dba89ac4f81dba649dd" kindref="member">inventory</ref>.insert(inventory_table_iterator,<sp/>i.<ref refid="class_inventory_manager_1ae1b2153f7d99c00d92bb7e0516f3d32d" kindref="member">potion_inventory</ref>.at(i.<ref refid="class_inventory_manager_1ae1b2153f7d99c00d92bb7e0516f3d32d" kindref="member">potion_inventory</ref>.size()<sp/>-<sp/>1));</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="class_player_1a4e306abcd8bd537e80b89563ad77275c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a4e306abcd8bd537e80b89563ad77275c" kindref="member">Player::EnterCombatMode</ref>(<ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m,<sp/><ref refid="class_enemy" kindref="compound">Enemy</ref>&amp;<sp/>e)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>e.<ref refid="class_enemy_1ac7ed9a6bf787591c189fdc9799f85e7c" kindref="member">PrintDetails</ref>(m);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" kindref="member">GoToScreenPosition</ref>(45,<sp/>m.<ref refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" kindref="member">height</ref><sp/>+<sp/>7);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>Sleep(2500);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_player_1a3d88ecef0d65b5ca204f92c1a75c02c4" kindref="member">waiting_to_start_combat</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="class_player_1af437a788282ad5c25d54a10de8199d11" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1af437a788282ad5c25d54a10de8199d11" kindref="member">Player::EnterMessageMode</ref>(<ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m,<sp/><ref refid="class_generic_friendly" kindref="compound">GenericFriendly</ref>&amp;<sp/>f)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_player_1afeb496e92e437ad4d2da75f935f922ea" kindref="member">waiting_for_choice</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="class_player_1afeb496e92e437ad4d2da75f935f922ea" kindref="member">waiting_for_choice</ref>)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f.<ref refid="class_generic_friendly_1adb5700625348a3c03f4623c6b3f1519b" kindref="member">PrintMessage</ref>(m);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509" kindref="member">GoToScreenPosition</ref>(45,<sp/>m.<ref refid="class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27" kindref="member">height</ref><sp/>+<sp/>7);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(GetKeyState(</highlight><highlight class="charliteral">&apos;1&apos;</highlight><highlight class="normal">)<sp/>&amp;<sp/>0x8000)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1aad33b52bfe73c4c978a3135172f286a0" kindref="member">health</ref>++;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1afeb496e92e437ad4d2da75f935f922ea" kindref="member">waiting_for_choice</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sleep(60);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(GetKeyState(</highlight><highlight class="charliteral">&apos;2&apos;</highlight><highlight class="normal">)<sp/>&amp;<sp/>0x8000)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1aeaeb39c73e57dbc0727f51a2b6c24b41" kindref="member">shield</ref>++;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1afeb496e92e437ad4d2da75f935f922ea" kindref="member">waiting_for_choice</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sleep(60);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(GetKeyState(</highlight><highlight class="charliteral">&apos;3&apos;</highlight><highlight class="normal">)<sp/>&amp;<sp/>0x8000)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1a03a20ecc0094ce6869d196b8effddd54" kindref="member">magic</ref>++;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1afeb496e92e437ad4d2da75f935f922ea" kindref="member">waiting_for_choice</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sleep(60);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="class_player_1a02ec140e8f48a44f442e97eb2a19a00e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a02ec140e8f48a44f442e97eb2a19a00e" kindref="member">Player::SetDesiredHealth</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_player_1aad33b52bfe73c4c978a3135172f286a0" kindref="member">health</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="class_player_1a459cda6070754195650bd10e0db43710" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a459cda6070754195650bd10e0db43710" kindref="member">Player::PlayerInput</ref>(<ref refid="class_inventory_manager" kindref="compound">InventoryManager</ref>&amp;<sp/>i,<sp/><ref refid="class_console_window_manager" kindref="compound">ConsoleWindowManager</ref>&amp;<sp/>c,<sp/><ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m,<sp/><ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p,<sp/><ref refid="class_console_rendering" kindref="compound">ConsoleRendering</ref>&amp;<sp/>r,<sp/><ref refid="class_user_interface_manager" kindref="compound">UserInterfaceManager</ref>&amp;<sp/>ui,<sp/><ref refid="class_combat_manager" kindref="compound">CombatManager</ref>&amp;<sp/>cm)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" kindref="member">player_position_x_new</ref><sp/>=<sp/><ref refid="class_player_1a5e4cebf1dffd936edc4a69867dc9d38c" kindref="member">player_position_x</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" kindref="member">player_position_y_new</ref><sp/>=<sp/><ref refid="class_player_1a1043d8ae834b0edbdf36765e73c32eb0" kindref="member">player_position_y</ref>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i.<ref refid="class_inventory_manager_1a229268373b664e039dcd90f41282f5e4" kindref="member">inventory_open</ref>)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(GetKeyState(VK_RIGHT)<sp/>&amp;<sp/>0x8000)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i.<ref refid="class_inventory_manager_1acb6cf3d380d81c8129820734b05d0f6e" kindref="member">InventoryControl</ref>(</highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal">,<sp/>r,<sp/>i,<sp/>c,<sp/>m,<sp/>ui);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sleep(60);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(GetKeyState(VK_LEFT)<sp/>&amp;<sp/>0x8000)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i.<ref refid="class_inventory_manager_1acb6cf3d380d81c8129820734b05d0f6e" kindref="member">InventoryControl</ref>(</highlight><highlight class="charliteral">&apos;b&apos;</highlight><highlight class="normal">,<sp/>r,<sp/>i,<sp/>c,<sp/>m,<sp/>ui);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sleep(60);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(GetKeyState(VK_BACK)<sp/>&amp;<sp/>0x8000)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i.<ref refid="class_inventory_manager_1a5b5e89fe9ebb4fe18db920a373c4052b" kindref="member">DropItemSelected</ref>(i.<ref refid="class_inventory_manager_1a4c1df972584d8dd26d0156eb24ff2d25" kindref="member">inventory_index</ref>,<sp/>p,<sp/>c,<sp/>m,<sp/>i,<sp/>r,<sp/>ui);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(GetKeyState(VK_RETURN)<sp/>&amp;<sp/>0x8000)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i.<ref refid="class_inventory_manager_1a5bbb29a62327b708ec79942a3d18aece" kindref="member">UsePotionSelected</ref>(i.<ref refid="class_inventory_manager_1a4c1df972584d8dd26d0156eb24ff2d25" kindref="member">inventory_index</ref>,<sp/>p,<sp/>c,<sp/>m,<sp/>i,<sp/>r,<sp/>ui);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_player_1a3d88ecef0d65b5ca204f92c1a75c02c4" kindref="member">waiting_to_start_combat</ref>)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1afabc272a584435771820c92f2c8308f1" kindref="member">in_combat</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1a3d88ecef0d65b5ca204f92c1a75c02c4" kindref="member">waiting_to_start_combat</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_player_1afabc272a584435771820c92f2c8308f1" kindref="member">in_combat</ref>)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="class_player_1afabc272a584435771820c92f2c8308f1" kindref="member">in_combat</ref>)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cm.<ref refid="class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80" kindref="member">Fight</ref>(p,<sp/>m,<sp/>m.<ref refid="class_map_manager_1a426775cb6ac19bd0e9b6ca79e93dc013" kindref="member">enemies</ref>.at(m.<ref refid="class_map_manager_1a63237ae436886673f81ed41f38e7ffbe" kindref="member">FindEnemy</ref>(p)));</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(GetKeyState(VK_UP)<sp/>&amp;<sp/>0x8000)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" kindref="member">player_position_y_new</ref><sp/>=<sp/><ref refid="class_player_1a1043d8ae834b0edbdf36765e73c32eb0" kindref="member">player_position_y</ref><sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(GetKeyState(VK_DOWN)<sp/>&amp;<sp/>0x8000)</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" kindref="member">player_position_y_new</ref><sp/>=<sp/><ref refid="class_player_1a1043d8ae834b0edbdf36765e73c32eb0" kindref="member">player_position_y</ref><sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(GetKeyState(VK_RIGHT)<sp/>&amp;<sp/>0x8000)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" kindref="member">player_position_x_new</ref><sp/>=<sp/><ref refid="class_player_1a5e4cebf1dffd936edc4a69867dc9d38c" kindref="member">player_position_x</ref><sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(GetKeyState(VK_LEFT)<sp/>&amp;<sp/>0x8000)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" kindref="member">player_position_x_new</ref><sp/>=<sp/><ref refid="class_player_1a5e4cebf1dffd936edc4a69867dc9d38c" kindref="member">player_position_x</ref><sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235" refid="class_player_1a3b587452a99abee05fafb51daadf6687" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_1a3b587452a99abee05fafb51daadf6687" kindref="member">Player::BlankPosition</ref>(<ref refid="class_map_manager" kindref="compound">MapManager</ref>&amp;<sp/>m,<sp/><ref refid="class_player" kindref="compound">Player</ref>&amp;<sp/>p)</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>m.<ref refid="class_map_manager_1a8718e18f0c51173645c2626e5e65cb32" kindref="member">new_map</ref>[p.<ref refid="class_player_1a7ddbc65116b9c73791679dc1aa049980" kindref="member">player_position_y_new</ref><sp/>*<sp/>m.<ref refid="class_map_manager_1af44d67473c8a932512d90fe08a5f10c2" kindref="member">width</ref><sp/>+<sp/>p.<ref refid="class_player_1a295efe0018307edab6aaeaad9dae6e0b" kindref="member">player_position_x_new</ref>]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;*&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="class_player_1a23faf24de68cf7d62a8b726a3c181ef0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_player_1a23faf24de68cf7d62a8b726a3c181ef0" kindref="member">Player::GetDamage</ref>()</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_player_1a433fa478597adbefe4ac3911c5639968" kindref="member">damage</ref>;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="class_player_1a8d962e02bc35d6181940a8aaf7a1a510" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_player_1a8d962e02bc35d6181940a8aaf7a1a510" kindref="member">Player::GetHealth</ref>()</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_player_1aad33b52bfe73c4c978a3135172f286a0" kindref="member">health</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/University/ca-A00269349/Rogue/Player.cpp"/>
+  </compounddef>
+</doxygen>

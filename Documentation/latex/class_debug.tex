@@ -1,0 +1,84 @@
+\hypertarget{class_debug}{}\doxysection{Debug Class Reference}
+\label{class_debug}\index{Debug@{Debug}}
+
+
+{\ttfamily \#include $<$Debug.\+h$>$}
+
+
+
+Collaboration diagram for Debug\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_debug__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_debug_a7da6fc420757f4d2ed80dd0de4593806}{Debug\+Controls}} (\mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&m, \mbox{\hyperlink{class_player}{Player}} \&p, \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&i)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_debug_8h_source_l00007}{7}} of file \mbox{\hyperlink{_debug_8h_source}{Debug.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_debug_a7da6fc420757f4d2ed80dd0de4593806}\label{class_debug_a7da6fc420757f4d2ed80dd0de4593806}} 
+\index{Debug@{Debug}!DebugControls@{DebugControls}}
+\index{DebugControls@{DebugControls}!Debug@{Debug}}
+\doxysubsubsection{\texorpdfstring{DebugControls()}{DebugControls()}}
+{\footnotesize\ttfamily void Debug\+::\+Debug\+Controls (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&}]{m,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p,  }\item[{\mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&}]{i }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_debug_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{_debug_8cpp_source}{Debug.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_debug_l00012}00012 \{}
+\DoxyCodeLine{\Hypertarget{class_debug_l00013}00013     \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{GoToScreenPosition}}(0, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 1);}
+\DoxyCodeLine{\Hypertarget{class_debug_l00014}00014     \textcolor{keywordflow}{if} (GetKeyState(\textcolor{charliteral}{'B'}) \& 0x8000)}
+\DoxyCodeLine{\Hypertarget{class_debug_l00015}00015     \{}
+\DoxyCodeLine{\Hypertarget{class_debug_l00016}00016         \textcolor{keywordflow}{if} (p.\mbox{\hyperlink{class_player_aad33b52bfe73c4c978a3135172f286a0}{health}} != 0)}
+\DoxyCodeLine{\Hypertarget{class_debug_l00017}00017         \{}
+\DoxyCodeLine{\Hypertarget{class_debug_l00018}00018             p.\mbox{\hyperlink{class_player_aad33b52bfe73c4c978a3135172f286a0}{health}}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{class_debug_l00019}00019         \}}
+\DoxyCodeLine{\Hypertarget{class_debug_l00020}00020         cout << \textcolor{stringliteral}{"{}YOU TOOK 1 DAMAGE TO HEALTH                   "{}};}
+\DoxyCodeLine{\Hypertarget{class_debug_l00021}00021     \}}
+\DoxyCodeLine{\Hypertarget{class_debug_l00022}00022     \textcolor{keywordflow}{if} (GetKeyState(\textcolor{charliteral}{'N'}) \& 0x8000)}
+\DoxyCodeLine{\Hypertarget{class_debug_l00023}00023     \{}
+\DoxyCodeLine{\Hypertarget{class_debug_l00024}00024         \textcolor{keywordflow}{if} (p.\mbox{\hyperlink{class_player_aeaeb39c73e57dbc0727f51a2b6c24b41}{shield}} != 0)}
+\DoxyCodeLine{\Hypertarget{class_debug_l00025}00025         \{}
+\DoxyCodeLine{\Hypertarget{class_debug_l00026}00026             p.\mbox{\hyperlink{class_player_aeaeb39c73e57dbc0727f51a2b6c24b41}{shield}}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{class_debug_l00027}00027         \}}
+\DoxyCodeLine{\Hypertarget{class_debug_l00028}00028         cout << \textcolor{stringliteral}{"{}YOU TOOK 1 DAMAGE TO SHIELD                   "{}};}
+\DoxyCodeLine{\Hypertarget{class_debug_l00029}00029     \}}
+\DoxyCodeLine{\Hypertarget{class_debug_l00030}00030     \textcolor{keywordflow}{if} (GetKeyState(\textcolor{charliteral}{'M'}) \& 0x8000)}
+\DoxyCodeLine{\Hypertarget{class_debug_l00031}00031     \{}
+\DoxyCodeLine{\Hypertarget{class_debug_l00032}00032         \textcolor{keywordflow}{if} (p.\mbox{\hyperlink{class_player_a03a20ecc0094ce6869d196b8effddd54}{magic}} != 0)}
+\DoxyCodeLine{\Hypertarget{class_debug_l00033}00033         \{}
+\DoxyCodeLine{\Hypertarget{class_debug_l00034}00034             p.\mbox{\hyperlink{class_player_a03a20ecc0094ce6869d196b8effddd54}{magic}}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{class_debug_l00035}00035         \}}
+\DoxyCodeLine{\Hypertarget{class_debug_l00036}00036         cout << \textcolor{stringliteral}{"{}YOU USED 1 MAGIC                              "{}};}
+\DoxyCodeLine{\Hypertarget{class_debug_l00037}00037     \}}
+\DoxyCodeLine{\Hypertarget{class_debug_l00038}00038 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_debug_a7da6fc420757f4d2ed80dd0de4593806_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_debug_8h}{Debug.\+h}}\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_debug_8cpp}{Debug.\+cpp}}\end{DoxyCompactItemize}

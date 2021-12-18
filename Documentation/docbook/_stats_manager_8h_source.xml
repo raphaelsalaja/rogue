@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__stats_manager_8h_source" xml:lang="en-US">
+<title>StatsManager.h</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/StatsManager.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__stats_manager_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="__stats_manager_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+<anchor xml:id="__stats_manager_8h_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+<anchor xml:id="__stats_manager_8h_source_1l00004"/>00004 
+<anchor xml:id="__stats_manager_8h_source_1l00005"/><link linkend="_class_stats_manager">00005</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_stats_manager">StatsManager</link>
+<anchor xml:id="__stats_manager_8h_source_1l00006"/>00006 {
+<anchor xml:id="__stats_manager_8h_source_1l00007"/>00007 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="__stats_manager_8h_source_1l00008"/>00008 };
+</programlisting></section>

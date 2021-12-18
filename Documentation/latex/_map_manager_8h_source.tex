@@ -1,0 +1,50 @@
+\hypertarget{_map_manager_8h_source}{}\doxysection{Map\+Manager.\+h}
+\label{_map_manager_8h_source}\index{D:/University/ca-\/A00269349/Rogue/MapManager.h@{D:/University/ca-\/A00269349/Rogue/MapManager.h}}
+\mbox{\hyperlink{_map_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00002}00002 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_player_8h}{Player.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_console_window_manager_8h}{ConsoleWindowManager.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_generic_friendly_8h}{GenericFriendly.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00008}00008 \textcolor{keyword}{class }\mbox{\hyperlink{class_inventory_manager}{InventoryManager}};}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00009}00009 \textcolor{keyword}{class }\mbox{\hyperlink{class_enemy}{Enemy}};}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00010}00010 \textcolor{keyword}{class }\mbox{\hyperlink{class_player}{Player}};}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00011}00011 \textcolor{keyword}{class }\mbox{\hyperlink{class_console_window_manager}{ConsoleWindowManager}};}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00012}00012 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00014}\mbox{\hyperlink{class_map_manager}{00014}} \textcolor{keyword}{class }\mbox{\hyperlink{class_map_manager}{MapManager}}}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00015}00015 \{}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00016}00016 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00017}\mbox{\hyperlink{class_map_manager_ac098de57cb928a3ace62fcb2a566206f}{00017}}     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_map_manager_ac098de57cb928a3ace62fcb2a566206f}{level\_index}} = 1;}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00018}\mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{00018}}     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{width}} = 0;}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00019}\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{00019}}     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} = 0;}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00021}\mbox{\hyperlink{class_map_manager_a6c276cfffc5bfb5ca0448b192b00c071}{00021}}     vector<GenericFriendly> \mbox{\hyperlink{class_map_manager_a6c276cfffc5bfb5ca0448b192b00c071}{generic\_friendlies}};}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00022}\mbox{\hyperlink{class_map_manager_a426775cb6ac19bd0e9b6ca79e93dc013}{00022}}     vector<Enemy> \mbox{\hyperlink{class_map_manager_a426775cb6ac19bd0e9b6ca79e93dc013}{enemies}};}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00024}\mbox{\hyperlink{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}{00024}}     \textcolor{keywordtype}{char}* \mbox{\hyperlink{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}{new\_map}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00025}\mbox{\hyperlink{class_map_manager_adc9521c363ffb0dcf91fada254d374d3}{00025}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_map_manager_adc9521c363ffb0dcf91fada254d374d3}{has\_rendered\_map}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00026}\mbox{\hyperlink{class_map_manager_a68b9e24db6a6d5cbab5ee7c2f055997f}{00026}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_map_manager_a68b9e24db6a6d5cbab5ee7c2f055997f}{loading\_next\_map}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00028}\mbox{\hyperlink{class_map_manager_a8283261a6c856b84a3531df03827e9f5}{00028}}     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_map_manager_a8283261a6c856b84a3531df03827e9f5}{file\_name\_start}} = \textcolor{stringliteral}{"{}MAP\_"{}};}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00029}\mbox{\hyperlink{class_map_manager_a5878e375bb4dcc6458c23475d9e0bdf1}{00029}}     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_map_manager_a5878e375bb4dcc6458c23475d9e0bdf1}{file\_name\_end}} = \textcolor{stringliteral}{"{}.txt"{}};}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00030}\mbox{\hyperlink{class_map_manager_aaae3bf6e05a1e85d62b37357596b7e89}{00030}}     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_map_manager_aaae3bf6e05a1e85d62b37357596b7e89}{file\_contents\_read\_in}};}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00032}00032     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_map_manager_ab864df2edd061402a8ae649642545cf4}{LoadNextMap}}(\mbox{\hyperlink{class_map_manager}{MapManager}}\& m, \mbox{\hyperlink{class_console_window_manager}{ConsoleWindowManager}}\& c, \mbox{\hyperlink{class_player}{Player}}\& p, \mbox{\hyperlink{class_inventory_manager}{InventoryManager}}\& i);}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00033}00033     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_map_manager_a3d93eb2a28003237aa76baf2cb0de02c}{RenderMap}}(\mbox{\hyperlink{class_console_window_manager}{ConsoleWindowManager}}\& c);}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00034}00034     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_map_manager_afab5c5f3312e023fed2304c937156c02}{IsEmpty}}(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y);}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00035}00035     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_map_manager_a0376a5b8e5baed3a0845887d16920752}{LoadMap}}(\textcolor{keywordtype}{string} input);}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00037}00037     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_map_manager_a63237ae436886673f81ed41f38e7ffbe}{FindEnemy}}(\mbox{\hyperlink{class_player}{Player}}\& p);}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00038}00038     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_map_manager_a147a44e3b176a36a06689d4589cfb76f}{FindFriendly}}(\mbox{\hyperlink{class_player}{Player}}\& p);}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00040}00040 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00041}00041     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_map_manager_a83822e33297caa6a3e1f3f48b52b2530}{ReadMap}}();}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00042}00042     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_map_manager_ae924c576229d40970074e76875dab3bb}{PrintMap}}(\mbox{\hyperlink{class_console_window_manager}{ConsoleWindowManager}}\& c);}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00043}00043     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_map_manager_a4308dceb14fd959e59001c1a531e3f2b}{RefreshMap}}(\mbox{\hyperlink{class_console_window_manager}{ConsoleWindowManager}}\& c);}
+\DoxyCodeLine{\Hypertarget{_map_manager_8h_source_l00044}00044 \};}
+
+\end{DoxyCode}

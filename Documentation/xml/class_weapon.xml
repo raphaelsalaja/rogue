@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_weapon" kind="class" language="C++" prot="public">
+    <compoundname>Weapon</compoundname>
+    <includes refid="_armour_8h" local="no">Armour.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_weapon_1a0bfb82517497d5ff8c7d31786875de67" prot="public" static="no" strong="no">
+        <type></type>
+        <name>WEAPON_TYPE</name>
+        <enumvalue id="class_weapon_1a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a" prot="public">
+          <name>SWORD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_weapon_1a0bfb82517497d5ff8c7d31786875de67aaeec0571fea89fdc7c3ae39b79dca509" prot="public">
+          <name>SHIELD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_weapon_1a0bfb82517497d5ff8c7d31786875de67aeb9724671a53a074e70378ac1d2596c7" prot="public">
+          <name>ARMOUR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Armour.h" line="35" column="1" bodyfile="D:/University/ca-A00269349/Rogue/Armour.h" bodystart="36" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_weapon_1ae6618a552c19d68197e216b2926637a8" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Weapon::WEAPON_NAME_CHOICES[20]</definition>
+        <argsstring>[20]</argsstring>
+        <name>WEAPON_NAME_CHOICES</name>
+        <initializer>{
+		&quot;Might of Fallen Souls&quot;,
+		&quot;Hope of Carnage&quot;,
+		&quot;Soldier&apos;s Tunic of Cataclysms&quot;,
+		&quot;Silent Armor of the Wicked&quot;,
+		&quot;Stormguard Demon Greatplate&quot;,
+		&quot;Vindication Scaled Armor&quot;,
+		&quot;Ivory Chestpiece of Smoldering Fortunes&quot;,
+		&quot;Bronze Breastplate of Imminent Vengeance&quot;,
+		&quot;Batteplate of Hallowed Dreams&quot;,
+		&quot;Chestplate of Infernal Punishment&quot;,
+		&quot;Edge of Discipline&quot;,
+		&quot;Scales of the Breaking Storm&quot;,
+		&quot;Retribution Greatplate of the Wicked&quot;,
+		&quot;Battleworn Vest of the Daywalker&quot;,
+		&quot;Thunderguard Titanium Chestpiece&quot;,
+		&quot;Vengeance Golden Chestplate&quot;,
+		&quot;Obsidian Cuirass of Hallowed Freedom&quot;,
+		&quot;Iron Tunic of Blessed Kings&quot;,
+		&quot;Vest of Blessed Memories&quot;,
+		&quot;Chestguard of Fleeting Might&quot;
+	}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Armour.h" line="9" column="8" bodyfile="D:/University/ca-A00269349/Rogue/Armour.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapon_1a6b683bce956944a128d3ee25a88c7ac1" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Weapon::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Armour.h" line="32" column="8" bodyfile="D:/University/ca-A00269349/Rogue/Armour.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapon_1a4a9381f1b461ca75cf0928defe49fbc0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Weapon::strength</definition>
+        <argsstring></argsstring>
+        <name>strength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Armour.h" line="33" column="5" bodyfile="D:/University/ca-A00269349/Rogue/Armour.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapon_1a9f519847c0970ed12ffdb22b2de6162b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Weapon::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Armour.h" line="33" column="14" bodyfile="D:/University/ca-A00269349/Rogue/Armour.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapon_1a378d7783971053b498d26d456f5c3bb7" prot="public" static="no" mutable="no">
+        <type><ref refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67" kindref="member">WEAPON_TYPE</ref></type>
+        <definition>WEAPON_TYPE Weapon::WEAPON_TYPE_SELECTED</definition>
+        <argsstring></argsstring>
+        <name>WEAPON_TYPE_SELECTED</name>
+        <initializer>= <ref refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a" kindref="member">SWORD</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Armour.h" line="42" column="13" bodyfile="D:/University/ca-A00269349/Rogue/Armour.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_weapon_1a834aaff0b69ffac71d827ff6b62cbe8c" prot="private" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char Weapon::SYMBOL</definition>
+        <argsstring></argsstring>
+        <name>SYMBOL</name>
+        <initializer>= &apos;W&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Armour.h" line="54" column="12" bodyfile="D:/University/ca-A00269349/Rogue/Armour.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_weapon_1a42dbc46dd70319a24763992c4ebbd396" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Weapon::Weapon</definition>
+        <argsstring>()</argsstring>
+        <name>Weapon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Armour.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_weapon_1a420e7ba3d2017e6de3e93eb579cfd3fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Weapon::~Weapon</definition>
+        <argsstring>()</argsstring>
+        <name>~Weapon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Armour.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_weapon_1a2dd096e208c2827552c41cad1f47e8e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Weapon::GenerateRandomNumber</definition>
+        <argsstring>(int max)</argsstring>
+        <name>GenerateRandomNumber</name>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Armour.h" line="47" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_weapon_1a6b2437dd9e5541ef6f40ce35d96477c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67" kindref="member">WEAPON_TYPE</ref></type>
+        <definition>WEAPON_TYPE Weapon::SetWeaponType</definition>
+        <argsstring>(int weapon_choice)</argsstring>
+        <name>SetWeaponType</name>
+        <param>
+          <type>int</type>
+          <declname>weapon_choice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Armour.h" line="48" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_weapon_1ab1b14ca4579850bf0385c3e94ba35e57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Weapon::SetWeaponName</definition>
+        <argsstring>(int weapon_name_index, WEAPON_TYPE WEAPON_TYPE_SELECTED)</argsstring>
+        <name>SetWeaponName</name>
+        <param>
+          <type>int</type>
+          <declname>weapon_name_index</declname>
+        </param>
+        <param>
+          <type><ref refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67" kindref="member">WEAPON_TYPE</ref></type>
+          <declname>WEAPON_TYPE_SELECTED</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Armour.h" line="49" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_weapon_1a23087012d905e32bbb224e49055a7181" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Weapon::SetStrength</definition>
+        <argsstring>(string name)</argsstring>
+        <name>SetStrength</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Armour.h" line="50" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_weapon_1aa3a7809b2c34df9d7775f57f7560c106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Weapon::CreateNewWeapon</definition>
+        <argsstring>()</argsstring>
+        <name>CreateNewWeapon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/Armour.h" line="51" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Weapon</label>
+        <link refid="class_weapon"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/University/ca-A00269349/Rogue/Armour.h" line="6" column="1" bodyfile="D:/University/ca-A00269349/Rogue/Armour.h" bodystart="7" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67aeb9724671a53a074e70378ac1d2596c7" prot="public" virt="non-virtual"><scope>Weapon</scope><name>ARMOUR</name></member>
+      <member refid="class_weapon_1aa3a7809b2c34df9d7775f57f7560c106" prot="public" virt="non-virtual"><scope>Weapon</scope><name>CreateNewWeapon</name></member>
+      <member refid="class_weapon_1a2dd096e208c2827552c41cad1f47e8e3" prot="public" virt="non-virtual"><scope>Weapon</scope><name>GenerateRandomNumber</name></member>
+      <member refid="class_weapon_1a6b683bce956944a128d3ee25a88c7ac1" prot="public" virt="non-virtual"><scope>Weapon</scope><name>name</name></member>
+      <member refid="class_weapon_1a23087012d905e32bbb224e49055a7181" prot="public" virt="non-virtual"><scope>Weapon</scope><name>SetStrength</name></member>
+      <member refid="class_weapon_1ab1b14ca4579850bf0385c3e94ba35e57" prot="public" virt="non-virtual"><scope>Weapon</scope><name>SetWeaponName</name></member>
+      <member refid="class_weapon_1a6b2437dd9e5541ef6f40ce35d96477c7" prot="public" virt="non-virtual"><scope>Weapon</scope><name>SetWeaponType</name></member>
+      <member refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67aaeec0571fea89fdc7c3ae39b79dca509" prot="public" virt="non-virtual"><scope>Weapon</scope><name>SHIELD</name></member>
+      <member refid="class_weapon_1a4a9381f1b461ca75cf0928defe49fbc0" prot="public" virt="non-virtual"><scope>Weapon</scope><name>strength</name></member>
+      <member refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67a5e2dfc2ac99436acad58f856b0d0411a" prot="public" virt="non-virtual"><scope>Weapon</scope><name>SWORD</name></member>
+      <member refid="class_weapon_1a834aaff0b69ffac71d827ff6b62cbe8c" prot="private" virt="non-virtual"><scope>Weapon</scope><name>SYMBOL</name></member>
+      <member refid="class_weapon_1a42dbc46dd70319a24763992c4ebbd396" prot="public" virt="non-virtual"><scope>Weapon</scope><name>Weapon</name></member>
+      <member refid="class_weapon_1ae6618a552c19d68197e216b2926637a8" prot="public" virt="non-virtual"><scope>Weapon</scope><name>WEAPON_NAME_CHOICES</name></member>
+      <member refid="class_weapon_1a0bfb82517497d5ff8c7d31786875de67" prot="public" virt="non-virtual"><scope>Weapon</scope><name>WEAPON_TYPE</name></member>
+      <member refid="class_weapon_1a378d7783971053b498d26d456f5c3bb7" prot="public" virt="non-virtual"><scope>Weapon</scope><name>WEAPON_TYPE_SELECTED</name></member>
+      <member refid="class_weapon_1a9f519847c0970ed12ffdb22b2de6162b" prot="public" virt="non-virtual"><scope>Weapon</scope><name>weight</name></member>
+      <member refid="class_weapon_1a420e7ba3d2017e6de3e93eb579cfd3fa" prot="public" virt="non-virtual"><scope>Weapon</scope><name>~Weapon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

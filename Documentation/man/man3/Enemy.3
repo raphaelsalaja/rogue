@@ -1,0 +1,118 @@
+.TH "Enemy" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Enemy
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Enemy\&.h>\fP
+.PP
+Inherits \fBNonPlayableCharacter\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBEnemy\fP (int x, int y)"
+.br
+.ti -1c
+.RI "void \fBPrintDetails\fP (\fBMapManager\fP &m)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSetNamesArray\fP () override"
+.br
+.ti -1c
+.RI "void \fBSetPassive\fP () override"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line \fB5\fP of file \fBEnemy\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Enemy::Enemy (int x, int y)"
+
+.PP
+Definition at line \fB44\fP of file \fBEnemy\&.cpp\fP\&.
+.PP
+.nf
+45 {
+46     Enemy::SetPassive();
+47     Enemy::SetNamesArray();
+48     SetPosition(x, y);
+49     SetHealth();
+50     SetSpeed();
+51     SetStrength();
+52     SetName();
+53 }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void Enemy::PrintDetails (\fBMapManager\fP & m)"
+
+.PP
+Definition at line \fB6\fP of file \fBEnemy\&.cpp\fP\&.
+.PP
+.nf
+7 {
+8     string name = "ENGAGED WITH " + GetName();
+9     Macro::GoToScreenPosition(45, m\&.height + 3);
+10     std::cout << name;
+11 
+12     Macro::GoToScreenPosition(45, m\&.height + 5);
+13     string health = "THEY HAVE A HEALTH OF " + std::to_string(GetHealth());
+14     std::cout << health;
+15 
+16     Macro::GoToScreenPosition(45, m\&.height + 7);
+17     string damage = "THEY POSSES A STRENGTH OF " + std::to_string(GetDamage());
+18     std::cout << damage;
+19 }
+.fi
+.SS "void Enemy::SetNamesArray ()\fC [override]\fP, \fC [private]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBNonPlayableCharacter\fP\&.
+.PP
+Definition at line \fB21\fP of file \fBEnemy\&.cpp\fP\&.
+.PP
+.nf
+22 {
+23     int array_size = 20;
+24     int index = 0;
+25     string current_line;
+26     ifstream myfile("NPC_EnemyNames\&.txt");
+27     if (myfile\&.is_open())
+28     {
+29         while (!myfile\&.eof())
+30         {
+31             getline(myfile, current_line);
+32             name_array[index] = current_line;
+33             index++;
+34         }
+35         myfile\&.close();
+36     }
+37 }
+.fi
+.SS "void Enemy::SetPassive ()\fC [override]\fP, \fC [private]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBNonPlayableCharacter\fP\&.
+.PP
+Definition at line \fB39\fP of file \fBEnemy\&.cpp\fP\&.
+.PP
+.nf
+40 {
+41     passive = false;
+42 }
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

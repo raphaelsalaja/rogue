@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__combat_manager_8cpp_source" xml:lang="en-US">
+<title>CombatManager.cpp</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/CombatManager.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__combat_manager_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__combat_manager_8h">CombatManager.h</link>&quot;</emphasis>
+<anchor xml:id="__combat_manager_8cpp_source_1l00002"/>00002 
+<anchor xml:id="__combat_manager_8cpp_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+<anchor xml:id="__combat_manager_8cpp_source_1l00004"/>00004 
+<anchor xml:id="__combat_manager_8cpp_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__macro_8h">Macro.h</link>&quot;</emphasis>
+<anchor xml:id="__combat_manager_8cpp_source_1l00006"/>00006 
+<anchor xml:id="__combat_manager_8cpp_source_1l00007"/><link linkend="_class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80">00007</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_combat_manager_1a51e91e52ad5e5de28ffc17ee50af5c80">CombatManager::Fight</link>(<link linkend="_class_player">Player</link>&amp;&#32;p,&#32;<link linkend="_class_map_manager">MapManager</link>&amp;&#32;m,&#32;<link linkend="_class_enemy">Enemy</link>&amp;&#32;e)
+<anchor xml:id="__combat_manager_8cpp_source_1l00008"/>00008 {
+<anchor xml:id="__combat_manager_8cpp_source_1l00009"/>00009 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">switch</emphasis>&#32;(<link linkend="_class_combat_manager_1a3c0b56cc5d4af6dde4aa585ebfd74f3e">_TURN</link>)
+<anchor xml:id="__combat_manager_8cpp_source_1l00010"/>00010 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__combat_manager_8cpp_source_1l00011"/>00011 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<link linkend="_class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11">PLAYER</link>:&#32;<link linkend="_class_combat_manager_1a2f5d5d9a45933a6e234bc3154fd6f894">HitEnemy</link>(e,&#32;p);
+<anchor xml:id="__combat_manager_8cpp_source_1l00012"/>00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73">PrintStatements</link>(m,&#32;e,&#32;p,&#32;1);
+<anchor xml:id="__combat_manager_8cpp_source_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1aec72d4fe1af9857010fb793735c145db">UpdateResults</link>(e,&#32;p);
+<anchor xml:id="__combat_manager_8cpp_source_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_combat_manager_1a33cdc2357ba9ee866a38dcec4a10845f">_RESULTS</link>&#32;==&#32;<link linkend="_class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c">ENEMY_DEAD</link>)
+<anchor xml:id="__combat_manager_8cpp_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__combat_manager_8cpp_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73">PrintStatements</link>(m,&#32;e,&#32;p,&#32;6);
+<anchor xml:id="__combat_manager_8cpp_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(p.<link linkend="_class_player_1afabc272a584435771820c92f2c8308f1">in_combat</link>)
+<anchor xml:id="__combat_manager_8cpp_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__combat_manager_8cpp_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(GetKeyState(VK_RETURN)&#32;&amp;&#32;0x8000)
+<anchor xml:id="__combat_manager_8cpp_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__combat_manager_8cpp_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;p.<link linkend="_class_player_1afabc272a584435771820c92f2c8308f1">in_combat</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__combat_manager_8cpp_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__combat_manager_8cpp_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__combat_manager_8cpp_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73">PrintStatements</link>(m,&#32;e,&#32;p,&#32;2);
+<anchor xml:id="__combat_manager_8cpp_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1aa470a607a6d3d76cef5d62c8f312d513">SetTurn</link>(<link linkend="_class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b">ENEMY</link>);
+<anchor xml:id="__combat_manager_8cpp_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00029"/>00029 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<link linkend="_class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda6a09beea39eedb6d013d2e53e5a17f0b">ENEMY</link>:&#32;<link linkend="_class_combat_manager_1aa3041a8bdc3eeddce47ef1eb0cd93899">HitPlayer</link>(e,&#32;p);
+<anchor xml:id="__combat_manager_8cpp_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73">PrintStatements</link>(m,&#32;e,&#32;p,&#32;3);
+<anchor xml:id="__combat_manager_8cpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1aec72d4fe1af9857010fb793735c145db">UpdateResults</link>(e,&#32;p);
+<anchor xml:id="__combat_manager_8cpp_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_combat_manager_1a33cdc2357ba9ee866a38dcec4a10845f">_RESULTS</link>&#32;==&#32;<link linkend="_class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954">PLAYER_DEAD</link>)
+<anchor xml:id="__combat_manager_8cpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__combat_manager_8cpp_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73">PrintStatements</link>(m,&#32;e,&#32;p,&#32;5);
+<anchor xml:id="__combat_manager_8cpp_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(p.<link linkend="_class_player_1afabc272a584435771820c92f2c8308f1">in_combat</link>)
+<anchor xml:id="__combat_manager_8cpp_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__combat_manager_8cpp_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(GetKeyState(VK_RETURN)&#32;&amp;&#32;0x8000)
+<anchor xml:id="__combat_manager_8cpp_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__combat_manager_8cpp_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;p.<link linkend="_class_player_1afabc272a584435771820c92f2c8308f1">in_combat</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;exit(1);
+<anchor xml:id="__combat_manager_8cpp_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__combat_manager_8cpp_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__combat_manager_8cpp_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__combat_manager_8cpp_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73">PrintStatements</link>(m,&#32;e,&#32;p,&#32;4);
+<anchor xml:id="__combat_manager_8cpp_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1aa470a607a6d3d76cef5d62c8f312d513">SetTurn</link>(<link linkend="_class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fda5beb28d13531f4b54882d3bbbaa0bc11">PLAYER</link>);
+<anchor xml:id="__combat_manager_8cpp_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00048"/>00048 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__combat_manager_8cpp_source_1l00049"/>00049 }
+<anchor xml:id="__combat_manager_8cpp_source_1l00050"/>00050 
+<anchor xml:id="__combat_manager_8cpp_source_1l00051"/><link linkend="_class_combat_manager_1aa470a607a6d3d76cef5d62c8f312d513">00051</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_combat_manager_1aa470a607a6d3d76cef5d62c8f312d513">CombatManager::SetTurn</link>(<link linkend="_class_combat_manager_1acde31a45b88a1e3021804c52e19cd8fd">TURN</link>&#32;desired_turn)
+<anchor xml:id="__combat_manager_8cpp_source_1l00052"/>00052 {
+<anchor xml:id="__combat_manager_8cpp_source_1l00053"/>00053 &#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a3c0b56cc5d4af6dde4aa585ebfd74f3e">_TURN</link>&#32;=&#32;desired_turn;
+<anchor xml:id="__combat_manager_8cpp_source_1l00054"/>00054 }
+<anchor xml:id="__combat_manager_8cpp_source_1l00055"/>00055 
+<anchor xml:id="__combat_manager_8cpp_source_1l00056"/><link linkend="_class_combat_manager_1a2f5d5d9a45933a6e234bc3154fd6f894">00056</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_combat_manager_1a2f5d5d9a45933a6e234bc3154fd6f894">CombatManager::HitEnemy</link>(<link linkend="_class_enemy">Enemy</link>&amp;&#32;e,&#32;<link linkend="_class_player">Player</link>&amp;&#32;p)
+<anchor xml:id="__combat_manager_8cpp_source_1l00057"/>00057 {
+<anchor xml:id="__combat_manager_8cpp_source_1l00058"/>00058 &#32;&#32;&#32;&#32;e.<link linkend="_class_non_playable_character_1aa18f226b35b28bd1ad318642a758abe2">SetDesiredHealth</link>(e.<link linkend="_class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37">GetHealth</link>()&#32;-&#32;(p.<link linkend="_class_player_1a23faf24de68cf7d62a8b726a3c181ef0">GetDamage</link>()));
+<anchor xml:id="__combat_manager_8cpp_source_1l00059"/>00059 &#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a72df0ea85034f84597c1760d9af631af">SleepTimer</link>();
+<anchor xml:id="__combat_manager_8cpp_source_1l00060"/>00060 }
+<anchor xml:id="__combat_manager_8cpp_source_1l00061"/>00061 
+<anchor xml:id="__combat_manager_8cpp_source_1l00062"/><link linkend="_class_combat_manager_1aa3041a8bdc3eeddce47ef1eb0cd93899">00062</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_combat_manager_1aa3041a8bdc3eeddce47ef1eb0cd93899">CombatManager::HitPlayer</link>(<link linkend="_class_enemy">Enemy</link>&amp;&#32;e,&#32;<link linkend="_class_player">Player</link>&amp;&#32;p)
+<anchor xml:id="__combat_manager_8cpp_source_1l00063"/>00063 {
+<anchor xml:id="__combat_manager_8cpp_source_1l00064"/>00064 &#32;&#32;&#32;&#32;p.<link linkend="_class_player_1a02ec140e8f48a44f442e97eb2a19a00e">SetDesiredHealth</link>(p.<link linkend="_class_player_1a8d962e02bc35d6181940a8aaf7a1a510">GetHealth</link>()&#32;-&#32;e.<link linkend="_class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f">GetDamage</link>());
+<anchor xml:id="__combat_manager_8cpp_source_1l00065"/>00065 &#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a72df0ea85034f84597c1760d9af631af">SleepTimer</link>();
+<anchor xml:id="__combat_manager_8cpp_source_1l00066"/>00066 }
+<anchor xml:id="__combat_manager_8cpp_source_1l00067"/>00067 
+<anchor xml:id="__combat_manager_8cpp_source_1l00068"/><link linkend="_class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73">00068</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_combat_manager_1a81d053576ebaa53529fa9c6c8280ae73">CombatManager::PrintStatements</link>(<link linkend="_class_map_manager">MapManager</link>&amp;&#32;m,&#32;<link linkend="_class_enemy">Enemy</link>&amp;&#32;e,&#32;<link linkend="_class_player">Player</link>&amp;&#32;p,&#32;<emphasis role="keywordtype">int</emphasis>&#32;statements)
+<anchor xml:id="__combat_manager_8cpp_source_1l00069"/>00069 {
+<anchor xml:id="__combat_manager_8cpp_source_1l00070"/>00070 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;statement;
+<anchor xml:id="__combat_manager_8cpp_source_1l00071"/>00071 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">switch</emphasis>&#32;(statements)
+<anchor xml:id="__combat_manager_8cpp_source_1l00072"/>00072 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__combat_manager_8cpp_source_1l00073"/>00073 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;1:&#32;statement&#32;=&#32;<emphasis role="stringliteral">&quot;YOU&#32;HIT&#32;&quot;</emphasis>&#32;+&#32;e.<link linkend="_class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8">GetName</link>()&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;WITH&#32;&quot;</emphasis>&#32;+&#32;std::to_string(p.<link linkend="_class_player_1a23faf24de68cf7d62a8b726a3c181ef0">GetDamage</link>())&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;DAMAGE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&quot;</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00074"/>00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">Macro::GoToScreenPosition</link>(45,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;3);
+<anchor xml:id="__combat_manager_8cpp_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a72df0ea85034f84597c1760d9af631af">SleepTimer</link>();
+<anchor xml:id="__combat_manager_8cpp_source_1l00076"/>00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;statement;
+<anchor xml:id="__combat_manager_8cpp_source_1l00077"/>00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00078"/>00078 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;2:&#32;statement&#32;=&#32;e.<link linkend="_class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8">GetName</link>()&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;NOW&#32;HAS&#32;&quot;</emphasis>&#32;+&#32;std::to_string(e.<link linkend="_class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37">GetHealth</link>())&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;HEALTH&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&quot;</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00079"/>00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">Macro::GoToScreenPosition</link>(45,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;3);
+<anchor xml:id="__combat_manager_8cpp_source_1l00080"/>00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a72df0ea85034f84597c1760d9af631af">SleepTimer</link>();
+<anchor xml:id="__combat_manager_8cpp_source_1l00081"/>00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;statement;
+<anchor xml:id="__combat_manager_8cpp_source_1l00082"/>00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00083"/>00083 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;3:&#32;statement&#32;=&#32;e.<link linkend="_class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8">GetName</link>()&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;HIT&#32;YOU&#32;WITH&#32;&quot;</emphasis>&#32;+&#32;std::to_string(e.<link linkend="_class_non_playable_character_1a39c610c17e10c8ee1b6bb03d65ed032f">GetDamage</link>())&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;DAMAGE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&quot;</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00084"/>00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">Macro::GoToScreenPosition</link>(45,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;3);
+<anchor xml:id="__combat_manager_8cpp_source_1l00085"/>00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a72df0ea85034f84597c1760d9af631af">SleepTimer</link>();
+<anchor xml:id="__combat_manager_8cpp_source_1l00086"/>00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;statement;
+<anchor xml:id="__combat_manager_8cpp_source_1l00087"/>00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00088"/>00088 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;4:&#32;statement&#32;=&#32;<emphasis role="stringliteral">&quot;YOU&#32;NOW&#32;HAVE&#32;&quot;</emphasis>&#32;+&#32;std::to_string(p.<link linkend="_class_player_1a8d962e02bc35d6181940a8aaf7a1a510">GetHealth</link>())&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;HEALTH&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&quot;</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00089"/>00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">Macro::GoToScreenPosition</link>(45,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;3);
+<anchor xml:id="__combat_manager_8cpp_source_1l00090"/>00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a72df0ea85034f84597c1760d9af631af">SleepTimer</link>();
+<anchor xml:id="__combat_manager_8cpp_source_1l00091"/>00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;statement;
+<anchor xml:id="__combat_manager_8cpp_source_1l00092"/>00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00093"/>00093 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;5:&#32;statement&#32;=&#32;<emphasis role="stringliteral">&quot;YOU&#32;HAVE&#32;DIED,&#32;PRESS&#32;ENTER&#32;TO&#32;QUIT&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&quot;</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00094"/>00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">Macro::GoToScreenPosition</link>(45,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;3);
+<anchor xml:id="__combat_manager_8cpp_source_1l00095"/>00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a72df0ea85034f84597c1760d9af631af">SleepTimer</link>();
+<anchor xml:id="__combat_manager_8cpp_source_1l00096"/>00096 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;statement;
+<anchor xml:id="__combat_manager_8cpp_source_1l00097"/>00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00098"/>00098 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;6:&#32;statement&#32;=&#32;e.<link linkend="_class_non_playable_character_1aedf794670e71a33011caefd1d321a8f8">GetName</link>()&#32;+&#32;<emphasis role="stringliteral">&quot;&#32;HAS&#32;DIED,&#32;PRESS&#32;ENTER&#32;TO&#32;CONTINUE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&quot;</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00099"/>00099 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespace_macro_1a86a559b7afd1b6babc93aeb1177b6509">Macro::GoToScreenPosition</link>(45,&#32;m.<link linkend="_class_map_manager_1a7a76d70f8325aa5f385dcba73afacc27">height</link>&#32;+&#32;3);
+<anchor xml:id="__combat_manager_8cpp_source_1l00100"/>00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a72df0ea85034f84597c1760d9af631af">SleepTimer</link>();
+<anchor xml:id="__combat_manager_8cpp_source_1l00101"/>00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;statement;
+<anchor xml:id="__combat_manager_8cpp_source_1l00102"/>00102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00103"/>00103 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__combat_manager_8cpp_source_1l00104"/>00104 }
+<anchor xml:id="__combat_manager_8cpp_source_1l00105"/>00105 
+<anchor xml:id="__combat_manager_8cpp_source_1l00106"/><link linkend="_class_combat_manager_1aec72d4fe1af9857010fb793735c145db">00106</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_combat_manager_1aec72d4fe1af9857010fb793735c145db">CombatManager::UpdateResults</link>(<link linkend="_class_enemy">Enemy</link>&amp;&#32;e,&#32;<link linkend="_class_player">Player</link>&amp;&#32;p)
+<anchor xml:id="__combat_manager_8cpp_source_1l00107"/>00107 {
+<anchor xml:id="__combat_manager_8cpp_source_1l00108"/>00108 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(p.<link linkend="_class_player_1a8d962e02bc35d6181940a8aaf7a1a510">GetHealth</link>()&#32;&lt;=&#32;0)
+<anchor xml:id="__combat_manager_8cpp_source_1l00109"/>00109 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__combat_manager_8cpp_source_1l00110"/>00110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a33cdc2357ba9ee866a38dcec4a10845f">_RESULTS</link>&#32;=&#32;<link linkend="_class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019ae863865bf288d97accbc76f353d79954">PLAYER_DEAD</link>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00111"/>00111 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__combat_manager_8cpp_source_1l00112"/>00112 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(e.<link linkend="_class_non_playable_character_1ab0ab52f45551b75625bdf02e65d3ef37">GetHealth</link>()&#32;&lt;=&#32;0)
+<anchor xml:id="__combat_manager_8cpp_source_1l00113"/>00113 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__combat_manager_8cpp_source_1l00114"/>00114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_combat_manager_1a33cdc2357ba9ee866a38dcec4a10845f">_RESULTS</link>&#32;=&#32;<link linkend="_class_combat_manager_1a4d11c7c10cb5a7e601acb14a69145019a351d4236ef6bf822b61611e0e639179c">ENEMY_DEAD</link>;
+<anchor xml:id="__combat_manager_8cpp_source_1l00115"/>00115 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__combat_manager_8cpp_source_1l00116"/>00116 }
+<anchor xml:id="__combat_manager_8cpp_source_1l00117"/>00117 
+<anchor xml:id="__combat_manager_8cpp_source_1l00118"/><link linkend="_class_combat_manager_1a72df0ea85034f84597c1760d9af631af">00118</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_combat_manager_1a72df0ea85034f84597c1760d9af631af">CombatManager::SleepTimer</link>()
+<anchor xml:id="__combat_manager_8cpp_source_1l00119"/>00119 {
+<anchor xml:id="__combat_manager_8cpp_source_1l00120"/>00120 &#32;&#32;&#32;&#32;Sleep(1000);
+<anchor xml:id="__combat_manager_8cpp_source_1l00121"/>00121 }
+</programlisting></section>

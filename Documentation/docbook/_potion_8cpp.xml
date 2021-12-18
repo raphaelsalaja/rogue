@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__potion_8cpp" xml:lang="en-US">
+<title>D:/University/ca-A00269349/Rogue/Potion.cpp File Reference</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/Potion.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;string&gt;
+#include &lt;ctime&gt;
+#include &lt;cstdlib&gt;
+#include &quot;Potion.h&quot;
+</programlisting>Include dependency graph for Potion.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_potion_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>

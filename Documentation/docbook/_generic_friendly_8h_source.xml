@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__generic_friendly_8h_source" xml:lang="en-US">
+<title>GenericFriendly.h</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/GenericFriendly.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__generic_friendly_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="__generic_friendly_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__non_playable_character_8h">NonPlayableCharacter.h</link>&quot;</emphasis>
+<anchor xml:id="__generic_friendly_8h_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&lt;fstream&gt;</emphasis>
+<anchor xml:id="__generic_friendly_8h_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__map_manager_8h">MapManager.h</link>&quot;</emphasis>
+<anchor xml:id="__generic_friendly_8h_source_1l00005"/>00005 
+<anchor xml:id="__generic_friendly_8h_source_1l00006"/>00006 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_map_manager">MapManager</link>;
+<anchor xml:id="__generic_friendly_8h_source_1l00007"/>00007 
+<anchor xml:id="__generic_friendly_8h_source_1l00008"/><link linkend="_class_generic_friendly">00008</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_generic_friendly">GenericFriendly</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_non_playable_character">NonPlayableCharacter</link>
+<anchor xml:id="__generic_friendly_8h_source_1l00009"/>00009 {
+<anchor xml:id="__generic_friendly_8h_source_1l00010"/>00010 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="__generic_friendly_8h_source_1l00011"/>00011 &#32;&#32;&#32;&#32;<link linkend="_class_generic_friendly_1af024c04814e88cb748cd4c21aad5589d">GenericFriendly</link>(<emphasis role="keywordtype">int</emphasis>&#32;postition);
+<anchor xml:id="__generic_friendly_8h_source_1l00012"/><link linkend="_class_generic_friendly_1a1da9785ab879ae2c7ab351b6a446a01a">00012</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_generic_friendly_1a1da9785ab879ae2c7ab351b6a446a01a">messages_array</link>[20]{};
+<anchor xml:id="__generic_friendly_8h_source_1l00013"/><link linkend="_class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3">00013</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_generic_friendly_1abb44cd4a29fa58818981fd3a25e8b3f3">message</link>;
+<anchor xml:id="__generic_friendly_8h_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_generic_friendly_1adb5700625348a3c03f4623c6b3f1519b">PrintMessage</link>(<link linkend="_class_map_manager">MapManager</link>&amp;&#32;m);
+<anchor xml:id="__generic_friendly_8h_source_1l00015"/>00015 
+<anchor xml:id="__generic_friendly_8h_source_1l00016"/>00016 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_generic_friendly_1a2e643ee12c7b86ac61f1d11439152b2b">GetMessage</link>();
+<anchor xml:id="__generic_friendly_8h_source_1l00017"/>00017 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="__generic_friendly_8h_source_1l00018"/>00018 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_generic_friendly_1a25b0d8bf58615b603725dfb44a7bd31f">SetNamesArray</link>()&#32;<emphasis role="keyword">override</emphasis>;
+<anchor xml:id="__generic_friendly_8h_source_1l00019"/>00019 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_generic_friendly_1a495283c40fe995eafc8209c32303b14d">SetPassive</link>()&#32;<emphasis role="keyword">override</emphasis>;
+<anchor xml:id="__generic_friendly_8h_source_1l00020"/>00020 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_generic_friendly_1abc234ce189ecbe2dd67798367a478ec6">SetMessages</link>();
+<anchor xml:id="__generic_friendly_8h_source_1l00021"/>00021 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_generic_friendly_1aa34e4c712d03f91ea3069dd007d91366">SetRandomMessage</link>();
+<anchor xml:id="__generic_friendly_8h_source_1l00022"/>00022 };
+</programlisting></section>

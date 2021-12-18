@@ -1,0 +1,198 @@
+\hypertarget{class_enemy}{}\doxysection{Enemy Class Reference}
+\label{class_enemy}\index{Enemy@{Enemy}}
+
+
+{\ttfamily \#include $<$Enemy.\+h$>$}
+
+
+
+Inheritance diagram for Enemy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_enemy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Enemy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_enemy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_enemy_a98f0d2110309536798101b88d2d1d8c9}{Enemy}} (int x, int y)
+\item 
+void \mbox{\hyperlink{class_enemy_ac7ed9a6bf787591c189fdc9799f85e7c}{Print\+Details}} (\mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&m)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_a9c1d6efc8b2099d83797600d67a52017}{Set\+Names\+Array}} () override
+\item 
+void \mbox{\hyperlink{class_enemy_a01f5ffaa127a837d3f315ff3910a9f28}{Set\+Passive}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_enemy_8h_source_l00005}{5}} of file \mbox{\hyperlink{_enemy_8h_source}{Enemy.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_enemy_a98f0d2110309536798101b88d2d1d8c9}\label{class_enemy_a98f0d2110309536798101b88d2d1d8c9}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_enemy_8cpp_source_l00044}{44}} of file \mbox{\hyperlink{_enemy_8cpp_source}{Enemy.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00045}00045 \{}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00046}00046     \mbox{\hyperlink{class_enemy_a01f5ffaa127a837d3f315ff3910a9f28}{Enemy::SetPassive}}();}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00047}00047     \mbox{\hyperlink{class_enemy_a9c1d6efc8b2099d83797600d67a52017}{Enemy::SetNamesArray}}();}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00048}00048     \mbox{\hyperlink{class_non_playable_character_a6ebdc6b058ea5dafe65132dd9ee46e6e}{SetPosition}}(x, y);}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00049}00049     \mbox{\hyperlink{class_non_playable_character_a017d601103d2bc66a6338073a051cab7}{SetHealth}}();}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00050}00050     \mbox{\hyperlink{class_non_playable_character_a98e1d2355f2a3617b6a7a25ee737ee3e}{SetSpeed}}();}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00051}00051     \mbox{\hyperlink{class_non_playable_character_a9d5a16ef76a0e3339fd4ffc5d85bd8e2}{SetStrength}}();}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00052}00052     \mbox{\hyperlink{class_non_playable_character_a243b776f7671fc3458bf9ef6f9925875}{SetName}}();}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00053}00053 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enemy_a98f0d2110309536798101b88d2d1d8c9_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_ac7ed9a6bf787591c189fdc9799f85e7c}\label{class_enemy_ac7ed9a6bf787591c189fdc9799f85e7c}} 
+\index{Enemy@{Enemy}!PrintDetails@{PrintDetails}}
+\index{PrintDetails@{PrintDetails}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{PrintDetails()}{PrintDetails()}}
+{\footnotesize\ttfamily void Enemy\+::\+Print\+Details (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_enemy_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{_enemy_8cpp_source}{Enemy.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00007}00007 \{}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00008}00008     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_non_playable_character_a96182e6ac96d74025aec58b5c03f3824}{name}} = \textcolor{stringliteral}{"{}ENGAGED WITH "{}} + \mbox{\hyperlink{class_non_playable_character_aedf794670e71a33011caefd1d321a8f8}{GetName}}();}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00009}00009     \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 3);}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00010}00010     std::cout << \mbox{\hyperlink{class_non_playable_character_a96182e6ac96d74025aec58b5c03f3824}{name}};}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{class_enemy_l00012}00012     \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 5);}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00013}00013     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_non_playable_character_aba25d6a44e649f3aa1aea32cd46191fa}{health}} = \textcolor{stringliteral}{"{}THEY HAVE A HEALTH OF "{}} + std::to\_string(\mbox{\hyperlink{class_non_playable_character_ab0ab52f45551b75625bdf02e65d3ef37}{GetHealth}}());}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00014}00014     std::cout << \mbox{\hyperlink{class_non_playable_character_aba25d6a44e649f3aa1aea32cd46191fa}{health}};}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{class_enemy_l00016}00016     \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{Macro::GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 7);}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00017}00017     \textcolor{keywordtype}{string} damage = \textcolor{stringliteral}{"{}THEY POSSES A STRENGTH OF "{}} + std::to\_string(\mbox{\hyperlink{class_non_playable_character_a39c610c17e10c8ee1b6bb03d65ed032f}{GetDamage}}());}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00018}00018     std::cout << damage;}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00019}00019 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enemy_ac7ed9a6bf787591c189fdc9799f85e7c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enemy_ac7ed9a6bf787591c189fdc9799f85e7c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_enemy_a9c1d6efc8b2099d83797600d67a52017}\label{class_enemy_a9c1d6efc8b2099d83797600d67a52017}} 
+\index{Enemy@{Enemy}!SetNamesArray@{SetNamesArray}}
+\index{SetNamesArray@{SetNamesArray}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{SetNamesArray()}{SetNamesArray()}}
+{\footnotesize\ttfamily void Enemy\+::\+Set\+Names\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_non_playable_character_af4fe8de9174af90d1a0088373d0e35c0}{Non\+Playable\+Character}}.
+
+
+
+Definition at line \mbox{\hyperlink{_enemy_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{_enemy_8cpp_source}{Enemy.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00022}00022 \{}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00023}00023     \textcolor{keywordtype}{int} array\_size = 20;}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00024}00024     \textcolor{keywordtype}{int} index = 0;}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00025}00025     \textcolor{keywordtype}{string} current\_line;}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00026}00026     ifstream myfile(\textcolor{stringliteral}{"{}NPC\_EnemyNames.txt"{}});}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00027}00027     \textcolor{keywordflow}{if} (myfile.is\_open())}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00028}00028     \{}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00029}00029         \textcolor{keywordflow}{while} (!myfile.eof())}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00030}00030         \{}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00031}00031             getline(myfile, current\_line);}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00032}00032             \mbox{\hyperlink{class_non_playable_character_a7e5848d6face873445553e3731da84be}{name\_array}}[index] = current\_line;}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00033}00033             index++;}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00034}00034         \}}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00035}00035         myfile.close();}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00036}00036     \}}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00037}00037 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_enemy_a9c1d6efc8b2099d83797600d67a52017_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_enemy_a01f5ffaa127a837d3f315ff3910a9f28}\label{class_enemy_a01f5ffaa127a837d3f315ff3910a9f28}} 
+\index{Enemy@{Enemy}!SetPassive@{SetPassive}}
+\index{SetPassive@{SetPassive}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{SetPassive()}{SetPassive()}}
+{\footnotesize\ttfamily void Enemy\+::\+Set\+Passive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_non_playable_character_a355f7bc2a43563faec957553fa4fd1e7}{Non\+Playable\+Character}}.
+
+
+
+Definition at line \mbox{\hyperlink{_enemy_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{_enemy_8cpp_source}{Enemy.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00040}00040 \{}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00041}00041     \mbox{\hyperlink{class_non_playable_character_ac457178995a1ed93cdc8fdb38e916000}{passive}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_enemy_l00042}00042 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_enemy_a01f5ffaa127a837d3f315ff3910a9f28_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_enemy_8h}{Enemy.\+h}}\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_enemy_8cpp}{Enemy.\+cpp}}\end{DoxyCompactItemize}

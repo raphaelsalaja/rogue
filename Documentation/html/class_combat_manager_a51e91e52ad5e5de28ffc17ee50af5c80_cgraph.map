@@ -1,0 +1,17 @@
+<map id="CombatManager::Fight" name="CombatManager::Fight">
+<area shape="rect" id="node1" title=" " alt="" coords="5,259,160,285"/>
+<area shape="rect" id="node2" href="$class_combat_manager.html#a2f5d5d9a45933a6e234bc3154fd6f894" title=" " alt="" coords="226,157,409,184"/>
+<area shape="rect" id="node7" href="$class_combat_manager.html#aa3041a8bdc3eeddce47ef1eb0cd93899" title=" " alt="" coords="228,309,407,336"/>
+<area shape="rect" id="node11" href="$class_combat_manager.html#a81d053576ebaa53529fa9c6c8280ae73" title=" " alt="" coords="208,208,427,235"/>
+<area shape="rect" id="node14" href="$class_combat_manager.html#aa470a607a6d3d76cef5d62c8f312d513" title=" " alt="" coords="232,360,403,387"/>
+<area shape="rect" id="node15" href="$class_combat_manager.html#aec72d4fe1af9857010fb793735c145db" title=" " alt="" coords="212,259,423,285"/>
+<area shape="rect" id="node3" href="$class_player.html#a23faf24de68cf7d62a8b726a3c181ef0" title=" " alt="" coords="537,56,673,83"/>
+<area shape="rect" id="node4" href="$class_non_playable_character.html#ab0ab52f45551b75625bdf02e65d3ef37" title=" " alt="" coords="496,208,713,235"/>
+<area shape="rect" id="node5" href="$class_non_playable_character.html#aa18f226b35b28bd1ad318642a758abe2" title=" " alt="" coords="475,5,735,32"/>
+<area shape="rect" id="node6" href="$class_combat_manager.html#a72df0ea85034f84597c1760d9af631af" title=" " alt="" coords="509,259,700,285"/>
+<area shape="rect" id="node8" href="$class_non_playable_character.html#a39c610c17e10c8ee1b6bb03d65ed032f" title=" " alt="" coords="491,309,719,336"/>
+<area shape="rect" id="node9" href="$class_player.html#a8d962e02bc35d6181940a8aaf7a1a510" title=" " alt="" coords="542,360,667,387"/>
+<area shape="rect" id="node10" href="$class_player.html#a02ec140e8f48a44f442e97eb2a19a00e" title=" " alt="" coords="521,411,689,437"/>
+<area shape="rect" id="node12" href="$class_non_playable_character.html#aedf794670e71a33011caefd1d321a8f8" title=" " alt="" coords="497,107,712,133"/>
+<area shape="rect" id="node13" href="$namespace_macro.html#a86a559b7afd1b6babc93aeb1177b6509" title=" " alt="" coords="511,157,698,184"/>
+</map>

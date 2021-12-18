@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__player_8h" xml:lang="en-US">
+<title>D:/University/ca-A00269349/Rogue/Player.h File Reference</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue/Player.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;InventoryManager.h&quot;
+#include &quot;ConsoleWindowManager.h&quot;
+#include &quot;UserInterfaceManger.h&quot;
+#include &quot;Enemy.h&quot;
+#include &quot;GenericFriendly.h&quot;
+#include &quot;CombatManager.h&quot;
+</programlisting>Include dependency graph for Player.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_player_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_player_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_player">Player</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

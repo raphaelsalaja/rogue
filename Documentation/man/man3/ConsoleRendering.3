@@ -1,0 +1,316 @@
+.TH "ConsoleRendering" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ConsoleRendering
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ConsoleRendering\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBRender_All\fP (\fBConsoleWindowManager\fP &c, \fBMapManager\fP &m, \fBPlayer\fP &p, \fBInventoryManager\fP &i, \fBUserInterfaceManager\fP &ui)"
+.br
+.ti -1c
+.RI "void \fBRender_GUI\fP (\fBMapManager\fP &m, \fBInventoryManager\fP &i)"
+.br
+.ti -1c
+.RI "void \fBRender_Stats\fP (\fBMapManager\fP &m, \fBPlayer\fP &p, \fBInventoryManager\fP &i, \fBUserInterfaceManager\fP &ui)"
+.br
+.ti -1c
+.RI "void \fBRender_Inventory\fP (\fBConsoleWindowManager\fP &c, \fBMapManager\fP &m, \fBInventoryManager\fP &i, \fBUserInterfaceManager\fP &ui)"
+.br
+.ti -1c
+.RI "void \fBRender_Actions\fP (\fBMapManager\fP &m, \fBInventoryManager\fP &i, \fBUserInterfaceManager\fP &ui)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBPrint_Actions_GUI\fP (\fBMapManager\fP &m, \fBInventoryManager\fP &i, \fBUserInterfaceManager\fP &ui)"
+.br
+.ti -1c
+.RI "void \fBPrint_Stats\fP (\fBMapManager\fP &m, \fBPlayer\fP &p, \fBInventoryManager\fP &i, \fBUserInterfaceManager\fP &ui)"
+.br
+.ti -1c
+.RI "void \fBPrint_Inventory\fP (\fBInventoryManager\fP &i, \fBUserInterfaceManager\fP &ui)"
+.br
+.ti -1c
+.RI "void \fBPrint_Actions\fP (char action, \fBMapManager\fP &m)"
+.br
+.ti -1c
+.RI "void \fBCreate_Stats_GUI\fP (std::string &inventory)"
+.br
+.ti -1c
+.RI "void \fBCreate_Inventory_GUI\fP (std::string &inventory)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB12\fP of file \fBConsoleRendering\&.h\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void ConsoleRendering::Create_Inventory_GUI (std::string & inventory)\fC [private]\fP"
+
+.PP
+Definition at line \fB146\fP of file \fBConsoleRendering\&.cpp\fP\&.
+.PP
+.nf
+147 {
+148     cout << endl;
+149 
+150     for (size_t i = 0; i < inventory\&.length(); i++)
+151     {
+152         cout << "-";
+153     }
+154 
+155     cout << endl;
+156     cout << inventory;
+157     cout << endl;
+158 
+159     for (size_t i = 0; i < inventory\&.length(); i++)
+160     {
+161         cout << "-";
+162     }
+163 
+164     cout << endl;
+165 }
+.fi
+.SS "void ConsoleRendering::Create_Stats_GUI (std::string & inventory)\fC [private]\fP"
+
+.PP
+Definition at line \fB127\fP of file \fBConsoleRendering\&.cpp\fP\&.
+.PP
+.nf
+128 {
+129     cout << endl;
+130 
+131     for (size_t i = 0; i < inventory\&.length(); i++)
+132     {
+133         cout << "-";
+134     }
+135 
+136     cout << endl;
+137     cout << inventory;
+138     cout << endl;
+139 
+140     for (size_t i = 0; i < inventory\&.length(); i++)
+141     {
+142         cout << "-";
+143     }
+144 }
+.fi
+.SS "void ConsoleRendering::Print_Actions (char action, \fBMapManager\fP & m)\fC [private]\fP"
+
+.PP
+Definition at line \fB88\fP of file \fBConsoleRendering\&.cpp\fP\&.
+.PP
+.nf
+89 {
+90     GoToScreenPosition(0, m\&.height + 2);
+91 
+92     switch (action)
+93     {
+94     case 'I': cout << "YOU GAINED 1 HEALTH FROM: HEALTH POTION         ";
+95         break;
+96     case 'O': cout << "YOU GAINED 1 SHIELD FROM: SHIELD POTION         ";
+97         break;
+98     case 'P': cout << "YOU GAINED 1 MAGIC FROM: MAGIC POTION           ";
+99         break;
+100     case 'J': cout << "YOU DROPPED 1 HEALTH POTION                     ";
+101         break;
+102     case 'K': cout << "YOU DROPPED 1 SHIELD POTION                     ";
+103         break;
+104     case 'L': cout << "YOU DROPPED 1 MAGIC POTION                      ";
+105         break;
+106     }
+107 }
+.fi
+.SS "void ConsoleRendering::Print_Actions_GUI (\fBMapManager\fP & m, \fBInventoryManager\fP & i, \fBUserInterfaceManager\fP & ui)\fC [private]\fP"
+
+.PP
+Definition at line \fB65\fP of file \fBConsoleRendering\&.cpp\fP\&.
+.PP
+.nf
+66 {
+67     int y = 1;
+68 
+69     for (const auto& i : ui\&.actions)
+70     {
+71         string x = i;
+72         x = ReplaceAll(string(x), string("-"), string("\xCD"));
+73         x = ReplaceAll(string(x), string("<"), string("\xC9"));
+74         x = ReplaceAll(string(x), string(">"), string("\xBB"));
+75         x = ReplaceAll(string(x), string(":"), string("\xC8"));
+76         x = ReplaceAll(string(x), string(";"), string("\xBC"));
+77         x = ReplaceAll(string(x), string("/"), string("\xCC"));
+78         x = ReplaceAll(string(x), string("]"), string("\xB9"));
+79         x = ReplaceAll(string(x), string("|"), string("\xBA"));
+80         x = ReplaceAll(string(x), string("v"), string("\xCB"));
+81         x = ReplaceAll(string(x), string("^"), string("\xCA"));
+82         GoToScreenPosition(40, m\&.height + y);
+83         y++;
+84         cout << x << endl;
+85     }
+86 }
+.fi
+.SS "void ConsoleRendering::Print_Inventory (\fBInventoryManager\fP & i, \fBUserInterfaceManager\fP & ui)\fC [private]\fP"
+
+.PP
+Definition at line \fB109\fP of file \fBConsoleRendering\&.cpp\fP\&.
+.PP
+.nf
+110 {
+111     for (const auto& i : ui\&.inventory)
+112     {
+113         string x = i;
+114         x = ReplaceAll(string(x), string("-"), string("\xCD"));
+115         x = ReplaceAll(string(x), string("<"), string("\xC9"));
+116         x = ReplaceAll(string(x), string(">"), string("\xBB"));
+117         x = ReplaceAll(string(x), string(":"), string("\xC8"));
+118         x = ReplaceAll(string(x), string(";"), string("\xBC"));
+119         x = ReplaceAll(string(x), string("/"), string("\xCC"));
+120         x = ReplaceAll(string(x), string("]"), string("\xB9"));
+121         x = ReplaceAll(string(x), string("|"), string("\xBA"));
+122         cout << x << std::endl;
+123     }
+124 }
+.fi
+.SS "void ConsoleRendering::Print_Stats (\fBMapManager\fP & m, \fBPlayer\fP & p, \fBInventoryManager\fP & i, \fBUserInterfaceManager\fP & ui)\fC [private]\fP"
+
+.PP
+Definition at line \fB10\fP of file \fBConsoleRendering\&.cpp\fP\&.
+.PP
+.nf
+11 {
+12     GoToScreenPosition(0, m\&.height + 1);
+13 
+14     for (const auto& i : ui\&.stats)
+15     {
+16         string x = i;
+17         x = ReplaceAll(string(x), string("-"), string("\xCD"));
+18         x = ReplaceAll(string(x), string("<"), string("\xC9"));
+19         x = ReplaceAll(string(x), string(">"), string("\xBB"));
+20         x = ReplaceAll(string(x), string(":"), string("\xC8"));
+21         x = ReplaceAll(string(x), string(";"), string("\xBC"));
+22         x = ReplaceAll(string(x), string("/"), string("\xCC"));
+23         x = ReplaceAll(string(x), string("]"), string("\xB9"));
+24         x = ReplaceAll(string(x), string("|"), string("\xBA"));
+25         x = ReplaceAll(string(x), string("v"), string("\xCB"));
+26         x = ReplaceAll(string(x), string("^"), string("\xCA"));
+27 
+28         cout << x << endl;
+29     }
+30     if (p\&.health >= 10)
+31     {
+32         string x = to_string(p\&.health);
+33         ui\&.stats\&.at(2)\&.at(31) = x\&.at(1);
+34         ui\&.stats\&.at(2)\&.at(29) = x\&.at(0);
+35     }
+36     else
+37     {
+38         string x = to_string(p\&.health);
+39         ui\&.stats\&.at(2)\&.at(31) = x\&.at(0);
+40     }
+41     if (p\&.shield >= 10)
+42     {
+43         string x = to_string(p\&.shield);
+44         ui\&.stats\&.at(4)\&.at(31) = x\&.at(1);
+45         ui\&.stats\&.at(4)\&.at(29) = x\&.at(0);
+46     }
+47     else
+48     {
+49         string x = to_string(p\&.shield);
+50         ui\&.stats\&.at(4)\&.at(31) = x\&.at(0);
+51     }
+52     if (p\&.magic >= 10)
+53     {
+54         string x = to_string(p\&.magic);
+55         ui\&.stats\&.at(6)\&.at(31) = x\&.at(1);
+56         ui\&.stats\&.at(6)\&.at(29) = x\&.at(0);
+57     }
+58     else
+59     {
+60         string x = to_string(p\&.magic);
+61         ui\&.stats\&.at(6)\&.at(31) = x\&.at(0);
+62     }
+63 }
+.fi
+.SS "void ConsoleRendering::Render_Actions (\fBMapManager\fP & m, \fBInventoryManager\fP & i, \fBUserInterfaceManager\fP & ui)"
+
+.PP
+Definition at line \fB182\fP of file \fBConsoleRendering\&.cpp\fP\&.
+.PP
+.nf
+183 {
+184     Print_Actions_GUI(m, i, ui);
+185 }
+.fi
+.SS "void ConsoleRendering::Render_All (\fBConsoleWindowManager\fP & c, \fBMapManager\fP & m, \fBPlayer\fP & p, \fBInventoryManager\fP & i, \fBUserInterfaceManager\fP & ui)"
+
+.PP
+Definition at line \fB202\fP of file \fBConsoleRendering\&.cpp\fP\&.
+.PP
+.nf
+203 {
+204     Render_Stats(m, p, i, ui);
+205     if (!p\&.in_combat)
+206     {
+207         Render_Actions(m, i, ui);
+208     }
+209     Render_GUI(m, i);
+210 }
+.fi
+.SS "void ConsoleRendering::Render_GUI (\fBMapManager\fP & m, \fBInventoryManager\fP & i)"
+
+.PP
+Definition at line \fB168\fP of file \fBConsoleRendering\&.cpp\fP\&.
+.PP
+.nf
+169 {
+170     GoToScreenPosition(2, m\&.height + 3);
+171 
+172     if (!i\&.inventory_open)
+173     {
+174     }
+175 }
+.fi
+.SS "void ConsoleRendering::Render_Inventory (\fBConsoleWindowManager\fP & c, \fBMapManager\fP & m, \fBInventoryManager\fP & i, \fBUserInterfaceManager\fP & ui)"
+
+.PP
+Definition at line \fB187\fP of file \fBConsoleRendering\&.cpp\fP\&.
+.PP
+.nf
+188 {
+189     // DRAWS THE PLAYER'S INVENTORY ON SCREEN
+190     if (i\&.inventory_open)
+191     {
+192         c\&.BlankScreen();
+193         Print_Inventory(i, ui);
+194     }
+195     else
+196     {
+197         c\&.BlankScreen();
+198         m\&.RenderMap(c);
+199     }
+200 }
+.fi
+.SS "void ConsoleRendering::Render_Stats (\fBMapManager\fP & m, \fBPlayer\fP & p, \fBInventoryManager\fP & i, \fBUserInterfaceManager\fP & ui)"
+
+.PP
+Definition at line \fB177\fP of file \fBConsoleRendering\&.cpp\fP\&.
+.PP
+.nf
+178 {
+179     Print_Stats(m, p, i, ui);
+180 }
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

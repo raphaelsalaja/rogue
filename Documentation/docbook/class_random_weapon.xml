@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_random_weapon" xml:lang="en-US">
+<title>RandomWeapon Class Reference</title>
+<indexterm><primary>RandomWeapon</primary></indexterm>
+<para>
+<computeroutput>#include &lt;RandomWeapon.h&gt;</computeroutput>
+</para>
+Inheritance diagram for RandomWeapon:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_weapon__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for RandomWeapon:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_weapon__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_random_weapon_1a69377a159321fc074496c769271fcb30">RandomWeapon</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_random_weapon_1a69c4548b15e96f6682697ee0f79e1893">~RandomWeapon</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_random_weapon_1aea0b4d6a59c972b64ed00ba7b7894d5c">SetType</link> (int choice) override</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_random_weapon_1ae9993590b69800be2b76a618fc5651f8">SetItemNames</link> (string file_name) override</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_random_weapon_1a48fd5758c4c65e266d3ba9bfe3e6c90b">GenerateRandomWeapon</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>char <link linkend="_class_random_weapon_1a498bfb916d002b8f31c6e84fc70fc6ff">symbol</link> = &apos;W&apos;</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_random_weapon_1a03eb992d360d55a4f96eea49e0757977">weapon_types</link> [5]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__random_weapon_8h_source_1l00004">4</link> of file <link linkend="__random_weapon_8h_source">RandomWeapon.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_random_weapon_1a69377a159321fc074496c769271fcb30"/><section>
+    <title>RandomWeapon()</title>
+<indexterm><primary>RandomWeapon</primary><secondary>RandomWeapon</secondary></indexterm>
+<indexterm><primary>RandomWeapon</primary><secondary>RandomWeapon</secondary></indexterm>
+<para><computeroutput>RandomWeapon::RandomWeapon ( )</computeroutput></para><para>
+Definition at line <link linkend="__random_weapon_8cpp_source_1l00008">8</link> of file <link linkend="__random_weapon_8cpp_source">RandomWeapon.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_random_weapon_1l00009"/>00009 {
+<anchor xml:id="_class_random_weapon_1l00010"/>00010 }
+</programlisting></section>
+<anchor xml:id="_class_random_weapon_1a69c4548b15e96f6682697ee0f79e1893"/><section>
+    <title>~RandomWeapon()</title>
+<indexterm><primary>~RandomWeapon</primary><secondary>RandomWeapon</secondary></indexterm>
+<indexterm><primary>RandomWeapon</primary><secondary>~RandomWeapon</secondary></indexterm>
+<para><computeroutput>RandomWeapon::~RandomWeapon ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_random_weapon_1a48fd5758c4c65e266d3ba9bfe3e6c90b"/><section>
+    <title>GenerateRandomWeapon()</title>
+<indexterm><primary>GenerateRandomWeapon</primary><secondary>RandomWeapon</secondary></indexterm>
+<indexterm><primary>RandomWeapon</primary><secondary>GenerateRandomWeapon</secondary></indexterm>
+<para><computeroutput>void RandomWeapon::GenerateRandomWeapon ( )</computeroutput></para><para>
+Definition at line <link linkend="__random_weapon_8cpp_source_1l00036">36</link> of file <link linkend="__random_weapon_8cpp_source">RandomWeapon.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_random_weapon_1l00037"/>00037 {
+<anchor xml:id="_class_random_weapon_1l00038"/>00038 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0">CreateItem</link>(<link linkend="_class_random_weapon_1a498bfb916d002b8f31c6e84fc70fc6ff">symbol</link>,&#32;<link linkend="_class_random_weapon_1a03eb992d360d55a4f96eea49e0757977">weapon_types</link>-&gt;length());
+<anchor xml:id="_class_random_weapon_1l00039"/>00039 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_weapon_a48fd5758c4c65e266d3ba9bfe3e6c90b_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_random_weapon_1ae9993590b69800be2b76a618fc5651f8"/><section>
+    <title>SetItemNames()</title>
+<indexterm><primary>SetItemNames</primary><secondary>RandomWeapon</secondary></indexterm>
+<indexterm><primary>RandomWeapon</primary><secondary>SetItemNames</secondary></indexterm>
+<para><computeroutput>void RandomWeapon::SetItemNames (string file_name)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_random_item_generator_1a3816c88713a59914f16f50d29245b2d7">RandomItemGenerator</link>.</para>
+<para>
+Definition at line <link linkend="__random_weapon_8cpp_source_1l00017">17</link> of file <link linkend="__random_weapon_8cpp_source">RandomWeapon.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_random_weapon_1l00018"/>00018 {
+<anchor xml:id="_class_random_weapon_1l00019"/>00019 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;index&#32;=&#32;0;
+<anchor xml:id="_class_random_weapon_1l00020"/>00020 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;line;
+<anchor xml:id="_class_random_weapon_1l00021"/>00021 &#32;&#32;&#32;&#32;ifstream&#32;myfile(file_name);
+<anchor xml:id="_class_random_weapon_1l00022"/>00022 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(myfile.is_open())
+<anchor xml:id="_class_random_weapon_1l00023"/>00023 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_random_weapon_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(!myfile.eof())
+<anchor xml:id="_class_random_weapon_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="_class_random_weapon_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;getline(myfile,&#32;line);
+<anchor xml:id="_class_random_weapon_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a456d04a342662178e5d17e86312bfb6c">ITEM_TYPES</link>[index]&#32;=&#32;line;
+<anchor xml:id="_class_random_weapon_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<link linkend="_class_random_item_generator_1a456d04a342662178e5d17e86312bfb6c">ITEM_TYPES</link>[index]&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="_class_random_weapon_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;index++;
+<anchor xml:id="_class_random_weapon_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_random_weapon_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;myfile.close();
+<anchor xml:id="_class_random_weapon_1l00032"/>00032 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_class_random_weapon_1l00033"/>00033 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;{&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;FILE&#32;CANNOT&#32;BE&#32;OPENED&quot;</emphasis>;&#32;}
+<anchor xml:id="_class_random_weapon_1l00034"/>00034 }
+</programlisting></section>
+<anchor xml:id="_class_random_weapon_1aea0b4d6a59c972b64ed00ba7b7894d5c"/><section>
+    <title>SetType()</title>
+<indexterm><primary>SetType</primary><secondary>RandomWeapon</secondary></indexterm>
+<indexterm><primary>RandomWeapon</primary><secondary>SetType</secondary></indexterm>
+<para><computeroutput>void RandomWeapon::SetType (int choice)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_class_random_item_generator_1a76d898718b27df8a3c5be2ccaf3efdc5">RandomItemGenerator</link>.</para>
+<para>
+Definition at line <link linkend="__random_weapon_8cpp_source_1l00012">12</link> of file <link linkend="__random_weapon_8cpp_source">RandomWeapon.cpp</link>.</para>
+<programlisting linenumbering="unnumbered"><anchor xml:id="_class_random_weapon_1l00013"/>00013 {
+<anchor xml:id="_class_random_weapon_1l00014"/>00014 &#32;&#32;&#32;&#32;<link linkend="_class_random_item_generator_1a375a42a9160dd1ff376b4408e2b03629">type</link>&#32;=&#32;<link linkend="_namespace_macro_1a7192f07d19f55d7f8b863932a5078eab">Macro::GenerateRandomNumber</link>(<link linkend="_class_random_weapon_1a03eb992d360d55a4f96eea49e0757977">weapon_types</link>-&gt;length());
+<anchor xml:id="_class_random_weapon_1l00015"/>00015 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_random_weapon_aea0b4d6a59c972b64ed00ba7b7894d5c_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_random_weapon_1a498bfb916d002b8f31c6e84fc70fc6ff"/><section>
+    <title>symbol</title>
+<indexterm><primary>symbol</primary><secondary>RandomWeapon</secondary></indexterm>
+<indexterm><primary>RandomWeapon</primary><secondary>symbol</secondary></indexterm>
+<para><computeroutput>char RandomWeapon::symbol = &apos;W&apos;</computeroutput></para><para>
+Definition at line <link linkend="__random_weapon_8h_source_1l00014">14</link> of file <link linkend="__random_weapon_8h_source">RandomWeapon.h</link>.</para>
+</section>
+<anchor xml:id="_class_random_weapon_1a03eb992d360d55a4f96eea49e0757977"/><section>
+    <title>weapon_types</title>
+<indexterm><primary>weapon_types</primary><secondary>RandomWeapon</secondary></indexterm>
+<indexterm><primary>RandomWeapon</primary><secondary>weapon_types</secondary></indexterm>
+<para><computeroutput>string RandomWeapon::weapon_types[5]</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;SWORD&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;DUAL&#32;SWORD&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;SPEAR&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;GREAT&#32;SWORD&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;KNIFE&quot;</emphasis>
+&#32;&#32;&#32;&#32;}
+</programlisting><para>
+Definition at line <link linkend="__random_weapon_8h_source_1l00016">16</link> of file <link linkend="__random_weapon_8h_source">RandomWeapon.h</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+D:/University/ca-A00269349/Rogue/<link linkend="__random_weapon_8h">RandomWeapon.h</link>D:/University/ca-A00269349/Rogue/<link linkend="__random_weapon_8cpp">RandomWeapon.cpp</link></section>
+</section>

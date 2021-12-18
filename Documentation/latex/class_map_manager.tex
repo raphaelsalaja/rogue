@@ -1,0 +1,578 @@
+\hypertarget{class_map_manager}{}\doxysection{Map\+Manager Class Reference}
+\label{class_map_manager}\index{MapManager@{MapManager}}
+
+
+{\ttfamily \#include $<$Map\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Map\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_map_manager_ab864df2edd061402a8ae649642545cf4}{Load\+Next\+Map}} (\mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&m, \mbox{\hyperlink{class_console_window_manager}{Console\+Window\+Manager}} \&c, \mbox{\hyperlink{class_player}{Player}} \&p, \mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&i)
+\item 
+void \mbox{\hyperlink{class_map_manager_a3d93eb2a28003237aa76baf2cb0de02c}{Render\+Map}} (\mbox{\hyperlink{class_console_window_manager}{Console\+Window\+Manager}} \&c)
+\item 
+bool \mbox{\hyperlink{class_map_manager_afab5c5f3312e023fed2304c937156c02}{Is\+Empty}} (int x, int y)
+\item 
+void \mbox{\hyperlink{class_map_manager_a0376a5b8e5baed3a0845887d16920752}{Load\+Map}} (string input)
+\item 
+int \mbox{\hyperlink{class_map_manager_a63237ae436886673f81ed41f38e7ffbe}{Find\+Enemy}} (\mbox{\hyperlink{class_player}{Player}} \&p)
+\item 
+int \mbox{\hyperlink{class_map_manager_a147a44e3b176a36a06689d4589cfb76f}{Find\+Friendly}} (\mbox{\hyperlink{class_player}{Player}} \&p)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{class_map_manager_ac098de57cb928a3ace62fcb2a566206f}{level\+\_\+index}} = 1
+\item 
+unsigned int \mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{width}} = 0
+\item 
+unsigned int \mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} = 0
+\item 
+vector$<$ \mbox{\hyperlink{class_generic_friendly}{Generic\+Friendly}} $>$ \mbox{\hyperlink{class_map_manager_a6c276cfffc5bfb5ca0448b192b00c071}{generic\+\_\+friendlies}}
+\item 
+vector$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $>$ \mbox{\hyperlink{class_map_manager_a426775cb6ac19bd0e9b6ca79e93dc013}{enemies}}
+\item 
+char $\ast$ \mbox{\hyperlink{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}{new\+\_\+map}} = nullptr
+\item 
+bool \mbox{\hyperlink{class_map_manager_adc9521c363ffb0dcf91fada254d374d3}{has\+\_\+rendered\+\_\+map}} = false
+\item 
+bool \mbox{\hyperlink{class_map_manager_a68b9e24db6a6d5cbab5ee7c2f055997f}{loading\+\_\+next\+\_\+map}} = false
+\item 
+string \mbox{\hyperlink{class_map_manager_a8283261a6c856b84a3531df03827e9f5}{file\+\_\+name\+\_\+start}} = \char`\"{}MAP\+\_\+\char`\"{}
+\item 
+string \mbox{\hyperlink{class_map_manager_a5878e375bb4dcc6458c23475d9e0bdf1}{file\+\_\+name\+\_\+end}} = \char`\"{}.txt\char`\"{}
+\item 
+string \mbox{\hyperlink{class_map_manager_aaae3bf6e05a1e85d62b37357596b7e89}{file\+\_\+contents\+\_\+read\+\_\+in}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_map_manager_a83822e33297caa6a3e1f3f48b52b2530}{Read\+Map}} ()
+\item 
+void \mbox{\hyperlink{class_map_manager_ae924c576229d40970074e76875dab3bb}{Print\+Map}} (\mbox{\hyperlink{class_console_window_manager}{Console\+Window\+Manager}} \&c)
+\item 
+void \mbox{\hyperlink{class_map_manager_a4308dceb14fd959e59001c1a531e3f2b}{Refresh\+Map}} (\mbox{\hyperlink{class_console_window_manager}{Console\+Window\+Manager}} \&c)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8h_source_l00014}{14}} of file \mbox{\hyperlink{_map_manager_8h_source}{Map\+Manager.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_map_manager_a63237ae436886673f81ed41f38e7ffbe}\label{class_map_manager_a63237ae436886673f81ed41f38e7ffbe}} 
+\index{MapManager@{MapManager}!FindEnemy@{FindEnemy}}
+\index{FindEnemy@{FindEnemy}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{FindEnemy()}{FindEnemy()}}
+{\footnotesize\ttfamily int Map\+Manager\+::\+Find\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8cpp_source_l00163}{163}} of file \mbox{\hyperlink{_map_manager_8cpp_source}{Map\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00164}00164 \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00165}00165     \textcolor{keywordtype}{int} player\_pos = p.\mbox{\hyperlink{class_player_a7ddbc65116b9c73791679dc1aa049980}{player\_position\_y\_new}} * \mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{width}} + p.\mbox{\hyperlink{class_player_a295efe0018307edab6aaeaad9dae6e0b}{player\_position\_x\_new}};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00166}00166 }
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00167}00167     \textcolor{keywordtype}{int} enemy\_pos;}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00168}00168     \textcolor{comment}{// LOOP THOUGH VECTOR AND MATCH}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00169}00169 }
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00170}00170     \textcolor{keywordtype}{bool} matching;}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00171}00171 }
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00172}00172     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_map_manager_a426775cb6ac19bd0e9b6ca79e93dc013}{enemies}}.size() -\/ 1; i++)}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00173}00173     \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00174}00174         enemy\_pos = \mbox{\hyperlink{class_map_manager_a426775cb6ac19bd0e9b6ca79e93dc013}{enemies}}.at(i).GetX();}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00175}00175         matching = enemy\_pos == player\_pos;}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00176}00176         \textcolor{keywordflow}{if} (matching)}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00177}00177         \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00178}00178             \textcolor{keywordflow}{return} i;}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00179}00179         \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00180}00180     \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00181}00181 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_manager_a63237ae436886673f81ed41f38e7ffbe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_map_manager_a147a44e3b176a36a06689d4589cfb76f}\label{class_map_manager_a147a44e3b176a36a06689d4589cfb76f}} 
+\index{MapManager@{MapManager}!FindFriendly@{FindFriendly}}
+\index{FindFriendly@{FindFriendly}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{FindFriendly()}{FindFriendly()}}
+{\footnotesize\ttfamily int Map\+Manager\+::\+Find\+Friendly (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8cpp_source_l00183}{183}} of file \mbox{\hyperlink{_map_manager_8cpp_source}{Map\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00184}00184 \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00185}00185     \textcolor{keywordtype}{int} player\_pos = p.\mbox{\hyperlink{class_player_a7ddbc65116b9c73791679dc1aa049980}{player\_position\_y\_new}} * \mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{width}} + p.\mbox{\hyperlink{class_player_a295efe0018307edab6aaeaad9dae6e0b}{player\_position\_x\_new}};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00186}00186 }
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00187}00187     \textcolor{keywordtype}{int} friendly\_pos;}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00188}00188     \textcolor{comment}{// LOOP THOUGH VECTOR AND MATCH}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00189}00189 }
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00190}00190     \textcolor{keywordtype}{bool} matching;}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00191}00191 }
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00192}00192     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_map_manager_a6c276cfffc5bfb5ca0448b192b00c071}{generic\_friendlies}}.size() -\/ 1; i++)}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00193}00193     \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00194}00194         friendly\_pos = \mbox{\hyperlink{class_map_manager_a6c276cfffc5bfb5ca0448b192b00c071}{generic\_friendlies}}.at(i).GetX();}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00195}00195         matching = friendly\_pos == player\_pos;}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00196}00196         \textcolor{keywordflow}{if} (matching)}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00197}00197         \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00198}00198             \textcolor{keywordflow}{return} i;}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00199}00199         \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00200}00200     \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00201}00201 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_manager_a147a44e3b176a36a06689d4589cfb76f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_map_manager_afab5c5f3312e023fed2304c937156c02}\label{class_map_manager_afab5c5f3312e023fed2304c937156c02}} 
+\index{MapManager@{MapManager}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{IsEmpty()}{IsEmpty()}}
+{\footnotesize\ttfamily bool Map\+Manager\+::\+Is\+Empty (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8cpp_source_l00103}{103}} of file \mbox{\hyperlink{_map_manager_8cpp_source}{Map\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00104}00104 \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00105}00105     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}{new\_map}}[y * \mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{width}} + x] == \textcolor{charliteral}{'.'})}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00106}00106     \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00107}00107         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00108}00108     \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00109}00109     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00110}00110 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_manager_afab5c5f3312e023fed2304c937156c02_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_map_manager_a0376a5b8e5baed3a0845887d16920752}\label{class_map_manager_a0376a5b8e5baed3a0845887d16920752}} 
+\index{MapManager@{MapManager}!LoadMap@{LoadMap}}
+\index{LoadMap@{LoadMap}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{LoadMap()}{LoadMap()}}
+{\footnotesize\ttfamily void Map\+Manager\+::\+Load\+Map (\begin{DoxyParamCaption}\item[{string}]{input }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{_map_manager_8cpp_source}{Map\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00062}00062 \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00063}00063     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{width}}; i++)}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00064}00064     \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00065}00065         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}}; j++)}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00066}00066         \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00067}00067             \mbox{\hyperlink{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}{new\_map}}[i * \mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + j] = input.at(i * \mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + j);}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00068}00068         \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00069}00069     \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00070}00070 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_manager_a0376a5b8e5baed3a0845887d16920752_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_map_manager_ab864df2edd061402a8ae649642545cf4}\label{class_map_manager_ab864df2edd061402a8ae649642545cf4}} 
+\index{MapManager@{MapManager}!LoadNextMap@{LoadNextMap}}
+\index{LoadNextMap@{LoadNextMap}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{LoadNextMap()}{LoadNextMap()}}
+{\footnotesize\ttfamily void Map\+Manager\+::\+Load\+Next\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_map_manager}{Map\+Manager}} \&}]{m,  }\item[{\mbox{\hyperlink{class_console_window_manager}{Console\+Window\+Manager}} \&}]{c,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{p,  }\item[{\mbox{\hyperlink{class_inventory_manager}{Inventory\+Manager}} \&}]{i }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{_map_manager_8cpp_source}{Map\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00073}00073 \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00074}00074     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_map_manager_ac098de57cb928a3ace62fcb2a566206f}{level\_index}} != 7)}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00075}00075     \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00076}00076         \mbox{\hyperlink{class_map_manager_ac098de57cb928a3ace62fcb2a566206f}{level\_index}}++;}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00078}00078         \mbox{\hyperlink{class_map_manager_a68b9e24db6a6d5cbab5ee7c2f055997f}{loading\_next\_map}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00079}00079         \textcolor{keywordflow}{while} (\mbox{\hyperlink{class_map_manager_a68b9e24db6a6d5cbab5ee7c2f055997f}{loading\_next\_map}})}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00080}00080         \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00081}00081             c.\mbox{\hyperlink{class_console_window_manager_aec3eb492b72b29b4b9c57d622b799e9c}{BlankScreen}}();}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00083}00083             p.\mbox{\hyperlink{class_player_a295efe0018307edab6aaeaad9dae6e0b}{player\_position\_x\_new}} = 20;}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00084}00084             p.\mbox{\hyperlink{class_player_a7ddbc65116b9c73791679dc1aa049980}{player\_position\_y\_new}} = 10;}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00086}00086             p.\mbox{\hyperlink{class_player_a4b2ed7452ebf86347df93b965f5c4966}{RenderPlayer}}(m, c, i);}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00087}00087             \mbox{\hyperlink{class_map_manager_adc9521c363ffb0dcf91fada254d374d3}{has\_rendered\_map}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00088}00088             \mbox{\hyperlink{class_map_manager_a3d93eb2a28003237aa76baf2cb0de02c}{RenderMap}}(c);}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00089}00089             \mbox{\hyperlink{class_map_manager_a68b9e24db6a6d5cbab5ee7c2f055997f}{loading\_next\_map}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00090}00090         \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00091}00091     \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00092}00092     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00093}00093     \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00094}00094         \textcolor{keywordflow}{while} (\textcolor{keyword}{true})}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00095}00095         \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00096}00096             p.\mbox{\hyperlink{class_player_afabc272a584435771820c92f2c8308f1}{in\_combat}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00097}00097             \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{GoToScreenPosition}}(45, m.\mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + 3);}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00098}00098             cout << \textcolor{stringliteral}{"{}CONGRATULATIONS, YOU WON :)"{}};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00099}00099         \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00100}00100     \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00101}00101 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_manager_ab864df2edd061402a8ae649642545cf4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_manager_ab864df2edd061402a8ae649642545cf4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_map_manager_ae924c576229d40970074e76875dab3bb}\label{class_map_manager_ae924c576229d40970074e76875dab3bb}} 
+\index{MapManager@{MapManager}!PrintMap@{PrintMap}}
+\index{PrintMap@{PrintMap}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{PrintMap()}{PrintMap()}}
+{\footnotesize\ttfamily void Map\+Manager\+::\+Print\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_window_manager}{Console\+Window\+Manager}} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{_map_manager_8cpp_source}{Map\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00011}00011 \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00012}00012     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{width}}; i++)}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00013}00013     \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00014}00014         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}}; j++)}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00015}00015         \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00016}00016             \textcolor{keywordtype}{char} next\_char = \mbox{\hyperlink{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}{new\_map}}[i * \mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + j];}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00017}00017             \textcolor{keywordflow}{switch} (next\_char)}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00018}00018             \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00019}00019             \textcolor{keywordflow}{case} \textcolor{charliteral}{'-\/'}:}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00020}00020             \textcolor{keywordflow}{case} \textcolor{charliteral}{'|'}: c.\mbox{\hyperlink{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}{SetConsoleWindowColor}}(\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752}{ConsoleWindowManager::LIGHT\_BLUE}}, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3}{ConsoleWindowManager::BLACK}});}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00021}00021                 cout << \textcolor{stringliteral}{'\(\backslash\)xB1'};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00022}00022                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00023}00023             \textcolor{keywordflow}{case} \textcolor{charliteral}{'\#'}: c.\mbox{\hyperlink{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}{SetConsoleWindowColor}}(\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a0123e45b31a6caef6bee87987431ba29}{ConsoleWindowManager::DARK\_BLUE}}, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3}{ConsoleWindowManager::BLACK}});}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00024}00024                 cout << \textcolor{stringliteral}{'\(\backslash\)xB2'};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00025}00025                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00026}00026             \textcolor{keywordflow}{case} \textcolor{charliteral}{'.'}: c.\mbox{\hyperlink{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}{SetConsoleWindowColor}}(\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3}{ConsoleWindowManager::BLACK}}, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e}{ConsoleWindowManager::MAGENTA}});}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00027}00027                 cout << \textcolor{charliteral}{' '};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00028}00028                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00029}00029             \textcolor{keywordflow}{case} \textcolor{charliteral}{'*'}: c.\mbox{\hyperlink{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}{SetConsoleWindowColor}}(\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752}{ConsoleWindowManager::LIGHT\_BLUE}}, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3}{ConsoleWindowManager::BLACK}});}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00030}00030                 cout << \textcolor{stringliteral}{'\(\backslash\)xFA'};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00031}00031                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00032}00032             \textcolor{keywordflow}{case} \textcolor{charliteral}{'='}: c.\mbox{\hyperlink{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}{SetConsoleWindowColor}}(\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752}{ConsoleWindowManager::LIGHT\_BLUE}}, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e}{ConsoleWindowManager::MAGENTA}});}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00033}00033                 cout << \textcolor{stringliteral}{'\(\backslash\)xB0'};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00034}00034                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00035}00035             \textcolor{keywordflow}{case} \textcolor{charliteral}{'1'}: c.\mbox{\hyperlink{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}{SetConsoleWindowColor}}(\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b2a4e6f58e1a7c9bcc98461ec6689f9}{ConsoleWindowManager::BLUE}}, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3}{ConsoleWindowManager::BLACK}});}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00036}00036                 cout << \textcolor{stringliteral}{'\(\backslash\)xDB'};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00037}00037                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00038}00038             \textcolor{keywordflow}{case} \textcolor{charliteral}{' '}: c.\mbox{\hyperlink{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}{SetConsoleWindowColor}}(\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543af19a5b9192c1fa96a5ae253ab37c714b}{ConsoleWindowManager::CYAN}}, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543aa0309527207c43e70df07d5a8905153e}{ConsoleWindowManager::MAGENTA}});}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00039}00039                 cout << \mbox{\hyperlink{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}{new\_map}}[i * \mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + j];}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00040}00040                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00041}00041             \textcolor{keywordflow}{case} \textcolor{charliteral}{'['}: c.\mbox{\hyperlink{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}{SetConsoleWindowColor}}(\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ac2f74f3c14dbbde9c81c3eb43ad652d8}{ConsoleWindowManager::YELLOW}}, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3}{ConsoleWindowManager::BLACK}});}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00042}00042                 cout << \textcolor{stringliteral}{'\(\backslash\)xAF'};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00043}00043                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00044}00044             \textcolor{keywordflow}{case} \textcolor{charliteral}{'N'}: c.\mbox{\hyperlink{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}{SetConsoleWindowColor}}(\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543ae5c13df1cfc28fdc2c55a856085f5b8a}{ConsoleWindowManager::GREEN}}, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3}{ConsoleWindowManager::BLACK}});}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00045}00045                 \mbox{\hyperlink{class_map_manager_a6c276cfffc5bfb5ca0448b192b00c071}{generic\_friendlies}}.emplace\_back(\mbox{\hyperlink{class_generic_friendly}{GenericFriendly}}(i * \mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + j));}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00046}00046                 cout << \textcolor{stringliteral}{'\(\backslash\)xBE'};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00047}00047                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00048}00048             \textcolor{keywordflow}{case} \textcolor{charliteral}{'E'}: c.\mbox{\hyperlink{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}{SetConsoleWindowColor}}(\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a241238b2c88c156285680b898b7bca5f}{ConsoleWindowManager::RED}}, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3}{ConsoleWindowManager::BLACK}});}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00049}00049                 \mbox{\hyperlink{class_map_manager_a426775cb6ac19bd0e9b6ca79e93dc013}{enemies}}.emplace\_back(\mbox{\hyperlink{class_enemy}{Enemy}}(i * \mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + j, i * \mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + j));}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00050}00050                 cout << \textcolor{stringliteral}{'\(\backslash\)xF5'};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00051}00051                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00052}00052             \textcolor{keywordflow}{default}: c.\mbox{\hyperlink{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}{SetConsoleWindowColor}}(\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752}{ConsoleWindowManager::LIGHT\_BLUE}}, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3}{ConsoleWindowManager::BLACK}});}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00053}00053                 cout << \mbox{\hyperlink{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}{new\_map}}[i * \mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} + j];}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00054}00054                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00055}00055             \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00056}00056         \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00057}00057     \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00058}00058     c.\mbox{\hyperlink{class_console_window_manager_af7015ed96cbd06f5261d671e62e15213}{SetConsoleWindowColor}}(\mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a79a497635ed36ed79c9053596d583752}{ConsoleWindowManager::LIGHT\_BLUE}}, \mbox{\hyperlink{class_console_window_manager_a11720aac297b1a2ac960bcec3ccce543a1b7aa0181ab89b4992f429db3dd0d0d3}{ConsoleWindowManager::BLACK}});}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00059}00059 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_manager_ae924c576229d40970074e76875dab3bb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_manager_ae924c576229d40970074e76875dab3bb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_map_manager_a83822e33297caa6a3e1f3f48b52b2530}\label{class_map_manager_a83822e33297caa6a3e1f3f48b52b2530}} 
+\index{MapManager@{MapManager}!ReadMap@{ReadMap}}
+\index{ReadMap@{ReadMap}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{ReadMap()}{ReadMap()}}
+{\footnotesize\ttfamily void Map\+Manager\+::\+Read\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8cpp_source_l00112}{112}} of file \mbox{\hyperlink{_map_manager_8cpp_source}{Map\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00113}00113 \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00114}00114     \textcolor{keywordtype}{string} file\_line\_string;}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00115}00115     \textcolor{keywordtype}{bool} width\_retrieved = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00116}00116     ifstream file(\mbox{\hyperlink{class_map_manager_a8283261a6c856b84a3531df03827e9f5}{file\_name\_start}} + to\_string(\mbox{\hyperlink{class_map_manager_ac098de57cb928a3ace62fcb2a566206f}{level\_index}}) + \mbox{\hyperlink{class_map_manager_a5878e375bb4dcc6458c23475d9e0bdf1}{file\_name\_end}});}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00118}00118     \mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{width}} = 0;}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00119}00119     \mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}} = 0;}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00120}00120     \mbox{\hyperlink{class_map_manager_aaae3bf6e05a1e85d62b37357596b7e89}{file\_contents\_read\_in}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00122}00122     \textcolor{keywordflow}{while} (getline(file, file\_line\_string))}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00123}00123     \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00124}00124         \mbox{\hyperlink{class_map_manager_aaae3bf6e05a1e85d62b37357596b7e89}{file\_contents\_read\_in}} += file\_line\_string;}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00125}00125         \mbox{\hyperlink{class_map_manager_aaae3bf6e05a1e85d62b37357596b7e89}{file\_contents\_read\_in}}.push\_back(\textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00126}00126         \textcolor{keywordtype}{char} current\_char = \mbox{\hyperlink{class_map_manager_aaae3bf6e05a1e85d62b37357596b7e89}{file\_contents\_read\_in}}.at(\mbox{\hyperlink{class_map_manager_aaae3bf6e05a1e85d62b37357596b7e89}{file\_contents\_read\_in}}.length() -\/ 1);}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00127}00127         \textcolor{keywordflow}{if} (current\_char == \textcolor{charliteral}{'\(\backslash\)n'})}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00128}00128         \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00129}00129             \textcolor{keywordflow}{if} (width\_retrieved == \textcolor{keyword}{false})}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00130}00130             \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00131}00131                 \mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{width}} = \mbox{\hyperlink{class_map_manager_aaae3bf6e05a1e85d62b37357596b7e89}{file\_contents\_read\_in}}.length();}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00132}00132                 width\_retrieved = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00133}00133             \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00134}00134             \mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}}++;}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00135}00135         \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00136}00136     \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00137}00137 }
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00138}00138     \mbox{\hyperlink{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}{new\_map}} = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[\mbox{\hyperlink{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}{width}} * \mbox{\hyperlink{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}{height}}];}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00139}00139 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_manager_a83822e33297caa6a3e1f3f48b52b2530_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_map_manager_a4308dceb14fd959e59001c1a531e3f2b}\label{class_map_manager_a4308dceb14fd959e59001c1a531e3f2b}} 
+\index{MapManager@{MapManager}!RefreshMap@{RefreshMap}}
+\index{RefreshMap@{RefreshMap}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{RefreshMap()}{RefreshMap()}}
+{\footnotesize\ttfamily void Map\+Manager\+::\+Refresh\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_window_manager}{Console\+Window\+Manager}} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8cpp_source_l00157}{157}} of file \mbox{\hyperlink{_map_manager_8cpp_source}{Map\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00158}00158 \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00159}00159     \mbox{\hyperlink{namespace_macro_a86a559b7afd1b6babc93aeb1177b6509}{GoToScreenPosition}}(0, 0);}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00160}00160     \mbox{\hyperlink{class_map_manager_ae924c576229d40970074e76875dab3bb}{PrintMap}}(c);}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00161}00161 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_manager_a4308dceb14fd959e59001c1a531e3f2b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_map_manager_a3d93eb2a28003237aa76baf2cb0de02c}\label{class_map_manager_a3d93eb2a28003237aa76baf2cb0de02c}} 
+\index{MapManager@{MapManager}!RenderMap@{RenderMap}}
+\index{RenderMap@{RenderMap}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{RenderMap()}{RenderMap()}}
+{\footnotesize\ttfamily void Map\+Manager\+::\+Render\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_window_manager}{Console\+Window\+Manager}} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8cpp_source_l00141}{141}} of file \mbox{\hyperlink{_map_manager_8cpp_source}{Map\+Manager.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00142}00142 \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00143}00143     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_map_manager_adc9521c363ffb0dcf91fada254d374d3}{has\_rendered\_map}})}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00144}00144     \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00145}00145         \mbox{\hyperlink{class_map_manager_ae924c576229d40970074e76875dab3bb}{PrintMap}}(c);}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00146}00146     \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00147}00147     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00148}00148     \{}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00149}00149         c.\mbox{\hyperlink{class_console_window_manager_aec3eb492b72b29b4b9c57d622b799e9c}{BlankScreen}}();}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00150}00150         \mbox{\hyperlink{class_map_manager_a83822e33297caa6a3e1f3f48b52b2530}{ReadMap}}();}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00151}00151         \mbox{\hyperlink{class_map_manager_a0376a5b8e5baed3a0845887d16920752}{LoadMap}}(\mbox{\hyperlink{class_map_manager_aaae3bf6e05a1e85d62b37357596b7e89}{file\_contents\_read\_in}});}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00152}00152         \mbox{\hyperlink{class_map_manager_ae924c576229d40970074e76875dab3bb}{PrintMap}}(c);}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00153}00153         \mbox{\hyperlink{class_map_manager_adc9521c363ffb0dcf91fada254d374d3}{has\_rendered\_map}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00154}00154     \}}
+\DoxyCodeLine{\Hypertarget{class_map_manager_l00155}00155 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_manager_a3d93eb2a28003237aa76baf2cb0de02c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_manager_a3d93eb2a28003237aa76baf2cb0de02c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_map_manager_a426775cb6ac19bd0e9b6ca79e93dc013}\label{class_map_manager_a426775cb6ac19bd0e9b6ca79e93dc013}} 
+\index{MapManager@{MapManager}!enemies@{enemies}}
+\index{enemies@{enemies}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{enemies}{enemies}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_enemy}{Enemy}}$>$ Map\+Manager\+::enemies}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8h_source_l00022}{22}} of file \mbox{\hyperlink{_map_manager_8h_source}{Map\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_map_manager_aaae3bf6e05a1e85d62b37357596b7e89}\label{class_map_manager_aaae3bf6e05a1e85d62b37357596b7e89}} 
+\index{MapManager@{MapManager}!file\_contents\_read\_in@{file\_contents\_read\_in}}
+\index{file\_contents\_read\_in@{file\_contents\_read\_in}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{file\_contents\_read\_in}{file\_contents\_read\_in}}
+{\footnotesize\ttfamily string Map\+Manager\+::file\+\_\+contents\+\_\+read\+\_\+in}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8h_source_l00030}{30}} of file \mbox{\hyperlink{_map_manager_8h_source}{Map\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_map_manager_a5878e375bb4dcc6458c23475d9e0bdf1}\label{class_map_manager_a5878e375bb4dcc6458c23475d9e0bdf1}} 
+\index{MapManager@{MapManager}!file\_name\_end@{file\_name\_end}}
+\index{file\_name\_end@{file\_name\_end}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{file\_name\_end}{file\_name\_end}}
+{\footnotesize\ttfamily string Map\+Manager\+::file\+\_\+name\+\_\+end = \char`\"{}.txt\char`\"{}}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8h_source_l00029}{29}} of file \mbox{\hyperlink{_map_manager_8h_source}{Map\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_map_manager_a8283261a6c856b84a3531df03827e9f5}\label{class_map_manager_a8283261a6c856b84a3531df03827e9f5}} 
+\index{MapManager@{MapManager}!file\_name\_start@{file\_name\_start}}
+\index{file\_name\_start@{file\_name\_start}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{file\_name\_start}{file\_name\_start}}
+{\footnotesize\ttfamily string Map\+Manager\+::file\+\_\+name\+\_\+start = \char`\"{}MAP\+\_\+\char`\"{}}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8h_source_l00028}{28}} of file \mbox{\hyperlink{_map_manager_8h_source}{Map\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_map_manager_a6c276cfffc5bfb5ca0448b192b00c071}\label{class_map_manager_a6c276cfffc5bfb5ca0448b192b00c071}} 
+\index{MapManager@{MapManager}!generic\_friendlies@{generic\_friendlies}}
+\index{generic\_friendlies@{generic\_friendlies}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{generic\_friendlies}{generic\_friendlies}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_generic_friendly}{Generic\+Friendly}}$>$ Map\+Manager\+::generic\+\_\+friendlies}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8h_source_l00021}{21}} of file \mbox{\hyperlink{_map_manager_8h_source}{Map\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_map_manager_adc9521c363ffb0dcf91fada254d374d3}\label{class_map_manager_adc9521c363ffb0dcf91fada254d374d3}} 
+\index{MapManager@{MapManager}!has\_rendered\_map@{has\_rendered\_map}}
+\index{has\_rendered\_map@{has\_rendered\_map}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{has\_rendered\_map}{has\_rendered\_map}}
+{\footnotesize\ttfamily bool Map\+Manager\+::has\+\_\+rendered\+\_\+map = false}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8h_source_l00025}{25}} of file \mbox{\hyperlink{_map_manager_8h_source}{Map\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}\label{class_map_manager_a7a76d70f8325aa5f385dcba73afacc27}} 
+\index{MapManager@{MapManager}!height@{height}}
+\index{height@{height}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily unsigned int Map\+Manager\+::height = 0}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8h_source_l00019}{19}} of file \mbox{\hyperlink{_map_manager_8h_source}{Map\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_map_manager_ac098de57cb928a3ace62fcb2a566206f}\label{class_map_manager_ac098de57cb928a3ace62fcb2a566206f}} 
+\index{MapManager@{MapManager}!level\_index@{level\_index}}
+\index{level\_index@{level\_index}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{level\_index}{level\_index}}
+{\footnotesize\ttfamily unsigned int Map\+Manager\+::level\+\_\+index = 1}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8h_source_l00017}{17}} of file \mbox{\hyperlink{_map_manager_8h_source}{Map\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_map_manager_a68b9e24db6a6d5cbab5ee7c2f055997f}\label{class_map_manager_a68b9e24db6a6d5cbab5ee7c2f055997f}} 
+\index{MapManager@{MapManager}!loading\_next\_map@{loading\_next\_map}}
+\index{loading\_next\_map@{loading\_next\_map}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{loading\_next\_map}{loading\_next\_map}}
+{\footnotesize\ttfamily bool Map\+Manager\+::loading\+\_\+next\+\_\+map = false}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8h_source_l00026}{26}} of file \mbox{\hyperlink{_map_manager_8h_source}{Map\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}\label{class_map_manager_a8718e18f0c51173645c2626e5e65cb32}} 
+\index{MapManager@{MapManager}!new\_map@{new\_map}}
+\index{new\_map@{new\_map}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{new\_map}{new\_map}}
+{\footnotesize\ttfamily char$\ast$ Map\+Manager\+::new\+\_\+map = nullptr}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8h_source_l00024}{24}} of file \mbox{\hyperlink{_map_manager_8h_source}{Map\+Manager.\+h}}.
+
+\mbox{\Hypertarget{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}\label{class_map_manager_af44d67473c8a932512d90fe08a5f10c2}} 
+\index{MapManager@{MapManager}!width@{width}}
+\index{width@{width}!MapManager@{MapManager}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily unsigned int Map\+Manager\+::width = 0}
+
+
+
+Definition at line \mbox{\hyperlink{_map_manager_8h_source_l00018}{18}} of file \mbox{\hyperlink{_map_manager_8h_source}{Map\+Manager.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_map_manager_8h}{Map\+Manager.\+h}}\item 
+D\+:/\+University/ca-\/\+A00269349/\+Rogue/\mbox{\hyperlink{_map_manager_8cpp}{Map\+Manager.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,365 @@
+.TH "NonPlayableCharacter" 3 "Wed Nov 17 2021" "Version 1.0" "Rogue" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+NonPlayableCharacter
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <NonPlayableCharacter\&.h>\fP
+.PP
+Inherited by \fBEnemy\fP, and \fBGenericFriendly\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNonPlayableCharacter\fP ()"
+.br
+.ti -1c
+.RI "\fB~NonPlayableCharacter\fP ()=default"
+.br
+.ti -1c
+.RI "virtual void \fBSetNamesArray\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetPassive\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetName\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetStrength\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetHealth\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetSpeed\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetSymbol\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetPosition\fP (int x, int y)"
+.br
+.ti -1c
+.RI "void \fBSetDesiredHealth\fP (int value)"
+.br
+.ti -1c
+.RI "string \fBGetName\fP ()"
+.br
+.ti -1c
+.RI "int \fBGetHealth\fP ()"
+.br
+.ti -1c
+.RI "int \fBGetDamage\fP ()"
+.br
+.ti -1c
+.RI "int \fBGetX\fP ()"
+.br
+.ti -1c
+.RI "int \fBGetY\fP ()"
+.br
+.ti -1c
+.RI "void \fBCreateNonPlayableCharacter\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBpassive\fP"
+.br
+.ti -1c
+.RI "string \fBname\fP"
+.br
+.ti -1c
+.RI "string \fBname_array\fP [20]"
+.br
+.ti -1c
+.RI "unsigned int \fBstrength\fP"
+.br
+.in -1c
+.SS "Private Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBNPC_TYPE\fP { \fBENEMY\fP = 'E', \fBGENERIC_FRIENDLY\fP = 'N' }"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "char \fBsymbol\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBhealth\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBattack_speed\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBnpc_x\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBnpc_y\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB5\fP of file \fBNonPlayableCharacter\&.h\fP\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBNonPlayableCharacter::NPC_TYPE\fP\fC [private]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIENEMY \fP\fP
+.TP
+\fB\fIGENERIC_FRIENDLY \fP\fP
+.PP
+Definition at line \fB37\fP of file \fBNonPlayableCharacter\&.h\fP\&.
+.PP
+.nf
+38     {
+39         ENEMY = 'E',
+40         GENERIC_FRIENDLY = 'N'
+41     };
+.fi
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "NonPlayableCharacter::NonPlayableCharacter ()"
+
+.PP
+Definition at line \fB7\fP of file \fBNonPlayableCharacter\&.cpp\fP\&.
+.PP
+.nf
+8 {
+9     name = "";
+10     strength = 0;
+11     health = 0;
+12     attack_speed = 0;
+13     symbol = ' ';
+14     passive = false;
+15     npc_x = 0;
+16     npc_y = 0;
+17 }
+.fi
+.SS "NonPlayableCharacter::~NonPlayableCharacter ()\fC [default]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void NonPlayableCharacter::CreateNonPlayableCharacter ()"
+
+.PP
+Definition at line \fB23\fP of file \fBNonPlayableCharacter\&.cpp\fP\&.
+.PP
+.nf
+24 {
+25     SetNamesArray();
+26     SetName();
+27     SetPassive();
+28     SetSymbol();
+29     if (!passive)
+30     {
+31         SetHealth();
+32         SetSpeed();
+33         SetStrength();
+34     }
+35 }
+.fi
+.SS "int NonPlayableCharacter::GetDamage ()"
+
+.PP
+Definition at line \fB93\fP of file \fBNonPlayableCharacter\&.cpp\fP\&.
+.PP
+.nf
+94 {
+95     return strength;
+96 }
+.fi
+.SS "int NonPlayableCharacter::GetHealth ()"
+
+.PP
+Definition at line \fB88\fP of file \fBNonPlayableCharacter\&.cpp\fP\&.
+.PP
+.nf
+89 {
+90     return health;
+91 }
+.fi
+.SS "string NonPlayableCharacter::GetName ()"
+
+.PP
+Definition at line \fB83\fP of file \fBNonPlayableCharacter\&.cpp\fP\&.
+.PP
+.nf
+84 {
+85     return name;
+86 }
+.fi
+.SS "int NonPlayableCharacter::GetX ()"
+
+.PP
+Definition at line \fB98\fP of file \fBNonPlayableCharacter\&.cpp\fP\&.
+.PP
+.nf
+99 {
+100     return npc_x;
+101 }
+.fi
+.SS "int NonPlayableCharacter::GetY ()"
+
+.PP
+Definition at line \fB103\fP of file \fBNonPlayableCharacter\&.cpp\fP\&.
+.PP
+.nf
+104 {
+105     return npc_y;
+106 }
+.fi
+.SS "void NonPlayableCharacter::SetDesiredHealth (int value)"
+
+.PP
+Definition at line \fB78\fP of file \fBNonPlayableCharacter\&.cpp\fP\&.
+.PP
+.nf
+79 {
+80     health = value;
+81 }
+.fi
+.SS "void NonPlayableCharacter::SetHealth ()"
+
+.PP
+Definition at line \fB47\fP of file \fBNonPlayableCharacter\&.cpp\fP\&.
+.PP
+.nf
+48 {
+49     health = Macro::GenerateRandomNumberWithoutZero(10);
+50 }
+.fi
+.SS "void NonPlayableCharacter::SetName ()"
+
+.PP
+Definition at line \fB37\fP of file \fBNonPlayableCharacter\&.cpp\fP\&.
+.PP
+.nf
+38 {
+39     name = name_array[Macro::GenerateRandomNumber(name_array->length() - 2)];
+40 }
+.fi
+.SS "void NonPlayableCharacter::SetNamesArray ()\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBEnemy\fP, and \fBGenericFriendly\fP\&.
+.PP
+Definition at line \fB19\fP of file \fBNonPlayableCharacter\&.cpp\fP\&.
+.PP
+.nf
+20 {
+21 }
+.fi
+.SS "void NonPlayableCharacter::SetPassive ()\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBEnemy\fP, and \fBGenericFriendly\fP\&.
+.PP
+Definition at line \fB52\fP of file \fBNonPlayableCharacter\&.cpp\fP\&.
+.PP
+.nf
+53 {
+54 }
+.fi
+.SS "void NonPlayableCharacter::SetPosition (int x, int y)"
+
+.PP
+Definition at line \fB72\fP of file \fBNonPlayableCharacter\&.cpp\fP\&.
+.PP
+.nf
+73 {
+74     npc_x = x;
+75     npc_y = y;
+76 }
+.fi
+.SS "void NonPlayableCharacter::SetSpeed ()"
+
+.PP
+Definition at line \fB56\fP of file \fBNonPlayableCharacter\&.cpp\fP\&.
+.PP
+.nf
+57 {
+58     attack_speed = Macro::GenerateRandomNumberWithoutZero(5);
+59 }
+.fi
+.SS "void NonPlayableCharacter::SetStrength ()"
+
+.PP
+Definition at line \fB42\fP of file \fBNonPlayableCharacter\&.cpp\fP\&.
+.PP
+.nf
+43 {
+44     strength = Macro::GenerateRandomNumberWithoutZero(10);
+45 }
+.fi
+.SS "void NonPlayableCharacter::SetSymbol ()"
+
+.PP
+Definition at line \fB61\fP of file \fBNonPlayableCharacter\&.cpp\fP\&.
+.PP
+.nf
+62 {
+63     switch (passive)
+64     {
+65     case true: symbol = GENERIC_FRIENDLY;
+66         break;
+67     case false: symbol = ENEMY;
+68         break;
+69     }
+70 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "unsigned int NonPlayableCharacter::attack_speed\fC [private]\fP"
+
+.PP
+Definition at line \fB46\fP of file \fBNonPlayableCharacter\&.h\fP\&.
+.SS "unsigned int NonPlayableCharacter::health\fC [private]\fP"
+
+.PP
+Definition at line \fB45\fP of file \fBNonPlayableCharacter\&.h\fP\&.
+.SS "string NonPlayableCharacter::name"
+
+.PP
+Definition at line \fB32\fP of file \fBNonPlayableCharacter\&.h\fP\&.
+.SS "string NonPlayableCharacter::name_array[20]"
+
+.PP
+Definition at line \fB33\fP of file \fBNonPlayableCharacter\&.h\fP\&.
+.SS "unsigned int NonPlayableCharacter::npc_x\fC [private]\fP"
+
+.PP
+Definition at line \fB48\fP of file \fBNonPlayableCharacter\&.h\fP\&.
+.SS "unsigned int NonPlayableCharacter::npc_y\fC [private]\fP"
+
+.PP
+Definition at line \fB49\fP of file \fBNonPlayableCharacter\&.h\fP\&.
+.SS "bool NonPlayableCharacter::passive"
+
+.PP
+Definition at line \fB31\fP of file \fBNonPlayableCharacter\&.h\fP\&.
+.SS "unsigned int NonPlayableCharacter::strength"
+
+.PP
+Definition at line \fB34\fP of file \fBNonPlayableCharacter\&.h\fP\&.
+.SS "char NonPlayableCharacter::symbol\fC [private]\fP"
+
+.PP
+Definition at line \fB43\fP of file \fBNonPlayableCharacter\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Rogue from the source code\&.

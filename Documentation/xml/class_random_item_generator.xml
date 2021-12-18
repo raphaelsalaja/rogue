@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_random_item_generator" kind="class" language="C++" prot="public">
+    <compoundname>RandomItemGenerator</compoundname>
+    <derivedcompoundref refid="class_random_weapon" prot="public" virt="non-virtual">RandomWeapon</derivedcompoundref>
+    <includes refid="_random_item_generator_8h" local="no">RandomItemGenerator.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_random_item_generator_1acb103418c26d2dc505b21ecdad9cc0fc" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string RandomItemGenerator::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="21" column="8" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_random_item_generator_1a8a1d39701f3d5a6997309c824d22d333" compoundref="_random_item_generator_8cpp" startline="5" endline="13">RandomItemGenerator</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_random_item_generator_1a375a42a9160dd1ff376b4408e2b03629" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string RandomItemGenerator::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="21" column="13" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0" compoundref="_random_item_generator_8cpp" startline="51" endline="59">CreateItem</referencedby>
+        <referencedby refid="class_random_item_generator_1a8a1d39701f3d5a6997309c824d22d333" compoundref="_random_item_generator_8cpp" startline="5" endline="13">RandomItemGenerator</referencedby>
+        <referencedby refid="class_random_weapon_1aea0b4d6a59c972b64ed00ba7b7894d5c" compoundref="_random_weapon_8cpp" startline="12" endline="15">RandomWeapon::SetType</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_random_item_generator_1a456d04a342662178e5d17e86312bfb6c" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string RandomItemGenerator::ITEM_TYPES[20]</definition>
+        <argsstring>[20]</argsstring>
+        <name>ITEM_TYPES</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="22" column="8" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0" compoundref="_random_item_generator_8cpp" startline="51" endline="59">CreateItem</referencedby>
+        <referencedby refid="class_random_weapon_1ae9993590b69800be2b76a618fc5651f8" compoundref="_random_weapon_8cpp" startline="17" endline="34">RandomWeapon::SetItemNames</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_random_item_generator_1a87d0cc780a37457b3d2ce5154564f464" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RandomItemGenerator::strength</definition>
+        <argsstring></argsstring>
+        <name>strength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="25" column="5" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_random_item_generator_1a8a1d39701f3d5a6997309c824d22d333" compoundref="_random_item_generator_8cpp" startline="5" endline="13">RandomItemGenerator</referencedby>
+        <referencedby refid="class_random_item_generator_1a2b6f82fc5576dbe0b3dd4614bc60f305" compoundref="_random_item_generator_8cpp" startline="31" endline="34">SetStrength</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_random_item_generator_1a41bd17718f417ca1b1467b7ca8f81bfe" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RandomItemGenerator::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="25" column="14" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_random_item_generator_1a8a1d39701f3d5a6997309c824d22d333" compoundref="_random_item_generator_8cpp" startline="5" endline="13">RandomItemGenerator</referencedby>
+        <referencedby refid="class_random_item_generator_1a0cd93433c0ce88481b7f82ee43796a0f" compoundref="_random_item_generator_8cpp" startline="36" endline="39">SetWeight</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_random_item_generator_1a3c4fe14226e1b9c3326db7f97a2d33c4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RandomItemGenerator::speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="25" column="21" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_random_item_generator_1a8a1d39701f3d5a6997309c824d22d333" compoundref="_random_item_generator_8cpp" startline="5" endline="13">RandomItemGenerator</referencedby>
+        <referencedby refid="class_random_item_generator_1a779176c9969633372b5a70a2daf57d5e" compoundref="_random_item_generator_8cpp" startline="41" endline="44">SetSpeed</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char RandomItemGenerator::symbol</definition>
+        <argsstring></argsstring>
+        <name>symbol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="26" column="6" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0" compoundref="_random_item_generator_8cpp" startline="51" endline="59">CreateItem</referencedby>
+        <referencedby refid="class_random_item_generator_1a8a1d39701f3d5a6997309c824d22d333" compoundref="_random_item_generator_8cpp" startline="5" endline="13">RandomItemGenerator</referencedby>
+        <referencedby refid="class_random_item_generator_1ae16b7ab7234236eb33cfd6f562f8c57e" compoundref="_random_item_generator_8cpp" startline="46" endline="49">SetSymbol</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_random_item_generator_1a8a1d39701f3d5a6997309c824d22d333" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RandomItemGenerator::RandomItemGenerator</definition>
+        <argsstring>()</argsstring>
+        <name>RandomItemGenerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="8" column="1" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.cpp" bodystart="5" bodyend="13"/>
+        <references refid="class_random_item_generator_1acb103418c26d2dc505b21ecdad9cc0fc" compoundref="_random_item_generator_8h" startline="21">name</references>
+        <references refid="class_random_item_generator_1a3c4fe14226e1b9c3326db7f97a2d33c4" compoundref="_random_item_generator_8h" startline="25">speed</references>
+        <references refid="class_random_item_generator_1a87d0cc780a37457b3d2ce5154564f464" compoundref="_random_item_generator_8h" startline="25">strength</references>
+        <references refid="class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78" compoundref="_random_item_generator_8h" startline="26">symbol</references>
+        <references refid="class_random_item_generator_1a375a42a9160dd1ff376b4408e2b03629" compoundref="_random_item_generator_8h" startline="21">type</references>
+        <references refid="class_random_item_generator_1a41bd17718f417ca1b1467b7ca8f81bfe" compoundref="_random_item_generator_8h" startline="25">weight</references>
+      </memberdef>
+      <memberdef kind="function" id="class_random_item_generator_1a81f88c7721872cb577532fa2f8a28249" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RandomItemGenerator::~RandomItemGenerator</definition>
+        <argsstring>()</argsstring>
+        <name>~RandomItemGenerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="9" column="1" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_random_item_generator_1a76d898718b27df8a3c5be2ccaf3efdc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RandomItemGenerator::SetType</definition>
+        <argsstring>(int choice)</argsstring>
+        <name>SetType</name>
+        <reimplementedby refid="class_random_weapon_1aea0b4d6a59c972b64ed00ba7b7894d5c">SetType</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>choice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="11" column="14" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.cpp" bodystart="19" bodyend="21"/>
+        <referencedby refid="class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0" compoundref="_random_item_generator_8cpp" startline="51" endline="59">CreateItem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_random_item_generator_1a3816c88713a59914f16f50d29245b2d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RandomItemGenerator::SetItemNames</definition>
+        <argsstring>(string file_name)</argsstring>
+        <name>SetItemNames</name>
+        <reimplementedby refid="class_random_weapon_1ae9993590b69800be2b76a618fc5651f8">SetItemNames</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="12" column="14" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.cpp" bodystart="23" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_random_item_generator_1a7658f6593d6c57602738827102f73ece" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RandomItemGenerator::SetName</definition>
+        <argsstring>(int name_index, string type)</argsstring>
+        <name>SetName</name>
+        <param>
+          <type>int</type>
+          <declname>name_index</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="13" column="14" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.cpp" bodystart="27" bodyend="29"/>
+        <referencedby refid="class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0" compoundref="_random_item_generator_8cpp" startline="51" endline="59">CreateItem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_random_item_generator_1a2b6f82fc5576dbe0b3dd4614bc60f305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RandomItemGenerator::SetStrength</definition>
+        <argsstring>()</argsstring>
+        <name>SetStrength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="14" column="6" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.cpp" bodystart="31" bodyend="34"/>
+        <references refid="namespace_macro_1a7192f07d19f55d7f8b863932a5078eab" compoundref="_macro_8cpp" startline="54" endline="58">Macro::GenerateRandomNumber</references>
+        <references refid="class_random_item_generator_1a87d0cc780a37457b3d2ce5154564f464" compoundref="_random_item_generator_8h" startline="25">strength</references>
+        <referencedby refid="class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0" compoundref="_random_item_generator_8cpp" startline="51" endline="59">CreateItem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_random_item_generator_1a0cd93433c0ce88481b7f82ee43796a0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RandomItemGenerator::SetWeight</definition>
+        <argsstring>()</argsstring>
+        <name>SetWeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="15" column="6" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.cpp" bodystart="36" bodyend="39"/>
+        <references refid="namespace_macro_1a7192f07d19f55d7f8b863932a5078eab" compoundref="_macro_8cpp" startline="54" endline="58">Macro::GenerateRandomNumber</references>
+        <references refid="class_random_item_generator_1a41bd17718f417ca1b1467b7ca8f81bfe" compoundref="_random_item_generator_8h" startline="25">weight</references>
+        <referencedby refid="class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0" compoundref="_random_item_generator_8cpp" startline="51" endline="59">CreateItem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_random_item_generator_1a779176c9969633372b5a70a2daf57d5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RandomItemGenerator::SetSpeed</definition>
+        <argsstring>()</argsstring>
+        <name>SetSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="16" column="6" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.cpp" bodystart="41" bodyend="44"/>
+        <references refid="namespace_macro_1a7192f07d19f55d7f8b863932a5078eab" compoundref="_macro_8cpp" startline="54" endline="58">Macro::GenerateRandomNumber</references>
+        <references refid="class_random_item_generator_1a3c4fe14226e1b9c3326db7f97a2d33c4" compoundref="_random_item_generator_8h" startline="25">speed</references>
+        <referencedby refid="class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0" compoundref="_random_item_generator_8cpp" startline="51" endline="59">CreateItem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_random_item_generator_1ae16b7ab7234236eb33cfd6f562f8c57e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RandomItemGenerator::SetSymbol</definition>
+        <argsstring>(char symbol)</argsstring>
+        <name>SetSymbol</name>
+        <param>
+          <type>char</type>
+          <declname>symbol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="17" column="6" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.cpp" bodystart="46" bodyend="49"/>
+        <references refid="class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78" compoundref="_random_item_generator_8h" startline="26">symbol</references>
+        <referencedby refid="class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0" compoundref="_random_item_generator_8cpp" startline="51" endline="59">CreateItem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RandomItemGenerator::CreateItem</definition>
+        <argsstring>(char symbol, char item_type_amount)</argsstring>
+        <name>CreateItem</name>
+        <param>
+          <type>char</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>item_type_amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="19" column="6" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.cpp" bodystart="51" bodyend="59"/>
+        <references refid="namespace_macro_1a7192f07d19f55d7f8b863932a5078eab" compoundref="_macro_8cpp" startline="54" endline="58">Macro::GenerateRandomNumber</references>
+        <references refid="class_random_item_generator_1a456d04a342662178e5d17e86312bfb6c" compoundref="_random_item_generator_8h" startline="22">ITEM_TYPES</references>
+        <references refid="class_random_item_generator_1a7658f6593d6c57602738827102f73ece" compoundref="_random_item_generator_8cpp" startline="27" endline="29">SetName</references>
+        <references refid="class_random_item_generator_1a779176c9969633372b5a70a2daf57d5e" compoundref="_random_item_generator_8cpp" startline="41" endline="44">SetSpeed</references>
+        <references refid="class_random_item_generator_1a2b6f82fc5576dbe0b3dd4614bc60f305" compoundref="_random_item_generator_8cpp" startline="31" endline="34">SetStrength</references>
+        <references refid="class_random_item_generator_1ae16b7ab7234236eb33cfd6f562f8c57e" compoundref="_random_item_generator_8cpp" startline="46" endline="49">SetSymbol</references>
+        <references refid="class_random_item_generator_1a76d898718b27df8a3c5be2ccaf3efdc5" compoundref="_random_item_generator_8cpp" startline="19" endline="21">SetType</references>
+        <references refid="class_random_item_generator_1a0cd93433c0ce88481b7f82ee43796a0f" compoundref="_random_item_generator_8cpp" startline="36" endline="39">SetWeight</references>
+        <references refid="class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78" compoundref="_random_item_generator_8h" startline="26">symbol</references>
+        <references refid="class_random_item_generator_1a375a42a9160dd1ff376b4408e2b03629" compoundref="_random_item_generator_8h" startline="21">type</references>
+        <referencedby refid="class_random_weapon_1a48fd5758c4c65e266d3ba9bfe3e6c90b" compoundref="_random_weapon_8cpp" startline="36" endline="39">RandomWeapon::GenerateRandomWeapon</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RandomItemGenerator</label>
+        <link refid="class_random_item_generator"/>
+      </node>
+      <node id="2">
+        <label>RandomWeapon</label>
+        <link refid="class_random_weapon"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>RandomItemGenerator</label>
+        <link refid="class_random_item_generator"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" line="5" column="1" bodyfile="D:/University/ca-A00269349/Rogue/RandomItemGenerator.h" bodystart="6" bodyend="27"/>
+    <listofallmembers>
+      <member refid="class_random_item_generator_1afa526acb6d33fca117a7d741f23877a0" prot="public" virt="non-virtual"><scope>RandomItemGenerator</scope><name>CreateItem</name></member>
+      <member refid="class_random_item_generator_1a456d04a342662178e5d17e86312bfb6c" prot="public" virt="non-virtual"><scope>RandomItemGenerator</scope><name>ITEM_TYPES</name></member>
+      <member refid="class_random_item_generator_1acb103418c26d2dc505b21ecdad9cc0fc" prot="public" virt="non-virtual"><scope>RandomItemGenerator</scope><name>name</name></member>
+      <member refid="class_random_item_generator_1a8a1d39701f3d5a6997309c824d22d333" prot="public" virt="non-virtual"><scope>RandomItemGenerator</scope><name>RandomItemGenerator</name></member>
+      <member refid="class_random_item_generator_1a3816c88713a59914f16f50d29245b2d7" prot="public" virt="virtual"><scope>RandomItemGenerator</scope><name>SetItemNames</name></member>
+      <member refid="class_random_item_generator_1a7658f6593d6c57602738827102f73ece" prot="public" virt="virtual"><scope>RandomItemGenerator</scope><name>SetName</name></member>
+      <member refid="class_random_item_generator_1a779176c9969633372b5a70a2daf57d5e" prot="public" virt="non-virtual"><scope>RandomItemGenerator</scope><name>SetSpeed</name></member>
+      <member refid="class_random_item_generator_1a2b6f82fc5576dbe0b3dd4614bc60f305" prot="public" virt="non-virtual"><scope>RandomItemGenerator</scope><name>SetStrength</name></member>
+      <member refid="class_random_item_generator_1ae16b7ab7234236eb33cfd6f562f8c57e" prot="public" virt="non-virtual"><scope>RandomItemGenerator</scope><name>SetSymbol</name></member>
+      <member refid="class_random_item_generator_1a76d898718b27df8a3c5be2ccaf3efdc5" prot="public" virt="virtual"><scope>RandomItemGenerator</scope><name>SetType</name></member>
+      <member refid="class_random_item_generator_1a0cd93433c0ce88481b7f82ee43796a0f" prot="public" virt="non-virtual"><scope>RandomItemGenerator</scope><name>SetWeight</name></member>
+      <member refid="class_random_item_generator_1a3c4fe14226e1b9c3326db7f97a2d33c4" prot="private" virt="non-virtual"><scope>RandomItemGenerator</scope><name>speed</name></member>
+      <member refid="class_random_item_generator_1a87d0cc780a37457b3d2ce5154564f464" prot="private" virt="non-virtual"><scope>RandomItemGenerator</scope><name>strength</name></member>
+      <member refid="class_random_item_generator_1ab7e63cc7320671a21e3aaf7a6e800c78" prot="private" virt="non-virtual"><scope>RandomItemGenerator</scope><name>symbol</name></member>
+      <member refid="class_random_item_generator_1a375a42a9160dd1ff376b4408e2b03629" prot="public" virt="non-virtual"><scope>RandomItemGenerator</scope><name>type</name></member>
+      <member refid="class_random_item_generator_1a41bd17718f417ca1b1467b7ca8f81bfe" prot="private" virt="non-virtual"><scope>RandomItemGenerator</scope><name>weight</name></member>
+      <member refid="class_random_item_generator_1a81f88c7721872cb577532fa2f8a28249" prot="public" virt="non-virtual"><scope>RandomItemGenerator</scope><name>~RandomItemGenerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

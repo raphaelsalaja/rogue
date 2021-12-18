@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_caf19aaa2e5ad0b80215287fe89db000" xml:lang="en-US">
+<title>D:/University/ca-A00269349/Rogue Directory Reference</title>
+<indexterm><primary>D:/University/ca-A00269349/Rogue Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="__armour_8h">Armour.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__combat_manager_8cpp">CombatManager.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__combat_manager_8h">CombatManager.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__console_rendering_8cpp">ConsoleRendering.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__console_rendering_8h">ConsoleRendering.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__console_window_manager_8cpp">ConsoleWindowManager.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__console_window_manager_8h">ConsoleWindowManager.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__debug_8cpp">Debug.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__debug_8h">Debug.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__enemy_8cpp">Enemy.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__enemy_8h">Enemy.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__generic_friendly_8cpp">GenericFriendly.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__generic_friendly_8h">GenericFriendly.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__inventory_manager_8cpp">InventoryManager.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__inventory_manager_8h">InventoryManager.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__macro_8cpp">Macro.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__macro_8h">Macro.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_main_8cpp">main.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__map_manager_8cpp">MapManager.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__map_manager_8h">MapManager.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__non_playable_character_8cpp">NonPlayableCharacter.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__non_playable_character_8h">NonPlayableCharacter.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__player_8cpp">Player.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__player_8h">Player.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__potion_8cpp">Potion.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__potion_8h">Potion.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__random_item_generator_8cpp">RandomItemGenerator.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__random_item_generator_8h">RandomItemGenerator.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__random_weapon_8cpp">RandomWeapon.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__random_weapon_8h">RandomWeapon.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__random_weapon_generator_8h">RandomWeaponGenerator.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__title_screen_manager_8cpp">TitleScreenManager.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__title_screen_manager_8h">TitleScreenManager.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__user_interface_manger_8h">UserInterfaceManger.h</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

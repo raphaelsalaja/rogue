@@ -1,0 +1,12 @@
+<map id="Enemy::Enemy" name="Enemy::Enemy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,117,184"/>
+<area shape="rect" id="node2" href="$class_non_playable_character.html#a017d601103d2bc66a6338073a051cab7" title=" " alt="" coords="171,56,387,83"/>
+<area shape="rect" id="node4" href="$class_non_playable_character.html#a243b776f7671fc3458bf9ef6f9925875" title=" " alt="" coords="173,5,386,32"/>
+<area shape="rect" id="node6" href="$class_enemy.html#a9c1d6efc8b2099d83797600d67a52017" title=" " alt="" coords="198,107,361,133"/>
+<area shape="rect" id="node7" href="$class_enemy.html#a01f5ffaa127a837d3f315ff3910a9f28" title=" " alt="" coords="210,157,349,184"/>
+<area shape="rect" id="node8" href="$class_non_playable_character.html#a6ebdc6b058ea5dafe65132dd9ee46e6e" title=" " alt="" coords="166,208,393,235"/>
+<area shape="rect" id="node9" href="$class_non_playable_character.html#a98e1d2355f2a3617b6a7a25ee737ee3e" title=" " alt="" coords="171,259,387,285"/>
+<area shape="rect" id="node10" href="$class_non_playable_character.html#a9d5a16ef76a0e3339fd4ffc5d85bd8e2" title=" " alt="" coords="165,309,393,336"/>
+<area shape="rect" id="node3" href="$namespace_macro.html#a3500becfc34f5b1df2d6d976fb5f5f86" title=" " alt="" coords="441,259,724,285"/>
+<area shape="rect" id="node5" href="$namespace_macro.html#a7192f07d19f55d7f8b863932a5078eab" title=" " alt="" coords="477,5,689,32"/>
+</map>
